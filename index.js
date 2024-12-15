@@ -2216,13 +2216,13 @@ const System = new class {
     return imageExtensions.test(url);
   }
   get test() {
-    return typeof this._test === "boolean" ? this._test : typeof process !== "undefined" ? process.env.WORK_DEV == "1" : false;
+    return typeof this._test === "boolean" ? this._test : typeof process !== "undefined" ? "MISSING_ENV_VAR".WORK_DEV == "1" : false;
   }
   set test(val) {
     this._test = val;
   }
   get domain() {
-    return process.env.DOMAIN || "localhost";
+    return "MISSING_ENV_VAR".DOMAIN || "localhost";
   }
   md5(text) {
     return md5_default()(text);
@@ -6665,7 +6665,7 @@ class PaymentPage extends BasePage {
           if (!this.state.userID || !this.state.amount || this.state.amount < 0)
             return;
           lib_axios.get(
-            `http://${location.host === "localhost" ? "localhost" : "undefined"}:80/payments/create/${this.state.userID}/${this.state.amount}/${this.currency}`
+            `https://${location.host === "localhost" ? "localhost" : "s1.rocketman-vpn.com"}:${"2053"}/payments/create/${this.state.userID}/${this.state.amount}/${this.currency}`
           ).then((res) => {
             const data = res.data;
             console.log(data);
