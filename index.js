@@ -988,7 +988,7 @@ const PROJECT_NAME = "RocketMan VPN";
 const PROJECT_BOT = "rocketman_vpn_bot";
 const WEB_PAYMENT = false;
 const PAYMENT_METHOD = "morune";
-const PAYMENT_MIN_SUM = (0,_currency__WEBPACK_IMPORTED_MODULE_0__.CurrencyConvertToUSD)(300, "RUB");
+const PAYMENT_MIN_SUM = (0,_currency__WEBPACK_IMPORTED_MODULE_0__.CurrencyConvertToUSD)(100, "RUB");
 const PAYMENT_METHODS_LIST = [
   {
     id: "morune2",
