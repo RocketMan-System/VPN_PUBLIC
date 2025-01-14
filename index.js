@@ -2197,7 +2197,14 @@ const System = new class {
     for (let i = 0; i < codeUnits.length; i++) {
       codeUnits[i] = string.charCodeAt(i);
     }
-    return btoa(String.fromCharCode(...new Uint8Array(codeUnits.buffer)));
+    const uint8Array = new Uint8Array(codeUnits.buffer);
+    const chunkSize = 32768;
+    let result = "";
+    for (let i = 0; i < uint8Array.length; i += chunkSize) {
+      const chunk = uint8Array.subarray(i, i + chunkSize);
+      result += String.fromCharCode(...chunk);
+    }
+    return btoa(result);
   }
   fromBinary(encoded) {
     const binary = atob(encoded);
