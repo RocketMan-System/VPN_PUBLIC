@@ -2462,7 +2462,7 @@ class PaymentPage extends _base__WEBPACK_IMPORTED_MODULE_1__.BasePage {
           if (!this.state.userID || !this.state.amount || this.state.amount < 0)
             return;
           axios__WEBPACK_IMPORTED_MODULE_5__["default"].get(
-            `https://${location.hostname === "localhost" ? "localhost" : "application.rocketman-vpn.com"}:${"2053"}/payments/create/${this.state.userID}/${this.state.amount}/${this.currency}`
+            `https://${location.hostname === "localhost" ? "localhost" : "application.rocketman-vpn.com"}:${"8443"}/payments/create/${this.state.userID}/${this.state.amount}/${this.currency}`
           ).then((res) => {
             const data = res.data;
             if (!data.status) return;
