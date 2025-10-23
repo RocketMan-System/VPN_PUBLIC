@@ -1304,8 +1304,10 @@ const DetectCurrencyByLang = (lang) => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   LOCAL_NODE_HOST_URL: () => (/* binding */ LOCAL_NODE_HOST_URL),
 /* harmony export */   NODES_LIST: () => (/* binding */ NODES_LIST),
-/* harmony export */   NODE_HOSTS: () => (/* binding */ NODE_HOSTS)
+/* harmony export */   NODE_HOSTS: () => (/* binding */ NODE_HOSTS),
+/* harmony export */   RU_NODE_HOST_URL: () => (/* binding */ RU_NODE_HOST_URL)
 /* harmony export */ });
 
 const NODES_LIST = [
@@ -1361,6 +1363,8 @@ const NODES_LIST = [
 const NODE_HOSTS = NODES_LIST.map((node) => node.host).filter(
   (q, i, arr) => arr.indexOf(q) === i
 );
+const RU_NODE_HOST_URL = "ru.rocketman-vpn.com";
+const LOCAL_NODE_HOST_URL = "local.rocketman-vpn.com";
 
 
 /***/ }),
