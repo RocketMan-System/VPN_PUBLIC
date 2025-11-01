@@ -1,3 +1,5 @@
+
+console.log("%cBuild date: 11/1/2025, 10:58:40 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
