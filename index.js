@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 11/6/2025, 3:37:42 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 11/12/2025, 3:42:41 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1308,6 +1308,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   LOCAL_NODE_HOST_URL: () => (/* binding */ LOCAL_NODE_HOST_URL),
 /* harmony export */   NODES_LIST: () => (/* binding */ NODES_LIST),
+/* harmony export */   NODES_RESERVE_LIST: () => (/* binding */ NODES_RESERVE_LIST),
 /* harmony export */   NODE_HOSTS: () => (/* binding */ NODE_HOSTS),
 /* harmony export */   RU_NODE_HOST_FLAG: () => (/* binding */ RU_NODE_HOST_FLAG),
 /* harmony export */   RU_NODE_HOST_URL: () => (/* binding */ RU_NODE_HOST_URL)
@@ -1369,6 +1370,14 @@ const NODE_HOSTS = NODES_LIST.map((node) => node.host).filter(
 const RU_NODE_HOST_URL = "ru.rocketman-vpn.com";
 const RU_NODE_HOST_FLAG = "\u{1F1F7}\u{1F1FA}";
 const LOCAL_NODE_HOST_URL = "local.rocketman-vpn.com";
+const NODES_RESERVE_LIST = [
+  {
+    id: "reserve1",
+    name: "locationReserve1",
+    host: RU_NODE_HOST_URL,
+    flag: RU_NODE_HOST_FLAG
+  }
+];
 
 
 /***/ }),
