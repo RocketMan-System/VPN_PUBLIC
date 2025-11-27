@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 11/12/2025, 3:42:41 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 11/27/2025, 1:06:59 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1086,8 +1086,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 
 const TG_ADMINS = [
-  "395244822",
-  // XanderWP
+  // '395244822', // XanderWP
   "129806916",
   // S3R4
   "7042600006"
