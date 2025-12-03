@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 12/3/2025, 1:06:28 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 12/3/2025, 1:46:54 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1346,7 +1346,7 @@ const NODES_LIST = [
   },
   {
     id: "aeza-s2",
-    name: "locationAustria",
+    name: "locationNetherland",
     flag: "\u{1F1F3}\u{1F1F1}",
     protocols: protocolList,
     host: "s2.rocketman-vpn.com"
