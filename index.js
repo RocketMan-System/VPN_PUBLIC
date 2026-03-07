@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 2/12/2026, 6:52:06 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 3/7/2026, 11:50:53 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -2902,7 +2902,7 @@ class SseClass {
     };
   }
   Init() {
-    const isBrowser = typeof window !== "undefined" && typeof window.EventSource !== "undefined";
+    const isBrowser = typeof window !== "undefined" && typeof Telegram !== "undefined" && typeof window.EventSource !== "undefined";
     if (!isBrowser) return;
     this.source = new EventSource(
       `/tgapi/events?verify=${_utils_System__WEBPACK_IMPORTED_MODULE_0__.System.toBinary(Telegram.WebApp.initData)}`
