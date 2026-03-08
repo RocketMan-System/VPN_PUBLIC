@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 3/8/2026, 12:25:03 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 3/8/2026, 12:33:25 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -10787,7 +10787,9 @@ class App extends react.Component {
         }
       }
       yield this.awaitLoadConfig();
-      lib_axios.get(`/tgapi/loadCurrency`).then((res) => {
+      lib_axios.get(
+        `https://${"application.rocketman-vpn.com"}:${"8443"}/tgapi/loadCurrency`
+      ).then((res) => {
         const data = res.data;
         if (data.status) {
           SetCurrentCurrency(data.data);
