@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 3/8/2026, 12:09:54 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 3/8/2026, 12:25:03 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -9782,22 +9782,24 @@ const Core = new CoreClass();
 
 
 
-const FAQ_LIST = [
-  {
-    title: "faq1title",
-    text: "faq1text"
-  },
-  {
-    title: "faq2title",
-    text: "faq2text",
-    arg: Core.GetConfigValue("projectBot")
-  },
-  {
-    title: "faq3title",
-    text: "faq3text",
-    arg: TG_SUPPORT_USERNAME
-  }
-];
+const FAQ_LIST = () => {
+  return [
+    {
+      title: "faq1title",
+      text: "faq1text"
+    },
+    {
+      title: "faq2title",
+      text: "faq2text",
+      arg: Core.GetConfigValue("projectBot")
+    },
+    {
+      title: "faq3title",
+      text: "faq3text",
+      arg: TG_SUPPORT_USERNAME
+    }
+  ];
+};
 const FEATURES_LIST = [
   {
     icon: "anonymous",
@@ -9858,7 +9860,7 @@ class LandingPage extends BasePage {
         },
         this.LangString("landingTarifsGo")
       ));
-    })))), /* @__PURE__ */ react.createElement("section", { id: "faq" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("h2", null, "FAQ"), FAQ_LIST.map((q, i) => {
+    })))), /* @__PURE__ */ react.createElement("section", { id: "faq" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("h2", null, "FAQ"), FAQ_LIST().map((q, i) => {
       const id = `faq_${i}`;
       return /* @__PURE__ */ react.createElement("div", { className: "faq-item", key: i }, /* @__PURE__ */ react.createElement(
         "h3",
@@ -10657,6 +10659,26 @@ var App_spreadValues = (a, b) => {
     }
   return a;
 };
+var App_async = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
+  });
+};
 
 
 
@@ -10740,29 +10762,45 @@ class App extends react.Component {
     this.setState({ lang });
     localStorage.setItem("lang", lang);
   }
+  awaitLoadConfig() {
+    console.log("Waiting load config");
+    return new Promise((res) => {
+      const int = setInterval(() => {
+        try {
+          Core.GetConfigValue("projectBot");
+          clearInterval(int);
+          res(true);
+        } catch (error) {
+        }
+      }, 100);
+    });
+  }
   componentDidMount() {
-    const url = new URL(location.href);
-    if (url.searchParams.has("lang") && getAllLangs().includes(url.searchParams.get("lang"))) {
-      this.ChangeLang(url.searchParams.get("lang"));
-    } else {
-      const oldLang = localStorage.getItem("lang");
-      if (oldLang && getAllLangs().includes(oldLang)) {
-        this.ChangeLang(oldLang);
+    return App_async(this, null, function* () {
+      const url = new URL(location.href);
+      if (url.searchParams.has("lang") && getAllLangs().includes(url.searchParams.get("lang"))) {
+        this.ChangeLang(url.searchParams.get("lang"));
+      } else {
+        const oldLang = localStorage.getItem("lang");
+        if (oldLang && getAllLangs().includes(oldLang)) {
+          this.ChangeLang(oldLang);
+        }
       }
-    }
-    lib_axios.get(`/tgapi/loadCurrency`).then((res) => {
-      const data = res.data;
-      if (data.status) {
-        SetCurrentCurrency(data.data);
-      }
-    }).catch((err) => {
-      console.error(err);
-    }).finally(() => {
-      this.setState({
-        loaded: true,
-        page: url.searchParams.has("payment") ? "payment" : url.searchParams.has("crypto_id") ? "crypto" : url.searchParams.has("term") ? "term" : url.searchParams.has("subscribe") ? "subscribe" : url.searchParams.has("contacts") ? "contacts" : "index",
-        fix_amount: url.searchParams.get("amount") ? parseInt(url.searchParams.get("amount")) : 0,
-        fix_id: url.searchParams.get("id") || ""
+      yield this.awaitLoadConfig();
+      lib_axios.get(`/tgapi/loadCurrency`).then((res) => {
+        const data = res.data;
+        if (data.status) {
+          SetCurrentCurrency(data.data);
+        }
+      }).catch((err) => {
+        console.error(err);
+      }).finally(() => {
+        this.setState({
+          loaded: true,
+          page: url.searchParams.has("payment") ? "payment" : url.searchParams.has("crypto_id") ? "crypto" : url.searchParams.has("term") ? "term" : url.searchParams.has("subscribe") ? "subscribe" : url.searchParams.has("contacts") ? "contacts" : "index",
+          fix_amount: url.searchParams.get("amount") ? parseInt(url.searchParams.get("amount")) : 0,
+          fix_id: url.searchParams.get("id") || ""
+        });
       });
     });
   }
