@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 4/8/2026, 4:10:49 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 4/8/2026, 4:33:39 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -9897,7 +9897,8 @@ const loginState = {
   // shared
   loading: false,
   error: "",
-  lang: "en"
+  lang: "en",
+  ready: false
 };
 const T = {
   tabCredentials: "login.tabCredentials",
@@ -9947,8 +9948,8 @@ const T = {
   tgErrNotSent: "login.tg.errNotSent"
 };
 class LoginPage extends react.Component {
-  constructor() {
-    super(...arguments);
+  constructor(props) {
+    super(props);
     this.state = login_spreadValues({}, loginState);
     this.timerInterval = null;
     this.LangString = (key, ...args) => langString(this.state.lang, key, ...args);
@@ -10122,6 +10123,12 @@ class LoginPage extends react.Component {
         setTimeout(() => this.requestTgKey(), 0);
       }
     };
+    const chech = setInterval(() => {
+      if (Core.loaded) {
+        this.setState({ ready: true });
+        clearInterval(chech);
+      }
+    }, 100);
   }
   componentWillUnmount() {
     if (this.timerInterval) clearInterval(this.timerInterval);
@@ -10238,7 +10245,8 @@ class LoginPage extends react.Component {
     ));
   }
   render() {
-    const { tab, login, password, apiKey, loading, error } = this.state;
+    const { tab, login, password, apiKey, loading, error, ready } = this.state;
+    if (!ready) return /* @__PURE__ */ react.createElement(react.Fragment, null);
     return /* @__PURE__ */ react.createElement("div", { className: "login-page" }, /* @__PURE__ */ react.createElement("div", { className: "login-card" }, /* @__PURE__ */ react.createElement("div", { className: "login-header" }, /* @__PURE__ */ react.createElement("span", { className: "rotate" }, "\u{1F680}"), /* @__PURE__ */ react.createElement("h1", null, Core.GetConfigValue("projectName")), /* @__PURE__ */ react.createElement("span", { className: "rotate" }, "\u{1F680}")), /* @__PURE__ */ react.createElement("div", { className: "login-tabs" }, /* @__PURE__ */ react.createElement(
       "button",
       {
@@ -10545,8 +10553,13 @@ function sse_isTelegramEnv() {
 class SseClass {
   constructor() {
     this._OnData = [];
-    setTimeout(() => {
-      this.Init();
+    setInterval(() => {
+      if (this.source && !telegram_WebApp.api_token) {
+        this.source.close();
+        this.source = void 0;
+      } else if (!this.source) {
+        this.Init();
+      }
     }, 3e3);
   }
   OnData(event, handle) {
@@ -10561,6 +10574,7 @@ class SseClass {
   Init() {
     const isBrowser = typeof window !== "undefined" && typeof Telegram !== "undefined" && typeof window.EventSource !== "undefined";
     if (!isBrowser) return;
+    if (!telegram_WebApp.api_token) return;
     this.source = new EventSource(
       `/tgapi/events?${sse_isTelegramEnv() ? `verify=${System.toBinary(Telegram.WebApp.initData)}` : `api_key=${telegram_WebApp.api_token}`}`
     );
@@ -10618,6 +10632,7 @@ class CoreConfig {
   constructor() {
     this.data = null;
     this._onChangeConfig = [];
+    this._loaded = false;
     this.sse =  false ? 0 : void 0;
     this.GetConfigValue = (key) => {
       return this.data[key];
@@ -10629,9 +10644,13 @@ class CoreConfig {
       ).then((res) => {
         this.data = res.data;
         this._HandleChangeConfig(this.data);
+        this._loaded = true;
       });
     };
     this.LoadConfig();
+  }
+  get loaded() {
+    return this._loaded;
   }
   OnChange(callback) {
     const id = System.randomString(5);
