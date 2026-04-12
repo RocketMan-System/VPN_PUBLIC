@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 4/9/2026, 12:24:26 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 4/12/2026, 6:10:01 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -10916,6 +10916,7 @@ var App_async = (__this, __arguments, generator) => {
 
 
 
+
 const App_state = {
   loaded: false,
   page: "index",
@@ -10984,7 +10985,7 @@ class App extends react.Component {
         /* @__PURE__ */ react.createElement(
           "a",
           {
-            href: `https://${"application.rocketman-vpn.com"}:${"8443"}/application`,
+            href: `https://${ false ? 0 : "application.rocketman-vpn.com"}:${"8443"}/application`,
             rel: "noopener noreferrer",
             className: "btn",
             onClick: this.closeMobileMenu
@@ -11059,7 +11060,7 @@ class App extends react.Component {
       }
       yield this.awaitLoadConfig();
       lib_axios.get(
-        `https://${"application.rocketman-vpn.com"}:${"8443"}/tgapi/loadCurrency`
+        `https://${"application.rocketman-vpn.com"}:${"8443"}/api/loadCurrency`
       ).then((res) => {
         const data = res.data;
         if (data.status) {
