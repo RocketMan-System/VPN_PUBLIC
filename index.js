@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 4/12/2026, 6:10:01 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 4/12/2026, 11:32:27 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -9892,6 +9892,7 @@ var nodes_spreadProps = (a, b) => nodes_defProps(a, nodes_getOwnPropDescs(b));
 const protocolList = (/* unused pure expression or super */ null && (["Vless", "ShadowSocks", "HTTP", "HTTPS", "Socks5"]));
 const NODES_LIST = [];
 const LOCAL_NODE_HOST_URL = "local.rocketman-vpn.com";
+const MIRROR_APP_URL = "ru-app.rocketman-vpn.com";
 const NODES_RESERVE_LIST =  false ? 0 : [];
 const NODES_GLOBAL_LIST = [
   ...NODES_LIST.map((q) => nodes_spreadProps(nodes_spreadValues({}, q), { relay: false })),
@@ -10082,6 +10083,14 @@ class LandingPage extends BasePage {
   }
 }
 
+;// ./src/shared/application.path.ts
+
+
+const GetApplicationHostname = () => {
+  if (typeof window !== "undefined" && window.useMirror) return MIRROR_APP_URL;
+  return "application.rocketman-vpn.com";
+};
+
 ;// ./src/frontend/pages/payment.tsx
 
 var payment_defProp = Object.defineProperty;
@@ -10100,6 +10109,7 @@ var payment_spreadValues = (a, b) => {
     }
   return a;
 };
+
 
 
 
@@ -10202,7 +10212,7 @@ class PaymentPage extends BasePage {
           if (!this.state.userID || !this.state.amount || this.state.amount < 0)
             return;
           lib_axios.get(
-            `https://${location.hostname === "localhost" ? "localhost" : "application.rocketman-vpn.com"}:${"8443"}/payments/create/${this.state.userID}/${this.state.amount}/${this.currency}`
+            `https://${location.hostname === "localhost" ? "localhost" : GetApplicationHostname()}:${"8443"}/payments/create/${this.state.userID}/${this.state.amount}/${this.currency}`
           ).then((res) => {
             const data = res.data;
             if (!data.status) return;
@@ -10917,6 +10927,7 @@ var App_async = (__this, __arguments, generator) => {
 
 
 
+
 const App_state = {
   loaded: false,
   page: "index",
@@ -10985,7 +10996,7 @@ class App extends react.Component {
         /* @__PURE__ */ react.createElement(
           "a",
           {
-            href: `https://${ false ? 0 : "application.rocketman-vpn.com"}:${"8443"}/application`,
+            href: `https://${ false ? 0 : GetApplicationHostname()}:${"8443"}/application`,
             rel: "noopener noreferrer",
             className: "btn",
             onClick: this.closeMobileMenu
@@ -11060,7 +11071,7 @@ class App extends react.Component {
       }
       yield this.awaitLoadConfig();
       lib_axios.get(
-        `https://${"application.rocketman-vpn.com"}:${"8443"}/api/loadCurrency`
+        `https://${GetApplicationHostname()}:${"8443"}/api/loadCurrency`
       ).then((res) => {
         const data = res.data;
         if (data.status) {
