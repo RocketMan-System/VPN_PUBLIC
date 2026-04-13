@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 4/12/2026, 11:32:27 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 4/13/2026, 2:28:48 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -11063,10 +11063,14 @@ class App extends react.Component {
       if (referralHostId) saveReferralHostIdOnce(referralHostId);
       if (url.searchParams.has("lang") && getAllLangs().includes(url.searchParams.get("lang"))) {
         this.ChangeLang(url.searchParams.get("lang"));
+      } else if (localStorage.getItem("lang")) {
+        this.ChangeLang(localStorage.getItem("lang"));
       } else {
-        const oldLang = localStorage.getItem("lang");
-        if (oldLang && getAllLangs().includes(oldLang)) {
-          this.ChangeLang(oldLang);
+        const browserLang = navigator.language.toLowerCase();
+        const lang = getAllLangs().find((l) => browserLang.startsWith(l));
+        console.log(`Browser lang: ${browserLang}, Lang: ${lang}`);
+        if (lang) {
+          this.ChangeLang(lang);
         }
       }
       yield this.awaitLoadConfig();
