@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 4/21/2026, 2:50:30 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 5/3/2026, 12:03:32 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -11608,7 +11608,8 @@ const initialState = shared_spreadProps(shared_spreadValues({}, stateData), {
     geo: "",
     url: "",
     editId: "",
-    lang: {}
+    lang: {},
+    desc: {}
   }
 });
 
@@ -49275,46 +49276,85 @@ const RoutingPanel = ({ ctx }) => {
     if (edit.editId) {
       const res = yield postRequestUser(
         "/api/happ-routings/update",
-        { recordId: edit.editId, url: edit.url, geo: edit.geo, lang: edit.lang }
+        {
+          recordId: edit.editId,
+          url: edit.url,
+          geo: edit.geo,
+          lang: edit.lang,
+          desc: edit.desc
+        }
       );
       if (!(res == null ? void 0 : res.status)) return;
       setState({
         routings: state.routings.map(
-          (q) => q.id === edit.editId ? RoutingModule_spreadProps(RoutingModule_spreadValues({}, q), { url: edit.url, geo: edit.geo, lang: edit.lang }) : q
+          (q) => q.id === edit.editId ? RoutingModule_spreadProps(RoutingModule_spreadValues({}, q), {
+            url: edit.url,
+            geo: edit.geo,
+            lang: edit.lang,
+            desc: edit.desc
+          }) : q
         ),
-        routingEdit: { show: false, geo: "", url: "", editId: "", lang: {} }
+        routingEdit: {
+          show: false,
+          geo: "",
+          url: "",
+          editId: "",
+          lang: {},
+          desc: {}
+        }
       });
     } else {
       const res = yield postRequestUser(
         "/api/happ-routings/add",
-        { url: edit.url, geo: edit.geo, lang: edit.lang }
+        { url: edit.url, geo: edit.geo, lang: edit.lang, desc: edit.desc }
       );
       if (!(res == null ? void 0 : res.status)) return;
       setState({
         routings: [
           ...state.routings,
-          { id: res.id, url: edit.url, geo: edit.geo, lang: edit.lang }
+          {
+            id: res.id,
+            url: edit.url,
+            geo: edit.geo,
+            lang: edit.lang,
+            desc: edit.desc
+          }
         ],
-        routingEdit: { show: false, geo: "", url: "", editId: "", lang: {} }
+        routingEdit: {
+          show: false,
+          geo: "",
+          url: "",
+          editId: "",
+          lang: {},
+          desc: {}
+        }
       });
     }
   });
   const handleEdit = (item) => {
-    var _a;
+    var _a, _b;
     setState({
       routingEdit: {
         show: true,
         geo: item.geo,
         url: item.url,
         editId: item.id,
-        lang: (_a = item.lang) != null ? _a : {}
+        lang: (_a = item.lang) != null ? _a : {},
+        desc: (_b = item.desc) != null ? _b : {}
       }
     });
   };
   const handleCancel = (e) => {
     e.preventDefault();
     setState({
-      routingEdit: { show: false, geo: "", url: "", editId: "", lang: {} }
+      routingEdit: {
+        show: false,
+        geo: "",
+        url: "",
+        editId: "",
+        lang: {},
+        desc: {}
+      }
     });
   };
   const urlValid = isValidUrl(edit.url);
@@ -49473,6 +49513,57 @@ const RoutingPanel = ({ ctx }) => {
           )
         );
       })
+    ), /* @__PURE__ */ react.createElement(
+      "div",
+      {
+        style: {
+          display: "flex",
+          flexDirection: "column",
+          gap: "8px"
+        }
+      },
+      getAllLangs().map((lang) => {
+        var _a, _b;
+        return /* @__PURE__ */ react.createElement(
+          "div",
+          {
+            key: lang,
+            style: {
+              display: "flex",
+              alignItems: "center",
+              gap: "8px"
+            }
+          },
+          /* @__PURE__ */ react.createElement(
+            "span",
+            {
+              style: {
+                minWidth: "28px",
+                fontWeight: "bold",
+                opacity: 0.8,
+                textTransform: "uppercase",
+                fontSize: "0.85em"
+              }
+            },
+            lang
+          ),
+          /* @__PURE__ */ react.createElement(
+            "input",
+            {
+              style: { flex: 1 },
+              placeholder: `\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435 (${lang})`,
+              value: (_b = (_a = edit.desc) == null ? void 0 : _a[lang]) != null ? _b : "",
+              onChange: (e) => setState({
+                routingEdit: RoutingModule_spreadProps(RoutingModule_spreadValues({}, edit), {
+                  desc: RoutingModule_spreadProps(RoutingModule_spreadValues({}, edit.desc || {}), {
+                    [lang]: e.currentTarget.value
+                  })
+                })
+              })
+            }
+          )
+        );
+      })
     )),
     /* @__PURE__ */ react.createElement("div", { className: "buttons" }, /* @__PURE__ */ react.createElement(
       "button",
@@ -49496,7 +49587,8 @@ const RoutingPanel = ({ ctx }) => {
             geo: "",
             url: "",
             editId: "",
-            lang: {}
+            lang: {},
+            desc: {}
           }
         });
       }
