@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 5/27/2026, 8:57:21 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 5/30/2026, 2:06:29 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 
