@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 5/30/2026, 2:06:39 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 6/1/2026, 1:11:37 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -11516,7 +11516,9 @@ const initialState = shared_spreadProps(shared_spreadValues({}, stateData), {
     xray_sni: "template.rocketman-vpn.com",
     xray_sni_port: "443",
     xray_port: "443",
-    xray_fingerprint: "firefox"
+    xray_fingerprint: "firefox",
+    nft_whitelist: false,
+    nft_whitelist_domains: false
   },
   install_node_logs: [],
   install_node: shared_spreadProps(shared_spreadValues({
@@ -12808,7 +12810,43 @@ const NewNodeForm = ({ ctx }) => {
         style: { width: "20px", height: "20px", margin: 0 }
       }
     )
-  ))), /* @__PURE__ */ react.createElement("div", { className: "section-title", style: { marginTop: "20px" } }, "Node Name (Localized)"), /* @__PURE__ */ react.createElement("div", { className: "info-grid high-density" }, Object.keys(new_node.name).map((key) => /* @__PURE__ */ react.createElement("div", { className: "info-item", key }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "NAME [", key, "]"), /* @__PURE__ */ react.createElement(
+  )), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "NFT WL IP Block"), /* @__PURE__ */ react.createElement(
+    "div",
+    {
+      style: { display: "flex", alignItems: "center", height: "100%" }
+    },
+    /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "checkbox",
+        checked: !!new_node.nft_whitelist,
+        onChange: () => setState({
+          new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), {
+            nft_whitelist: !new_node.nft_whitelist
+          })
+        }),
+        style: { width: "20px", height: "20px", margin: 0 }
+      }
+    )
+  )), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "NFT WL Domain Block"), /* @__PURE__ */ react.createElement(
+    "div",
+    {
+      style: { display: "flex", alignItems: "center", height: "100%" }
+    },
+    /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "checkbox",
+        checked: !!new_node.nft_whitelist_domains,
+        onChange: () => setState({
+          new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), {
+            nft_whitelist_domains: !new_node.nft_whitelist_domains
+          })
+        }),
+        style: { width: "20px", height: "20px", margin: 0 }
+      }
+    )
+  ))), /* @__PURE__ */ react.createElement("div", { className: "section-title", style: { marginTop: "20px" } }, "NFT WL Domain Block - Vless block by domains (recommended)", /* @__PURE__ */ react.createElement("br", null), "NFT WL IP Block - Full block by IPs (can broke functionality)"), /* @__PURE__ */ react.createElement("div", { className: "section-title", style: { marginTop: "20px" } }, "Node Name (Localized)"), /* @__PURE__ */ react.createElement("div", { className: "info-grid high-density" }, Object.keys(new_node.name).map((key) => /* @__PURE__ */ react.createElement("div", { className: "info-item", key }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "NAME [", key, "]"), /* @__PURE__ */ react.createElement(
     "input",
     {
       type: "text",
