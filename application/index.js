@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 6/25/2026, 10:17:21 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 6/25/2026, 10:28:58 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -11681,7 +11681,8 @@ const initialState = shared_spreadProps(shared_spreadValues({}, stateData), {
 
 
 const GetApplicationHostname = () => {
-  if (typeof window !== "undefined" && window.useMirror) return MIRROR_APP_URL;
+  if (typeof window !== "undefined" && window.useMirror)
+    return MIRROR_APP_URL;
   return "application.rocketman-vpn.com";
 };
 
