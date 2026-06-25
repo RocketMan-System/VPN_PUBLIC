@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 6/25/2026, 9:57:42 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 6/25/2026, 10:17:21 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -12694,8 +12694,8 @@ function toListenAddress(clientParts) {
       }
     }
   }
-  if (!best) return ":443";
-  return best.start === best.end ? `:${best.start}` : `:${best.start}-${best.end}`;
+  if (!best) return "0.0.0.0:443";
+  return best.start === best.end ? `0.0.0.0:${best.start}` : `0.0.0.0:${best.start}-${best.end}`;
 }
 function validateHysteriaPortSpec(spec) {
   const raw = spec == null ? void 0 : spec.trim();
