@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 6/25/2026, 9:31:57 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 6/25/2026, 9:57:32 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -14183,6 +14183,7 @@ var wiki_async = (__this, __arguments, generator) => {
 
 const WIKI_PROXY_BRIDGE_GUIDE_ARTICLE_ID = "LrWKZS6mnN";
 const WIKI_NAV_SCROLL_MIN_ITEMS = 30;
+const endpoint = `https://${ false ? 0 : GetApplicationHostname()}:${"8443"}`;
 const WIKI_SIDE_LABELS = {
   ru: {
     connectTelegram: "\u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0447\u0435\u0440\u0435\u0437 Telegram",
@@ -14984,7 +14985,7 @@ const StartWikiListPrefetch = (lang) => {
   }
   wikiListPrefetchLang = lang;
   wikiListPrefetchPromise = fetch(
-    `/wiki/_list?lang=${encodeURIComponent(lang)}&_ts=${Date.now()}`
+    `${endpoint}/wiki/_list?lang=${encodeURIComponent(lang)}&_ts=${Date.now()}`
   ).then((res) => res.ok ? res.json() : null).then((payload) => {
     if (!(payload == null ? void 0 : payload.data)) return null;
     const list = payload.data.map(
@@ -15002,7 +15003,7 @@ const StartWikiArticlePrefetch = (articleId, lang) => {
   const existing = wikiArticlePrefetchPromises.get(key);
   if (existing) return existing;
   const promise = fetch(
-    `/wiki/${encodeURIComponent(articleId)}?lang=${encodeURIComponent(lang)}`
+    `${endpoint}/wiki/${encodeURIComponent(articleId)}?lang=${encodeURIComponent(lang)}`
   ).then((res) => res.ok ? res.text() : null).then((html) => {
     if (typeof html === "string" && html) {
       WriteWikiArticleCache(articleId, lang, html);
@@ -15565,7 +15566,6 @@ class WikiPage extends BasePage {
     this.anchorScrollCleanup = null;
     this.articleDomKey = "";
     this.anchorPendingScrollId = "";
-    this.endpoint = `https://${ false ? 0 : GetApplicationHostname()}:${"8443"}`;
     this.SetMountedTimeout = (fn, ms) => {
       const id = window.setTimeout(() => {
         this.mountedTimers = this.mountedTimers.filter((timerId) => timerId !== id);
@@ -15655,7 +15655,7 @@ class WikiPage extends BasePage {
       if (cached) {
         return Promise.resolve(cached);
       }
-      return lib_axios.get(`${this.endpoint}/wiki/${item.id}`, {
+      return lib_axios.get(`${endpoint}/wiki/${item.id}`, {
         params: { lang: this.props.lang }
       }).then((res) => {
         const html = res.data || "";
@@ -16544,7 +16544,7 @@ class WikiPage extends BasePage {
         }
       });
     }
-    lib_axios.get(`${this.endpoint}/wiki/_list`, {
+    lib_axios.get(`${endpoint}/wiki/_list`, {
       params: { lang: this.props.lang, _ts: Date.now() }
     }).then((res) => {
       if (seq !== this.listFetchSeq) return;
@@ -16669,7 +16669,7 @@ class WikiPage extends BasePage {
     if (cachedArticle) {
       return Promise.resolve();
     }
-    const loadFromNetwork = () => lib_axios.get(`${this.endpoint}/wiki/${item.id}`, {
+    const loadFromNetwork = () => lib_axios.get(`${endpoint}/wiki/${item.id}`, {
       params: { lang: this.props.lang },
       signal: articleAbort.signal
     }).then((res) => {
