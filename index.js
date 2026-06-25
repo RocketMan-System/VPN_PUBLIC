@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 6/23/2026, 9:51:54 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 6/25/2026, 9:31:57 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -390,6 +390,30 @@ html.wiki-route::-webkit-scrollbar-corner {
 .wiki .wiki-hero__topic--search {
   color: rgba(255, 255, 255, 0.62);
   font-size: 0.74rem;
+}
+.wiki .wiki-hero__topic--badge {
+  font-weight: 600;
+  border-color: transparent;
+}
+.wiki .wiki-hero__topic--badge-important {
+  color: #ffd0d0;
+  background: rgba(255, 90, 90, 0.2);
+  border-color: rgba(255, 90, 90, 0.32);
+}
+.wiki .wiki-hero__topic--badge-updated {
+  color: #c8f5d6;
+  background: rgba(46, 207, 81, 0.2);
+  border-color: rgba(46, 207, 81, 0.32);
+}
+.wiki .wiki-hero__topic--badge-new {
+  color: #c5e8ff;
+  background: rgba(80, 180, 255, 0.2);
+  border-color: rgba(80, 180, 255, 0.32);
+}
+.wiki .wiki-hero__topic--badge-hot {
+  color: #ffe4bd;
+  background: rgba(255, 170, 60, 0.2);
+  border-color: rgba(255, 170, 60, 0.32);
 }
 .wiki .wiki-hero__stats {
   display: flex;
@@ -2252,6 +2276,45 @@ html.wiki-route::-webkit-scrollbar-corner {
   flex: 1;
   min-width: 0;
 }
+.wiki .markdown-body.wiki-article h1.wiki-article-title .wiki-article-title__icon,
+.wiki .markdown-body.wiki-article h1 .wiki-article-title__icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  font-size: 1.45rem;
+  line-height: 1;
+  background: linear-gradient(145deg, rgba(135, 116, 225, 0.28) 0%, rgba(135, 116, 225, 0.1) 100%);
+  border: 1px solid rgba(135, 116, 225, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 14px rgba(135, 116, 225, 0.14);
+}
+.wiki .markdown-body.wiki-article h1.wiki-article-title[data-wiki-badge='important'] .wiki-article-title__icon,
+.wiki .markdown-body.wiki-article h1[data-wiki-badge='important'] .wiki-article-title__icon {
+  background: linear-gradient(145deg, rgba(255, 90, 90, 0.3) 0%, rgba(255, 90, 90, 0.12) 100%);
+  border-color: rgba(255, 90, 90, 0.38);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 14px rgba(255, 90, 90, 0.16);
+}
+.wiki .markdown-body.wiki-article h1.wiki-article-title[data-wiki-badge='hot'] .wiki-article-title__icon,
+.wiki .markdown-body.wiki-article h1[data-wiki-badge='hot'] .wiki-article-title__icon {
+  background: linear-gradient(145deg, rgba(255, 170, 60, 0.3) 0%, rgba(255, 170, 60, 0.12) 100%);
+  border-color: rgba(255, 170, 60, 0.38);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 14px rgba(255, 170, 60, 0.16);
+}
+.wiki .markdown-body.wiki-article h1.wiki-article-title[data-wiki-badge='new'] .wiki-article-title__icon,
+.wiki .markdown-body.wiki-article h1[data-wiki-badge='new'] .wiki-article-title__icon {
+  background: linear-gradient(145deg, rgba(80, 180, 255, 0.3) 0%, rgba(80, 180, 255, 0.12) 100%);
+  border-color: rgba(80, 180, 255, 0.38);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 14px rgba(80, 180, 255, 0.16);
+}
+.wiki .markdown-body.wiki-article h1.wiki-article-title[data-wiki-badge='updated'] .wiki-article-title__icon,
+.wiki .markdown-body.wiki-article h1[data-wiki-badge='updated'] .wiki-article-title__icon {
+  background: linear-gradient(145deg, rgba(46, 207, 81, 0.3) 0%, rgba(46, 207, 81, 0.12) 100%);
+  border-color: rgba(46, 207, 81, 0.38);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 14px rgba(46, 207, 81, 0.16);
+}
 .wiki .markdown-body.wiki-article h2.wiki-article-heading,
 .wiki .markdown-body.wiki-article h2 {
   display: flex;
@@ -2400,6 +2463,9 @@ html.wiki-route::-webkit-scrollbar-corner {
   color: #ffe8d6;
   padding: 0.1em 0.35em;
   border-radius: 4px;
+}
+.wiki .markdown-body.wiki-article span[style*='color'] {
+  font-weight: inherit;
 }
 .wiki .markdown-body.wiki-article blockquote {
   margin: 1.2rem 0;
@@ -14165,7 +14231,11 @@ const WIKI_HERO_TEXT = {
   },
   uk: {
     description: "\u0406\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0456\u0457, \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u0456 \u043D\u0430 \u0437\u0430\u043F\u0438\u0442\u0430\u043D\u043D\u044F \u0442\u0430 \u043F\u0440\u0438\u043A\u043B\u0430\u0434\u0438 \u043D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F VPN \u0456 Proxy \u043D\u0430 \u0412\u0430\u0448\u0438\u0445 \u043F\u0440\u0438\u0441\u0442\u0440\u043E\u044F\u0445.",
-    heroTopics: ["VPN \u0456 Proxy", "\u0414\u043B\u044F \u0431\u0443\u0434\u044C-\u044F\u043A\u0438\u0445 \u043F\u0440\u0438\u0441\u0442\u0440\u043E\u0457\u0432", "\u0413\u0430\u0439\u0434\u0438 \u0442\u0430 \u043C\u0430\u0442\u0435\u0440\u0456\u0430\u043B\u0438"]
+    heroTopics: [
+      "VPN \u0456 Proxy",
+      "\u0414\u043B\u044F \u0431\u0443\u0434\u044C-\u044F\u043A\u0438\u0445 \u043F\u0440\u0438\u0441\u0442\u0440\u043E\u0457\u0432",
+      "\u0413\u0430\u0439\u0434\u0438 \u0442\u0430 \u043C\u0430\u0442\u0435\u0440\u0456\u0430\u043B\u0438"
+    ]
   }
 };
 const WIKI_LIST_CACHE_PREFIX = "wiki:list:v1:";
@@ -14233,7 +14303,8 @@ const ResolveWikiLang = () => {
   try {
     const url = new URL(window.location.href);
     const queryLang = url.searchParams.get("lang");
-    if (queryLang === "ru" || queryLang === "en" || queryLang === "uk") return queryLang;
+    if (queryLang === "ru" || queryLang === "en" || queryLang === "uk")
+      return queryLang;
     const stored = localStorage.getItem("lang");
     if (stored === "ru" || stored === "en" || stored === "uk") return stored;
     const browserLang = navigator.language.toLowerCase();
@@ -14259,7 +14330,17 @@ const WIKI_TELEGRAM_ICON = /* @__PURE__ */ react.createElement(
     }
   )
 );
-const WIKI_ICON_NAVIGATION = /* @__PURE__ */ react.createElement("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ react.createElement("circle", { cx: "12", cy: "12", r: "9", fill: "none", stroke: "currentColor", strokeWidth: "2" }), /* @__PURE__ */ react.createElement(
+const WIKI_ICON_NAVIGATION = /* @__PURE__ */ react.createElement("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ react.createElement(
+  "circle",
+  {
+    cx: "12",
+    cy: "12",
+    r: "9",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }
+), /* @__PURE__ */ react.createElement(
   "path",
   {
     fill: "currentColor",
@@ -14277,7 +14358,55 @@ const WIKI_ICON_TARIFFS = /* @__PURE__ */ react.createElement("svg", { viewBox: 
     d: "M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82Z"
   }
 ), /* @__PURE__ */ react.createElement("circle", { cx: "7.5", cy: "7.5", r: "1.5", fill: "currentColor", stroke: "none" }));
-const WIKI_ICON_APPS = /* @__PURE__ */ react.createElement("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ react.createElement("rect", { x: "3", y: "3", width: "8", height: "8", rx: "2", fill: "none", stroke: "currentColor", strokeWidth: "2" }), /* @__PURE__ */ react.createElement("rect", { x: "13", y: "3", width: "8", height: "8", rx: "2", fill: "none", stroke: "currentColor", strokeWidth: "2" }), /* @__PURE__ */ react.createElement("rect", { x: "3", y: "13", width: "8", height: "8", rx: "2", fill: "none", stroke: "currentColor", strokeWidth: "2" }), /* @__PURE__ */ react.createElement("rect", { x: "13", y: "13", width: "8", height: "8", rx: "2", fill: "none", stroke: "currentColor", strokeWidth: "2" }));
+const WIKI_ICON_APPS = /* @__PURE__ */ react.createElement("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ react.createElement(
+  "rect",
+  {
+    x: "3",
+    y: "3",
+    width: "8",
+    height: "8",
+    rx: "2",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }
+), /* @__PURE__ */ react.createElement(
+  "rect",
+  {
+    x: "13",
+    y: "3",
+    width: "8",
+    height: "8",
+    rx: "2",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }
+), /* @__PURE__ */ react.createElement(
+  "rect",
+  {
+    x: "3",
+    y: "13",
+    width: "8",
+    height: "8",
+    rx: "2",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }
+), /* @__PURE__ */ react.createElement(
+  "rect",
+  {
+    x: "13",
+    y: "13",
+    width: "8",
+    height: "8",
+    rx: "2",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }
+));
 const WikiSectionHeading = ({
   icon,
   children,
@@ -14335,7 +14464,19 @@ const WIKI_ICON_CATALOG_SHIELD = /* @__PURE__ */ react.createElement("svg", { vi
     d: "M12 3 19 6v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3Z"
   }
 ));
-const WIKI_ICON_CATALOG_PAYMENT = /* @__PURE__ */ react.createElement("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ react.createElement("rect", { x: "3", y: "6", width: "18", height: "12", rx: "2", fill: "none", stroke: "currentColor", strokeWidth: "2" }), /* @__PURE__ */ react.createElement("path", { fill: "none", stroke: "currentColor", strokeWidth: "2", d: "M3 10h18" }));
+const WIKI_ICON_CATALOG_PAYMENT = /* @__PURE__ */ react.createElement("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ react.createElement(
+  "rect",
+  {
+    x: "3",
+    y: "6",
+    width: "18",
+    height: "12",
+    rx: "2",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }
+), /* @__PURE__ */ react.createElement("path", { fill: "none", stroke: "currentColor", strokeWidth: "2", d: "M3 10h18" }));
 const WIKI_ICON_CATALOG_BOOK = /* @__PURE__ */ react.createElement("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ react.createElement(
   "path",
   {
@@ -14346,7 +14487,25 @@ const WIKI_ICON_CATALOG_BOOK = /* @__PURE__ */ react.createElement("svg", { view
     d: "M5 4h9a3 3 0 0 1 3 3v14H8a3 3 0 0 1-3-3V4Zm0 0v14a3 3 0 0 0 3 3"
   }
 ));
-const WIKI_ICON_CATALOG_ALL = /* @__PURE__ */ react.createElement("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ react.createElement("path", { fill: "none", stroke: "currentColor", strokeWidth: "2", d: "M4 6h16M4 12h16M4 18h10" }), /* @__PURE__ */ react.createElement("circle", { cx: "18", cy: "18", r: "3", fill: "none", stroke: "currentColor", strokeWidth: "2" }));
+const WIKI_ICON_CATALOG_ALL = /* @__PURE__ */ react.createElement("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ react.createElement(
+  "path",
+  {
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2",
+    d: "M4 6h16M4 12h16M4 18h10"
+  }
+), /* @__PURE__ */ react.createElement(
+  "circle",
+  {
+    cx: "18",
+    cy: "18",
+    r: "3",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }
+));
 const GetWikiCatalogSectionMeta = (title, kind) => {
   if (kind === "featured") {
     return { icon: WIKI_ICON_CATALOG_STAR, variant: "featured" };
@@ -14377,16 +14536,28 @@ const WikiCatalogSectionHeading = ({
   kind
 }) => {
   const { icon, variant } = GetWikiCatalogSectionMeta(title, kind);
-  return /* @__PURE__ */ react.createElement("h3", { className: `wiki-catalog__section-title wiki-catalog__section-title--${variant}` }, /* @__PURE__ */ react.createElement("span", { className: "wiki-catalog__section-title-icon", "aria-hidden": "true" }, icon), /* @__PURE__ */ react.createElement("span", { className: "wiki-catalog__section-title-text" }, title));
+  return /* @__PURE__ */ react.createElement(
+    "h3",
+    {
+      className: `wiki-catalog__section-title wiki-catalog__section-title--${variant}`
+    },
+    /* @__PURE__ */ react.createElement("span", { className: "wiki-catalog__section-title-icon", "aria-hidden": "true" }, icon),
+    /* @__PURE__ */ react.createElement("span", { className: "wiki-catalog__section-title-text" }, title)
+  );
 };
-const WIKI_BADGE_TYPES = ["important", "new", "updated", "hot"];
+const WIKI_BADGE_TYPES = [
+  "important",
+  "new",
+  "updated",
+  "hot"
+];
 const WIKI_BADGE_WEIGHT = {
   important: 40,
   hot: 30,
   new: 20,
   updated: 10
 };
-const WIKI_META_LINE = /^(wikiBadge|wikiGroup|wikiPriority)\s*:/i;
+const WIKI_META_LINE = /^(wikiBadge|wikiGroup|wikiPriority|wikiIcon)\s*:/i;
 const GetWikiImportanceScore = (item) => {
   const badgeWeight = item.wikiBadge ? WIKI_BADGE_WEIGHT[item.wikiBadge] : 0;
   return (item.wikiPriority || 0) * 100 + badgeWeight;
@@ -14474,15 +14645,18 @@ const ExtractYoutubeId = (input) => {
   try {
     const url = new URL(trimmed);
     const host = url.hostname.replace(/^www\./, "");
-    if (host === "youtu.be") return url.pathname.replace(/^\//, "").split("/")[0] || "";
+    if (host === "youtu.be")
+      return url.pathname.replace(/^\//, "").split("/")[0] || "";
     if (host.includes("youtube.com") || host.includes("youtube-nocookie.com")) {
       const fromQuery = url.searchParams.get("v");
       if (fromQuery) return fromQuery;
       const parts = url.pathname.split("/").filter(Boolean);
       const embedIndex = parts.indexOf("embed");
-      if (embedIndex >= 0 && parts[embedIndex + 1]) return parts[embedIndex + 1];
+      if (embedIndex >= 0 && parts[embedIndex + 1])
+        return parts[embedIndex + 1];
       const shortsIndex = parts.indexOf("shorts");
-      if (shortsIndex >= 0 && parts[shortsIndex + 1]) return parts[shortsIndex + 1];
+      if (shortsIndex >= 0 && parts[shortsIndex + 1])
+        return parts[shortsIndex + 1];
     }
   } catch (e) {
     return "";
@@ -14551,12 +14725,18 @@ const NormalizeWikiPriority = (value) => {
   if (!Number.isFinite(num)) return 0;
   return Math.max(0, Math.min(100, num));
 };
+const NormalizeWikiIcon = (value) => {
+  const trimmed = (value || "").trim();
+  if (!trimmed) return "";
+  const match = trimmed.match(new RegExp("\\p{Extended_Pictographic}", "u"));
+  return match ? match[0] : trimmed.slice(0, 2);
+};
 const ParseWikiMetaLineValue = (line, meta) => {
   const colonIndex = line.indexOf(":");
   if (colonIndex === -1) return;
   const key = line.slice(0, colonIndex).trim();
   const value = line.slice(colonIndex + 1).trim().replace(/^['"]|['"]$/g, "");
-  if (key === "wikiBadge" || key === "wikiGroup") {
+  if (key === "wikiBadge" || key === "wikiGroup" || key === "wikiIcon") {
     meta[key] = value;
   }
   if (key === "wikiPriority") {
@@ -14623,26 +14803,29 @@ const ParseWikiFrontmatter = (markdown) => {
   return { meta, body: source };
 };
 const StripWikiFrontmatter = (markdown) => ParseWikiFrontmatter(markdown).body;
-const BuildWikiCatalogFields = (meta) => {
-  const wikiBadge = NormalizeWikiBadge(meta.wikiBadge);
-  const wikiGroup = (meta.wikiGroup || "").trim();
-  const wikiPriority = NormalizeWikiPriority(meta.wikiPriority);
-  return wiki_spreadValues(wiki_spreadValues(wiki_spreadValues({}, wikiBadge ? { wikiBadge } : {}), wikiGroup ? { wikiGroup } : {}), wikiPriority ? { wikiPriority } : {});
-};
 const MergeWikiCatalogFields = (record, meta) => {
   var _a;
   const wikiBadge = NormalizeWikiBadge(record.wikiBadge || meta.wikiBadge);
   const wikiGroup = (record.wikiGroup || meta.wikiGroup || "").trim();
-  const wikiPriority = NormalizeWikiPriority((_a = record.wikiPriority) != null ? _a : meta.wikiPriority);
+  const wikiPriority = NormalizeWikiPriority(
+    (_a = record.wikiPriority) != null ? _a : meta.wikiPriority
+  );
+  const wikiIcon = NormalizeWikiIcon(record.wikiIcon || meta.wikiIcon);
   return {
     wikiBadge,
     wikiGroup,
-    wikiPriority
+    wikiPriority,
+    wikiIcon
   };
 };
 const ExtractWikiCatalogFromHtml = (html) => {
   if (!html || typeof document === "undefined") {
-    return { wikiBadge: "", wikiGroup: "", wikiPriority: 0 };
+    return {
+      wikiBadge: "",
+      wikiGroup: "",
+      wikiPriority: 0,
+      wikiIcon: ""
+    };
   }
   const root = document.createElement("div");
   root.innerHTML = html;
@@ -14653,9 +14836,6 @@ const ExtractWikiCatalogFromHtml = (html) => {
     ParseWikiMetaLineValue(text, meta);
   }
   return MergeWikiCatalogFields({}, meta);
-};
-const ExtractWikiCatalogFromMarkdown = (markdown) => {
-  return MergeWikiCatalogFields({}, ParseWikiFrontmatter(markdown).meta);
 };
 const NormalizeWikiSearchText = (text) => text.toLowerCase().normalize("NFC").replace(/\u0451/g, "\u0435").replace(/\s+/g, " ").trim();
 const CollapseWikiPlainText = (text) => text.replace(/\s+/g, " ").trim();
@@ -14671,9 +14851,7 @@ const StripHtmlForSearch = (html) => {
 };
 const BuildWikiSearchHaystack = (source) => {
   const plain = source.includes("<") ? StripHtmlForSearch(source) : StripWikiMarkdownForDisplay(source);
-  return NormalizeWikiSearchText(
-    plain.replace(/[^\p{L}\p{N}\s./:-]+/gu, " ")
-  );
+  return NormalizeWikiSearchText(plain.replace(/[^\p{L}\p{N}\s./:-]+/gu, " "));
 };
 const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const matchesWholeToken = (haystack, token) => {
@@ -14722,7 +14900,7 @@ const FindNormalizedMatch = (plain, query, options = {}) => {
   const snippetStart = Math.max(0, start - contextBefore);
   const snippetEnd = Math.min(source.length, start + length + contextAfter);
   let before = source.slice(snippetStart, start);
-  let match = source.slice(start, start + length);
+  const match = source.slice(start, start + length);
   let after = source.slice(start + length, snippetEnd);
   if (snippetStart > 0) before = `\u2026${before}`;
   if (snippetEnd < source.length) after = `${after}\u2026`;
@@ -14745,7 +14923,9 @@ const ReadWikiListCache = (lang) => {
       return null;
     }
   };
-  return readStorage(typeof sessionStorage !== "undefined" ? sessionStorage : void 0) || readStorage(typeof localStorage !== "undefined" ? localStorage : void 0);
+  return readStorage(
+    typeof sessionStorage !== "undefined" ? sessionStorage : void 0
+  ) || readStorage(typeof localStorage !== "undefined" ? localStorage : void 0);
 };
 const WriteWikiListCache = (lang, list) => {
   const payload = JSON.stringify(list);
@@ -14762,7 +14942,9 @@ const WriteWikiListCache = (lang, list) => {
 const ReadWikiArticleCache = (id, lang) => {
   if (typeof sessionStorage === "undefined") return null;
   try {
-    const raw = sessionStorage.getItem(`${WIKI_ARTICLE_CACHE_PREFIX}${lang}:${id}`);
+    const raw = sessionStorage.getItem(
+      `${WIKI_ARTICLE_CACHE_PREFIX}${lang}:${id}`
+    );
     if (!raw) return null;
     const parsed = JSON.parse(raw);
     return typeof parsed.html === "string" ? parsed.html : null;
@@ -14801,9 +14983,13 @@ const StartWikiListPrefetch = (lang) => {
     return wikiListPrefetchPromise;
   }
   wikiListPrefetchLang = lang;
-  wikiListPrefetchPromise = fetch(`/wiki/_list?lang=${encodeURIComponent(lang)}&_ts=${Date.now()}`).then((res) => res.ok ? res.json() : null).then((payload) => {
+  wikiListPrefetchPromise = fetch(
+    `/wiki/_list?lang=${encodeURIComponent(lang)}&_ts=${Date.now()}`
+  ).then((res) => res.ok ? res.json() : null).then((payload) => {
     if (!(payload == null ? void 0 : payload.data)) return null;
-    const list = payload.data.map((item) => EnrichWikiListItemMeta(item));
+    const list = payload.data.map(
+      (item) => EnrichWikiListItemMeta(item)
+    );
     WriteWikiListCache(lang, list);
     return list;
   }).catch(() => null);
@@ -14815,7 +15001,9 @@ const StartWikiArticlePrefetch = (articleId, lang) => {
   if (cached) return Promise.resolve(cached);
   const existing = wikiArticlePrefetchPromises.get(key);
   if (existing) return existing;
-  const promise = fetch(`/wiki/${encodeURIComponent(articleId)}?lang=${encodeURIComponent(lang)}`).then((res) => res.ok ? res.text() : null).then((html) => {
+  const promise = fetch(
+    `/wiki/${encodeURIComponent(articleId)}?lang=${encodeURIComponent(lang)}`
+  ).then((res) => res.ok ? res.text() : null).then((html) => {
     if (typeof html === "string" && html) {
       WriteWikiArticleCache(articleId, lang, html);
     }
@@ -14884,13 +15072,32 @@ const EnrichWikiListItemMeta = (item, metaSource) => {
   return wiki_spreadProps(wiki_spreadValues({}, item), {
     wikiBadge: catalog.wikiBadge,
     wikiGroup: catalog.wikiGroup,
-    wikiPriority: catalog.wikiPriority
+    wikiPriority: catalog.wikiPriority,
+    wikiIcon: catalog.wikiIcon
   });
 };
-const WIKI_ICONS = ["\u{1F4E1}", "\u{1F510}", "\u{1F680}", "\u2699\uFE0F", "\u{1F4F1}", "\u{1F310}", "\u{1F6E1}\uFE0F", "\u{1F4A1}", "\u{1F4CB}", "\u{1F527}", "\u{1F3AF}", "\u{1F4D6}"];
+const WIKI_ICONS = [
+  "\u{1F4E1}",
+  "\u{1F510}",
+  "\u{1F680}",
+  "\u2699\uFE0F",
+  "\u{1F4F1}",
+  "\u{1F310}",
+  "\u{1F6E1}\uFE0F",
+  "\u{1F4A1}",
+  "\u{1F4CB}",
+  "\u{1F527}",
+  "\u{1F3AF}",
+  "\u{1F4D6}"
+];
 const PickWikiIcon = (id, index) => {
   const seed = String(id).split("").reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
   return WIKI_ICONS[(seed + index) % WIKI_ICONS.length];
+};
+const ResolveWikiIcon = (item, index) => {
+  const custom = NormalizeWikiIcon(item.wikiIcon);
+  if (custom) return custom;
+  return PickWikiIcon(item.id, index);
 };
 const WIKI_HEADING_COPY_ICON = `<svg class="wiki-heading-link__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="9" y="9" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const WIKI_HEADING_COPIED_ICON = `<svg class="wiki-heading-link__icon wiki-heading-link__icon--check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
@@ -15000,7 +15207,8 @@ const EnhanceVideoEmbeds = (root) => {
   root.querySelectorAll('a[href*="youtube.com"], a[href*="youtu.be"]').forEach((link) => {
     const parent = link.parentElement;
     if (!parent || parent.tagName !== "P") return;
-    if ((parent.textContent || "").trim() !== (link.textContent || "").trim()) return;
+    if ((parent.textContent || "").trim() !== (link.textContent || "").trim())
+      return;
     const videoId = ExtractYoutubeId(link.getAttribute("href") || "");
     if (videoId) MarkPendingYoutube(parent, videoId);
   });
@@ -15155,8 +15363,14 @@ const EnrichArticleHtml = (html, articleId, labels) => {
     const anchor = document.createElement("button");
     anchor.type = "button";
     anchor.className = "wiki-heading-link";
-    anchor.setAttribute("aria-label", (labels == null ? void 0 : labels.copySectionLink) || "Copy section link");
-    anchor.setAttribute("title", (labels == null ? void 0 : labels.copySectionLink) || "Copy section link");
+    anchor.setAttribute(
+      "aria-label",
+      (labels == null ? void 0 : labels.copySectionLink) || "Copy section link"
+    );
+    anchor.setAttribute(
+      "title",
+      (labels == null ? void 0 : labels.copySectionLink) || "Copy section link"
+    );
     anchor.setAttribute("data-section-id", id);
     SetWikiHeadingLinkIcon(anchor);
     el.appendChild(anchor);
@@ -15187,23 +15401,50 @@ const EnrichArticleHtml = (html, articleId, labels) => {
     img.replaceWith(button);
   });
   EnhanceVideoEmbeds(root);
-  WrapCodeBlocks(root, labels || {
-    copyCode: "Copy",
-    copied: "Copied",
-    copyText: "Click to copy",
-    copySectionLink: "",
-    enlargeImage: ""
-  });
-  EnhanceCopyElements(root, labels || {
-    copyCode: "Copy",
-    copied: "Copied",
-    copyText: "Click to copy",
-    copySectionLink: "",
-    enlargeImage: ""
-  });
+  WrapCodeBlocks(
+    root,
+    labels || {
+      copyCode: "Copy",
+      copied: "Copied",
+      copyText: "Click to copy",
+      copySectionLink: "",
+      enlargeImage: ""
+    }
+  );
+  EnhanceCopyElements(
+    root,
+    labels || {
+      copyCode: "Copy",
+      copied: "Copied",
+      copyText: "Click to copy",
+      copySectionLink: "",
+      enlargeImage: ""
+    }
+  );
   EnhanceExternalLinks(root);
   WrapArticleSections(root);
   return { html: root.innerHTML, toc };
+};
+const InjectWikiArticleTitleMeta = (html, meta) => {
+  if (!html || typeof document === "undefined") return html;
+  const icon = NormalizeWikiIcon(meta.wikiIcon);
+  const badge = meta.wikiBadge || "";
+  if (!icon && !badge) return html;
+  const root = document.createElement("div");
+  root.innerHTML = html;
+  const h1 = root.querySelector("h1.wiki-article-title, h1");
+  if (!h1) return html;
+  if (badge) {
+    h1.setAttribute("data-wiki-badge", badge);
+  }
+  if (icon) {
+    const iconEl = document.createElement("span");
+    iconEl.className = "wiki-article-title__icon";
+    iconEl.setAttribute("aria-hidden", "true");
+    iconEl.textContent = icon;
+    h1.insertBefore(iconEl, h1.firstChild);
+  }
+  return root.innerHTML;
 };
 const EstimateReadingMinutes = (html) => {
   const text = html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
@@ -15215,14 +15456,16 @@ const FormatWikiArticlesCount = (count, lang) => {
     const mod10 = count % 10;
     const mod100 = count % 100;
     if (mod10 === 1 && mod100 !== 11) return `${count} \u0441\u0442\u0430\u0442\u044C\u044F`;
-    if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return `${count} \u0441\u0442\u0430\u0442\u044C\u0438`;
+    if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14))
+      return `${count} \u0441\u0442\u0430\u0442\u044C\u0438`;
     return `${count} \u0441\u0442\u0430\u0442\u0435\u0439`;
   }
   if (lang === "uk") {
     const mod10 = count % 10;
     const mod100 = count % 100;
     if (mod10 === 1 && mod100 !== 11) return `${count} \u0441\u0442\u0430\u0442\u0442\u044F`;
-    if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return `${count} \u0441\u0442\u0430\u0442\u0442\u0456`;
+    if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14))
+      return `${count} \u0441\u0442\u0430\u0442\u0442\u0456`;
     return `${count} \u0441\u0442\u0430\u0442\u0435\u0439`;
   }
   return count === 1 ? `${count} article` : `${count} articles`;
@@ -15240,7 +15483,11 @@ const FormatWikiCardDate = (timestamp, lang, labels) => {
   if (!timestamp) return null;
   const now = /* @__PURE__ */ new Date();
   const updatedAt = new Date(timestamp * 1e3);
-  const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const startOfToday = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate()
+  );
   const startOfUpdated = new Date(
     updatedAt.getFullYear(),
     updatedAt.getMonth(),
@@ -15318,6 +15565,7 @@ class WikiPage extends BasePage {
     this.anchorScrollCleanup = null;
     this.articleDomKey = "";
     this.anchorPendingScrollId = "";
+    this.endpoint = `https://${ false ? 0 : GetApplicationHostname()}:${"8443"}`;
     this.SetMountedTimeout = (fn, ms) => {
       const id = window.setTimeout(() => {
         this.mountedTimers = this.mountedTimers.filter((timerId) => timerId !== id);
@@ -15407,7 +15655,9 @@ class WikiPage extends BasePage {
       if (cached) {
         return Promise.resolve(cached);
       }
-      return lib_axios.get(`/wiki/${item.id}`, { params: { lang: this.props.lang } }).then((res) => {
+      return lib_axios.get(`${this.endpoint}/wiki/${item.id}`, {
+        params: { lang: this.props.lang }
+      }).then((res) => {
         const html = res.data || "";
         const plain = StripHtmlForSearch(html);
         const meta = ExtractWikiCatalogFromHtml(html);
@@ -15417,7 +15667,9 @@ class WikiPage extends BasePage {
       });
     };
     this.EnsureArticleCache = (list, reqId) => wiki_async(this, null, function* () {
-      const pending = list.filter((item) => !this.articleCache.has(`${item.id}:${this.props.lang}`));
+      const pending = list.filter(
+        (item) => !this.articleCache.has(`${item.id}:${this.props.lang}`)
+      );
       if (!pending.length) return;
       const batchSize = 2;
       for (let index = 0; index < pending.length; index += batchSize) {
@@ -15426,11 +15678,20 @@ class WikiPage extends BasePage {
         yield Promise.all(
           batch.map(
             (item) => this.FetchArticleHtml(item).catch(() => {
-              SetWikiArticleMemoryCache(this.articleCache, `${item.id}:${this.props.lang}`, {
-                html: "",
-                plain: "",
-                meta: { wikiBadge: "", wikiGroup: "", wikiPriority: 0 }
-              });
+              SetWikiArticleMemoryCache(
+                this.articleCache,
+                `${item.id}:${this.props.lang}`,
+                {
+                  html: "",
+                  plain: "",
+                  meta: {
+                    wikiBadge: "",
+                    wikiGroup: "",
+                    wikiPriority: 0,
+                    wikiIcon: ""
+                  }
+                }
+              );
             })
           )
         );
@@ -15438,13 +15699,40 @@ class WikiPage extends BasePage {
     });
     this.ApplyCachedArticle = (item, html) => {
       const text = this.GetText();
-      return EnrichArticleHtml(html, item.id, {
+      const catalog = MergeWikiCatalogFields(
+        item,
+        ExtractWikiCatalogFromHtml(html)
+      );
+      const enriched = EnrichArticleHtml(html, item.id, {
         copySectionLink: text.copySectionLink,
         enlargeImage: text.enlargeImage,
         copyCode: text.copyCode,
         copied: text.copied,
         copyText: text.copyText
       });
+      return wiki_spreadProps(wiki_spreadValues({}, enriched), {
+        html: InjectWikiArticleTitleMeta(enriched.html, {
+          wikiIcon: catalog.wikiIcon,
+          wikiBadge: catalog.wikiBadge
+        })
+      });
+    };
+    this.GetSelectedCatalogItem = () => {
+      if (!this.state.selectedId) return null;
+      const fromList = this.state.list.find(
+        (entry) => String(entry.id) === String(this.state.selectedId)
+      );
+      const stub = fromList || {
+        id: this.state.selectedId,
+        name: { ru: this.state.selectedTitle, en: "", uk: "" },
+        updated: this.state.selectedUpdatedAt
+      };
+      const cacheKey = `${this.state.selectedId}:${this.props.lang}`;
+      const cached = GetWikiArticleMemoryCache(this.articleCache, cacheKey);
+      if (cached == null ? void 0 : cached.meta) {
+        return EnrichWikiListItemMeta(stub, cached.meta);
+      }
+      return fromList || stub;
     };
     this.RunBodySearch = (query, reqId) => wiki_async(this, null, function* () {
       const results = [];
@@ -15482,7 +15770,10 @@ class WikiPage extends BasePage {
         const cacheKey = `${item.id}:${this.props.lang}`;
         const cached = GetWikiArticleMemoryCache(this.articleCache, cacheKey);
         if (WikiTextMatchesQuery(RecordTitleHaystack(item), query)) {
-          const snippet = ExtractWikiTitleSearchSnippet(title, query) || ExtractWikiTitleSearchSnippet(title, query.split(" ")[0] || query) || {
+          const snippet = ExtractWikiTitleSearchSnippet(title, query) || ExtractWikiTitleSearchSnippet(
+            title,
+            query.split(" ")[0] || query
+          ) || {
             before: "",
             match: title,
             after: ""
@@ -15520,7 +15811,10 @@ class WikiPage extends BasePage {
         if (!WikiTextMatchesQuery(title, trimmed) && !WikiTextMatchesQuery(RecordTitleHaystack(item), trimmed)) {
           return;
         }
-        const snippet = ExtractWikiTitleSearchSnippet(title, trimmed) || ExtractWikiTitleSearchSnippet(title, trimmed.split(" ")[0] || trimmed) || {
+        const snippet = ExtractWikiTitleSearchSnippet(title, trimmed) || ExtractWikiTitleSearchSnippet(
+          title,
+          trimmed.split(" ")[0] || trimmed
+        ) || {
           before: "",
           match: title,
           after: ""
@@ -15569,10 +15863,16 @@ class WikiPage extends BasePage {
       const root = (_a = this.contentRef.current) == null ? void 0 : _a.querySelector(".wiki-article");
       if (!root || this.articleLinksBound) return;
       root.querySelectorAll(".wiki-heading-link").forEach((link) => {
-        link.addEventListener("click", this.HandleHeadingLinkClick);
+        link.addEventListener(
+          "click",
+          this.HandleHeadingLinkClick
+        );
       });
       root.querySelectorAll(".wiki-image-button").forEach((button) => {
-        button.addEventListener("click", this.HandleImageLightboxClick);
+        button.addEventListener(
+          "click",
+          this.HandleImageLightboxClick
+        );
       });
       root.querySelectorAll(".wiki-code-wrap__copy, .wiki-copy-btn").forEach((button) => {
         button.addEventListener("click", this.HandleCopyClick);
@@ -15584,13 +15884,22 @@ class WikiPage extends BasePage {
       const root = (_a = this.contentRef.current) == null ? void 0 : _a.querySelector(".wiki-article");
       if (!root) return;
       root.querySelectorAll(".wiki-heading-link").forEach((link) => {
-        link.removeEventListener("click", this.HandleHeadingLinkClick);
+        link.removeEventListener(
+          "click",
+          this.HandleHeadingLinkClick
+        );
       });
       root.querySelectorAll(".wiki-image-button").forEach((button) => {
-        button.removeEventListener("click", this.HandleImageLightboxClick);
+        button.removeEventListener(
+          "click",
+          this.HandleImageLightboxClick
+        );
       });
       root.querySelectorAll(".wiki-code-wrap__copy, .wiki-copy-btn").forEach((button) => {
-        button.removeEventListener("click", this.HandleCopyClick);
+        button.removeEventListener(
+          "click",
+          this.HandleCopyClick
+        );
       });
       this.articleLinksBound = false;
     };
@@ -15684,13 +15993,18 @@ class WikiPage extends BasePage {
         }
       }
       if (!nextId || nextId === activeTocId) return;
-      this.setState({ activeTocId: nextId }, () => this.SyncTocPanelScroll(nextId));
+      this.setState(
+        { activeTocId: nextId },
+        () => this.SyncTocPanelScroll(nextId)
+      );
     };
     this.SyncTocPanelScroll = (activeId) => {
       const panel = this.tocPanelRef.current;
       if (!panel) return;
       const tocList = panel.querySelector(".wiki-toc");
-      const activeItem = panel.querySelector(`[data-toc-id="${activeId}"]`);
+      const activeItem = panel.querySelector(
+        `[data-toc-id="${activeId}"]`
+      );
       if (!tocList || !activeItem) return;
       const itemTop = activeItem.offsetTop;
       const itemBottom = itemTop + activeItem.offsetHeight;
@@ -15810,7 +16124,9 @@ class WikiPage extends BasePage {
       event.preventDefault();
       event.stopPropagation();
       const button = event.currentTarget;
-      const heading = button.closest("h2.wiki-article-heading");
+      const heading = button.closest(
+        "h2.wiki-article-heading"
+      );
       const sectionId = button.getAttribute("data-section-id") || "";
       if (!this.state.selectedId || !sectionId) return;
       const url = BuildWikiArticleUrl(this.state.selectedId, sectionId);
@@ -15841,7 +16157,10 @@ class WikiPage extends BasePage {
       const target = document.getElementById(sectionId);
       if (!target) {
         if (attempt < 40) {
-          this.SetMountedTimeout(() => this.ScrollToPendingSection(attempt + 1), 50);
+          this.SetMountedTimeout(
+            () => this.ScrollToPendingSection(attempt + 1),
+            50
+          );
         } else {
           this.anchorPendingScrollId = "";
         }
@@ -15872,12 +16191,18 @@ class WikiPage extends BasePage {
       var _a;
       if (!this.state.selectedId) return;
       const sectionId = this.state.activeTocId || ((_a = this.state.toc[0]) == null ? void 0 : _a.id) || "";
-      const url = BuildWikiArticleUrl(this.state.selectedId, sectionId || void 0);
+      const url = BuildWikiArticleUrl(
+        this.state.selectedId,
+        sectionId || void 0
+      );
       void CopyWikiText(url).then((copied) => {
         if (!copied) return;
         this.UpdateArticleUrl(this.state.selectedId, sectionId || void 0);
         this.setState({ sectionLinkCopied: true, linkCopied: false });
-        this.SetMountedTimeout(() => this.setState({ sectionLinkCopied: false }), 2e3);
+        this.SetMountedTimeout(
+          () => this.setState({ sectionLinkCopied: false }),
+          2e3
+        );
       });
     };
     this.ScrollToPageTop = (behavior = "smooth") => {
@@ -16007,12 +16332,15 @@ class WikiPage extends BasePage {
           });
           resizeObserver.observe(root);
         }
-        this.SetMountedTimeout(() => {
-          if (!isCurrent() || finished) return;
-          scrollToTarget();
-          lastTop = target.getBoundingClientRect().top;
-          rafId = window.requestAnimationFrame(trackStable);
-        }, behavior === "auto" ? 80 : 0);
+        this.SetMountedTimeout(
+          () => {
+            if (!isCurrent() || finished) return;
+            scrollToTarget();
+            lastTop = target.getBoundingClientRect().top;
+            rafId = window.requestAnimationFrame(trackStable);
+          },
+          behavior === "auto" ? 80 : 0
+        );
         this.SetMountedTimeout(finish, behavior === "auto" ? 700 : 1400);
       });
     };
@@ -16046,11 +16374,15 @@ class WikiPage extends BasePage {
       this.state.selectedTitle = listItem ? this.LangString(listItem.name) : "";
       this.state.selectedUpdatedAt = (listItem == null ? void 0 : listItem.updated) || 0;
       this.state.loadingContent = false;
-      SetWikiArticleMemoryCache(this.articleCache, `${articleId}:${props.lang}`, {
-        html: cachedHtml,
-        plain: StripHtmlForSearch(cachedHtml),
-        meta: ExtractWikiCatalogFromHtml(cachedHtml)
-      });
+      SetWikiArticleMemoryCache(
+        this.articleCache,
+        `${articleId}:${props.lang}`,
+        {
+          html: cachedHtml,
+          plain: StripHtmlForSearch(cachedHtml),
+          meta: ExtractWikiCatalogFromHtml(cachedHtml)
+        }
+      );
       return;
     }
     this.state.selectedId = articleId;
@@ -16077,7 +16409,9 @@ class WikiPage extends BasePage {
     const url = new URL(window.location.href);
     const articleId = url.searchParams.get("article");
     if (articleId && !this.state.selected) {
-      const listItem = this.state.list.find((entry) => String(entry.id) === articleId);
+      const listItem = this.state.list.find(
+        (entry) => String(entry.id) === articleId
+      );
       const stubItem = listItem || {
         id: articleId,
         name: { ru: "", en: "", uk: "" },
@@ -16210,11 +16544,13 @@ class WikiPage extends BasePage {
         }
       });
     }
-    lib_axios.get(`/wiki/_list`, {
+    lib_axios.get(`${this.endpoint}/wiki/_list`, {
       params: { lang: this.props.lang, _ts: Date.now() }
     }).then((res) => {
       if (seq !== this.listFetchSeq) return;
-      const list = (res.data.data || []).map((item) => EnrichWikiListItemMeta(item));
+      const list = (res.data.data || []).map(
+        (item) => EnrichWikiListItemMeta(item)
+      );
       applyList(list);
     }).catch(() => {
       if (seq !== this.listFetchSeq) return;
@@ -16226,7 +16562,9 @@ class WikiPage extends BasePage {
     });
   }
   OpenWikiArticleById(articleId) {
-    const fromList = this.state.list.find((entry) => String(entry.id) === String(articleId));
+    const fromList = this.state.list.find(
+      (entry) => String(entry.id) === String(articleId)
+    );
     const item = fromList || {
       id: articleId,
       name: { ru: "", en: "", uk: "" },
@@ -16255,7 +16593,8 @@ class WikiPage extends BasePage {
       ++this.searchRequestId;
     }
     const seq = ++this.loadSequence;
-    this.articleAbort = new AbortController();
+    const articleAbort = new AbortController();
+    this.articleAbort = articleAbort;
     const cacheKey = `${item.id}:${this.props.lang}`;
     let cachedEntry = GetWikiArticleMemoryCache(this.articleCache, cacheKey);
     if (!(cachedEntry == null ? void 0 : cachedEntry.html)) {
@@ -16272,9 +16611,10 @@ class WikiPage extends BasePage {
     const cachedArticle = (cachedEntry == null ? void 0 : cachedEntry.html) ? this.ApplyCachedArticle(item, cachedEntry.html) : null;
     const shouldScrollToTop = options.scrollToTop === true && !this.pendingSectionHash;
     this.setState(
-      wiki_spreadProps(wiki_spreadValues({
-        filter: hadSearch ? "" : this.state.filter
-      }, hadSearch ? { searchResults: null, searchLoading: false } : {}), {
+      {
+        filter: hadSearch ? "" : this.state.filter,
+        searchResults: hadSearch ? null : this.state.searchResults,
+        searchLoading: hadSearch ? false : this.state.searchLoading,
         loadingContent: !cachedArticle,
         error: void 0,
         selected: (cachedArticle == null ? void 0 : cachedArticle.html) || "",
@@ -16285,7 +16625,7 @@ class WikiPage extends BasePage {
         selectedUpdatedAt: item.updated || this.state.selectedUpdatedAt || 0,
         linkCopied: false,
         sectionLinkCopied: false
-      }),
+      },
       () => {
         if (shouldScrollToTop && cachedArticle) {
           this.ScrollToPageTop();
@@ -16320,20 +16660,27 @@ class WikiPage extends BasePage {
         }
       );
       if (options.syncUrl !== false) {
-        this.UpdateArticleUrl(item.id, this.ResolveUrlSectionForArticle(item.id));
+        this.UpdateArticleUrl(
+          item.id,
+          this.ResolveUrlSectionForArticle(item.id)
+        );
       }
     };
     if (cachedArticle) {
       return Promise.resolve();
     }
-    const loadFromNetwork = () => lib_axios.get(`/wiki/${item.id}`, {
+    const loadFromNetwork = () => lib_axios.get(`${this.endpoint}/wiki/${item.id}`, {
       params: { lang: this.props.lang },
-      signal: this.articleAbort.signal
+      signal: articleAbort.signal
     }).then((res) => {
       applyArticleHtml(res.data || "");
     }).catch((error) => {
-      if (seq !== this.loadSequence || this.IsCanceledRequest(error)) return;
-      this.setState({ loadingContent: false, error: "load_article_failed" });
+      if (seq !== this.loadSequence || this.IsCanceledRequest(error))
+        return;
+      this.setState({
+        loadingContent: false,
+        error: "load_article_failed"
+      });
     });
     const prefetchPromise = wikiArticlePrefetchPromises.get(cacheKey);
     if (prefetchPromise) {
@@ -16405,7 +16752,9 @@ class WikiPage extends BasePage {
       home: this.LangString("wikiPage.home"),
       copyLink: WIKI_ARTICLE_LINK_LABELS[this.props.lang].copy,
       articleLinkCopied: WIKI_ARTICLE_LINK_LABELS[this.props.lang].copied,
-      copyCurrentSectionLink: this.LangString("wikiPage.copyCurrentSectionLink"),
+      copyCurrentSectionLink: this.LangString(
+        "wikiPage.copyCurrentSectionLink"
+      ),
       sectionLinkCopied: this.LangString("wikiPage.sectionLinkCopied"),
       linkCopied: this.LangString("wikiPage.linkCopied"),
       closeLightbox: this.LangString("wikiPage.closeLightbox"),
@@ -16443,13 +16792,32 @@ class WikiPage extends BasePage {
     const text = this.GetText();
     const { before, match, after } = item.wikiSearchSnippet;
     const matchLabel = item.wikiSearchMatchIn === "title" ? text.searchMatchTitle : text.searchMatchBody;
-    return /* @__PURE__ */ react.createElement("span", { className: `wiki-search-snippet ${compact ? "wiki-search-snippet--compact" : ""}` }, /* @__PURE__ */ react.createElement("span", { className: "wiki-search-snippet__label" }, matchLabel), /* @__PURE__ */ react.createElement("span", { className: "wiki-search-snippet__text" }, before, /* @__PURE__ */ react.createElement("mark", { className: "wiki-search-mark" }, match), after));
+    return /* @__PURE__ */ react.createElement(
+      "span",
+      {
+        className: `wiki-search-snippet ${compact ? "wiki-search-snippet--compact" : ""}`
+      },
+      /* @__PURE__ */ react.createElement("span", { className: "wiki-search-snippet__label" }, matchLabel),
+      /* @__PURE__ */ react.createElement("span", { className: "wiki-search-snippet__text" }, before, /* @__PURE__ */ react.createElement("mark", { className: "wiki-search-mark" }, match), after)
+    );
   }
   renderNavSkeleton(count = 5) {
-    return Array.from({ length: count }).map((_, index) => /* @__PURE__ */ react.createElement("div", { key: `nav-skeleton-${index}`, className: "wiki-skeleton wiki-skeleton--nav" }));
+    return Array.from({ length: count }).map((_, index) => /* @__PURE__ */ react.createElement(
+      "div",
+      {
+        key: `nav-skeleton-${index}`,
+        className: "wiki-skeleton wiki-skeleton--nav"
+      }
+    ));
   }
   renderCatalogSkeleton(count = 6) {
-    return /* @__PURE__ */ react.createElement("div", { className: "wiki-grid" }, Array.from({ length: count }).map((_, index) => /* @__PURE__ */ react.createElement("div", { key: `card-skeleton-${index}`, className: "wiki-skeleton wiki-skeleton--card" })));
+    return /* @__PURE__ */ react.createElement("div", { className: "wiki-grid" }, Array.from({ length: count }).map((_, index) => /* @__PURE__ */ react.createElement(
+      "div",
+      {
+        key: `card-skeleton-${index}`,
+        className: "wiki-skeleton wiki-skeleton--card"
+      }
+    )));
   }
   renderNavList(filteredList, hasActiveFilter) {
     const { loadingList, searchLoading } = this.state;
@@ -16473,7 +16841,7 @@ class WikiPage extends BasePage {
           className: `wiki-nav-item ${isActive ? "active" : ""}`,
           onClick: () => this.LoadWikiFile(item, { scrollToTop: true })
         },
-        /* @__PURE__ */ react.createElement("span", { className: "wiki-nav-item__icon" }, PickWikiIcon(item.id, index)),
+        /* @__PURE__ */ react.createElement("span", { className: "wiki-nav-item__icon" }, ResolveWikiIcon(item, index)),
         /* @__PURE__ */ react.createElement("span", { className: "wiki-nav-item__body" }, /* @__PURE__ */ react.createElement("span", { className: "wiki-nav-item__label" }, this.LangString(item.name)), hasActiveFilter ? this.renderSearchSnippet(item, true) : null)
       );
     });
@@ -16505,13 +16873,19 @@ class WikiPage extends BasePage {
           className: `wiki-card__icon-wrap ${badge ? `wiki-card__icon-wrap--${badge}` : ""}`,
           "aria-hidden": "true"
         },
-        /* @__PURE__ */ react.createElement("span", { className: "wiki-card__title-icon" }, PickWikiIcon(item.id, index))
+        /* @__PURE__ */ react.createElement("span", { className: "wiki-card__title-icon" }, ResolveWikiIcon(item, index))
       ), /* @__PURE__ */ react.createElement("span", { className: "wiki-card__title-text" }, this.LangString(item.name))), !hasActiveFilter && (hasTags || cardDate) ? /* @__PURE__ */ react.createElement(
         "span",
         {
           className: `wiki-card__footer ${!hasTags && cardDate ? "wiki-card__footer--solo-date" : ""}`
         },
-        hasTags ? /* @__PURE__ */ react.createElement("span", { className: "wiki-card__tags" }, badge ? /* @__PURE__ */ react.createElement("span", { className: `wiki-card__badge wiki-card__badge--${badge}` }, badgeLabel) : null, showGroupLabel && groupLabel ? /* @__PURE__ */ react.createElement("span", { className: "wiki-card__group" }, groupLabel) : null) : null,
+        hasTags ? /* @__PURE__ */ react.createElement("span", { className: "wiki-card__tags" }, badge ? /* @__PURE__ */ react.createElement(
+          "span",
+          {
+            className: `wiki-card__badge wiki-card__badge--${badge}`
+          },
+          badgeLabel
+        ) : null, showGroupLabel && groupLabel ? /* @__PURE__ */ react.createElement("span", { className: "wiki-card__group" }, groupLabel) : null) : null,
         cardDate ? /* @__PURE__ */ react.createElement(
           "time",
           {
@@ -16538,10 +16912,14 @@ class WikiPage extends BasePage {
       return /* @__PURE__ */ react.createElement("div", { className: "wiki-state" }, hasActiveFilter ? text.searchNoResults : text.emptyList);
     }
     if (hasActiveFilter) {
-      return /* @__PURE__ */ react.createElement("div", { className: "wiki-grid wiki-grid--search" }, filteredList.map((item, index) => this.renderWikiCard(item, index, true)));
+      return /* @__PURE__ */ react.createElement("div", { className: "wiki-grid wiki-grid--search" }, filteredList.map(
+        (item, index) => this.renderWikiCard(item, index, true)
+      ));
     }
     const featured = SortWikiByImportance(
-      filteredList.filter((item) => item.wikiBadge && WIKI_FEATURED_BADGES.has(item.wikiBadge))
+      filteredList.filter(
+        (item) => item.wikiBadge && WIKI_FEATURED_BADGES.has(item.wikiBadge)
+      )
     );
     const featuredIds = new Set(featured.map((item) => String(item.id)));
     const rest = filteredList.filter((item) => !featuredIds.has(String(item.id)));
@@ -16569,7 +16947,9 @@ class WikiPage extends BasePage {
       return left.group.localeCompare(right.group, this.props.lang);
     });
     const onlyFallbackGroup = groupEntries.length === 1 && groupEntries[0].isFallback;
-    return /* @__PURE__ */ react.createElement("div", { className: "wiki-catalog__sections" }, featured.length ? /* @__PURE__ */ react.createElement("section", { className: "wiki-catalog__section wiki-catalog__section--featured" }, /* @__PURE__ */ react.createElement(WikiCatalogSectionHeading, { title: text.featured, kind: "featured" }), /* @__PURE__ */ react.createElement("div", { className: "wiki-grid" }, featured.map((item, index) => this.renderWikiCard(item, index, false)))) : null, groupEntries.map(({ group, items, isFallback }) => /* @__PURE__ */ react.createElement(
+    return /* @__PURE__ */ react.createElement("div", { className: "wiki-catalog__sections" }, featured.length ? /* @__PURE__ */ react.createElement("section", { className: "wiki-catalog__section wiki-catalog__section--featured" }, /* @__PURE__ */ react.createElement(WikiCatalogSectionHeading, { title: text.featured, kind: "featured" }), /* @__PURE__ */ react.createElement("div", { className: "wiki-grid" }, featured.map(
+      (item, index) => this.renderWikiCard(item, index, false)
+    ))) : null, groupEntries.map(({ group, items, isFallback }) => /* @__PURE__ */ react.createElement(
       "section",
       {
         key: group,
@@ -16583,7 +16963,9 @@ class WikiPage extends BasePage {
         }
       ),
       /* @__PURE__ */ react.createElement("div", { className: "wiki-grid" }, items.map(
-        (item, index) => this.renderWikiCard(item, index, false, { showGroupLabel: isFallback })
+        (item, index) => this.renderWikiCard(item, index, false, {
+          showGroupLabel: isFallback
+        })
       ))
     )));
   }
@@ -16593,7 +16975,14 @@ class WikiPage extends BasePage {
     const botUrl = `https://t.me/${Core.GetConfigValue("projectBot")}`;
     const siteUrl = BuildWikiApplicationUrl();
     const tariffs = TARIF_LIST.filter((tarif) => !tarif.disable_order);
-    return /* @__PURE__ */ react.createElement("aside", { className: "wiki-side-panel" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-side-panel__inner" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-side-panel__scroll" }, APPLICATIONS_CATALOG.length > 0 ? /* @__PURE__ */ react.createElement("section", { className: "wiki-side-block wiki-side-block--app" }, /* @__PURE__ */ react.createElement(WikiSectionHeading, { icon: WIKI_ICON_APPS, className: "wiki-side-block__title" }, this.LangString("landingAppsTitle")), APPLICATIONS_CATALOG.map((app) => /* @__PURE__ */ react.createElement("div", { key: app.id, className: "wiki-side-app" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-side-app__card" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-side-app__brand" }, app.iconURL ? /* @__PURE__ */ react.createElement(
+    return /* @__PURE__ */ react.createElement("aside", { className: "wiki-side-panel" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-side-panel__inner" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-side-panel__scroll" }, APPLICATIONS_CATALOG.length > 0 ? /* @__PURE__ */ react.createElement("section", { className: "wiki-side-block wiki-side-block--app" }, /* @__PURE__ */ react.createElement(
+      WikiSectionHeading,
+      {
+        icon: WIKI_ICON_APPS,
+        className: "wiki-side-block__title"
+      },
+      this.LangString("landingAppsTitle")
+    ), APPLICATIONS_CATALOG.map((app) => /* @__PURE__ */ react.createElement("div", { key: app.id, className: "wiki-side-app" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-side-app__card" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-side-app__brand" }, app.iconURL ? /* @__PURE__ */ react.createElement(
       "img",
       {
         className: "wiki-side-app__icon",
@@ -16609,24 +16998,53 @@ class WikiPage extends BasePage {
         rel: "noopener noreferrer",
         className: "wiki-side-app__btn"
       },
-      /* @__PURE__ */ react.createElement("span", { className: "wiki-side-app__btn-icon", "aria-hidden": "true" }, "\u2193"),
+      /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "wiki-side-app__btn-icon",
+          "aria-hidden": "true"
+        },
+        "\u2193"
+      ),
       this.LangString("landingAppsDownload")
     ), app.id === "proxybridge" ? /* @__PURE__ */ react.createElement(
       "a",
       {
-        href: BuildWikiArticlePath(WIKI_PROXY_BRIDGE_GUIDE_ARTICLE_ID),
+        href: BuildWikiArticlePath(
+          WIKI_PROXY_BRIDGE_GUIDE_ARTICLE_ID
+        ),
         className: "wiki-side-app__btn wiki-side-app__btn--guide",
         onClick: (event) => {
           event.preventDefault();
-          this.OpenWikiArticleById(WIKI_PROXY_BRIDGE_GUIDE_ARTICLE_ID);
+          this.OpenWikiArticleById(
+            WIKI_PROXY_BRIDGE_GUIDE_ARTICLE_ID
+          );
         }
       },
-      /* @__PURE__ */ react.createElement("span", { className: "wiki-side-app__btn-icon", "aria-hidden": "true" }, "?"),
+      /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "wiki-side-app__btn-icon",
+          "aria-hidden": "true"
+        },
+        "?"
+      ),
       sideLabels.howToUse
-    ) : null))))) : null, /* @__PURE__ */ react.createElement("section", { className: "wiki-side-block" }, /* @__PURE__ */ react.createElement(WikiSectionHeading, { icon: WIKI_ICON_TARIFFS, className: "wiki-side-block__title" }, this.LangString("landingTarifs")), /* @__PURE__ */ react.createElement("ul", { className: "wiki-side-tariffs" }, tariffs.map((tarif) => {
+    ) : null))))) : null, /* @__PURE__ */ react.createElement("section", { className: "wiki-side-block" }, /* @__PURE__ */ react.createElement(
+      WikiSectionHeading,
+      {
+        icon: WIKI_ICON_TARIFFS,
+        className: "wiki-side-block__title"
+      },
+      this.LangString("landingTarifs")
+    ), /* @__PURE__ */ react.createElement("ul", { className: "wiki-side-tariffs" }, tariffs.map((tarif) => {
       const isPopular = tarif.id === WIKI_POPULAR_TARIF_ID;
       const discount = tarif.oldPrice && tarif.oldPrice > 0 ? (tarif.price / tarif.oldPrice * 100).toFixed(0) : "";
-      const priceText = CurrencyConvertText(tarif.price, this.currency, true);
+      const priceText = CurrencyConvertText(
+        tarif.price,
+        this.currency,
+        true
+      );
       return /* @__PURE__ */ react.createElement(
         "li",
         {
@@ -16635,7 +17053,14 @@ class WikiPage extends BasePage {
         },
         tarif.trialHours ? /* @__PURE__ */ react.createElement("div", { className: "wiki-side-tariff__trial-banner" }, sideLabels.trialFree(tarif.trialHours)) : null,
         isPopular ? /* @__PURE__ */ react.createElement("div", { className: "wiki-side-tariff__popular-banner" }, sideLabels.popularTariff) : null,
-        /* @__PURE__ */ react.createElement("div", { className: "wiki-side-tariff__body" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-side-tariff__left" }, /* @__PURE__ */ react.createElement("span", { className: "wiki-side-tariff__name" }, this.LangString(tarif.name)), /* @__PURE__ */ react.createElement("span", { className: "wiki-side-tariff__gb" }, FormatWikiTariffTraffic(tarif.gb, this.props.lang)), /* @__PURE__ */ react.createElement("span", { className: "wiki-side-tariff__period" }, FormatWikiTariffPeriod(tarif.days, this.props.lang))), /* @__PURE__ */ react.createElement("div", { className: "wiki-side-tariff__price" }, tarif.oldPrice ? /* @__PURE__ */ react.createElement("s", null, CurrencyConvertText(tarif.oldPrice, this.currency, true)) : null, /* @__PURE__ */ react.createElement("span", { className: "wiki-side-tariff__amount" }, priceText), !tarif.trialHours && discount ? /* @__PURE__ */ react.createElement("span", { className: "wiki-side-tariff__discount" }, "\u2212", Math.round(100 - Number(discount)), "%") : null))
+        /* @__PURE__ */ react.createElement("div", { className: "wiki-side-tariff__body" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-side-tariff__left" }, /* @__PURE__ */ react.createElement("span", { className: "wiki-side-tariff__name" }, this.LangString(tarif.name)), /* @__PURE__ */ react.createElement("span", { className: "wiki-side-tariff__gb" }, FormatWikiTariffTraffic(tarif.gb, this.props.lang)), /* @__PURE__ */ react.createElement("span", { className: "wiki-side-tariff__period" }, FormatWikiTariffPeriod(
+          tarif.days,
+          this.props.lang
+        ))), /* @__PURE__ */ react.createElement("div", { className: "wiki-side-tariff__price" }, tarif.oldPrice ? /* @__PURE__ */ react.createElement("s", null, CurrencyConvertText(
+          tarif.oldPrice,
+          this.currency,
+          true
+        )) : null, /* @__PURE__ */ react.createElement("span", { className: "wiki-side-tariff__amount" }, priceText), !tarif.trialHours && discount ? /* @__PURE__ */ react.createElement("span", { className: "wiki-side-tariff__discount" }, "\u2212", Math.round(100 - Number(discount)), "%") : null))
       );
     })), /* @__PURE__ */ react.createElement("div", { className: "wiki-side-block__actions" }, /* @__PURE__ */ react.createElement(
       "a",
@@ -16655,7 +17080,14 @@ class WikiPage extends BasePage {
         rel: "noopener noreferrer",
         className: "wiki-side-block__cta wiki-side-block__cta--site"
       },
-      /* @__PURE__ */ react.createElement("span", { className: "wiki-side-block__cta-icon", "aria-hidden": "true" }, "\u{1F310}"),
+      /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "wiki-side-block__cta-icon",
+          "aria-hidden": "true"
+        },
+        "\u{1F310}"
+      ),
       text.sideConnectWebsite
     ))))));
   }
@@ -16670,10 +17102,10 @@ class WikiPage extends BasePage {
     );
     const hasToc = hasSelected && this.state.toc.length > 0;
     const readingMinutes = this.state.selected ? EstimateReadingMinutes(this.state.selected) : 0;
-    const selectedItem = this.state.list.find(
-      (item) => String(item.id) === String(this.state.selectedId)
-    );
+    const selectedItem = this.GetSelectedCatalogItem();
     const selectedGroup = ((selectedItem == null ? void 0 : selectedItem.wikiGroup) || "").trim();
+    const selectedBadge = selectedItem == null ? void 0 : selectedItem.wikiBadge;
+    const selectedBadgeLabel = selectedBadge ? this.GetText().badge[selectedBadge] : "";
     let errorText = "";
     if (this.state.error === "load_list_failed") {
       errorText = text.loadListError;
@@ -16682,7 +17114,23 @@ class WikiPage extends BasePage {
     } else if (this.state.error === "load_article_failed") {
       errorText = text.loadArticleError;
     }
-    return /* @__PURE__ */ react.createElement("section", { className: "wiki" }, /* @__PURE__ */ react.createElement("div", { className: `wiki-hero ${hasSelected ? "wiki-hero--compact" : ""}` }, /* @__PURE__ */ react.createElement("div", { className: "container wiki-hero__inner" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-hero__brand" }, /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__badge", "aria-hidden": "true" }, hasSelected ? "\u{1F4D6}" : "\u{1F680}"), /* @__PURE__ */ react.createElement("h1", { className: "wiki-hero__heading" }, hasSelected ? this.state.selectedTitle : text.title)), /* @__PURE__ */ react.createElement("div", { className: "wiki-hero__meta" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-hero__meta-row wiki-hero__meta-row--lead" }, hasSelected ? /* @__PURE__ */ react.createElement("p", { className: "wiki-hero__description" }, text.articleLead) : loadingList && !this.state.list.length ? /* @__PURE__ */ react.createElement("p", { className: "wiki-hero__description wiki-hero__description--muted" }, text.loadingList) : searchLoading && hasActiveFilter ? /* @__PURE__ */ react.createElement("p", { className: "wiki-hero__description wiki-hero__description--muted" }, text.searching) : hasActiveFilter ? /* @__PURE__ */ react.createElement("p", { className: "wiki-hero__description wiki-hero__description--muted" }, text.searchHint) : /* @__PURE__ */ react.createElement("p", { className: "wiki-hero__description" }, text.description)), /* @__PURE__ */ react.createElement("div", { className: "wiki-hero__meta-row wiki-hero__meta-row--tags" }, hasSelected ? /* @__PURE__ */ react.createElement(react.Fragment, null, readingMinutes ? /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__topic" }, "\u23F1 ", readingMinutes, " ", text.readingTime) : null, this.state.selectedUpdatedAt ? /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__topic" }, "\u{1F5D3} ", FormatWikiUpdatedDate(this.state.selectedUpdatedAt, this.props.lang)) : null, selectedGroup ? /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__topic" }, selectedGroup) : null) : hasActiveFilter ? /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__topic wiki-hero__topic--search" }, "\xAB", filter, "\xBB") : text.heroTopics.map((topic) => /* @__PURE__ */ react.createElement("span", { key: topic, className: "wiki-hero__topic" }, topic))), /* @__PURE__ */ react.createElement("div", { className: "wiki-hero__meta-row wiki-hero__stats" }, hasSelected ? /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__pill" }, "\u{1F4D6} ", text.title), /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__lead" }, text.articleHint)) : /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__pill" }, FormatWikiArticlesCount(
+    return /* @__PURE__ */ react.createElement("section", { className: "wiki" }, /* @__PURE__ */ react.createElement("div", { className: `wiki-hero ${hasSelected ? "wiki-hero--compact" : ""}` }, /* @__PURE__ */ react.createElement("div", { className: "container wiki-hero__inner" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-hero__brand" }, /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__badge", "aria-hidden": "true" }, hasSelected ? ResolveWikiIcon(
+      selectedItem != null ? selectedItem : {
+        id: this.state.selectedId || "",
+        name: { ru: "", en: "", uk: "" },
+        updated: 0
+      },
+      0
+    ) : "\u{1F680}"), /* @__PURE__ */ react.createElement("h1", { className: "wiki-hero__heading" }, hasSelected ? this.state.selectedTitle : text.title)), /* @__PURE__ */ react.createElement("div", { className: "wiki-hero__meta" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-hero__meta-row wiki-hero__meta-row--lead" }, hasSelected ? /* @__PURE__ */ react.createElement("p", { className: "wiki-hero__description" }, text.articleLead) : loadingList && !this.state.list.length ? /* @__PURE__ */ react.createElement("p", { className: "wiki-hero__description wiki-hero__description--muted" }, text.loadingList) : searchLoading && hasActiveFilter ? /* @__PURE__ */ react.createElement("p", { className: "wiki-hero__description wiki-hero__description--muted" }, text.searching) : hasActiveFilter ? /* @__PURE__ */ react.createElement("p", { className: "wiki-hero__description wiki-hero__description--muted" }, text.searchHint) : /* @__PURE__ */ react.createElement("p", { className: "wiki-hero__description" }, text.description)), /* @__PURE__ */ react.createElement("div", { className: "wiki-hero__meta-row wiki-hero__meta-row--tags" }, hasSelected ? /* @__PURE__ */ react.createElement(react.Fragment, null, readingMinutes ? /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__topic" }, "\u23F1 ", readingMinutes, " ", text.readingTime) : null, this.state.selectedUpdatedAt ? /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__topic" }, "\u{1F5D3}", " ", FormatWikiUpdatedDate(
+      this.state.selectedUpdatedAt,
+      this.props.lang
+    )) : null, selectedGroup ? /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__topic" }, selectedGroup) : null, selectedBadge && selectedBadgeLabel ? /* @__PURE__ */ react.createElement(
+      "span",
+      {
+        className: `wiki-hero__topic wiki-hero__topic--badge wiki-hero__topic--badge-${selectedBadge}`
+      },
+      selectedBadgeLabel
+    ) : null) : hasActiveFilter ? /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__topic wiki-hero__topic--search" }, "\xAB", filter, "\xBB") : text.heroTopics.map((topic) => /* @__PURE__ */ react.createElement("span", { key: topic, className: "wiki-hero__topic" }, topic))), /* @__PURE__ */ react.createElement("div", { className: "wiki-hero__meta-row wiki-hero__stats" }, hasSelected ? /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__pill" }, "\u{1F4D6} ", text.title), /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__lead" }, text.articleHint)) : /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__pill" }, FormatWikiArticlesCount(
       hasActiveFilter ? filteredList.length : this.state.list.length,
       this.props.lang
     )), /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__lead" }, text.subtitle)))), /* @__PURE__ */ react.createElement("div", { className: "wiki-hero__search" }, /* @__PURE__ */ react.createElement("span", { className: "wiki-hero__search-icon", "aria-hidden": "true" }, "\u{1F50D}"), /* @__PURE__ */ react.createElement(
@@ -16699,7 +17147,15 @@ class WikiPage extends BasePage {
       {
         className: `container wiki-shell${hasToc ? " wiki-shell--has-toc" : ""}`
       },
-      /* @__PURE__ */ react.createElement("div", { className: "wiki-left-rail" }, /* @__PURE__ */ react.createElement("aside", { className: "wiki-sidebar" }, /* @__PURE__ */ react.createElement(WikiSectionHeading, { icon: WIKI_ICON_NAVIGATION, as: "div", className: "wiki-sidebar__label" }, text.navigation), /* @__PURE__ */ react.createElement(
+      /* @__PURE__ */ react.createElement("div", { className: "wiki-left-rail" }, /* @__PURE__ */ react.createElement("aside", { className: "wiki-sidebar" }, /* @__PURE__ */ react.createElement(
+        WikiSectionHeading,
+        {
+          icon: WIKI_ICON_NAVIGATION,
+          as: "div",
+          className: "wiki-sidebar__label"
+        },
+        text.navigation
+      ), /* @__PURE__ */ react.createElement(
         "nav",
         {
           className: `wiki-sidebar__nav${filteredList.length > WIKI_NAV_SCROLL_MIN_ITEMS ? " wiki-sidebar__nav--scrollable" : ""}`
@@ -16713,7 +17169,14 @@ class WikiPage extends BasePage {
           "data-toc-id": item.id,
           className: `wiki-toc__item wiki-toc__item--h${item.level} ${this.state.activeTocId === item.id ? "active" : ""}`
         },
-        /* @__PURE__ */ react.createElement("button", { type: "button", onClick: () => this.ScrollToToc(item.id) }, item.text)
+        /* @__PURE__ */ react.createElement(
+          "button",
+          {
+            type: "button",
+            onClick: () => this.ScrollToToc(item.id)
+          },
+          item.text
+        )
       ))), /* @__PURE__ */ react.createElement(
         "button",
         {
@@ -16722,8 +17185,26 @@ class WikiPage extends BasePage {
           onClick: this.CopyCurrentSectionLink
         },
         this.state.sectionLinkCopied ? `\u{1F517} ${text.sectionLinkCopied}` : `\u{1F517} ${text.copyCurrentSectionLink}`
-      ), /* @__PURE__ */ react.createElement("button", { type: "button", className: "wiki-share-btn", onClick: () => this.ScrollToTop() }, "\u2191 ", text.backToTop)) : null,
-      /* @__PURE__ */ react.createElement("main", { className: "wiki-main", ref: this.contentRef }, hasSelected ? /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("div", { className: "wiki-article-head" }, /* @__PURE__ */ react.createElement("button", { type: "button", className: "wiki-back", onClick: () => this.ResetSelection() }, "\u2190 ", text.back), /* @__PURE__ */ react.createElement("nav", { className: "wiki-article-bar", "aria-label": "Breadcrumb" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-article-bar__crumb" }, /* @__PURE__ */ react.createElement(
+      ), /* @__PURE__ */ react.createElement(
+        "button",
+        {
+          type: "button",
+          className: "wiki-share-btn",
+          onClick: () => this.ScrollToTop()
+        },
+        "\u2191 ",
+        text.backToTop
+      )) : null,
+      /* @__PURE__ */ react.createElement("main", { className: "wiki-main", ref: this.contentRef }, hasSelected ? /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("div", { className: "wiki-article-head" }, /* @__PURE__ */ react.createElement(
+        "button",
+        {
+          type: "button",
+          className: "wiki-back",
+          onClick: () => this.ResetSelection()
+        },
+        "\u2190 ",
+        text.back
+      ), /* @__PURE__ */ react.createElement("nav", { className: "wiki-article-bar", "aria-label": "Breadcrumb" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-article-bar__crumb" }, /* @__PURE__ */ react.createElement(
         "button",
         {
           type: "button",
@@ -16731,7 +17212,14 @@ class WikiPage extends BasePage {
           onClick: () => this.ResetSelection()
         },
         text.home
-      ), /* @__PURE__ */ react.createElement("span", { className: "wiki-article-bar__sep", "aria-hidden": "true" }, "\u203A"), /* @__PURE__ */ react.createElement("span", { className: "wiki-article-bar__title" }, this.state.selectedTitle)), /* @__PURE__ */ react.createElement(
+      ), /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "wiki-article-bar__sep",
+          "aria-hidden": "true"
+        },
+        "\u203A"
+      ), /* @__PURE__ */ react.createElement("span", { className: "wiki-article-bar__title" }, this.state.selectedTitle)), /* @__PURE__ */ react.createElement(
         "button",
         {
           type: "button",
@@ -16748,51 +17236,68 @@ class WikiPage extends BasePage {
           dangerouslySetInnerHTML: { __html: this.state.selected }
         }
       ) : null) : /* @__PURE__ */ react.createElement("div", { className: "wiki-catalog" }, hasActiveFilter ? /* @__PURE__ */ react.createElement("div", { className: "wiki-catalog__head wiki-catalog__head--search" }, /* @__PURE__ */ react.createElement("p", { className: "wiki-catalog__search-query" }, text.searchHint, ": ", /* @__PURE__ */ react.createElement("strong", null, "\xAB", filter, "\xBB"))) : null, errorText ? /* @__PURE__ */ react.createElement("div", { className: "wiki-error" }, errorText) : null, this.renderCatalogGrid(filteredList, hasActiveFilter)))
-    ), this.state.lightboxSrc ? /* @__PURE__ */ react.createElement("div", { className: "wiki-lightbox", onClick: this.CloseLightbox, role: "dialog", "aria-modal": "true" }, /* @__PURE__ */ react.createElement("div", { className: "wiki-lightbox__actions" }, /* @__PURE__ */ react.createElement(
-      "button",
+    ), this.state.lightboxSrc ? /* @__PURE__ */ react.createElement(
+      "div",
       {
-        type: "button",
-        className: "wiki-lightbox__action wiki-lightbox__open",
-        "aria-label": text.openImageInNewTab,
-        title: text.openImageInNewTab,
-        onClick: (event) => {
-          event.stopPropagation();
-          this.OpenLightboxInNewTab();
-        }
+        className: "wiki-lightbox",
+        onClick: this.CloseLightbox,
+        role: "dialog",
+        "aria-modal": "true"
       },
-      /* @__PURE__ */ react.createElement("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ react.createElement(
-        "path",
+      /* @__PURE__ */ react.createElement("div", { className: "wiki-lightbox__actions" }, /* @__PURE__ */ react.createElement(
+        "button",
         {
-          d: "M14 3h7v7M10 14L21 3M21 10v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10",
-          fill: "none",
-          stroke: "currentColor",
-          strokeWidth: "2",
-          strokeLinecap: "round",
-          strokeLinejoin: "round"
-        }
-      ))
-    ), /* @__PURE__ */ react.createElement(
-      "button",
-      {
-        type: "button",
-        className: "wiki-lightbox__action wiki-lightbox__close",
-        "aria-label": text.closeLightbox,
-        title: text.closeLightbox,
-        onClick: (event) => {
-          event.stopPropagation();
-          this.CloseLightbox();
-        }
-      },
-      "\xD7"
-    )), /* @__PURE__ */ react.createElement("div", { className: "wiki-lightbox__frame", onClick: (event) => event.stopPropagation() }, /* @__PURE__ */ react.createElement(
-      "img",
-      {
-        src: this.state.lightboxSrc,
-        alt: "",
-        className: "wiki-lightbox__image",
-        onClick: this.CloseLightbox
-      }
-    ))) : null);
+          type: "button",
+          className: "wiki-lightbox__action wiki-lightbox__open",
+          "aria-label": text.openImageInNewTab,
+          title: text.openImageInNewTab,
+          onClick: (event) => {
+            event.stopPropagation();
+            this.OpenLightboxInNewTab();
+          }
+        },
+        /* @__PURE__ */ react.createElement("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" }, /* @__PURE__ */ react.createElement(
+          "path",
+          {
+            d: "M14 3h7v7M10 14L21 3M21 10v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10",
+            fill: "none",
+            stroke: "currentColor",
+            strokeWidth: "2",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+          }
+        ))
+      ), /* @__PURE__ */ react.createElement(
+        "button",
+        {
+          type: "button",
+          className: "wiki-lightbox__action wiki-lightbox__close",
+          "aria-label": text.closeLightbox,
+          title: text.closeLightbox,
+          onClick: (event) => {
+            event.stopPropagation();
+            this.CloseLightbox();
+          }
+        },
+        "\xD7"
+      )),
+      /* @__PURE__ */ react.createElement(
+        "div",
+        {
+          className: "wiki-lightbox__frame",
+          onClick: (event) => event.stopPropagation()
+        },
+        /* @__PURE__ */ react.createElement(
+          "img",
+          {
+            src: this.state.lightboxSrc,
+            alt: "",
+            className: "wiki-lightbox__image",
+            onClick: this.CloseLightbox
+          }
+        )
+      )
+    ) : null);
   }
 }
 

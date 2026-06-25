@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 6/23/2026, 9:52:03 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 6/25/2026, 9:32:07 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -11559,6 +11559,7 @@ const initialState = shared_spreadProps(shared_spreadValues({}, stateData), {
     xray_sni: "template.rocketman-vpn.com",
     xray_sni_port: "443",
     xray_port: "443",
+    hysteria_port: "1462-1470",
     xray_fingerprint: "firefox",
     nft_whitelist: false,
     nft_whitelist_domains: false
@@ -12624,6 +12625,114 @@ const UserEditPanel = ({
   )));
 };
 
+;// ./src/shared/hysteria/ports.ts
+
+const HYSTERIA_MAX_PORTS = 20;
+const PORT_MIN = 1;
+const PORT_MAX = 65535;
+const PART_RE = /^(\d{1,5})(?:-(\d{1,5}))?$/;
+function parsePortValue(value) {
+  const n = parseInt(value, 10);
+  if (!Number.isFinite(n) || n < PORT_MIN || n > PORT_MAX) return null;
+  return n;
+}
+function expandHysteriaPortSpec(raw) {
+  const ports = /* @__PURE__ */ new Set();
+  const clientParts = [];
+  for (const part of raw.split(",").map((s) => s.trim()).filter(Boolean)) {
+    const match = part.match(PART_RE);
+    if (!match) {
+      return {
+        ports: [],
+        clientParts: [],
+        error: "\u041D\u0435\u0432\u0435\u0440\u043D\u044B\u0439 \u0444\u043E\u0440\u043C\u0430\u0442. \u041F\u0440\u0438\u043C\u0435\u0440: 1462-1470 \u0438\u043B\u0438 1462,1465,1468"
+      };
+    }
+    const start = parsePortValue(match[1]);
+    const end = match[2] ? parsePortValue(match[2]) : start;
+    if (start === null || end === null) {
+      return {
+        ports: [],
+        clientParts: [],
+        error: `\u041F\u043E\u0440\u0442 \u0434\u043E\u043B\u0436\u0435\u043D \u0431\u044B\u0442\u044C \u043E\u0442 ${PORT_MIN} \u0434\u043E ${PORT_MAX}`
+      };
+    }
+    if (start > end) {
+      return {
+        ports: [],
+        clientParts: [],
+        error: `\u041D\u0435\u0432\u0435\u0440\u043D\u044B\u0439 \u0434\u0438\u0430\u043F\u0430\u0437\u043E\u043D: ${part}`
+      };
+    }
+    clientParts.push(match[2] ? `${start}-${end}` : String(start));
+    for (let p = start; p <= end; p++) ports.add(p);
+  }
+  if (ports.size === 0) {
+    return {
+      ports: [],
+      clientParts: [],
+      error: "\u0423\u043A\u0430\u0436\u0438\u0442\u0435 \u0445\u043E\u0442\u044F \u0431\u044B \u043E\u0434\u0438\u043D \u043F\u043E\u0440\u0442"
+    };
+  }
+  return { ports: [...ports].sort((a, b) => a - b), clientParts };
+}
+function toListenAddress(clientParts) {
+  let best = null;
+  for (const part of clientParts) {
+    if (part.includes("-")) {
+      const [startStr, endStr] = part.split("-");
+      const start = parseInt(startStr, 10);
+      const end = parseInt(endStr, 10);
+      const count = end - start + 1;
+      if (!best || count > best.count) {
+        best = { start, end, count };
+      }
+    } else {
+      const port = parseInt(part, 10);
+      if (!best || best.count < 1) {
+        best = { start: port, end: port, count: 1 };
+      }
+    }
+  }
+  if (!best) return ":443";
+  return best.start === best.end ? `:${best.start}` : `:${best.start}-${best.end}`;
+}
+function validateHysteriaPortSpec(spec) {
+  const raw = spec == null ? void 0 : spec.trim();
+  if (!raw) return { ok: true, portCount: 0 };
+  const expanded = expandHysteriaPortSpec(raw);
+  if (expanded.error) return { ok: false, error: expanded.error };
+  const portCount = expanded.ports.length;
+  if (portCount > HYSTERIA_MAX_PORTS) {
+    return {
+      ok: false,
+      error: `\u0423\u043A\u0430\u0437\u0430\u043D\u043E ${portCount} \u043F\u043E\u0440\u0442\u043E\u0432, \u043C\u0430\u043A\u0441\u0438\u043C\u0443\u043C ${HYSTERIA_MAX_PORTS}`
+    };
+  }
+  return { ok: true, portCount };
+}
+function parseHysteriaPortSpec(spec) {
+  const raw = (spec || "1462-1470" || 0).trim();
+  const validation = validateHysteriaPortSpec(raw);
+  if (!validation.ok) {
+    throw new Error(validation.error);
+  }
+  const expanded = expandHysteriaPortSpec(raw);
+  if (expanded.error) {
+    throw new Error(expanded.error);
+  }
+  const sorted = expanded.ports;
+  const listen = toListenAddress(expanded.clientParts);
+  return {
+    raw,
+    ports: sorted,
+    listen,
+    clientPorts: expanded.clientParts.join(","),
+    primaryPort: sorted[0],
+    portCount: sorted.length
+  };
+}
+
 ;// ./src/application/pages/admin/modules/NodeModule.tsx
 
 var NodeModule_defProp = Object.defineProperty;
@@ -12645,6 +12754,7 @@ var NodeModule_spreadValues = (a, b) => {
   return a;
 };
 var NodeModule_spreadProps = (a, b) => NodeModule_defProps(a, NodeModule_getOwnPropDescs(b));
+
 
 
 
@@ -12752,6 +12862,8 @@ const NewNodeForm = ({ ctx }) => {
     (q) => q.host === new_node.host && q.id !== new_node.id
   );
   const nameEmpty = !!Object.values(new_node.name).find((q) => !q);
+  const hysteriaPortsValidation = validateHysteriaPortSpec(new_node.hysteria_port);
+  const hysteriaPortsInvalid = !hysteriaPortsValidation.ok;
   return /* @__PURE__ */ react.createElement("div", { className: "editUser" }, /* @__PURE__ */ react.createElement("div", { className: "edit-section" }, /* @__PURE__ */ react.createElement("div", { className: "section-title" }, langString("applicationAdminAddNode")), /* @__PURE__ */ react.createElement("div", { className: "info-grid high-density" }, /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "NODE_ID", " ", allNodes.find((q) => q.id === new_node.id) && /* @__PURE__ */ react.createElement("span", { className: "redText" }, "(EXIST!!!)")), /* @__PURE__ */ react.createElement(
     "input",
     {
@@ -12802,7 +12914,21 @@ const NewNodeForm = ({ ctx }) => {
         new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), { xray_port: e.currentTarget.value })
       })
     }
-  )), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XRay Fingerprint"), /* @__PURE__ */ react.createElement(
+  )), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Hysteria Ports"), /* @__PURE__ */ react.createElement(
+    "input",
+    {
+      type: "text",
+      className: hysteriaPortsInvalid ? "error" : "",
+      value: new_node.hysteria_port,
+      placeholder: "1462-1470",
+      title: "\u0414\u0438\u0430\u043F\u0430\u0437\u043E\u043D (1462-1470) \u0438\u043B\u0438 \u0441\u043F\u0438\u0441\u043E\u043A \u0447\u0435\u0440\u0435\u0437 \u0437\u0430\u043F\u044F\u0442\u0443\u044E (1462,1465,1468). \u041D\u0435 \u0431\u043E\u043B\u0435\u0435 20 \u043F\u043E\u0440\u0442\u043E\u0432.",
+      onChange: (e) => setState({
+        new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), {
+          hysteria_port: e.currentTarget.value
+        })
+      })
+    }
+  ), hysteriaPortsInvalid && /* @__PURE__ */ react.createElement("span", { className: "redText", style: { fontSize: "0.8em" } }, hysteriaPortsValidation.error)), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XRay Fingerprint"), /* @__PURE__ */ react.createElement(
     "input",
     {
       type: "text",
@@ -12905,7 +13031,7 @@ const NewNodeForm = ({ ctx }) => {
     {
       className: "greenBg",
       style: { width: "100%", padding: "12px" },
-      disabled: !new_node.flag || !new_node.id || !System.isEmoji(new_node.flag) || !new_node.host || hostConflict || nameEmpty || !new_node.protocols.length,
+      disabled: !new_node.flag || !new_node.id || !System.isEmoji(new_node.flag) || !new_node.host || hostConflict || nameEmpty || !new_node.protocols.length || hysteriaPortsInvalid,
       onClick: (e) => {
         e.preventDefault();
         WebApp.showConfirm("Sure?", (ok) => {
