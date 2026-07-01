@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 6/29/2026, 3:29:51 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 7/1/2026, 2:59:38 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -2435,7 +2435,23 @@ html.wiki-route::-webkit-scrollbar-corner {
   transform: none;
 }
 .wiki .markdown-body.wiki-article p {
-  margin-bottom: 1rem;
+  margin: 0 0 0.45rem;
+}
+.wiki .markdown-body.wiki-article p:last-child {
+  margin-bottom: 0;
+}
+.wiki .markdown-body.wiki-article p:has(> mark:first-child) {
+  margin-bottom: 0.2rem;
+  line-height: 1.55;
+}
+.wiki .markdown-body.wiki-article blockquote + p,
+.wiki .markdown-body.wiki-article .wiki-image-button + p,
+.wiki .markdown-body.wiki-article .wiki-copy-btn + p,
+.wiki .markdown-body.wiki-article .wiki-code-wrap + p {
+  margin-top: 0.25rem;
+}
+.wiki .markdown-body.wiki-article br {
+  line-height: inherit;
 }
 .wiki .markdown-body.wiki-article a:not(.wiki-heading-link) {
   color: #a496e8;
@@ -2459,6 +2475,7 @@ html.wiki-route::-webkit-scrollbar-corner {
   color: rgba(255, 255, 255, 0.88);
 }
 .wiki .markdown-body.wiki-article mark {
+  display: inline;
   background: rgba(240, 138, 74, 0.28);
   color: #ffe8d6;
   padding: 0.1em 0.35em;
@@ -2468,7 +2485,7 @@ html.wiki-route::-webkit-scrollbar-corner {
   font-weight: inherit;
 }
 .wiki .markdown-body.wiki-article blockquote {
-  margin: 1.2rem 0;
+  margin: 0.65rem 0 0.3rem;
   padding: 14px 16px 14px 18px;
   border-left: 4px solid #8774e1;
   border-radius: 0 12px 12px 0;
@@ -2623,7 +2640,7 @@ html.wiki-route::-webkit-scrollbar-corner {
   align-items: center;
   gap: 8px;
   max-width: 100%;
-  margin: 0.35rem 0;
+  margin: 0.2rem 0;
   padding: 8px 12px;
   border-radius: 10px;
   border: 1px dashed rgba(135, 116, 225, 0.45);
@@ -15240,6 +15257,79 @@ const WrapCodeBlocks = (root, labels) => {
     wrap.appendChild(pre);
   });
 };
+const BLOCK_IN_PARAGRAPH_SELECTOR = "img, pre, blockquote, table, ul, ol, hr, .wiki-image-button, .wiki-code-wrap, .wiki-video, .wiki-native-video";
+const IsTinyParagraphFragment = (el) => {
+  if (!el || el.tagName !== "P") return false;
+  if (el.querySelector(BLOCK_IN_PARAGRAPH_SELECTOR)) return false;
+  return (el.textContent || "").trim().length <= 40;
+};
+const IsOrphanInlineElement = (el) => {
+  if (!el) return false;
+  const tag = el.tagName;
+  if (tag === "MARK" || tag === "KBD") return true;
+  if (tag === "SPAN") {
+    const style = el.getAttribute("style") || "";
+    return style.includes("color") || el.classList.contains("wiki-copy");
+  }
+  return false;
+};
+const ShouldMergeInlineFlow = (el) => IsOrphanInlineElement(el) || IsTinyParagraphFragment(el);
+const MergeFragmentedParagraphs = (container) => {
+  const children = () => Array.from(container.children);
+  for (let i = 0; i < children().length; i++) {
+    const child = children()[i];
+    if (!ShouldMergeInlineFlow(child)) continue;
+    let j = i;
+    while (j < children().length && ShouldMergeInlineFlow(children()[j])) j += 1;
+    if (j - i <= 1) continue;
+    const merged = document.createElement("p");
+    container.insertBefore(merged, children()[i]);
+    for (let k = 0; k < j - i; k++) {
+      const el = children()[i + 1];
+      if (!el) break;
+      if (el.tagName === "P") {
+        while (el.firstChild) merged.appendChild(el.firstChild);
+      } else {
+        merged.appendChild(el);
+      }
+      el.remove();
+    }
+    return true;
+  }
+  return false;
+};
+const MergeAllFragmentedParagraphs = (root) => {
+  const containers = [root, ...root.querySelectorAll(".wiki-article-section")];
+  containers.forEach((container) => {
+    while (MergeFragmentedParagraphs(container)) {
+    }
+  });
+};
+const RepairMarkdownEmphasis = (root) => {
+  root.querySelectorAll("p, li, td, th, blockquote").forEach((el) => {
+    if (el.closest("pre, code")) return;
+    if (el.querySelector("pre, code")) return;
+    const html = el.innerHTML;
+    if (!/\*\*/.test(html) && !/\*[^*]/.test(html) && !/_\w/.test(html)) return;
+    let next = html;
+    next = next.replace(/\*\*([^*<\n]+)\*\*/g, "<strong>$1</strong>");
+    next = next.replace(/\*([^*<\n]+)\*/g, "<em>$1</em>");
+    next = next.replace(/_([^_<>\n]+)_/g, "<em>$1</em>");
+    if (next !== html) el.innerHTML = next;
+  });
+};
+const RemoveSpuriousHorizontalRules = (root) => {
+  root.querySelectorAll("hr").forEach((hr) => {
+    const prev = hr.previousElementSibling;
+    const next = hr.nextElementSibling;
+    const prevTiny = prev && IsTinyParagraphFragment(prev);
+    const nextTiny = next && IsTinyParagraphFragment(next);
+    const nextOrphan = next && IsOrphanInlineElement(next);
+    if (prevTiny || nextTiny || nextOrphan) {
+      hr.remove();
+    }
+  });
+};
 const WrapArticleSections = (root) => {
   const children = Array.from(root.children);
   let section = null;
@@ -15330,6 +15420,8 @@ const EnrichArticleHtml = (html, articleId, labels) => {
   const root = document.createElement("div");
   root.innerHTML = html;
   RemoveWikiMetaArtifacts(root);
+  RepairMarkdownEmphasis(root);
+  RemoveSpuriousHorizontalRules(root);
   const usedSlugs = /* @__PURE__ */ new Set();
   root.querySelectorAll("h1, h2, h3").forEach((el, index) => {
     const text = (el.textContent || "").trim();
