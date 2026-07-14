@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 7/1/2026, 2:59:38 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 7/14/2026, 1:12:11 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -2444,11 +2444,40 @@ html.wiki-route::-webkit-scrollbar-corner {
   margin-bottom: 0.2rem;
   line-height: 1.55;
 }
+.wiki .markdown-body.wiki-article p:has(> .wiki-image-button:only-child) {
+  margin: 0;
+}
+.wiki .markdown-body.wiki-article p:has(> .wiki-copy-btn:only-child) {
+  margin: 0;
+}
 .wiki .markdown-body.wiki-article blockquote + p,
 .wiki .markdown-body.wiki-article .wiki-image-button + p,
 .wiki .markdown-body.wiki-article .wiki-copy-btn + p,
 .wiki .markdown-body.wiki-article .wiki-code-wrap + p {
   margin-top: 0.25rem;
+}
+.wiki .markdown-body.wiki-article p:has(> .wiki-image-button:only-child) + p {
+  margin-top: 0;
+}
+.wiki .markdown-body.wiki-article p + p:has(> em:first-child),
+.wiki .markdown-body.wiki-article p + p:has(> i:first-child),
+.wiki .markdown-body.wiki-article ol + p:has(> em:first-child),
+.wiki .markdown-body.wiki-article ol + p:has(> i:first-child),
+.wiki .markdown-body.wiki-article ul + p:has(> em:first-child),
+.wiki .markdown-body.wiki-article ul + p:has(> i:first-child) {
+  margin-top: 0.25rem;
+}
+.wiki .markdown-body.wiki-article ol:has(+ p > em:first-child),
+.wiki .markdown-body.wiki-article ol:has(+ p > i:first-child),
+.wiki .markdown-body.wiki-article ul:has(+ p > em:first-child),
+.wiki .markdown-body.wiki-article ul:has(+ p > i:first-child) {
+  margin-bottom: 0;
+}
+.wiki .markdown-body.wiki-article ol + p:has(> em:first-child),
+.wiki .markdown-body.wiki-article ol + p:has(> i:first-child),
+.wiki .markdown-body.wiki-article ul + p:has(> em:first-child),
+.wiki .markdown-body.wiki-article ul + p:has(> i:first-child) {
+  margin-top: 0;
 }
 .wiki .markdown-body.wiki-article br {
   line-height: inherit;
@@ -2492,6 +2521,9 @@ html.wiki-route::-webkit-scrollbar-corner {
   background: linear-gradient(90deg, rgba(135, 116, 225, 0.2), rgba(255, 255, 255, 0.02));
   color: rgba(255, 255, 255, 0.88);
 }
+.wiki .markdown-body.wiki-article blockquote[style] {
+  margin: 0.65rem 0 0.3rem !important;
+}
 .wiki .markdown-body.wiki-article blockquote p:last-child {
   margin-bottom: 0;
 }
@@ -2505,6 +2537,13 @@ html.wiki-route::-webkit-scrollbar-corner {
 }
 .wiki .markdown-body.wiki-article li::marker {
   color: #8774e1;
+}
+.wiki .markdown-body.wiki-article li > p {
+  margin: 0;
+}
+.wiki .markdown-body.wiki-article li .wiki-copy-btn {
+  margin: 0.1rem 0 0.15rem;
+  vertical-align: middle;
 }
 .wiki .markdown-body.wiki-article hr {
   border: none;
@@ -2648,9 +2687,6 @@ html.wiki-route::-webkit-scrollbar-corner {
   color: #fff;
   font: inherit;
   cursor: pointer;
-  contain: layout style paint;
-  content-visibility: auto;
-  contain-intrinsic-size: auto 44px;
   transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 .wiki .markdown-body.wiki-article .wiki-copy-btn__icon {
@@ -2665,6 +2701,12 @@ html.wiki-route::-webkit-scrollbar-corner {
   color: rgba(255, 255, 255, 0.68);
   font-size: 0.78rem;
   transition: color 0.25s ease;
+}
+:is(p, li) > em + .wiki .markdown-body.wiki-article .wiki-copy-btn,
+:is(p, li) > strong + .wiki .markdown-body.wiki-article .wiki-copy-btn {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
 }
 .wiki .markdown-body.wiki-article .wiki-copy-btn:hover {
   background: rgba(135, 116, 225, 0.18);
@@ -2977,7 +3019,7 @@ html.wiki-route::-webkit-scrollbar-corner {
   z-index: 0;
   width: fit-content;
   max-width: 50%;
-  margin: 1rem 14px 1rem 20px;
+  margin: 0.65rem 14px 0.35rem 20px;
   padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -3002,7 +3044,7 @@ html.wiki-route::-webkit-scrollbar-corner {
   .wiki .markdown-body.wiki-article .wiki-image-button {
     max-width: 100%;
     width: 100%;
-    margin: 1rem 0;
+    margin: 0.65rem 0 0.35rem;
   }
 }
 .wiki .markdown-body.wiki-article .wiki-image-button:hover {
@@ -3245,7 +3287,7 @@ html.wiki-route::-webkit-scrollbar-corner {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
-  background: #181818;
+  background: rgba(14, 16, 24, 0.82);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 32px 24px;
@@ -3258,7 +3300,7 @@ html.wiki-route::-webkit-scrollbar-corner {
 }
 .payment-crypto-section .payment-crypto-form h2 {
   text-align: center;
-  color: #8774e1;
+  color: #818cf8;
   margin-bottom: 16px;
 }
 .payment-crypto-section .payment-crypto-form .crypto-details {
@@ -3278,15 +3320,15 @@ html.wiki-route::-webkit-scrollbar-corner {
   font-size: 1.1em;
 }
 .payment-crypto-section .payment-crypto-form .crypto-details .crypto-row .crypto-label {
-  color: #aaaaaa;
+  color: #7a8094;
 }
 .payment-crypto-section .payment-crypto-form .crypto-details .crypto-row .crypto-value {
   font-weight: bold;
-  color: #ffffff;
+  color: #eef0f8;
 }
 .payment-crypto-section .payment-crypto-form .crypto-details .crypto-row.crypto-instruction {
   flex-direction: column;
-  color: #aaaaaa;
+  color: #7a8094;
   font-size: 0.95em;
   margin-top: 12px;
 }
@@ -3297,9 +3339,117 @@ html.wiki-route::-webkit-scrollbar-corner {
   margin: 16px 0;
 }
 .payment-crypto-section .payment-crypto-form .crypto-loading {
-  color: #aaaaaa;
+  color: #7a8094;
   text-align: center;
   margin: 16px 0;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8-qxjPQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8FqtjPQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8L6tjPQ.ttf) format('truetype');
+}
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 6px rgba(52, 211, 153, 0.6);
+  }
+  50% {
+    opacity: 0.45;
+    box-shadow: 0 0 2px rgba(52, 211, 153, 0.6);
+  }
+}
+@keyframes scan-sweep {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+@keyframes scan-drift {
+  0%,
+  100% {
+    opacity: 0.18;
+  }
+  50% {
+    opacity: 0.28;
+  }
+}
+@keyframes border-glow {
+  0%,
+  100% {
+    border-color: rgba(34, 211, 238, 0.15);
+  }
+  50% {
+    border-color: rgba(99, 102, 241, 0.35);
+  }
 }
 /* Медиа-запрос для мобильных устройств */
 @media screen and (max-width: 768px) {
@@ -3324,10 +3474,10 @@ html.wiki-route::-webkit-scrollbar-corner {
     position: relative;
   }
   #hero {
-    padding: 60px 0 30px;
+    padding: 16px 0 28px;
   }
-  #hero h1 {
-    font-size: 2em;
+  #hero .hero-title__tagline {
+    font-size: 1.55em;
   }
   .features {
     flex-direction: column;
@@ -3338,13 +3488,66 @@ html.wiki-route::-webkit-scrollbar-corner {
     max-width: 100%;
     width: 100%;
   }
-  .plans {
+  .hero-actions {
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .plan {
     width: 100%;
+    max-width: 100%;
+  }
+  .hero-actions__primary,
+  .hero-actions__secondary {
+    width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+  .hero-foot {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-checklist {
+    flex: none;
+    width: 100%;
+  }
+  .hero-trust {
+    flex: none;
+    width: 100%;
+  }
+  .hero-compare__route {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 6px;
+    align-items: end;
+  }
+  .hero-compare__node-label {
+    font-size: 0.55em;
+    min-width: 24px;
+  }
+  .hero-compare__head {
+    column-gap: 6px;
+  }
+  .hero-compare__path-hint {
+    white-space: normal;
+    font-size: 0.52em;
+    padding: 3px 8px;
+    max-width: 42vw;
+  }
+  .hero-compare__path {
+    height: 36px;
+  }
+  .hero-guarantee {
+    justify-content: center;
+  }
+  #hero .hero-desc {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-checklist {
+    grid-template-columns: 1fr;
+  }
+  .plan.featured {
+    transform: none;
+  }
+  .plan.featured:hover {
+    transform: translateY(-10px);
   }
   #faq .faq-item {
     width: 100%;
@@ -3355,8 +3558,11 @@ html.wiki-route::-webkit-scrollbar-corner {
   body {
     font-size: 14px;
   }
-  #hero h1 {
-    font-size: 1.7em;
+  #hero .hero-title__brand {
+    font-size: 1.65em;
+  }
+  #hero .hero-title__tagline {
+    font-size: 1.35em;
   }
   header nav .btn {
     width: 100%;
@@ -3369,10 +3575,42 @@ html.wiki-route::-webkit-scrollbar-corner {
   box-sizing: border-box;
 }
 body {
-  font-family: Inter, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
   line-height: 1.6;
-  color: #ffffff;
-  background-color: #212121;
+  color: #eef0f8;
+  background-color: #07080d;
+  background-image: radial-gradient(ellipse 70% 45% at 50% -15%, rgba(99, 102, 241, 0.22), transparent), radial-gradient(ellipse 45% 35% at 95% 45%, rgba(34, 211, 238, 0.08), transparent), radial-gradient(ellipse 40% 30% at 5% 85%, rgba(99, 102, 241, 0.06), transparent);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  isolation: isolate;
+}
+/* Единый слой сетки — без дублирования в секциях */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: radial-gradient(circle at center, rgba(34, 211, 238, 0.09) 0.6px, transparent 0.6px), linear-gradient(rgba(34, 211, 238, 0.055) 1px, transparent 1px), linear-gradient(90deg, rgba(34, 211, 238, 0.055) 1px, transparent 1px);
+  background-size: 28px 28px, 56px 56px, 56px 56px;
+  background-position: center center;
+  mask-image: radial-gradient(ellipse 120% 90% at 50% 35%, black 15%, transparent 72%);
+  -webkit-mask-image: radial-gradient(ellipse 120% 90% at 50% 35%, black 15%, transparent 72%);
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0, 0, 0, 0.025) 3px, rgba(0, 0, 0, 0.025) 4px);
+  opacity: 0.22;
+  mix-blend-mode: multiply;
+  animation: scan-drift 8s ease-in-out infinite;
+}
+#root {
+  position: relative;
+  z-index: 1;
 }
 .container {
   width: 90%;
@@ -3380,24 +3618,53 @@ body {
   margin: 0 auto;
 }
 header {
-  background-color: #181818;
-  color: #ffffff;
-  height: 64px;
+  background: rgba(7, 8, 13, 0.82);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  color: #eef0f8;
+  height: 72px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(34, 211, 238, 0.12);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 header .logo {
-  font-size: 1.25em;
+  font-size: 1.2em;
   cursor: pointer;
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  letter-spacing: -0.01em;
+}
+header .logo .logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(34, 211, 238, 0.15);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  box-shadow: 0 0 16px rgba(34, 211, 238, 0.25);
+  font-size: 1.1em;
+}
+header .logo .logo-text {
+  text-shadow: 0 0 20px rgba(34, 211, 238, 0.12);
+}
+header .logo::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 8px rgba(52, 211, 153, 0.6);
+  animation: pulse-dot 2.5s ease infinite;
+  flex-shrink: 0;
 }
 header nav {
   display: flex;
@@ -3407,7 +3674,7 @@ header nav {
   align-items: center;
 }
 header nav a:not(.btn) {
-  color: #aaaaaa;
+  color: #7a8094;
   text-decoration: none;
   margin: 0 15px;
   font-size: 0.95em;
@@ -3415,7 +3682,7 @@ header nav a:not(.btn) {
   transition: color 0.2s;
 }
 header nav a:not(.btn):hover {
-  color: #ffffff;
+  color: #eef0f8;
 }
 header nav .right {
   display: flex;
@@ -3447,7 +3714,7 @@ header nav .mobile-menu-toggle {
     top: 48px;
     right: 10px;
     min-width: min(98vw, 300px);
-    background-color: #181818;
+    background-color: #0e1018;
     border: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 8px;
     padding: 12px;
@@ -3478,7 +3745,7 @@ header nav .hamburger span {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #eef0f8;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -3497,34 +3764,59 @@ header nav .nav-items {
   gap: 15px;
 }
 header nav .btn {
-  background: #8774e1;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 55%, #06b6d4 100%);
   color: #ffffff;
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 10px 18px;
+  border-radius: 8px;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: 600;
-  transition: opacity 0.2s;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  box-shadow: 0 2px 12px rgba(99, 102, 241, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 header nav .btn:hover {
-  opacity: 0.9;
+  transform: translateY(-1px);
+  border-color: rgba(34, 211, 238, 0.45);
+  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.4), 0 0 20px rgba(34, 211, 238, 0.25);
+}
+header nav .btn--secondary {
+  background: rgba(14, 16, 24, 0.75);
+  color: #eef0f8;
+  border-color: rgba(34, 211, 238, 0.18);
+  box-shadow: none;
+}
+header nav .btn--secondary:hover {
+  color: #22d3ee;
+  background: rgba(34, 211, 238, 0.08);
 }
 header nav select {
-  background-color: transparent;
-  color: #aaaaaa;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 4px;
-  padding: 4px 8px;
-  font-size: 0.85em;
+  background-color: rgba(14, 16, 24, 0.6);
+  color: #7a8094;
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.75em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   cursor: pointer;
   outline: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+header nav select:hover {
+  color: #22d3ee;
+  border-color: rgba(34, 211, 238, 0.35);
 }
 header nav select:focus {
-  border-color: #8774e1;
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.15);
 }
 header nav select option {
-  background-color: #181818;
-  color: #ffffff;
+  background-color: rgba(14, 16, 24, 0.82);
+  color: #eef0f8;
 }
 .price s {
   color: #666;
@@ -3542,70 +3834,904 @@ header nav select option {
   align-items: center;
   margin-bottom: 10px;
 }
-.plan-badge {
-  width: max-content;
-  background-color: #b12f00;
-  color: white;
-  padding: 3px 8px;
-  border-radius: 4px;
-  font-size: 0.8em;
-  margin-bottom: 5px;
-}
 #pricing .container h2 {
   text-align: center;
   margin-bottom: 30px;
   /* Опционально, для отступа между заголовком и тарифами */
 }
 #hero {
-  background-color: #212121;
-  color: #ffffff;
+  position: relative;
+  color: #eef0f8;
   text-align: center;
-  padding: 80px 0 40px;
+  padding: 24px 0 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  overflow: hidden;
 }
-#hero h1 {
-  font-size: 3em;
-  font-weight: 800;
-  margin-bottom: 20px;
-  letter-spacing: -0.02em;
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.55 * 0.5) 0%, transparent 55%), radial-gradient(circle at 85% 70%, rgba(34, 211, 238, 0.55 * 0.15) 0%, transparent 40%);
 }
-#hero p {
-  color: #aaaaaa;
-  font-size: 1.2em;
-  max-width: 600px;
+#hero::before {
+  z-index: 0;
+}
+#hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  z-index: 2;
+  background: linear-gradient(90deg, transparent, #22d3ee, #818cf8, transparent);
+  opacity: 0.6;
+}
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.45;
+}
+.hero-orb--left {
+  width: 280px;
+  height: 280px;
+  top: -80px;
+  left: 10%;
+  background: rgba(99, 102, 241, 0.35);
+}
+.hero-orb--right {
+  width: 220px;
+  height: 220px;
+  bottom: -40px;
+  right: 12%;
+  background: rgba(34, 211, 238, 0.25);
+}
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: center;
+  text-align: center;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  max-width: 620px;
   margin: 0 auto;
 }
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+.hero-title {
+  margin: 0;
+  width: 100%;
+}
+.hero-title__brand,
+.hero-title__tagline {
+  display: block;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+}
+.hero-title__brand {
+  font-size: clamp(1.85rem, 4.5vw, 2.85rem);
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  background: none;
+  filter: drop-shadow(0 0 24px rgba(255, 255, 255, 0.08));
+}
+.hero-title__tagline {
+  margin-top: 6px;
+  font-size: clamp(1.45rem, 3.8vw, 2.35rem);
+  background: linear-gradient(135deg, #22d3ee 0%, #818cf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 30px rgba(34, 211, 238, 0.18));
+}
+.hero-guarantee {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+.hero-guarantee__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.78em;
+  font-weight: 500;
+  color: #eef0f8;
+  background: rgba(52, 211, 153, 0.08);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  box-shadow: inset 0 0 12px rgba(52, 211, 153, 0.06);
+}
+.hero-guarantee__pill::before {
+  content: '✓';
+  color: #34d399;
+  font-weight: 700;
+  font-size: 0.85em;
+}
+.hero-guarantee__pill--accent {
+  background: rgba(34, 211, 238, 0.08);
+  border-color: rgba(34, 211, 238, 0.28);
+  color: #22d3ee;
+}
+.hero-guarantee__pill--accent::before {
+  content: '🌏';
+  color: inherit;
+  font-size: 0.95em;
+}
+.hero-guarantee__pill--ultimate {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.14), rgba(34, 211, 238, 0.1));
+  border-color: rgba(192, 132, 252, 0.42);
+  color: #e9d5ff;
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.18), inset 0 0 14px rgba(168, 85, 247, 0.08);
+}
+.hero-guarantee__pill--ultimate::before {
+  content: '⚡';
+  color: #c4b5fd;
+  font-size: 0.95em;
+}
+.hero-checklist {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex: 1 1 180px;
+  min-width: 0;
+  text-align: left;
+}
+.hero-checklist li {
+  font-size: 0.88em;
+  color: #7a8094;
+  padding-left: 22px;
+  position: relative;
+}
+.hero-checklist li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #34d399;
+  font-weight: 700;
+}
+.hero-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(14, 16, 24, 0.75);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.72em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #22d3ee;
+}
+.hero-status__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.6);
+  animation: pulse-dot 2s ease infinite;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  width: 100%;
+}
+.hero-actions__primary {
+  margin-top: 0 !important;
+}
+.hero-actions__secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #eef0f8;
+  background: rgba(14, 16, 24, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+.hero-actions__secondary:hover {
+  color: #22d3ee;
+  border-color: rgba(34, 211, 238, 0.35);
+  transform: translateY(-1px);
+}
+.hero-actions__secondary.hero-actions__site {
+  border-color: rgba(34, 211, 238, 0.28);
+  background: rgba(34, 211, 238, 0.06);
+}
+.hero-foot {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  width: 100%;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  flex: 1 1 200px;
+  min-width: 0;
+}
+.hero-trust__item {
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.72em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #22d3ee;
+  background: rgba(14, 16, 24, 0.65);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  box-shadow: 0 0 14px rgba(34, 211, 238, 0.08);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.hero-trust__item:hover {
+  border-color: rgba(34, 211, 238, 0.4);
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.15);
+}
+.hero-visual {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+.hero-compare {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  overflow: hidden;
+  background: rgba(7, 8, 13, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 48px rgba(34, 211, 238, 0.08);
+}
+.hero-compare__lane {
+  padding: 18px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero-compare__lane--bad {
+  background: linear-gradient(180deg, rgba(255, 88, 66, 0.08), rgba(255, 88, 66, 0.02));
+  border-bottom: 1px solid rgba(255, 88, 66, 0.12);
+}
+.hero-compare__lane--good {
+  background: linear-gradient(180deg, rgba(34, 211, 238, 0.1), rgba(99, 102, 241, 0.06));
+  box-shadow: inset 0 1px 0 rgba(34, 211, 238, 0.12);
+}
+.hero-compare__head {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  column-gap: 8px;
+  min-height: 28px;
+}
+.hero-compare__head-main {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  justify-self: start;
+}
+.hero-compare__route {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 8px;
+  width: 100%;
+}
+.hero-compare__node-label {
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.62em;
+  letter-spacing: 0.1em;
+  color: #7a8094;
+  min-width: 28px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.hero-compare__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  font-size: 0.85em;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.hero-compare__icon--bad {
+  color: #ff8a78;
+  background: rgba(255, 88, 66, 0.15);
+  border: 1px solid rgba(255, 88, 66, 0.28);
+}
+.hero-compare__icon--good {
+  color: #22d3ee;
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  box-shadow: 0 0 16px rgba(34, 211, 238, 0.2);
+}
+.hero-compare__title {
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.hero-compare__lane--bad .hero-compare__title {
+  color: #ffb4a8;
+}
+.hero-compare__lane--good .hero-compare__title {
+  color: #22d3ee;
+}
+.hero-compare__path {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.hero-compare__path--bad {
+  background: rgba(255, 88, 66, 0.08);
+  border: 1px dashed rgba(255, 88, 66, 0.35);
+}
+.hero-compare__path--good {
+  background: rgba(34, 211, 238, 0.08);
+  border: 1px solid rgba(34, 211, 238, 0.28);
+  box-shadow: inset 0 0 20px rgba(34, 211, 238, 0.08);
+}
+.hero-compare__wire {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  pointer-events: none;
+}
+.hero-compare__wire--bad {
+  background: linear-gradient(90deg, rgba(255, 88, 66, 0.25) 0%, rgba(255, 88, 66, 0.85) 46%, rgba(255, 88, 66, 0.15) 50%, rgba(255, 88, 66, 0.2) 100%);
+}
+.hero-compare__wire--good {
+  background: linear-gradient(90deg, #22d3ee 0%, #818cf8 48%, rgba(34, 211, 238, 0.25) 52%, rgba(34, 211, 238, 0.2) 100%);
+  opacity: 0.55;
+}
+.hero-compare__wire--good.hero-compare__wire--secure {
+  left: 50%;
+  opacity: 0;
+  background: linear-gradient(90deg, #22d3ee, #34d399);
+  animation: compare-wire-secure 2.8s ease-in-out infinite;
+}
+.hero-compare__break-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: compare-break-flash 2.8s ease-in-out infinite;
+}
+.hero-compare__break-mark::before,
+.hero-compare__break-mark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 2px;
+  background: #ff6b55;
+  border-radius: 1px;
+  box-shadow: 0 0 8px rgba(255, 88, 66, 0.8);
+}
+.hero-compare__break-mark::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.hero-compare__break-mark::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.hero-compare__packet {
+  position: absolute;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.hero-compare__packet--bad {
+  left: 10px;
+  background: #ff8a78;
+  box-shadow: 0 0 10px rgba(255, 88, 66, 0.75);
+  animation: compare-packet-bad 2.8s ease-in-out infinite;
+}
+.hero-compare__packet--good {
+  left: 10px;
+  background: #22d3ee;
+  box-shadow: 0 0 10px #22d3ee;
+  animation: compare-packet-good-in 2.8s ease-in-out infinite;
+}
+.hero-compare__packet--good.hero-compare__packet--secured {
+  opacity: 0;
+  background: #34d399;
+  box-shadow: 0 0 10px #34d399, 0 0 18px rgba(52, 211, 153, 0.45);
+  animation: compare-packet-good-out 2.8s ease-in-out infinite;
+}
+.hero-compare__shield-mini {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.25), rgba(99, 102, 241, 0.3));
+  border: 1px solid rgba(34, 211, 238, 0.45);
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.25);
+  z-index: 2;
+  pointer-events: none;
+  animation: compare-shield-pulse 2.8s ease-in-out infinite;
+}
+.hero-compare__shield-mini::before {
+  content: '⛨';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+.hero-compare__path-hint {
+  grid-column: 2;
+  display: inline-block;
+  justify-self: center;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.58em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-align: center;
+  white-space: nowrap;
+}
+.hero-compare__path-hint--bad {
+  color: #ffb4a8;
+  background: rgba(255, 88, 66, 0.14);
+  border: 1px solid rgba(255, 88, 66, 0.28);
+}
+.hero-compare__path-hint--good {
+  color: #22d3ee;
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.28);
+}
+@keyframes compare-packet-bad {
+  0% {
+    left: 10px;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  42% {
+    left: calc(50% - 6px);
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+  52% {
+    left: 58%;
+    transform: translateY(calc(-50% - 3px));
+    opacity: 0.95;
+  }
+  62% {
+    left: 52%;
+    transform: translateY(calc(-50% + 4px));
+    opacity: 0.85;
+  }
+  72% {
+    left: 68%;
+    transform: translateY(calc(-50% - 2px));
+    opacity: 0.9;
+  }
+  82% {
+    left: 60%;
+    transform: translateY(calc(-50% + 3px));
+    opacity: 0.75;
+  }
+  92% {
+    left: 72%;
+    transform: translateY(calc(-50% - 3px));
+    opacity: 0.55;
+  }
+  100% {
+    left: 10px;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+@keyframes compare-break-flash {
+  0%,
+  44% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+  62%,
+  100% {
+    opacity: 0.35;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes compare-packet-good-in {
+  0% {
+    left: 10px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  46% {
+    left: calc(50% - 20px);
+    opacity: 1;
+  }
+  50%,
+  100% {
+    left: calc(50% - 6px);
+    opacity: 0;
+  }
+}
+@keyframes compare-packet-good-out {
+  0%,
+  48% {
+    left: calc(50% + 4px);
+    opacity: 0;
+    transform: translateY(-50%) scale(0.85);
+  }
+  54% {
+    left: calc(50% + 10px);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+  }
+  92% {
+    left: calc(100% - 18px);
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    left: calc(100% - 14px);
+    opacity: 0;
+    transform: translateY(-50%) scale(0.9);
+  }
+}
+@keyframes compare-wire-secure {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  58% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0.95;
+  }
+}
+@keyframes compare-shield-pulse {
+  0%,
+  44% {
+    box-shadow: 0 0 14px rgba(34, 211, 238, 0.25);
+  }
+  52%,
+  72% {
+    box-shadow: 0 0 22px rgba(34, 211, 238, 0.25), 0 0 28px rgba(52, 211, 153, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 14px rgba(34, 211, 238, 0.25);
+  }
+}
+.hero-compare__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.hero-compare__list li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 0.78em;
+  line-height: 1.45;
+  color: #7a8094;
+}
+.hero-compare__list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hero-compare__lane--bad .hero-compare__list li::before {
+  color: #ff8a78;
+}
+.hero-compare__lane--good .hero-compare__list li::before {
+  color: #34d399;
+}
+.hero-compare__list-item--highlight {
+  color: #22d3ee !important;
+  font-weight: 600;
+}
+.hero-compare__divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  background: rgba(7, 8, 13, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+.hero-compare__vs {
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.62em;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #7a8094;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(14, 16, 24, 0.85);
+}
+@keyframes pipeline-pulse {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: calc(100% - 8px);
+    opacity: 0;
+  }
+}
+.site-main {
+  position: relative;
+  z-index: 1;
+}
+.landing-page {
+  position: relative;
+  padding-bottom: 0;
+}
+.landing-section {
+  scroll-margin-top: 72px;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-lead {
+  max-width: 620px;
+  margin: -32px auto 0;
+  color: #7a8094;
+  font-size: 1.05em;
+  line-height: 1.65;
+}
+.section-lead--split {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#hero .hero-title {
+  text-align: center;
+}
+#hero .hero-desc {
+  color: #7a8094;
+  max-width: 100%;
+  margin: 0;
+  line-height: 1.65;
+  font-size: 0.98em;
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: rgba(14, 16, 24, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-left: 3px solid #22d3ee;
+  text-align: left;
+}
+#hero p:not(.hero-desc) {
+  color: #7a8094;
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.75;
+  font-size: 0.95em;
+}
 #hero .btn-primary {
-  background: #8774e1;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 55%, #06b6d4 100%);
   color: #ffffff;
-  padding: 12px 28px;
+  padding: 11px 20px;
   border-radius: 8px;
   text-decoration: none;
-  margin-top: 30px;
+  margin-top: 0;
   display: inline-block;
   font-weight: 600;
-  font-size: 1.1em;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.78em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid rgba(34, 211, 238, 0.25);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 #hero .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(135, 116, 225, 0.4);
+  box-shadow: 0 4px 20px rgba(34, 211, 238, 0.25);
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  body::before {
+    animation: none;
+    opacity: 0.15;
+  }
+  .hero-compare__packet,
+  .hero-compare__break-mark,
+  .hero-compare__shield-mini,
+  .hero-compare__wire--secure {
+    animation: none !important;
+  }
+  .hero-compare__packet--bad {
+    left: 62% !important;
+    opacity: 0.7 !important;
+    transform: translateY(-50%) !important;
+  }
+  .hero-compare__path--good .hero-compare__wire--secure {
+    opacity: 0.7;
+  }
 }
 #about,
 #pricing,
 #faq,
 #apps {
-  padding: 60px 0;
+  padding-bottom: 80px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  position: relative;
+}
+#about {
+  padding-top: 30px;
+  background: linear-gradient(180deg, transparent, rgba(14, 16, 24, 0.45) 50%, transparent);
+}
+#pricing {
+  padding-top: 50px;
+  background: rgba(14, 16, 24, 0.35);
+}
+#pricing::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.35 * 0.5) 0%, transparent 55%), radial-gradient(circle at 85% 70%, rgba(34, 211, 238, 0.35 * 0.15) 0%, transparent 40%);
+}
+#pricing::before {
+  z-index: 0;
+}
+#pricing .container {
+  position: relative;
+  z-index: 1;
+}
+#faq {
+  padding-top: 0;
+  background: linear-gradient(180deg, transparent, rgba(7, 8, 13, 0.8));
+}
+#apps {
+  padding-top: 50px;
 }
 #about .container h2,
 #pricing .container h2,
 #faq .container h2,
-#apps .container h2 {
-  font-size: 2em;
+#apps .container h2,
+.section-header h2 {
+  font-size: clamp(1.4rem, 3vw, 1.85rem);
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+}
+#about .container h2::before,
+#pricing .container h2::before,
+#faq .container h2::before,
+#apps .container h2::before,
+.section-header h2::before {
+  content: '◆';
+  display: block;
+  font-size: 0.45em;
+  color: #22d3ee;
+  margin-bottom: 12px;
+  letter-spacing: 0;
+  opacity: 0.8;
+}
+#about .container h2::after,
+#pricing .container h2::after,
+#faq .container h2::after,
+#apps .container h2::after,
+.section-header h2::after {
+  content: '';
+  display: block;
+  width: min(260px, 78vw);
+  height: 2px;
+  margin: 16px auto 0;
+  background: linear-gradient(90deg, transparent 0%, #22d3ee 22%, #818cf8 50%, #22d3ee 78%, transparent 100%);
+  box-shadow: 0 0 14px rgba(34, 211, 238, 0.35);
 }
 .apps-list {
   display: flex;
@@ -3613,20 +4739,59 @@ header nav select option {
   gap: 32px;
 }
 .app-card {
-  background-color: #181818;
-  color: #ffffff;
+  background-color: rgba(14, 16, 24, 0.82);
+  color: #eef0f8;
   display: flex;
   flex-direction: row;
   gap: 28px;
   padding: 32px;
-  border-radius: 16px;
+  border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.07);
   align-items: flex-start;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.app-card::before,
+.app-card::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.app-card::before {
+  top: 10px;
+  left: 10px;
+  border-top: 1px solid #22d3ee;
+  border-left: 1px solid #22d3ee;
+}
+.app-card::after {
+  bottom: 10px;
+  right: 10px;
+  border-bottom: 1px solid #818cf8;
+  border-right: 1px solid #818cf8;
+}
+.app-card:hover::before,
+.app-card:hover::after {
+  opacity: 1;
+}
+.app-card::before {
+  z-index: 0;
+}
+.app-card::after {
+  z-index: 0;
+}
+.app-card > * {
+  position: relative;
+  z-index: 1;
 }
 .app-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(34, 211, 238, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 24px rgba(34, 211, 238, 0.25);
 }
 .app-card .app-icon {
   width: 72px;
@@ -3651,36 +4816,141 @@ header nav select option {
   gap: 12px;
   flex: 1;
 }
+.app-card .app-info__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
 .app-card .app-info h3 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 700;
-  color: #ffffff;
+  color: #eef0f8;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  letter-spacing: 0.03em;
+  margin: 0;
 }
 .app-card .app-info p {
-  color: #aaaaaa;
+  color: #7a8094;
   font-size: 0.95em;
   line-height: 1.6;
 }
 .app-card .app-info .btn-primary {
   align-self: flex-start;
-  background: #8774e1;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 55%, #06b6d4 100%);
   color: #ffffff;
   padding: 10px 24px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.95em;
-  transition: opacity 0.2s, transform 0.2s;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .app-card .app-info .btn-primary:hover {
-  opacity: 0.9;
   transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(34, 211, 238, 0.25);
+}
+.app-card.app-card--tgproxy {
+  border-color: rgba(56, 189, 248, 0.22);
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.08) 0%, rgba(14, 16, 24, 0.92) 42%, rgba(99, 102, 241, 0.08) 100%), rgba(14, 16, 24, 0.88);
+}
+.app-card.app-card--tgproxy::before {
+  border-top-color: rgba(56, 189, 248, 0.65);
+  border-left-color: rgba(56, 189, 248, 0.65);
+}
+.app-card.app-card--tgproxy::after {
+  border-bottom-color: rgba(99, 102, 241, 0.55);
+  border-right-color: rgba(99, 102, 241, 0.55);
+}
+.app-card.app-card--tgproxy:hover {
+  border-color: rgba(56, 189, 248, 0.42);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 32px rgba(56, 189, 248, 0.18), 0 0 48px rgba(99, 102, 241, 0.1);
+}
+.app-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.62em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.app-badge--free {
+  color: #86efac;
+  background: rgba(52, 211, 153, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.32);
+  box-shadow: 0 0 14px rgba(52, 211, 153, 0.12);
+}
+.app-preview-mock {
+  width: 160px;
+  min-height: 132px;
+  border-radius: 12px;
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  background: linear-gradient(180deg, rgba(14, 16, 24, 0.92), rgba(7, 8, 13, 0.96)), radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.12), transparent 62%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+.app-preview-mock--tgproxy {
+  justify-content: flex-start;
+}
+.app-preview-mock__badge {
+  align-self: flex-start;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.55em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7dd3fc;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+}
+.app-preview-mock__title {
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.72em;
+  font-weight: 700;
+  color: #eef0f8;
+  letter-spacing: 0.04em;
+}
+.app-preview-mock__line {
+  display: block;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.18);
+}
+.app-preview-mock__line--short {
+  width: 58%;
+}
+.app-preview-mock__btn {
+  margin-top: auto;
+  padding: 7px 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.52em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.25);
 }
 @media screen and (max-width: 768px) {
   .app-card {
     flex-direction: column;
   }
-  .app-card .app-preview {
+  .app-card .app-preview,
+  .app-card .app-preview-mock {
     width: 100%;
   }
 }
@@ -3716,39 +4986,101 @@ header nav select option {
   justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
+  counter-reset: feature-index;
 }
 .feature {
-  background-color: #181818;
-  color: #ffffff;
+  background: rgba(14, 16, 24, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: #eef0f8;
   text-align: left;
   max-width: 350px;
   flex: 1 1 300px;
-  padding: 30px;
-  border-radius: 12px;
+  padding: 32px 32px 28px;
+  border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.07);
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  position: relative;
+  counter-increment: feature-index;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s ease, box-shadow 0.35s ease;
+}
+.feature::before,
+.feature::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.feature::before {
+  top: 10px;
+  left: 10px;
+  border-top: 1px solid #22d3ee;
+  border-left: 1px solid #22d3ee;
+}
+.feature::after {
+  bottom: 10px;
+  right: 10px;
+  border-bottom: 1px solid #818cf8;
+  border-right: 1px solid #818cf8;
+}
+.feature:hover::before,
+.feature:hover::after {
+  opacity: 1;
+}
+.feature::before {
+  z-index: 1;
+}
+.feature::after {
+  z-index: 1;
 }
 .feature:hover {
-  transform: translateY(-5px);
-  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-6px);
+  border-color: rgba(34, 211, 238, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 48px rgba(99, 102, 241, 0.15), 0 0 0 1px rgba(34, 211, 238, 0.08);
 }
 .feature img {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   margin-bottom: 20px;
   display: block;
-  filter: none;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(34, 211, 238, 0.15);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  box-sizing: content-box;
+  filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.2));
+  position: relative;
+  z-index: 2;
+}
+.feature h3::before {
+  content: '0' counter(feature-index);
+  display: block;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.65em;
+  color: #22d3ee;
+  opacity: 0.7;
+  margin-bottom: 6px;
+  letter-spacing: 0.1em;
 }
 .feature h3 {
   margin-bottom: 12px;
-  font-size: 1.3em;
   font-weight: 700;
-  color: #ffffff;
+  color: #eef0f8;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.95em;
 }
 .feature p {
-  color: #aaaaaa;
-  font-size: 0.95em;
-  line-height: 1.5;
+  color: #7a8094;
+  font-size: 0.9em;
+  line-height: 1.65;
+  border-left: 2px solid rgba(34, 211, 238, 0.2);
+  padding-left: 14px;
+  margin-left: 2px;
 }
 .plans {
   display: flex;
@@ -3756,87 +5088,321 @@ header nav select option {
   gap: 24px;
   flex-wrap: wrap;
 }
+.pricing-section .plans {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+  padding-top: 18px;
+  overflow: visible;
+}
+.pricing-section .plan {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  min-height: 520px;
+  padding: 28px 12px 18px;
+  overflow: visible;
+}
+.pricing-section .plan h3 {
+  font-size: 0.78em;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  word-break: break-word;
+}
+.pricing-section .plan.featured {
+  transform: none;
+  z-index: 2;
+  padding-top: 32px;
+}
+.pricing-section .plan.featured:hover {
+  transform: translateY(-8px);
+}
+.pricing-section .plan .plan-header {
+  gap: 6px;
+}
+.pricing-section .plan .price {
+  font-size: 1.3em;
+  margin: 12px 0;
+  line-height: 1.2;
+}
+.pricing-section .plan .plan-badge {
+  font-size: 0.68em;
+  padding: 4px 8px;
+  margin-bottom: 0;
+}
+.pricing-section .plan .plan-perks {
+  margin-bottom: 12px;
+}
+.pricing-section .plan .plan-perks li {
+  font-size: 0.86em;
+  padding: 4px 0;
+  line-height: 1.45;
+}
+.pricing-section .plan .plan-desc {
+  flex: 1 1 auto;
+  font-size: 0.78em;
+  line-height: 1.65;
+  padding: 12px;
+  margin-bottom: 12px;
+  min-height: 140px;
+  max-height: none;
+  overflow: visible;
+  white-space: pre-line;
+  word-break: break-word;
+}
+.pricing-section .plan .plan-desc font[color] {
+  color: inherit;
+}
+.pricing-section .plan .plan-actions {
+  margin-top: auto;
+  width: 100%;
+}
+.pricing-section .plan .plan-actions__btn {
+  padding: 10px 8px;
+  font-size: 0.68em;
+  letter-spacing: 0.03em;
+}
+.pricing-section .plan-popular-badge {
+  top: -16px;
+  height: 26px;
+  min-width: 44px;
+  padding: 0 12px;
+  font-size: 0.72em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  z-index: 5;
+  box-shadow: 0 4px 20px rgba(34, 211, 238, 0.55), 0 0 0 2px rgba(7, 8, 13, 0.9);
+}
 .plan {
-  background-color: #181818;
-  color: #ffffff;
-  padding: 32px;
+  background: rgba(14, 16, 24, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: #eef0f8;
+  padding: 36px 28px 32px;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 14px;
   width: 320px;
   border: 1px solid rgba(255, 255, 255, 0.07);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s ease, box-shadow 0.35s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.plan::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #22d3ee, #818cf8, #22d3ee);
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.plan::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.06), transparent 60%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.plan h3 {
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 1em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 .plan:hover {
-  transform: translateY(-8px);
-  border-color: #8774e1;
+  transform: translateY(-10px);
+  border-color: rgba(34, 211, 238, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 48px rgba(99, 102, 241, 0.15), 0 0 32px rgba(34, 211, 238, 0.25);
+}
+.plan:hover::before {
+  opacity: 1;
+}
+.plan:hover::after {
+  opacity: 1;
 }
 .plan.featured {
-  border: 2px solid #8774e1;
-  position: relative;
+  border: 2px solid rgba(34, 211, 238, 0.45);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 40px rgba(34, 211, 238, 0.25), inset 0 0 60px rgba(34, 211, 238, 0.04);
+  transform: scale(1.03);
 }
 .plan.featured::before {
-  content: 'POPULAR';
+  opacity: 1;
+  height: 3px;
+}
+.plan.featured::after {
+  opacity: 1;
+}
+.plan.featured:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+.plan-popular-badge {
   position: absolute;
-  top: -12px;
+  top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: #8774e1;
-  color: white;
-  padding: 2px 12px;
-  border-radius: 12px;
-  font-size: 0.75em;
-  font-weight: 700;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 0.85em;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(135deg, #22d3ee, #818cf8);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 20px rgba(34, 211, 238, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
-.plan .plan-header {
+.plan-actions {
+  display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+.plan-actions__btn {
+  display: block;
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 8px;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.plan-actions__btn--secondary {
+  color: #eef0f8;
+  background: rgba(14, 16, 24, 0.65);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+}
+.plan-actions__btn--secondary:hover {
+  color: #22d3ee;
+  border-color: rgba(34, 211, 238, 0.45);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(34, 211, 238, 0.12);
+}
+.pricing-section .plan-actions__btn.btn-primary {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 55%, #06b6d4 100%);
+  color: #ffffff;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
+}
+.pricing-section .plan-actions__btn.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(34, 211, 238, 0.25);
+}
+.plan .plan-header {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 8px;
+}
+.plan .plan-header h3 {
+  flex: 0 0 100%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.plan .plan-header .plan-badge {
+  margin-bottom: 0;
 }
 .plan .price {
-  font-size: 2.2em;
-  font-weight: 800;
-  color: #ffffff;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-variant-numeric: tabular-nums;
+  color: #eef0f8;
   margin: 20px 0;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 24px rgba(34, 211, 238, 0.12);
 }
 .plan .price s {
-  color: #aaaaaa;
+  color: #7a8094;
   font-size: 0.5em;
   font-weight: 400;
   text-decoration-color: #ff5842;
 }
 .plan-badge {
-  background-color: rgba(135, 116, 225, 0.15);
-  color: #8774e1;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.8em;
+  background: rgba(14, 16, 24, 0.9);
+  color: #22d3ee;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.72em;
   font-weight: 600;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  letter-spacing: 0.04em;
   margin-bottom: 12px;
   display: inline-block;
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  box-shadow: inset 0 0 12px rgba(34, 211, 238, 0.15);
+  position: relative;
+  z-index: 1;
 }
 .plan .btn-primary {
   width: 100%;
   margin-top: 24px;
-  padding: 12px;
-  background-color: #8774e1;
+  padding: 14px;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 55%, #06b6d4 100%);
   color: #ffffff;
   border-radius: 8px;
   font-weight: 600;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.85em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   text-decoration: none;
-  transition: opacity 0.2s;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 .plan .btn-primary:hover {
-  opacity: 0.9;
+  transform: translateY(-2px);
+  border-color: rgba(34, 211, 238, 0.5);
+  box-shadow: 0 6px 28px rgba(99, 102, 241, 0.4), 0 0 20px rgba(34, 211, 238, 0.25);
 }
 footer {
-  background-color: #181818;
-  color: #aaaaaa;
+  background: #0e1018;
+  color: #7a8094;
   text-align: center;
-  padding: 40px 0;
+  padding: 48px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
+  position: relative;
+}
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(400px, 60%);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #22d3ee, #818cf8, transparent);
+  opacity: 0.5;
 }
 footer .container {
   display: flex;
@@ -3856,14 +5422,17 @@ footer .links {
   margin: 8px 0;
 }
 footer a {
-  color: #aaaaaa;
+  color: #7a8094;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.85em;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  letter-spacing: 0.03em;
   transition: color 0.2s;
 }
 footer a:hover {
-  color: #8774e1;
-  text-decoration: underline;
+  color: #22d3ee;
+  text-decoration: none;
+  text-shadow: 0 0 12px rgba(34, 211, 238, 0.25);
 }
 footer .footerLicense {
   font-size: 0.75em;
@@ -3872,10 +5441,18 @@ footer .footerLicense {
   margin-top: 16px;
 }
 .faq-item {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 8px;
   overflow: hidden;
+  background: rgba(14, 16, 24, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.faq-item:hover {
+  border-color: rgba(34, 211, 238, 0.18);
+  box-shadow: 0 0 16px rgba(34, 211, 238, 0.06);
 }
 .faq-question {
   display: flex;
@@ -3883,39 +5460,61 @@ footer .footerLicense {
   align-items: center;
   padding: 18px 24px;
   cursor: pointer;
-  background-color: #181818;
+  background: transparent;
   font-weight: 600;
-  transition: background-color 0.2s;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.9em;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s, color 0.2s;
 }
 .faq-question:hover {
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(34, 211, 238, 0.15);
+  color: #22d3ee;
+}
+.faq-question::before {
+  content: '[?]';
+  font-size: 0.75em;
+  color: #22d3ee;
+  opacity: 0.6;
+  margin-right: 12px;
+  flex-shrink: 0;
 }
 .faq-question::after {
-  content: '▼';
-  font-size: 0.8em;
-  color: #aaaaaa;
+  content: '+';
+  font-size: 1.1em;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  color: #22d3ee;
   transition: transform 0.3s;
+  flex-shrink: 0;
 }
 .faq-question.active::after {
-  transform: rotate(180deg);
+  content: '−';
+  transform: none;
 }
 .faq-answer {
   white-space: pre-line;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out, padding 0.3s;
-  padding: 0 24px;
-  background-color: #212121;
-  color: #aaaaaa;
-  font-size: 0.95em;
-  line-height: 1.6;
+  padding: 0 24px 0 52px;
+  background-color: rgba(7, 8, 13, 0.6);
+  color: #7a8094;
+  font-size: 0.9em;
+  line-height: 1.65;
+  border-top: 1px solid transparent;
 }
 .faq-answer a {
-  color: #8774e1;
+  color: #22d3ee;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(34, 211, 238, 0.3);
+}
+.faq-answer a:hover {
+  border-bottom-color: #22d3ee;
 }
 .faq-answer.show {
   max-height: 500px;
-  padding: 18px 24px;
+  padding: 16px 24px 18px 52px;
+  border-top-color: rgba(255, 255, 255, 0.07);
 }
 #payment .payment-wrapper {
   display: flex;
@@ -3926,8 +5525,8 @@ footer .footerLicense {
 }
 .payment-form,
 .payment-info {
-  background-color: #181818;
-  color: #ffffff;
+  background-color: rgba(14, 16, 24, 0.82);
+  color: #eef0f8;
   padding: 32px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.07);
@@ -3935,7 +5534,7 @@ footer .footerLicense {
   max-width: 500px;
 }
 .payment-form .btn-primary {
-  background: #8774e1;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 55%, #06b6d4 100%);
   color: #ffffff;
   padding: 14px;
   border-radius: 8px;
@@ -3960,23 +5559,23 @@ footer .footerLicense {
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  color: #aaaaaa;
+  color: #7a8094;
   font-size: 0.9em;
 }
 .form-group input[type='text'],
 .form-group input[type='number'] {
   width: 100%;
   padding: 12px;
-  background: #212121;
+  background: #07080d;
   border: 1px solid rgba(255, 255, 255, 0.07);
-  color: #ffffff;
+  color: #eef0f8;
   border-radius: 8px;
   font-size: 1em;
   outline: none;
 }
 .form-group input[type='text']:focus,
 .form-group input[type='number']:focus {
-  border-color: #8774e1;
+  border-color: #818cf8;
 }
 .plan-selection {
   display: flex;
@@ -3986,7 +5585,7 @@ footer .footerLicense {
 .plan-option {
   display: flex;
   flex-direction: column;
-  background: #212121;
+  background: #07080d;
   padding: 16px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.07);
@@ -3998,20 +5597,20 @@ footer .footerLicense {
 }
 .plan-option .plan-title {
   font-weight: 700;
-  color: #ffffff;
+  color: #eef0f8;
 }
 .plan-option .plan-price {
-  color: #8774e1;
+  color: #818cf8;
   font-weight: 700;
   margin: 4px 0;
 }
 .plan-option .plan-price s {
-  color: #aaaaaa;
+  color: #7a8094;
   font-weight: 400;
   margin-right: 8px;
 }
 .plan-selection input[type='radio']:checked + .plan-option {
-  border-color: #8774e1;
+  border-color: #818cf8;
   background-color: rgba(135, 116, 225, 0.05);
 }
 .quick-amount-buttons {
@@ -4021,8 +5620,8 @@ footer .footerLicense {
   margin-top: 12px;
 }
 .quick-amount-btn {
-  background: #212121;
-  color: #aaaaaa;
+  background: #07080d;
+  color: #7a8094;
   border: 1px solid rgba(255, 255, 255, 0.07);
   padding: 8px 16px;
   border-radius: 6px;
@@ -4031,12 +5630,746 @@ footer .footerLicense {
   transition: all 0.2s;
 }
 .quick-amount-btn:hover {
-  color: #ffffff;
-  border-color: #8774e1;
+  color: #eef0f8;
+  border-color: #818cf8;
 }
 .label-large.amount-label {
   margin-top: 30px;
   /* Увеличиваем отступ сверху на 30 пикселей */
+}
+@media screen and (min-width: 960px) {
+  #hero {
+    padding: 32px 0 48px;
+    text-align: left;
+  }
+  .hero-inner {
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+    gap: 40px;
+    text-align: left;
+    align-items: center;
+  }
+  .hero-content {
+    align-items: flex-start;
+    max-width: none;
+    margin: 0;
+    gap: 20px;
+  }
+  .hero-intro {
+    align-items: flex-start;
+  }
+  #hero .hero-title {
+    text-align: left;
+  }
+  .hero-actions {
+    justify-content: flex-start;
+  }
+  .hero-foot {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 16px 24px;
+  }
+  .hero-trust {
+    justify-content: flex-start;
+  }
+  .hero-guarantee {
+    justify-content: flex-start;
+  }
+  #hero .hero-desc {
+    text-align: left;
+  }
+  .hero-visual {
+    margin: 0;
+    max-width: none;
+  }
+}
+.trust-strip {
+  position: relative;
+  z-index: 2;
+  margin-top: -28px;
+  padding-bottom: 8px;
+}
+.trust-strip__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: rgba(14, 16, 24, 0.88);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 32px rgba(34, 211, 238, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.trust-strip__item {
+  text-align: center;
+  padding: 8px 4px;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+.trust-strip__item:last-child {
+  border-right: none;
+}
+.trust-strip__value {
+  display: block;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 1.35em;
+  font-weight: 700;
+  color: #eef0f8;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #fff, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.trust-strip__label {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.72em;
+  color: #7a8094;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.compare-section {
+  padding-top: 40px;
+  background: linear-gradient(180deg, rgba(14, 16, 24, 0.5), transparent), radial-gradient(ellipse at 50% 0%, rgba(99, 102, 241, 0.08), transparent 60%);
+}
+.compare-table {
+  width: min(100%, 1370px);
+  margin-inline: auto;
+  border-radius: 20px;
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  overflow: hidden;
+  background: rgba(14, 16, 24, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 48px rgba(34, 211, 238, 0.06);
+  position: relative;
+}
+.compare-table::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff5842, transparent 30%, transparent 70%, #22d3ee);
+  z-index: 1;
+}
+.compare-table__head,
+.compare-table__row {
+  display: grid;
+  grid-template-columns: 350fr 500fr 520fr;
+  align-items: stretch;
+}
+.compare-table__corner {
+  padding: 16px 14px;
+  min-width: 0;
+}
+.compare-table__row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  transition: background-color 0.2s ease;
+}
+.compare-table__row:last-child {
+  border-bottom: none;
+}
+.compare-table__row:hover {
+  background: rgba(34, 211, 238, 0.04);
+}
+.compare-table__head {
+  background: rgba(7, 8, 13, 0.85);
+  border-bottom: 1px solid rgba(34, 211, 238, 0.18);
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.72em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.compare-table__col {
+  padding: 16px;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+  font-weight: 600;
+  min-width: 0;
+}
+.compare-table__col--bad {
+  color: #ff8a78;
+  background: rgba(255, 88, 66, 0.06);
+}
+.compare-table__col--good {
+  color: #22d3ee;
+  background: rgba(34, 211, 238, 0.06);
+  text-shadow: 0 0 20px rgba(34, 211, 238, 0.2);
+}
+.compare-table__label {
+  padding: 16px 14px;
+  font-weight: 600;
+  font-size: 0.86em;
+  color: #eef0f8;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(7, 8, 13, 0.35);
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  min-width: 0;
+}
+.compare-table__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 12px;
+  font-size: 0.84em;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+  line-height: 1.45;
+  min-width: 0;
+}
+.compare-table__cell--bad {
+  color: #7a8094;
+  background: rgba(255, 88, 66, 0.05);
+}
+.compare-table__cell--good {
+  color: #eef0f8;
+  background: rgba(52, 211, 153, 0.06);
+  font-weight: 500;
+  font-size: 0.82em;
+  flex-wrap: wrap;
+  hyphens: auto;
+}
+.compare-table__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 0.72em;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.compare-table__icon--bad {
+  background: rgba(255, 88, 66, 0.18);
+  color: #ff5842;
+  border: 1px solid rgba(255, 88, 66, 0.3);
+}
+.compare-table__icon--good {
+  background: rgba(52, 211, 153, 0.18);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.2);
+}
+.how-section {
+  padding-top: 40px;
+  background: rgba(14, 16, 24, 0.35);
+}
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  position: relative;
+}
+.how-steps::before {
+  content: '';
+  position: absolute;
+  top: 38px;
+  left: 16%;
+  right: 16%;
+  height: 2px;
+  background: linear-gradient(90deg, #22d3ee, #818cf8, #22d3ee);
+  opacity: 0.45;
+  z-index: 0;
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.25);
+}
+.how-step {
+  position: relative;
+  z-index: 1;
+  padding: 32px 22px 28px;
+  border-radius: 14px;
+  background: rgba(14, 16, 24, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s ease, box-shadow 0.35s ease;
+}
+.how-step::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #22d3ee, transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.how-step:hover {
+  transform: translateY(-8px);
+  border-color: rgba(34, 211, 238, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 48px rgba(99, 102, 241, 0.15);
+}
+.how-step:hover::before {
+  opacity: 1;
+}
+.how-step:hover .how-step__num {
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.25);
+  transform: scale(1.08);
+}
+.how-step h3 {
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.88em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #eef0f8;
+}
+.how-step p {
+  color: #7a8094;
+  font-size: 0.88em;
+  line-height: 1.65;
+}
+.how-step__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.95em;
+  font-weight: 700;
+  color: #22d3ee;
+  background: rgba(34, 211, 238, 0.15);
+  border: 2px solid rgba(34, 211, 238, 0.18);
+  box-shadow: 0 0 16px rgba(34, 211, 238, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+.pricing-section {
+  background: radial-gradient(ellipse 80% 50% at 50% 100%, rgba(99, 102, 241, 0.1), transparent), rgba(14, 16, 24, 0.25);
+  overflow: visible;
+}
+.pricing-section .container {
+  width: 98%;
+  max-width: 1720px;
+  overflow: visible;
+}
+.plan-perks {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+.plan-perks li {
+  font-size: 0.92em;
+  color: #7a8094;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.plan-perks li:last-child {
+  border-bottom: none;
+}
+.plan-desc {
+  text-align: left;
+  font-size: 0.82em;
+  line-height: 1.55;
+  color: #7a8094;
+  margin-bottom: 16px;
+  padding: 14px;
+  border-radius: 8px;
+  background: rgba(7, 8, 13, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  position: relative;
+  z-index: 1;
+  max-height: 140px;
+  overflow-y: auto;
+}
+.plan-desc::-webkit-scrollbar {
+  width: 4px;
+}
+.plan-desc::-webkit-scrollbar-thumb {
+  background: rgba(34, 211, 238, 0.18);
+  border-radius: 2px;
+}
+.plan-badge--discount {
+  border-color: rgba(255, 88, 66, 0.3);
+  color: #ffb4a8;
+}
+.landing-cta {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+.landing-cta__inner {
+  position: relative;
+  text-align: center;
+  padding: 52px 40px 48px;
+  border-radius: 20px;
+  background: linear-gradient(160deg, rgba(99, 102, 241, 0.22) 0%, rgba(14, 16, 24, 0.96) 38%, rgba(14, 16, 24, 0.94) 62%, rgba(34, 211, 238, 0.14) 100%), rgba(10, 12, 18, 0.92);
+  border: 1px solid rgba(34, 211, 238, 0.22);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(99, 102, 241, 0.12), 0 24px 80px rgba(99, 102, 241, 0.16), 0 0 120px rgba(34, 211, 238, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  isolation: isolate;
+}
+.landing-cta__inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(320px, 72%);
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #22d3ee 22%, #818cf8 50%, #22d3ee 78%, transparent 100%);
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.45);
+  pointer-events: none;
+  z-index: 1;
+}
+.landing-cta__inner h2 {
+  font-size: clamp(1.55rem, 3.2vw, 2.25rem);
+  font-weight: 800;
+  margin: 18px 0 14px;
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 2;
+  line-height: 1.15;
+  color: #eef0f8;
+  text-shadow: 0 0 40px rgba(34, 211, 238, 0.12);
+}
+@supports (-webkit-background-clip: text) {
+  .landing-cta__inner h2 {
+    background: linear-gradient(135deg, #fff 20%, #22d3ee 55%, #818cf8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.landing-cta__inner p {
+  max-width: 560px;
+  margin: 0 auto 34px;
+  color: rgba(203, 213, 225, 0.88);
+  font-size: 1.08em;
+  line-height: 1.75;
+  position: relative;
+  z-index: 2;
+}
+.landing-cta__badge {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(14, 16, 24, 0.72);
+  border: 1px solid rgba(34, 211, 238, 0.28);
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.68em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #22d3ee;
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.12);
+}
+.landing-cta__badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.6);
+  animation: pulse-dot 2s ease infinite;
+}
+.landing-cta__grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image: linear-gradient(rgba(34, 211, 238, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(34, 211, 238, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle at 50% 40%, #000 15%, transparent 72%);
+  z-index: 0;
+}
+.landing-cta__glow {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: 0;
+}
+.landing-cta__glow--cyan {
+  width: 320px;
+  height: 320px;
+  top: -120px;
+  right: -80px;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.28), transparent 68%);
+  animation: cta-glow-cyan 9s ease-in-out infinite;
+}
+.landing-cta__glow--violet {
+  width: 360px;
+  height: 360px;
+  bottom: -140px;
+  left: -100px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.32), transparent 68%);
+  animation: cta-glow-violet 11s ease-in-out infinite;
+}
+@keyframes cta-glow-cyan {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.95;
+    transform: translate(-12px, 10px) scale(1.08);
+  }
+}
+@keyframes cta-glow-violet {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translate(14px, -8px) scale(1.06);
+  }
+}
+.landing-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  position: relative;
+  z-index: 2;
+}
+.landing-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: min(100%, 280px);
+  padding: 10px 24px;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 55%, #06b6d4 100%);
+  border-radius: 8px;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.landing-cta__btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(34, 211, 238, 0.35);
+  box-shadow: 0 4px 16px rgba(34, 211, 238, 0.25);
+  text-decoration: none;
+}
+.landing-cta__btn--secondary {
+  color: #eef0f8 !important;
+  background: rgba(14, 16, 24, 0.78);
+  border-color: rgba(34, 211, 238, 0.22);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+.landing-cta__btn--secondary:hover {
+  color: #22d3ee !important;
+  border-color: rgba(34, 211, 238, 0.5);
+  box-shadow: 0 8px 28px rgba(34, 211, 238, 0.16), inset 0 0 24px rgba(34, 211, 238, 0.06);
+}
+.landing-sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
+  background: rgba(7, 8, 13, 0.92);
+  border-top: 1px solid rgba(34, 211, 238, 0.18);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.4);
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+.landing-sticky-cta__btn {
+  display: block;
+  width: 100%;
+  padding: 12px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 55%, #06b6d4 100%);
+  border-radius: 8px;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+}
+.landing-sticky-cta__btn--secondary {
+  color: #eef0f8;
+  background: rgba(14, 16, 24, 0.85);
+  border-color: rgba(34, 211, 238, 0.18);
+  box-shadow: none;
+}
+@media screen and (max-width: 1280px) {
+  .pricing-section .plans {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .pricing-section .plan {
+    min-height: 440px;
+    padding: 22px 10px 16px;
+  }
+  .pricing-section .plan h3 {
+    font-size: 0.72em;
+  }
+  .pricing-section .plan .price {
+    font-size: 1.15em;
+  }
+  .pricing-section .plan .plan-perks {
+    display: none;
+  }
+  .pricing-section .plan .plan-desc {
+    min-height: 96px;
+    font-size: 0.68em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .pricing-section .plans {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .pricing-section .plan .plan-perks {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pricing-section .plans {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .pricing-section .plan {
+    min-height: auto;
+    padding: 24px 20px 20px;
+  }
+  .pricing-section .plan h3 {
+    font-size: 0.95em;
+  }
+  .pricing-section .plan .price {
+    font-size: 1.6em;
+    margin: 16px 0;
+  }
+  .pricing-section .plan .plan-desc {
+    min-height: 80px;
+    font-size: 0.82em;
+  }
+  .pricing-section .plan .plan-actions__btn {
+    font-size: 0.8em;
+    padding: 12px;
+  }
+  .landing-cta {
+    padding: 56px 0;
+  }
+  .landing-cta__inner {
+    padding: 40px 20px 36px;
+  }
+  .landing-cta__btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .trust-strip__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trust-strip__item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    padding-bottom: 12px;
+  }
+  .trust-strip__item:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  .trust-strip__item:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+  .how-steps {
+    grid-template-columns: 1fr;
+  }
+  .how-steps::before {
+    display: none;
+  }
+  .compare-table__head,
+  .compare-table__row {
+    grid-template-columns: 1fr;
+  }
+  .compare-table__corner {
+    display: none;
+  }
+  .compare-table__col,
+  .compare-table__cell,
+  .compare-table__label {
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .compare-table__head {
+    display: none;
+  }
+  .compare-table__row {
+    padding: 8px 0;
+  }
+  .compare-table__label {
+    background: rgba(7, 8, 13, 0.5);
+    font-family: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #22d3ee;
+    white-space: normal;
+  }
+  .compare-table__cell--bad::before {
+    content: '✕ ';
+    color: #ff5842;
+  }
+  .compare-table__cell--good::before {
+    content: '✓ ';
+    color: #34d399;
+  }
+  .compare-table__icon {
+    display: none;
+  }
+  .landing-sticky-cta {
+    display: grid;
+  }
+  .landing-page {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .trust-strip {
+    margin-top: -16px;
+  }
+  .trust-strip__grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 12px;
+  }
+  .plan-desc {
+    max-height: 120px;
+  }
+  .pricing-section .plan .plan-desc {
+    max-height: none;
+    min-height: 120px;
+  }
 }
 `, ""]);
 // Exports
@@ -8289,11 +10622,11 @@ var react = __webpack_require__(6540);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(5338);
 ;// ./src/lang/ru.json
-const ru_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"Для включения уведомлений на iPhone:\\n1. Нажмите иконку [⎋] (Поделиться) в нижней панели.\\n2. Выберите пункт «На экран Домой».\\n3. Запустите сайт с рабочего стола и вернитесь в этот раздел.","settings.pushSupportError":"Web Push не поддерживается на этом устройстве","settings.pushTitle":"Push-уведомления","settings.pushDesc":"Подпишите это устройство для получения системных уведомлений","settings.pushSubscribed":"✅ Это устройство подписано","settings.pushNotSubscribed":"❌ Устройство не подписано","settings.pushSubscribeBtn":"Подписаться","settings.pushUnsubscribeAllBtn":"Отвязать все устройства","settings.pushSuccess":"Успешно подписано","settings.pushUnsubscribeSuccess":"Все устройства отвязаны","settings.pushError":"Ошибка при подписке","settings.disableSiteNotify":"Отключить уведомления на сайте","settings.disableSiteNotifyDesc":"Отключите уведомления на сайте, оставив только Push-уведомления и уведомления в Telegram (если учётная запись привязана к Telegram)","settings.disableSiteNotifyYes":"Да","settings.disableSiteNotifyNo":"Нет","settings.geoRouting":"Добавить гео-роутинг в данных подписки","settings.geoRoutingDesc":"Вы можете выбрать определённый гео-роутинг для своих заказов. Если он будет добавлен, то при подключении к VPN / Proxy через инструкции из приложения, в данных подписки будет указано, что вы хотите использовать определённый гео-роутинг. Это может помочь в обходе блокировок и улучшении стабильности подключения, если основной сервер недоступен или работает нестабильно в вашем регионе. Если вы не уверены, какой вариант вам лучше подходит - оставьте значение по умолчанию (%1%)","settings.disabled":"Отключить (не рекомендуется)","settings.reserveConnectionLink":"Использовать резервную ссылку на подписку Vless","settings.reserveConnectionLinkDesc":"Включите эту настройку, если у вас нет доступа к основному серверу. Тогда инструкции по подключению будут содержать резервную ссылку вместо основной.","settings.reserveConnectionLinkYes":"Да","settings.reserveConnectionLinkNo":"Нет","applicationNotifyTitle":"Уведомления","applicationNotifyConfirmDeleteAll":"Вы уверены, что хотите удалить все уведомления?","applicationNotifyEmpty":"Нет новых уведомлений","applicationNotifyPromoSuccess":"Промокод успешно применён","applicationNotifyPromoError":"Ошибка активации промокода: возможно он уже использован или исчерпан лимит","applicationNetworkError":"Ошибка сети","applicationNotifyConfirmDelete":"Вы уверены, что хотите удалить это уведомление?","applicationNotifyDelete":"🗑️ Удалить","applicationNotifyPromoApply":"Применить промокод (%1%)","pagePayTitle":"Приобретение VPN","pagePayBalance":"Пополнение баланса","pagePayID":"Ваш уникальный ID","pagePayIDPlaceholder":"Введите свой ID","pagePayAmount":"Сумма пополнения баланса (временно от %1%)","pagePayButton":"Перейти к оплате","pageFAQId":"Как получить ID?","pageFAQStep1":"Откройте приложение в чат-боте RocketMan-VPN","pageFAQStep2":"Внизу главной страницы найдите пункт \\"Ваш ID\\"","pageFAQStep3":"Скопируйте уникальный номер","pageFAQStep4":"Вставьте ID в поле слева","pageFAQOpen":"Открыть Telegram-бота","pageFAQQR":"QR-код Telegram-бота","landingTGBotButton":"Запустить Telegram-бота","landingDashboardButton":"Открыть панель управления","landingTarifs":"Тарифы","landingTarifsTrial":"+ Пробный период %1%ч","landingTarifsDiscount":"Скидка","landingTarifsPrice":"%1%/%2%дн.","landingTarifsGo":"Подключить","landingFooterText":"А здесь наш основной проект","landingTitle":"RocketMan VPN — Интернет под защитой!","landingTitleDesc":"Молниеносный доступ к любимым сайтам и сервисам с ПК и смартфона.","landingFeaturesTitle":"Почему выбирают именно нас?","landingAppsTitle":"Наши приложения","landingAppsDownload":"Скачать","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"Многофункциональный прокси-клиент для <b>Windows, Linux и macOS</b>. Поддерживает протоколы <b>HTTPS и VLESS</b>. API-режим для управления заказами прямо из приложения, TUN-туннелирование, VLESS-подписки и интеграция с Discord (Windows).","features1Title":"Анонимность","features1Text":"Благодаря нескольким слоям защиты с нашей стороны — Ваш реальный IP не узнает ни один сервис.","features2Title":"Скорость","features2Text":"Загружайте, смотрите любимый контент и делитесь на скоростях до 1 Гбит/с.","features3Title":"Простота","features3Text":"Подключайтесь в 1 клик с любого своего устройства! ПК, смартфон, ТВ, планшет и ноутбук.","features4Title":"Поддержка","features4Text":"Мы всегда готовы помочь Вам с решением любых вопросов. На связи практически 24/7","faq1title":"Как оплатить?","faq1text":"Выберите тариф и оплатите через удобный метод. После оплаты получите инструкции в Telegram-боте.","faq2title":"Как настроить VPN?","faq2text":"В нашем <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram-боте</a> максимально подробно и понятно расписан весь процесс подключения.\\nБуквально от и до, поэтому Вы вряд ли в чем-то сможете заблудиться. Главное — следуйте инструкциям :)","faq3title":"Что делать, если что-то не работает?","faq3text":"Напишите в <a href=\\"https://t.me/%1%\\" target=\'_blank\'>поддержку через Telegram</a>, и мы Вам поможем.","locationSelectTitle":"Выберите локацию сервера","locationSelectLoad":"Загруженность: %1%%","locationReserve1":"Санкт-Петербург","locationLocal":"Локальный сервер","locationStockholm":"Стокгольм","locationAustria":"Вена","locationNetherland":"Амстердам","locationFrankfurt":"Франкфурт","locationParis":"Париж","tarif.test_drive":"🚗 Тест-драйв","tarif.start":"🚀 Старт","tarif.gamer":"🎮 Геймер","tarif.pro":"👑 Семейная+","tarif.ultra":"🌌 Космос","httpTarifPro":"🔒 Proxy-Безлимит","httpTarifGamer":"🔒 Proxy-Геймер","tarifNameFull":"%1% (%2% дней | %3% GB/д) - %4%","welcomeMessage":"Добро пожаловать!\\nБлагодаря нашему сервису Вы сможете получить защищенный доступ к любимым сайтам и приложениям, как это делают другие наши любимые клиенты ❤️\\n\\n⭐️ У нас нет ограничений на количество устройств, поэтому можете использовать 1 ключ на всех своих девайсах! Вместе с VPN Вы получаете доступ и к нашему Proxy.\\n\\n🛒 Мы предоставляем:\\n- VPN для iOS, Android, Windows, macOS, Android TV\\n- Proxy для браузера, Discord, Windows и т.д.","basketBalance":"Пополнить баланс","secondsToStringD":"%4% дн. %3% ч. %2% мин. %1% сек.","secondsToStringH":"%3% ч. %2% мин. %1% сек.","secondsToStringM":"%2% мин. %1% сек.","readButton":"🗑 Удалить это сообщение","openPage":"🌐 Сайт","openApp":"📱 Приложение","expireNotifyOrderData":"▪️ Тариф: `%1%`\\n▪️ Название: `%2%`\\n▪️ Срок продления: `%3% дней`","expireNotifyTemplate":"Здравствуйте, %1%!\\n%2%\\n\\n%3%\\n▪️ Стоимость продления: `%4%`\\n\\n%5%","expireNotifyFull":"Срок действия Вашего заказа подошёл к концу 🙁\\n\\nЧтобы оставаться на связи со свободным Интернетом — [запустите приложение](https://t.me/rocketman_vpn_bot/?startapp), далее нажмите на 💸 свой баланс справа сверху и, пополнив его, в настройках заказа включите автопродление 😇","expireNotifyTime":"Срок действия Вашего заказа завершится менее чем через `%1%` часа 🙁","expireNotifyRenewAutoNoMoney":"❗️ У Вас включена функция автопродления, однако Ваш текущий баланс не позволяет продлить его 🙁\\n\\nУбедитесь в том, что на счету достаточно средств, чтобы функция работала без проблем в течение ближайших месяцев. [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp), в правом верхнем углу приложения нажмите на свой баланс и пополните на желаемую сумму.","expireNotifyRenewAuto":"✅ У Вас включена функция автопродления, поэтому заказ будет продлён автоматически, когда на нём останется менее 24 часов 😎","expireNotifyRenewManual":"ℹ️ Как включить автопродление?\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Нажмите на свой заказ ⇒ Настройки ⇒ Поставьте галочку возле Автопродления ⇒ Сохранить все изменения.","expireNotifyRenewSuccessAuto":"Здравствуйте, %1%!\\nВаш заказ был продлён автоматически.\\n\\n%2% 🎉\\n\\nСпасибо, что доверяете нам ❤️\\nЛучшей благодарностью за сервис будет инвайт Ваших друзей через реферальную систему!\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"Команда использована неверно\\n`%1%`\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Команда `%1%` использована неверно!\\n\\n✅ Правильный пример: `%2%`\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Начать работу","usePromoCommand":"Применить промокод — /promo PROMO_NAME","useFaqCommand":"Как подключиться к VPN / Proxy?","usePromoAlready":"Вы уже применили данный промокод. Применить промокод можно лишь 1 раз.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Промокод `%1%` не найден 🙁\\n\\nПроверьте правильность написания, а также убедитесь, что промокод действителен.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Лимит активации промокода `%1%` исчерпан 🙁\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"Вы уже применили схожий промокод.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Не удалось применить промокод `%1%` 🙁\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Промокод `%1%` успешно применён 🎉\\nНа Ваш баланс зачислено %2%\\n💰 Ваш текущий баланс: %3%\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"У Вас нет доступа для выполнения данного действия.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Меню админа","adminMenu":"Раздел администратора\\n\\n\\nМеню промокодов\\nСписок промокодов: /listPromo\\nИнформация по промокоду: `/infoPromo {PROMO_NAME}`\\nСоздать промокод: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nУдалить промокод: `/deletePromo {PROMO_NAME}`\\n\\n\\nМеню пользователей\\nВыдать заказ пользователю: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nУдалить заказ: `/removeOrder {ORDER_ID}`\\nВыдать баланс пользователю: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Заказ не найден","adminUserRemoveOrderStatus":"Статус удаления заказа: %1%","adminUserGiveTarifErrUser":"Пользователь не найден!","adminUserGiveTarifErrTarif":"Тариф не найден","adminUserGiveTarifErrNode":"Нода тарифа не найдена. Конфигурация тарифа неверная","adminUserGiveTarifErrMarzban":"MarzBan не дал создать заказ. Причина неизвестна","adminUserGiveTarifSuccess":"Вы успешно выдали заказ для @%1%","adminUserGiveTarifNotify":"🎉 Администратор подключил на Ваш аккаунт\\nтариф `%1%` на `%2% дн.` 📆\\n\\n*Информация о заказе:*\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒\\nнажмите на свой заказ ⇒ 📚 Инструкция VPN / Proxy","adminPromoCreateAlreadyExist":"Данный промокод уже существует","adminPromoCreateAlreadyExistWas":"Данный промокод уже однажды существовал и не может быть создан повторно","adminPromoCreateFailed":"Не удалось создать промокод","adminPromoCreateDone":"Промокод `%1%` успешно создан.\\nДоступно активаций: %2%\\nБаланс: %3%","adminPromoList":"Список всех промокодов:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% исп. / %3% всего / %4%)","adminPromoInfo":"Информация по промокоду:\\n\\nID: `%1%`\\nЛимит активаций: %2%\\nКоличество активаций: %3%\\nБаланс: %4%\\n\\nСписок активаций:\\n%5%","adminPromoDeleteDone":"Промокод `%1%` успешно удалён","terms":"Пользовательское соглашение","contacts":"Контакты для связи","wiki":"База знаний","wikiPage.description":"Инструкции, ответы на вопросы и примеры настройки VPN.","wikiPage.articleLead":"Статья из базы знаний RocketMan VPN.","wikiPage.articleHint":"Навигация по всем статьям слева · содержание справа","wikiPage.subtitle":"Выберите тему слева или воспользуйтесь поиском","wikiPage.heroTopic.faq":"Ответы на вопросы","wikiPage.heroTopic.setup":"Настройка и подключение","wikiPage.heroTopic.troubleshoot":"Примеры и решения","wikiPage.searchPlaceholder":"Поиск по названию и тексту статей...","wikiPage.loadingList":"Загрузка списка статей...","wikiPage.emptyList":"Статьи пока не добавлены.","wikiPage.loadingArticle":"Загрузка статьи...","wikiPage.openHint":"Выберите статью в списке","wikiPage.back":"Назад к списку","wikiPage.error.loadList":"Не удалось загрузить список статей.","wikiPage.error.emptyFile":"Для текущего языка статья недоступна.","wikiPage.error.loadArticle":"Не удалось загрузить статью.","wikiPage.navigation":"Навигация","wikiPage.contents":"Содержание","wikiPage.readMore":"Читать","wikiPage.readingTime":"мин чтения","wikiPage.articlesCount":"статей","wikiPage.backToTop":"Наверх","wikiPage.home":"🏠 Главная страница Базы знаний","wikiPage.copyLink":"Копировать ссылку на эту статью","wikiPage.articleLinkCopied":"Ссылка на эту статью скопирована","wikiPage.linkCopied":"Ссылка скопирована","wikiPage.closeLightbox":"Закрыть","wikiPage.openImageInNewTab":"Открыть в новой вкладке","wikiPage.copySectionLink":"Копировать ссылку на раздел","wikiPage.copyCurrentSectionLink":"Копировать ссылку на текущий абзац","wikiPage.sectionLinkCopied":"Ссылка на текущий абзац скопирована","wikiPage.enlargeImage":"Увеличить изображение","wikiPage.copyCode":"Копировать","wikiPage.copied":"Скопировано","wikiPage.copyText":"Нажмите, чтобы скопировать","wikiPage.searchNoResults":"Ничего не найдено. Попробуйте другое слово.","wikiPage.searchHint":"Результаты поиска по названию и тексту","wikiPage.searching":"Ищем...","wikiPage.searchMatchTitle":"В названии","wikiPage.searchMatchBody":"В тексте","wikiPage.updatedAt":"Обновлено","wikiPage.featured":"Важное к прочтению","wikiPage.groupOther":"Другие статьи","wikiPage.allArticles":"Все статьи","wikiPage.cardUpdated":"Обновлено","wikiPage.updatedToday":"сегодня","wikiPage.updatedYesterday":"вчера","wikiPage.updatedDaysAgo":"%1% дн. назад","wikiPage.badge.important":"Важно","wikiPage.badge.new":"Новое","wikiPage.badge.updated":"Обновлено","wikiPage.badge.hot":"Актуально","contactsTG":"Телеграм-чат","contactsEmail":"E-Mail","trialNotify":"✅ Вы получили тариф `%1%` на `%2% часа` в качестве ознакомительного доступа.\\n\\n📌 Информация о заказе в приложении:\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒\\nнажмите на свой заказ ⇒ 📚 Инструкция VPN / Proxy.\\n\\nМы предоставляем Вам возможность бесплатно ознакомиться с нашими продуктами для того, чтобы Вы оценили качество и стабильность перед будущими покупками 🤝","launchBot":"Запустить","launchBotLong":"Открыть приложение 📱","applicationMainMenu":"Главное меню","applicationMainMenuBack":"Назад","applicationButtonsRef":"Реферальная система","applicationButtonsFaq":"База данных","applicationButtonsCabinet":"Личный кабинет","applicationButtonsAdmin":"Кабинет администратора","applicationButtonsAdminDisk":"Свободно дискового пространства: %1%","applicationButtonsAdminPayments":"Статистика дохода:<br/>%1% текущий мес.<br/>%2% прошлый мес.<br/>%3% за весь период | %4% в ожидании","applicationUserInfoWithUs":"Вы с нами","applicationUserInfoBalance":"Ваш баланс","applicationUserInfoId":"Ваш ID","applicationUserInfoTgId":"ID Привязанного аккаунта TG","applicationUserInfoAPIKey":"Ваш API ключ","applicationUserInfoAPIKeyAlert":"📝 Ваш API ключ был скопирован в буфер обмена. Никому не разглашайте этот ключ, администрация проекта никогда не попросит вас назвать его","applicationUserInfoAPIResetAlertAsk":"📝 Вы уверены, что хотите сгенерировать новый API ключ?","applicationUserInfoAPIResetAlert":"📝 Ваш API ключ был сгенерирован заново","applicationUserInfoIdAlert":"📝 Ваш ID был скопирован в буфер обмена.","applicationUserInfoTgIdAlert":"📝 Ваш Telegram ID был скопирован в буфер обмена.","applicationContactButton":"Связь со службой поддержки","applicationServersButton":"Статус серверов","applicationHowToConnectFAQButton":"Как подключиться к VPN или Proxy?","applicationHowToConnectFAQButtonModal":"Бот отправил вам информацию в личные сообщения 📝","applicationCabinetTitle":"Личный кабинет","applicationCabinetTitleDesc_title":"Нажмите на заказ для управления им","applicationCabinetTitleOrder":"Выбор тарифного плана","applicationCabinetTitleOrder_detail_back":"Вернуться к списку тарифов","applicationCabinetTitleOrder_help_button":"⚠️ Помогите мне определиться с тарифным планом ⚠️","applicationCabinetTitleOrder_help_button_back":"Вернуться к оформлению заказа","applicationCabinetTitleOrder_help_button_header":"Среднее потребление трафика:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 час видео в 1440p ≈6 ГБ\\n<font color=#E10070>Instagram</font>: 1 час Reels ≈2 ГБ\\n<font color=#69C9D0>TikTok</font>: 1 час видео ≈2 ГБ\\n<font color=#7289DA>Discord</font>: 1 час войса c демкой ≈1 ГБ\\n<font color=#BD37FF>Twitch</font>: 2 часа стрима в 1080p ≈5 ГБ\\n<font color=#D0A823>Онлайн-игры</font>: 1 час ≈0.5 ГБ\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 часа в 1080р ≈5 ГБ\\n\\nЕсли сложить все указанные данные, то выходит <font color=#DA7F00>≈20-25 ГБ в день</font>. Эти данные приведены для ориентира, чтобы Вам было проще выбрать подходящий тариф.\\n\\n<font color=#A7C800>VPN и Proxy — по-своему удобны.</font>\\n<font color=#BAD821>VPN:</font> удобно для смартфонов, планшетов и ТВ; можно использовать и на ПК.\\n<font color=#BAD821>Proxy:</font> подходит для Discord, браузера на ПК (YouTube, Twitch, Netflix, HDRezka и т.д.).\\n<font color=#B3D023>Кратко о протоколах:</font>\\n<font color=#2EB3FF>• Vless</font> — лучший обход блокировок, стабильность, скорость, “невидимость”.\\n<font color=#29a1e6>• Hysteria</font> — баланс стабильности и скорости, отлично подходит для гейминга.\\n<font color=#2884BA>• HTTPS</font> — подходит только для сайтов и приложений через Proxifier.\\n\\n🚀 Старт — для обычного сёрфинга\\n🎮 Геймер — для активных юзеров девайсов\\n👑 Семейная+ — для большого объёма трафика","applicationCabinetButtonNew":"Сделать новый заказ","applicationCabinetButtonNewCancel":"Вернуться к списку заказов","applicationCabinetButtonAddBalance":"Пополнить баланс","applicationCabinetIsTrial":"Бесплатный тестовый доступ","applicationCabinetPing":"Пинг к серверу: %1%ms","applicationCabinetEndActive":"Доступ к подписке: %1%","applicationCabinetEndNotActive":"Подписка не оплачена. Нажмите сюда и активируйте её через кнопку «⌛️ Продлить заказ» в выпадающем меню.","applicationCabinetOrderTraficWeek":"в неделю","applicationCabinetOrderTraficMonth":"в месяц","applicationCabinetOrderPriceDay":"/ день","applicationCabinetOrderPriceDays":"/ %1% дней","applicationCabinetOrderPrice":"%1% за %2% дн 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 Ознакомиться с деталями этого тарифа 📋","tarif_desc_drive":"📚 Идеально для знакомства с нашим сервисом и лёгкого серфинга в соцсетях. Позволит полностью опробовать работу VPN / Proxy 😉","tarif_desc_start":"📚 Подходит для соцсетей и лёгкого использования на смартфоне со средним экранным временем ≈4ч в день. На ПК месячный лимит может расходоваться быстрее, учитывайте активность.","tarif_desc_gamer":"🎮 Для тех, кто активно проводит время за ПК:<br/><font color=#DA7F00>•</font> Игры через Steam и другие лаунчеры<br/><font color=#DA7F00>•</font> Голосовое общение в мессенджерах для геймеров с надёжным подключением через Proxy<br><font color=#DA7F00>•</font> Просмотр Twitch с плагином 7TV в 1080p и выше<br/><font color=#DA7F00>•</font> YouTube и другие соцсети, где важно защищённое подключение\\n\\n✅ Данного трафика достаточно для смартфона и ПК с активным использованием ≈5-6 часов в день.","tarif_desc_unlim":"🚀 Тариф для больших объёмов трафика и любых задач: ПК, ноутбуки, смартфоны, планшеты, ТВ и другие устройства.\\n\\n🧡 Один ключ можно использовать на нескольких устройствах — этого трафика хватит для семьи и Ваших друзей!","tarif_desc_ultra":"💠 Премиальный тариф для широкого спектра задач и очень активных пользователей!\\n\\nПодходит тем, кто приближается к верхней границе тарифа в 1 ТБ и хочет пользоваться сервисом без переживаний о трафике.\\n\\n💜 С этим вариантом Вы сможете спокойно загружать крупные файлы, стримить, играть и использовать VPN / Proxy на десятке устройств.","applicationCabinetOrderBack":"Назад","applicationCabinetOrderSelect":"☑️ Заказать этот тариф ☑️","applicationCabinetOrderSelectTrial":"🎁 Активировать тестовый доступ на %1% часа 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Получить тестовый доступ на %1% часа в качестве бонуса?","applicationCabinetOrderSelectAccept":"Подтвердите действие ✅\\nС баланса будет списано: %1%\\n\\n💰 Сейчас у Вас: %2%","applicationCabinetOrderTrial":"🎁 Доступен тестовый период на %1% часа","applicationCabinetOrderTrialUsed":"Вы уже использовали тестовый доступ ранее 🙁","applicationCabinetOrderSelectErrTimeMax":"Максимальный срок продления услуги: 2 месяца","applicationCabinetOrderSelectErrBalance":"У Вас недостаточно средств на внутреннем балансе для заказа 🙁","applicationCabinetOrderSelectErrTrialCfg":"Данный тариф нельзя заказать в тестовом режиме 🙁","applicationCabinetOrderSelectErrTrial":"Вы уже использовали этот тестовый тариф 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Тестовый период доступен только пользователям, авторизованным через Telegram. Войдите через Telegram (или привяжите Telegram в «Настройки») и попробуйте ещё раз.","applicationCabinetOrderSelectSuccess":"Заказ успешно выполнен 🎉","applicationCabinetOrderSelectSuccessTrial":"Тестовый заказ успешно выполнен 🎉","applicationCabinetOrderSelectErrOrder":"Не удалось создать Ваш заказ 😕","applicationCabinetOrderEditChangeTarif":"♻️ Сменить тариф на другой ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ Это текущий тариф","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>При смене тарифа у Вашего заказа останется<br>приблизительно %1%</font><br>дни:часы:минуты:секунды<br><br>Для подтверждения нажмите кнопку ниже","applicationCabinetOrderEditChangeTarifExpired":"❌ Невозможно выполнить смену тарифа у заказа с истёкшим сроком действия. Сначала необходимо его продлить (сделать активным), а уже после сменить тариф на тот, что Вы выбрали. При смене время заказа пересчитается в зависимости от выбранного тарифа.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>Каждые %1% ч. Вы можете изменять тариф на любой другой.</font><br><br>При смене тарифа остаток дней с предыдущего заказа переносится на новый с учётом актуальной стоимости и оставшегося срока доступа.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>Вы уже недавно меняли тариф!</font><br>Следующая смена будет доступна<br>через %1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Подтвердить смену тарифа на выбранный ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Вы уверены, что хотите сменить тариф на выбранный?\\n\\n⚠️ Имейте в виду, что следующую смену тарифа Вы сможете произвести только через %1% ч.","applicationCabinetOrderEditAuto":"Автопродление заказа","applicationCabinetOrderEditAutoOn":"✅ Активно","applicationCabinetOrderEditAutoOff":"❌ Не активно (в ⚙️Настройках)","applicationCabinetOrderEditAutoDesc":"При окончании срока действия заказа, если на Вашем балансе достаточно средств, система автоматически продлит заказ, если включить автопродление.","applicationCabinetOrderEditResetTime":"Сброс трафика","applicationCabinetOrderEditCreated":"Заказ активирован","applicationCabinetOrderEditSpent":"Суммарно потрачено","applicationCabinetOrderEditOverTime":"Подписка активна до","applicationCabinetOrderChangeTarif":"♻️ Смена тарифа","applicationCabinetOrderEditParams":"⚙️ Настройки","applicationCabinetOrderEditParamsTitle":"⚙️ Настройка заказа: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Метка заказа","applicationCabinetOrderEditParamsLabelDesc":"Вы можете добавить метки к Вашим заказам, чтобы Вам было проще определять какой из них где используется","applicationCabinetOrderEditParamsPassword":"🔸 Ваш пароль для подключения (4-12 символов)","applicationCabinetOrderEditParamsIP":"🔸 IP-адрес для доступа без пароля","applicationCabinetOrderEditParamsIPDesc":"В этом поле Вы можете указать свой личный IP-адрес (взяв его, например, с 2ip.io), чтобы получить доступ к нашему Proxy-серверу без указывания логина и пароля в тех местах, где это требуется. Этот вариант удобнее и ничем не отличается по уровню безопасности.\\n⚠️ Важное уточнение: данная функция работает только при подключении через HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"Для того чтобы обезопасить подключение к Proxy, мы сгенерировали случайный пароль. В случае необходимости его можно заменить на любой другой. Он нужен для аутентификации при помощи логина и пароля там, где это потребуется.","applicationCabinetOrderEditSave":"✔️ Сохранить все изменения ✔️","applicationCabinetOrderEditSaveOk":"Изменения успешно приняты ✅","applicationCabinetOrderEditSaveFail":"❌ Настройки не были сохранены. %1%","applicationCabinetOrderEditLinkVpn":"📚 Инструкция VPN","applicationCabinetOrderEditLinkProxy":"📚 Инструкция Proxy","applicationCabinetOrderEditResetPass":"🔄 Сбросить Proxy-пароль","applicationCabinetOrderEditResetPassAccept":"🔄 Вы уверены, что хотите сбросить пароль?\\n\\nСтарый пароль перестанет действовать, и Вам необходимо будет выполнить повторную настройку Proxy-соединения!","applicationCabinetOrderEditLinkAccept":"💬 Вам было отправлено сообщение с подробностями и инструкцией для подключения к нашему VPN / Proxy.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS порт*: `%4%`\\n%5%\\n🔑 *Пароль*: `%6%`","proxyInstructionReserveSubItem":"👤 *Логин* %1% » %2%: `%3%`","proxyInstruction":"Инструкция для подключения к Proxy:\\n\\n%1%\\nМы предоставляем Вам доступ к Proxy сразу во всех наших локациях. ✅ *Рекомендуем сначала попробовать подключение напрямую к европейскому серверу.* В случае если работает некорректно — пробуйте способ через СПБ » Европа.\\n\\n\\n*Данные для подключения к Proxy напрямую:*\\n%2%\\n🌐 HTTPS порт: `%3%`\\n👤 Логин: `%5%`\\n🔑 Пароль: `%6%`\\n\\n\\n*Для некоторых клиентов из РФ:*\\n_(перенаправляет трафик через РФ при недоступности прямого подключения к Европе. В этом режиме обязательно укажите верный логин из блока ниже — он другой)_\\n%7%\\n\\n\\n*Для работы с Proxy-подключением:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Инструкция](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Инструкция](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 ПК на Windows и macOS: [Proxifier](https://www.proxifier.com/) — [Инструкция](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Инструкция для подключения к VPN:\\n\\n%1%\\nМы предоставляем Вам доступ к VPN сразу во всех наших локациях! *Каждая ссылка ниже = личный ключ*, а также страница с инструкцией к подключению. \\n✅ *Рекомендуем сначала добавить Vless от Мультиссылки*, в случае если работает некорректно — пробуйте другие протоколы или резервный вариант.\\n\\n\\n\\n🔹 *Простое объяснение для новичков:*\\n▪️ Нажмите на [эту ссылку](%5%) и следуйте инструкции.\\n\\n\\n\\n🔸 *Для пользователей с опытом*:\\n🌏 Все локации в мультиссылке\\n- %2%\\n\\n*Для некоторых клиентов из РФ:*\\n%3%\\nЭтот способ для тех, у кого нет прямого подключения к европейским серверам и нужен обходной способ доступа к ним через российский сервер.\\n\\n*Прямой доступ к локации на всех протоколах:*\\n%4%\\n\\n⚠️ Если указанные ссылки не открываются, включите в настройках отображение резервной ссылки.%7%","vpnInstructionRoute":"\\n\\nℹ️ Клиенты, использующие HAPP могут добавить кастомные правила для маршрутизации. Вы можете воспользоваться заготовленными настройками ниже или создать свои собственные, указав нужные домены и IP-адреса для обхода VPN. \\n%1%","vpnInstructionAll":"Все протоколы сразу","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Европа","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Ваш личный ключ доступа к VPN*\\n\\nВсе данные для подключения и список рекомендованных приложений находятся по ссылке:  \\n👉 [Открыть ссылку для подключения](%2%)\\n\\n⚠️ *Храните ссылку в секрете!* \\nОна является Вашим персональным ключом авторизации в VPN.\\n\\n✅ Чтобы активировать подписку:  \\nСкопируйте ссылку и вставьте её в выбранное приложение — после этого автоматически загрузятся актуальные настройки.\\n\\n📦 Хотите управлять всеми заказами?  \\nИспользуйте [🔑 ссылку подписки на все подключения](%4%).\\n\\n───────────────\\n🌐 *Ваши данные для подключения к Proxy:*\\n🌐 *Адрес сервера:* `%6%%7%`\\n🌐 *HTTPS порт:* `%9%`\\n👤 *Ваш логин:* `%10%`\\n🔑 *Пароль для подключения:* `%5%`\\n\\n⚠️ В случае недоступности основного сервера вы можете подключиться к резервному серверу:  \\n%11% *Адрес сервера:* `%12%`  \\n🌐 *HTTPS порт:* `%9%`  \\n👤 *Ваш логин:* `%13%.%10%`  \\n🔑 *Пароль для подключения:* `%5%`\\n\\n💡 Proxy можно использовать в любом приложении, которое поддерживает Proxy-соединение.  \\nК примеру, *для работы в браузере Chrome* рекомендуем расширения:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*Инструкции по подключению к VPN:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*Как подключиться к Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows-приложения](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Веб-браузер](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Данные заказа `%1%`\\n⌛️ Тариф: `%2%`\\n⚙️ Автопродление: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Внимание! Обязательно обновите конфигурацию в настройках приложения, где используете данный заказ\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Включено","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Выключено","faqButtonCommand":"🔑 Наши VPN и Proxy могут быть применимы на широком списке устройств и *без ограничений на кол-во подключений* к одному ключу доступа! Настройка очень простая и займет не больше двух минут Вашего времени, далее все будет сведено лишь к кнопке ВКЛ/ВЫКЛ.\\n\\n✅ После того, как Вы оформите свой первый заказ _(включая тестовый)_, Вам придет два сообщения с деталями и инструкциями для подключения как к VPN, так и к Proxy.\\n\\n\\n📦 *Если у Вас ещё нет заказа, то:*\\n[Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ➛ Личный кабинет ➛ Сделать новый заказ ➛ Выбирайте подходящий, нажав на него, и переходите к деталям тарифа ➛ Заказываем.\\n\\n\\nЕсли у Вас возникнут какие-то вопросы, то свяжитесь с нами из приложения, мы обязательно поможем ❤️","applicationCabinetOrderEditPay":"⌛️ Продлить заказ (на %1% дней за %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Заказ успешно продлён на %1% дней.\\n\\nСтатус заказа будет обновлён в течение нескольких минут.","applicationCabinetOrderEditPayErr":"Не удалось продлить заказ 🙁","applicationCabinetOrderRemove":"Удалить заказ","applicationCabinetOrderRemoveFailed":"❌ Невозможно удалить активный заказ!","applicationCabinetOrderRemoveConfirm":"Вы уверены, что хотите удалить заказ? 🤨\\n\\nВ случае необходимости Вы всегда можете сделать новый заказ, а если у Вас возникли проблемы с заказом, то обратитесь в нашу службу поддержки, и мы с радостью Вам поможем!","applicationCabinetOrderRemoveConfirmMessage":"✅ Заказ был успешно удалён!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Не удалось удалить заказ!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Протоколы: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Ваш баланс был пополнен на %1%","applicationAdminDashboard":"📊 Дашборд","applicationAdminUsers":"👥 Пользователи (x%1%)","applicationAdminUsersActive":"🫂 Активные пользователи (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Текущий баланс: %1% | %2% USD","applicationAdminUserRef":"Рефералы (x%1% | %2%)","applicationAdminUserRefTarget":"Реферал от","applicationAdminUserOrders":"📦 Заказы (x%1% всего | x%2% активных)","applicationAdminUserRefs":"💸 Рефералы (x%1% всего)","applicationAdminUserPayments":"💸 Платежи (x%1% всего) | Зачислено %2%","applicationAdminUserPaymentsType":"Платёжная система: %1%","applicationAdminUserPaymentsStatus":"Статус платежа: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Отменить платёж и списать сумму с баланса","applicationAdminUserPaymentsStatusSetFailAccept":"Вы уверены?\\n\\nВ случае подтверждения платёж изменит свой статус, а также с баланса пользователя\\n\\n❌ будет списано %1%","applicationAdminUserPaymentsStatusSetOk":"✅ Подтвердить платёж и зачислить сумму на баланс","applicationAdminUserPaymentsStatusSetOkAccept":"Вы уверены?\\n\\nВ случае подтверждения платёж изменит свой статус, а также баланс пользователя\\n\\n✅ будет пополнен на %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Действие выполнено успешно ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Не удалось выполнить действие!\\nОтвет сервера: %1%","applicationAdminUserCreated":"Создан: %1%","applicationAdminUserUpdated":"Изменён: %1%","applicationAdminUserLast":"🚪 Последний вход: %1%","applicationAdminUserOrdersTotal":"💰 Пополнений баланса на: %1%","applicationAdminUserResetOrderChangeBlock":"Сбросить зависшую блокировку заказа","applicationAdminUserResetOrderChangeBlockAccept":"Вы уверены, что хотите сбросить зависшую блокировку заказа?","applicationAdminUserMedia":"Партнёрская программа","applicationAdminUserMediaOn":"Статус: ✅ Партнёр","applicationAdminUserMediaOff":"Статус: ❌ НЕ Партнёр","applicationAdminUserMediaConfirm":"Статус: ❌ НЕ Партнёр","applicationAdminUserMediaTotal":"Суммарный доход: %1%","applicationAdminUserMediaPayed":"Выплачено партнёру: %1%","applicationAdminUserMediaPayWait":"Необходимо выплатить: %1%","applicationAdminUserMediaPayWaitButton":"💸 Отметить выплату","applicationAdminUserMediaPayWaitButtonAccept":"Вы уверены, что хотите отметить выплату как выполненную? Сумма транзакции %1% (%2%)\\n\\n💸 После подтверждения пользователю будет отправлено уведомление о том, что средства были выплачены и они уже в пути к нему.","applicationAdminUserMediaPayWaitNotify":"Уважаемый партнёр! \\n\\n💸 Вам была выплачена сумма в размере *%1%* по партнёрской программе. Средства уже в пути и потребуется некоторое время, чтобы они достигли Ваших реквизитов","applicationAdminUserMediaPercent":"%2%%1%% Процент от рефералки в доход","applicationAdminUserMediaPercentDesc":"Этот процент указывает, сколько от рефералки будет выплачено пользователю в качестве дохода от партнёрской программы","applicationAdminUserGiveOrder":"Выдать заказ пользователю","applicationAdminUserGiveOrderDays":"Количество дней","applicationAdminUserGiveOrderButton":"Выдать","applicationAdminUserGiveOrderButtonConfirm":"Вы собираетесь выдать заказ\\n\\"%1%\\"\\nпользователю на %2% дней?","applicationAdminUserEditButton":"Управление пользователем","applicationAdminUserEditPromos":"Использованные промокоды: %1%","applicationAdminUserEditBalance":"Изменить баланс","applicationAdminUserAddBalance":"Добавить на баланс","applicationAdminUserEditBalanceAccept":"Вы уверены, что хотите изменить баланс пользователя?","applicationAdminUserEditBalanceAcceptFail":"Не удалось изменить баланс. Возможно, во время редактирования текущий баланс пользователя был изменён\\nОтвет сервера: %1%","applicationAdminUserEditBalanceAcceptOk":"Баланс был успешно изменён","applicationAdminUserEditBalanceChangeNotify":"Администратор изменил Ваш баланс на *%1%*.\\n💰 Текущий баланс: *%2%*\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Администратор добавил *%1%* на Ваш баланс.\\n💰 Текущий баланс: *%2%*\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Поиск","applicationAdminOrders":"🛒 Все заказы (x%1%)","applicationAdminOrdersActive":"💳 Активные заказы (x%1%)","applicationAdminOrdersExpired":"⛔ Остановленные заказы (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% дней","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Трафик: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Блокировка смены тарифа","applicationAdminOrderReload":"Обновить данные MarzBan","applicationAdminOrderReloadAccept":"⚠️ Обновить данные?\\n\\nЭто действие загрузит данные заказа из MarzBan и обновит их в приложении!","applicationAdminOrderReloadAcceptDone":"✅ Запрос на обновление данных отправлен!","applicationAdminOrderReloadAcceptFail":"❌ Не удалось обновить данные заказа!","applicationAdminOrderResetChangeTime":"Сбросить время смены тарифа","applicationAdminOrderResetChangeTimeAccept":"Вы уверены, что хотите это сделать? При подтверждении пользователь сможет сменить тариф на другой","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Запрос успешно выполнен. Теперь пользователь может изменить тариф самостоятельно","applicationAdminOrderResetTraffic":"Сбросить трафик","applicationAdminOrderResetTrafficAccept":"⚠️ Отменить заказ?\\n\\nПользователь не получит уведомление!","applicationAdminOrderResetTrafficAcceptOk":"✅ Готово","applicationAdminOrderReturn":"Отменить заказ","applicationAdminOrderReturnAccept":"⚠️ Отменить заказ?\\n\\nПользователь ПОЛУЧИТ назад средства за весь НЕИСПОЛЬЗОВАННЫЙ период!","applicationAdminOrderReturnAcceptDone":"⚠️ Заказ удалён. Пользователю возвращено %1% на баланс.","applicationAdminOrderReturnNotify":"⚠️ Администратор отменил Ваш заказ\\n🛒 `%1%` и вернул Вам *%2%* на баланс.\\nВы можете сделать новый заказ, чтобы всегда оставаться на связи со свободным Интернетом, зайдя в приложение.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Сделать новый заказ","applicationAdminOrderRemove":"Удалить заказ","applicationAdminOrderRemoveAccept":"⚠️ Удалить заказ?\\n\\nЕсли заказ всё ещё активен, средства НЕ будут возвращены!","applicationAdminOrderRemoveAcceptDone":"Заказ удалён","applicationAdminOrderAddTime":"Продлить заказ (%1% дн.)","applicationAdminOrderAddTimeAccept":"⚠️ Продлить заказ (%1% дн.)?\\n\\nЭто действие НЕ изменит баланс пользователя!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Администратор продлил Ваш заказ\\n🛒 `%1%` на *%2% дн.* 📆\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Нажмите на указанный заказ для ознакомления с деталями.","applicationAdminPromos":"🎁 Промокоды (x%1%)","applicationAdminPaymentsLast":"⏰ Последние платежи (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Последние успешные платежи (x%1%)","applicationAdminPromosCreate":"Создать промокод","applicationAdminPromoID":"Название: %1%","applicationAdminPromoUSED":"Использований: %1%","applicationAdminPromoCOUNT_USE":"Лимит: %1%","applicationAdminPromoBALANCE":"Сумма: %1%","applicationAdminPromoEditID":"Название","applicationAdminPromoEditCOUNT_USE":"Количество применений (макс)","applicationAdminPromoEditAMOUNT":"Сумма в $","applicationAdminPromoEditCATEGORY":"Категория","applicationAdminPromoEditCATEGORYEmpty":"Обычный / без категории","applicationAdminPromoEditCATEGORYMedia":"Медиапромо","applicationAdminPromoEditCATEGORYNew":"Для новичков","applicationAdminPromoEditSave":"Сохранить промокод","applicationAdminPromoEditPromo":"Изменить","applicationAdminPromoCategory":"Категория: %1%","applicationAdminPromoSendUseList":"Список применивших","applicationAdminPromoRemovePromo":"Удалить","applicationAdminPromoRemovePromoAccept":"Вы уверены?","applicationAdminAddNode":"Добавление новой ноды","applicationAdminAddNodeDesc":"Данный раздел позволит в 2 клика развернуть весь проект на новой ноде. Это лишь установит всё, что надо, но не будет добавлять ноду в список нод","applicationAdminAddNodeIP":"IP-адрес сервера","applicationAdminAddNodeHostname":"Поддомен сервера (s1, s2 и т.д., без точки и прочего)","applicationAdminAddNodeHostnameDesc":"Указанный поддомен автоматически пропишется в CloudFlare со всеми параметрами для работы с нашим сервисом. Если указать уже существующий — то будет перезаписан, так что внимательнее","applicationAdminAddNodeUsername":"Имя пользователя (root)","applicationAdminAddNodePassword":"Пароль пользователя (root)","applicationAdminAddNodePasswordDesc":"Если не указать пароль — будет использоваться авторизация по SSH-ключу. В этом случае убедитесь, что Ваш SSH-ключ добавлен в ноду и имеет доступ к серверу","applicationAdminAddNodePasswordKeyInfo":"Внимание. Пароль не указан, будет использоваться авторизация по SSH-ключу. Убедитесь, что Ваш SSH-ключ добавлен в ноду и имеет доступ к серверу","applicationAdminAddNodeSshPort":"SSH-порт (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Для работы требуются такие права: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Нажмите, чтобы получить токен","applicationAdminAddNodeStart":"Выполнить деплой","applicationAdminAddNodeStarted":"Процесс деплоя запущен, не закрывайте страницу и дождитесь выполнения. Если в течение 5 минут процесс не будет завершён — скорее всего что-то зависло(","applicationAdminAddNodeDoneOk":"Деплой завершён успешно","applicationAdminAddNodeDoneFail":"Ошибка: %1%","applicationAdminAddNodeClearLogs":"Очистить логи","applicationAdminInstallNode":"Развёртывание ноды","applicationAdminCoreSettings":"Настройки ядра","applicationAdminCoreSettingsDesc":"Данный раздел позволяет настроить базовые параметры системы. Параметры применяются на лету, без перезапуска ядра","applicationAdminSaveCoreSettings":"Сохранить настройки","applicationAdminCoreSettingsSaved":"Настройки успешно сохранены","applicationAdminCoreName.projectName":"Название проекта","applicationAdminCoreName.projectMain":"Основной домен","applicationAdminCoreName.projectBot":"Логин бота проекта","applicationAdminCoreDesc.projectBot":"Через какого бота происходит взаимодействие с пользователями. Укажите логин без @","applicationAdminCoreName.admins":"ID Администраторов","applicationAdminCoreDesc.admins":"ID указывайте строго через запятую и не используйте пробелы. К примеру: `123456789,987654321`. И не удалите себя случайно)","applicationAdminCoreName.backup_admins":"ID Администраторов для получения бэкапа","applicationAdminCoreDesc.backup_admins":"Данным администраторам бот будет присылать бэкапы в личку. ID указывайте строго через запятую и не используйте пробелы. К примеру: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Максимальный срок продления заказа (в месяцах)","applicationAdminCoreDesc.order_end_limit_month":"Пользователь не сможет продлить свой заказ на срок больше, чем указан","applicationAdminSendMessage":"Рассылка сообщений","applicationAdminSendMessageTargets":"Количество человек, кто получит сообщение","applicationAdminSendMessageType":"Тип фильтрации пользователей","applicationAdminSendMessageTypeAll":"Все пользователи","applicationAdminSendMessageTypeOrders":"Определённые заказы (любые)","applicationAdminSendMessageTypeOrdersActive":"Определённые заказы (активные)","applicationAdminSendMessageTypeHas":"Есть хоть 1 заказ","applicationAdminSendMessageTypeNotHas":"Нет никаких заказов","applicationAdminSendMessageTypeHasActive":"Есть хоть 1 активный заказ","applicationAdminSendMessageTypeHasUnActive":"Есть хоть 1 НЕактивный заказ","applicationBalanceErr":"Возникла ошибка при формировании платежа: %1%","applicationBalanceErrBalanceLimit":"На Вашем счету уже максимально допустимое количество средств (%1%)","applicationBalanceErrBalanceLimitButton":"Недоступно","applicationBalanceErrData":"Платёжная система не смогла сформировать платёж. Пожалуйста, попробуйте позже.","applicationBalanceErrNetwork":"Сетевая ошибка. Пожалуйста, попробуйте позже.","applicationBalanceErrCurrency":"Ошибка валюты. Пожалуйста, попробуйте позже.","applicationBalanceErrAuth":"Ошибка авторизации","applicationBalanceErrPaymentLink":"Не удалось получить ссылку на платёж","applicationBalanceSettingsTitle":"Выбор валюты","applicationBalanceTitle":"Раздел пополнения баланса","applicationBalanceSelect":"Выберите валюту для отображения","applicationBalanceEmail":"Ваш email","applicationBalancePlatform":"Платёжная платформа","applicationBalanceAmount":"Сумма пополнения (в %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Итоговая сумма оплаты: ≈%1%</font>\\n\\n<font color=#F28100>Если Вы чей-то реферал,\\nто на баланс вернётся %2% в виде 20% кэшбэка!</font>","applicationBalanceAmountLimit":"Минимальная сумма: %1%\\nМаксимальная сумма: %2%\\n\\n💵 <font color=#00AE09>Ваш способ оплаты: %4%</font>\\nКомиссия платёжной системы: %3%%\\n\\nПосле самой оплаты баланс зачисляется автоматически в течение нескольких минут, также Вам придёт сообщение о статусе платежа с другими деталями на случай обращения в службу поддержки.","applicationBalanceAmountDesc":"Пополнение происходит через сервис %1%","applicationBalanceAmountButton":"Перейти на страницу оплаты","applicationBalanceAmountButtonLoading":"Загрузка...","applicationBalanceAmountButtonErr":"❌ Неверно указана сумма ❌","applicationBalanceCurrency":"Метод оплаты","applicationBalanceCurrencyDesc":"Комиссия платёжной системы: ≈%1%%","applicationServersTitle":"Статус серверов","paymentCompleteNotify":"🎉 Ваш баланс был успешно пополнен на <b>%1%</b>.\\n\\nID платежа: <b>%2%</b>\\n(Он понадобится в случае обращения в <a href=\\"https://t.me/rocketman_vpn\\">службу поддержки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyRef":"🎉 Ваш баланс был успешно пополнен на <b>%1%</b>.\\nТак как Вы являетесь рефералом @%4% в нашем сервисе, мы начислили бонус в размере <b>%3%</b> (%5%%)\\n\\nID платежа: <b>%2%</b>\\n(Он понадобится в случае обращения в <a href=\\"https://t.me/rocketman_vpn\\">службу поддержки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyRefHost":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> (%3%%) за пополнение баланса Вашим рефералом @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyAdmin":"💵 Пользователь %1% [UID: %7%] пополнил баланс на <b>%2%</b>.\\n💰 В чистую прибыль проекта зачислено +<b>%5%</b>\\n\\nПлатёжная система: <b>%6%</b>\\nID платежа: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Внимание ❗️\\nПо платежу `%1%` был сформирован запрос на возврат средств.\\n\\nТак как они были возвращены Вам в полном объёме, с баланса в приложении было списано *%2%*.\\n\\nВ случае возникновения вопросов обратитесь в [службу поддержки](https://t.me/rocketman_vpn), мы обязательно поможем!\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Ноды","admin-routing":"🔀 Роутинг","admin-presets":"📋 Пресеты","admin-firewall":"📜 Записи фаервола (x%1%)","admin-firewall_add":"Новая запись фаервола","admin-nav-messages":"Рассылка","admin-nav-firewall":"Фаервол","admin-nav-logs":"Логи администрации","logRecord-title":"📊 Логи администрации (x%1%)","logRecord-title-user":"📜 Логи пользователя (x%1%)","logRecord-log-time":"Создан: %1%","logRecord-log-who":"Кто","logRecord-log-target":"Цель","logRecord-log-reason":"Текст: %1%","logRecord-setPaymentStatus":"Смена статуса платежа %1%","logRecord-removePromo":"Удаление промокода %1%","logRecord-editPromo":"Редактирование промокода %1%","logRecord-editBalance":"Редактирование баланса (%1%$ -> %2%$)","logRecord-returnOrder":"Отмена заказа %1% (%2%$)","logRecord-addOrder":"Выдача заказа %1%","logRecord-payOrder":"Продление заказа %1% на %2% дней","logRecord-partnerNotify":"Выплата партнёру %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"СБП (Система быстрых платежей)","paymentMethodCrypto":"Криптовалюта","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Не удалось обнаружить данные пользователя для формирования ссылки. Видимо, этот пользователь заблокировал нашего бота 😐","partner_title":"🏆 Партнёрская программа 🏆","partner_desc":"Вы являетесь участником партнёрской программы. Помимо основного бонуса за реферата Вы также будете получать финансовые отчисления.\\n\\nВаша текущая ставка — %1%% от реферального баланса\\n\\nВсего Вы заработали: %2%\\nТекущий баланс: %3%","ref_title":"🏆 Реферальная система 🏆","ref_desc":"Приглашайте друзей и знакомых в наш сервис и получайте бонусы на свой баланс!\\n\\n<font color=#2DA618>От каждого реферала Вы получите по <font color=#54E13B>%1%</font> за их первые заказы и <font color=#54E13B>%2%%</font> от всех пополнений их баланса.</font>\\n\\n<font color=#00B7B7>Все Ваши рефералы получат <font color=#15DBDB>%3%</font> бонусом после первого заказа (включая тестовый) и <font color=#15DBDB>%4%%</font> кэшбэка от всех своих будущих пополнений.</font>\\n\\nТаким образом эта система выгодна и для Вас, и для Ваших рефералов 😉","ref_stats":"Ваша статистика","ref_stats_data":"Количество приведённых рефералов: %1%\\nПолучили бонусом на баланс: %2%","ref_link_text":"Ваши данные реферальной системы","ref_link_text_copy":"📋 Ссылка+текст","ref_only_link_copy":"🔗 Ссылка","ref_link_text_copy_sendText":"Привет! Я пользуюсь удобным способом для защиты своих данных в интернете и смело рекомендую его тебе 😎\\n\\nКроме того, перейдя именно по моей ссылке, ты получишь бонусом %1% после первого заказа (включая тестовый) и пожизненный кэшбэк в %2%% от всех пополнений баланса 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Ваша реферальная ссылка и дополнительный текст были скопированы в буфер обмена.\\n\\nИспользуйте это для приглашения друзей и знакомых в наш сервис, чтобы извлекать выгоду совместно 😎","ref_only_link_copy_alert":"🔗 Ваша реферальная ссылка была скопирована в буфер обмена.\\n\\nИспользуйте её для приглашения друзей и знакомых в наш сервис, чтобы извлекать выгоду совместно 😎","ref_link_text_share":"💌 Поделиться","ref_link_text_share_message":"Привет! Я пользуюсь удобным способом для защиты своих данных в интернете и смело рекомендую его тебе 😎\\n\\nКроме того, перейдя именно по моей ссылке, ты получишь бонусом %1% после первого заказа (включая тестовый) и пожизненный кэшбэк в %2%% от всех пополнений баланса 🎉\\n","ref_message_personal":"Вы не можете зарегистрироваться по своей реферальной ссылке 😐","ref_message":"🎁 Реферальная система:\\nВы успешно зарегистрировались как реферал пользователя @%1% 🎉\\n\\nВы получите бонус в размере <b>%2%</b> при первом заказе (включая тестовый), а также пожизненный кэшбэк в размере <b>%3%%</b> при каждом пополнении баланса!","ref_message_host":"🎁 Реферальная система:\\n🎉 Пользователь @%1% зарегистрировался как Ваш новый реферал 🎉\\n\\nВы получите бонус в размере <b>%2%</b> при первом его заказе (включая тестовый), а также кэшбэк в размере <b>%3%%</b> от каждого его пополнения баланса.","ref_message_order":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> на свой баланс","ref_message_order_host":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> на свой баланс от пользователя @%2%","traffic_limit_notify_close":"⚠️ У Вас заканчивается трафик на заказе `%1%` с тарифом `%2%`! Если это сообщение будет появляться достаточно часто, то рекомендуем задуматься о смене тарифа на более продвинутый, чтобы всегда оставаться на связи ❤️\\n\\n🚀 Сделать это Вы сможете, [запустив приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ нажмите на нужный заказ ⇒ ♻️ Сменить тариф на другой ♻️","traffic_limit_notify_end":"❗️ ВНИМАНИЕ ❗️ У Вас закончился весь трафик на заказе `%1%` с тарифом `%2%`. Его сброс произойдёт %3%. Но если Вы хотите всегда оставаться на связи, то подумайте о смене тарифа на более продвинутый.\\n\\n🚀 Сделать это Вы сможете, [запустив приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ нажмите на нужный заказ ⇒ ♻️ Сменить тариф на другой ♻️","traffic_limit_notify_restore":"🎉 У заказа `%1%` с тарифом `%2%` была сброшена статистика использованного трафика. Теперь он снова доступен в полном объёме :)\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Применить промокод","example":"Example","deleteMessageFailed":"❌ Не удалось удалить сообщение. Возможно, оно слишком старое или уже удалено.","cryptoPayTitle":"Оплата через криптовалюту","cryptoPayUserId":"ID пользователя","cryptoPayAmount":"Сумма к оплате (USDT)","cryptoPayInstruction":"Переведите указанную сумму в USDT на предоставленный адрес","cryptoPayLoading":"Загрузка реквизитов...","cryptoPayErrorNoParam":"Не передан параметр crypto_id в ссылке.","cryptoPayErrorInvalidData":"Некорректные данные для оплаты.","cryptoPayErrorParse":"Ошибка при обработке данных для оплаты. Попробуйте обновить страницу или обратитесь в поддержку.","cryptoPayWallet":"Адрес кошелька для перевода","cryptoPayNetwork":"Сеть (блокчейн)","cryptoPayCopy":"Скопировать","cryptoPayCopyAmountAlert":"Сумма скопирована в буфер обмена!","cryptoPayCopyWalletAlert":"Адрес кошелька скопирован в буфер обмена!","cryptoPayWarning":"ВНИМАТЕЛЬНО проверьте реквизиты и сумму перед оплатой! В случае ошибки мы не можем гарантировать зачисление средств.","telegramPayment":"✅ Для Вас был сформирован счёт на оплату\\n\\n⚖️ Сумма оплаты: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 ID пользователя: <b>%7%</b>\\n📋 ID платежа: <b>%6%</b>\\n\\n🔗 Для оплаты перейдите по ссылке: %5%","orderManipulationBlock":"Ваш прошлый заказ всё ещё в обработке. Пожалуйста, подождите его завершения или обратитесь в службу поддержки для получения помощи.","subPage.orderInfo":"Ниже представлены все доступные методы подключения для Вашего заказа через это приложение","subPage.userInfo":"Ниже представлены все доступные методы подключения для всех Ваших активных заказов через это приложение","subPage.orderId":"🛒 ID Заказа: %1%\\n⬇️ Выберите регион конечного подключения:","subPage.nodeInfo":"📍 Точка обхода: %1%\\n⚠️ Это значит, что сначала весь трафик будет идти через неё для маскировки.","subPage.protocolInfo":"Протокол подключения: %1%","subPage.allTitle":"Все заказы","subPage.expiredNotifyList":"❌ Срок действия подписки истёк\\nПродлить VPN в боте\\n%1%","ping.admin.initOk":"✅ Система инициализирована, все ноды доступны в штатном режиме.","ping.admin.initFail":"❌ Система инициализирована, но некоторые ноды не доступны:\\n\\n%1%","speedtest.admin.failTest":"❌ Тест скорости не пройден. Пожалуйста, проверьте работоспособность.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Зафиксирована низкая скорость соединения (%2% Mbps download, %3% Mbps upload). Пожалуйста, проверьте работоспособность.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Скорость соединения восстановлена (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ На сервере обнаружены проблемы со скоростью соединения","applicationServersSpeedtestLastSpeed":"Последний замер скорости (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Предыдущий замер скорости (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ На сервере не было сделано ещё замеров скорости","applicationServersPingIssueDetected":"❌ Сервер не отвечает на пинг-запросы","actionUpdateStartNodes":"⚠️ Запущена процедура обновления нод (%1%), через некоторое время ноды будут перезапущены. После завершения выполнения работ будет отправлено дополнительное уведомление (если не было отправлено — возможно, подвис github action и всё в порядке, но могут быть и проблемы)","actionUpdateStartHeader":"Запущена процедура обновления:","actionUpdateStartSite":"• Обновляется главная страница проекта","actionUpdateStartApp":"• Обновляется бэкенд приложение","actionUpdateStartProxy":"• Обновляется прокси или xray служба (Ноды: %1%)","actionUpdateStartMTProto":"• Обновляется сервер MTProto","actionUpdateStartFirewall":"• Обновляем фаервол (Ноды: %1%)","actionUpdateStartBackup":"• Обновляем дочерний API интерфейс (Ноды: %1%)","actionUpdateStartFooter":"Через некоторое время ноды будут перезапущены. После завершения работ будет отправлено уведомление.","actionUpdateCompletedNodes":"✅ Процедура обновления нод (%1%) завершена, ноды перезапущены и уже должны быть активны","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Быстрый и безопасный","mtproto.subtitle.2":"доступ к Telegram","mtproto.description.1":"Бесплатный прокси-сервер для стабильного подключения к Telegram.","mtproto.description.2":"Без регистрации, без ограничений, с полной конфиденциальностью.","button.connect":"Подключить прокси","button.copy":"Скопировать ссылку","button.copied":"Скопировано","link.label":"Ссылка для подключения вручную","feature.encryption.title":"Сквозное шифрование","feature.encryption.description":"Ваши сообщения остаются конфиденциальными. Мы не имеем доступа к Вашей переписке.","feature.free.title":"Без ограничений","feature.free.description":"Бесплатный доступ без регистрации и лимитов на трафик.","feature.rocketman.title":"Больше возможностей","feature.rocketman.description":"Этот прокси работает только для Telegram. Для полноценной защиты используйте RocketMan-VPN.","rocketman.title":"RocketMan VPN — это Ваш надежный друг","rocketman.description":"Данный MTProto-прокси является дополнительным проектом — RocketMan VPN. С нами Вы получите полную защиту интернет-соединения во всех приложениях и любимых сервисах. Попробуйте бесплатно то, что мы предоставляем для своих клиентов, и оцените качество!","rocketman.button":"Открыть RocketMan VPN","howto.title":"Как подключиться?","howto.step1.title":"Нажмите на кнопку \\"Подключить прокси\\"","howto.step1.description":"Или скопируйте ссылку и подключитесь вручную","howto.step2.title":"Откройте Telegram","howto.step2.description":"Ссылка автоматически запустит приложение","howto.step3.title":"Подтвердите","howto.step3.description":"Нажмите «Подключить» в диалоговом окне","web.orders":"Мои заказы","web.settings":"Настройки","web.exit":"Выход","web.back":"← Назад","settings.accountInfo":"Информация об аккаунте","settings.language":"Язык","settings.currency":"Валюта отображения","settings.currencyDesc":"Выберите валюту для отображения цен и баланса в приложении.","settings.webCredentials":"Данные для входа на сайт","settings.webCredentialsDesc":"Эти данные используются для входа в веб-интерфейс вне Telegram. Хоть мы и не ограничиваем Вас в выборе пароля, но настоятельно рекомендуем указывать сложный","settings.login":"Логин","settings.loginPlaceholder":"Введите новый логин","settings.newPassword":"Новый пароль","settings.passwordPlaceholder":"Не менее %1% символов","settings.repeatPassword":"Повторите пароль","settings.repeatPasswordPlaceholder":"Повторите новый пароль","settings.passwordMismatch":"Пароли не совпадают","settings.saved":"Сохранено!","settings.saveError":"Ошибка сохранения","settings.saving":"Сохранение…","settings.saveCredentials":"Сохранить данные","settings.show":"Показать","settings.hide":"Скрыть","settings.copy":"Копировать","settings.reset":"Сбросить","settings.apiKeyHint":"Используйте API-ключ для входа в <a href=\\"https://%1%\\" target=\'_blank\'>веб-интерфейс</a> без Telegram, а также для интеграции с другими нашими продуктами. Не передавайте его третьим лицам, этот ключ предоставляет полный доступ к вашему аккаунту","settings.referral":"Реферал (ID пригласившего)","settings.referralDesc":"Если вы пропустили реферальную ссылку, укажите ID пригласившего здесь. Применится только один раз.","settings.referralApplied":"ID пригласившего","settings.referralAppliedAlert":"ID пригласившего скопирован в буфер обмена.","settings.referralHostId":"Ваш ID пригласившего","settings.referralHostIdPlaceholder":"Введите ID пользователя (только цифры)","settings.referralHostIdInvalid":"Неверный формат ID. Используйте только цифры.","settings.referralApply":"Применить ID","settings.referralSaved":"Реферал применён!","settings.referralErr.already_applied":"Реферал уже был применён.","settings.referralErr.invalid_ref_host":"Неверный ID пригласившего.","settings.referralErr.same_account":"Нельзя использовать свой собственный ID в качестве реферала.","login.tabCredentials":"Логин и пароль","login.tabApiKey":"API-ключ","login.tabRegister":"Регистрация","login.labelLogin":"Логин","login.labelPassword":"Пароль","login.labelConfirmPassword":"Подтверждение пароля","login.labelApiKey":"API-ключ","login.placeholderLogin":"Введите логин","login.placeholderPassword":"Введите пароль","login.placeholderConfirmPassword":"Подтвердите пароль","login.placeholderApiKey":"Введите API-ключ","login.signIn":"Войти","login.signInApiKey":"Войти по API-ключу","login.signUp":"Зарегистрироваться","login.signingIn":"Входим…","login.signingUp":"Регистрируемся…","login.orUseApiKey":"или войдите по API-ключу","login.orUseCredentials":"или войдите по логину и паролю","login.switchToApiKey":"Войти по API-ключу","login.switchToCredentials":"Войти по логину и паролю","login.errLoginRequired":"Введите логин и пароль","login.errPasswordRequired":"Введите пароль","login.errConfirmPasswordRequired":"Подтвердите пароль","login.errPasswordMismatch":"Пароли не совпадают","login.errApiKeyRequired":"Введите API-ключ","login.errIncorrect":"Неверный логин или пароль","login.errInvalidKey":"Неверный API-ключ","login.errServer":"Ошибка сервера, попробуйте ещё раз","login.errRegistration":"Ошибка регистрации","login.tabTelegram":"Через Telegram","login.tg.title":"Вход через Telegram","login.tg.instruction":"1. Отправьте команду ниже боту <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a>\\n2. После отправки нажмите кнопку «Подтвердить вход»","login.tg.commandLabel":"Команда для бота:","login.tg.showCommand":"Показать","login.tg.hideCommand":"Скрыть","login.tg.copyCommand":"Копировать","login.tg.copied":"Команда скопирована!","login.tg.timerLabel":"Код действителен: %1%","login.tg.timerExpired":"Срок действия кода истёк","login.tg.verifyButton":"Подтвердить вход","login.tg.verifying":"Проверяем…","login.tg.requestNew":"Запросить новый код","login.tg.loading":"Генерируем код…","login.tg.enter_correct":"Личность подтверждена. Вернитесь на сайт и нажмите на кнопку \\"%1%\\" для завершения","login.tg.enter_fail":"Не удалось выполнить действие. Убедитесь, что указанный ключ корректен, а срок действия не истёк","login.tg.errNotSent":"Не удалось подтвердить вход. Убедитесь, что вы отправили команду боту, и попробуйте ещё раз. Если код истёк — запросите новый.","lang.ru":"Русский","lang.en":"Английский","lang.uk":"Украинский","footer.info":"MTProto-прокси работает только с официальными приложениями Telegram","instructionModalTitleVpn":"Инструкция по подключению VPN","instructionModalTitleProxy":"Инструкция по подключению Proxy","instructionModalSendToTg":"📩 Отправить в Telegram","instructionModalSentToTg":"Инструкция отправлена в ваши личные сообщения Telegram","settings.name":"Ваше имя","settings.nameDesc":"Укажите имя для персонализации обращений в приложении. Он является публичным и может использоваться для отображения другим пользователям","settings.namePlaceholder":"Введите имя (3-15 символов)","settings.nameInvalid":"Допускаются только кириллица, латиница, цифры и пробелы (3-15 символов)","settings.promoTitle":"Активация промокода","settings.promoDesc":"Если у Вас есть промокод, то введите его здесь, чтобы получить приятный бонус на Ваш баланс.","settings.promoPlaceholder":"Введите промокод","settings.promoApply":"Применить промокод","settings.promoApplied":"Промокод успешно применён!","adminDashboardTitle":"Статистика (Дашборд)","adminDashboardActiveOrders":"Активность подписок","adminDashboardActiveLabel":"Активные","adminDashboardExpiredLabel":"Истекшие","adminDashboardOrdersByTariff":"Подписки по Тарифам","adminDashboardPayments":"Платежи","adminDashboardTrial":"Пробный период","adminDashboardLang":"Язык пользователей","adminDashboardCurrency":"Валюта пользователей","adminDashboardActivity":"Активность в приложении","adminDashboardOrdersPerUser":"Кол-во подписок на юзера","adminDashboardRefIncome":"Медианный доход с рефералов","applicationAdminBackButton":"Назад","settings.passkeys.title":"Ключи доступа (Passkeys)","settings.passkeys.desc":"Добавьте до 5 устройств для быстрого и безопасного входа без пароля с помощью биометрии или физических ключей.","settings.passkeys.add":"➕ Добавить новый ключ","settings.passkeys.name":"Название устройства","settings.passkeys.name_placeholder":"Напр: iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"У вас пока нет привязанных ключей доступа","settings.passkeys.delete_confirm":"Вы уверены, что хотите отвязать этот ключ доступа? Вы больше не сможете войти с его помощью.","settings.passkeys.limit_reached":"Достигнут лимит ключей (максимум 5)","settings.passkeys.add_success":"Ключ доступа успешно добавлен!","settings.passkeys.add_error":"Не удалось добавить ключ доступа","login.tabPasskey":"По ключу","login.passkey.btn":"Войти через Passkey","login.passkey.error":"Ошибка авторизации через ключ доступа","login.passkey.not_supported":"Ваш браузер или устройство не поддерживают вход через Passkey","admin.bulkRenewal.button":"📅 Массовое продление заказов","admin.bulkRenewal.title":"📅 Массовое продление заказов","admin.bulkRenewal.afterDateLabel":"Учитывать заказы, срок которых истёк после указанной даты (или не истёк). Часовой пояс: %1%","admin.bulkRenewal.daysLabel":"Количество дней для продления","admin.bulkRenewal.ordersCount":"Заказов будет продлено","admin.bulkRenewal.usersCount":"Уникальных пользователей","admin.bulkRenewal.applying":"⏳ Применяется...","admin.bulkRenewal.done":"✅ Готово!","admin.bulkRenewal.apply":"📅 Продлить %1% заказ(ов) на %2% дн.","admin.bulkRenewal.notifyUser":"📅 Администратор продлил ваши активные заказы на %1% дн. Список заказов: %2%","admin.bulkRenewal.notifyUsers":"Уведомить пользователей в Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ При большом количестве пользователей уведомления могут работать нестабильно или с задержкой"}');
+const ru_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"Для включения уведомлений на iPhone:\\n1. Нажмите иконку [⎋] (Поделиться) в нижней панели.\\n2. Выберите пункт «На экран Домой».\\n3. Запустите сайт с рабочего стола и вернитесь в этот раздел.","settings.pushSupportError":"Web Push не поддерживается на этом устройстве","settings.pushTitle":"Push-уведомления","settings.pushDesc":"Подпишите это устройство для получения системных уведомлений","settings.pushSubscribed":"✅ Это устройство подписано","settings.pushNotSubscribed":"❌ Устройство не подписано","settings.pushSubscribeBtn":"Подписаться","settings.pushUnsubscribeAllBtn":"Отвязать все устройства","settings.pushSuccess":"Успешно подписано","settings.pushUnsubscribeSuccess":"Все устройства отвязаны","settings.pushError":"Ошибка при подписке","settings.disableSiteNotify":"Отключить уведомления на сайте","settings.disableSiteNotifyDesc":"Отключите уведомления на сайте, оставив только Push-уведомления и уведомления в Telegram (если учётная запись привязана к Telegram)","settings.disableSiteNotifyYes":"Да","settings.disableSiteNotifyNo":"Нет","settings.geoRouting":"Добавить гео-роутинг в данных подписки","settings.geoRoutingDesc":"Вы можете выбрать определённый гео-роутинг для своих заказов. Если он будет добавлен, то при подключении к VPN / Proxy через инструкции из приложения, в данных подписки будет указано, что вы хотите использовать определённый гео-роутинг. Это может помочь в обходе блокировок и улучшении стабильности подключения, если основной сервер недоступен или работает нестабильно в вашем регионе. Если вы не уверены, какой вариант вам лучше подходит - оставьте значение по умолчанию (%1%)","settings.disabled":"Отключить (не рекомендуется)","settings.reserveConnectionLink":"Использовать резервную ссылку на подписку Vless","settings.reserveConnectionLinkDesc":"Включите эту настройку, если у вас нет доступа к основному серверу. Тогда инструкции по подключению будут содержать резервную ссылку вместо основной.","settings.reserveConnectionLinkYes":"Да","settings.reserveConnectionLinkNo":"Нет","applicationNotifyTitle":"Уведомления","applicationNotifyConfirmDeleteAll":"Вы уверены, что хотите удалить все уведомления?","applicationNotifyEmpty":"Нет новых уведомлений","applicationNotifyPromoSuccess":"Промокод успешно применён","applicationNotifyPromoError":"Ошибка активации промокода: возможно он уже использован или исчерпан лимит","applicationNetworkError":"Ошибка сети","applicationNotifyConfirmDelete":"Вы уверены, что хотите удалить это уведомление?","applicationNotifyDelete":"🗑️ Удалить","applicationNotifyPromoApply":"Применить промокод (%1%)","pagePayTitle":"Приобретение VPN","pagePayBalance":"Пополнение баланса","pagePayID":"Ваш уникальный ID","pagePayIDPlaceholder":"Введите свой ID","pagePayAmount":"Сумма пополнения баланса (временно от %1%)","pagePayButton":"Перейти к оплате","pageFAQId":"Как получить ID?","pageFAQStep1":"Откройте приложение в чат-боте RocketMan-VPN","pageFAQStep2":"Внизу главной страницы найдите пункт \\"Ваш ID\\"","pageFAQStep3":"Скопируйте уникальный номер","pageFAQStep4":"Вставьте ID в поле слева","pageFAQOpen":"Открыть Telegram-бота","pageFAQQR":"QR-код Telegram-бота","landingTGBotButton":"Запустить Telegram-бота","landingDashboardButton":"Открыть панель управления","landingTarifs":"Тарифы","landingTarifsTrial":"+ Пробный период %1%ч","landingTarifsDiscount":"Скидка","landingTarifsPrice":"%1%/%2%дн.","landingTarifsGo":"Подключить","landingFooterText":"А здесь наш основной проект","landingTitle":"RocketMan VPN — Интернет под защитой!","landingTitleBrand":"RocketMan VPN","landingTitleTagline":"Интернет под защитой!","landingTitleDesc":"Молниеносный доступ к любимым сайтам и сервисам с ПК и смартфона.","landingFeaturesTitle":"Почему выбирают именно нас?","landingAppsTitle":"Наши продукты для вас","landingAppsDownload":"Скачать","landingAppsOpen":"Перейти","landingAppsFree":"Бесплатно","landingTrust1Value":"256-bit","landingTrust1Label":"AES-шифрование · данные под замком","landingTrust2Value":"до 1 Гбит/с","landingTrust2Label":"Скорость канала","landingTrust3Value":"24/7","landingTrust3Label":"Живая поддержка","landingTrust4Value":"НЕОГРАНИЧЕННО","landingTrust4Label":"Устройств на 1 ключ","landingFeaturesLead":"Защита, скорость и простота — без компромиссов","landingCompareTitle":"Без защиты vs RocketMan VPN","landingCompareLead1":"Без VPN — тревога и «Доступ запрещён».","landingCompareLead2":"С нашим сервисом — защита и безопасность в пару кликов","landingCompareColBad":"Без VPN","landingCompareColGood":"С RocketMan VPN","landingCompareRow1":"Что видят сайты","landingCompareBad1":"Ваш город, провайдер и активность","landingCompareGood1":"Только страну сервера","landingCompareRow2":"Wi-Fi в кафе и аэропортах","landingCompareBad2":"Пароли и переписку можно перехватить","landingCompareGood2":"Трафик зашифрован — виден лишь «белый шум»","landingCompareRow3":"Передача данных","landingCompareBad3":"В открытых сетях пароли — открытым текстом","landingCompareGood3":"VLESS · Proxy HTTPS · Hysteria2","landingCompareRow4":"Блокировки и DPI","landingCompareBad4":"«Доступ запрещён», сервисы и мессенджеры ложатся","landingCompareGood4":"Наши обходы работают даже в Китае (проверено в июне 2026)","landingCompareRow5":"Скорость","landingCompareBad5":"Провайдер может резать маршрут и скорость","landingCompareGood5":"До 1 Гбит/с, в том числе на 5G","landingCompareRow6":"Настройка","landingCompareBad6":"Вручную на каждом устройстве и в приложении","landingCompareGood6":"QR-код за 10 секунд · iOS, Android, ПК, TV","landingCompareRow7":"Поддержка","landingCompareBad7":"Разбираетесь сами","landingCompareGood7":"Живая поддержка в Telegram 24/7","landingHowTitle":"3 шага до защищённого интернета","landingHowLead":"Подключение займёт меньше двух минут — мы проведём вас за руку","landingHowStep1Title":"Выберите тариф","landingHowStep1Text":"От бесплатного теста до премиума — план под любые задачи","landingHowStep2Title":"Оплатите","landingHowStep2Text":"Удобная оплата и мгновенная активация в Telegram или на сайте","landingHowStep3Title":"Включите VPN / Proxy","landingHowStep3Text":"Пошаговая инструкция — дальше только ВКЛ/ВЫКЛ","landingPricingLead":"Удобные тарифы · пробный период · реферальная система","landingPlanTraffic":"📊 %1% ГБ трафика","landingPlanDevices":"📱 Без лимита устройств","landingPlanVpnProxy":"🔐 VPN + Proxy в одном","landingCtaTitle":"Готовы защитить свой интернет?","landingCtaDesc":"Присоединяйтесь — подключение займёт пару минут, а спокойствие останется надолго.","landingCtaButton":"Подключить сейчас","landingCtaSite":"Подключить через сайт","landingCtaTelegram":"Подключить через Telegram","landingPlanConnectSite":"Подключить на сайте","landingPlanConnectTelegram":"Подключить в Telegram","landingHeaderTelegram":"Запустить в Telegram","landingHeaderSite":"Подключить прямо здесь","landingHeroGuarantee":"✓ Пробный период · ✓ VPN + Proxy · ✓ Поддержка 24/7","landingHeroPill1":"Пробный период","landingHeroPill2":"VPN + Proxy","landingHeroPill3":"Поддержка 24/7","landingHeroPill4":"Работает даже в Китае","landingHeroPill5":"Обход Белых Списков","landingHeroCompareBad":"Без VPN","landingHeroCompareGood":"С RocketMan VPN","landingHeroCompareYou":"ВЫ","landingHeroCompareWeb":"СЕТЬ","landingHeroCompareBadWire":"открытый канал","landingHeroCompareGoodWire":"зашифрованный туннель","landingHeroCompareBad1":"Ваш реальный IP утекает в сеть","landingHeroCompareBad2":"Блокировки · «Доступ запрещён»","landingHeroCompareGood1":"Мы защитили и зашифровали ваше пребывание в интернете","landingHeroCompareGood2":"No-logs · мы не храним ваши данные","landingProtocolVless":"VLESS","landingProtocolProxy":"Proxy HTTPS","landingProtocolHysteria":"Hysteria2","landingShieldMeta":"VLESS · Proxy HTTPS · Hysteria2","landingPlanPopular":"ХИТ","landingSecurityBadge":"С нами безопасно","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"Многофункциональный прокси-клиент для <b>Windows, Linux и macOS</b>. Поддерживает протоколы <b>HTTPS / VLESS / Hysteria2</b>. API-режим для управления заказами прямо из приложения, TUN-туннелирование, VLESS-подписки и интеграция с Discord (Windows).","app.tgproxy.name":"TGProxy — MTProto для Telegram","app.tgproxy.description":"Бесплатный <b>MTProto-прокси</b> для стабильного доступа к Telegram. Без регистрации и лимитов трафика, сквозное шифрование переписки. Подключение в один клик из браузера — открывается прямо в Telegram.","features1Title":"Анонимность","features1Text":"Благодаря нескольким слоям защиты с нашей стороны — Ваш реальный IP не узнает ни один сервис.","features2Title":"Скорость","features2Text":"Загружайте, смотрите любимый контент и делитесь на скоростях до 1 Гбит/с.","features3Title":"Пробный период","features3Text":"Подключайтесь в 1 клик с любого своего устройства! ПК, смартфон, ТВ, планшет и ноутбук.","features4Title":"Поддержка","features4Text":"Мы всегда готовы помочь Вам с решением любых вопросов. На связи практически 24/7","faq1title":"Как оплатить?","faq1text":"Пополните свой баланс, оплатите через удобный метод. После оплаты получите инструкции в Telegram-боте или на сайте (зависит от того, где приобретали заказ).","faq2title":"Как настроить VPN?","faq2text":"В нашем <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram-боте</a> и в <a href=\\"https://ru-app.rocketman-vpn.com:8443/application\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Личном кабинете</a> на сайте максимально подробно и понятно расписан весь процесс подключения.\\nБуквально от и до, поэтому Вы вряд ли в чем-то сможете заблудиться. Главное — следуйте инструкциям :)","faq3title":"Что делать, если что-то не работает?","faq3text":"Ознакомьтесь с нашей <a href=\\"https://rocketman-vpn.com/?wiki\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Базой знаний</a>, мы постарались собрать все полезные статьи и ответить на возможные вопросы заранее. Если будут какие-то нерешаемые самостоятельно вопросы — напишите в <a href=\\"https://t.me/%1%\\" target=\'_blank\'>поддержку через Telegram</a>, и мы Вам поможем.","locationSelectTitle":"Выберите локацию сервера","locationSelectLoad":"Загруженность: %1%%","locationReserve1":"Санкт-Петербург","locationLocal":"Локальный сервер","locationStockholm":"Стокгольм","locationAustria":"Вена","locationNetherland":"Амстердам","locationFrankfurt":"Франкфурт","locationParis":"Париж","tarif.test_drive":"🚗 Тест-драйв","tarif.start":"🚀 Старт","tarif.gamer":"🎮 Геймер","tarif.pro":"👑 Семейная+","tarif.ultra":"🌌 Космос","httpTarifPro":"🔒 Proxy-Безлимит","httpTarifGamer":"🔒 Proxy-Геймер","tarifNameFull":"%1% (%2% дней | %3% GB/д) - %4%","welcomeMessage":"Добро пожаловать!\\nБлагодаря нашему сервису Вы сможете получить защищенный доступ к любимым сайтам и приложениям, как это делают другие наши любимые клиенты ❤️\\n\\n⭐️ У нас нет ограничений на количество устройств, поэтому можете использовать 1 ключ на всех своих девайсах! Вместе с VPN Вы получаете доступ и к нашему Proxy.\\n\\n🛒 Мы предоставляем:\\n- VPN для iOS, Android, Windows, macOS, Android TV\\n- Proxy для браузера, Discord, Windows и т.д.","basketBalance":"Пополнить баланс","secondsToStringD":"%4% дн. %3% ч. %2% мин. %1% сек.","secondsToStringH":"%3% ч. %2% мин. %1% сек.","secondsToStringM":"%2% мин. %1% сек.","readButton":"🗑 Удалить это сообщение","openPage":"🌐 Сайт","openApp":"📱 Приложение","expireNotifyOrderData":"▪️ Тариф: `%1%`\\n▪️ Название: `%2%`\\n▪️ Срок продления: `%3% дней`","expireNotifyTemplate":"Здравствуйте, %1%!\\n%2%\\n\\n%3%\\n▪️ Стоимость продления: `%4%`\\n\\n%5%","expireNotifyFull":"Срок действия Вашего заказа подошёл к концу 🙁\\n\\nЧтобы оставаться на связи со свободным Интернетом — [запустите приложение](https://t.me/rocketman_vpn_bot/?startapp), далее нажмите на 💸 свой баланс справа сверху и, пополнив его, в настройках заказа включите автопродление 😇","expireNotifyTime":"Срок действия Вашего заказа завершится менее чем через `%1%` часа 🙁","expireNotifyRenewAutoNoMoney":"❗️ У Вас включена функция автопродления, однако Ваш текущий баланс не позволяет продлить его 🙁\\n\\nУбедитесь в том, что на счету достаточно средств, чтобы функция работала без проблем в течение ближайших месяцев. [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp), в правом верхнем углу приложения нажмите на свой баланс и пополните на желаемую сумму.","expireNotifyRenewAuto":"✅ У Вас включена функция автопродления, поэтому заказ будет продлён автоматически, когда на нём останется менее 24 часов 😎","expireNotifyRenewManual":"ℹ️ Как включить автопродление?\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Нажмите на свой заказ ⇒ Настройки ⇒ Поставьте галочку возле Автопродления ⇒ Сохранить все изменения.","expireNotifyRenewSuccessAuto":"Здравствуйте, %1%!\\nВаш заказ был продлён автоматически.\\n\\n%2% 🎉\\n\\nСпасибо, что доверяете нам ❤️\\nЛучшей благодарностью за сервис будет инвайт Ваших друзей через реферальную систему!\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"Команда использована неверно\\n`%1%`\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Команда `%1%` использована неверно!\\n\\n✅ Правильный пример: `%2%`\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Начать работу","usePromoCommand":"Применить промокод — /promo PROMO_NAME","useFaqCommand":"Как подключиться к VPN / Proxy?","usePromoAlready":"Вы уже применили данный промокод. Применить промокод можно лишь 1 раз.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Промокод `%1%` не найден 🙁\\n\\nПроверьте правильность написания, а также убедитесь, что промокод действителен.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Лимит активации промокода `%1%` исчерпан 🙁\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"Вы уже применили схожий промокод.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Не удалось применить промокод `%1%` 🙁\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Промокод `%1%` успешно применён 🎉\\nНа Ваш баланс зачислено %2%\\n💰 Ваш текущий баланс: %3%\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"У Вас нет доступа для выполнения данного действия.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Меню админа","adminMenu":"Раздел администратора\\n\\n\\nМеню промокодов\\nСписок промокодов: /listPromo\\nИнформация по промокоду: `/infoPromo {PROMO_NAME}`\\nСоздать промокод: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nУдалить промокод: `/deletePromo {PROMO_NAME}`\\n\\n\\nМеню пользователей\\nВыдать заказ пользователю: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nУдалить заказ: `/removeOrder {ORDER_ID}`\\nВыдать баланс пользователю: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Заказ не найден","adminUserRemoveOrderStatus":"Статус удаления заказа: %1%","adminUserGiveTarifErrUser":"Пользователь не найден!","adminUserGiveTarifErrTarif":"Тариф не найден","adminUserGiveTarifErrNode":"Нода тарифа не найдена. Конфигурация тарифа неверная","adminUserGiveTarifErrMarzban":"MarzBan не дал создать заказ. Причина неизвестна","adminUserGiveTarifSuccess":"Вы успешно выдали заказ для @%1%","adminUserGiveTarifNotify":"🎉 Администратор подключил на Ваш аккаунт\\nтариф `%1%` на `%2% дн.` 📆\\n\\n*Информация о заказе:*\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒\\nнажмите на свой заказ ⇒ 📚 Инструкция VPN / Proxy","adminPromoCreateAlreadyExist":"Данный промокод уже существует","adminPromoCreateAlreadyExistWas":"Данный промокод уже однажды существовал и не может быть создан повторно","adminPromoCreateFailed":"Не удалось создать промокод","adminPromoCreateDone":"Промокод `%1%` успешно создан.\\nДоступно активаций: %2%\\nБаланс: %3%","adminPromoList":"Список всех промокодов:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% исп. / %3% всего / %4%)","adminPromoInfo":"Информация по промокоду:\\n\\nID: `%1%`\\nЛимит активаций: %2%\\nКоличество активаций: %3%\\nБаланс: %4%\\n\\nСписок активаций:\\n%5%","adminPromoDeleteDone":"Промокод `%1%` успешно удалён","terms":"Пользовательское соглашение","contacts":"Контакты для связи","wiki":"База знаний","wikiPage.description":"Инструкции, ответы на вопросы и примеры настройки VPN.","wikiPage.articleLead":"Статья из базы знаний RocketMan VPN.","wikiPage.articleHint":"Навигация по всем статьям слева · содержание справа","wikiPage.subtitle":"Выберите тему слева или воспользуйтесь поиском","wikiPage.heroTopic.faq":"Ответы на вопросы","wikiPage.heroTopic.setup":"Настройка и подключение","wikiPage.heroTopic.troubleshoot":"Примеры и решения","wikiPage.searchPlaceholder":"Поиск по названию и тексту статей...","wikiPage.loadingList":"Загрузка списка статей...","wikiPage.emptyList":"Статьи пока не добавлены.","wikiPage.loadingArticle":"Загрузка статьи...","wikiPage.openHint":"Выберите статью в списке","wikiPage.back":"Назад к списку","wikiPage.error.loadList":"Не удалось загрузить список статей.","wikiPage.error.emptyFile":"Для текущего языка статья недоступна.","wikiPage.error.loadArticle":"Не удалось загрузить статью.","wikiPage.navigation":"Навигация","wikiPage.contents":"Содержание","wikiPage.readMore":"Читать","wikiPage.readingTime":"мин чтения","wikiPage.articlesCount":"статей","wikiPage.backToTop":"Наверх","wikiPage.home":"🏠 Главная страница Базы знаний","wikiPage.copyLink":"Копировать ссылку на эту статью","wikiPage.articleLinkCopied":"Ссылка на эту статью скопирована","wikiPage.linkCopied":"Ссылка скопирована","wikiPage.closeLightbox":"Закрыть","wikiPage.openImageInNewTab":"Открыть в новой вкладке","wikiPage.copySectionLink":"Копировать ссылку на раздел","wikiPage.copyCurrentSectionLink":"Копировать ссылку на текущий абзац","wikiPage.sectionLinkCopied":"Ссылка на текущий абзац скопирована","wikiPage.enlargeImage":"Увеличить изображение","wikiPage.copyCode":"Копировать","wikiPage.copied":"Скопировано","wikiPage.copyText":"Нажмите, чтобы скопировать","wikiPage.searchNoResults":"Ничего не найдено. Попробуйте другое слово.","wikiPage.searchHint":"Результаты поиска по названию и тексту","wikiPage.searching":"Ищем...","wikiPage.searchMatchTitle":"В названии","wikiPage.searchMatchBody":"В тексте","wikiPage.updatedAt":"Обновлено","wikiPage.featured":"Важное к прочтению","wikiPage.groupOther":"Другие статьи","wikiPage.allArticles":"Все статьи","wikiPage.cardUpdated":"Обновлено","wikiPage.updatedToday":"сегодня","wikiPage.updatedYesterday":"вчера","wikiPage.updatedDaysAgo":"%1% дн. назад","wikiPage.badge.important":"Важно","wikiPage.badge.new":"Новое","wikiPage.badge.updated":"Обновлено","wikiPage.badge.hot":"Актуально","contactsTG":"Телеграм-чат","contactsEmail":"E-Mail","trialNotify":"✅ Вы получили тариф `%1%` на `%2% часа` в качестве ознакомительного доступа.\\n\\n📌 Информация о заказе в приложении:\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒\\nнажмите на свой заказ ⇒ 📚 Инструкция VPN / Proxy.\\n\\nМы предоставляем Вам возможность бесплатно ознакомиться с нашими продуктами для того, чтобы Вы оценили качество и стабильность перед будущими покупками 🤝","launchBot":"Запустить","launchBotLong":"Открыть приложение 📱","applicationMainMenu":"Главное меню","applicationMainMenuBack":"Назад","applicationButtonsRef":"Реферальная система","applicationButtonsFaq":"База данных","applicationButtonsCabinet":"Личный кабинет","applicationButtonsAdmin":"Кабинет администратора","applicationButtonsAdminDisk":"Свободно дискового пространства: %1%","applicationButtonsAdminPayments":"Статистика дохода:<br/>%1% текущий мес.<br/>%2% прошлый мес.<br/>%3% за весь период | %4% в ожидании","applicationUserInfoWithUs":"Вы с нами","applicationUserInfoBalance":"Ваш баланс","applicationUserInfoId":"Ваш ID","applicationUserInfoTgId":"ID Привязанного аккаунта TG","applicationUserInfoAPIKey":"Ваш API ключ","applicationUserInfoAPIKeyAlert":"📝 Ваш API ключ был скопирован в буфер обмена. Никому не разглашайте этот ключ, администрация проекта никогда не попросит вас назвать его","applicationUserInfoAPIResetAlertAsk":"📝 Вы уверены, что хотите сгенерировать новый API ключ?","applicationUserInfoAPIResetAlert":"📝 Ваш API ключ был сгенерирован заново","applicationUserInfoIdAlert":"📝 Ваш ID был скопирован в буфер обмена.","applicationUserInfoTgIdAlert":"📝 Ваш Telegram ID был скопирован в буфер обмена.","applicationContactButton":"Связь со службой поддержки","applicationServersButton":"Статус серверов","applicationHowToConnectFAQButton":"Как подключиться к VPN или Proxy?","applicationHowToConnectFAQButtonModal":"Бот отправил вам информацию в личные сообщения 📝","applicationCabinetTitle":"Личный кабинет","applicationCabinetTitleDesc_title":"Нажмите на заказ для управления им","applicationCabinetTitleOrder":"Выбор тарифного плана","applicationCabinetTitleOrder_detail_back":"Вернуться к списку тарифов","applicationCabinetTitleOrder_help_button":"⚠️ Помогите мне определиться с тарифным планом ⚠️","applicationCabinetTitleOrder_help_button_back":"Вернуться к оформлению заказа","applicationCabinetTitleOrder_help_button_header":"Среднее потребление трафика:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 час видео в 1440p ≈6 ГБ\\n<font color=#E10070>Instagram</font>: 1 час Reels ≈2 ГБ\\n<font color=#69C9D0>TikTok</font>: 1 час видео ≈2 ГБ\\n<font color=#7289DA>Discord</font>: 1 час войса c демкой ≈1 ГБ\\n<font color=#BD37FF>Twitch</font>: 2 часа стрима в 1080p ≈5 ГБ\\n<font color=#D0A823>Онлайн-игры</font>: 1 час ≈0.5 ГБ\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 часа в 1080р ≈5 ГБ\\n\\nЕсли сложить все указанные данные, то выходит <font color=#DA7F00>≈20-25 ГБ в день</font>. Эти данные приведены для ориентира, чтобы Вам было проще выбрать подходящий тариф.\\n\\n<font color=#A7C800>VPN и Proxy — по-своему удобны.</font>\\n<font color=#BAD821>VPN:</font> удобно для смартфонов, планшетов и ТВ; можно использовать и на ПК.\\n<font color=#BAD821>Proxy:</font> подходит для Discord, браузера на ПК (YouTube, Twitch, Netflix, HDRezka и т.д.).\\n<font color=#B3D023>Кратко о протоколах:</font>\\n<font color=#2EB3FF>• Vless</font> — лучший обход блокировок, стабильность, скорость, “невидимость”.\\n<font color=#29a1e6>• Hysteria</font> — баланс стабильности и скорости, отлично подходит для гейминга.\\n<font color=#2884BA>• HTTPS</font> — подходит только для сайтов и приложений через Proxifier.\\n\\n🚀 Старт — для обычного сёрфинга\\n🎮 Геймер — для активных юзеров девайсов\\n👑 Семейная+ — для большого объёма трафика","applicationCabinetButtonNew":"Сделать новый заказ","applicationCabinetButtonNewCancel":"Вернуться к списку заказов","applicationCabinetButtonAddBalance":"Пополнить баланс","applicationCabinetIsTrial":"Бесплатный тестовый доступ","applicationCabinetPing":"Пинг к серверу: %1%ms","applicationCabinetEndActive":"Доступ к подписке: %1%","applicationCabinetEndNotActive":"Подписка не оплачена. Нажмите сюда и активируйте её через кнопку «⌛️ Продлить заказ» в выпадающем меню.","applicationCabinetOrderTraficWeek":"в неделю","applicationCabinetOrderTraficMonth":"в месяц","applicationCabinetOrderPriceDay":"/ день","applicationCabinetOrderPriceDays":"/ %1% дней","applicationCabinetOrderPrice":"%1% за %2% дн 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 Ознакомиться с деталями этого тарифа 📋","tarif_desc_drive":"📚 Идеально для знакомства с нашим сервисом и лёгкого серфинга в соцсетях. Позволит полностью опробовать работу VPN / Proxy 😉","tarif_desc_start":"📚 Подходит для соцсетей и лёгкого использования на смартфоне со средним экранным временем ≈4ч в день. На ПК месячный лимит может расходоваться быстрее, учитывайте активность.","tarif_desc_gamer":"🎮 Для тех, кто активно проводит время за ПК:<br/><font color=#DA7F00>•</font> Игры через Steam и другие лаунчеры<br/><font color=#DA7F00>•</font> Голосовое общение в мессенджерах для геймеров с надёжным подключением через Proxy<br><font color=#DA7F00>•</font> Просмотр Twitch с плагином 7TV в 1080p и выше<br/><font color=#DA7F00>•</font> YouTube и другие соцсети, где важно защищённое подключение\\n\\n✅ Данного трафика достаточно для смартфона и ПК с активным использованием ≈5-6 часов в день.","tarif_desc_unlim":"🚀 Тариф для больших объёмов трафика и любых задач: ПК, ноутбуки, смартфоны, планшеты, ТВ и другие устройства.\\n\\n🧡 Один ключ можно использовать на нескольких устройствах — этого трафика хватит для семьи и Ваших друзей!","tarif_desc_ultra":"💠 Премиальный тариф для широкого спектра задач и очень активных пользователей!\\n\\nПодходит тем, кто приближается к верхней границе тарифа в 1 ТБ и хочет пользоваться сервисом без переживаний о трафике.\\n\\n💜 С этим вариантом Вы сможете спокойно загружать крупные файлы, стримить, играть и использовать VPN / Proxy на десятке устройств.","applicationCabinetOrderBack":"Назад","applicationCabinetOrderSelect":"☑️ Заказать этот тариф ☑️","applicationCabinetOrderSelectTrial":"🎁 Активировать тестовый доступ на %1% часа 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Получить тестовый доступ на %1% часа в качестве бонуса?","applicationCabinetOrderSelectAccept":"Подтвердите действие ✅\\nС баланса будет списано: %1%\\n\\n💰 Сейчас у Вас: %2%","applicationCabinetOrderTrial":"🎁 Доступен тестовый период на %1% часа","applicationCabinetOrderTrialUsed":"Вы уже использовали тестовый доступ ранее 🙁","applicationCabinetOrderSelectErrTimeMax":"Максимальный срок продления услуги: 2 месяца","applicationCabinetOrderSelectErrBalance":"У Вас недостаточно средств на внутреннем балансе для заказа 🙁","applicationCabinetOrderSelectErrTrialCfg":"Данный тариф нельзя заказать в тестовом режиме 🙁","applicationCabinetOrderSelectErrTrial":"Вы уже использовали этот тестовый тариф 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Тестовый период доступен только пользователям, авторизованным через Telegram. Войдите через Telegram (или привяжите Telegram в «Настройки») и попробуйте ещё раз.","applicationCabinetOrderSelectSuccess":"Заказ успешно выполнен 🎉","applicationCabinetOrderSelectSuccessTrial":"Тестовый заказ успешно выполнен 🎉","applicationCabinetOrderSelectErrOrder":"Не удалось создать Ваш заказ 😕","applicationCabinetOrderEditChangeTarif":"♻️ Сменить тариф на другой ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ Это текущий тариф","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>При смене тарифа у Вашего заказа останется<br>приблизительно %1%</font><br>дни:часы:минуты:секунды<br><br>Для подтверждения нажмите кнопку ниже","applicationCabinetOrderEditChangeTarifExpired":"❌ Невозможно выполнить смену тарифа у заказа с истёкшим сроком действия. Сначала необходимо его продлить (сделать активным), а уже после сменить тариф на тот, что Вы выбрали. При смене время заказа пересчитается в зависимости от выбранного тарифа.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>Каждые %1% ч. Вы можете изменять тариф на любой другой.</font><br><br>При смене тарифа остаток дней с предыдущего заказа переносится на новый с учётом актуальной стоимости и оставшегося срока доступа.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>Вы уже недавно меняли тариф!</font><br>Следующая смена будет доступна<br>через %1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Подтвердить смену тарифа на выбранный ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Вы уверены, что хотите сменить тариф на выбранный?\\n\\n⚠️ Имейте в виду, что следующую смену тарифа Вы сможете произвести только через %1% ч.","applicationCabinetOrderEditAuto":"Автопродление заказа","applicationCabinetOrderEditAutoOn":"✅ Активно","applicationCabinetOrderEditAutoOff":"❌ Не активно (в ⚙️Настройках)","applicationCabinetOrderEditAutoDesc":"При окончании срока действия заказа, если на Вашем балансе достаточно средств, система автоматически продлит заказ, если включить автопродление.","applicationCabinetOrderEditResetTime":"Сброс трафика","applicationCabinetOrderEditCreated":"Заказ активирован","applicationCabinetOrderEditSpent":"Суммарно потрачено","applicationCabinetOrderEditOverTime":"Подписка активна до","applicationCabinetOrderChangeTarif":"♻️ Смена тарифа","applicationCabinetOrderEditParams":"⚙️ Настройки","applicationCabinetOrderEditParamsTitle":"⚙️ Настройка заказа: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Метка заказа","applicationCabinetOrderEditParamsLabelDesc":"Вы можете добавить метки к Вашим заказам, чтобы Вам было проще определять какой из них где используется","applicationCabinetOrderEditParamsPassword":"🔸 Ваш пароль для подключения (4-12 символов)","applicationCabinetOrderEditParamsIP":"🔸 IP-адрес для доступа без пароля","applicationCabinetOrderEditParamsIPDesc":"В этом поле Вы можете указать свой личный IP-адрес (взяв его, например, с 2ip.io), чтобы получить доступ к нашему Proxy-серверу без указывания логина и пароля в тех местах, где это требуется. Этот вариант удобнее и ничем не отличается по уровню безопасности.\\n⚠️ Важное уточнение: данная функция работает только при подключении через HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"Для того чтобы обезопасить подключение к Proxy, мы сгенерировали случайный пароль. В случае необходимости его можно заменить на любой другой. Он нужен для аутентификации при помощи логина и пароля там, где это потребуется.","applicationCabinetOrderEditSave":"✔️ Сохранить все изменения ✔️","applicationCabinetOrderEditSaveOk":"Изменения успешно приняты ✅","applicationCabinetOrderEditSaveFail":"❌ Настройки не были сохранены. %1%","applicationCabinetOrderEditLinkVpn":"📚 Инструкция VPN","applicationCabinetOrderEditLinkProxy":"📚 Инструкция Proxy","applicationCabinetOrderEditResetPass":"🔄 Сбросить Proxy-пароль","applicationCabinetOrderEditResetPassAccept":"🔄 Вы уверены, что хотите сбросить пароль?\\n\\nСтарый пароль перестанет действовать, и Вам необходимо будет выполнить повторную настройку Proxy-соединения!","applicationCabinetOrderEditLinkAccept":"💬 Вам было отправлено сообщение с подробностями и инструкцией для подключения к нашему VPN / Proxy.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS порт*: `%4%`\\n%5%\\n🔑 *Пароль*: `%6%`","proxyInstructionReserveSubItem":"👤 *Логин* %1% » %2%: `%3%`","proxyInstruction":"Инструкция для подключения к Proxy:\\n\\n%1%\\nМы предоставляем Вам доступ к Proxy сразу во всех наших локациях. ✅ *Рекомендуем сначала попробовать подключение напрямую к европейскому серверу.* В случае если работает некорректно — пробуйте способ через СПБ » Европа.\\n\\n\\n*Данные для подключения к Proxy напрямую:*\\n%2%\\n🌐 HTTPS порт: `%3%`\\n👤 Логин: `%5%`\\n🔑 Пароль: `%6%`\\n\\n\\n*Для некоторых клиентов из РФ:*\\n_(перенаправляет трафик через РФ при недоступности прямого подключения к Европе. В этом режиме обязательно укажите верный логин из блока ниже — он другой)_\\n%7%\\n\\n\\n*Для работы с Proxy-подключением:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Инструкция](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Инструкция](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 ПК на Windows и macOS: [Proxifier](https://www.proxifier.com/) — [Инструкция](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Инструкция для подключения к VPN:\\n\\n%1%\\nМы предоставляем Вам доступ к VPN сразу во всех наших локациях! *Каждая ссылка ниже = личный ключ*, а также страница с инструкцией к подключению. \\n✅ *Рекомендуем сначала добавить Vless от Мультиссылки*, в случае если работает некорректно — пробуйте другие протоколы или резервный вариант.\\n\\n\\n\\n🔹 *Простое объяснение для новичков:*\\n▪️ Нажмите на [эту ссылку](%5%) и следуйте инструкции.\\n\\n\\n\\n🔸 *Для пользователей с опытом*:\\n🌏 Все локации в мультиссылке\\n- %2%\\n\\n*Для некоторых клиентов из РФ:*\\n%3%\\nЭтот способ для тех, у кого нет прямого подключения к европейским серверам и нужен обходной способ доступа к ним через российский сервер.\\n\\n*Прямой доступ к локации на всех протоколах:*\\n%4%\\n\\n⚠️ Если указанные ссылки не открываются, включите в настройках отображение резервной ссылки.%7%","vpnInstructionRoute":"\\n\\nℹ️ Клиенты, использующие HAPP могут добавить кастомные правила для маршрутизации. Вы можете воспользоваться заготовленными настройками ниже или создать свои собственные, указав нужные домены и IP-адреса для обхода VPN. \\n%1%","vpnInstructionAll":"Все протоколы сразу","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Европа","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Ваш личный ключ доступа к VPN*\\n\\nВсе данные для подключения и список рекомендованных приложений находятся по ссылке:  \\n👉 [Открыть ссылку для подключения](%2%)\\n\\n⚠️ *Храните ссылку в секрете!* \\nОна является Вашим персональным ключом авторизации в VPN.\\n\\n✅ Чтобы активировать подписку:  \\nСкопируйте ссылку и вставьте её в выбранное приложение — после этого автоматически загрузятся актуальные настройки.\\n\\n📦 Хотите управлять всеми заказами?  \\nИспользуйте [🔑 ссылку подписки на все подключения](%4%).\\n\\n───────────────\\n🌐 *Ваши данные для подключения к Proxy:*\\n🌐 *Адрес сервера:* `%6%%7%`\\n🌐 *HTTPS порт:* `%9%`\\n👤 *Ваш логин:* `%10%`\\n🔑 *Пароль для подключения:* `%5%`\\n\\n⚠️ В случае недоступности основного сервера вы можете подключиться к резервному серверу:  \\n%11% *Адрес сервера:* `%12%`  \\n🌐 *HTTPS порт:* `%9%`  \\n👤 *Ваш логин:* `%13%.%10%`  \\n🔑 *Пароль для подключения:* `%5%`\\n\\n💡 Proxy можно использовать в любом приложении, которое поддерживает Proxy-соединение.  \\nК примеру, *для работы в браузере Chrome* рекомендуем расширения:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*Инструкции по подключению к VPN:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*Как подключиться к Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows-приложения](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Веб-браузер](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Данные заказа `%1%`\\n⌛️ Тариф: `%2%`\\n⚙️ Автопродление: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Внимание! Обязательно обновите конфигурацию в настройках приложения, где используете данный заказ\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Включено","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Выключено","faqButtonCommand":"🔑 Наши VPN и Proxy могут быть применимы на широком списке устройств и *без ограничений на кол-во подключений* к одному ключу доступа! Настройка очень простая и займет не больше двух минут Вашего времени, далее все будет сведено лишь к кнопке ВКЛ/ВЫКЛ.\\n\\n✅ После того, как Вы оформите свой первый заказ _(включая тестовый)_, Вам придет два сообщения с деталями и инструкциями для подключения как к VPN, так и к Proxy.\\n\\n\\n📦 *Если у Вас ещё нет заказа, то:*\\n[Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ➛ Личный кабинет ➛ Сделать новый заказ ➛ Выбирайте подходящий, нажав на него, и переходите к деталям тарифа ➛ Заказываем.\\n\\n\\nЕсли у Вас возникнут какие-то вопросы, то свяжитесь с нами из приложения, мы обязательно поможем ❤️","applicationCabinetOrderEditPay":"⌛️ Продлить заказ (на %1% дней за %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Заказ успешно продлён на %1% дней.\\n\\nСтатус заказа будет обновлён в течение нескольких минут.","applicationCabinetOrderEditPayErr":"Не удалось продлить заказ 🙁","applicationCabinetOrderRemove":"Удалить заказ","applicationCabinetOrderRemoveFailed":"❌ Невозможно удалить активный заказ!","applicationCabinetOrderRemoveConfirm":"Вы уверены, что хотите удалить заказ? 🤨\\n\\nВ случае необходимости Вы всегда можете сделать новый заказ, а если у Вас возникли проблемы с заказом, то обратитесь в нашу службу поддержки, и мы с радостью Вам поможем!","applicationCabinetOrderRemoveConfirmMessage":"✅ Заказ был успешно удалён!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Не удалось удалить заказ!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Протоколы: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Ваш баланс был пополнен на %1%","applicationAdminDashboard":"📊 Дашборд","applicationAdminUsers":"👥 Пользователи (x%1%)","applicationAdminUsersActive":"🫂 Активные пользователи (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Текущий баланс: %1% | %2% USD","applicationAdminUserRef":"Рефералы (x%1% | %2%)","applicationAdminUserRefTarget":"Реферал от","applicationAdminUserOrders":"📦 Заказы (x%1% всего | x%2% активных)","applicationAdminUserRefs":"💸 Рефералы (x%1% всего)","applicationAdminUserPayments":"💸 Платежи (x%1% всего) | Зачислено %2%","applicationAdminUserPaymentsType":"Платёжная система: %1%","applicationAdminUserPaymentsStatus":"Статус платежа: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Отменить платёж и списать сумму с баланса","applicationAdminUserPaymentsStatusSetFailAccept":"Вы уверены?\\n\\nВ случае подтверждения платёж изменит свой статус, а также с баланса пользователя\\n\\n❌ будет списано %1%","applicationAdminUserPaymentsStatusSetOk":"✅ Подтвердить платёж и зачислить сумму на баланс","applicationAdminUserPaymentsStatusSetOkAccept":"Вы уверены?\\n\\nВ случае подтверждения платёж изменит свой статус, а также баланс пользователя\\n\\n✅ будет пополнен на %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Действие выполнено успешно ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Не удалось выполнить действие!\\nОтвет сервера: %1%","applicationAdminUserCreated":"Создан: %1%","applicationAdminUserUpdated":"Изменён: %1%","applicationAdminUserLast":"🚪 Последний вход: %1%","applicationAdminUserOrdersTotal":"💰 Пополнений баланса на: %1%","applicationAdminUserResetOrderChangeBlock":"Сбросить зависшую блокировку заказа","applicationAdminUserResetOrderChangeBlockAccept":"Вы уверены, что хотите сбросить зависшую блокировку заказа?","applicationAdminUserMedia":"Партнёрская программа","applicationAdminUserMediaOn":"Статус: ✅ Партнёр","applicationAdminUserMediaOff":"Статус: ❌ НЕ Партнёр","applicationAdminUserMediaConfirm":"Статус: ❌ НЕ Партнёр","applicationAdminUserMediaTotal":"Суммарный доход: %1%","applicationAdminUserMediaPayed":"Выплачено партнёру: %1%","applicationAdminUserMediaPayWait":"Необходимо выплатить: %1%","applicationAdminUserMediaPayWaitButton":"💸 Отметить выплату","applicationAdminUserMediaPayWaitButtonAccept":"Вы уверены, что хотите отметить выплату как выполненную? Сумма транзакции %1% (%2%)\\n\\n💸 После подтверждения пользователю будет отправлено уведомление о том, что средства были выплачены и они уже в пути к нему.","applicationAdminUserMediaPayWaitNotify":"Уважаемый партнёр! \\n\\n💸 Вам была выплачена сумма в размере *%1%* по партнёрской программе. Средства уже в пути и потребуется некоторое время, чтобы они достигли Ваших реквизитов","applicationAdminUserMediaPercent":"%2%%1%% Процент от рефералки в доход","applicationAdminUserMediaPercentDesc":"Этот процент указывает, сколько от рефералки будет выплачено пользователю в качестве дохода от партнёрской программы","applicationAdminUserGiveOrder":"Выдать заказ пользователю","applicationAdminUserGiveOrderDays":"Количество дней","applicationAdminUserGiveOrderButton":"Выдать","applicationAdminUserGiveOrderButtonConfirm":"Вы собираетесь выдать заказ\\n\\"%1%\\"\\nпользователю на %2% дней?","applicationAdminUserEditButton":"Управление пользователем","applicationAdminUserEditPromos":"Использованные промокоды: %1%","applicationAdminUserEditBalance":"Изменить баланс","applicationAdminUserAddBalance":"Добавить на баланс","applicationAdminUserEditBalanceAccept":"Вы уверены, что хотите изменить баланс пользователя?","applicationAdminUserEditBalanceAcceptFail":"Не удалось изменить баланс. Возможно, во время редактирования текущий баланс пользователя был изменён\\nОтвет сервера: %1%","applicationAdminUserEditBalanceAcceptOk":"Баланс был успешно изменён","applicationAdminUserEditBalanceChangeNotify":"Администратор изменил Ваш баланс на *%1%*.\\n💰 Текущий баланс: *%2%*\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Администратор добавил *%1%* на Ваш баланс.\\n💰 Текущий баланс: *%2%*\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Поиск","applicationAdminOrders":"🛒 Все заказы (x%1%)","applicationAdminOrdersActive":"💳 Активные заказы (x%1%)","applicationAdminOrdersExpired":"⛔ Остановленные заказы (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% дней","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Трафик: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Блокировка смены тарифа","applicationAdminOrderReload":"Обновить данные MarzBan","applicationAdminOrderReloadAccept":"⚠️ Обновить данные?\\n\\nЭто действие загрузит данные заказа из MarzBan и обновит их в приложении!","applicationAdminOrderReloadAcceptDone":"✅ Запрос на обновление данных отправлен!","applicationAdminOrderReloadAcceptFail":"❌ Не удалось обновить данные заказа!","applicationAdminOrderResetChangeTime":"Сбросить время смены тарифа","applicationAdminOrderResetChangeTimeAccept":"Вы уверены, что хотите это сделать? При подтверждении пользователь сможет сменить тариф на другой","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Запрос успешно выполнен. Теперь пользователь может изменить тариф самостоятельно","applicationAdminOrderResetTraffic":"Сбросить трафик","applicationAdminOrderResetTrafficAccept":"⚠️ Отменить заказ?\\n\\nПользователь не получит уведомление!","applicationAdminOrderResetTrafficAcceptOk":"✅ Готово","applicationAdminOrderReturn":"Отменить заказ","applicationAdminOrderReturnAccept":"⚠️ Отменить заказ?\\n\\nПользователь ПОЛУЧИТ назад средства за весь НЕИСПОЛЬЗОВАННЫЙ период!","applicationAdminOrderReturnAcceptDone":"⚠️ Заказ удалён. Пользователю возвращено %1% на баланс.","applicationAdminOrderReturnNotify":"⚠️ Администратор отменил Ваш заказ\\n🛒 `%1%` и вернул Вам *%2%* на баланс.\\nВы можете сделать новый заказ, чтобы всегда оставаться на связи со свободным Интернетом, зайдя в приложение.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Сделать новый заказ","applicationAdminOrderRemove":"Удалить заказ","applicationAdminOrderRemoveAccept":"⚠️ Удалить заказ?\\n\\nЕсли заказ всё ещё активен, средства НЕ будут возвращены!","applicationAdminOrderRemoveAcceptDone":"Заказ удалён","applicationAdminOrderAddTime":"Продлить заказ (%1% дн.)","applicationAdminOrderAddTimeAccept":"⚠️ Продлить заказ (%1% дн.)?\\n\\nЭто действие НЕ изменит баланс пользователя!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Администратор продлил Ваш заказ\\n🛒 `%1%` на *%2% дн.* 📆\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Нажмите на указанный заказ для ознакомления с деталями.","applicationAdminPromos":"🎁 Промокоды (x%1%)","applicationAdminPaymentsLast":"⏰ Последние платежи (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Последние успешные платежи (x%1%)","applicationAdminPromosCreate":"Создать промокод","applicationAdminPromoID":"Название: %1%","applicationAdminPromoUSED":"Использований: %1%","applicationAdminPromoCOUNT_USE":"Лимит: %1%","applicationAdminPromoBALANCE":"Сумма: %1%","applicationAdminPromoEditID":"Название","applicationAdminPromoEditCOUNT_USE":"Количество применений (макс)","applicationAdminPromoEditAMOUNT":"Сумма в $","applicationAdminPromoEditCATEGORY":"Категория","applicationAdminPromoEditCATEGORYEmpty":"Обычный / без категории","applicationAdminPromoEditCATEGORYMedia":"Медиапромо","applicationAdminPromoEditCATEGORYNew":"Для новичков","applicationAdminPromoEditSave":"Сохранить промокод","applicationAdminPromoEditPromo":"Изменить","applicationAdminPromoCategory":"Категория: %1%","applicationAdminPromoSendUseList":"Список применивших","applicationAdminPromoRemovePromo":"Удалить","applicationAdminPromoRemovePromoAccept":"Вы уверены?","applicationAdminAddNode":"Добавление новой ноды","applicationAdminAddNodeDesc":"Данный раздел позволит в 2 клика развернуть весь проект на новой ноде. Это лишь установит всё, что надо, но не будет добавлять ноду в список нод","applicationAdminAddNodeIP":"IP-адрес сервера","applicationAdminAddNodeHostname":"Поддомен сервера (s1, s2 и т.д., без точки и прочего)","applicationAdminAddNodeHostnameDesc":"Указанный поддомен автоматически пропишется в CloudFlare со всеми параметрами для работы с нашим сервисом. Если указать уже существующий — то будет перезаписан, так что внимательнее","applicationAdminAddNodeUsername":"Имя пользователя (root)","applicationAdminAddNodePassword":"Пароль пользователя (root)","applicationAdminAddNodePasswordDesc":"Если не указать пароль — будет использоваться авторизация по SSH-ключу. В этом случае убедитесь, что Ваш SSH-ключ добавлен в ноду и имеет доступ к серверу","applicationAdminAddNodePasswordKeyInfo":"Внимание. Пароль не указан, будет использоваться авторизация по SSH-ключу. Убедитесь, что Ваш SSH-ключ добавлен в ноду и имеет доступ к серверу","applicationAdminAddNodeSshPort":"SSH-порт (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Для работы требуются такие права: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Нажмите, чтобы получить токен","applicationAdminAddNodeStart":"Выполнить деплой","applicationAdminAddNodeStarted":"Процесс деплоя запущен, не закрывайте страницу и дождитесь выполнения. Если в течение 5 минут процесс не будет завершён — скорее всего что-то зависло(","applicationAdminAddNodeDoneOk":"Деплой завершён успешно","applicationAdminAddNodeDoneFail":"Ошибка: %1%","applicationAdminAddNodeClearLogs":"Очистить логи","applicationAdminInstallNode":"Развёртывание ноды","applicationAdminCoreSettings":"Настройки ядра","applicationAdminCoreSettingsDesc":"Данный раздел позволяет настроить базовые параметры системы. Параметры применяются на лету, без перезапуска ядра","applicationAdminSaveCoreSettings":"Сохранить настройки","applicationAdminCoreSettingsSaved":"Настройки успешно сохранены","applicationAdminCoreName.projectName":"Название проекта","applicationAdminCoreName.projectMain":"Основной домен","applicationAdminCoreName.projectBot":"Логин бота проекта","applicationAdminCoreDesc.projectBot":"Через какого бота происходит взаимодействие с пользователями. Укажите логин без @","applicationAdminCoreName.admins":"ID Администраторов","applicationAdminCoreDesc.admins":"ID указывайте строго через запятую и не используйте пробелы. К примеру: `123456789,987654321`. И не удалите себя случайно)","applicationAdminCoreName.backup_admins":"ID Администраторов для получения бэкапа","applicationAdminCoreDesc.backup_admins":"Данным администраторам бот будет присылать бэкапы в личку. ID указывайте строго через запятую и не используйте пробелы. К примеру: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Максимальный срок продления заказа (в месяцах)","applicationAdminCoreDesc.order_end_limit_month":"Пользователь не сможет продлить свой заказ на срок больше, чем указан","applicationAdminSendMessage":"Рассылка сообщений","applicationAdminSendMessageTargets":"Количество человек, кто получит сообщение","applicationAdminSendMessageType":"Тип фильтрации пользователей","applicationAdminSendMessageTypeAll":"Все пользователи","applicationAdminSendMessageTypeOrders":"Определённые заказы (любые)","applicationAdminSendMessageTypeOrdersActive":"Определённые заказы (активные)","applicationAdminSendMessageTypeHas":"Есть хоть 1 заказ","applicationAdminSendMessageTypeNotHas":"Нет никаких заказов","applicationAdminSendMessageTypeHasActive":"Есть хоть 1 активный заказ","applicationAdminSendMessageTypeHasUnActive":"Есть хоть 1 НЕактивный заказ","applicationBalanceErr":"Возникла ошибка при формировании платежа: %1%","applicationBalanceErrBalanceLimit":"На Вашем счету уже максимально допустимое количество средств (%1%)","applicationBalanceErrBalanceLimitButton":"Недоступно","applicationBalanceErrData":"Платёжная система не смогла сформировать платёж. Пожалуйста, попробуйте позже.","applicationBalanceErrNetwork":"Сетевая ошибка. Пожалуйста, попробуйте позже.","applicationBalanceErrCurrency":"Ошибка валюты. Пожалуйста, попробуйте позже.","applicationBalanceErrAuth":"Ошибка авторизации","applicationBalanceErrPaymentLink":"Не удалось получить ссылку на платёж","applicationBalanceSettingsTitle":"Выбор валюты","applicationBalanceTitle":"Раздел пополнения баланса","applicationBalanceSelect":"Выберите валюту для отображения","applicationBalanceEmail":"Ваш email","applicationBalancePlatform":"Платёжная платформа","applicationBalanceAmount":"Сумма пополнения (в %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Итоговая сумма оплаты: ≈%1%</font>\\n\\n<font color=#F28100>Если Вы чей-то реферал,\\nто на баланс вернётся %2% в виде 20% кэшбэка!</font>","applicationBalanceAmountLimit":"Минимальная сумма: %1%\\nМаксимальная сумма: %2%\\n\\n💵 <font color=#00AE09>Ваш способ оплаты: %4%</font>\\nКомиссия платёжной системы: %3%%\\n\\nПосле самой оплаты баланс зачисляется автоматически в течение нескольких минут, также Вам придёт сообщение о статусе платежа с другими деталями на случай обращения в службу поддержки.","applicationBalanceAmountDesc":"Пополнение происходит через сервис %1%","applicationBalanceAmountButton":"Перейти на страницу оплаты","applicationBalanceAmountButtonLoading":"Загрузка...","applicationBalanceAmountButtonErr":"❌ Неверно указана сумма ❌","applicationBalanceCurrency":"Метод оплаты","applicationBalanceCurrencyDesc":"Комиссия платёжной системы: ≈%1%%","applicationServersTitle":"Статус серверов","paymentCompleteNotify":"🎉 Ваш баланс был успешно пополнен на <b>%1%</b>.\\n\\nID платежа: <b>%2%</b>\\n(Он понадобится в случае обращения в <a href=\\"https://t.me/rocketman_vpn\\">службу поддержки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyRef":"🎉 Ваш баланс был успешно пополнен на <b>%1%</b>.\\nТак как Вы являетесь рефералом @%4% в нашем сервисе, мы начислили бонус в размере <b>%3%</b> (%5%%)\\n\\nID платежа: <b>%2%</b>\\n(Он понадобится в случае обращения в <a href=\\"https://t.me/rocketman_vpn\\">службу поддержки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyRefHost":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> (%3%%) за пополнение баланса Вашим рефералом @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyAdmin":"💵 Пользователь %1% [UID: %7%] пополнил баланс на <b>%2%</b>.\\n💰 В чистую прибыль проекта зачислено +<b>%5%</b>\\n\\nПлатёжная система: <b>%6%</b>\\nID платежа: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Внимание ❗️\\nПо платежу `%1%` был сформирован запрос на возврат средств.\\n\\nТак как они были возвращены Вам в полном объёме, с баланса в приложении было списано *%2%*.\\n\\nВ случае возникновения вопросов обратитесь в [службу поддержки](https://t.me/rocketman_vpn), мы обязательно поможем!\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Ноды","admin-routing":"🔀 Роутинг","admin-presets":"📋 Пресеты","admin-firewall":"📜 Записи фаервола (x%1%)","admin-firewall_add":"Новая запись фаервола","admin-nav-messages":"Рассылка","admin-nav-firewall":"Фаервол","admin-nav-logs":"Логи администрации","logRecord-title":"📊 Логи администрации (x%1%)","logRecord-title-user":"📜 Логи пользователя (x%1%)","logRecord-log-time":"Создан: %1%","logRecord-log-who":"Кто","logRecord-log-target":"Цель","logRecord-log-reason":"Текст: %1%","logRecord-setPaymentStatus":"Смена статуса платежа %1%","logRecord-removePromo":"Удаление промокода %1%","logRecord-editPromo":"Редактирование промокода %1%","logRecord-editBalance":"Редактирование баланса (%1%$ -> %2%$)","logRecord-returnOrder":"Отмена заказа %1% (%2%$)","logRecord-addOrder":"Выдача заказа %1%","logRecord-payOrder":"Продление заказа %1% на %2% дней","logRecord-partnerNotify":"Выплата партнёру %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"СБП (Система быстрых платежей)","paymentMethodCrypto":"Криптовалюта","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Не удалось обнаружить данные пользователя для формирования ссылки. Видимо, этот пользователь заблокировал нашего бота 😐","partner_title":"🏆 Партнёрская программа 🏆","partner_desc":"Вы являетесь участником партнёрской программы. Помимо основного бонуса за реферата Вы также будете получать финансовые отчисления.\\n\\nВаша текущая ставка — %1%% от реферального баланса\\n\\nВсего Вы заработали: %2%\\nТекущий баланс: %3%","ref_title":"🏆 Реферальная система 🏆","ref_desc":"Приглашайте друзей и знакомых в наш сервис и получайте бонусы на свой баланс!\\n\\n<font color=#2DA618>От каждого реферала Вы получите по <font color=#54E13B>%1%</font> за их первые заказы и <font color=#54E13B>%2%%</font> от всех пополнений их баланса.</font>\\n\\n<font color=#00B7B7>Все Ваши рефералы получат <font color=#15DBDB>%3%</font> бонусом после первого заказа (включая тестовый) и <font color=#15DBDB>%4%%</font> кэшбэка от всех своих будущих пополнений.</font>\\n\\nТаким образом эта система выгодна и для Вас, и для Ваших рефералов 😉","ref_stats":"Ваша статистика","ref_stats_data":"Количество приведённых рефералов: %1%\\nПолучили бонусом на баланс: %2%","ref_link_text":"Ваши данные реферальной системы","ref_link_text_copy":"📋 Ссылка+текст","ref_only_link_copy":"🔗 Ссылка","ref_link_text_copy_sendText":"Привет! Я пользуюсь удобным способом для защиты своих данных в интернете и смело рекомендую его тебе 😎\\n\\nКроме того, перейдя именно по моей ссылке, ты получишь бонусом %1% после первого заказа (включая тестовый) и пожизненный кэшбэк в %2%% от всех пополнений баланса 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Ваша реферальная ссылка и дополнительный текст были скопированы в буфер обмена.\\n\\nИспользуйте это для приглашения друзей и знакомых в наш сервис, чтобы извлекать выгоду совместно 😎","ref_only_link_copy_alert":"🔗 Ваша реферальная ссылка была скопирована в буфер обмена.\\n\\nИспользуйте её для приглашения друзей и знакомых в наш сервис, чтобы извлекать выгоду совместно 😎","ref_link_text_share":"💌 Поделиться","ref_link_text_share_message":"Привет! Я пользуюсь удобным способом для защиты своих данных в интернете и смело рекомендую его тебе 😎\\n\\nКроме того, перейдя именно по моей ссылке, ты получишь бонусом %1% после первого заказа (включая тестовый) и пожизненный кэшбэк в %2%% от всех пополнений баланса 🎉\\n","ref_message_personal":"Вы не можете зарегистрироваться по своей реферальной ссылке 😐","ref_message":"🎁 Реферальная система:\\nВы успешно зарегистрировались как реферал пользователя @%1% 🎉\\n\\nВы получите бонус в размере <b>%2%</b> при первом заказе (включая тестовый), а также пожизненный кэшбэк в размере <b>%3%%</b> при каждом пополнении баланса!","ref_message_host":"🎁 Реферальная система:\\n🎉 Пользователь @%1% зарегистрировался как Ваш новый реферал 🎉\\n\\nВы получите бонус в размере <b>%2%</b> при первом его заказе (включая тестовый), а также кэшбэк в размере <b>%3%%</b> от каждого его пополнения баланса.","ref_message_order":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> на свой баланс","ref_message_order_host":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> на свой баланс от пользователя @%2%","traffic_limit_notify_close":"⚠️ У Вас заканчивается трафик на заказе `%1%` с тарифом `%2%`! Если это сообщение будет появляться достаточно часто, то рекомендуем задуматься о смене тарифа на более продвинутый, чтобы всегда оставаться на связи ❤️\\n\\n🚀 Сделать это Вы сможете, [запустив приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ нажмите на нужный заказ ⇒ ♻️ Сменить тариф на другой ♻️","traffic_limit_notify_end":"❗️ ВНИМАНИЕ ❗️ У Вас закончился весь трафик на заказе `%1%` с тарифом `%2%`. Его сброс произойдёт %3%. Но если Вы хотите всегда оставаться на связи, то подумайте о смене тарифа на более продвинутый.\\n\\n🚀 Сделать это Вы сможете, [запустив приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ нажмите на нужный заказ ⇒ ♻️ Сменить тариф на другой ♻️","traffic_limit_notify_restore":"🎉 У заказа `%1%` с тарифом `%2%` была сброшена статистика использованного трафика. Теперь он снова доступен в полном объёме :)\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Применить промокод","example":"Example","deleteMessageFailed":"❌ Не удалось удалить сообщение. Возможно, оно слишком старое или уже удалено.","cryptoPayTitle":"Оплата через криптовалюту","cryptoPayUserId":"ID пользователя","cryptoPayAmount":"Сумма к оплате (USDT)","cryptoPayInstruction":"Переведите указанную сумму в USDT на предоставленный адрес","cryptoPayLoading":"Загрузка реквизитов...","cryptoPayErrorNoParam":"Не передан параметр crypto_id в ссылке.","cryptoPayErrorInvalidData":"Некорректные данные для оплаты.","cryptoPayErrorParse":"Ошибка при обработке данных для оплаты. Попробуйте обновить страницу или обратитесь в поддержку.","cryptoPayWallet":"Адрес кошелька для перевода","cryptoPayNetwork":"Сеть (блокчейн)","cryptoPayCopy":"Скопировать","cryptoPayCopyAmountAlert":"Сумма скопирована в буфер обмена!","cryptoPayCopyWalletAlert":"Адрес кошелька скопирован в буфер обмена!","cryptoPayWarning":"ВНИМАТЕЛЬНО проверьте реквизиты и сумму перед оплатой! В случае ошибки мы не можем гарантировать зачисление средств.","telegramPayment":"✅ Для Вас был сформирован счёт на оплату\\n\\n⚖️ Сумма оплаты: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 ID пользователя: <b>%7%</b>\\n📋 ID платежа: <b>%6%</b>\\n\\n🔗 Для оплаты перейдите по ссылке: %5%","orderManipulationBlock":"Ваш прошлый заказ всё ещё в обработке. Пожалуйста, подождите его завершения или обратитесь в службу поддержки для получения помощи.","subPage.orderInfo":"Ниже представлены все доступные методы подключения для Вашего заказа через это приложение","subPage.userInfo":"Ниже представлены все доступные методы подключения для всех Ваших активных заказов через это приложение","subPage.orderId":"🛒 ID Заказа: %1%\\n⬇️ Выберите регион конечного подключения:","subPage.nodeInfo":"📍 Точка обхода: %1%\\n⚠️ Это значит, что сначала весь трафик будет идти через неё для маскировки.","subPage.protocolInfo":"Протокол подключения: %1%","subPage.allTitle":"Все заказы","subPage.expiredNotifyList":"❌ Срок действия подписки истёк\\nПродлить VPN в боте\\n%1%","ping.admin.initOk":"✅ Система инициализирована, все ноды доступны в штатном режиме.","ping.admin.initFail":"❌ Система инициализирована, но некоторые ноды не доступны:\\n\\n%1%","speedtest.admin.failTest":"❌ Тест скорости не пройден. Пожалуйста, проверьте работоспособность.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Зафиксирована низкая скорость соединения (%2% Mbps download, %3% Mbps upload). Пожалуйста, проверьте работоспособность.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Скорость соединения восстановлена (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ На сервере обнаружены проблемы со скоростью соединения","applicationServersSpeedtestLastSpeed":"Последний замер скорости (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Предыдущий замер скорости (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ На сервере не было сделано ещё замеров скорости","applicationServersPingIssueDetected":"❌ Сервер не отвечает на пинг-запросы","actionUpdateStartNodes":"⚠️ Запущена процедура обновления нод (%1%), через некоторое время ноды будут перезапущены. После завершения выполнения работ будет отправлено дополнительное уведомление (если не было отправлено — возможно, подвис github action и всё в порядке, но могут быть и проблемы)","actionUpdateStartHeader":"Запущена процедура обновления:","actionUpdateStartSite":"• Обновляется главная страница проекта","actionUpdateStartApp":"• Обновляется бэкенд приложение","actionUpdateStartProxy":"• Обновляется прокси или xray служба (Ноды: %1%)","actionUpdateStartMTProto":"• Обновляется сервер MTProto","actionUpdateStartFirewall":"• Обновляем фаервол (Ноды: %1%)","actionUpdateStartBackup":"• Обновляем дочерний API интерфейс (Ноды: %1%)","actionUpdateStartFooter":"Через некоторое время ноды будут перезапущены. После завершения работ будет отправлено уведомление.","actionUpdateCompletedNodes":"✅ Процедура обновления нод (%1%) завершена, ноды перезапущены и уже должны быть активны","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Быстрый и безопасный","mtproto.subtitle.2":"доступ к Telegram","mtproto.description.1":"Бесплатный прокси-сервер для стабильного подключения к Telegram.","mtproto.description.2":"Без регистрации, без ограничений, с полной конфиденциальностью.","button.connect":"Подключить прокси","button.copy":"Скопировать ссылку","button.copied":"Скопировано","link.label":"Ссылка для подключения вручную","feature.encryption.title":"Сквозное шифрование","feature.encryption.description":"Ваши сообщения остаются конфиденциальными. Мы не имеем доступа к Вашей переписке.","feature.free.title":"Без ограничений","feature.free.description":"Бесплатный доступ без регистрации и лимитов на трафик.","feature.rocketman.title":"Больше возможностей","feature.rocketman.description":"Этот прокси работает только для Telegram. Для полноценной защиты используйте RocketMan-VPN.","rocketman.title":"RocketMan VPN — это Ваш надежный друг","rocketman.description":"Данный MTProto-прокси является дополнительным проектом — RocketMan VPN. С нами Вы получите полную защиту интернет-соединения во всех приложениях и любимых сервисах. Попробуйте бесплатно то, что мы предоставляем для своих клиентов, и оцените качество!","rocketman.button":"Открыть RocketMan VPN","howto.title":"Как подключиться?","howto.step1.title":"Нажмите на кнопку \\"Подключить прокси\\"","howto.step1.description":"Или скопируйте ссылку и подключитесь вручную","howto.step2.title":"Откройте Telegram","howto.step2.description":"Ссылка автоматически запустит приложение","howto.step3.title":"Подтвердите","howto.step3.description":"Нажмите «Подключить» в диалоговом окне","web.orders":"Мои заказы","web.settings":"Настройки","web.exit":"Выход","web.back":"← Назад","settings.accountInfo":"Информация об аккаунте","settings.language":"Язык","settings.currency":"Валюта отображения","settings.currencyDesc":"Выберите валюту для отображения цен и баланса в приложении.","settings.webCredentials":"Данные для входа на сайт","settings.webCredentialsDesc":"Эти данные используются для входа в веб-интерфейс вне Telegram. Хоть мы и не ограничиваем Вас в выборе пароля, но настоятельно рекомендуем указывать сложный","settings.login":"Логин","settings.loginPlaceholder":"Введите новый логин","settings.newPassword":"Новый пароль","settings.passwordPlaceholder":"Не менее %1% символов","settings.repeatPassword":"Повторите пароль","settings.repeatPasswordPlaceholder":"Повторите новый пароль","settings.passwordMismatch":"Пароли не совпадают","settings.saved":"Сохранено!","settings.saveError":"Ошибка сохранения","settings.saving":"Сохранение…","settings.saveCredentials":"Сохранить данные","settings.show":"Показать","settings.hide":"Скрыть","settings.copy":"Копировать","settings.reset":"Сбросить","settings.apiKeyHint":"Используйте API-ключ для входа в <a href=\\"https://%1%\\" target=\'_blank\'>веб-интерфейс</a> без Telegram, а также для интеграции с другими нашими продуктами. Не передавайте его третьим лицам, этот ключ предоставляет полный доступ к вашему аккаунту","settings.referral":"Реферал (ID пригласившего)","settings.referralDesc":"Если вы пропустили реферальную ссылку, укажите ID пригласившего здесь. Применится только один раз.","settings.referralApplied":"ID пригласившего","settings.referralAppliedAlert":"ID пригласившего скопирован в буфер обмена.","settings.referralHostId":"Ваш ID пригласившего","settings.referralHostIdPlaceholder":"Введите ID пользователя (только цифры)","settings.referralHostIdInvalid":"Неверный формат ID. Используйте только цифры.","settings.referralApply":"Применить ID","settings.referralSaved":"Реферал применён!","settings.referralErr.already_applied":"Реферал уже был применён.","settings.referralErr.invalid_ref_host":"Неверный ID пригласившего.","settings.referralErr.same_account":"Нельзя использовать свой собственный ID в качестве реферала.","login.tabCredentials":"Логин и пароль","login.tabApiKey":"API-ключ","login.tabRegister":"Регистрация","login.labelLogin":"Логин","login.labelPassword":"Пароль","login.labelConfirmPassword":"Подтверждение пароля","login.labelApiKey":"API-ключ","login.placeholderLogin":"Введите логин","login.placeholderPassword":"Введите пароль","login.placeholderConfirmPassword":"Подтвердите пароль","login.placeholderApiKey":"Введите API-ключ","login.signIn":"Войти","login.signInApiKey":"Войти по API-ключу","login.signUp":"Зарегистрироваться","login.signingIn":"Входим…","login.signingUp":"Регистрируемся…","login.orUseApiKey":"или войдите по API-ключу","login.orUseCredentials":"или войдите по логину и паролю","login.switchToApiKey":"Войти по API-ключу","login.switchToCredentials":"Войти по логину и паролю","login.errLoginRequired":"Введите логин и пароль","login.errPasswordRequired":"Введите пароль","login.errConfirmPasswordRequired":"Подтвердите пароль","login.errPasswordMismatch":"Пароли не совпадают","login.errApiKeyRequired":"Введите API-ключ","login.errIncorrect":"Неверный логин или пароль","login.errInvalidKey":"Неверный API-ключ","login.errServer":"Ошибка сервера, попробуйте ещё раз","login.errRegistration":"Ошибка регистрации","login.tabTelegram":"Через Telegram","login.tg.title":"Вход через Telegram","login.tg.instruction":"1. Отправьте команду ниже боту <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a>\\n2. После отправки нажмите кнопку «Подтвердить вход»","login.tg.commandLabel":"Команда для бота:","login.tg.showCommand":"Показать","login.tg.hideCommand":"Скрыть","login.tg.copyCommand":"Копировать","login.tg.copied":"Команда скопирована!","login.tg.timerLabel":"Код действителен: %1%","login.tg.timerExpired":"Срок действия кода истёк","login.tg.verifyButton":"Подтвердить вход","login.tg.verifying":"Проверяем…","login.tg.requestNew":"Запросить новый код","login.tg.loading":"Генерируем код…","login.tg.enter_correct":"Личность подтверждена. Вернитесь на сайт и нажмите на кнопку \\"%1%\\" для завершения","login.tg.enter_fail":"Не удалось выполнить действие. Убедитесь, что указанный ключ корректен, а срок действия не истёк","login.tg.errNotSent":"Не удалось подтвердить вход. Убедитесь, что вы отправили команду боту, и попробуйте ещё раз. Если код истёк — запросите новый.","lang.ru":"Русский","lang.en":"Английский","lang.uk":"Украинский","footer.info":"MTProto-прокси работает только с официальными приложениями Telegram","instructionModalTitleVpn":"Инструкция по подключению VPN","instructionModalTitleProxy":"Инструкция по подключению Proxy","instructionModalSendToTg":"📩 Отправить в Telegram","instructionModalSentToTg":"Инструкция отправлена в ваши личные сообщения Telegram","settings.name":"Ваше имя","settings.nameDesc":"Укажите имя для персонализации обращений в приложении. Он является публичным и может использоваться для отображения другим пользователям","settings.namePlaceholder":"Введите имя (3-15 символов)","settings.nameInvalid":"Допускаются только кириллица, латиница, цифры и пробелы (3-15 символов)","settings.promoTitle":"Активация промокода","settings.promoDesc":"Если у Вас есть промокод, то введите его здесь, чтобы получить приятный бонус на Ваш баланс.","settings.promoPlaceholder":"Введите промокод","settings.promoApply":"Применить промокод","settings.promoApplied":"Промокод успешно применён!","adminDashboardTitle":"Статистика (Дашборд)","adminDashboardActiveOrders":"Активность подписок","adminDashboardActiveLabel":"Активные","adminDashboardExpiredLabel":"Истекшие","adminDashboardOrdersByTariff":"Подписки по Тарифам","adminDashboardPayments":"Платежи","adminDashboardTrial":"Пробный период","adminDashboardLang":"Язык пользователей","adminDashboardCurrency":"Валюта пользователей","adminDashboardActivity":"Активность в приложении","adminDashboardOrdersPerUser":"Кол-во подписок на юзера","adminDashboardRefIncome":"Медианный доход с рефералов","applicationAdminBackButton":"Назад","settings.passkeys.title":"Ключи доступа (Passkeys)","settings.passkeys.desc":"Добавьте до 5 устройств для быстрого и безопасного входа без пароля с помощью биометрии или физических ключей.","settings.passkeys.add":"➕ Добавить новый ключ","settings.passkeys.name":"Название устройства","settings.passkeys.name_placeholder":"Напр: iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"У вас пока нет привязанных ключей доступа","settings.passkeys.delete_confirm":"Вы уверены, что хотите отвязать этот ключ доступа? Вы больше не сможете войти с его помощью.","settings.passkeys.limit_reached":"Достигнут лимит ключей (максимум 5)","settings.passkeys.add_success":"Ключ доступа успешно добавлен!","settings.passkeys.add_error":"Не удалось добавить ключ доступа","login.tabPasskey":"По ключу","login.passkey.btn":"Войти через Passkey","login.passkey.error":"Ошибка авторизации через ключ доступа","login.passkey.not_supported":"Ваш браузер или устройство не поддерживают вход через Passkey","admin.bulkRenewal.button":"📅 Массовое продление заказов","admin.bulkRenewal.title":"📅 Массовое продление заказов","admin.bulkRenewal.afterDateLabel":"Учитывать заказы, срок которых истёк после указанной даты (или не истёк). Часовой пояс: %1%","admin.bulkRenewal.daysLabel":"Количество дней для продления","admin.bulkRenewal.ordersCount":"Заказов будет продлено","admin.bulkRenewal.usersCount":"Уникальных пользователей","admin.bulkRenewal.applying":"⏳ Применяется...","admin.bulkRenewal.done":"✅ Готово!","admin.bulkRenewal.apply":"📅 Продлить %1% заказ(ов) на %2% дн.","admin.bulkRenewal.notifyUser":"📅 Администратор продлил ваши активные заказы на %1% дн. Список заказов: %2%","admin.bulkRenewal.notifyUsers":"Уведомить пользователей в Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ При большом количестве пользователей уведомления могут работать нестабильно или с задержкой"}');
 ;// ./src/lang/en.json
-const en_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"To enable notifications on iPhone:\\n1. Tap the [⎋] (Share) icon in the bottom menu.\\n2. Select \'Add to Home Screen\'.\\n3. Launch the app from your home screen and return here to subscribe.","settings.pushSupportError":"Web Push is not supported on this device","settings.pushTitle":"Push Notifications","settings.pushDesc":"Subscribe this device to receive system notifications","settings.pushSubscribed":"✅ This device is subscribed","settings.pushNotSubscribed":"❌ Device is not subscribed","settings.pushSubscribeBtn":"Subscribe","settings.pushUnsubscribeAllBtn":"Unlink all devices","settings.pushSuccess":"Successfully subscribed","settings.pushUnsubscribeSuccess":"All devices unlinked","settings.pushError":"Error during subscription","settings.disableSiteNotify":"Disable notifications on the site","settings.disableSiteNotifyDesc":"Disable notifications on the site, leaving only Push notifications and notifications in Telegram (if the account is linked to Telegram)","settings.disableSiteNotifyYes":"Yes","settings.disableSiteNotifyNo":"No","settings.geoRouting":"Add geo-routing to subscription data","settings.geoRoutingDesc":"You can choose a specific geo-routing for your orders. If it is added, then when connecting to VPN / Proxy through instructions from the application, the subscription data will indicate that you want to use a specific geo-routing. This can help in bypassing blocks and improving connection stability if the main server is unavailable or unstable in your region. If you\'re not sure which option is best for you - leave the default value (%1%)","settings.disabled":"Disable (not recommended)","settings.reserveConnectionLink":"Use backup subscription link for Vless","settings.reserveConnectionLinkDesc":"Enable this option if you do not have access to the main server. Then the connection instructions will include the backup link instead of the main one.","settings.reserveConnectionLinkYes":"Yes","settings.reserveConnectionLinkNo":"No","applicationNotifyTitle":"Notifications","applicationNotifyConfirmDeleteAll":"Are you sure you want to delete all notifications?","applicationNotifyEmpty":"No new notifications","applicationNotifyPromoSuccess":"Promo code applied successfully","applicationNotifyPromoError":"Promo code activation error: it may have already been used or the limit is reached","applicationNetworkError":"Network error","applicationNotifyConfirmDelete":"Are you sure you want to delete this notification?","applicationNotifyDelete":"🗑️ Delete","applicationNotifyPromoApply":"Apply promo code (%1%)","pagePayTitle":"Purchase VPN","pagePayBalance":"Top up balance","pagePayID":"Your Unique ID","pagePayIDPlaceholder":"Enter your ID","pagePayAmount":"Top-up amount (temporarily from %1%)","pagePayButton":"Proceed to Payment","pageFAQId":"How to get ID?","pageFAQStep1":"Open the app in the RocketMan-VPN chatbot","pageFAQStep2":"Find the \\"Your ID\\" section at the bottom of the home page","pageFAQStep3":"Copy the unique number","pageFAQStep4":"Paste the ID into the field on the left","pageFAQOpen":"Open Telegram Bot","pageFAQQR":"Telegram Bot QR Code","landingTGBotButton":"Launch Telegram Bot","landingDashboardButton":"Open Dashboard","landingTarifs":"Plans","landingTarifsTrial":"+ Trial period %1%h","landingTarifsDiscount":"Discount","landingTarifsPrice":"%1%/%2% days","landingTarifsGo":"Connect","landingFooterText":"And here is our main project","landingTitle":"RocketMan VPN — Internet Under Protection!","landingTitleDesc":"Lightning-fast access to your favorite sites and services from PC and smartphone.","landingFeaturesTitle":"Why choose us?","landingAppsTitle":"Our Applications","landingAppsDownload":"Download","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"A versatile proxy client for <b>Windows, Linux and macOS</b>. Supports <b>HTTPS and VLESS</b> protocols. Features API mode for easy order management directly from the app, TUN tunneling, VLESS subscription support, and Discord integration (Windows).","features1Title":"Anonymity","features1Text":"Thanks to multiple layers of protection on our side, your real IP will remain unknown to any service.","features2Title":"Speed","features2Text":"Download, watch your favorite content, and share at speeds up to 1Gbps.","features3Title":"Simplicity","features3Text":"Connect in 1 click from any of your devices! PC, smartphone, TV, tablet, and laptop.","features4Title":"Support","features4Text":"We are always ready to help you with any questions. Online almost 24/7","faq1title":"How to pay?","faq1text":"Select a plan and pay via convenient method. After payment, you will receive instructions in the Telegram bot.","faq2title":"How to set up VPN?","faq2text":"The entire connection process is described in great detail in our <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram bot</a>.\\nLiterally step-by-step, so you\'re unlikely to get lost. Most importantly — follow the instructions :)","faq3title":"What if something isn\'t working?","faq3text":"Contact <a href=\\"https://t.me/%1%\\" target=\'_blank\'>support via Telegram</a>, and we will help you.","locationSelectTitle":"Select server location","locationSelectLoad":"Load: %1%%","locationReserve1":"Saint Petersburg","locationLocal":"Local server","locationStockholm":"Stockholm","locationAustria":"Vienna","locationNetherland":"Amsterdam","locationFrankfurt":"Frankfurt","locationParis":"Paris","tarif.test_drive":"🚗 Test Drive","tarif.start":"🚀 Start","tarif.gamer":"🎮 Gamer","tarif.pro":"👑 Family+","tarif.ultra":"🌌 Space","httpTarifPro":"🔒 Proxy-Unlimited","httpTarifGamer":"🔒 Proxy-Gamer","tarifNameFull":"%1% (%2% days | %3% GB/day) - %4%","welcomeMessage":"Welcome!\\nThanks to our service, you can get secure access to your favorite sites and apps, just like our other beloved clients ❤️\\n\\n⭐️ We have no device limits, so you can use 1 key on all your devices! Along with VPN, you also get access to our Proxy.\\n\\n🛒 We provide:\\n- VPN for iOS, Android, Windows, macOS, Android TV\\n- Proxy for browser, Discord, Windows, etc.","basketBalance":"Top up balance","secondsToStringD":"%4% d. %3% h. %2% min. %1% sec.","secondsToStringH":"%3% h. %2% min. %1% sec.","secondsToStringM":"%2% min. %1% sec.","readButton":"🗑 Delete this message","openPage":"🌐 Website","openApp":"📱 App","expireNotifyOrderData":"▪️ Plan: `%1%`\\n▪️ Name: `%2%`\\n▪️ Renewal period: `%3% days`","expireNotifyTemplate":"Hello, %1%!\\n%2%\\n\\n%3%\\n▪️ Renewal cost: `%4%`\\n\\n%5%","expireNotifyFull":"Your order has expired 🙁\\n\\nTo stay connected to the free Internet — [launch the app](https://t.me/rocketman_vpn_bot/?startapp), then click on 💸 your balance at the top right, top it up, and enable auto-renewal in the order settings 😇","expireNotifyTime":"Your order will expire in less than `%1%` hour 🙁","expireNotifyRenewAutoNoMoney":"❗️ Auto-renewal is enabled, but your current balance is insufficient 🙁\\n\\nEnsure you have enough funds for the feature to work smoothly in the coming months. [Launch the app](https://t.me/rocketman_vpn_bot/?startapp), click on your balance in the top right, and top up the desired amount.","expireNotifyRenewAuto":"✅ Auto-renewal is enabled, so the order will be renewed automatically when less than 24 hours remain 😎","expireNotifyRenewManual":"ℹ️ How to enable auto-renewal?\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on your order ⇒ Settings ⇒ check Auto-renewal ⇒ Save all changes.","expireNotifyRenewSuccessAuto":"Hello, %1%!\\nYour order has been automatically renewed.\\n\\n%2% 🎉\\n\\nThank you for trusting us ❤️\\nThe best way to thank us is by inviting your friends via the referral system!\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"The command was used incorrectly\\n`%1%`\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Command `%1%` used incorrectly!\\n\\n✅ Correct example: `%2%`\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Start","usePromoCommand":"Apply promo code — /promo PROMO_NAME","useFaqCommand":"How to connect to VPN / Proxy?","usePromoAlready":"You have already applied this promo code. It can only be used once.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Promo code `%1%` not found 🙁\\n\\nPlease check the spelling and ensure the code is valid.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Activation limit for promo code `%1%` reached 🙁\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"You have already applied a similar promo code.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Failed to apply promo code `%1%` 🙁\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Promo code `%1%` successfully applied 🎉\\n%2% credited to your balance\\n💰 Current balance: %3%\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"You do not have access to perform this action.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Admin Menu","adminMenu":"Admin Section\\n\\n\\nPromo Codes Menu\\nPromo codes list: /listPromo\\nPromo code info: `/infoPromo {PROMO_NAME}`\\nCreate promo code: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nDelete promo code: `/deletePromo {PROMO_NAME}`\\n\\n\\nUsers Menu\\nGive order to user: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nDelete order: `/removeOrder {ORDER_ID}`\\nGive balance to user: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Order not found","adminUserRemoveOrderStatus":"Order removal status: %1%","adminUserGiveTarifErrUser":"User not found!","adminUserGiveTarifErrTarif":"Plan not found","adminUserGiveTarifErrNode":"Plan node not found. Plan configuration is invalid","adminUserGiveTarifErrMarzban":"MarzBan failed to create order. Reason unknown","adminUserGiveTarifSuccess":"Successfully gave order to @%1%","adminUserGiveTarifNotify":"🎉 Administrator has added the `%1%` plan to your account for `%2% days` 📆\\n\\n*Order Information:*\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒\\nclick on your order ⇒ 📚 VPN / Proxy Instructions","adminPromoCreateAlreadyExist":"This promo code already exists","adminPromoCreateAlreadyExistWas":"This promo code existed once and cannot be recreated","adminPromoCreateFailed":"Failed to create promo code","adminPromoCreateDone":"Promo code `%1%` successfully created.\\nActivations available: %2%\\nBalance: %3%","adminPromoList":"List of all promo codes:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% used / %3% total / %4%)","adminPromoInfo":"Promo code info:\\n\\nID: `%1%`\\nActivation limit: %2%\\nActivations count: %3%\\nBalance: %4%\\n\\nActivations list:\\n%5%","adminPromoDeleteDone":"Promo code `%1%` successfully deleted","terms":"User Agreement","contacts":"Contact Us","wiki":"Knowledge Base","wikiPage.description":"Guides, FAQ, and VPN setup examples.","wikiPage.articleLead":"RocketMan VPN knowledge base article.","wikiPage.articleHint":"Browse articles on the left · table of contents on the right","wikiPage.subtitle":"Choose a topic from the list or search","wikiPage.heroTopic.faq":"FAQ","wikiPage.heroTopic.setup":"Setup and connection","wikiPage.heroTopic.troubleshoot":"Examples and fixes","wikiPage.searchPlaceholder":"Search by title and article text...","wikiPage.loadingList":"Loading article list...","wikiPage.emptyList":"No articles were added yet.","wikiPage.loadingArticle":"Loading article...","wikiPage.openHint":"Select an article from the list","wikiPage.back":"Back to list","wikiPage.error.loadList":"Failed to load article list.","wikiPage.error.emptyFile":"The article is not available for the current language.","wikiPage.error.loadArticle":"Failed to load article.","wikiPage.navigation":"Navigation","wikiPage.contents":"Contents","wikiPage.readMore":"Read","wikiPage.readingTime":"min read","wikiPage.articlesCount":"articles","wikiPage.backToTop":"Back to top","wikiPage.home":"🏠 Knowledge base home","wikiPage.copyLink":"Copy link to this article","wikiPage.articleLinkCopied":"Article link copied","wikiPage.linkCopied":"Link copied","wikiPage.closeLightbox":"Close","wikiPage.openImageInNewTab":"Open in new tab","wikiPage.copySectionLink":"Copy section link","wikiPage.copyCurrentSectionLink":"Copy link to current section","wikiPage.sectionLinkCopied":"Section link copied","wikiPage.enlargeImage":"Enlarge image","wikiPage.copyCode":"Copy","wikiPage.copied":"Copied","wikiPage.copyText":"Click to copy","wikiPage.searchNoResults":"Nothing found. Try another word.","wikiPage.searchHint":"Search results in titles and body","wikiPage.searching":"Searching...","wikiPage.searchMatchTitle":"In title","wikiPage.searchMatchBody":"In body","wikiPage.updatedAt":"Updated","wikiPage.featured":"Featured","wikiPage.groupOther":"Other articles","wikiPage.allArticles":"All articles","wikiPage.cardUpdated":"Updated","wikiPage.updatedToday":"today","wikiPage.updatedYesterday":"yesterday","wikiPage.updatedDaysAgo":"%1% days ago","wikiPage.badge.important":"Important","wikiPage.badge.new":"New","wikiPage.badge.updated":"Updated","wikiPage.badge.hot":"Hot","contactsTG":"Telegram Chat","contactsEmail":"E-Mail","trialNotify":"✅ You have received the `%1%` plan for `%2% hours` as trial access.\\n\\n📌 Order info in the app:\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒\\nclick on your order ⇒ 📚 VPN / Proxy Instructions.\\n\\nWe provide free access so you can evaluate the quality and stability before future purchases 🤝","launchBot":"Launch","launchBotLong":"Open App 📱","applicationMainMenu":"Main Menu","applicationMainMenuBack":"Back","applicationButtonsRef":"Referral System","applicationButtonsFaq":"Knowledge Base","applicationButtonsCabinet":"Account","applicationButtonsAdmin":"Admin Dashboard","applicationButtonsAdminDisk":"Free disk space: %1%","applicationButtonsAdminPayments":"Income stats:<br/>%1% current month<br/>%2% last month<br/>%3% total period | %4% pending","applicationUserInfoWithUs":"With us since","applicationUserInfoBalance":"Your balance","applicationUserInfoId":"Your ID","applicationUserInfoTgId":"Linked TG Account ID","applicationUserInfoAPIKey":"Your API Key","applicationUserInfoAPIKeyAlert":"📝 Your API Key has been copied to clipboard. Do not disclose this key to anyone; project administration will never ask for it","applicationUserInfoAPIResetAlertAsk":"📝 Are you sure you want to generate a new API Key?","applicationUserInfoAPIResetAlert":"📝 Your API Key has been regenerated","applicationUserInfoIdAlert":"📝 Your ID has been copied to clipboard.","applicationUserInfoTgIdAlert":"📝 Your Telegram ID has been copied to clipboard.","applicationContactButton":"Contact Support","applicationServersButton":"Server Status","applicationHowToConnectFAQButton":"How to connect to VPN or Proxy?","applicationHowToConnectFAQButtonModal":"The bot has sent instructions to your private messages 📝","applicationCabinetTitle":"Account","applicationCabinetTitleDesc_title":"Click on order to manage it","applicationCabinetTitleOrder":"Select a Plan","applicationCabinetTitleOrder_detail_back":"Back to plans list","applicationCabinetTitleOrder_help_button":"⚠️ Help me choose a plan ⚠️","applicationCabinetTitleOrder_help_button_back":"Back to ordering","applicationCabinetTitleOrder_help_button_header":"Average traffic consumption:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 hour of video at 1440p ≈6 GB\\n<font color=#E10070>Instagram</font>: 1 hour of Reels ≈2 GB\\n<font color=#69C9D0>TikTok</font>: 1 hour of video ≈2 GB\\n<font color=#7289DA>Discord</font>: 1 hour of voice with stream ≈1 GB\\n<font color=#BD37FF>Twitch</font>: 2 hours of stream at 1080p ≈5 GB\\n<font color=#D0A823>Online games</font>: 1 hour ≈0.5 GB\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 hours at 1080p ≈5 GB\\n\\nAdding these up gives <font color=#DA7F00>≈20-25 GB per day</font>. These figures are estimates to help you choose the right plan.\\n\\n<font color=#A7C800>VPN and Proxy — both are convenient.</font>\\n<font color=#BAD821>VPN:</font> ideal for smartphones, tablets, and TV; can be used on PC too.\\n<font color=#BAD821>Proxy:</font> suitable for Discord, PC browser (YouTube, Twitch, Netflix, HDRezka, etc.).\\n<font color=#B3D023>Protocols briefly:</font>\\n<font color=#2EB3FF>• Vless</font> - best for bypassing blocks, stability, speed, “invisibility”.\\n<font color=#29a1e6>• Hysteria</font> - balance of stability and speed, perfectly suited for gaming.\\n<font color=#2884BA>• HTTPS</font> - suitable only for websites and apps via Proxifier.\\n\\n🚀 Start — for basic browsing\\n🎮 Gamer — for active users\\n👑 Family+ — for high traffic volumes","applicationCabinetButtonNew":"Create New Order","applicationCabinetButtonNewCancel":"Back to orders list","applicationCabinetButtonAddBalance":"Top up balance","applicationCabinetIsTrial":"Free Trial Access","applicationCabinetPing":"Ping to server: %1%ms","applicationCabinetEndActive":"Subscription access until: %1%","applicationCabinetEndNotActive":"Subscription not paid. Click here and activate it via the «⌛️ Renew Order» button in the dropdown menu.","applicationCabinetOrderTraficWeek":"per week","applicationCabinetOrderTraficMonth":"per month","applicationCabinetOrderPriceDay":"/ day","applicationCabinetOrderPriceDays":"/ %1% days","applicationCabinetOrderPrice":"%1% for %2% days 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 View plan details 📋","tarif_desc_drive":"📚 Perfect for getting to know our service and light social media browsing. Allows you to fully test VPN / Proxy work 😉","tarif_desc_start":"📚 Suitable for social media and light smartphone use with average screen time ≈4h per day. On PC, the monthly limit may be consumed faster; consider your activity.","tarif_desc_gamer":"🎮 For those who spend active time on PC:<br/><font color=#DA7F00>•</font> Games via Steam and other launchers<br/><font color=#DA7F00>•</font> Voice communication in messengers for gamers with reliable connection via Proxy<br><font color=#DA7F00>•</font> Watching Twitch with 7TV plugin at 1080p and higher<br/><font color=#DA7F00>•</font> YouTube and other social networks where a secure connection is important\\n\\n✅ This traffic is enough for smartphone and PC with active use of ≈5-6 hours per day.","tarif_desc_unlim":"🚀 Plan for high traffic volumes and any tasks: PC, laptops, smartphones, tablets, TV, and other devices.\\n\\n🧡 One key can be used on multiple devices — this traffic is enough for family and your friends!","tarif_desc_ultra":"💠 Premium plan for a wide range of tasks and very active users!\\n\\nSuitable for those approaching the 1 TB limit and wanting to use the service without worrying about traffic.\\n\\n💜 With this option, you can safely download large files, stream, play, and use VPN / Proxy on a dozen devices.","applicationCabinetOrderBack":"Back","applicationCabinetOrderSelect":"☑️ Order this plan ☑️","applicationCabinetOrderSelectTrial":"🎁 Activate trial access for %1% hours 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Get trial access for %1% hours as a bonus?","applicationCabinetOrderSelectAccept":"Confirm action ✅\\nAmount to be deducted: %1%\\n\\n💰 You currently have: %2%","applicationCabinetOrderTrial":"🎁 %1%-hour trial period available","applicationCabinetOrderTrialUsed":"You have already used the trial access 🙁","applicationCabinetOrderSelectErrTimeMax":"Maximum renewal period: 2 months","applicationCabinetOrderSelectErrBalance":"Insufficient funds on internal balance for the order 🙁","applicationCabinetOrderSelectErrTrialCfg":"This plan cannot be ordered in trial mode 🙁","applicationCabinetOrderSelectErrTrial":"You have already used this trial plan 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Trial period is available only for users authorized via Telegram. Please log in via Telegram (or link Telegram in Settings) and try again.","applicationCabinetOrderSelectSuccess":"Order completed successfully 🎉","applicationCabinetOrderSelectSuccessTrial":"Trial order completed successfully 🎉","applicationCabinetOrderSelectErrOrder":"Failed to create your order 😕","applicationCabinetOrderEditChangeTarif":"♻️ Change plan ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ This is current plan","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>After changing the plan, your order will have<br>approximately %1% left</font><br>days:hours:minutes:seconds<br><br>Press the button below to confirm","applicationCabinetOrderEditChangeTarifExpired":"❌ Cannot change plan for an expired order. You must first renew it (make it active) and then change the plan. Connection time will be recalculated based on the chosen plan.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>You can change the plan every %1% h.</font><br><br>When changing the plan, remaining days from the previous order are transferred to the new one considering current price and remaining time.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>You have recently changed the plan!</font><br>Next change will be available in<br>%1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Confirm change to selected plan ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Are you sure you want to change to the selected plan?\\n\\n⚠️ Note that the next plan change will only be available in %1% h.","applicationCabinetOrderEditAuto":"Order auto-renewal","applicationCabinetOrderEditAutoOn":"✅ Active","applicationCabinetOrderEditAutoOff":"❌ Not active (in ⚙️Settings)","applicationCabinetOrderEditAutoDesc":"When the order expires, if you have sufficient funds, the system will automatically renew it if auto-renewal is enabled.","applicationCabinetOrderEditResetTime":"Traffic reset","applicationCabinetOrderEditCreated":"Order activated","applicationCabinetOrderEditSpent":"Total spent","applicationCabinetOrderEditOverTime":"Subscription active until","applicationCabinetOrderChangeTarif":"♻️ Change Plan","applicationCabinetOrderEditParams":"⚙️ Settings","applicationCabinetOrderEditParamsTitle":"⚙️ Order Settings: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Order Label","applicationCabinetOrderEditParamsLabelDesc":"You can add labels to your orders to easily identify where each is used","applicationCabinetOrderEditParamsPassword":"🔸 Your connection password (4-12 characters)","applicationCabinetOrderEditParamsIP":"🔸 IP address for passwordless access","applicationCabinetOrderEditParamsIPDesc":"In this field, you can specify your personal IP address (getting it from 2ip.io, for example) to access our Proxy server without entering a login and password where required. This is more convenient and equally secure.\\n⚠️ Important: this function works only when connecting via HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"To secure the Proxy connection, we have generated a random password. If necessary, you can change it. It is required for authentication via login and password where needed.","applicationCabinetOrderEditSave":"✔️ Save all changes ✔️","applicationCabinetOrderEditSaveOk":"Changes successfully applied ✅","applicationCabinetOrderEditSaveFail":"❌ Settings were not saved. %1%","applicationCabinetOrderEditLinkVpn":"📚 VPN Instructions","applicationCabinetOrderEditLinkProxy":"📚 Proxy Instructions","applicationCabinetOrderEditResetPass":"🔄 Reset Proxy Password","applicationCabinetOrderEditResetPassAccept":"🔄 Are you sure you want to reset the password?\\n\\nThe old password will stop working, and you will need to reconfigure the Proxy connection!","applicationCabinetOrderEditLinkAccept":"💬 A message with details and instructions for connecting to our VPN / Proxy has been sent to you.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS port*: `%4%`\\n%5%\\n🔑 *Password*: `%6%`","proxyInstructionReserveSubItem":"👤 *Login* %1% » %2%: `%3%`","proxyInstruction":"Instructions for Proxy connection:\\n\\n%1%\\nWe provide access to Proxy in all our locations at once. ✅ *We recommend trying the direct connection to the European server first.* If it works incorrectly — try the SPB » Europe method.\\n\\n\\n*Data for direct Proxy connection:*\\n%2%\\n🌐 HTTPS port: `%3%`\\n👤 Login: `%5%`\\n🔑 Password: `%6%`\\n\\n\\n*For some RF clients:*\\n_(redirects traffic via RF if direct connection to Europe is unavailable. In this mode, be sure to use the correct login from the block below — it is different)_\\n%7%\\n\\n\\n*For working with Proxy connection:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Instructions](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Instructions](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 PC on Windows and macOS: [Proxifier](https://www.proxifier.com/) — [Instructions](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Instructions for VPN connection:\\n\\n%1%\\nWe provide access to VPN in all our locations! *Each link below = personal key*, and a page with connection instructions. \\n✅ *We recommend adding Vless from Multi-link first*, if it works incorrectly — try other protocols or the backup option.\\n\\n\\n\\n🔹 *Simple explanation for beginners:*\\n▪️ Click [this link](%5%) and follow the instructions.\\n\\n\\n\\n🔸 *For advanced users*:\\n🌏 All locations in multi-link\\n- %2%\\n\\n*For some RF clients:*\\n%3%\\nThis method is for those who don\'t have a direct connection to European servers and need a workaround via a Russian server.\\n\\n*Direct access to location on all protocols:*\\n%4%\\n\\n⚠️ If the links above do not open, enable the backup link display in settings.%7%","vpnInstructionRoute":"\\n\\nℹ️ Clients using HAPP can add custom routing rules. You can use the pre-configured settings below or create your own by specifying the necessary domains and IP addresses to bypass the VPN. \\n%1%","vpnInstructionAll":"All protocols at once","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Europe","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Your personal VPN access key*\\n\\nAll connection data and the list of recommended apps are available at the link:  \\n👉 [Open connection link](%2%)\\n\\n⚠️ *Keep this link secret!* \\nIt is your personal authorization key for the VPN.\\n\\n✅ To activate subscription:  \\nCopy the link and paste it into your chosen app — current settings will load automatically.\\n\\n📦 Want to manage all orders?  \\nUse [🔑 the subscription link for all connections](%4%).\\n\\n───────────────\\n🌐 *Your Proxy connection data:*\\n🌐 *Server address:* `%6%%7%`\\n🌐 *HTTPS port:* `%9%`\\n👤 *Your login:* `%10%`\\n🔑 *Connection password:* `%5%`\\n\\n⚠️ If the main server is unavailable, you can connect to the backup server:  \\n%11% *Server address:* `%12%`  \\n🌐 *HTTPS port:* `%9%`  \\n👤 *Your login:* `%13%.%10%`  \\n🔑 *Connection password:* `%5%`\\n\\n💡 Proxy can be used in any application that supports Proxy connection.  \\nFor example, *for Chrome browser*, we recommend extensions:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*VPN connection instructions:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*How to connect to Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows apps](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Web Browser](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Order data `%1%`\\n⌛️ Plan: `%2%`\\n⚙️ Auto-renewal: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Attention! Be sure to update the configuration in the settings of the app where you use this order.\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Enabled","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Disabled","faqButtonCommand":"🔑 Our VPN and Proxy can be used on a wide list of devices with *no limits on the number of connections* to a single access key! Setup is very simple and takes no more than two minutes, after which everything is reduced to an ON/OFF button.\\n\\n✅ Once you place your first order _(including the trial)_, you will receive two messages with details and instructions for connecting to both VPN and Proxy.\\n\\n\\n📦 *If you don\'t have an order yet:*\\n[Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ➛ Account ➛ Create new order ➛ Choose a suitable one by clicking on it and proceed to plan details ➛ Order.\\n\\n\\nIf you have any questions, contact us via the app, we will definitely help ❤️","applicationCabinetOrderEditPay":"⌛️ Renew order (for %1% days for %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Order successfully renewed for %1% days.\\n\\nOrder status will be updated within a few minutes.","applicationCabinetOrderEditPayErr":"Failed to renew order 🙁","applicationCabinetOrderRemove":"Delete order","applicationCabinetOrderRemoveFailed":"❌ Cannot delete an active order!","applicationCabinetOrderRemoveConfirm":"Are you sure you want to delete the order? 🤨\\n\\nIf needed, you can always create a new order. If you have issues with the order, contact our support service, and we\'ll be happy to help!","applicationCabinetOrderRemoveConfirmMessage":"✅ Order successfully deleted!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Failed to delete order!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Protocols: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Your balance has been topped up by %1%","applicationAdminDashboard":"📊 Dashboard","applicationAdminUsers":"👥 Users (x%1%)","applicationAdminUsersActive":"🫂 Active users (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Current balance: %1% | %2% USD","applicationAdminUserRef":"Referrals (x%1% | %2%)","applicationAdminUserRefTarget":"Referral from","applicationAdminUserOrders":"📦 Orders (x%1% total | x%2% active)","applicationAdminUserRefs":"💸 Referrals (x%1% total)","applicationAdminUserPayments":"💸 Payments (x%1% total) | Credited %2%","applicationAdminUserPaymentsType":"Payment system: %1%","applicationAdminUserPaymentsStatus":"Payment status: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Cancel payment and deduct amount from balance","applicationAdminUserPaymentsStatusSetFailAccept":"Are you sure?\\n\\nIf confirmed, payment status will change and\\n\\n❌ %1% will be deducted from user\'s balance","applicationAdminUserPaymentsStatusSetOk":"✅ Confirm payment and credit amount to balance","applicationAdminUserPaymentsStatusSetOkAccept":"Are you sure?\\n\\nIf confirmed, payment status will change and\\n\\n✅ user\'s balance will be topped up by %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Action performed successfully ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Action failed!\\nServer response: %1%","applicationAdminUserCreated":"Created: %1%","applicationAdminUserUpdated":"Modified: %1%","applicationAdminUserLast":"🚪 Last login: %1%","applicationAdminUserOrdersTotal":"💰 Total top-ups: %1%","applicationAdminUserResetOrderChangeBlock":"Reset stuck order lock","applicationAdminUserResetOrderChangeBlockAccept":"Are you sure you want to reset the stuck order lock?","applicationAdminUserMedia":"Partner Program","applicationAdminUserMediaOn":"Status: ✅ Partner","applicationAdminUserMediaOff":"Status: ❌ NOT Partner","applicationAdminUserMediaConfirm":"Status: ❌ NOT Partner","applicationAdminUserMediaTotal":"Total income: %1%","applicationAdminUserMediaPayed":"Paid to partner: %1%","applicationAdminUserMediaPayWait":"Amount to be paid: %1%","applicationAdminUserMediaPayWaitButton":"💸 Mark payout","applicationAdminUserMediaPayWaitButtonAccept":"Are you sure you want to mark the payout as completed? Transaction amount %1% (%2%)\\n\\n💸 After confirmation, the user will be notified that the funds have been paid and are on their way.","applicationAdminUserMediaPayWaitNotify":"Dear partner! \\n\\n💸 An amount of *%1%* has been paid to you under the partner program. Funds are on their way and will take some time to reach your credentials.","applicationAdminUserMediaPercent":"%2%%1%% Percentage of referral to income","applicationAdminUserMediaPercentDesc":"This percentage indicates how much of the referral top-up will be paid to the user as partner program income","applicationAdminUserGiveOrder":"Give order to user","applicationAdminUserGiveOrderDays":"Number of days","applicationAdminUserGiveOrderButton":"Give","applicationAdminUserGiveOrderButtonConfirm":"You are about to give the order\\n\\"%1%\\"\\nto user for %2% days?","applicationAdminUserEditButton":"User Management","applicationAdminUserEditPromos":"Used promo codes: %1%","applicationAdminUserEditBalance":"Edit balance","applicationAdminUserAddBalance":"Add to balance","applicationAdminUserEditBalanceAccept":"Are you sure you want to edit the user\'s balance?","applicationAdminUserEditBalanceAcceptFail":"Failed to edit balance. The user\'s balance might have changed during editing\\nServer response: %1%","applicationAdminUserEditBalanceAcceptOk":"Balance successfully edited","applicationAdminUserEditBalanceChangeNotify":"Administrator changed your balance to *%1%*.\\n💰 Current balance: *%2%*\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Administrator added *%1%* to your balance.\\n💰 Current balance: *%2%*\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Search","applicationAdminOrders":"🛒 All orders (x%1%)","applicationAdminOrdersActive":"💳 Active orders (x%1%)","applicationAdminOrdersExpired":"⛔ Stopped orders (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% days","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Traffic: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Plan change lock","applicationAdminOrderReload":"Reload MarzBan data","applicationAdminOrderReloadAccept":"⚠️ Reload data?\\n\\nThis will load order data from MarzBan and update it in the app!","applicationAdminOrderReloadAcceptDone":"✅ Data reload request sent!","applicationAdminOrderReloadAcceptFail":"❌ Failed to reload order data!","applicationAdminOrderResetChangeTime":"Reset plan change time","applicationAdminOrderResetChangeTimeAccept":"Are you sure? Once confirmed, the user will be able to change the plan manually","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Request successful. User can now change the plan manually","applicationAdminOrderResetTraffic":"Reset traffic","applicationAdminOrderResetTrafficAccept":"⚠️ Cancel order?\\n\\nThe user will NOT receive a notification!","applicationAdminOrderResetTrafficAcceptOk":"✅ Done","applicationAdminOrderReturn":"Cancel order","applicationAdminOrderReturnAccept":"⚠️ Cancel order?\\n\\nThe user WILL receive a refund for the UNUSED period!","applicationAdminOrderReturnAcceptDone":"⚠️ Order deleted. %1% refunded to user\'s balance.","applicationAdminOrderReturnNotify":"⚠️ Administrator canceled your order\\n🛒 `%1%` and returned *%2%* to your balance.\\nYou can create a new order to stay connected to the free Internet by visiting the app.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ Create New Order","applicationAdminOrderRemove":"Delete order","applicationAdminOrderRemoveAccept":"⚠️ Delete order?\\n\\nIf the order is still active, funds WILL NOT be returned!","applicationAdminOrderRemoveAcceptDone":"Order deleted","applicationAdminOrderAddTime":"Extend order (%1% days)","applicationAdminOrderAddTimeAccept":"⚠️ Extend order (%1% days)?\\n\\nThis will NOT change the user\'s balance!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Administrator extended your order\\n🛒 `%1%` for *%2% days* 📆\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ Click on the specified order for details.","applicationAdminPromos":"🎁 Promo codes (x%1%)","applicationAdminPaymentsLast":"⏰ Last payments (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Last successful payments (x%1%)","applicationAdminPromosCreate":"Create promo code","applicationAdminPromoID":"Name: %1%","applicationAdminPromoUSED":"Uses: %1%","applicationAdminPromoCOUNT_USE":"Limit: %1%","applicationAdminPromoBALANCE":"Amount: %1%","applicationAdminPromoEditID":"Name","applicationAdminPromoEditCOUNT_USE":"Usage count (max)","applicationAdminPromoEditAMOUNT":"Amount in $","applicationAdminPromoEditCATEGORY":"Category","applicationAdminPromoEditCATEGORYEmpty":"Regular / no category","applicationAdminPromoEditCATEGORYMedia":"Media promo","applicationAdminPromoEditCATEGORYNew":"For newcomers","applicationAdminPromoEditSave":"Save promo code","applicationAdminPromoEditPromo":"Edit","applicationAdminPromoCategory":"Category: %1%","applicationAdminPromoSendUseList":"List of users who applied","applicationAdminPromoRemovePromo":"Delete","applicationAdminPromoRemovePromoAccept":"Are you sure?","applicationAdminAddNode":"Add new node","applicationAdminAddNodeDesc":"This section allows you to deploy the entire project on a new node in 2 clicks. It only installs everything needed, but does not add the node to the nodes list","applicationAdminAddNodeIP":"Server IP address","applicationAdminAddNodeHostname":"Server subdomain (s1, s2, etc., without dot)","applicationAdminAddNodeHostnameDesc":"The specified subdomain will be automatically set in CloudFlare with all parameters. If it exists, it will be overwritten.","applicationAdminAddNodeUsername":"Username (root)","applicationAdminAddNodePassword":"User password (root)","applicationAdminAddNodePasswordDesc":"If password is not specified, SSH key authorization will be used. Ensure your SSH key is added to the node.","applicationAdminAddNodePasswordKeyInfo":"Attention. Password not specified, SSH key authorization will be used. Ensure your SSH key is added to the node.","applicationAdminAddNodeSshPort":"SSH Port (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Required permissions: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Click to get token","applicationAdminAddNodeStart":"Perform deploy","applicationAdminAddNodeStarted":"Deploy process started, do not close the page. If not finished in 5 minutes, it might be stuck.","applicationAdminAddNodeDoneOk":"Deploy completed successfully","applicationAdminAddNodeDoneFail":"Error: %1%","applicationAdminAddNodeClearLogs":"Clear logs","applicationAdminInstallNode":"Node Deployment","applicationAdminCoreSettings":"Core Settings","applicationAdminCoreSettingsDesc":"This section allows configuring basic system parameters. Parameters are applied on the fly.","applicationAdminSaveCoreSettings":"Save settings","applicationAdminCoreSettingsSaved":"Settings saved successfully","applicationAdminCoreName.projectName":"Project name","applicationAdminCoreName.projectMain":"Main domain","applicationAdminCoreName.projectBot":"Project bot login","applicationAdminCoreDesc.projectBot":"Which bot interacts with users. Enter login without @","applicationAdminCoreName.admins":"Admins IDs","applicationAdminCoreDesc.admins":"Enter IDs separated by commas, no spaces. Example: `123456789,987654321`. Don\'t delete yourself!)","applicationAdminCoreName.backup_admins":"Admins IDs for backups","applicationAdminCoreDesc.backup_admins":"Bot will send backups to these admins. Enter IDs separated by commas. Example: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Max renewal period (in months)","applicationAdminCoreDesc.order_end_limit_month":"User cannot renew order for a period longer than specified","applicationAdminSendMessage":"Bulk Message","applicationAdminSendMessageTargets":"Number of people to receive the message","applicationAdminSendMessageType":"User filtering type","applicationAdminSendMessageTypeAll":"All users","applicationAdminSendMessageTypeOrders":"Specific orders (any)","applicationAdminSendMessageTypeOrdersActive":"Specific orders (active)","applicationAdminSendMessageTypeHas":"Has at least 1 order","applicationAdminSendMessageTypeNotHas":"Has no orders","applicationAdminSendMessageTypeHasActive":"Has at least 1 active order","applicationAdminSendMessageTypeHasUnActive":"Has at least 1 INactive order","applicationBalanceErr":"Error generating payment: %1%","applicationBalanceErrBalanceLimit":"Your account already has the maximum allowed amount (%1%)","applicationBalanceErrBalanceLimitButton":"Unavailable","applicationBalanceErrData":"Payment system failed to generate payment. Please try later.","applicationBalanceErrNetwork":"Network error. Please try later.","applicationBalanceErrCurrency":"Currency error. Please try later.","applicationBalanceErrAuth":"Auth error","applicationBalanceErrPaymentLink":"Failed to get payment link","applicationBalanceSettingsTitle":"Currency selection","applicationBalanceTitle":"Balance Top-up Section","applicationBalanceSelect":"Select display currency","applicationBalanceEmail":"Your email","applicationBalancePlatform":"Payment platform","applicationBalanceAmount":"Top-up amount (in %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Total payment amount: ≈%1%</font>\\n\\n<font color=#F28100>If you are someone\'s referral,\\n%2% will be returned as 20% cashback!</font>","applicationBalanceAmountLimit":"Minimum amount: %1%\\nMaximum amount: %2%\\n\\n💵 <font color=#00AE09>Your payment method: %4%</font>\\nPayment system commission: %3%%\\n\\nAfter payment, balance is credited automatically within a few minutes; you will receive a message with payment status.","applicationBalanceAmountDesc":"Top-up via %1% service","applicationBalanceAmountButton":"Go to payment page","applicationBalanceAmountButtonLoading":"Loading...","applicationBalanceAmountButtonErr":"❌ Invalid amount ❌","applicationBalanceCurrency":"Payment method","applicationBalanceCurrencyDesc":"Payment system commission: ≈%1%%","applicationServersTitle":"Server Status","paymentCompleteNotify":"🎉 Your balance has been topped up by <b>%1%</b>.\\n\\nPayment ID: <b>%2%</b>\\n(Required if contacting <a href=\\"https://t.me/rocketman_vpn\\">support</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyRef":"🎉 Your balance has been topped up by <b>%1%</b>.\\nAs a referral of @%4%, we credited a bonus of <b>%3%</b> (%5%%)\\n\\nPayment ID: <b>%2%</b>\\n(Required if contacting <a href=\\"https://t.me/rocketman_vpn\\">support</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyRefHost":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> (%3%%) for balance top-up by your referral @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyAdmin":"💵 User %1% [UID: %7%] topped up balance by <b>%2%</b>.\\n💰 Project net profit: +<b>%5%</b>\\n\\nPayment system: <b>%6%</b>\\nPayment ID: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Attention ❗️\\nA refund request was formed for payment `%1%`.\\n\\nAs funds were returned in full, *%2%* was deducted from your app balance.\\n\\nIf you have questions, contact [support](https://t.me/rocketman_vpn).\\n\\n🚀 [Launch App](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Nodes","admin-routing":"🔀 Routing","admin-presets":"📋 Presets","admin-firewall":"📜 Firewall records (x%1%)","admin-firewall_add":"New firewall record","admin-nav-messages":"Bulk Messages","admin-nav-firewall":"Firewall","admin-nav-logs":"Admin Logs","logRecord-title":"📊 Admin logs (x%1%)","logRecord-title-user":"📜 User logs (x%1%)","logRecord-log-time":"Created: %1%","logRecord-log-who":"Who","logRecord-log-target":"Target","logRecord-log-reason":"Text: %1%","logRecord-setPaymentStatus":"Change payment status %1%","logRecord-removePromo":"Delete promo code %1%","logRecord-editPromo":"Edit promo code %1%","logRecord-editBalance":"Edit balance (%1%$ -> %2%$)","logRecord-returnOrder":"Cancel order %1% (%2%$)","logRecord-addOrder":"Give order %1%","logRecord-payOrder":"Renew order %1% for %2% days","logRecord-partnerNotify":"Payout to partner %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"SBP (Fast Payment System)","paymentMethodCrypto":"Cryptocurrency","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Failed to detect user data for link formation. Possibly user blocked our bot 😐","partner_title":"🏆 Partner Program 🏆","partner_desc":"You are a participant in the partner program. In addition to the referral bonus, you will receive financial deductions.\\n\\nYour current rate - %1%% of referral balance\\n\\nTotal earned: %2%\\nCurrent balance: %3%","ref_title":"🏆 Referral System 🏆","ref_desc":"Invite friends and acquaintances and get bonuses on your balance!\\n\\n<font color=#2DA618>From each referral, you\'ll get <font color=#54E13B>%1%</font> for their first orders and <font color=#54E13B>%2%%</font> of all their top-ups.</font>\\n\\n<font color=#00B7B7>All your referrals will get <font color=#15DBDB>%3%</font> bonus after first order (including trial) and <font color=#15DBDB>%4%%</font> cashback on all future top-ups.</font>\\n\\nThis system is beneficial for both you and your referrals 😉","ref_stats":"Your Statistics","ref_stats_data":"Number of referrals: %1%\\nBonus received: %2%","ref_link_text":"Your referral data","ref_link_text_copy":"📋 Link+text","ref_only_link_copy":"🔗 Link","ref_link_text_copy_sendText":"Hi! I use a convenient way to protect my data online and highly recommend it to you 😎\\n\\nPlus, by using my link, you\'ll get a %1% bonus after your first order (including trial) and a lifetime %2%% cashback on all balance top-ups 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Your referral link and additional text copied to clipboard.\\n\\nUse this to invite friends and gain joint benefits 😎","ref_only_link_copy_alert":"🔗 Your referral link copied to clipboard.\\n\\nUse it to invite friends and gain joint benefits 😎","ref_link_text_share":"💌 Share","ref_link_text_share_message":"Hi! I use a convenient way to protect my data online and highly recommend it to you 😎\\n\\nPlus, by using my link, you\'ll get a %1% bonus after your first order (including trial) and a lifetime %2%% cashback on all balance top-ups 🎉\\n","ref_message_personal":"You cannot register using your own referral link 😐","ref_message":"🎁 Referral System:\\nYou successfully registered as a referral of user @%1% 🎉\\n\\nYou will get a <b>%2%</b> bonus on your first order (including trial) and a lifetime <b>%3%%</b> cashback on each top-up!","ref_message_host":"🎁 Referral System:\\n🎉 User @%1% registered as your new referral 🎉\\n\\nYou will get a <b>%2%</b> bonus on their first order (including trial) and a <b>%3%%</b> cashback from each of their top-ups.","ref_message_order":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> on your balance","ref_message_order_host":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> on your balance from user @%2%","traffic_limit_notify_close":"⚠️ Traffic is running out for order `%1%` with plan `%2%`! If this message appears often, consider changing to a more advanced plan to stay connected ❤️\\n\\n🚀 You can do this by [launching the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on order ⇒ ♻️ Change Plan ♻️","traffic_limit_notify_end":"❗️ ATTENTION ❗️ Traffic exhausted for order `%1%` with plan `%2%`. It will reset on %3%. Consider upgrading to stay connected.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on order ⇒ ♻️ Change Plan ♻️","traffic_limit_notify_restore":"🎉 Traffic statistics reset for order `%1%` with plan `%2%`. It is now fully available again :)\\n\\n🚀 [Launch App](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Apply Promo Code","example":"Example","deleteMessageFailed":"❌ Failed to delete message. It might be too old or already deleted.","cryptoPayTitle":"Payment via Cryptocurrency","cryptoPayUserId":"User ID","cryptoPayAmount":"Amount to pay (USDT)","cryptoPayInstruction":"Transfer the specified amount in USDT to the provided address","cryptoPayLoading":"Loading details...","cryptoPayErrorNoParam":"Parameter crypto_id is missing in the link.","cryptoPayErrorInvalidData":"Invalid payment data.","cryptoPayErrorParse":"Error processing payment data. Try refreshing or contact support.","cryptoPayWallet":"Wallet address for transfer","cryptoPayNetwork":"Network (blockchain)","cryptoPayCopy":"Copy","cryptoPayCopyAmountAlert":"Amount copied to clipboard!","cryptoPayCopyWalletAlert":"Wallet address copied to clipboard!","cryptoPayWarning":"CAREFULLY check credentials and amount before paying! We cannot guarantee credit in case of error.","telegramPayment":"✅ An invoice has been generated for you\\n\\n⚖️ Payment amount: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 User ID: <b>%7%</b>\\n📋 Payment ID: <b>%6%</b>\\n\\n🔗 Follow the link to pay: %5%","orderManipulationBlock":"Your previous order is still processing. Please wait for completion or contact support for help.","subPage.orderInfo":"Below are all available connection methods for your order through this app","subPage.userInfo":"Below are all available connection methods for all your active orders through this app","subPage.orderId":"🛒 Order ID: %1%\\n⬇️ Select end connection region:","subPage.nodeInfo":"📍 Bypass point: %1%\\n⚠️ This means all traffic will first go through it for masking.","subPage.protocolInfo":"Connection protocol: %1%","subPage.allTitle":"All Orders","subPage.expiredNotifyList":"❌ Subscription expired\\nRenew VPN in bot\\n%1%","ping.admin.initOk":"✅ System initialized, all nodes available in normal mode.","ping.admin.initFail":"❌ System initialized, but some nodes are unavailable:\\n\\n%1%","speedtest.admin.failTest":"❌ Speed test failed. Please check node status.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Low connection speed recorded (%2% Mbps download, %3% Mbps upload). Check status.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Node restored normal connection speed (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ Connection speed issues detected on the server","applicationServersSpeedtestLastSpeed":"Last speed test (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Previous speed test (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ No speed tests performed on this server yet","applicationServersPingIssueDetected":"❌ Server not responding to ping requests","actionUpdateStartNodes":"⚠️ Node update procedure started (%1%), nodes will be restarted shortly. A notification will be sent upon completion.","actionUpdateStartHeader":"Update procedure started:","actionUpdateStartSite":"• Main project page is being updated","actionUpdateStartApp":"• Backend application is being updated","actionUpdateStartProxy":"• Proxy or xray service is being updated (Nodes: %1%)","actionUpdateStartMTProto":"• MTProto server is being updated","actionUpdateStartFirewall":"• Updating firewall (Nodes: %1%)","actionUpdateStartBackup":"• Updating child API interface (Nodes: %1%)","actionUpdateStartFooter":"Nodes will be restarted shortly. A notification will be sent upon completion.","actionUpdateCompletedNodes":"✅ Node update procedure (%1%) completed, nodes restarted and should be active","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Fast and secure","mtproto.subtitle.2":"Telegram access","mtproto.description.1":"Free proxy server for a stable connection to Telegram.","mtproto.description.2":"No registration, no limits, full privacy.","button.connect":"Connect Proxy","button.copy":"Copy Link","button.copied":"Copied","link.label":"Manual connection link","feature.encryption.title":"End-to-end Encryption","feature.encryption.description":"Your messages remain confidential. We have no access to your chats.","feature.free.title":"No Limits","feature.free.description":"Free access with no registration or traffic limits.","feature.rocketman.title":"More Features","feature.rocketman.description":"This proxy works only for Telegram. For full protection, use RocketMan-VPN.","rocketman.title":"RocketMan VPN — Your reliable friend","rocketman.description":"This MTProto proxy is an additional project of RocketMan VPN. With us, you get full protection in all apps and favorite services. Try for free and evaluate the quality!","rocketman.button":"Open RocketMan VPN","howto.title":"How to connect?","howto.step1.title":"Click \\"Connect Proxy\\"","howto.step1.description":"Or copy the link and connect manually","howto.step2.title":"Open Telegram","howto.step2.description":"The link will automatically launch the app","howto.step3.title":"Confirm","howto.step3.description":"Click «Connect» in the dialog box","web.orders":"My Orders","web.settings":"Settings","web.exit":"Exit","web.back":"← Back","settings.accountInfo":"Account Info","settings.language":"Language","settings.currency":"Display Currency","settings.currencyDesc":"Select currency for prices and balance display in the app.","settings.webCredentials":"Web Login Details","settings.webCredentialsDesc":"These details are used for logging into the web interface outside Telegram. We recommend a complex password.","settings.login":"Login","settings.loginPlaceholder":"Enter new login","settings.newPassword":"New Password","settings.passwordPlaceholder":"At least %1% characters","settings.repeatPassword":"Repeat Password","settings.repeatPasswordPlaceholder":"Repeat new password","settings.passwordMismatch":"Passwords do not match","settings.saved":"Saved!","settings.saveError":"Save Error","settings.saving":"Saving…","settings.saveCredentials":"Save Credentials","settings.show":"Show","settings.hide":"Hide","settings.copy":"Copy","settings.reset":"Reset","settings.apiKeyHint":"Use API key to log in to the <a href=\\"https://%1%\\" target=\'_blank\'>web interface</a> without Telegram or for integration. Do not share with third parties. This key provides full access to your account","settings.referral":"Referral (Inviter ID)","settings.referralDesc":"If you missed the referral link, you can set the ID of the inviter here. It will be applied only once.","settings.referralApplied":"Inviter ID","settings.referralAppliedAlert":"Inviter ID copied to clipboard.","settings.referralHostId":"Your inviter ID","settings.referralHostIdPlaceholder":"Enter inviter user ID (digits)","settings.referralHostIdInvalid":"Invalid ID format. Use digits only.","settings.referralApply":"Apply inviter ID","settings.referralSaved":"Referral applied!","settings.referralErr.already_applied":"Referral has already been applied.","settings.referralErr.invalid_ref_host":"Invalid inviter ID.","settings.referralErr.same_account":"You cannot use your own ID as a referral.","login.tabCredentials":"Login and Password","login.tabApiKey":"API Key","login.tabRegister":"Register","login.labelLogin":"Login","login.labelPassword":"Password","login.labelConfirmPassword":"Confirm Password","login.labelApiKey":"API Key","login.placeholderLogin":"Enter login","login.placeholderPassword":"Enter password","login.placeholderConfirmPassword":"Confirm password","login.placeholderApiKey":"Enter API key","login.signIn":"Sign In","login.signInApiKey":"Sign in via API Key","login.signUp":"Sign Up","login.signingIn":"Signing in…","login.signingUp":"Signing up…","login.orUseApiKey":"or use API Key","login.orUseCredentials":"or use Login and Password","login.switchToApiKey":"Log in via API Key","login.switchToCredentials":"Log in via Login and Password","login.errLoginRequired":"Enter login and password","login.errPasswordRequired":"Enter password","login.errConfirmPasswordRequired":"Confirm password","login.errPasswordMismatch":"Passwords do not match","login.errApiKeyRequired":"Enter API key","login.errIncorrect":"Incorrect login or password","login.errInvalidKey":"Invalid API Key","login.errServer":"Server error, try again","login.errRegistration":"Registration failed","login.tabTelegram":"Via Telegram","login.tg.title":"Telegram Login","login.tg.instruction":"1. Send the command below to <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a> bot\\n2. After sending, click «Confirm Login»","login.tg.commandLabel":"Bot command:","login.tg.showCommand":"Show","login.tg.hideCommand":"Hide","login.tg.copyCommand":"Copy","login.tg.copied":"Command copied!","login.tg.timerLabel":"Code valid for: %1%","login.tg.timerExpired":"Code expired","login.tg.verifyButton":"Confirm Login","login.tg.verifying":"Verifying…","login.tg.requestNew":"Request new code","login.tg.loading":"Generating code…","login.tg.enter_correct":"Identity confirmed. Return to site and click \\"%1%\\" to finish","login.tg.enter_fail":"Action failed. Ensure the key is correct and not expired","login.tg.errNotSent":"Failed to confirm login. Ensure you sent the command to the bot. If expired, request a new code.","lang.ru":"Russian","lang.en":"English","lang.uk":"Ukrainian","footer.info":"MTProto proxy works only with official Telegram apps","instructionModalTitleVpn":"VPN Connection Instructions","instructionModalTitleProxy":"Proxy Connection Instructions","instructionModalSendToTg":"📩 Send to Telegram","instructionModalSentToTg":"Instructions have been sent to your Telegram private messages","settings.name":"Your Name","settings.nameDesc":"Enter a name for personalized communication in the app. It is public and can be used to display to other users","settings.namePlaceholder":"Enter name (3-15 characters)","settings.nameInvalid":"Only Cyrillic, Latin, numbers and spaces allowed (3-15 characters)","settings.promoTitle":"Promo Code Activation","settings.promoDesc":"If you have a promo code, enter it here to receive a nice bonus to your balance.","settings.promoPlaceholder":"Enter promo code","settings.promoApply":"Apply promo code","settings.promoApplied":"Promo code successfully applied!","adminDashboardTitle":"Dashboard Statistics","adminDashboardActiveOrders":"Orders Activity","adminDashboardActiveLabel":"Active","adminDashboardExpiredLabel":"Expired","adminDashboardOrdersByTariff":"Orders by Tariff","adminDashboardPayments":"Payments Status","adminDashboardTrial":"Trial Period Usage","adminDashboardLang":"User Language","adminDashboardCurrency":"User Currency","adminDashboardActivity":"App Activity","adminDashboardOrdersPerUser":"Orders Per User","adminDashboardRefIncome":"Median Referral Income","applicationAdminBackButton":"Back","settings.passkeys.title":"Access Keys (Passkeys)","settings.passkeys.desc":"Add up to 5 devices for fast and secure passwordless login using biometrics or hardware keys.","settings.passkeys.add":"➕ Add new key","settings.passkeys.name":"Device name","settings.passkeys.name_placeholder":"e.g. iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"You don\'t have any access keys yet","settings.passkeys.delete_confirm":"Are you sure you want to remove this access key? You will no longer be able to log in with it.","settings.passkeys.limit_reached":"Key limit reached (maximum 5)","settings.passkeys.add_success":"Access key added successfully!","settings.passkeys.add_error":"Failed to add access key","login.tabPasskey":"By Key","login.passkey.btn":"Login with Passkey","login.passkey.error":"Authentication via access key failed","login.passkey.not_supported":"Your browser or device does not support Passkey login","admin.bulkRenewal.button":"📅 Bulk Order Renewal","admin.bulkRenewal.title":"📅 Bulk Order Renewal","admin.bulkRenewal.afterDateLabel":"Include orders expiring after the specified date (or not yet expired). Timezone: %1%","admin.bulkRenewal.daysLabel":"Number of days to extend","admin.bulkRenewal.ordersCount":"Orders to be extended","admin.bulkRenewal.usersCount":"Unique users","admin.bulkRenewal.applying":"⏳ Applying...","admin.bulkRenewal.done":"✅ Done!","admin.bulkRenewal.apply":"📅 Extend %1% order(s) by %2% day(s)","admin.bulkRenewal.notifyUser":"📅 The administrator has extended your active orders by %1% day(s). Order list: %2%","admin.bulkRenewal.notifyUsers":"Notify users via Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ With a large number of users, notifications may be unstable or delayed"}');
+const en_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"To enable notifications on iPhone:\\n1. Tap the [⎋] (Share) icon in the bottom menu.\\n2. Select \'Add to Home Screen\'.\\n3. Launch the app from your home screen and return here to subscribe.","settings.pushSupportError":"Web Push is not supported on this device","settings.pushTitle":"Push Notifications","settings.pushDesc":"Subscribe this device to receive system notifications","settings.pushSubscribed":"✅ This device is subscribed","settings.pushNotSubscribed":"❌ Device is not subscribed","settings.pushSubscribeBtn":"Subscribe","settings.pushUnsubscribeAllBtn":"Unlink all devices","settings.pushSuccess":"Successfully subscribed","settings.pushUnsubscribeSuccess":"All devices unlinked","settings.pushError":"Error during subscription","settings.disableSiteNotify":"Disable notifications on the site","settings.disableSiteNotifyDesc":"Disable notifications on the site, leaving only Push notifications and notifications in Telegram (if the account is linked to Telegram)","settings.disableSiteNotifyYes":"Yes","settings.disableSiteNotifyNo":"No","settings.geoRouting":"Add geo-routing to subscription data","settings.geoRoutingDesc":"You can choose a specific geo-routing for your orders. If it is added, then when connecting to VPN / Proxy through instructions from the application, the subscription data will indicate that you want to use a specific geo-routing. This can help in bypassing blocks and improving connection stability if the main server is unavailable or unstable in your region. If you\'re not sure which option is best for you - leave the default value (%1%)","settings.disabled":"Disable (not recommended)","settings.reserveConnectionLink":"Use backup subscription link for Vless","settings.reserveConnectionLinkDesc":"Enable this option if you do not have access to the main server. Then the connection instructions will include the backup link instead of the main one.","settings.reserveConnectionLinkYes":"Yes","settings.reserveConnectionLinkNo":"No","applicationNotifyTitle":"Notifications","applicationNotifyConfirmDeleteAll":"Are you sure you want to delete all notifications?","applicationNotifyEmpty":"No new notifications","applicationNotifyPromoSuccess":"Promo code applied successfully","applicationNotifyPromoError":"Promo code activation error: it may have already been used or the limit is reached","applicationNetworkError":"Network error","applicationNotifyConfirmDelete":"Are you sure you want to delete this notification?","applicationNotifyDelete":"🗑️ Delete","applicationNotifyPromoApply":"Apply promo code (%1%)","pagePayTitle":"Purchase VPN","pagePayBalance":"Top up balance","pagePayID":"Your Unique ID","pagePayIDPlaceholder":"Enter your ID","pagePayAmount":"Top-up amount (temporarily from %1%)","pagePayButton":"Proceed to Payment","pageFAQId":"How to get ID?","pageFAQStep1":"Open the app in the RocketMan-VPN chatbot","pageFAQStep2":"Find the \\"Your ID\\" section at the bottom of the home page","pageFAQStep3":"Copy the unique number","pageFAQStep4":"Paste the ID into the field on the left","pageFAQOpen":"Open Telegram Bot","pageFAQQR":"Telegram Bot QR Code","landingTGBotButton":"Launch Telegram Bot","landingDashboardButton":"Open Dashboard","landingTarifs":"Plans","landingTarifsTrial":"+ Trial period %1%h","landingTarifsDiscount":"Discount","landingTarifsPrice":"%1%/%2% days","landingTarifsGo":"Connect","landingFooterText":"And here is our main project","landingTitle":"RocketMan VPN — Internet Under Protection!","landingTitleBrand":"RocketMan VPN","landingTitleTagline":"Internet Under Protection!","landingTitleDesc":"Lightning-fast access to your favorite sites and services from PC and smartphone.","landingFeaturesTitle":"Why choose us?","landingAppsTitle":"Our products for you","landingAppsDownload":"Download","landingAppsOpen":"Open","landingAppsFree":"Free","landingTrust1Value":"256-bit","landingTrust1Label":"AES encryption · data locked away","landingTrust2Value":"Up to 1 Gbps","landingTrust2Label":"Channel Speed","landingTrust3Value":"24/7","landingTrust3Label":"Live Support","landingTrust4Value":"UNLIMITED","landingTrust4Label":"Devices per Key","landingFeaturesLead":"Protection, speed, and simplicity — no compromises","landingCompareTitle":"Unprotected vs RocketMan VPN","landingCompareLead1":"Without VPN — anxiety and “Access denied”.","landingCompareLead2":"With our service — protection and safety in a few clicks","landingCompareColBad":"Without VPN","landingCompareColGood":"With RocketMan VPN","landingCompareRow1":"What sites see","landingCompareBad1":"Your city, ISP, and activity","landingCompareGood1":"Only the server country","landingCompareRow2":"Wi-Fi in cafés and airports","landingCompareBad2":"Passwords and chats can be intercepted","landingCompareGood2":"Encrypted traffic — hackers see only noise","landingCompareRow3":"Data transfer","landingCompareBad3":"On open networks, passwords travel in plain text","landingCompareGood3":"VLESS · Proxy HTTPS · Hysteria2","landingCompareRow4":"Blocks and DPI","landingCompareBad4":"“Access denied”, apps and messengers go down","landingCompareGood4":"Our bypasses work even in China (verified June 2026)","landingCompareRow5":"Speed","landingCompareBad5":"ISP may throttle routes and speed","landingCompareGood5":"Up to 1 Gbps, including on 5G","landingCompareRow6":"Setup","landingCompareBad6":"Manual setup on every device and in each app","landingCompareGood6":"QR code in 10 seconds · iOS, Android, PC, TV","landingCompareRow7":"Support","landingCompareBad7":"You\'re on your own","landingCompareGood7":"Live Telegram support 24/7","landingHowTitle":"3 steps to secure internet","landingHowLead":"Setup takes less than two minutes — we\'ll guide you through","landingHowStep1Title":"Choose a plan","landingHowStep1Text":"From free trial to premium — a plan for every need","landingHowStep2Title":"Pay","landingHowStep2Text":"Convenient payment and instant activation in Telegram or on the website","landingHowStep3Title":"Turn on VPN / Proxy","landingHowStep3Text":"Step-by-step guide — then just ON/OFF","landingPricingLead":"Convenient plans · trial period · referral program","landingPlanTraffic":"📊 %1% GB traffic","landingPlanDevices":"📱 Unlimited devices","landingPlanVpnProxy":"🔐 VPN + Proxy included","landingCtaTitle":"Ready to protect your internet?","landingCtaDesc":"Join us — setup takes minutes, peace of mind lasts much longer.","landingCtaButton":"Connect now","landingCtaSite":"Connect via website","landingCtaTelegram":"Connect via Telegram","landingPlanConnectSite":"Connect on website","landingPlanConnectTelegram":"Connect in Telegram","landingHeaderTelegram":"Launch in Telegram","landingHeaderSite":"Connect right here","landingHeroGuarantee":"✓ Trial period · ✓ VPN + Proxy · ✓ 24/7 Support","landingHeroPill1":"Trial period","landingHeroPill2":"VPN + Proxy","landingHeroPill3":"24/7 Support","landingHeroPill4":"Works even in China","landingHeroPill5":"Whitelist Bypass","landingHeroCompareBad":"Without VPN","landingHeroCompareGood":"With RocketMan VPN","landingHeroCompareYou":"YOU","landingHeroCompareWeb":"WEB","landingHeroCompareBadWire":"open channel","landingHeroCompareGoodWire":"encrypted tunnel","landingHeroCompareBad1":"Your real IP leaks to the network","landingHeroCompareBad2":"Blocks · “Access denied”","landingHeroCompareGood1":"We protected and encrypted your time on the internet","landingHeroCompareGood2":"No-logs · we don\'t store your data","landingProtocolVless":"VLESS","landingProtocolProxy":"Proxy HTTPS","landingProtocolHysteria":"Hysteria2","landingShieldMeta":"VLESS · Proxy HTTPS · Hysteria2","landingPlanPopular":"TOP","landingSecurityBadge":"Safe with us","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"A versatile proxy client for <b>Windows, Linux and macOS</b>. Supports <b>HTTPS / VLESS / Hysteria2</b> protocols. API mode for order management directly from the app, TUN tunneling, VLESS subscriptions, and Discord integration (Windows).","app.tgproxy.name":"TGProxy — MTProto for Telegram","app.tgproxy.description":"Free <b>MTProto proxy</b> for stable Telegram access. No registration or traffic limits, end-to-end encryption for your chats. One-click connect from the browser — opens directly in Telegram.","features1Title":"Anonymity","features1Text":"Thanks to multiple layers of protection on our side, your real IP will remain unknown to any service.","features2Title":"Speed","features2Text":"Download, watch your favorite content, and share at speeds up to 1Gbps.","features3Title":"Trial period","features3Text":"Connect in 1 click from any of your devices! PC, smartphone, TV, tablet, and laptop.","features4Title":"Support","features4Text":"We are always ready to help you with any questions. Online almost 24/7","faq1title":"How to pay?","faq1text":"Top up your balance and pay via a convenient method. After payment, you\'ll get instructions in the Telegram bot or on the website (depending on where you purchased).","faq2title":"How to set up VPN?","faq2text":"The full connection process is described in detail in our <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram bot</a> and in <a href=\\"https://ru-app.rocketman-vpn.com:8443/application\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">your account</a> on the website.\\nStep by step, so you\'re unlikely to get lost. Most importantly — follow the instructions :)","faq3title":"What if something isn\'t working?","faq3text":"Check our <a href=\\"https://rocketman-vpn.com/?wiki\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Knowledge Base</a> — we\'ve gathered useful articles and answered common questions in advance. If something still can\'t be solved on your own — contact <a href=\\"https://t.me/%1%\\" target=\'_blank\'>support via Telegram</a>, and we\'ll help.","locationSelectTitle":"Select server location","locationSelectLoad":"Load: %1%%","locationReserve1":"Saint Petersburg","locationLocal":"Local server","locationStockholm":"Stockholm","locationAustria":"Vienna","locationNetherland":"Amsterdam","locationFrankfurt":"Frankfurt","locationParis":"Paris","tarif.test_drive":"🚗 Test Drive","tarif.start":"🚀 Start","tarif.gamer":"🎮 Gamer","tarif.pro":"👑 Family+","tarif.ultra":"🌌 Space","httpTarifPro":"🔒 Proxy-Unlimited","httpTarifGamer":"🔒 Proxy-Gamer","tarifNameFull":"%1% (%2% days | %3% GB/day) - %4%","welcomeMessage":"Welcome!\\nThanks to our service, you can get secure access to your favorite sites and apps, just like our other beloved clients ❤️\\n\\n⭐️ We have no device limits, so you can use 1 key on all your devices! Along with VPN, you also get access to our Proxy.\\n\\n🛒 We provide:\\n- VPN for iOS, Android, Windows, macOS, Android TV\\n- Proxy for browser, Discord, Windows, etc.","basketBalance":"Top up balance","secondsToStringD":"%4% d. %3% h. %2% min. %1% sec.","secondsToStringH":"%3% h. %2% min. %1% sec.","secondsToStringM":"%2% min. %1% sec.","readButton":"🗑 Delete this message","openPage":"🌐 Website","openApp":"📱 App","expireNotifyOrderData":"▪️ Plan: `%1%`\\n▪️ Name: `%2%`\\n▪️ Renewal period: `%3% days`","expireNotifyTemplate":"Hello, %1%!\\n%2%\\n\\n%3%\\n▪️ Renewal cost: `%4%`\\n\\n%5%","expireNotifyFull":"Your order has expired 🙁\\n\\nTo stay connected to the free Internet — [launch the app](https://t.me/rocketman_vpn_bot/?startapp), then click on 💸 your balance at the top right, top it up, and enable auto-renewal in the order settings 😇","expireNotifyTime":"Your order will expire in less than `%1%` hour 🙁","expireNotifyRenewAutoNoMoney":"❗️ Auto-renewal is enabled, but your current balance is insufficient 🙁\\n\\nEnsure you have enough funds for the feature to work smoothly in the coming months. [Launch the app](https://t.me/rocketman_vpn_bot/?startapp), click on your balance in the top right, and top up the desired amount.","expireNotifyRenewAuto":"✅ Auto-renewal is enabled, so the order will be renewed automatically when less than 24 hours remain 😎","expireNotifyRenewManual":"ℹ️ How to enable auto-renewal?\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on your order ⇒ Settings ⇒ check Auto-renewal ⇒ Save all changes.","expireNotifyRenewSuccessAuto":"Hello, %1%!\\nYour order has been automatically renewed.\\n\\n%2% 🎉\\n\\nThank you for trusting us ❤️\\nThe best way to thank us is by inviting your friends via the referral system!\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"The command was used incorrectly\\n`%1%`\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Command `%1%` used incorrectly!\\n\\n✅ Correct example: `%2%`\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Start","usePromoCommand":"Apply promo code — /promo PROMO_NAME","useFaqCommand":"How to connect to VPN / Proxy?","usePromoAlready":"You have already applied this promo code. It can only be used once.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Promo code `%1%` not found 🙁\\n\\nPlease check the spelling and ensure the code is valid.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Activation limit for promo code `%1%` reached 🙁\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"You have already applied a similar promo code.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Failed to apply promo code `%1%` 🙁\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Promo code `%1%` successfully applied 🎉\\n%2% credited to your balance\\n💰 Current balance: %3%\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"You do not have access to perform this action.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Admin Menu","adminMenu":"Admin Section\\n\\n\\nPromo Codes Menu\\nPromo codes list: /listPromo\\nPromo code info: `/infoPromo {PROMO_NAME}`\\nCreate promo code: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nDelete promo code: `/deletePromo {PROMO_NAME}`\\n\\n\\nUsers Menu\\nGive order to user: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nDelete order: `/removeOrder {ORDER_ID}`\\nGive balance to user: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Order not found","adminUserRemoveOrderStatus":"Order removal status: %1%","adminUserGiveTarifErrUser":"User not found!","adminUserGiveTarifErrTarif":"Plan not found","adminUserGiveTarifErrNode":"Plan node not found. Plan configuration is invalid","adminUserGiveTarifErrMarzban":"MarzBan failed to create order. Reason unknown","adminUserGiveTarifSuccess":"Successfully gave order to @%1%","adminUserGiveTarifNotify":"🎉 Administrator has added the `%1%` plan to your account for `%2% days` 📆\\n\\n*Order Information:*\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒\\nclick on your order ⇒ 📚 VPN / Proxy Instructions","adminPromoCreateAlreadyExist":"This promo code already exists","adminPromoCreateAlreadyExistWas":"This promo code existed once and cannot be recreated","adminPromoCreateFailed":"Failed to create promo code","adminPromoCreateDone":"Promo code `%1%` successfully created.\\nActivations available: %2%\\nBalance: %3%","adminPromoList":"List of all promo codes:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% used / %3% total / %4%)","adminPromoInfo":"Promo code info:\\n\\nID: `%1%`\\nActivation limit: %2%\\nActivations count: %3%\\nBalance: %4%\\n\\nActivations list:\\n%5%","adminPromoDeleteDone":"Promo code `%1%` successfully deleted","terms":"User Agreement","contacts":"Contact Us","wiki":"Knowledge Base","wikiPage.description":"Guides, FAQ, and VPN setup examples.","wikiPage.articleLead":"RocketMan VPN knowledge base article.","wikiPage.articleHint":"Browse articles on the left · table of contents on the right","wikiPage.subtitle":"Choose a topic from the list or search","wikiPage.heroTopic.faq":"FAQ","wikiPage.heroTopic.setup":"Setup and connection","wikiPage.heroTopic.troubleshoot":"Examples and fixes","wikiPage.searchPlaceholder":"Search by title and article text...","wikiPage.loadingList":"Loading article list...","wikiPage.emptyList":"No articles were added yet.","wikiPage.loadingArticle":"Loading article...","wikiPage.openHint":"Select an article from the list","wikiPage.back":"Back to list","wikiPage.error.loadList":"Failed to load article list.","wikiPage.error.emptyFile":"The article is not available for the current language.","wikiPage.error.loadArticle":"Failed to load article.","wikiPage.navigation":"Navigation","wikiPage.contents":"Contents","wikiPage.readMore":"Read","wikiPage.readingTime":"min read","wikiPage.articlesCount":"articles","wikiPage.backToTop":"Back to top","wikiPage.home":"🏠 Knowledge base home","wikiPage.copyLink":"Copy link to this article","wikiPage.articleLinkCopied":"Article link copied","wikiPage.linkCopied":"Link copied","wikiPage.closeLightbox":"Close","wikiPage.openImageInNewTab":"Open in new tab","wikiPage.copySectionLink":"Copy section link","wikiPage.copyCurrentSectionLink":"Copy link to current section","wikiPage.sectionLinkCopied":"Section link copied","wikiPage.enlargeImage":"Enlarge image","wikiPage.copyCode":"Copy","wikiPage.copied":"Copied","wikiPage.copyText":"Click to copy","wikiPage.searchNoResults":"Nothing found. Try another word.","wikiPage.searchHint":"Search results in titles and body","wikiPage.searching":"Searching...","wikiPage.searchMatchTitle":"In title","wikiPage.searchMatchBody":"In body","wikiPage.updatedAt":"Updated","wikiPage.featured":"Featured","wikiPage.groupOther":"Other articles","wikiPage.allArticles":"All articles","wikiPage.cardUpdated":"Updated","wikiPage.updatedToday":"today","wikiPage.updatedYesterday":"yesterday","wikiPage.updatedDaysAgo":"%1% days ago","wikiPage.badge.important":"Important","wikiPage.badge.new":"New","wikiPage.badge.updated":"Updated","wikiPage.badge.hot":"Hot","contactsTG":"Telegram Chat","contactsEmail":"E-Mail","trialNotify":"✅ You have received the `%1%` plan for `%2% hours` as trial access.\\n\\n📌 Order info in the app:\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒\\nclick on your order ⇒ 📚 VPN / Proxy Instructions.\\n\\nWe provide free access so you can evaluate the quality and stability before future purchases 🤝","launchBot":"Launch","launchBotLong":"Open App 📱","applicationMainMenu":"Main Menu","applicationMainMenuBack":"Back","applicationButtonsRef":"Referral System","applicationButtonsFaq":"Knowledge Base","applicationButtonsCabinet":"Account","applicationButtonsAdmin":"Admin Dashboard","applicationButtonsAdminDisk":"Free disk space: %1%","applicationButtonsAdminPayments":"Income stats:<br/>%1% current month<br/>%2% last month<br/>%3% total period | %4% pending","applicationUserInfoWithUs":"With us since","applicationUserInfoBalance":"Your balance","applicationUserInfoId":"Your ID","applicationUserInfoTgId":"Linked TG Account ID","applicationUserInfoAPIKey":"Your API Key","applicationUserInfoAPIKeyAlert":"📝 Your API Key has been copied to clipboard. Do not disclose this key to anyone; project administration will never ask for it","applicationUserInfoAPIResetAlertAsk":"📝 Are you sure you want to generate a new API Key?","applicationUserInfoAPIResetAlert":"📝 Your API Key has been regenerated","applicationUserInfoIdAlert":"📝 Your ID has been copied to clipboard.","applicationUserInfoTgIdAlert":"📝 Your Telegram ID has been copied to clipboard.","applicationContactButton":"Contact Support","applicationServersButton":"Server Status","applicationHowToConnectFAQButton":"How to connect to VPN or Proxy?","applicationHowToConnectFAQButtonModal":"The bot has sent instructions to your private messages 📝","applicationCabinetTitle":"Account","applicationCabinetTitleDesc_title":"Click on order to manage it","applicationCabinetTitleOrder":"Select a Plan","applicationCabinetTitleOrder_detail_back":"Back to plans list","applicationCabinetTitleOrder_help_button":"⚠️ Help me choose a plan ⚠️","applicationCabinetTitleOrder_help_button_back":"Back to ordering","applicationCabinetTitleOrder_help_button_header":"Average traffic consumption:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 hour of video at 1440p ≈6 GB\\n<font color=#E10070>Instagram</font>: 1 hour of Reels ≈2 GB\\n<font color=#69C9D0>TikTok</font>: 1 hour of video ≈2 GB\\n<font color=#7289DA>Discord</font>: 1 hour of voice with stream ≈1 GB\\n<font color=#BD37FF>Twitch</font>: 2 hours of stream at 1080p ≈5 GB\\n<font color=#D0A823>Online games</font>: 1 hour ≈0.5 GB\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 hours at 1080p ≈5 GB\\n\\nAdding these up gives <font color=#DA7F00>≈20-25 GB per day</font>. These figures are estimates to help you choose the right plan.\\n\\n<font color=#A7C800>VPN and Proxy — both are convenient.</font>\\n<font color=#BAD821>VPN:</font> ideal for smartphones, tablets, and TV; can be used on PC too.\\n<font color=#BAD821>Proxy:</font> suitable for Discord, PC browser (YouTube, Twitch, Netflix, HDRezka, etc.).\\n<font color=#B3D023>Protocols briefly:</font>\\n<font color=#2EB3FF>• Vless</font> - best for bypassing blocks, stability, speed, “invisibility”.\\n<font color=#29a1e6>• Hysteria</font> - balance of stability and speed, perfectly suited for gaming.\\n<font color=#2884BA>• HTTPS</font> - suitable only for websites and apps via Proxifier.\\n\\n🚀 Start — for basic browsing\\n🎮 Gamer — for active users\\n👑 Family+ — for high traffic volumes","applicationCabinetButtonNew":"Create New Order","applicationCabinetButtonNewCancel":"Back to orders list","applicationCabinetButtonAddBalance":"Top up balance","applicationCabinetIsTrial":"Free Trial Access","applicationCabinetPing":"Ping to server: %1%ms","applicationCabinetEndActive":"Subscription access until: %1%","applicationCabinetEndNotActive":"Subscription not paid. Click here and activate it via the «⌛️ Renew Order» button in the dropdown menu.","applicationCabinetOrderTraficWeek":"per week","applicationCabinetOrderTraficMonth":"per month","applicationCabinetOrderPriceDay":"/ day","applicationCabinetOrderPriceDays":"/ %1% days","applicationCabinetOrderPrice":"%1% for %2% days 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 View plan details 📋","tarif_desc_drive":"📚 Perfect for getting to know our service and light social media browsing. Allows you to fully test VPN / Proxy work 😉","tarif_desc_start":"📚 Suitable for social media and light smartphone use with average screen time ≈4h per day. On PC, the monthly limit may be consumed faster; consider your activity.","tarif_desc_gamer":"🎮 For those who spend active time on PC:<br/><font color=#DA7F00>•</font> Games via Steam and other launchers<br/><font color=#DA7F00>•</font> Voice communication in messengers for gamers with reliable connection via Proxy<br><font color=#DA7F00>•</font> Watching Twitch with 7TV plugin at 1080p and higher<br/><font color=#DA7F00>•</font> YouTube and other social networks where a secure connection is important\\n\\n✅ This traffic is enough for smartphone and PC with active use of ≈5-6 hours per day.","tarif_desc_unlim":"🚀 Plan for high traffic volumes and any tasks: PC, laptops, smartphones, tablets, TV, and other devices.\\n\\n🧡 One key can be used on multiple devices — this traffic is enough for family and your friends!","tarif_desc_ultra":"💠 Premium plan for a wide range of tasks and very active users!\\n\\nSuitable for those approaching the 1 TB limit and wanting to use the service without worrying about traffic.\\n\\n💜 With this option, you can safely download large files, stream, play, and use VPN / Proxy on a dozen devices.","applicationCabinetOrderBack":"Back","applicationCabinetOrderSelect":"☑️ Order this plan ☑️","applicationCabinetOrderSelectTrial":"🎁 Activate trial access for %1% hours 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Get trial access for %1% hours as a bonus?","applicationCabinetOrderSelectAccept":"Confirm action ✅\\nAmount to be deducted: %1%\\n\\n💰 You currently have: %2%","applicationCabinetOrderTrial":"🎁 %1%-hour trial period available","applicationCabinetOrderTrialUsed":"You have already used the trial access 🙁","applicationCabinetOrderSelectErrTimeMax":"Maximum renewal period: 2 months","applicationCabinetOrderSelectErrBalance":"Insufficient funds on internal balance for the order 🙁","applicationCabinetOrderSelectErrTrialCfg":"This plan cannot be ordered in trial mode 🙁","applicationCabinetOrderSelectErrTrial":"You have already used this trial plan 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Trial period is available only for users authorized via Telegram. Please log in via Telegram (or link Telegram in Settings) and try again.","applicationCabinetOrderSelectSuccess":"Order completed successfully 🎉","applicationCabinetOrderSelectSuccessTrial":"Trial order completed successfully 🎉","applicationCabinetOrderSelectErrOrder":"Failed to create your order 😕","applicationCabinetOrderEditChangeTarif":"♻️ Change plan ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ This is current plan","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>After changing the plan, your order will have<br>approximately %1% left</font><br>days:hours:minutes:seconds<br><br>Press the button below to confirm","applicationCabinetOrderEditChangeTarifExpired":"❌ Cannot change plan for an expired order. You must first renew it (make it active) and then change the plan. Connection time will be recalculated based on the chosen plan.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>You can change the plan every %1% h.</font><br><br>When changing the plan, remaining days from the previous order are transferred to the new one considering current price and remaining time.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>You have recently changed the plan!</font><br>Next change will be available in<br>%1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Confirm change to selected plan ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Are you sure you want to change to the selected plan?\\n\\n⚠️ Note that the next plan change will only be available in %1% h.","applicationCabinetOrderEditAuto":"Order auto-renewal","applicationCabinetOrderEditAutoOn":"✅ Active","applicationCabinetOrderEditAutoOff":"❌ Not active (in ⚙️Settings)","applicationCabinetOrderEditAutoDesc":"When the order expires, if you have sufficient funds, the system will automatically renew it if auto-renewal is enabled.","applicationCabinetOrderEditResetTime":"Traffic reset","applicationCabinetOrderEditCreated":"Order activated","applicationCabinetOrderEditSpent":"Total spent","applicationCabinetOrderEditOverTime":"Subscription active until","applicationCabinetOrderChangeTarif":"♻️ Change Plan","applicationCabinetOrderEditParams":"⚙️ Settings","applicationCabinetOrderEditParamsTitle":"⚙️ Order Settings: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Order Label","applicationCabinetOrderEditParamsLabelDesc":"You can add labels to your orders to easily identify where each is used","applicationCabinetOrderEditParamsPassword":"🔸 Your connection password (4-12 characters)","applicationCabinetOrderEditParamsIP":"🔸 IP address for passwordless access","applicationCabinetOrderEditParamsIPDesc":"In this field, you can specify your personal IP address (getting it from 2ip.io, for example) to access our Proxy server without entering a login and password where required. This is more convenient and equally secure.\\n⚠️ Important: this function works only when connecting via HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"To secure the Proxy connection, we have generated a random password. If necessary, you can change it. It is required for authentication via login and password where needed.","applicationCabinetOrderEditSave":"✔️ Save all changes ✔️","applicationCabinetOrderEditSaveOk":"Changes successfully applied ✅","applicationCabinetOrderEditSaveFail":"❌ Settings were not saved. %1%","applicationCabinetOrderEditLinkVpn":"📚 VPN Instructions","applicationCabinetOrderEditLinkProxy":"📚 Proxy Instructions","applicationCabinetOrderEditResetPass":"🔄 Reset Proxy Password","applicationCabinetOrderEditResetPassAccept":"🔄 Are you sure you want to reset the password?\\n\\nThe old password will stop working, and you will need to reconfigure the Proxy connection!","applicationCabinetOrderEditLinkAccept":"💬 A message with details and instructions for connecting to our VPN / Proxy has been sent to you.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS port*: `%4%`\\n%5%\\n🔑 *Password*: `%6%`","proxyInstructionReserveSubItem":"👤 *Login* %1% » %2%: `%3%`","proxyInstruction":"Instructions for Proxy connection:\\n\\n%1%\\nWe provide access to Proxy in all our locations at once. ✅ *We recommend trying the direct connection to the European server first.* If it works incorrectly — try the SPB » Europe method.\\n\\n\\n*Data for direct Proxy connection:*\\n%2%\\n🌐 HTTPS port: `%3%`\\n👤 Login: `%5%`\\n🔑 Password: `%6%`\\n\\n\\n*For some RF clients:*\\n_(redirects traffic via RF if direct connection to Europe is unavailable. In this mode, be sure to use the correct login from the block below — it is different)_\\n%7%\\n\\n\\n*For working with Proxy connection:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Instructions](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Instructions](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 PC on Windows and macOS: [Proxifier](https://www.proxifier.com/) — [Instructions](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Instructions for VPN connection:\\n\\n%1%\\nWe provide access to VPN in all our locations! *Each link below = personal key*, and a page with connection instructions. \\n✅ *We recommend adding Vless from Multi-link first*, if it works incorrectly — try other protocols or the backup option.\\n\\n\\n\\n🔹 *Simple explanation for beginners:*\\n▪️ Click [this link](%5%) and follow the instructions.\\n\\n\\n\\n🔸 *For advanced users*:\\n🌏 All locations in multi-link\\n- %2%\\n\\n*For some RF clients:*\\n%3%\\nThis method is for those who don\'t have a direct connection to European servers and need a workaround via a Russian server.\\n\\n*Direct access to location on all protocols:*\\n%4%\\n\\n⚠️ If the links above do not open, enable the backup link display in settings.%7%","vpnInstructionRoute":"\\n\\nℹ️ Clients using HAPP can add custom routing rules. You can use the pre-configured settings below or create your own by specifying the necessary domains and IP addresses to bypass the VPN. \\n%1%","vpnInstructionAll":"All protocols at once","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Europe","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Your personal VPN access key*\\n\\nAll connection data and the list of recommended apps are available at the link:  \\n👉 [Open connection link](%2%)\\n\\n⚠️ *Keep this link secret!* \\nIt is your personal authorization key for the VPN.\\n\\n✅ To activate subscription:  \\nCopy the link and paste it into your chosen app — current settings will load automatically.\\n\\n📦 Want to manage all orders?  \\nUse [🔑 the subscription link for all connections](%4%).\\n\\n───────────────\\n🌐 *Your Proxy connection data:*\\n🌐 *Server address:* `%6%%7%`\\n🌐 *HTTPS port:* `%9%`\\n👤 *Your login:* `%10%`\\n🔑 *Connection password:* `%5%`\\n\\n⚠️ If the main server is unavailable, you can connect to the backup server:  \\n%11% *Server address:* `%12%`  \\n🌐 *HTTPS port:* `%9%`  \\n👤 *Your login:* `%13%.%10%`  \\n🔑 *Connection password:* `%5%`\\n\\n💡 Proxy can be used in any application that supports Proxy connection.  \\nFor example, *for Chrome browser*, we recommend extensions:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*VPN connection instructions:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*How to connect to Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows apps](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Web Browser](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Order data `%1%`\\n⌛️ Plan: `%2%`\\n⚙️ Auto-renewal: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Attention! Be sure to update the configuration in the settings of the app where you use this order.\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Enabled","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Disabled","faqButtonCommand":"🔑 Our VPN and Proxy can be used on a wide list of devices with *no limits on the number of connections* to a single access key! Setup is very simple and takes no more than two minutes, after which everything is reduced to an ON/OFF button.\\n\\n✅ Once you place your first order _(including the trial)_, you will receive two messages with details and instructions for connecting to both VPN and Proxy.\\n\\n\\n📦 *If you don\'t have an order yet:*\\n[Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ➛ Account ➛ Create new order ➛ Choose a suitable one by clicking on it and proceed to plan details ➛ Order.\\n\\n\\nIf you have any questions, contact us via the app, we will definitely help ❤️","applicationCabinetOrderEditPay":"⌛️ Renew order (for %1% days for %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Order successfully renewed for %1% days.\\n\\nOrder status will be updated within a few minutes.","applicationCabinetOrderEditPayErr":"Failed to renew order 🙁","applicationCabinetOrderRemove":"Delete order","applicationCabinetOrderRemoveFailed":"❌ Cannot delete an active order!","applicationCabinetOrderRemoveConfirm":"Are you sure you want to delete the order? 🤨\\n\\nIf needed, you can always create a new order. If you have issues with the order, contact our support service, and we\'ll be happy to help!","applicationCabinetOrderRemoveConfirmMessage":"✅ Order successfully deleted!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Failed to delete order!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Protocols: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Your balance has been topped up by %1%","applicationAdminDashboard":"📊 Dashboard","applicationAdminUsers":"👥 Users (x%1%)","applicationAdminUsersActive":"🫂 Active users (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Current balance: %1% | %2% USD","applicationAdminUserRef":"Referrals (x%1% | %2%)","applicationAdminUserRefTarget":"Referral from","applicationAdminUserOrders":"📦 Orders (x%1% total | x%2% active)","applicationAdminUserRefs":"💸 Referrals (x%1% total)","applicationAdminUserPayments":"💸 Payments (x%1% total) | Credited %2%","applicationAdminUserPaymentsType":"Payment system: %1%","applicationAdminUserPaymentsStatus":"Payment status: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Cancel payment and deduct amount from balance","applicationAdminUserPaymentsStatusSetFailAccept":"Are you sure?\\n\\nIf confirmed, payment status will change and\\n\\n❌ %1% will be deducted from user\'s balance","applicationAdminUserPaymentsStatusSetOk":"✅ Confirm payment and credit amount to balance","applicationAdminUserPaymentsStatusSetOkAccept":"Are you sure?\\n\\nIf confirmed, payment status will change and\\n\\n✅ user\'s balance will be topped up by %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Action performed successfully ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Action failed!\\nServer response: %1%","applicationAdminUserCreated":"Created: %1%","applicationAdminUserUpdated":"Modified: %1%","applicationAdminUserLast":"🚪 Last login: %1%","applicationAdminUserOrdersTotal":"💰 Total top-ups: %1%","applicationAdminUserResetOrderChangeBlock":"Reset stuck order lock","applicationAdminUserResetOrderChangeBlockAccept":"Are you sure you want to reset the stuck order lock?","applicationAdminUserMedia":"Partner Program","applicationAdminUserMediaOn":"Status: ✅ Partner","applicationAdminUserMediaOff":"Status: ❌ NOT Partner","applicationAdminUserMediaConfirm":"Status: ❌ NOT Partner","applicationAdminUserMediaTotal":"Total income: %1%","applicationAdminUserMediaPayed":"Paid to partner: %1%","applicationAdminUserMediaPayWait":"Amount to be paid: %1%","applicationAdminUserMediaPayWaitButton":"💸 Mark payout","applicationAdminUserMediaPayWaitButtonAccept":"Are you sure you want to mark the payout as completed? Transaction amount %1% (%2%)\\n\\n💸 After confirmation, the user will be notified that the funds have been paid and are on their way.","applicationAdminUserMediaPayWaitNotify":"Dear partner! \\n\\n💸 An amount of *%1%* has been paid to you under the partner program. Funds are on their way and will take some time to reach your credentials.","applicationAdminUserMediaPercent":"%2%%1%% Percentage of referral to income","applicationAdminUserMediaPercentDesc":"This percentage indicates how much of the referral top-up will be paid to the user as partner program income","applicationAdminUserGiveOrder":"Give order to user","applicationAdminUserGiveOrderDays":"Number of days","applicationAdminUserGiveOrderButton":"Give","applicationAdminUserGiveOrderButtonConfirm":"You are about to give the order\\n\\"%1%\\"\\nto user for %2% days?","applicationAdminUserEditButton":"User Management","applicationAdminUserEditPromos":"Used promo codes: %1%","applicationAdminUserEditBalance":"Edit balance","applicationAdminUserAddBalance":"Add to balance","applicationAdminUserEditBalanceAccept":"Are you sure you want to edit the user\'s balance?","applicationAdminUserEditBalanceAcceptFail":"Failed to edit balance. The user\'s balance might have changed during editing\\nServer response: %1%","applicationAdminUserEditBalanceAcceptOk":"Balance successfully edited","applicationAdminUserEditBalanceChangeNotify":"Administrator changed your balance to *%1%*.\\n💰 Current balance: *%2%*\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Administrator added *%1%* to your balance.\\n💰 Current balance: *%2%*\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Search","applicationAdminOrders":"🛒 All orders (x%1%)","applicationAdminOrdersActive":"💳 Active orders (x%1%)","applicationAdminOrdersExpired":"⛔ Stopped orders (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% days","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Traffic: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Plan change lock","applicationAdminOrderReload":"Reload MarzBan data","applicationAdminOrderReloadAccept":"⚠️ Reload data?\\n\\nThis will load order data from MarzBan and update it in the app!","applicationAdminOrderReloadAcceptDone":"✅ Data reload request sent!","applicationAdminOrderReloadAcceptFail":"❌ Failed to reload order data!","applicationAdminOrderResetChangeTime":"Reset plan change time","applicationAdminOrderResetChangeTimeAccept":"Are you sure? Once confirmed, the user will be able to change the plan manually","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Request successful. User can now change the plan manually","applicationAdminOrderResetTraffic":"Reset traffic","applicationAdminOrderResetTrafficAccept":"⚠️ Cancel order?\\n\\nThe user will NOT receive a notification!","applicationAdminOrderResetTrafficAcceptOk":"✅ Done","applicationAdminOrderReturn":"Cancel order","applicationAdminOrderReturnAccept":"⚠️ Cancel order?\\n\\nThe user WILL receive a refund for the UNUSED period!","applicationAdminOrderReturnAcceptDone":"⚠️ Order deleted. %1% refunded to user\'s balance.","applicationAdminOrderReturnNotify":"⚠️ Administrator canceled your order\\n🛒 `%1%` and returned *%2%* to your balance.\\nYou can create a new order to stay connected to the free Internet by visiting the app.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ Create New Order","applicationAdminOrderRemove":"Delete order","applicationAdminOrderRemoveAccept":"⚠️ Delete order?\\n\\nIf the order is still active, funds WILL NOT be returned!","applicationAdminOrderRemoveAcceptDone":"Order deleted","applicationAdminOrderAddTime":"Extend order (%1% days)","applicationAdminOrderAddTimeAccept":"⚠️ Extend order (%1% days)?\\n\\nThis will NOT change the user\'s balance!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Administrator extended your order\\n🛒 `%1%` for *%2% days* 📆\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ Click on the specified order for details.","applicationAdminPromos":"🎁 Promo codes (x%1%)","applicationAdminPaymentsLast":"⏰ Last payments (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Last successful payments (x%1%)","applicationAdminPromosCreate":"Create promo code","applicationAdminPromoID":"Name: %1%","applicationAdminPromoUSED":"Uses: %1%","applicationAdminPromoCOUNT_USE":"Limit: %1%","applicationAdminPromoBALANCE":"Amount: %1%","applicationAdminPromoEditID":"Name","applicationAdminPromoEditCOUNT_USE":"Usage count (max)","applicationAdminPromoEditAMOUNT":"Amount in $","applicationAdminPromoEditCATEGORY":"Category","applicationAdminPromoEditCATEGORYEmpty":"Regular / no category","applicationAdminPromoEditCATEGORYMedia":"Media promo","applicationAdminPromoEditCATEGORYNew":"For newcomers","applicationAdminPromoEditSave":"Save promo code","applicationAdminPromoEditPromo":"Edit","applicationAdminPromoCategory":"Category: %1%","applicationAdminPromoSendUseList":"List of users who applied","applicationAdminPromoRemovePromo":"Delete","applicationAdminPromoRemovePromoAccept":"Are you sure?","applicationAdminAddNode":"Add new node","applicationAdminAddNodeDesc":"This section allows you to deploy the entire project on a new node in 2 clicks. It only installs everything needed, but does not add the node to the nodes list","applicationAdminAddNodeIP":"Server IP address","applicationAdminAddNodeHostname":"Server subdomain (s1, s2, etc., without dot)","applicationAdminAddNodeHostnameDesc":"The specified subdomain will be automatically set in CloudFlare with all parameters. If it exists, it will be overwritten.","applicationAdminAddNodeUsername":"Username (root)","applicationAdminAddNodePassword":"User password (root)","applicationAdminAddNodePasswordDesc":"If password is not specified, SSH key authorization will be used. Ensure your SSH key is added to the node.","applicationAdminAddNodePasswordKeyInfo":"Attention. Password not specified, SSH key authorization will be used. Ensure your SSH key is added to the node.","applicationAdminAddNodeSshPort":"SSH Port (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Required permissions: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Click to get token","applicationAdminAddNodeStart":"Perform deploy","applicationAdminAddNodeStarted":"Deploy process started, do not close the page. If not finished in 5 minutes, it might be stuck.","applicationAdminAddNodeDoneOk":"Deploy completed successfully","applicationAdminAddNodeDoneFail":"Error: %1%","applicationAdminAddNodeClearLogs":"Clear logs","applicationAdminInstallNode":"Node Deployment","applicationAdminCoreSettings":"Core Settings","applicationAdminCoreSettingsDesc":"This section allows configuring basic system parameters. Parameters are applied on the fly.","applicationAdminSaveCoreSettings":"Save settings","applicationAdminCoreSettingsSaved":"Settings saved successfully","applicationAdminCoreName.projectName":"Project name","applicationAdminCoreName.projectMain":"Main domain","applicationAdminCoreName.projectBot":"Project bot login","applicationAdminCoreDesc.projectBot":"Which bot interacts with users. Enter login without @","applicationAdminCoreName.admins":"Admins IDs","applicationAdminCoreDesc.admins":"Enter IDs separated by commas, no spaces. Example: `123456789,987654321`. Don\'t delete yourself!)","applicationAdminCoreName.backup_admins":"Admins IDs for backups","applicationAdminCoreDesc.backup_admins":"Bot will send backups to these admins. Enter IDs separated by commas. Example: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Max renewal period (in months)","applicationAdminCoreDesc.order_end_limit_month":"User cannot renew order for a period longer than specified","applicationAdminSendMessage":"Bulk Message","applicationAdminSendMessageTargets":"Number of people to receive the message","applicationAdminSendMessageType":"User filtering type","applicationAdminSendMessageTypeAll":"All users","applicationAdminSendMessageTypeOrders":"Specific orders (any)","applicationAdminSendMessageTypeOrdersActive":"Specific orders (active)","applicationAdminSendMessageTypeHas":"Has at least 1 order","applicationAdminSendMessageTypeNotHas":"Has no orders","applicationAdminSendMessageTypeHasActive":"Has at least 1 active order","applicationAdminSendMessageTypeHasUnActive":"Has at least 1 INactive order","applicationBalanceErr":"Error generating payment: %1%","applicationBalanceErrBalanceLimit":"Your account already has the maximum allowed amount (%1%)","applicationBalanceErrBalanceLimitButton":"Unavailable","applicationBalanceErrData":"Payment system failed to generate payment. Please try later.","applicationBalanceErrNetwork":"Network error. Please try later.","applicationBalanceErrCurrency":"Currency error. Please try later.","applicationBalanceErrAuth":"Auth error","applicationBalanceErrPaymentLink":"Failed to get payment link","applicationBalanceSettingsTitle":"Currency selection","applicationBalanceTitle":"Balance Top-up Section","applicationBalanceSelect":"Select display currency","applicationBalanceEmail":"Your email","applicationBalancePlatform":"Payment platform","applicationBalanceAmount":"Top-up amount (in %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Total payment amount: ≈%1%</font>\\n\\n<font color=#F28100>If you are someone\'s referral,\\n%2% will be returned as 20% cashback!</font>","applicationBalanceAmountLimit":"Minimum amount: %1%\\nMaximum amount: %2%\\n\\n💵 <font color=#00AE09>Your payment method: %4%</font>\\nPayment system commission: %3%%\\n\\nAfter payment, balance is credited automatically within a few minutes; you will receive a message with payment status.","applicationBalanceAmountDesc":"Top-up via %1% service","applicationBalanceAmountButton":"Go to payment page","applicationBalanceAmountButtonLoading":"Loading...","applicationBalanceAmountButtonErr":"❌ Invalid amount ❌","applicationBalanceCurrency":"Payment method","applicationBalanceCurrencyDesc":"Payment system commission: ≈%1%%","applicationServersTitle":"Server Status","paymentCompleteNotify":"🎉 Your balance has been topped up by <b>%1%</b>.\\n\\nPayment ID: <b>%2%</b>\\n(Required if contacting <a href=\\"https://t.me/rocketman_vpn\\">support</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyRef":"🎉 Your balance has been topped up by <b>%1%</b>.\\nAs a referral of @%4%, we credited a bonus of <b>%3%</b> (%5%%)\\n\\nPayment ID: <b>%2%</b>\\n(Required if contacting <a href=\\"https://t.me/rocketman_vpn\\">support</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyRefHost":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> (%3%%) for balance top-up by your referral @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyAdmin":"💵 User %1% [UID: %7%] topped up balance by <b>%2%</b>.\\n💰 Project net profit: +<b>%5%</b>\\n\\nPayment system: <b>%6%</b>\\nPayment ID: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Attention ❗️\\nA refund request was formed for payment `%1%`.\\n\\nAs funds were returned in full, *%2%* was deducted from your app balance.\\n\\nIf you have questions, contact [support](https://t.me/rocketman_vpn).\\n\\n🚀 [Launch App](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Nodes","admin-routing":"🔀 Routing","admin-presets":"📋 Presets","admin-firewall":"📜 Firewall records (x%1%)","admin-firewall_add":"New firewall record","admin-nav-messages":"Bulk Messages","admin-nav-firewall":"Firewall","admin-nav-logs":"Admin Logs","logRecord-title":"📊 Admin logs (x%1%)","logRecord-title-user":"📜 User logs (x%1%)","logRecord-log-time":"Created: %1%","logRecord-log-who":"Who","logRecord-log-target":"Target","logRecord-log-reason":"Text: %1%","logRecord-setPaymentStatus":"Change payment status %1%","logRecord-removePromo":"Delete promo code %1%","logRecord-editPromo":"Edit promo code %1%","logRecord-editBalance":"Edit balance (%1%$ -> %2%$)","logRecord-returnOrder":"Cancel order %1% (%2%$)","logRecord-addOrder":"Give order %1%","logRecord-payOrder":"Renew order %1% for %2% days","logRecord-partnerNotify":"Payout to partner %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"SBP (Fast Payment System)","paymentMethodCrypto":"Cryptocurrency","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Failed to detect user data for link formation. Possibly user blocked our bot 😐","partner_title":"🏆 Partner Program 🏆","partner_desc":"You are a participant in the partner program. In addition to the referral bonus, you will receive financial deductions.\\n\\nYour current rate - %1%% of referral balance\\n\\nTotal earned: %2%\\nCurrent balance: %3%","ref_title":"🏆 Referral System 🏆","ref_desc":"Invite friends and acquaintances and get bonuses on your balance!\\n\\n<font color=#2DA618>From each referral, you\'ll get <font color=#54E13B>%1%</font> for their first orders and <font color=#54E13B>%2%%</font> of all their top-ups.</font>\\n\\n<font color=#00B7B7>All your referrals will get <font color=#15DBDB>%3%</font> bonus after first order (including trial) and <font color=#15DBDB>%4%%</font> cashback on all future top-ups.</font>\\n\\nThis system is beneficial for both you and your referrals 😉","ref_stats":"Your Statistics","ref_stats_data":"Number of referrals: %1%\\nBonus received: %2%","ref_link_text":"Your referral data","ref_link_text_copy":"📋 Link+text","ref_only_link_copy":"🔗 Link","ref_link_text_copy_sendText":"Hi! I use a convenient way to protect my data online and highly recommend it to you 😎\\n\\nPlus, by using my link, you\'ll get a %1% bonus after your first order (including trial) and a lifetime %2%% cashback on all balance top-ups 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Your referral link and additional text copied to clipboard.\\n\\nUse this to invite friends and gain joint benefits 😎","ref_only_link_copy_alert":"🔗 Your referral link copied to clipboard.\\n\\nUse it to invite friends and gain joint benefits 😎","ref_link_text_share":"💌 Share","ref_link_text_share_message":"Hi! I use a convenient way to protect my data online and highly recommend it to you 😎\\n\\nPlus, by using my link, you\'ll get a %1% bonus after your first order (including trial) and a lifetime %2%% cashback on all balance top-ups 🎉\\n","ref_message_personal":"You cannot register using your own referral link 😐","ref_message":"🎁 Referral System:\\nYou successfully registered as a referral of user @%1% 🎉\\n\\nYou will get a <b>%2%</b> bonus on your first order (including trial) and a lifetime <b>%3%%</b> cashback on each top-up!","ref_message_host":"🎁 Referral System:\\n🎉 User @%1% registered as your new referral 🎉\\n\\nYou will get a <b>%2%</b> bonus on their first order (including trial) and a <b>%3%%</b> cashback from each of their top-ups.","ref_message_order":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> on your balance","ref_message_order_host":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> on your balance from user @%2%","traffic_limit_notify_close":"⚠️ Traffic is running out for order `%1%` with plan `%2%`! If this message appears often, consider changing to a more advanced plan to stay connected ❤️\\n\\n🚀 You can do this by [launching the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on order ⇒ ♻️ Change Plan ♻️","traffic_limit_notify_end":"❗️ ATTENTION ❗️ Traffic exhausted for order `%1%` with plan `%2%`. It will reset on %3%. Consider upgrading to stay connected.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on order ⇒ ♻️ Change Plan ♻️","traffic_limit_notify_restore":"🎉 Traffic statistics reset for order `%1%` with plan `%2%`. It is now fully available again :)\\n\\n🚀 [Launch App](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Apply Promo Code","example":"Example","deleteMessageFailed":"❌ Failed to delete message. It might be too old or already deleted.","cryptoPayTitle":"Payment via Cryptocurrency","cryptoPayUserId":"User ID","cryptoPayAmount":"Amount to pay (USDT)","cryptoPayInstruction":"Transfer the specified amount in USDT to the provided address","cryptoPayLoading":"Loading details...","cryptoPayErrorNoParam":"Parameter crypto_id is missing in the link.","cryptoPayErrorInvalidData":"Invalid payment data.","cryptoPayErrorParse":"Error processing payment data. Try refreshing or contact support.","cryptoPayWallet":"Wallet address for transfer","cryptoPayNetwork":"Network (blockchain)","cryptoPayCopy":"Copy","cryptoPayCopyAmountAlert":"Amount copied to clipboard!","cryptoPayCopyWalletAlert":"Wallet address copied to clipboard!","cryptoPayWarning":"CAREFULLY check credentials and amount before paying! We cannot guarantee credit in case of error.","telegramPayment":"✅ An invoice has been generated for you\\n\\n⚖️ Payment amount: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 User ID: <b>%7%</b>\\n📋 Payment ID: <b>%6%</b>\\n\\n🔗 Follow the link to pay: %5%","orderManipulationBlock":"Your previous order is still processing. Please wait for completion or contact support for help.","subPage.orderInfo":"Below are all available connection methods for your order through this app","subPage.userInfo":"Below are all available connection methods for all your active orders through this app","subPage.orderId":"🛒 Order ID: %1%\\n⬇️ Select end connection region:","subPage.nodeInfo":"📍 Bypass point: %1%\\n⚠️ This means all traffic will first go through it for masking.","subPage.protocolInfo":"Connection protocol: %1%","subPage.allTitle":"All Orders","subPage.expiredNotifyList":"❌ Subscription expired\\nRenew VPN in bot\\n%1%","ping.admin.initOk":"✅ System initialized, all nodes available in normal mode.","ping.admin.initFail":"❌ System initialized, but some nodes are unavailable:\\n\\n%1%","speedtest.admin.failTest":"❌ Speed test failed. Please check node status.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Low connection speed recorded (%2% Mbps download, %3% Mbps upload). Check status.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Node restored normal connection speed (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ Connection speed issues detected on the server","applicationServersSpeedtestLastSpeed":"Last speed test (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Previous speed test (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ No speed tests performed on this server yet","applicationServersPingIssueDetected":"❌ Server not responding to ping requests","actionUpdateStartNodes":"⚠️ Node update procedure started (%1%), nodes will be restarted shortly. A notification will be sent upon completion.","actionUpdateStartHeader":"Update procedure started:","actionUpdateStartSite":"• Main project page is being updated","actionUpdateStartApp":"• Backend application is being updated","actionUpdateStartProxy":"• Proxy or xray service is being updated (Nodes: %1%)","actionUpdateStartMTProto":"• MTProto server is being updated","actionUpdateStartFirewall":"• Updating firewall (Nodes: %1%)","actionUpdateStartBackup":"• Updating child API interface (Nodes: %1%)","actionUpdateStartFooter":"Nodes will be restarted shortly. A notification will be sent upon completion.","actionUpdateCompletedNodes":"✅ Node update procedure (%1%) completed, nodes restarted and should be active","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Fast and secure","mtproto.subtitle.2":"Telegram access","mtproto.description.1":"Free proxy server for a stable connection to Telegram.","mtproto.description.2":"No registration, no limits, full privacy.","button.connect":"Connect Proxy","button.copy":"Copy Link","button.copied":"Copied","link.label":"Manual connection link","feature.encryption.title":"End-to-end Encryption","feature.encryption.description":"Your messages remain confidential. We have no access to your chats.","feature.free.title":"No Limits","feature.free.description":"Free access with no registration or traffic limits.","feature.rocketman.title":"More Features","feature.rocketman.description":"This proxy works only for Telegram. For full protection, use RocketMan-VPN.","rocketman.title":"RocketMan VPN — Your reliable friend","rocketman.description":"This MTProto proxy is an additional project of RocketMan VPN. With us, you get full protection in all apps and favorite services. Try for free and evaluate the quality!","rocketman.button":"Open RocketMan VPN","howto.title":"How to connect?","howto.step1.title":"Click \\"Connect Proxy\\"","howto.step1.description":"Or copy the link and connect manually","howto.step2.title":"Open Telegram","howto.step2.description":"The link will automatically launch the app","howto.step3.title":"Confirm","howto.step3.description":"Click «Connect» in the dialog box","web.orders":"My Orders","web.settings":"Settings","web.exit":"Exit","web.back":"← Back","settings.accountInfo":"Account Info","settings.language":"Language","settings.currency":"Display Currency","settings.currencyDesc":"Select currency for prices and balance display in the app.","settings.webCredentials":"Web Login Details","settings.webCredentialsDesc":"These details are used for logging into the web interface outside Telegram. We recommend a complex password.","settings.login":"Login","settings.loginPlaceholder":"Enter new login","settings.newPassword":"New Password","settings.passwordPlaceholder":"At least %1% characters","settings.repeatPassword":"Repeat Password","settings.repeatPasswordPlaceholder":"Repeat new password","settings.passwordMismatch":"Passwords do not match","settings.saved":"Saved!","settings.saveError":"Save Error","settings.saving":"Saving…","settings.saveCredentials":"Save Credentials","settings.show":"Show","settings.hide":"Hide","settings.copy":"Copy","settings.reset":"Reset","settings.apiKeyHint":"Use API key to log in to the <a href=\\"https://%1%\\" target=\'_blank\'>web interface</a> without Telegram or for integration. Do not share with third parties. This key provides full access to your account","settings.referral":"Referral (Inviter ID)","settings.referralDesc":"If you missed the referral link, you can set the ID of the inviter here. It will be applied only once.","settings.referralApplied":"Inviter ID","settings.referralAppliedAlert":"Inviter ID copied to clipboard.","settings.referralHostId":"Your inviter ID","settings.referralHostIdPlaceholder":"Enter inviter user ID (digits)","settings.referralHostIdInvalid":"Invalid ID format. Use digits only.","settings.referralApply":"Apply inviter ID","settings.referralSaved":"Referral applied!","settings.referralErr.already_applied":"Referral has already been applied.","settings.referralErr.invalid_ref_host":"Invalid inviter ID.","settings.referralErr.same_account":"You cannot use your own ID as a referral.","login.tabCredentials":"Login and Password","login.tabApiKey":"API Key","login.tabRegister":"Register","login.labelLogin":"Login","login.labelPassword":"Password","login.labelConfirmPassword":"Confirm Password","login.labelApiKey":"API Key","login.placeholderLogin":"Enter login","login.placeholderPassword":"Enter password","login.placeholderConfirmPassword":"Confirm password","login.placeholderApiKey":"Enter API key","login.signIn":"Sign In","login.signInApiKey":"Sign in via API Key","login.signUp":"Sign Up","login.signingIn":"Signing in…","login.signingUp":"Signing up…","login.orUseApiKey":"or use API Key","login.orUseCredentials":"or use Login and Password","login.switchToApiKey":"Log in via API Key","login.switchToCredentials":"Log in via Login and Password","login.errLoginRequired":"Enter login and password","login.errPasswordRequired":"Enter password","login.errConfirmPasswordRequired":"Confirm password","login.errPasswordMismatch":"Passwords do not match","login.errApiKeyRequired":"Enter API key","login.errIncorrect":"Incorrect login or password","login.errInvalidKey":"Invalid API Key","login.errServer":"Server error, try again","login.errRegistration":"Registration failed","login.tabTelegram":"Via Telegram","login.tg.title":"Telegram Login","login.tg.instruction":"1. Send the command below to <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a> bot\\n2. After sending, click «Confirm Login»","login.tg.commandLabel":"Bot command:","login.tg.showCommand":"Show","login.tg.hideCommand":"Hide","login.tg.copyCommand":"Copy","login.tg.copied":"Command copied!","login.tg.timerLabel":"Code valid for: %1%","login.tg.timerExpired":"Code expired","login.tg.verifyButton":"Confirm Login","login.tg.verifying":"Verifying…","login.tg.requestNew":"Request new code","login.tg.loading":"Generating code…","login.tg.enter_correct":"Identity confirmed. Return to site and click \\"%1%\\" to finish","login.tg.enter_fail":"Action failed. Ensure the key is correct and not expired","login.tg.errNotSent":"Failed to confirm login. Ensure you sent the command to the bot. If expired, request a new code.","lang.ru":"Russian","lang.en":"English","lang.uk":"Ukrainian","footer.info":"MTProto proxy works only with official Telegram apps","instructionModalTitleVpn":"VPN Connection Instructions","instructionModalTitleProxy":"Proxy Connection Instructions","instructionModalSendToTg":"📩 Send to Telegram","instructionModalSentToTg":"Instructions have been sent to your Telegram private messages","settings.name":"Your Name","settings.nameDesc":"Enter a name for personalized communication in the app. It is public and can be used to display to other users","settings.namePlaceholder":"Enter name (3-15 characters)","settings.nameInvalid":"Only Cyrillic, Latin, numbers and spaces allowed (3-15 characters)","settings.promoTitle":"Promo Code Activation","settings.promoDesc":"If you have a promo code, enter it here to receive a nice bonus to your balance.","settings.promoPlaceholder":"Enter promo code","settings.promoApply":"Apply promo code","settings.promoApplied":"Promo code successfully applied!","adminDashboardTitle":"Dashboard Statistics","adminDashboardActiveOrders":"Orders Activity","adminDashboardActiveLabel":"Active","adminDashboardExpiredLabel":"Expired","adminDashboardOrdersByTariff":"Orders by Tariff","adminDashboardPayments":"Payments Status","adminDashboardTrial":"Trial Period Usage","adminDashboardLang":"User Language","adminDashboardCurrency":"User Currency","adminDashboardActivity":"App Activity","adminDashboardOrdersPerUser":"Orders Per User","adminDashboardRefIncome":"Median Referral Income","applicationAdminBackButton":"Back","settings.passkeys.title":"Access Keys (Passkeys)","settings.passkeys.desc":"Add up to 5 devices for fast and secure passwordless login using biometrics or hardware keys.","settings.passkeys.add":"➕ Add new key","settings.passkeys.name":"Device name","settings.passkeys.name_placeholder":"e.g. iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"You don\'t have any access keys yet","settings.passkeys.delete_confirm":"Are you sure you want to remove this access key? You will no longer be able to log in with it.","settings.passkeys.limit_reached":"Key limit reached (maximum 5)","settings.passkeys.add_success":"Access key added successfully!","settings.passkeys.add_error":"Failed to add access key","login.tabPasskey":"By Key","login.passkey.btn":"Login with Passkey","login.passkey.error":"Authentication via access key failed","login.passkey.not_supported":"Your browser or device does not support Passkey login","admin.bulkRenewal.button":"📅 Bulk Order Renewal","admin.bulkRenewal.title":"📅 Bulk Order Renewal","admin.bulkRenewal.afterDateLabel":"Include orders expiring after the specified date (or not yet expired). Timezone: %1%","admin.bulkRenewal.daysLabel":"Number of days to extend","admin.bulkRenewal.ordersCount":"Orders to be extended","admin.bulkRenewal.usersCount":"Unique users","admin.bulkRenewal.applying":"⏳ Applying...","admin.bulkRenewal.done":"✅ Done!","admin.bulkRenewal.apply":"📅 Extend %1% order(s) by %2% day(s)","admin.bulkRenewal.notifyUser":"📅 The administrator has extended your active orders by %1% day(s). Order list: %2%","admin.bulkRenewal.notifyUsers":"Notify users via Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ With a large number of users, notifications may be unstable or delayed"}');
 ;// ./src/lang/uk.json
-const uk_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"Для увімкнення сповіщень на iPhone:\\n1. Натисніть іконку [⎋] (Поділитися) в нижній панелі.\\n2. Виберіть пункт «Додати на початковый екран».\\n3. Запустіть сайт з робочого столу та поверніться в налаштування.","settings.pushSupportError":"Web Push не підтримується на цьому пристрої","settings.pushTitle":"Push-сповіщення","settings.pushDesc":"Підпишіть цей пристрій для отримання системних сповіщень","settings.pushSubscribed":"✅ Цей пристрій підписаний","settings.pushNotSubscribed":"❌ Пристрій не підписаний","settings.pushSubscribeBtn":"Підписатися","settings.pushUnsubscribeAllBtn":"Відв\'язати всі пристрої","settings.pushSuccess":"Успішно підписано","settings.pushUnsubscribeSuccess":"Всі пристрої від\'єднано","settings.pushError":"Помилка підписки","settings.disableSiteNotify":"Вимкнути сповіщення на сайті","settings.disableSiteNotifyDesc":"Вимкніть сповіщення на сайті, залишивши лише Push-сповіщення та сповіщення в Telegram (якщо учётная запис прив\'язана до Telegram)","settings.disableSiteNotifyYes":"Так","settings.disableSiteNotifyNo":"Ні","settings.geoRouting":"Додати гео-роутинг в дані підписки","settings.geoRoutingDesc":"Ви можете вибрати певний гео-роутинг для своїх замовлень. Якщо він буде доданий, то при підключенні до VPN / Proxy через інструкції з додатку, в даних підписки буде вказано, що ви хочете використовувати певний гео-роутинг. Це може допомогти в обході блокувань та покращенні стабільності підключення, якщо основний сервер недоступний або працює нестабільно у вашому регіоні. Якщо ви не впевнені, який варіант вам краще підходить - залиште значення за замовчуванням (%1%)","settings.disabled":"Вимкнути (не рекомендується)","settings.reserveConnectionLink":"Використовувати резервне посилання на підписку Vless","settings.reserveConnectionLinkDesc":"Увімкніть цю опцію, якщо у вас немає доступу до основного сервера. Тоді інструкції з підключення міститимуть резервне посилання замість основного.","settings.reserveConnectionLinkYes":"Так","settings.reserveConnectionLinkNo":"Ні","applicationNotifyTitle":"Сповіщення","applicationNotifyConfirmDeleteAll":"Ви впевнені, що хочете видалити всі сповіщення?","applicationNotifyEmpty":"Немає нових сповіщень","applicationNotifyPromoSuccess":"Промокод успішно застосовано","applicationNotifyPromoError":"Помилка активації промокода: можливо, він вже використаний або вичерпано ліміт","applicationNetworkError":"Помилка мережі","applicationNotifyConfirmDelete":"Ви впевнені, що хочете видалити це сповіщення?","applicationNotifyDelete":"🗑️ Видалити","applicationNotifyPromoApply":"Застосувати промокод (%1%)","pagePayTitle":"Придбання VPN","pagePayBalance":"Поповнення балансу","pagePayID":"Ваш унікальний ID","pagePayIDPlaceholder":"Введіть свій ID","pagePayAmount":"Сума поповнення балансу (тимчасово від %1%)","pagePayButton":"Перейти до оплати","pageFAQId":"Як отримати ID?","pageFAQStep1":"Відкрийте додаток у чат-боті RocketMan-VPN","pageFAQStep2":"Внизу головної сторінки знайдіть пункт \\"Ваш ID\\"","pageFAQStep3":"Скопіюйте унікальний номер","pageFAQStep4":"Вставте ID у поле зліва","pageFAQOpen":"Відкрити Telegram-бота","pageFAQQR":"QR-код Telegram-бота","landingTGBotButton":"Запустити Telegram-бота","landingDashboardButton":"Відкрити панель керування","landingTarifs":"Тарифи","landingTarifsTrial":"+ Пробний період %1%год","landingTarifsDiscount":"Знижка","landingTarifsPrice":"%1%/%2%дн.","landingTarifsGo":"Підключити","landingFooterText":"А тут наш основний проєкт","landingTitle":"RocketMan VPN — Інтернет під захистом!","landingTitleDesc":"Блискавичний доступ до улюблених сайтів та сервісів з ПК та смартфона.","landingFeaturesTitle":"Чому обирають саме нас?","landingAppsTitle":"Наші додатки","landingAppsDownload":"Завантажити","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"Багатофункціональний проксі-клієнт для <b>Windows, Linux і macOS</b>. Підтримує протоколи <b>HTTPS та VLESS</b>. API-режим керування замовленнями прямо з додатку, TUN-тунелювання, VLESS-підписки та інтеграція з Discord (Windows).","features1Title":"Анонімність","features1Text":"Завдяки кільком шарам захисту з нашого боку — Ваш реальний IP не дізнається жоден сервіс.","features2Title":"Швидкість","features2Text":"Завантажуйте, дивіться улюблений контент та діліться на швидкостях до 1 Гбіт/с.","features3Title":"Простота","features3Text":"Підключайтеся в 1 клік з будь-якого свого пристрою! ПК, смартфон, ТВ, планшет та ноутбук.","features4Title":"Підтримка","features4Text":"Ми завжди готові допомогти Вам з вирішенням будь-яких питань. На зв\'язку практично 24/7","faq1title":"Як оплатити?","faq1text":"Оберіть тариф та оплатіть через зручний метод. Після оплати отримайте інструкції в Telegram-боті.","faq2title":"Як налаштувати VPN?","faq2text":"У нашому <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram-боті</a> максимально детально та зрозуміло розписано весь процес підключення.\\nБуквально від А до Я, тому Ви навряд чи зможете десь заплутатися. Головне — дотримуйтесь інструкцій :)","faq3title":"Що робити, якщо щось не працює?","faq3text":"Напишіть у <a href=\\"https://t.me/%1%\\" target=\'_blank\'>підтримку через Telegram</a>, і ми Вам допоможемо.","locationSelectTitle":"Оберіть локацію сервера","locationSelectLoad":"Завантаженість: %1%%","locationReserve1":"Санкт-Петербург","locationLocal":"Локальний сервер","locationStockholm":"Стокгольм","locationAustria":"Відень","locationNetherland":"Амстердам","locationFrankfurt":"Франкфурт","locationParis":"Париж","tarif.test_drive":"🚗 Тест-драйв","tarif.start":"🚀 Старт","tarif.gamer":"🎮 Геймер","tarif.pro":"👑 Сімейна+","tarif.ultra":"🌌 Космос","httpTarifPro":"🔒 Proxy-Безліміт","httpTarifGamer":"🔒 Proxy-Геймер","tarifNameFull":"%1% (%2% днів | %3% GB/д) - %4%","welcomeMessage":"Ласкаво просимо!\\nЗавдяки нашому сервісу Ви зможете отримати захищений доступ до улюблених сайтів та додатків, як це роблять інші наші улюблені клієнти ❤️\\n\\n⭐️ У нас немає обмежень на кількість пристроїв, тому можете використовувати 1 ключ на всіх своїх девайсах! Разом із VPN Ви отримуєте доступ і до нашого Proxy.\\n\\n🛒 Ми надаємо:\\n- VPN для iOS, Android, Windows, macOS, Android TV\\n- Proxy для браузера, Discord, Windows тощо","basketBalance":"Поповнити баланс","secondsToStringD":"%4% дн. %3% год. %2% хв. %1% сек.","secondsToStringH":"%3% год. %2% хв. %1% сек.","secondsToStringM":"%2% хв. %1% сек.","readButton":"🗑 Видалити це повідомлення","openPage":"🌐 Сайт","openApp":"📱 Додаток","expireNotifyOrderData":"▪️ Тариф: `%1%`\\n▪️ Назва: `%2%`\\n▪️ Термін продовження: `%3% днів`","expireNotifyTemplate":"Вітаємо, %1%!\\n%2%\\n\\n%3%\\n▪️ Вартість продовження: `%4%`\\n\\n%5%","expireNotifyFull":"Термін дії Вашого замовлення підійшов до кінця 🙁\\n\\nЩоб залишатися на зв\'язку з вільним Інтернетом — [запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp), далі натисніть на 💸 свій баланс справа вгорі та, поповнивши його, у налаштуваннях замовлення увімкніть автопродовження 😇","expireNotifyTime":"Термін дії Вашого замовлення завершиться менш ніж через `%1%` годину 🙁","expireNotifyRenewAutoNoMoney":"❗️ У Вас увімкнена функція автопродовження, проте Ваш поточний баланс не дозволяє продовжити його 🙁\\n\\nПереконайтеся, що на рахунку достатньо коштів, щоб функція працювала без проблем протягом найближчих місяців. [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp), у правому верхньому куті додатка натисніть на свій баланс та поповніть на бажану суму.","expireNotifyRenewAuto":"✅ У Вас увімкнена функція автопродовження, тому замовлення буде продовжено автоматично, коли на ньому залишиться менше 24 годин 😎","expireNotifyRenewManual":"ℹ️ Як увімкнити автопродовження?\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на своє замовлення ⇒ Налаштування ⇒ поставте галочку біля Автопродовження ⇒ Зберегти всі зміни.","expireNotifyRenewSuccessAuto":"Вітаємо, %1%!\\nВаше замовлення було продовжено автоматично.\\n\\n%2% 🎉\\n\\nДякуємо, що довіряєте нам ❤️\\nНайкращою подякою за сервіс буде інвайт Ваших друзів через реферальну систему!\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"Команда використана невірно\\n`%1%`\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Команда `%1%` використана невірно!\\n\\n✅ Правильний приклад: `%2%`\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Почати роботу","usePromoCommand":"Застосувати промокод — /promo PROMO_NAME","useFaqCommand":"Як підключитися до VPN / Proxy?","usePromoAlready":"Ви вже застосували цей промокод. Застосувати промокод можна лише 1 раз.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Промокод `%1%` не знайдено 🙁\\n\\nПеревірте правильність написання, а також переконайтеся, що промокод є дійсним.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Ліміт активацій промокоду `%1%` вичерпано 🙁\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"Ви вже застосували подібний промокод.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Не вдалося застосувати промокод `%1%` 🙁\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Промокод `%1%` успішно застосовано 🎉\\nНа Ваш баланс зараховано %2%\\n💰 Ваш поточний баланс: %3%\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"У Вас немає доступу для виконання цієї дії.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Меню адміна","adminMenu":"Розділ адміністратора\\n\\n\\nМеню промокодів\\nСписок промокодів: /listPromo\\nІнформація по промокоду: `/infoPromo {PROMO_NAME}`\\nСтворити промокод: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nВидалити промокод: `/deletePromo {PROMO_NAME}`\\n\\n\\nМеню користувачів\\nВидати замовлення користувачу: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nВидалити замовлення: `/removeOrder {ORDER_ID}`\\nВидати баланс користувачу: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Замовлення не знайдено","adminUserRemoveOrderStatus":"Статус видалення замовлення: %1%","adminUserGiveTarifErrUser":"Користувача не знайдено!","adminUserGiveTarifErrTarif":"Тариф не знайдено","adminUserGiveTarifErrNode":"Нода тарифу не знайдена. Конфігурація тарифу невірна","adminUserGiveTarifErrMarzban":"MarzBan не дав створити замовлення. Причина невідома","adminUserGiveTarifSuccess":"Ви успішно видали замовлення для @%1%","adminUserGiveTarifNotify":"🎉 Адміністратор підключив на Ваш акаунт\\nтариф `%1%` на `%2% дн.` 📆\\n\\n*Інформація про замовлення:*\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒\\nнатисніть на своє замовлення ⇒ 📚 Інструкція VPN / Proxy","adminPromoCreateAlreadyExist":"Цей промокод уже існує","adminPromoCreateAlreadyExistWas":"Цей промокод уже колись існував і не може бути створений повторно","adminPromoCreateFailed":"Не вдалося створити промокод","adminPromoCreateDone":"Промокод `%1%` успішно створено.\\nДоступно активацій: %2%\\nБаланс: %3%","adminPromoList":"Список усіх промокодів:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% вик. / %3% всього / %4%)","adminPromoInfo":"Інформація по промокоду:\\n\\nID: `%1%`\\nЛіміт активацій: %2%\\nКількість активацій: %3%\\nБаланс: %4%\\n\\nСписок активацій:\\n%5%","adminPromoDeleteDone":"Промокод `%1%` успішно видалено","terms":"Угода користувача","contacts":"Контакти для зв\'язку","wiki":"База знань","wikiPage.description":"Інструкції, відповіді на запитання та приклади налаштування VPN.","wikiPage.articleLead":"Стаття з бази знань RocketMan VPN.","wikiPage.articleHint":"Навігація по статтях ліворуч · зміст праворуч","wikiPage.subtitle":"Оберіть тему ліворуч або скористайтеся пошуком","wikiPage.heroTopic.faq":"Відповіді на запитання","wikiPage.heroTopic.setup":"Налаштування та підключення","wikiPage.heroTopic.troubleshoot":"Приклади та рішення","wikiPage.searchPlaceholder":"Пошук за назвою та текстом статей...","wikiPage.loadingList":"Завантаження списку статей...","wikiPage.emptyList":"Статті ще не додані.","wikiPage.loadingArticle":"Завантаження статті...","wikiPage.openHint":"Оберіть статтю у списку","wikiPage.back":"Назад до списку","wikiPage.error.loadList":"Не вдалося завантажити список статей.","wikiPage.error.emptyFile":"Для поточної мови стаття недоступна.","wikiPage.error.loadArticle":"Не вдалося завантажити статтю.","wikiPage.navigation":"Навігація","wikiPage.contents":"Зміст","wikiPage.readMore":"Читати","wikiPage.readingTime":"хв читання","wikiPage.articlesCount":"статей","wikiPage.backToTop":"Наверх","wikiPage.home":"🏠 Головна сторінка Бази знань","wikiPage.copyLink":"Копіювати посилання на цю статтю","wikiPage.articleLinkCopied":"Посилання на статтю скопійовано","wikiPage.linkCopied":"Посилання скопійовано","wikiPage.closeLightbox":"Закрити","wikiPage.openImageInNewTab":"Відкрити в новій вкладці","wikiPage.copySectionLink":"Копіювати посилання на розділ","wikiPage.copyCurrentSectionLink":"Копіювати посилання на поточний абзац","wikiPage.sectionLinkCopied":"Посилання на абзац скопійовано","wikiPage.enlargeImage":"Збільшити зображення","wikiPage.copyCode":"Копіювати","wikiPage.copied":"Скопійовано","wikiPage.copyText":"Натисніть, щоб скопіювати","wikiPage.searchNoResults":"Нічого не знайдено. Спробуйте інше слово.","wikiPage.searchHint":"Результати пошуку за назвою та текстом","wikiPage.searching":"Шукаємо...","wikiPage.searchMatchTitle":"У назві","wikiPage.searchMatchBody":"У тексті","wikiPage.updatedAt":"Оновлено","wikiPage.featured":"Важливе до прочитання","wikiPage.groupOther":"Інші статті","wikiPage.allArticles":"Усі статті","wikiPage.cardUpdated":"Оновлено","wikiPage.updatedToday":"сьогодні","wikiPage.updatedYesterday":"вчора","wikiPage.updatedDaysAgo":"%1% дн. тому","wikiPage.badge.important":"Важливо","wikiPage.badge.new":"Нове","wikiPage.badge.updated":"Оновлено","wikiPage.badge.hot":"Актуально","contactsTG":"Телеграм чат","contactsEmail":"E-Mail","trialNotify":"✅ Ви отримали тариф `%1%` на `%2% години` як ознайомлювальний доступ.\\n\\n📌 Інформація про замовлення в додатку:\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒\\nнатисніть на своє замовлення ⇒ 📚 Інструкція VPN / Proxy.\\n\\nМи надаємо Вам можливість безкоштовно ознайомитися з нашими продуктами для того, щоб Ви оцінили якість та стабільність перед майбутніми покупками 🤝","launchBot":"Запустити","launchBotLong":"Відкрити додаток 📱","applicationMainMenu":"Головне меню","applicationMainMenuBack":"Назад","applicationButtonsRef":"Реферальна система","applicationButtonsFaq":"База знань","applicationButtonsCabinet":"Особистий кабінет","applicationButtonsAdmin":"Кабінет адміністратора","applicationButtonsAdminDisk":"Вільно дискового простору: %1%","applicationButtonsAdminPayments":"Статистика доходу:<br/>%1% поточний міс.<br/>%2% минулий міс.<br/>%3% за весь період | %4% в очікуванні","applicationUserInfoWithUs":"Ви з нами","applicationUserInfoBalance":"Ваш баланс","applicationUserInfoId":"Ваш ID","applicationUserInfoTgId":"ID Прив\'язаного акаунта TG","applicationUserInfoAPIKey":"Ваш API ключ","applicationUserInfoAPIKeyAlert":"📝 Ваш API ключ скопійовано в буфер обміну. Нікому не розголошуйте цей ключ, адміністрація проєкту ніколи не попросить вас назвати його","applicationUserInfoAPIResetAlertAsk":"📝 Ви впевнені, що хочете згенерувати новий API ключ?","applicationUserInfoAPIResetAlert":"📝 Ваш API ключ було згенеровано заново","applicationUserInfoIdAlert":"📝 Ваш ID був скопійований у буфер обміну.","applicationUserInfoTgIdAlert":"📝 Ваш Telegram ID був скопійований у буфер обміну.","applicationContactButton":"Зв\'язок зі службою підтримки","applicationServersButton":"Статус серверів","applicationHowToConnectFAQButton":"Як підключитися до VPN чи Proxy?","applicationHowToConnectFAQButtonModal":"Бот надіслав вам інформацію в особисті повідомлення 📝","applicationCabinetTitle":"Особистий кабінет","applicationCabinetTitleDesc_title":"Натисніть на замовлення для керування ним","applicationCabinetTitleOrder":"Вибір тарифного плану","applicationCabinetTitleOrder_detail_back":"Повернутися до списку тарифів","applicationCabinetTitleOrder_help_button":"⚠️ Допоможіть мені визначитися з тарифним планом ⚠️","applicationCabinetTitleOrder_help_button_back":"Повернутися до оформлення замовлення","applicationCabinetTitleOrder_help_button_header":"Середнє споживання трафіку:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 година відео в 1440p ≈6 ГБ\\n<font color=#E10070>Instagram</font>: 1 година Reels ≈2 ГБ\\n<font color=#69C9D0>TikTok</font>: 1 година відео ≈2 ГБ\\n<font color=#7289DA>Discord</font>: 1 година войсу з демкою ≈1 ГБ\\n<font color=#BD37FF>Twitch</font>: 2 години стріму в 1080p ≈5 ГБ\\n<font color=#D0A823>Онлайн ігри</font>: 1 година ≈0.5 ГБ\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 години в 1080р ≈5 ГБ\\n\\nЯкщо скласти всі вказані дані, то виходить <font color=#DA7F00>≈20-25 ГБ на день</font>. Ці дані наведені для орієнтиру, щоб Вам було простіше обрати відповідний тариф.\\n\\n<font color=#A7C800>VPN та Proxy — по-своєму зручні.</font>\\n<font color=#BAD821>VPN:</font> зручно для смартфонів, планшетів та ТВ; можна використовувати і на ПК.\\n<font color=#BAD821>Proxy:</font> підходить для Discord, браузера на ПК (YouTube, Twitch, Netflix, HDRezka тощо).\\n<font color=#B3D023>Коротко про протоколи:</font>\\n<font color=#2EB3FF>• Vless</font> — найкращий обхід блокувань, стабільність, швидкість, “невидимість”.\\n<font color=#29a1e6>• Hysteria</font> - баланс стабільності та швидкості, ідеально підходить для геймінгу<font color=#2884BA>• HTTPS</font> — підходить тільки для сайтів та додатків через Proxifier.\\n\\n🚀 Старт — для звичайного серфінгу\\n🎮 Геймер — для активних користувачів девайсів\\n👑 Сімейна+ — для великого обсягу трафіку","applicationCabinetButtonNew":"Зробити нове замовлення","applicationCabinetButtonNewCancel":"Повернутися до списку замовлень","applicationCabinetButtonAddBalance":"Поповнити баланс","applicationCabinetIsTrial":"Безкоштовний тестовий доступ","applicationCabinetPing":"Пінг до сервера: %1%ms","applicationCabinetEndActive":"Доступ до передплати: %1%","applicationCabinetEndNotActive":"Передплата не оплачена. Натисніть сюди та активуйте її через кнопку «⌛️ Продовжити замовлення» у випадаючому меню.","applicationCabinetOrderTraficWeek":"на тиждень","applicationCabinetOrderTraficMonth":"на місяць","applicationCabinetOrderPriceDay":"/ день","applicationCabinetOrderPriceDays":"/ %1% днів","applicationCabinetOrderPrice":"%1% за %2% дн 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 Ознайомитися з деталями цього тарифу 📋","tarif_desc_drive":"📚 Ідеально для знайомства з нашим сервісом та легкого серфінгу в соцмережах. Дозволить повністю випробувати роботу VPN / Proxy 😉","tarif_desc_start":"📚 Підходить для соцмереж та легкого використання на смартфоні із середнім екранним часом ≈4год на день. На ПК місячний ліміт може витрачатися швидше, враховуйте активність.","tarif_desc_gamer":"🎮 Для тих, хто активно проводить час за ПК:<br/><font color=#DA7F00>•</font> Ігри через Steam та інші лаунчери<br/><font color=#DA7F00>•</font> Голосове спілкування в месенджерах для геймерів з надійним підключенням через Proxy<br><font color=#DA7F00>•</font> Перегляд Twitch з плагіном 7TV в 1080p і вище<br/><font color=#DA7F00>•</font> YouTube та інші соцмережі, де важливе захищене підключення\\n\\n✅ Цього трафіку достатньо для смартфона та ПК з активним використанням ≈5-6 годин на день.","tarif_desc_unlim":"🚀 Тариф для великих обсягів трафіку та будь-яких завдань: ПК, ноутбуки, смартфони, планшети, ТВ та інші пристрої.\\n\\n🧡 Один ключ можна використовувати на кількох пристроях — цього трафіку вистачить для сім\'ї та Ваших друзів!","tarif_desc_ultra":"💠 Преміальний тариф для широкого спектра завдань та дуже активних користувачів!\\n\\nПідходить тим, хто наближається к верхній межі тарифу в 1 ТБ і хоче користуватися сервісом без хвилювань про трафік.\\n\\n💜 З цим варіантом Ви зможете спокійно завантажувати великі файли, стрімити, грати та використовувати VPN / Proxy на десятці пристроїв.","applicationCabinetOrderBack":"Назад","applicationCabinetOrderSelect":"☑️ Замовити цей тариф ☑️","applicationCabinetOrderSelectTrial":"🎁 Активувати тестовий доступ на %1% години 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Отримати тестовий доступ на %1% години як бонус?","applicationCabinetOrderSelectAccept":"Підтвердіть дію ✅\\nЗ балансу буде списано: %1%\\n\\n💰 Зараз у Вас: %2%","applicationCabinetOrderTrial":"🎁 Доступний тестовий період на %1% години","applicationCabinetOrderTrialUsed":"Ви вже використовували тестовий доступ раніше 🙁","applicationCabinetOrderSelectErrTimeMax":"Максимальний термін продовження послуги: 2 місяці","applicationCabinetOrderSelectErrBalance":"У Вас недостатньо коштів на внутрішньому балансі для замовлення 🙁","applicationCabinetOrderSelectErrTrialCfg":"Цей тариф не можна замовити в тестовому режимі 🙁","applicationCabinetOrderSelectErrTrial":"Ви вже використовували цей тестовий тариф 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Тестовий період доступний лише користувачам, авторизованим через Telegram. Увійдіть через Telegram (або прив\'яжіть Telegram у «Налаштування») та спробуйте ще раз.","applicationCabinetOrderSelectSuccess":"Замовлення успішно виконано 🎉","applicationCabinetOrderSelectSuccessTrial":"Тестове замовлення успішно виконано 🎉","applicationCabinetOrderSelectErrOrder":"Не вдалося створити Ваше замовлення 😕","applicationCabinetOrderEditChangeTarif":"♻️ Змінити тариф на інший ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ Це поточний тариф","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>При зміні тарифу у Вашого замовлення залишиться<br>приблизно %1%</font><br>дні:години:хвилини:секунди<br><br>Для підтвердження натисніть кнопку нижче","applicationCabinetOrderEditChangeTarifExpired":"❌ Неможливо змінити тариф у замовлення з терміном дії, що закінчився. Спочатку необхідно його продовжити (зробити активним), а вже після змінити тариф на той, що Ви обрали. При зміні час замовлення перерахується залежно від обраного тарифу.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>Кожні %1% год. Ви можете змінювати тариф на будь-який інший.</font><br><br>При зміні тарифу залишок днів з попереднього замовлення переноситься на новий з урахуванням актуальної вартості та терміну доступу, що залишився.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>Ви вже нещодавно змінювали тариф!</font><br>Наступна зміна буде доступна<br>через %1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Підтвердити зміну тарифу на обраний ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Ви впевнені, що хочете змінити тариф на обраний?\\n\\n⚠️ Майте на увазі, що наступну зміну тарифу Ви зможете здійснити тільки через %1% год.","applicationCabinetOrderEditAuto":"Автопродовження замовлення","applicationCabinetOrderEditAutoOn":"✅ Активно","applicationCabinetOrderEditAutoOff":"❌ Не активно (в ⚙️Налаштуваннях)","applicationCabinetOrderEditAutoDesc":"При закінченні терміну дії замовлення, якщо на Вашому балансі достатньо коштів, система автоматично продовжить замовлення, якщо увімкнути автопродовження.","applicationCabinetOrderEditResetTime":"Скидання трафіку","applicationCabinetOrderEditCreated":"Замовлення активовано","applicationCabinetOrderEditSpent":"Сумарно витрачено","applicationCabinetOrderEditOverTime":"Передплата активна до","applicationCabinetOrderChangeTarif":"♻️ Зміна тарифу","applicationCabinetOrderEditParams":"⚙️ Налаштування","applicationCabinetOrderEditParamsTitle":"⚙️ Налаштування замовлення: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Мітка замовлення","applicationCabinetOrderEditParamsLabelDesc":"Ви можете додати мітки до Ваших замовлень, щоб Вам було простіше визначати, яке з них де використовується","applicationCabinetOrderEditParamsPassword":"🔸 Ваш пароль для підключення (4-12 символів)","applicationCabinetOrderEditParamsIP":"🔸 IP-адреса для доступу без пароля","applicationCabinetOrderEditParamsIPDesc":"У цьому полі Ви можете вказати свою особисту IP-адресу (взявши її, наприклад, з 2ip.io), щоб отримати доступ до нашого Proxy-сервера без вказання логіна та пароля в тих місцях, де це потрібно. Цей варіант зручніший і нічим не відрізняється за рівнем безпеки.\\n⚠️ Важливе уточнення: ця функція працює тільки при підключенні через HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"Для того, щоб убезпечити підключення до Proxy, ми згенерували випадковий пароль. У разі потреби його можна замінити на будь-який інший. Він потрібен для автентифікації за допомогою логіна та пароля там, де це знадобиться.","applicationCabinetOrderEditSave":"✔️ Зберегти всі зміни ✔️","applicationCabinetOrderEditSaveOk":"Зміни успішно прийняті ✅","applicationCabinetOrderEditSaveFail":"❌ Налаштування не були збережені. %1%","applicationCabinetOrderEditLinkVpn":"📚 Інструкція VPN","applicationCabinetOrderEditLinkProxy":"📚 Інструкція Proxy","applicationCabinetOrderEditResetPass":"🔄 Скинути Proxy пароль","applicationCabinetOrderEditResetPassAccept":"🔄 Ви впевнені, що хочете скинути пароль?\\n\\nСтарий пароль припинить діяти, і Вам необхідно буде виконати повторне налаштування Proxy з\'єднання!","applicationCabinetOrderEditLinkAccept":"💬 Вам було надіслано повідомлення з подробицями та інструкцією для підключення до нашого VPN / Proxy.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS порт*: `%4%`\\n%5%\\n🔑 *Пароль*: `%6%`","proxyInstructionReserveSubItem":"👤 *Логін* %1% » %2%: `%3%`","proxyInstruction":"Інструкція для підключення до Proxy:\\n\\n%1%\\nМи надаємо Вам доступ до Proxy відразу у всіх наших локаціях. ✅ *Рекомендуємо спочатку спробувати підключення безпосередньо до європейського сервера.* У разі якщо працює некоректно — пробуйте спосіб через СПБ » Європа.\\n\\n\\n*Дані для підключення до Proxy безпосередньо:*\\n%2%\\n🌐 HTTPS порт: `%3%`\\n👤 Логін: `%5%`\\n🔑 Пароль: `%6%`\\n\\n\\n*Для деяких клієнтів з РФ:*\\n_(перенаправляє трафік через РФ при недоступності прямого підключення до Європи. У цьому режимі обов\'язково вкажіть вірний логін з блоку нижче — він інший)_\\n%7%\\n\\n\\n*Для роботи з Proxy підключенням:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Інструкція](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Інструкція](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 ПК на Windows та macOS: [Proxifier](https://www.proxifier.com/) — [Інструкція](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Інструкція для підключення до VPN:\\n\\n%1%\\nМи надаємо Вам доступ до VPN відразу у всіх наших локаціях! *Кожне посилання нижче = особистий ключ*, а також сторінка з інструкцією до підключення. \\n✅ *Рекомендуємо спочатку додати Vless від Мультипосилання*, у разі якщо працює некоректно — пробуйте інші протоколи або резервний варіант.\\n\\n\\n\\n🔹 *Просте пояснення для новачків:*\\n▪️ Натисніть на [це посилання](%5%) і дотримуйтесь інструкції.\\n\\n\\n\\n🔸 *Для користувачів з досвідом*:\\n🌏 Усі локації в мультипосиланні\\n- %2%\\n\\n*Для деяких клієнтів з РФ:*\\n%3%\\nЦей спосіб для тих, у кого немає прямого підключення до європейських серверів і потрібен обхідний спосіб доступу до них через російський сервер.\\n\\n*Прямий доступ до локації на всіх протоколах:*\\n%4%\\n\\n⚠️ Якщо вказані посилання не відкриваються, увімкніть у налаштуваннях відображення резервного посилання.%7%","vpnInstructionRoute":"\\n\\nℹ️ Користувачі HAPP можуть додавати власні правила маршрутизації. Ви можете скористатися готовими налаштуваннями, наведеними нижче, або створити власні, вказавши потрібні домени та IP-адреси для обходу VPN. \\n%1%","vpnInstructionAll":"Усі протоколи відразу","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Європа","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Ваш особистий ключ доступу до VPN*\\n\\nУсі дані для підключення та список рекомендованих додатків знаходяться за посиланням:  \\n👉 [Відкрити посилання для підключення](%2%)\\n\\n⚠️ *Зберігайте посилання в секреті!* \\nВоно є Вашим персональним ключем авторизації у VPN.\\n\\n✅ Щоб активувати передплату:  \\nСкопіюйте посилання та вставте його в обраний додаток — після цього автоматично завантажаться актуальні налаштування.\\n\\n📦 Хочете керувати всіма замовленнями?  \\nВикористовуйте [🔑 посилання передплати на всі підключення](%4%).\\n\\n───────────────\\n🌐 *Ваші дані для підключення до Proxy:*\\n🌐 *Адреса сервера:* `%6%%7%`\\n🌐 *HTTPS порт:* `%9%`\\n👤 *Ваш логін:* `%10%`\\n🔑 *Пароль для підключення:* `%5%`\\n\\n⚠️ У разі недоступності основного сервера ви можете підключитися до резервного сервера:  \\n%11% *Адреса сервера:* `%12%`  \\n🌐 *HTTPS порт:* `%9%`  \\n👤 *Ваш логін:* `%13%.%10%`  \\n🔑 *Пароль для підключення:* `%5%`\\n\\n💡 Proxy можна використовувати в будь-якому додатку, який підтримує Proxy-з\'єднання.  \\nНаприклад, *для роботи в браузері Chrome* рекомендуємо розширення:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*Інструкції з підключення до VPN:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*Як підключитися до Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows-додатки](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Веб-браузер](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Дані замовлення `%1%`\\n⌛️ Тариф: `%2%`\\n⚙️ Автопродовження: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Увага! Обов\'язково оновіть конфігурацію в налаштуваннях додатка, де використовуєте це замовлення\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Увімкнено","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Вимкнено","faqButtonCommand":"🔑 Наші VPN та Proxy можуть бути застосовані на широкому списку пристроїв і *без обмежень на к-ть підключень* до одного ключа доступу! Налаштування дуже просте і займе не більше двох хвилин Вашого часу, далі все буде зведено лише до кнопки ВКЛ/ВИКЛ.\\n\\n✅ Після того, як Ви оформите своє перше замовлення _(включаючи тестове)_, Вам прийде два повідомлення з деталями та інструкціями для підключення, як до VPN, так і до Proxy.\\n\\n\\n📦 *Якщо у Вас ще немає замовлення, то:*\\n[Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ➛ Особистий кабінет ➛ Зробити нове замовлення ➛ Обирайте відповідний натиснувши на нього та переходьте до деталей тарифу ➛ Замовляємо.\\n\\n\\nЯкщо у Вас виникнуть якісь питання, то зв\'яжіться з нами з додатка, ми обов\'язково допоможемо ❤️","applicationCabinetOrderEditPay":"⌛️ Продовжити замовлення (на %1% днів за %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Замовлення успішно продовжено на %1% днів.\\n\\nСтатус замовлення буде оновлено протягом декількох хвилин.","applicationCabinetOrderEditPayErr":"Не вдалося продовжити замовлення 🙁","applicationCabinetOrderRemove":"Видалити замовлення","applicationCabinetOrderRemoveFailed":"❌ Неможливо видалити активне замовлення!","applicationCabinetOrderRemoveConfirm":"Ви впевнені, що хочете видалити замовлення? 🤨\\n\\nУ разі потреби Ви завжди можете зробити нове замовлення, а якщо у Вас виникли проблеми з замовленням, то зверніться до нашої служби підтримки, і ми з радістю Вам допоможемо!","applicationCabinetOrderRemoveConfirmMessage":"✅ Замовлення було успішно видалено!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Не вдалося видалити замовлення!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Протоколи: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Ваш баланс був поповнений на %1%","applicationAdminDashboard":"📊 Дашборд","applicationAdminUsers":"👥 Користувачі (x%1%)","applicationAdminUsersActive":"🫂 Активні користувачі (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Поточний баланс: %1% | %2% USD","applicationAdminUserRef":"Реферали (x%1% | %2%)","applicationAdminUserRefTarget":"Реферал від","applicationAdminUserOrders":"📦 Замовлення (x%1% всього | x%2% активних)","applicationAdminUserRefs":"💸 Реферали (x%1% всього)","applicationAdminUserPayments":"💸 Платежі (x%1% всього) | Зараховано %2%","applicationAdminUserPaymentsType":"Платіжна система: %1%","applicationAdminUserPaymentsStatus":"Статус платежу: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Скасувати платіж та списати суму з балансу","applicationAdminUserPaymentsStatusSetFailAccept":"Ви впевнені?\\n\\nУ разі підтвердження платіж змінить свій статус, а також з балансу користувача\\n\\n❌ буде списано %1%","applicationAdminUserPaymentsStatusSetOk":"✅ Підтвердити платіж та зарахувати суму на баланс","applicationAdminUserPaymentsStatusSetOkAccept":"Ви впевнені?\\n\\nУ разі підтвердження платіж змінить свій статус, а також баланс користувача\\n\\n✅ буде поповнений на %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Дія виконана успішно ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Не вдалося виконати дію!\\nВідповідь сервера: %1%","applicationAdminUserCreated":"Створений: %1%","applicationAdminUserUpdated":"Змінений: %1%","applicationAdminUserLast":"🚪 Останній вхід: %1%","applicationAdminUserOrdersTotal":"💰 Поповнень балансу на: %1%","applicationAdminUserResetOrderChangeBlock":"Скинути зависле блокування замовлення","applicationAdminUserResetOrderChangeBlockAccept":"Ви впевнені, що хочете скинути зависле блокування замовлення?","applicationAdminUserMedia":"Партнерська програма","applicationAdminUserMediaOn":"Статус: ✅ Партнер","applicationAdminUserMediaOff":"Статус: ❌ НЕ Партнер","applicationAdminUserMediaConfirm":"Статус: ❌ НЕ Партнер","applicationAdminUserMediaTotal":"Сумарний дохід: %1%","applicationAdminUserMediaPayed":"Виплачено партнеру: %1%","applicationAdminUserMediaPayWait":"Необхідно виплатити: %1%","applicationAdminUserMediaPayWaitButton":"💸 Відмітити виплату","applicationAdminUserMediaPayWaitButtonAccept":"Ви впевнені, що хочете відмітити виплату як виконану? Сума транзакції %1% (%2%)\\n\\n💸 Після підтвердження користувачу буде надіслано повідомлення про те, що кошти були виплачені і вони вже в дорозі до нього.","applicationAdminUserMediaPayWaitNotify":"Шановний партнере! \\n\\n💸 Вам була виплачена сума в розмірі *%1%* за партнерською програмою. Кошти вже в дорозі і знадобиться деякий час, щоб вони досягли ваших реквізитів","applicationAdminUserMediaPercent":"%2%%1%% Відсоток від рефералки в дохід","applicationAdminUserMediaPercentDesc":"Цей відсоток вказує скільки від рефералки буде виплачено користувачу як дохід від партнерської програми","applicationAdminUserGiveOrder":"Видати замовлення користувачу","applicationAdminUserGiveOrderDays":"Кількість днів","applicationAdminUserGiveOrderButton":"Видати","applicationAdminUserGiveOrderButtonConfirm":"Ви збираєтеся видати замовлення\\n\\"%1%\\"\\nкористувачу на %2% днів?","applicationAdminUserEditButton":"Керування користувачем","applicationAdminUserEditPromos":"Використані промокоди: %1%","applicationAdminUserEditBalance":"Змінити баланс","applicationAdminUserAddBalance":"Додати на баланс","applicationAdminUserEditBalanceAccept":"Ви впевнені, що хочете змінити баланс користувача?","applicationAdminUserEditBalanceAcceptFail":"Не вдалося змінити баланс. Можливо під час редагування поточний баланс користувача був змінений\\nВідповідь сервера: %1%","applicationAdminUserEditBalanceAcceptOk":"Баланс був успішно змінений","applicationAdminUserEditBalanceChangeNotify":"Адміністратор змінив Ваш баланс на *%1%*.\\n💰 Поточний баланс: *%2%*\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Адміністратор додав *%1%* на Ваш баланс.\\n💰 Поточний баланс: *%2%*\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Пошук","applicationAdminOrders":"🛒 Усі замовлення (x%1%)","applicationAdminOrdersActive":"💳 Активні замовлення (x%1%)","applicationAdminOrdersExpired":"⛔ Зупинені замовлення (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% днів","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Трафік: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Блокування зміни тарифу","applicationAdminOrderReload":"Оновити дані MarzBan","applicationAdminOrderReloadAccept":"⚠️ Оновити дані?\\n\\nЦя дія завантажить дані замовлення з MarzBan та оновить їх у додатку!","applicationAdminOrderReloadAcceptDone":"✅ Запит на оновлення даних надіслано!","applicationAdminOrderReloadAcceptFail":"❌ Не вдалося оновити дані замовлення!","applicationAdminOrderResetChangeTime":"Скинути час зміни тарифу","applicationAdminOrderResetChangeTimeAccept":"Ви впевнені, що хочете це зробити? При підтвердженні користувач зможе змінити тариф на інший","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Запит успішно виконано. Тепер користувач може змінити тариф самостійно","applicationAdminOrderResetTraffic":"Скинути трафік","applicationAdminOrderResetTrafficAccept":"⚠️ Скасувати замовлення?\\n\\nКористувач не отримає повідомлення!","applicationAdminOrderResetTrafficAcceptOk":"✅ Готово","applicationAdminOrderReturn":"Скасувати замовлення","applicationAdminOrderReturnAccept":"⚠️ Скасувати замовлення?\\n\\nКористувач ОТРИМАЄ назад кошти за весь НЕВИКОРИСТАНИЙ період!","applicationAdminOrderReturnAcceptDone":"⚠️ Замовлення видалено. Користувачу повернено %1% на баланс.","applicationAdminOrderReturnNotify":"⚠️ Адміністратор скасував Ваше замовлення\\n🛒 `%1%` та повернув Вам *%2%* на баланс.\\nВи можете зробити нове замовлення, щоб завжди залишатися на зв\'язку з вільним Інтернетом, зайшовши в додаток.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ Зробити нове замовлення","applicationAdminOrderRemove":"Видалити замовлення","applicationAdminOrderRemoveAccept":"⚠️ Видалити замовлення?\\n\\nЯкщо замовлення все ще активне, кошти НЕ будуть повернені!","applicationAdminOrderRemoveAcceptDone":"Замовлення видалено","applicationAdminOrderAddTime":"Продовжити замовлення (%1%дн.)","applicationAdminOrderAddTimeAccept":"⚠️ Продовжити замовлення (%1%дн.)?\\n\\nЦя дія НЕ змінить баланс користувача!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Адміністратор продовжив Ваше замовлення\\n🛒 `%1%` на *%2% дн.* 📆\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ Натисніть на вказане замовлення для ознайомлення з деталями.","applicationAdminPromos":"🎁 Промокоди (x%1%)","applicationAdminPaymentsLast":"⏰ Останні платежі (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Останні успішні платежі (x%1%)","applicationAdminPromosCreate":"Створити промокод","applicationAdminPromoID":"Назва: %1%","applicationAdminPromoUSED":"Використань: %1%","applicationAdminPromoCOUNT_USE":"Ліміт: %1%","applicationAdminPromoBALANCE":"Сума: %1%","applicationAdminPromoEditID":"Назва","applicationAdminPromoEditCOUNT_USE":"Кількість застосувань (макс)","applicationAdminPromoEditAMOUNT":"Сума в $","applicationAdminPromoEditCATEGORY":"Категорія","applicationAdminPromoEditCATEGORYEmpty":"Звичайний / без категорії","applicationAdminPromoEditCATEGORYMedia":"Медіа промо","applicationAdminPromoEditCATEGORYNew":"Для новачків","applicationAdminPromoEditSave":"Зберегти промокод","applicationAdminPromoEditPromo":"Змінити","applicationAdminPromoCategory":"Категорія: %1%","applicationAdminPromoSendUseList":"Список тих, хто застосував","applicationAdminPromoRemovePromo":"Видалити","applicationAdminPromoRemovePromoAccept":"Ви впевнені?","applicationAdminAddNode":"Додавання нової ноди","applicationAdminAddNodeDesc":"Цей розділ дозволить у 2 кліки розгорнути весь проєкт на новій ноді. Це лише встановить все, що потрібно, але не додаватиме ноду до списку нод","applicationAdminAddNodeIP":"IP Адреса сервера","applicationAdminAddNodeHostname":"Піддомен сервера (s1, s2 тощо, без крапки та іншого)","applicationAdminAddNodeHostnameDesc":"Вказаний піддомен автоматично пропишеться в CloudFlare з усіма параметрами для роботи з нашим сервісом. Якщо вказати вже існуючий — то буде перезаписаний, тож уважніше","applicationAdminAddNodeUsername":"Ім\'я користувача (root)","applicationAdminAddNodePassword":"Пароль користувача (root)","applicationAdminAddNodePasswordDesc":"Якщо не вказати пароль — буде використовуватися авторизація за SSH ключем. У цьому випадку переконайтеся, що Ваш SSH ключ доданий у ноду і має доступ до сервера","applicationAdminAddNodePasswordKeyInfo":"Увага. Пароль не вказано, буде використовуватися авторизація за SSH ключем. Переконайтеся, що Ваш SSH ключ доданий у ноду і має доступ до сервера","applicationAdminAddNodeSshPort":"SSH Порт (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Для роботи потрібні такі права: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Натисніть щоб отримати токен","applicationAdminAddNodeStart":"Виконати деплой","applicationAdminAddNodeStarted":"Процес деплою запущений, не закривайте сторінку і дочекайтеся виконання. Якщо протягом 5 хвилин процес не буде завершений — швидше за все щось зависло(","applicationAdminAddNodeDoneOk":"Деплой завершено успішно","applicationAdminAddNodeDoneFail":"Помилка: %1%","applicationAdminAddNodeClearLogs":"Очистити логи","applicationAdminInstallNode":"Розгортання ноди","applicationAdminCoreSettings":"Налаштування ядра","applicationAdminCoreSettingsDesc":"Цей розділ дозволяє налаштувати базові параметри системи. Параметри застосовуються на льоту, без перезапуску ядра","applicationAdminSaveCoreSettings":"Зберегти налаштування","applicationAdminCoreSettingsSaved":"Налаштування успішно збережені","applicationAdminCoreName.projectName":"Назва проєкту","applicationAdminCoreName.projectMain":"Основний домен","applicationAdminCoreName.projectBot":"Логін бота проєкту","applicationAdminCoreDesc.projectBot":"Через якого бота відбувається взаємодія з користувачами. Вкажіть логін без @","applicationAdminCoreName.admins":"ID Адміністраторів","applicationAdminCoreDesc.admins":"ID вказуйте суворо через кому, і не використовуйте пробіли. Наприклад: `123456789,987654321`. І не видаліть себе випадково)","applicationAdminCoreName.backup_admins":"ID Адміністраторів для отримання бекапу","applicationAdminCoreDesc.backup_admins":"Цим адміністраторам бот надсилатиме бекапи в особисті повідомлення. ID вказуйте суворо через кому, і не використовуйте пробіли. Наприклад: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Максимальний термін продовження замовлення (в місяцях)","applicationAdminCoreDesc.order_end_limit_month":"Користувач не зможе продовжити своє замовлення на термін більше, ніж вказано","applicationAdminSendMessage":"Розсилка повідомлень","applicationAdminSendMessageTargets":"Кількість людей, які отримають повідомлення","applicationAdminSendMessageType":"Тип фільтрації користувачів","applicationAdminSendMessageTypeAll":"Усі користувачі","applicationAdminSendMessageTypeOrders":"Певні замовлення (будь-які)","applicationAdminSendMessageTypeOrdersActive":"Певні замовлення (активні)","applicationAdminSendMessageTypeHas":"Є хоч 1 замовлення","applicationAdminSendMessageTypeNotHas":"Немає жодних замовлень","applicationAdminSendMessageTypeHasActive":"Є хоч 1 активне замовлення","applicationAdminSendMessageTypeHasUnActive":"Є хоч 1 НЕактивне замовлення","applicationBalanceErr":"Виникла помилка при формуванні платежу: %1%","applicationBalanceErrBalanceLimit":"На вашому рахунку вже максимально допустима кількість коштів (%1%)","applicationBalanceErrBalanceLimitButton":"Недоступно","applicationBalanceErrData":"Платіжна система не змогла сформувати платіж. Будь ласка, спробуйте пізніше.","applicationBalanceErrNetwork":"Мережева помилка. Будь ласка, спробуйте пізніше.","applicationBalanceErrCurrency":"Помилка валюти. Будь ласка, спробуйте пізніше.","applicationBalanceErrAuth":"Помилка авторизації","applicationBalanceErrPaymentLink":"Не вдалося отримати посилання на платіж","applicationBalanceSettingsTitle":"Вибір валюти","applicationBalanceTitle":"Розділ поповнення балансу","applicationBalanceSelect":"Оберіть валюту для відображення","applicationBalanceEmail":"Ваш email","applicationBalancePlatform":"Платіжна платформа","applicationBalanceAmount":"Сума поповнення (в %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Підсумкова сума оплати: ≈%1%</font>\\n\\n<font color=#F28100>Якщо ви чийсь реферал,\\nто на баланс повернеться %2% у вигляді 20% кешбеку!</font>","applicationBalanceAmountLimit":"Мінімальна сума: %1%\\nМаксимальна сума: %2%\\n\\n💵 <font color=#00AE09>Ваш спосіб оплати: %4%</font>\\nКомісія платіжної системи: %3%%\\n\\nПісля самої оплати баланс зараховується автоматично протягом декількох хвилин, також Вам прийде повідомлення про статус платежу з іншими деталями на випадок звернення до служби підтримки.","applicationBalanceAmountDesc":"Поповнення відбувається через сервіс %1%","applicationBalanceAmountButton":"Перейти на сторінку оплати","applicationBalanceAmountButtonLoading":"Завантаження...","applicationBalanceAmountButtonErr":"❌ Невірно вказана сума ❌","applicationBalanceCurrency":"Метод оплати","applicationBalanceCurrencyDesc":"Комісія платіжної системи: ≈%1%%","applicationServersTitle":"Статус серверів","paymentCompleteNotify":"🎉 Ваш баланс був успішно поповнений на <b>%1%</b>.\\n\\nID платежу: <b>%2%</b>\\n(Він знадобиться у разі звернення до <a href=\\"https://t.me/rocketman_vpn\\">служби підтримки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyRef":"🎉 Ваш баланс був успішно поповнений на <b>%1%</b>.\\nОскільки Ви є рефералом @%4% у нашому сервісі, ми нарахували бонус у розмірі <b>%3%</b> (%5%%)\\n\\nID платежу: <b>%2%</b>\\n(Він знадобиться у разі звернення до <a href=\\"https://t.me/rocketman_vpn\\">служби підтримки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyRefHost":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> (%3%%) за поповнення балансу Вашим рефералом @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyAdmin":"💵 Користувач %1% [UID: %7%] поповнив баланс на <b>%2%</b>.\\n💰 У чистий прибуток проєкту зараховано +<b>%5%</b>\\n\\nПлатіжна система: <b>%6%</b>\\nID платежу: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Увага ❗️\\nПо платежу `%1%` був сформований запит на повернення коштів.\\n\\nОскільки вони були повернені Вам у повному обсязі, з балансу в додатку було списано *%2%*.\\n\\nУ разі виникнення питань зверніться до [служби підтримки](https://t.me/rocketman_vpn), ми обов\'язково допоможемо!\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Ноди","admin-routing":"🔀 Роутинг","admin-presets":"📋 Пресети","admin-firewall":"📜 Записи фаєрвола (x%1%)","admin-firewall_add":"Новий запис фаєрвола","admin-nav-messages":"Розсилка","admin-nav-firewall":"Фаєрвол","admin-nav-logs":"Логи адміністрації","logRecord-title":"📊 Логи адміністрації (x%1%)","logRecord-title-user":"📜 Логи користувача (x%1%)","logRecord-log-time":"Створений: %1%","logRecord-log-who":"Хто","logRecord-log-target":"Ціль","logRecord-log-reason":"Текст: %1%","logRecord-setPaymentStatus":"Зміна статусу платежу %1%","logRecord-removePromo":"Видалення промокоду %1%","logRecord-editPromo":"Редагування промокоду %1%","logRecord-editBalance":"Редагування балансу (%1%$ -> %2%$)","logRecord-returnOrder":"Скасування замовлення %1% (%2%$)","logRecord-addOrder":"Видача замовлення %1%","logRecord-payOrder":"Продовження замовлення %1% на %2% днів","logRecord-partnerNotify":"Виплата партнеру %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"СБП (Система швидких платежів)","paymentMethodCrypto":"Криптовалюта","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Не вдалося виявити дані користувача для формування посилання. Мабуть, цей користувач заблокував нашого бота 😐","partner_title":"🏆 Партнерська програма 🏆","partner_desc":"Ви є учасником партнерської програми. Крім основного бонусу за реферала Ви також отримуватимете фінансові відрахування.\\n\\nВаша поточна ставка — %1%% від реферального балансу\\n\\nВсього Ви заробили: %2%\\nПоточний баланс: %3%","ref_title":"🏆 Реферальна система 🏆","ref_desc":"Запрошуйте друзів та знайомих до нашого сервісу та отримуйте бонуси на свій баланс!\\n\\n<font color=#2DA618>Від кожного реферала Ви отримаєте по <font color=#54E13B>%1%</font> за їхні перші замовлення та <font color=#54E13B>%2%%</font> від усіх поповнень їхнього балансу.</font>\\n\\n<font color=#00B7B7>Усі Ваші реферали отримають <font color=#15DBDB>%3%</font> бонусом після першого замовлення (включаючи тестове) та <font color=#15DBDB>%4%%</font> кешбеку від усіх своїх майбутніх поповнень.</font>\\n\\nТаким чином ця система вигідна і для Вас, і для Ваших рефералів 😉","ref_stats":"Ваша статистика","ref_stats_data":"Кількість приведених рефералів: %1%\\nОтримали бонусом на баланс: %2%","ref_link_text":"Ваші дані реферальної системи","ref_link_text_copy":"📋 Посилання+текст","ref_only_link_copy":"🔗 Посилання","ref_link_text_copy_sendText":"Привіт! Я користуюся зручним способом для захисту своїх даних в інтернеті та сміливо рекомендую його тобі 😎\\n\\nКрім того, перейшовши саме за моїм посиланням, ти отримаєш бонусом %1% після першого замовлення (включаючи тестове) та довічний кешбек у %2%% від усіх поповнень балансу 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Ваше реферальне посилання та додатковий текст були скопійовані в буфер обміну.\\n\\nВикористовуйте це для запрошення друзів та знайомих у наш сервіс, щоб отримувати вигоду спільно 😎","ref_only_link_copy_alert":"🔗 Ваше реферальне посилання було скопійоване в буфер обміну.\\n\\nВикористовуйте його для запрошення друзів та знайомих у наш сервіс, щоб отримувати вигоду спільно 😎","ref_link_text_share":"💌 Поділитися","ref_link_text_share_message":"Привіт! Я користуюся зручним способом для захисту своїх даних в інтернеті та сміливо рекомендую его тобі 😎\\n\\nКрім того, перейшовши саме за моїм посиланням, ти отримаєш бонусом %1% після першого замовлення (включаючи тестове) та довічний кешбек у %2%% від усіх поповнень балансу 🎉\\n","ref_message_personal":"Ви не можете зареєструватися за своїм реферальним посиланням 😐","ref_message":"🎁 Реферальна система:\\nВи успішно зареєструвалися як реферал користувача @%1% 🎉\\n\\nВи отримаєте бонус у розмірі <b>%2%</b> при першому замовленні (включаючи тестове), а також довічний кешбек у розмірі <b>%3%%</b> при кожному поповненні балансу!","ref_message_host":"🎁 Реферальна система:\\n🎉 Користувач @%1% зареєструвався як Ваш новий реферал 🎉\\n\\nВи отримаєте бонус у розмірі <b>%2%</b> при першому його замовленні (включаючи тестове), а також кешбек у розмірі <b>%3%%</b> від кожного його поповнення балансу.","ref_message_order":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> на свій баланс","ref_message_order_host":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> на свій баланс від користувача @%2%","traffic_limit_notify_close":"⚠️ У Вас закінчується трафік на замовленні `%1%` з тарифом `%2%`! Якщо це повідомлення з\'являтиметься досить часто, рекомендуємо задуматися про зміну тарифу на більш просунутий, щоб завжди залишатися на зв\'язку ❤️\\n\\n🚀 Зробити це Ви зможете, [запустивши додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на потрібне замовлення ⇒ ♻️ Змінити тариф на інший ♻️","traffic_limit_notify_end":"❗️ УВАГА ❗️ У Вас закінчився весь трафік на замовленні `%1%` з тарифом `%2%`. Його скидання відбудеться %3%. Але якщо Ви хочете завжди залишатися на зв\'язку, подумайте про зміну тарифу на більш просунутий.\\n\\n🚀 Зробити це Ви зможете, [запустивши додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на потрібне замовлення ⇒ ♻️ Змінити тариф на інший ♻️","traffic_limit_notify_restore":"🎉 У замовлення `%1%` з тарифом `%2%` була скинута статистика використаного трафіку. Тепер він знову доступний у повному обсязі :)\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Застосувати промокод","example":"Приклад","deleteMessageFailed":"❌ Не вдалося видалити повідомлення. Можливо, воно занадто старе або вже видалене.","cryptoPayTitle":"Оплата через криптовалюту","cryptoPayUserId":"ID користувача","cryptoPayAmount":"Сума до оплати (USDT)","cryptoPayInstruction":"Переведіть вказану суму в USDT на надану адресу","cryptoPayLoading":"Завантаження реквізитів...","cryptoPayErrorNoParam":"Не передано параметр crypto_id у посиланні.","cryptoPayErrorInvalidData":"Некоректні дані для оплати.","cryptoPayErrorParse":"Помилка при обробці даних для оплати. Спробуйте оновити сторінку або зверніться в підтримку.","cryptoPayWallet":"Адреса гаманця для переказу","cryptoPayNetwork":"Мережа (блокчейн)","cryptoPayCopy":"Скопіювати","cryptoPayCopyAmountAlert":"Сума скопійована в буфер обміну!","cryptoPayCopyWalletAlert":"Адреса гаманця скопійована в буфер обміну!","cryptoPayWarning":"УВАЖНО перевірте реквізити та суму перед оплатою! У разі помилки ми не можемо гарантувати зарахування коштів.","telegramPayment":"✅ Для Вас був сформований рахунок на оплату\\n\\n⚖️ Сума оплати: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 ID користувача: <b>%7%</b>\\n📋 ID платежу: <b>%6%</b>\\n\\n🔗 Для оплати перейдіть за посиланням: %5%","orderManipulationBlock":"Ваше минуле замовлення все ще в обробці. Будь ласка, зачекайте його завершення або зверніться до служби підтримки для отримання допомоги.","subPage.orderInfo":"Нижче представлені всі доступні методи підключення для Вашого замовлення через цей додаток","subPage.userInfo":"Нижче представлені всі доступні методи підключення для всіх Ваших активних замовлень через цей додаток","subPage.orderId":"🛒 ID Замовлення: %1%\\n⬇️ Оберіть регіон кінцевого підключення:","subPage.nodeInfo":"📍 Точка обходу: %1%\\n⚠️ Це означає, що спочатку весь трафік йтиме через неї для маскування.","subPage.protocolInfo":"Протокол підключення: %1%","subPage.allTitle":"Усі замовлення","subPage.expiredNotifyList":"❌ Термін дії передплати закінчився\\nПродовжити VPN у боті\\n%1%","ping.admin.initOk":"✅ Система ініціалізована, всі ноди доступні в штатному режимі.","ping.admin.initFail":"❌ Система ініціалізована, але деякі ноди не доступні:\\n\\n%1%","speedtest.admin.failTest":"❌ Тест швидкості не пройдений. Будь ласка, перевірте працездатність.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Зафіксована низька швидкість з\'єднання (%2% Mbps download, %3% Mbps upload). Будь ласка, перевірте працездатність.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Нода відновила нормальну швидкість з\'єднання (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ На сервері виявлені проблеми зі швидкістю з\'єднання","applicationServersSpeedtestLastSpeed":"Останній замір швидкості (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Попередній замір швидкості (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ На сервері ще не було зроблено замірів швидкості","applicationServersPingIssueDetected":"❌ Сервер не відповідає на пінг-запити","actionUpdateStartNodes":"⚠️ Запущена процедура оновлення нод (%1%), через деякий час ноди будуть перезапущені. Після завершення робіт буде надіслано додаткове повідомлення (якщо не було надіслано — можливо, підвис github action і все гаразд, але можуть бути і проблеми)","actionUpdateStartHeader":"Запущена процедура оновлення:","actionUpdateStartSite":"• Оновлюється головна сторінка проєкту","actionUpdateStartApp":"• Оновлюється бекенд-додаток","actionUpdateStartProxy":"• Оновлюється проксі або xray служба (Ноди: %1%)","actionUpdateStartMTProto":"• Оновлюється сервер MTProto","actionUpdateStartFirewall":"• Оновлюємо фаєрвол (Ноди: %1%)","actionUpdateStartBackup":"• Оновлюємо дочірній API інтерфейс (Ноди: %1%)","actionUpdateStartFooter":"Через деякий час ноди будуть перезапущені. Після завершення робіт буде надіслано повідомлення.","actionUpdateCompletedNodes":"✅ Процедура оновлення нод (%1%) завершена, ноди перезапущені і вже повинні бути активні","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Швидкий та безпечний","mtproto.subtitle.2":"доступ до Telegram","mtproto.description.1":"Безкоштовний проксі-сервер для стабільного підключення до Telegram.","mtproto.description.2":"Без реєстрації, без обмежень, з повною конфіденційністю.","button.connect":"Підключити проксі","button.copy":"Скопіювати посилання","button.copied":"Скопійовано","link.label":"Посилання для підключення вручну","feature.encryption.title":"Наскрізне шифрування","feature.encryption.description":"Ваші повідомлення залишаються конфіденційними. Ми не маємо доступу до вашого листування.","feature.free.title":"Без обмежень","feature.free.description":"Безкоштовний доступ без реєстрації та лімітів на трафік.","feature.rocketman.title":"Більше можливостей","feature.rocketman.description":"Цей проксі працює тільки для Telegram. Для повноцінного захисту використовуйте RocketMan-VPN.","rocketman.title":"RocketMan VPN — це Ваш надійний друг","rocketman.description":"Даний MTProto проксі є додатковим проєктом — RocketMan VPN. З нами Ви отримаєте повний захист інтернет-з\'єднання у всіх додатках та улюблених сервісах. Спробуйте безкоштовно те, що ми надаємо для своїх клієнтів, та оцініть якість!","rocketman.button":"Відкрити RocketMan VPN","howto.title":"Як підключитися?","howto.step1.title":"Натисніть на кнопку \\"Підключити проксі\\"","howto.step1.description":"Або скопіюйте посилання та підключіться вручну","howto.step2.title":"Відкрийте Telegram","howto.step2.description":"Посилання автоматично запустить додаток","howto.step3.title":"Підтвердіть","howto.step3.description":"Натисніть «Підключити» в діалоговому вікні","web.orders":"Мої замовлення","web.settings":"Налаштування","web.exit":"Вихід","web.back":"← Назад","settings.accountInfo":"Інформація про акаунт","settings.language":"Мова","settings.currency":"Валюта відображення","settings.currencyDesc":"Оберіть валюту для відображення цін та балансу в додатку.","settings.webCredentials":"Дані для входу на сайт","settings.webCredentialsDesc":"Ці дані використовуються для входу у веб-інтерфейс поза Telegram. Хоча ми не обмежуємо вас у виборі пароля, але наполегливо рекомендуємо вказувати складний","settings.login":"Логін","settings.loginPlaceholder":"Введіть новий логін","settings.newPassword":"Новий пароль","settings.passwordPlaceholder":"Не менше %1% символів","settings.repeatPassword":"Повторіть пароль","settings.repeatPasswordPlaceholder":"Повторіть новий пароль","settings.passwordMismatch":"Паролі не збігаються","settings.saved":"Збережено!","settings.saveError":"Помилка збереження","settings.saving":"Збереження…","settings.saveCredentials":"Зберегти дані","settings.show":"Показати","settings.hide":"Приховати","settings.copy":"Копіювати","settings.reset":"Скинути","settings.apiKeyHint":"Використовуйте API-ключ для входу у <a href=\\"https://%1%\\" target=\'_blank\'>веб-інтерфейс</a> без Telegram, а також для інтеграції з іншими нашими продуктами. Не передавайте його третім особам, цей ключ надає повний доступ до вашого акаунту","settings.referral":"Реферал (ID запрошувача)","settings.referralDesc":"Якщо ви пропустили реферальне посилання, ви можете вказати ID запрошувача тут. Застосовується лише один раз.","settings.referralApplied":"ID запрошувача","settings.referralAppliedAlert":"ID запрошувача скопійовано в буфер обміну.","settings.referralHostId":"Ваш ID запрошувача","settings.referralHostIdPlaceholder":"Введіть ID користувача (тільки цифри)","settings.referralHostIdInvalid":"Невірний формат ID. Використовуйте тільки цифри.","settings.referralApply":"Застосувати ID запрошувача","settings.referralSaved":"Реферал застосовано!","settings.referralErr.already_applied":"Реферал вже був застосований.","settings.referralErr.invalid_ref_host":"Невірний ID запрошувача.","settings.referralErr.same_account":"Неможна використовувати власний ID як реферал.","login.tabCredentials":"Логін та пароль","login.tabApiKey":"API-ключ","login.tabRegister":"Реєстрація","login.labelLogin":"Логін","login.labelPassword":"Пароль","login.labelConfirmPassword":"Підтвердження пароля","login.labelApiKey":"API-ключ","login.placeholderLogin":"Введіть логін","login.placeholderPassword":"Введіть пароль","login.placeholderConfirmPassword":"Підтвердіть пароль","login.placeholderApiKey":"Введіть API-ключ","login.signIn":"Увійти","login.signInApiKey":"Увійти за API-ключем","login.signUp":"Зареєструватися","login.signingIn":"Входимо…","login.signingUp":"Реєструємося…","login.orUseApiKey":"або увійдіть за API-ключем","login.orUseCredentials":"або увійдіть за логіном та паролем","login.switchToApiKey":"Увійти за API-ключем","login.switchToCredentials":"Увійти за логіном та паролем","login.errLoginRequired":"Введіть логін та пароль","login.errPasswordRequired":"Введіть пароль","login.errConfirmPasswordRequired":"Підтвердіть пароль","login.errPasswordMismatch":"Паролі не збігаються","login.errApiKeyRequired":"Введіть API-ключ","login.errIncorrect":"Невірний логін або пароль","login.errInvalidKey":"Невірний API-ключ","login.errServer":"Помилка сервера, спробуйте ще раз","login.errRegistration":"Помилка реєстрації","login.tabTelegram":"Через Telegram","login.tg.title":"Вхід через Telegram","login.tg.instruction":"1. Надішліть команду нижче боту <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a>\\n2. Після відправки натисніть кнопку «Підтвердити вхід»","login.tg.commandLabel":"Команда для бота:","login.tg.showCommand":"Показати","login.tg.hideCommand":"Приховати","login.tg.copyCommand":"Копіювати","login.tg.copied":"Команда скопійована!","login.tg.timerLabel":"Код дійсний: %1%","login.tg.timerExpired":"Термін дії коду закінчився","login.tg.verifyButton":"Підтвердити вхід","login.tg.verifying":"Перевіряємо…","login.tg.requestNew":"Запросити новий код","login.tg.loading":"Генеруємо код…","login.tg.enter_correct":"Особистість підтверджена. Поверніться на сайт і натисніть на кнопку \\"%1%\\" для завершення","login.tg.enter_fail":"Не вдалося виконати дію. Переконайтеся, що вказаний ключ коректний, а термін дії не закінчився","login.tg.errNotSent":"Не вдалося підтвердити вхід. Переконайтеся, що ви надіслали команду боту, і спробуйте ще раз. Якщо код закінчився — запросіть новий.","lang.ru":"Російська","lang.en":"Англійська","lang.uk":"Українська","footer.info":"MTProto проксі працює тільки з офіційними додатками Telegram","instructionModalTitleVpn":"Інструкція з підключення VPN","instructionModalTitleProxy":"Інструкція з підключення Proxy","instructionModalSendToTg":"📩 Надіслати в Telegram","instructionModalSentToTg":"Інструкція надіслана у ваші особисті повідомлення Telegram","settings.name":"Ваше ім\'я","settings.nameDesc":"Вкажіть ім\'я для персоналізації звернень у додатку. Воно є публічним і може використовуватися для відображення іншим користувачам","settings.namePlaceholder":"Введіть ім\'я (3-15 символів)","settings.nameInvalid":"Допускаються лише кирилиця, латиниця, цифри та пробіли (3-15 символів)","settings.promoTitle":"Активація промокоду","settings.promoDesc":"Якщо у Вас є промокод, введіть його тут, щоб отримати приємний бонус на Ваш баланс.","settings.promoPlaceholder":"Введіть промокод","settings.promoApply":"Застосувати промокод","settings.promoApplied":"Промокод успішно застосовано!","adminDashboardTitle":"Статистика (Дашборд)","adminDashboardActiveOrders":"Активність підписок","adminDashboardActiveLabel":"Активні","adminDashboardExpiredLabel":"Закінчилися","adminDashboardOrdersByTariff":"Підписки за Тарифами","adminDashboardPayments":"Платежі","adminDashboardTrial":"Тестовий період","adminDashboardLang":"Мова","adminDashboardCurrency":"Валюта","adminDashboardActivity":"Активність користувачів","adminDashboardOrdersPerUser":"Кількість підписок на юзера","adminDashboardRefIncome":"Дохід з рефералів","applicationAdminBackButton":"Назад","settings.passkeys.title":"Ключі доступу (Passkeys)","settings.passkeys.desc":"Додайте до 5 пристроїв для швидкого та безпечного входу без пароля за допомогою біометрії або фізичних ключів.","settings.passkeys.add":"➕ Додати новий ключ","settings.passkeys.name":"Назва пристрою","settings.passkeys.name_placeholder":"Напр: iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"У вас поки немає доданих ключів доступу","settings.passkeys.delete_confirm":"Ви впевнені, що хочете видалити цей ключ доступу? Ви більше не зможете увійти за його допомогою.","settings.passkeys.limit_reached":"Досягнуто ліміт ключів (максимум 5)","settings.passkeys.add_success":"Ключ доступу успішно додано!","settings.passkeys.add_error":"Не вдалося додати ключ доступу","login.tabPasskey":"За ключем","login.passkey.btn":"Увійти через Passkey","login.passkey.error":"Помилка авторизації через ключ доступу","login.passkey.not_supported":"Ваш браузер або пристрій не підтримують вхід через Passkey","admin.bulkRenewal.button":"📅 Масове продовження замовлень","admin.bulkRenewal.title":"📅 Масове продовження замовлень","admin.bulkRenewal.afterDateLabel":"Враховувати замовлення, термін яких закінчився після зазначеної дати (або ще не закінчився). Часовий пояс: %1%","admin.bulkRenewal.daysLabel":"Кількість днів для продовження","admin.bulkRenewal.ordersCount":"Замовлень буде продовжено","admin.bulkRenewal.usersCount":"Унікальних користувачів","admin.bulkRenewal.applying":"⏳ Застосовується...","admin.bulkRenewal.done":"✅ Готово!","admin.bulkRenewal.apply":"📅 Продовжити %1% замовл. на %2% дн.","admin.bulkRenewal.notifyUser":"📅 Адміністратор продовжив ваші активні замовлення на %1% дн. Список замовлень: %2%","admin.bulkRenewal.notifyUsers":"Повідомити користувачів у Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ При великій кількості користувачів сповіщення можуть працювати нестабільно або із затримкою"}');
+const uk_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"Для увімкнення сповіщень на iPhone:\\n1. Натисніть іконку [⎋] (Поділитися) в нижній панелі.\\n2. Виберіть пункт «Додати на початковый екран».\\n3. Запустіть сайт з робочого столу та поверніться в налаштування.","settings.pushSupportError":"Web Push не підтримується на цьому пристрої","settings.pushTitle":"Push-сповіщення","settings.pushDesc":"Підпишіть цей пристрій для отримання системних сповіщень","settings.pushSubscribed":"✅ Цей пристрій підписаний","settings.pushNotSubscribed":"❌ Пристрій не підписаний","settings.pushSubscribeBtn":"Підписатися","settings.pushUnsubscribeAllBtn":"Відв\'язати всі пристрої","settings.pushSuccess":"Успішно підписано","settings.pushUnsubscribeSuccess":"Всі пристрої від\'єднано","settings.pushError":"Помилка підписки","settings.disableSiteNotify":"Вимкнути сповіщення на сайті","settings.disableSiteNotifyDesc":"Вимкніть сповіщення на сайті, залишивши лише Push-сповіщення та сповіщення в Telegram (якщо учётная запис прив\'язана до Telegram)","settings.disableSiteNotifyYes":"Так","settings.disableSiteNotifyNo":"Ні","settings.geoRouting":"Додати гео-роутинг в дані підписки","settings.geoRoutingDesc":"Ви можете вибрати певний гео-роутинг для своїх замовлень. Якщо він буде доданий, то при підключенні до VPN / Proxy через інструкції з додатку, в даних підписки буде вказано, що ви хочете використовувати певний гео-роутинг. Це може допомогти в обході блокувань та покращенні стабільності підключення, якщо основний сервер недоступний або працює нестабільно у вашому регіоні. Якщо ви не впевнені, який варіант вам краще підходить - залиште значення за замовчуванням (%1%)","settings.disabled":"Вимкнути (не рекомендується)","settings.reserveConnectionLink":"Використовувати резервне посилання на підписку Vless","settings.reserveConnectionLinkDesc":"Увімкніть цю опцію, якщо у вас немає доступу до основного сервера. Тоді інструкції з підключення міститимуть резервне посилання замість основного.","settings.reserveConnectionLinkYes":"Так","settings.reserveConnectionLinkNo":"Ні","applicationNotifyTitle":"Сповіщення","applicationNotifyConfirmDeleteAll":"Ви впевнені, що хочете видалити всі сповіщення?","applicationNotifyEmpty":"Немає нових сповіщень","applicationNotifyPromoSuccess":"Промокод успішно застосовано","applicationNotifyPromoError":"Помилка активації промокода: можливо, він вже використаний або вичерпано ліміт","applicationNetworkError":"Помилка мережі","applicationNotifyConfirmDelete":"Ви впевнені, що хочете видалити це сповіщення?","applicationNotifyDelete":"🗑️ Видалити","applicationNotifyPromoApply":"Застосувати промокод (%1%)","pagePayTitle":"Придбання VPN","pagePayBalance":"Поповнення балансу","pagePayID":"Ваш унікальний ID","pagePayIDPlaceholder":"Введіть свій ID","pagePayAmount":"Сума поповнення балансу (тимчасово від %1%)","pagePayButton":"Перейти до оплати","pageFAQId":"Як отримати ID?","pageFAQStep1":"Відкрийте додаток у чат-боті RocketMan-VPN","pageFAQStep2":"Внизу головної сторінки знайдіть пункт \\"Ваш ID\\"","pageFAQStep3":"Скопіюйте унікальний номер","pageFAQStep4":"Вставте ID у поле зліва","pageFAQOpen":"Відкрити Telegram-бота","pageFAQQR":"QR-код Telegram-бота","landingTGBotButton":"Запустити Telegram-бота","landingDashboardButton":"Відкрити панель керування","landingTarifs":"Тарифи","landingTarifsTrial":"+ Пробний період %1%год","landingTarifsDiscount":"Знижка","landingTarifsPrice":"%1%/%2%дн.","landingTarifsGo":"Підключити","landingFooterText":"А тут наш основний проєкт","landingTitle":"RocketMan VPN — Інтернет під захистом!","landingTitleBrand":"RocketMan VPN","landingTitleTagline":"Інтернет під захистом!","landingTitleDesc":"Блискавичний доступ до улюблених сайтів та сервісів з ПК та смартфона.","landingFeaturesTitle":"Чому обирають саме нас?","landingAppsTitle":"Наші продукти для вас","landingAppsDownload":"Завантажити","landingAppsOpen":"Перейти","landingAppsFree":"Безкоштовно","landingTrust1Value":"256-bit","landingTrust1Label":"AES-шифрування · дані під замком","landingTrust2Value":"до 1 Гбіт/с","landingTrust2Label":"Швидкість каналу","landingTrust3Value":"24/7","landingTrust3Label":"Жива підтримка","landingTrust4Value":"НЕОБМЕЖЕНО","landingTrust4Label":"Пристроїв на 1 ключ","landingFeaturesLead":"Захист, швидкість і простота — без компромісів","landingCompareTitle":"Без захисту vs RocketMan VPN","landingCompareLead1":"Без VPN — тривога та «Доступ заборонено».","landingCompareLead2":"З нашим сервісом — захист і безпека за кілька кліків","landingCompareColBad":"Без VPN","landingCompareColGood":"З RocketMan VPN","landingCompareRow1":"Що бачать сайти","landingCompareBad1":"Ваше місто, провайдера та активність","landingCompareGood1":"Лише країну сервера","landingCompareRow2":"Wi-Fi у кафе та аеропортах","landingCompareBad2":"Паролі та переписку можна перехопити","landingCompareGood2":"Трафік зашифровано — видно лише «білий шум»","landingCompareRow3":"Передача даних","landingCompareBad3":"У відкритих мережах паролі — відкритим текстом","landingCompareGood3":"VLESS · Proxy HTTPS · Hysteria2","landingCompareRow4":"Блокування та DPI","landingCompareBad4":"«Доступ заборонено», сервіси та месенджери падають","landingCompareGood4":"Наші обходи працюють навіть у Китаї (перевірено в червні 2026)","landingCompareRow5":"Швидкість","landingCompareBad5":"Провайдер може різати маршрут і швидкість","landingCompareGood5":"До 1 Гбіт/с, зокрема на 5G","landingCompareRow6":"Налаштування","landingCompareBad6":"Вручну на кожному пристрої та в додатку","landingCompareGood6":"QR-код за 10 секунд · iOS, Android, ПК, TV","landingCompareRow7":"Підтримка","landingCompareBad7":"Розбираєтесь самі","landingCompareGood7":"Жива підтримка в Telegram 24/7","landingHowTitle":"3 кроки до захищеного інтернету","landingHowLead":"Підключення займе менше двох хвилин — ми проведемо вас за руку","landingHowStep1Title":"Оберіть тариф","landingHowStep1Text":"Від безкоштовного тесту до преміуму — план під будь-які задачі","landingHowStep2Title":"Оплатіть","landingHowStep2Text":"Зручна оплата та миттєва активація в Telegram або на сайті","landingHowStep3Title":"Увімкніть VPN / Proxy","landingHowStep3Text":"Покрокова інструкція — далі лише ВКЛ/ВИКЛ","landingPricingLead":"Зручні тарифи · пробний період · реферальна система","landingPlanTraffic":"📊 %1% ГБ трафіку","landingPlanDevices":"📱 Без ліміту пристроїв","landingPlanVpnProxy":"🔐 VPN + Proxy в одному","landingCtaTitle":"Готові захистити свій інтернет?","landingCtaDesc":"Приєднуйтесь — підключення займе пару хвилин, а спокій залишиться надовго.","landingCtaButton":"Підключити зараз","landingCtaSite":"Підключити через сайт","landingCtaTelegram":"Підключити через Telegram","landingPlanConnectSite":"Підключити на сайті","landingPlanConnectTelegram":"Підключити в Telegram","landingHeaderTelegram":"Запустити в Telegram","landingHeaderSite":"Підключити прямо тут","landingHeroGuarantee":"✓ Пробний період · ✓ VPN + Proxy · ✓ Підтримка 24/7","landingHeroPill1":"Пробний період","landingHeroPill2":"VPN + Proxy","landingHeroPill3":"Підтримка 24/7","landingHeroPill4":"Працює навіть у Китаї","landingHeroPill5":"Обхід Білих Списків","landingHeroCompareBad":"Без VPN","landingHeroCompareGood":"З RocketMan VPN","landingHeroCompareYou":"ВИ","landingHeroCompareWeb":"МЕРЕЖА","landingHeroCompareBadWire":"відкритий канал","landingHeroCompareGoodWire":"зашифрований туннель","landingHeroCompareBad1":"Ваш реальний IP витікає в мережу","landingHeroCompareBad2":"Блокування · «Доступ заборонено»","landingHeroCompareGood1":"Ми захистили й зашифрували ваше перебування в інтернеті","landingHeroCompareGood2":"No-logs · ми не зберігаємо ваші дані","landingProtocolVless":"VLESS","landingProtocolProxy":"Proxy HTTPS","landingProtocolHysteria":"Hysteria2","landingShieldMeta":"VLESS · Proxy HTTPS · Hysteria2","landingPlanPopular":"ХІТ","landingSecurityBadge":"З нами безпечно","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"Багатофункціональний проксі-клієнт для <b>Windows, Linux і macOS</b>. Підтримує протоколи <b>HTTPS / VLESS / Hysteria2</b>. API-режим керування замовленнями прямо з додатку, TUN-тунелювання, VLESS-підписки та інтеграція з Discord (Windows).","app.tgproxy.name":"TGProxy — MTProto для Telegram","app.tgproxy.description":"Безкоштовний <b>MTProto-проксі</b> для стабільного доступу до Telegram. Без реєстрації та лімітів трафіку, наскрізне шифрування переписки. Підключення в один клік з браузера — відкривається прямо в Telegram.","features1Title":"Анонімність","features1Text":"Завдяки кільком шарам захисту з нашого боку — Ваш реальний IP не дізнається жоден сервіс.","features2Title":"Швидкість","features2Text":"Завантажуйте, дивіться улюблений контент та діліться на швидкостях до 1 Гбіт/с.","features3Title":"Пробний період","features3Text":"Підключайтеся в 1 клік з будь-якого свого пристрою! ПК, смартфон, ТВ, планшет та ноутбук.","features4Title":"Підтримка","features4Text":"Ми завжди готові допомогти Вам з вирішенням будь-яких питань. На зв\'язку практично 24/7","faq1title":"Як оплатити?","faq1text":"Поповніть баланс і оплатіть зручним методом. Після оплати отримайте інструкції в Telegram-боті або на сайті (залежить від того, де оформлювали замовлення).","faq2title":"Як налаштувати VPN?","faq2text":"У нашому <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram-боті</a> та в <a href=\\"https://ru-app.rocketman-vpn.com:8443/application\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Особистому кабінеті</a> на сайті максимально детально розписано весь процес підключення.\\nБуквально від А до Я, тому Ви навряд чи зможете десь заплутатися. Головне — дотримуйтесь інструкцій :)","faq3title":"Що робити, якщо щось не працює?","faq3text":"Ознайомтесь з нашою <a href=\\"https://rocketman-vpn.com/?wiki\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Базою знань</a> — ми зібрали корисні статті та відповіли на можливі питання заздалегідь. Якщо залишаться питання, які не вдасться вирішити самостійно — напишіть у <a href=\\"https://t.me/%1%\\" target=\'_blank\'>підтримку через Telegram</a>, і ми Вам допоможемо.","locationSelectTitle":"Оберіть локацію сервера","locationSelectLoad":"Завантаженість: %1%%","locationReserve1":"Санкт-Петербург","locationLocal":"Локальний сервер","locationStockholm":"Стокгольм","locationAustria":"Відень","locationNetherland":"Амстердам","locationFrankfurt":"Франкфурт","locationParis":"Париж","tarif.test_drive":"🚗 Тест-драйв","tarif.start":"🚀 Старт","tarif.gamer":"🎮 Геймер","tarif.pro":"👑 Сімейна+","tarif.ultra":"🌌 Космос","httpTarifPro":"🔒 Proxy-Безліміт","httpTarifGamer":"🔒 Proxy-Геймер","tarifNameFull":"%1% (%2% днів | %3% GB/д) - %4%","welcomeMessage":"Ласкаво просимо!\\nЗавдяки нашому сервісу Ви зможете отримати захищений доступ до улюблених сайтів та додатків, як це роблять інші наші улюблені клієнти ❤️\\n\\n⭐️ У нас немає обмежень на кількість пристроїв, тому можете використовувати 1 ключ на всіх своїх девайсах! Разом із VPN Ви отримуєте доступ і до нашого Proxy.\\n\\n🛒 Ми надаємо:\\n- VPN для iOS, Android, Windows, macOS, Android TV\\n- Proxy для браузера, Discord, Windows тощо","basketBalance":"Поповнити баланс","secondsToStringD":"%4% дн. %3% год. %2% хв. %1% сек.","secondsToStringH":"%3% год. %2% хв. %1% сек.","secondsToStringM":"%2% хв. %1% сек.","readButton":"🗑 Видалити це повідомлення","openPage":"🌐 Сайт","openApp":"📱 Додаток","expireNotifyOrderData":"▪️ Тариф: `%1%`\\n▪️ Назва: `%2%`\\n▪️ Термін продовження: `%3% днів`","expireNotifyTemplate":"Вітаємо, %1%!\\n%2%\\n\\n%3%\\n▪️ Вартість продовження: `%4%`\\n\\n%5%","expireNotifyFull":"Термін дії Вашого замовлення підійшов до кінця 🙁\\n\\nЩоб залишатися на зв\'язку з вільним Інтернетом — [запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp), далі натисніть на 💸 свій баланс справа вгорі та, поповнивши його, у налаштуваннях замовлення увімкніть автопродовження 😇","expireNotifyTime":"Термін дії Вашого замовлення завершиться менш ніж через `%1%` годину 🙁","expireNotifyRenewAutoNoMoney":"❗️ У Вас увімкнена функція автопродовження, проте Ваш поточний баланс не дозволяє продовжити його 🙁\\n\\nПереконайтеся, що на рахунку достатньо коштів, щоб функція працювала без проблем протягом найближчих місяців. [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp), у правому верхньому куті додатка натисніть на свій баланс та поповніть на бажану суму.","expireNotifyRenewAuto":"✅ У Вас увімкнена функція автопродовження, тому замовлення буде продовжено автоматично, коли на ньому залишиться менше 24 годин 😎","expireNotifyRenewManual":"ℹ️ Як увімкнити автопродовження?\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на своє замовлення ⇒ Налаштування ⇒ поставте галочку біля Автопродовження ⇒ Зберегти всі зміни.","expireNotifyRenewSuccessAuto":"Вітаємо, %1%!\\nВаше замовлення було продовжено автоматично.\\n\\n%2% 🎉\\n\\nДякуємо, що довіряєте нам ❤️\\nНайкращою подякою за сервіс буде інвайт Ваших друзів через реферальну систему!\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"Команда використана невірно\\n`%1%`\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Команда `%1%` використана невірно!\\n\\n✅ Правильний приклад: `%2%`\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Почати роботу","usePromoCommand":"Застосувати промокод — /promo PROMO_NAME","useFaqCommand":"Як підключитися до VPN / Proxy?","usePromoAlready":"Ви вже застосували цей промокод. Застосувати промокод можна лише 1 раз.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Промокод `%1%` не знайдено 🙁\\n\\nПеревірте правильність написання, а також переконайтеся, що промокод є дійсним.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Ліміт активацій промокоду `%1%` вичерпано 🙁\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"Ви вже застосували подібний промокод.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Не вдалося застосувати промокод `%1%` 🙁\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Промокод `%1%` успішно застосовано 🎉\\nНа Ваш баланс зараховано %2%\\n💰 Ваш поточний баланс: %3%\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"У Вас немає доступу для виконання цієї дії.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Меню адміна","adminMenu":"Розділ адміністратора\\n\\n\\nМеню промокодів\\nСписок промокодів: /listPromo\\nІнформація по промокоду: `/infoPromo {PROMO_NAME}`\\nСтворити промокод: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nВидалити промокод: `/deletePromo {PROMO_NAME}`\\n\\n\\nМеню користувачів\\nВидати замовлення користувачу: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nВидалити замовлення: `/removeOrder {ORDER_ID}`\\nВидати баланс користувачу: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Замовлення не знайдено","adminUserRemoveOrderStatus":"Статус видалення замовлення: %1%","adminUserGiveTarifErrUser":"Користувача не знайдено!","adminUserGiveTarifErrTarif":"Тариф не знайдено","adminUserGiveTarifErrNode":"Нода тарифу не знайдена. Конфігурація тарифу невірна","adminUserGiveTarifErrMarzban":"MarzBan не дав створити замовлення. Причина невідома","adminUserGiveTarifSuccess":"Ви успішно видали замовлення для @%1%","adminUserGiveTarifNotify":"🎉 Адміністратор підключив на Ваш акаунт\\nтариф `%1%` на `%2% дн.` 📆\\n\\n*Інформація про замовлення:*\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒\\nнатисніть на своє замовлення ⇒ 📚 Інструкція VPN / Proxy","adminPromoCreateAlreadyExist":"Цей промокод уже існує","adminPromoCreateAlreadyExistWas":"Цей промокод уже колись існував і не може бути створений повторно","adminPromoCreateFailed":"Не вдалося створити промокод","adminPromoCreateDone":"Промокод `%1%` успішно створено.\\nДоступно активацій: %2%\\nБаланс: %3%","adminPromoList":"Список усіх промокодів:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% вик. / %3% всього / %4%)","adminPromoInfo":"Інформація по промокоду:\\n\\nID: `%1%`\\nЛіміт активацій: %2%\\nКількість активацій: %3%\\nБаланс: %4%\\n\\nСписок активацій:\\n%5%","adminPromoDeleteDone":"Промокод `%1%` успішно видалено","terms":"Угода користувача","contacts":"Контакти для зв\'язку","wiki":"База знань","wikiPage.description":"Інструкції, відповіді на запитання та приклади налаштування VPN.","wikiPage.articleLead":"Стаття з бази знань RocketMan VPN.","wikiPage.articleHint":"Навігація по статтях ліворуч · зміст праворуч","wikiPage.subtitle":"Оберіть тему ліворуч або скористайтеся пошуком","wikiPage.heroTopic.faq":"Відповіді на запитання","wikiPage.heroTopic.setup":"Налаштування та підключення","wikiPage.heroTopic.troubleshoot":"Приклади та рішення","wikiPage.searchPlaceholder":"Пошук за назвою та текстом статей...","wikiPage.loadingList":"Завантаження списку статей...","wikiPage.emptyList":"Статті ще не додані.","wikiPage.loadingArticle":"Завантаження статті...","wikiPage.openHint":"Оберіть статтю у списку","wikiPage.back":"Назад до списку","wikiPage.error.loadList":"Не вдалося завантажити список статей.","wikiPage.error.emptyFile":"Для поточної мови стаття недоступна.","wikiPage.error.loadArticle":"Не вдалося завантажити статтю.","wikiPage.navigation":"Навігація","wikiPage.contents":"Зміст","wikiPage.readMore":"Читати","wikiPage.readingTime":"хв читання","wikiPage.articlesCount":"статей","wikiPage.backToTop":"Наверх","wikiPage.home":"🏠 Головна сторінка Бази знань","wikiPage.copyLink":"Копіювати посилання на цю статтю","wikiPage.articleLinkCopied":"Посилання на статтю скопійовано","wikiPage.linkCopied":"Посилання скопійовано","wikiPage.closeLightbox":"Закрити","wikiPage.openImageInNewTab":"Відкрити в новій вкладці","wikiPage.copySectionLink":"Копіювати посилання на розділ","wikiPage.copyCurrentSectionLink":"Копіювати посилання на поточний абзац","wikiPage.sectionLinkCopied":"Посилання на абзац скопійовано","wikiPage.enlargeImage":"Збільшити зображення","wikiPage.copyCode":"Копіювати","wikiPage.copied":"Скопійовано","wikiPage.copyText":"Натисніть, щоб скопіювати","wikiPage.searchNoResults":"Нічого не знайдено. Спробуйте інше слово.","wikiPage.searchHint":"Результати пошуку за назвою та текстом","wikiPage.searching":"Шукаємо...","wikiPage.searchMatchTitle":"У назві","wikiPage.searchMatchBody":"У тексті","wikiPage.updatedAt":"Оновлено","wikiPage.featured":"Важливе до прочитання","wikiPage.groupOther":"Інші статті","wikiPage.allArticles":"Усі статті","wikiPage.cardUpdated":"Оновлено","wikiPage.updatedToday":"сьогодні","wikiPage.updatedYesterday":"вчора","wikiPage.updatedDaysAgo":"%1% дн. тому","wikiPage.badge.important":"Важливо","wikiPage.badge.new":"Нове","wikiPage.badge.updated":"Оновлено","wikiPage.badge.hot":"Актуально","contactsTG":"Телеграм чат","contactsEmail":"E-Mail","trialNotify":"✅ Ви отримали тариф `%1%` на `%2% години` як ознайомлювальний доступ.\\n\\n📌 Інформація про замовлення в додатку:\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒\\nнатисніть на своє замовлення ⇒ 📚 Інструкція VPN / Proxy.\\n\\nМи надаємо Вам можливість безкоштовно ознайомитися з нашими продуктами для того, щоб Ви оцінили якість та стабільність перед майбутніми покупками 🤝","launchBot":"Запустити","launchBotLong":"Відкрити додаток 📱","applicationMainMenu":"Головне меню","applicationMainMenuBack":"Назад","applicationButtonsRef":"Реферальна система","applicationButtonsFaq":"База знань","applicationButtonsCabinet":"Особистий кабінет","applicationButtonsAdmin":"Кабінет адміністратора","applicationButtonsAdminDisk":"Вільно дискового простору: %1%","applicationButtonsAdminPayments":"Статистика доходу:<br/>%1% поточний міс.<br/>%2% минулий міс.<br/>%3% за весь період | %4% в очікуванні","applicationUserInfoWithUs":"Ви з нами","applicationUserInfoBalance":"Ваш баланс","applicationUserInfoId":"Ваш ID","applicationUserInfoTgId":"ID Прив\'язаного акаунта TG","applicationUserInfoAPIKey":"Ваш API ключ","applicationUserInfoAPIKeyAlert":"📝 Ваш API ключ скопійовано в буфер обміну. Нікому не розголошуйте цей ключ, адміністрація проєкту ніколи не попросить вас назвати його","applicationUserInfoAPIResetAlertAsk":"📝 Ви впевнені, що хочете згенерувати новий API ключ?","applicationUserInfoAPIResetAlert":"📝 Ваш API ключ було згенеровано заново","applicationUserInfoIdAlert":"📝 Ваш ID був скопійований у буфер обміну.","applicationUserInfoTgIdAlert":"📝 Ваш Telegram ID був скопійований у буфер обміну.","applicationContactButton":"Зв\'язок зі службою підтримки","applicationServersButton":"Статус серверів","applicationHowToConnectFAQButton":"Як підключитися до VPN чи Proxy?","applicationHowToConnectFAQButtonModal":"Бот надіслав вам інформацію в особисті повідомлення 📝","applicationCabinetTitle":"Особистий кабінет","applicationCabinetTitleDesc_title":"Натисніть на замовлення для керування ним","applicationCabinetTitleOrder":"Вибір тарифного плану","applicationCabinetTitleOrder_detail_back":"Повернутися до списку тарифів","applicationCabinetTitleOrder_help_button":"⚠️ Допоможіть мені визначитися з тарифним планом ⚠️","applicationCabinetTitleOrder_help_button_back":"Повернутися до оформлення замовлення","applicationCabinetTitleOrder_help_button_header":"Середнє споживання трафіку:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 година відео в 1440p ≈6 ГБ\\n<font color=#E10070>Instagram</font>: 1 година Reels ≈2 ГБ\\n<font color=#69C9D0>TikTok</font>: 1 година відео ≈2 ГБ\\n<font color=#7289DA>Discord</font>: 1 година войсу з демкою ≈1 ГБ\\n<font color=#BD37FF>Twitch</font>: 2 години стріму в 1080p ≈5 ГБ\\n<font color=#D0A823>Онлайн ігри</font>: 1 година ≈0.5 ГБ\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 години в 1080р ≈5 ГБ\\n\\nЯкщо скласти всі вказані дані, то виходить <font color=#DA7F00>≈20-25 ГБ на день</font>. Ці дані наведені для орієнтиру, щоб Вам було простіше обрати відповідний тариф.\\n\\n<font color=#A7C800>VPN та Proxy — по-своєму зручні.</font>\\n<font color=#BAD821>VPN:</font> зручно для смартфонів, планшетів та ТВ; можна використовувати і на ПК.\\n<font color=#BAD821>Proxy:</font> підходить для Discord, браузера на ПК (YouTube, Twitch, Netflix, HDRezka тощо).\\n<font color=#B3D023>Коротко про протоколи:</font>\\n<font color=#2EB3FF>• Vless</font> — найкращий обхід блокувань, стабільність, швидкість, “невидимість”.\\n<font color=#29a1e6>• Hysteria</font> - баланс стабільності та швидкості, ідеально підходить для геймінгу<font color=#2884BA>• HTTPS</font> — підходить тільки для сайтів та додатків через Proxifier.\\n\\n🚀 Старт — для звичайного серфінгу\\n🎮 Геймер — для активних користувачів девайсів\\n👑 Сімейна+ — для великого обсягу трафіку","applicationCabinetButtonNew":"Зробити нове замовлення","applicationCabinetButtonNewCancel":"Повернутися до списку замовлень","applicationCabinetButtonAddBalance":"Поповнити баланс","applicationCabinetIsTrial":"Безкоштовний тестовий доступ","applicationCabinetPing":"Пінг до сервера: %1%ms","applicationCabinetEndActive":"Доступ до передплати: %1%","applicationCabinetEndNotActive":"Передплата не оплачена. Натисніть сюди та активуйте її через кнопку «⌛️ Продовжити замовлення» у випадаючому меню.","applicationCabinetOrderTraficWeek":"на тиждень","applicationCabinetOrderTraficMonth":"на місяць","applicationCabinetOrderPriceDay":"/ день","applicationCabinetOrderPriceDays":"/ %1% днів","applicationCabinetOrderPrice":"%1% за %2% дн 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 Ознайомитися з деталями цього тарифу 📋","tarif_desc_drive":"📚 Ідеально для знайомства з нашим сервісом та легкого серфінгу в соцмережах. Дозволить повністю випробувати роботу VPN / Proxy 😉","tarif_desc_start":"📚 Підходить для соцмереж та легкого використання на смартфоні із середнім екранним часом ≈4год на день. На ПК місячний ліміт може витрачатися швидше, враховуйте активність.","tarif_desc_gamer":"🎮 Для тих, хто активно проводить час за ПК:<br/><font color=#DA7F00>•</font> Ігри через Steam та інші лаунчери<br/><font color=#DA7F00>•</font> Голосове спілкування в месенджерах для геймерів з надійним підключенням через Proxy<br><font color=#DA7F00>•</font> Перегляд Twitch з плагіном 7TV в 1080p і вище<br/><font color=#DA7F00>•</font> YouTube та інші соцмережі, де важливе захищене підключення\\n\\n✅ Цього трафіку достатньо для смартфона та ПК з активним використанням ≈5-6 годин на день.","tarif_desc_unlim":"🚀 Тариф для великих обсягів трафіку та будь-яких завдань: ПК, ноутбуки, смартфони, планшети, ТВ та інші пристрої.\\n\\n🧡 Один ключ можна використовувати на кількох пристроях — цього трафіку вистачить для сім\'ї та Ваших друзів!","tarif_desc_ultra":"💠 Преміальний тариф для широкого спектра завдань та дуже активних користувачів!\\n\\nПідходить тим, хто наближається к верхній межі тарифу в 1 ТБ і хоче користуватися сервісом без хвилювань про трафік.\\n\\n💜 З цим варіантом Ви зможете спокійно завантажувати великі файли, стрімити, грати та використовувати VPN / Proxy на десятці пристроїв.","applicationCabinetOrderBack":"Назад","applicationCabinetOrderSelect":"☑️ Замовити цей тариф ☑️","applicationCabinetOrderSelectTrial":"🎁 Активувати тестовий доступ на %1% години 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Отримати тестовий доступ на %1% години як бонус?","applicationCabinetOrderSelectAccept":"Підтвердіть дію ✅\\nЗ балансу буде списано: %1%\\n\\n💰 Зараз у Вас: %2%","applicationCabinetOrderTrial":"🎁 Доступний тестовий період на %1% години","applicationCabinetOrderTrialUsed":"Ви вже використовували тестовий доступ раніше 🙁","applicationCabinetOrderSelectErrTimeMax":"Максимальний термін продовження послуги: 2 місяці","applicationCabinetOrderSelectErrBalance":"У Вас недостатньо коштів на внутрішньому балансі для замовлення 🙁","applicationCabinetOrderSelectErrTrialCfg":"Цей тариф не можна замовити в тестовому режимі 🙁","applicationCabinetOrderSelectErrTrial":"Ви вже використовували цей тестовий тариф 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Тестовий період доступний лише користувачам, авторизованим через Telegram. Увійдіть через Telegram (або прив\'яжіть Telegram у «Налаштування») та спробуйте ще раз.","applicationCabinetOrderSelectSuccess":"Замовлення успішно виконано 🎉","applicationCabinetOrderSelectSuccessTrial":"Тестове замовлення успішно виконано 🎉","applicationCabinetOrderSelectErrOrder":"Не вдалося створити Ваше замовлення 😕","applicationCabinetOrderEditChangeTarif":"♻️ Змінити тариф на інший ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ Це поточний тариф","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>При зміні тарифу у Вашого замовлення залишиться<br>приблизно %1%</font><br>дні:години:хвилини:секунди<br><br>Для підтвердження натисніть кнопку нижче","applicationCabinetOrderEditChangeTarifExpired":"❌ Неможливо змінити тариф у замовлення з терміном дії, що закінчився. Спочатку необхідно його продовжити (зробити активним), а вже після змінити тариф на той, що Ви обрали. При зміні час замовлення перерахується залежно від обраного тарифу.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>Кожні %1% год. Ви можете змінювати тариф на будь-який інший.</font><br><br>При зміні тарифу залишок днів з попереднього замовлення переноситься на новий з урахуванням актуальної вартості та терміну доступу, що залишився.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>Ви вже нещодавно змінювали тариф!</font><br>Наступна зміна буде доступна<br>через %1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Підтвердити зміну тарифу на обраний ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Ви впевнені, що хочете змінити тариф на обраний?\\n\\n⚠️ Майте на увазі, що наступну зміну тарифу Ви зможете здійснити тільки через %1% год.","applicationCabinetOrderEditAuto":"Автопродовження замовлення","applicationCabinetOrderEditAutoOn":"✅ Активно","applicationCabinetOrderEditAutoOff":"❌ Не активно (в ⚙️Налаштуваннях)","applicationCabinetOrderEditAutoDesc":"При закінченні терміну дії замовлення, якщо на Вашому балансі достатньо коштів, система автоматично продовжить замовлення, якщо увімкнути автопродовження.","applicationCabinetOrderEditResetTime":"Скидання трафіку","applicationCabinetOrderEditCreated":"Замовлення активовано","applicationCabinetOrderEditSpent":"Сумарно витрачено","applicationCabinetOrderEditOverTime":"Передплата активна до","applicationCabinetOrderChangeTarif":"♻️ Зміна тарифу","applicationCabinetOrderEditParams":"⚙️ Налаштування","applicationCabinetOrderEditParamsTitle":"⚙️ Налаштування замовлення: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Мітка замовлення","applicationCabinetOrderEditParamsLabelDesc":"Ви можете додати мітки до Ваших замовлень, щоб Вам було простіше визначати, яке з них де використовується","applicationCabinetOrderEditParamsPassword":"🔸 Ваш пароль для підключення (4-12 символів)","applicationCabinetOrderEditParamsIP":"🔸 IP-адреса для доступу без пароля","applicationCabinetOrderEditParamsIPDesc":"У цьому полі Ви можете вказати свою особисту IP-адресу (взявши її, наприклад, з 2ip.io), щоб отримати доступ до нашого Proxy-сервера без вказання логіна та пароля в тих місцях, де це потрібно. Цей варіант зручніший і нічим не відрізняється за рівнем безпеки.\\n⚠️ Важливе уточнення: ця функція працює тільки при підключенні через HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"Для того, щоб убезпечити підключення до Proxy, ми згенерували випадковий пароль. У разі потреби його можна замінити на будь-який інший. Він потрібен для автентифікації за допомогою логіна та пароля там, де це знадобиться.","applicationCabinetOrderEditSave":"✔️ Зберегти всі зміни ✔️","applicationCabinetOrderEditSaveOk":"Зміни успішно прийняті ✅","applicationCabinetOrderEditSaveFail":"❌ Налаштування не були збережені. %1%","applicationCabinetOrderEditLinkVpn":"📚 Інструкція VPN","applicationCabinetOrderEditLinkProxy":"📚 Інструкція Proxy","applicationCabinetOrderEditResetPass":"🔄 Скинути Proxy пароль","applicationCabinetOrderEditResetPassAccept":"🔄 Ви впевнені, що хочете скинути пароль?\\n\\nСтарий пароль припинить діяти, і Вам необхідно буде виконати повторне налаштування Proxy з\'єднання!","applicationCabinetOrderEditLinkAccept":"💬 Вам було надіслано повідомлення з подробицями та інструкцією для підключення до нашого VPN / Proxy.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS порт*: `%4%`\\n%5%\\n🔑 *Пароль*: `%6%`","proxyInstructionReserveSubItem":"👤 *Логін* %1% » %2%: `%3%`","proxyInstruction":"Інструкція для підключення до Proxy:\\n\\n%1%\\nМи надаємо Вам доступ до Proxy відразу у всіх наших локаціях. ✅ *Рекомендуємо спочатку спробувати підключення безпосередньо до європейського сервера.* У разі якщо працює некоректно — пробуйте спосіб через СПБ » Європа.\\n\\n\\n*Дані для підключення до Proxy безпосередньо:*\\n%2%\\n🌐 HTTPS порт: `%3%`\\n👤 Логін: `%5%`\\n🔑 Пароль: `%6%`\\n\\n\\n*Для деяких клієнтів з РФ:*\\n_(перенаправляє трафік через РФ при недоступності прямого підключення до Європи. У цьому режимі обов\'язково вкажіть вірний логін з блоку нижче — він інший)_\\n%7%\\n\\n\\n*Для роботи з Proxy підключенням:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Інструкція](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Інструкція](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 ПК на Windows та macOS: [Proxifier](https://www.proxifier.com/) — [Інструкція](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Інструкція для підключення до VPN:\\n\\n%1%\\nМи надаємо Вам доступ до VPN відразу у всіх наших локаціях! *Кожне посилання нижче = особистий ключ*, а також сторінка з інструкцією до підключення. \\n✅ *Рекомендуємо спочатку додати Vless від Мультипосилання*, у разі якщо працює некоректно — пробуйте інші протоколи або резервний варіант.\\n\\n\\n\\n🔹 *Просте пояснення для новачків:*\\n▪️ Натисніть на [це посилання](%5%) і дотримуйтесь інструкції.\\n\\n\\n\\n🔸 *Для користувачів з досвідом*:\\n🌏 Усі локації в мультипосиланні\\n- %2%\\n\\n*Для деяких клієнтів з РФ:*\\n%3%\\nЦей спосіб для тих, у кого немає прямого підключення до європейських серверів і потрібен обхідний спосіб доступу до них через російський сервер.\\n\\n*Прямий доступ до локації на всіх протоколах:*\\n%4%\\n\\n⚠️ Якщо вказані посилання не відкриваються, увімкніть у налаштуваннях відображення резервного посилання.%7%","vpnInstructionRoute":"\\n\\nℹ️ Користувачі HAPP можуть додавати власні правила маршрутизації. Ви можете скористатися готовими налаштуваннями, наведеними нижче, або створити власні, вказавши потрібні домени та IP-адреси для обходу VPN. \\n%1%","vpnInstructionAll":"Усі протоколи відразу","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Європа","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Ваш особистий ключ доступу до VPN*\\n\\nУсі дані для підключення та список рекомендованих додатків знаходяться за посиланням:  \\n👉 [Відкрити посилання для підключення](%2%)\\n\\n⚠️ *Зберігайте посилання в секреті!* \\nВоно є Вашим персональним ключем авторизації у VPN.\\n\\n✅ Щоб активувати передплату:  \\nСкопіюйте посилання та вставте його в обраний додаток — після цього автоматично завантажаться актуальні налаштування.\\n\\n📦 Хочете керувати всіма замовленнями?  \\nВикористовуйте [🔑 посилання передплати на всі підключення](%4%).\\n\\n───────────────\\n🌐 *Ваші дані для підключення до Proxy:*\\n🌐 *Адреса сервера:* `%6%%7%`\\n🌐 *HTTPS порт:* `%9%`\\n👤 *Ваш логін:* `%10%`\\n🔑 *Пароль для підключення:* `%5%`\\n\\n⚠️ У разі недоступності основного сервера ви можете підключитися до резервного сервера:  \\n%11% *Адреса сервера:* `%12%`  \\n🌐 *HTTPS порт:* `%9%`  \\n👤 *Ваш логін:* `%13%.%10%`  \\n🔑 *Пароль для підключення:* `%5%`\\n\\n💡 Proxy можна використовувати в будь-якому додатку, який підтримує Proxy-з\'єднання.  \\nНаприклад, *для роботи в браузері Chrome* рекомендуємо розширення:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*Інструкції з підключення до VPN:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*Як підключитися до Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows-додатки](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Веб-браузер](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Дані замовлення `%1%`\\n⌛️ Тариф: `%2%`\\n⚙️ Автопродовження: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Увага! Обов\'язково оновіть конфігурацію в налаштуваннях додатка, де використовуєте це замовлення\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Увімкнено","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Вимкнено","faqButtonCommand":"🔑 Наші VPN та Proxy можуть бути застосовані на широкому списку пристроїв і *без обмежень на к-ть підключень* до одного ключа доступу! Налаштування дуже просте і займе не більше двох хвилин Вашого часу, далі все буде зведено лише до кнопки ВКЛ/ВИКЛ.\\n\\n✅ Після того, як Ви оформите своє перше замовлення _(включаючи тестове)_, Вам прийде два повідомлення з деталями та інструкціями для підключення, як до VPN, так і до Proxy.\\n\\n\\n📦 *Якщо у Вас ще немає замовлення, то:*\\n[Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ➛ Особистий кабінет ➛ Зробити нове замовлення ➛ Обирайте відповідний натиснувши на нього та переходьте до деталей тарифу ➛ Замовляємо.\\n\\n\\nЯкщо у Вас виникнуть якісь питання, то зв\'яжіться з нами з додатка, ми обов\'язково допоможемо ❤️","applicationCabinetOrderEditPay":"⌛️ Продовжити замовлення (на %1% днів за %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Замовлення успішно продовжено на %1% днів.\\n\\nСтатус замовлення буде оновлено протягом декількох хвилин.","applicationCabinetOrderEditPayErr":"Не вдалося продовжити замовлення 🙁","applicationCabinetOrderRemove":"Видалити замовлення","applicationCabinetOrderRemoveFailed":"❌ Неможливо видалити активне замовлення!","applicationCabinetOrderRemoveConfirm":"Ви впевнені, що хочете видалити замовлення? 🤨\\n\\nУ разі потреби Ви завжди можете зробити нове замовлення, а якщо у Вас виникли проблеми з замовленням, то зверніться до нашої служби підтримки, і ми з радістю Вам допоможемо!","applicationCabinetOrderRemoveConfirmMessage":"✅ Замовлення було успішно видалено!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Не вдалося видалити замовлення!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Протоколи: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Ваш баланс був поповнений на %1%","applicationAdminDashboard":"📊 Дашборд","applicationAdminUsers":"👥 Користувачі (x%1%)","applicationAdminUsersActive":"🫂 Активні користувачі (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Поточний баланс: %1% | %2% USD","applicationAdminUserRef":"Реферали (x%1% | %2%)","applicationAdminUserRefTarget":"Реферал від","applicationAdminUserOrders":"📦 Замовлення (x%1% всього | x%2% активних)","applicationAdminUserRefs":"💸 Реферали (x%1% всього)","applicationAdminUserPayments":"💸 Платежі (x%1% всього) | Зараховано %2%","applicationAdminUserPaymentsType":"Платіжна система: %1%","applicationAdminUserPaymentsStatus":"Статус платежу: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Скасувати платіж та списати суму з балансу","applicationAdminUserPaymentsStatusSetFailAccept":"Ви впевнені?\\n\\nУ разі підтвердження платіж змінить свій статус, а також з балансу користувача\\n\\n❌ буде списано %1%","applicationAdminUserPaymentsStatusSetOk":"✅ Підтвердити платіж та зарахувати суму на баланс","applicationAdminUserPaymentsStatusSetOkAccept":"Ви впевнені?\\n\\nУ разі підтвердження платіж змінить свій статус, а також баланс користувача\\n\\n✅ буде поповнений на %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Дія виконана успішно ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Не вдалося виконати дію!\\nВідповідь сервера: %1%","applicationAdminUserCreated":"Створений: %1%","applicationAdminUserUpdated":"Змінений: %1%","applicationAdminUserLast":"🚪 Останній вхід: %1%","applicationAdminUserOrdersTotal":"💰 Поповнень балансу на: %1%","applicationAdminUserResetOrderChangeBlock":"Скинути зависле блокування замовлення","applicationAdminUserResetOrderChangeBlockAccept":"Ви впевнені, що хочете скинути зависле блокування замовлення?","applicationAdminUserMedia":"Партнерська програма","applicationAdminUserMediaOn":"Статус: ✅ Партнер","applicationAdminUserMediaOff":"Статус: ❌ НЕ Партнер","applicationAdminUserMediaConfirm":"Статус: ❌ НЕ Партнер","applicationAdminUserMediaTotal":"Сумарний дохід: %1%","applicationAdminUserMediaPayed":"Виплачено партнеру: %1%","applicationAdminUserMediaPayWait":"Необхідно виплатити: %1%","applicationAdminUserMediaPayWaitButton":"💸 Відмітити виплату","applicationAdminUserMediaPayWaitButtonAccept":"Ви впевнені, що хочете відмітити виплату як виконану? Сума транзакції %1% (%2%)\\n\\n💸 Після підтвердження користувачу буде надіслано повідомлення про те, що кошти були виплачені і вони вже в дорозі до нього.","applicationAdminUserMediaPayWaitNotify":"Шановний партнере! \\n\\n💸 Вам була виплачена сума в розмірі *%1%* за партнерською програмою. Кошти вже в дорозі і знадобиться деякий час, щоб вони досягли ваших реквізитів","applicationAdminUserMediaPercent":"%2%%1%% Відсоток від рефералки в дохід","applicationAdminUserMediaPercentDesc":"Цей відсоток вказує скільки від рефералки буде виплачено користувачу як дохід від партнерської програми","applicationAdminUserGiveOrder":"Видати замовлення користувачу","applicationAdminUserGiveOrderDays":"Кількість днів","applicationAdminUserGiveOrderButton":"Видати","applicationAdminUserGiveOrderButtonConfirm":"Ви збираєтеся видати замовлення\\n\\"%1%\\"\\nкористувачу на %2% днів?","applicationAdminUserEditButton":"Керування користувачем","applicationAdminUserEditPromos":"Використані промокоди: %1%","applicationAdminUserEditBalance":"Змінити баланс","applicationAdminUserAddBalance":"Додати на баланс","applicationAdminUserEditBalanceAccept":"Ви впевнені, що хочете змінити баланс користувача?","applicationAdminUserEditBalanceAcceptFail":"Не вдалося змінити баланс. Можливо під час редагування поточний баланс користувача був змінений\\nВідповідь сервера: %1%","applicationAdminUserEditBalanceAcceptOk":"Баланс був успішно змінений","applicationAdminUserEditBalanceChangeNotify":"Адміністратор змінив Ваш баланс на *%1%*.\\n💰 Поточний баланс: *%2%*\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Адміністратор додав *%1%* на Ваш баланс.\\n💰 Поточний баланс: *%2%*\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Пошук","applicationAdminOrders":"🛒 Усі замовлення (x%1%)","applicationAdminOrdersActive":"💳 Активні замовлення (x%1%)","applicationAdminOrdersExpired":"⛔ Зупинені замовлення (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% днів","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Трафік: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Блокування зміни тарифу","applicationAdminOrderReload":"Оновити дані MarzBan","applicationAdminOrderReloadAccept":"⚠️ Оновити дані?\\n\\nЦя дія завантажить дані замовлення з MarzBan та оновить їх у додатку!","applicationAdminOrderReloadAcceptDone":"✅ Запит на оновлення даних надіслано!","applicationAdminOrderReloadAcceptFail":"❌ Не вдалося оновити дані замовлення!","applicationAdminOrderResetChangeTime":"Скинути час зміни тарифу","applicationAdminOrderResetChangeTimeAccept":"Ви впевнені, що хочете це зробити? При підтвердженні користувач зможе змінити тариф на інший","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Запит успішно виконано. Тепер користувач може змінити тариф самостійно","applicationAdminOrderResetTraffic":"Скинути трафік","applicationAdminOrderResetTrafficAccept":"⚠️ Скасувати замовлення?\\n\\nКористувач не отримає повідомлення!","applicationAdminOrderResetTrafficAcceptOk":"✅ Готово","applicationAdminOrderReturn":"Скасувати замовлення","applicationAdminOrderReturnAccept":"⚠️ Скасувати замовлення?\\n\\nКористувач ОТРИМАЄ назад кошти за весь НЕВИКОРИСТАНИЙ період!","applicationAdminOrderReturnAcceptDone":"⚠️ Замовлення видалено. Користувачу повернено %1% на баланс.","applicationAdminOrderReturnNotify":"⚠️ Адміністратор скасував Ваше замовлення\\n🛒 `%1%` та повернув Вам *%2%* на баланс.\\nВи можете зробити нове замовлення, щоб завжди залишатися на зв\'язку з вільним Інтернетом, зайшовши в додаток.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ Зробити нове замовлення","applicationAdminOrderRemove":"Видалити замовлення","applicationAdminOrderRemoveAccept":"⚠️ Видалити замовлення?\\n\\nЯкщо замовлення все ще активне, кошти НЕ будуть повернені!","applicationAdminOrderRemoveAcceptDone":"Замовлення видалено","applicationAdminOrderAddTime":"Продовжити замовлення (%1%дн.)","applicationAdminOrderAddTimeAccept":"⚠️ Продовжити замовлення (%1%дн.)?\\n\\nЦя дія НЕ змінить баланс користувача!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Адміністратор продовжив Ваше замовлення\\n🛒 `%1%` на *%2% дн.* 📆\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ Натисніть на вказане замовлення для ознайомлення з деталями.","applicationAdminPromos":"🎁 Промокоди (x%1%)","applicationAdminPaymentsLast":"⏰ Останні платежі (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Останні успішні платежі (x%1%)","applicationAdminPromosCreate":"Створити промокод","applicationAdminPromoID":"Назва: %1%","applicationAdminPromoUSED":"Використань: %1%","applicationAdminPromoCOUNT_USE":"Ліміт: %1%","applicationAdminPromoBALANCE":"Сума: %1%","applicationAdminPromoEditID":"Назва","applicationAdminPromoEditCOUNT_USE":"Кількість застосувань (макс)","applicationAdminPromoEditAMOUNT":"Сума в $","applicationAdminPromoEditCATEGORY":"Категорія","applicationAdminPromoEditCATEGORYEmpty":"Звичайний / без категорії","applicationAdminPromoEditCATEGORYMedia":"Медіа промо","applicationAdminPromoEditCATEGORYNew":"Для новачків","applicationAdminPromoEditSave":"Зберегти промокод","applicationAdminPromoEditPromo":"Змінити","applicationAdminPromoCategory":"Категорія: %1%","applicationAdminPromoSendUseList":"Список тих, хто застосував","applicationAdminPromoRemovePromo":"Видалити","applicationAdminPromoRemovePromoAccept":"Ви впевнені?","applicationAdminAddNode":"Додавання нової ноди","applicationAdminAddNodeDesc":"Цей розділ дозволить у 2 кліки розгорнути весь проєкт на новій ноді. Це лише встановить все, що потрібно, але не додаватиме ноду до списку нод","applicationAdminAddNodeIP":"IP Адреса сервера","applicationAdminAddNodeHostname":"Піддомен сервера (s1, s2 тощо, без крапки та іншого)","applicationAdminAddNodeHostnameDesc":"Вказаний піддомен автоматично пропишеться в CloudFlare з усіма параметрами для роботи з нашим сервісом. Якщо вказати вже існуючий — то буде перезаписаний, тож уважніше","applicationAdminAddNodeUsername":"Ім\'я користувача (root)","applicationAdminAddNodePassword":"Пароль користувача (root)","applicationAdminAddNodePasswordDesc":"Якщо не вказати пароль — буде використовуватися авторизація за SSH ключем. У цьому випадку переконайтеся, що Ваш SSH ключ доданий у ноду і має доступ до сервера","applicationAdminAddNodePasswordKeyInfo":"Увага. Пароль не вказано, буде використовуватися авторизація за SSH ключем. Переконайтеся, що Ваш SSH ключ доданий у ноду і має доступ до сервера","applicationAdminAddNodeSshPort":"SSH Порт (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Для роботи потрібні такі права: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Натисніть щоб отримати токен","applicationAdminAddNodeStart":"Виконати деплой","applicationAdminAddNodeStarted":"Процес деплою запущений, не закривайте сторінку і дочекайтеся виконання. Якщо протягом 5 хвилин процес не буде завершений — швидше за все щось зависло(","applicationAdminAddNodeDoneOk":"Деплой завершено успішно","applicationAdminAddNodeDoneFail":"Помилка: %1%","applicationAdminAddNodeClearLogs":"Очистити логи","applicationAdminInstallNode":"Розгортання ноди","applicationAdminCoreSettings":"Налаштування ядра","applicationAdminCoreSettingsDesc":"Цей розділ дозволяє налаштувати базові параметри системи. Параметри застосовуються на льоту, без перезапуску ядра","applicationAdminSaveCoreSettings":"Зберегти налаштування","applicationAdminCoreSettingsSaved":"Налаштування успішно збережені","applicationAdminCoreName.projectName":"Назва проєкту","applicationAdminCoreName.projectMain":"Основний домен","applicationAdminCoreName.projectBot":"Логін бота проєкту","applicationAdminCoreDesc.projectBot":"Через якого бота відбувається взаємодія з користувачами. Вкажіть логін без @","applicationAdminCoreName.admins":"ID Адміністраторів","applicationAdminCoreDesc.admins":"ID вказуйте суворо через кому, і не використовуйте пробіли. Наприклад: `123456789,987654321`. І не видаліть себе випадково)","applicationAdminCoreName.backup_admins":"ID Адміністраторів для отримання бекапу","applicationAdminCoreDesc.backup_admins":"Цим адміністраторам бот надсилатиме бекапи в особисті повідомлення. ID вказуйте суворо через кому, і не використовуйте пробіли. Наприклад: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Максимальний термін продовження замовлення (в місяцях)","applicationAdminCoreDesc.order_end_limit_month":"Користувач не зможе продовжити своє замовлення на термін більше, ніж вказано","applicationAdminSendMessage":"Розсилка повідомлень","applicationAdminSendMessageTargets":"Кількість людей, які отримають повідомлення","applicationAdminSendMessageType":"Тип фільтрації користувачів","applicationAdminSendMessageTypeAll":"Усі користувачі","applicationAdminSendMessageTypeOrders":"Певні замовлення (будь-які)","applicationAdminSendMessageTypeOrdersActive":"Певні замовлення (активні)","applicationAdminSendMessageTypeHas":"Є хоч 1 замовлення","applicationAdminSendMessageTypeNotHas":"Немає жодних замовлень","applicationAdminSendMessageTypeHasActive":"Є хоч 1 активне замовлення","applicationAdminSendMessageTypeHasUnActive":"Є хоч 1 НЕактивне замовлення","applicationBalanceErr":"Виникла помилка при формуванні платежу: %1%","applicationBalanceErrBalanceLimit":"На вашому рахунку вже максимально допустима кількість коштів (%1%)","applicationBalanceErrBalanceLimitButton":"Недоступно","applicationBalanceErrData":"Платіжна система не змогла сформувати платіж. Будь ласка, спробуйте пізніше.","applicationBalanceErrNetwork":"Мережева помилка. Будь ласка, спробуйте пізніше.","applicationBalanceErrCurrency":"Помилка валюти. Будь ласка, спробуйте пізніше.","applicationBalanceErrAuth":"Помилка авторизації","applicationBalanceErrPaymentLink":"Не вдалося отримати посилання на платіж","applicationBalanceSettingsTitle":"Вибір валюти","applicationBalanceTitle":"Розділ поповнення балансу","applicationBalanceSelect":"Оберіть валюту для відображення","applicationBalanceEmail":"Ваш email","applicationBalancePlatform":"Платіжна платформа","applicationBalanceAmount":"Сума поповнення (в %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Підсумкова сума оплати: ≈%1%</font>\\n\\n<font color=#F28100>Якщо ви чийсь реферал,\\nто на баланс повернеться %2% у вигляді 20% кешбеку!</font>","applicationBalanceAmountLimit":"Мінімальна сума: %1%\\nМаксимальна сума: %2%\\n\\n💵 <font color=#00AE09>Ваш спосіб оплати: %4%</font>\\nКомісія платіжної системи: %3%%\\n\\nПісля самої оплати баланс зараховується автоматично протягом декількох хвилин, також Вам прийде повідомлення про статус платежу з іншими деталями на випадок звернення до служби підтримки.","applicationBalanceAmountDesc":"Поповнення відбувається через сервіс %1%","applicationBalanceAmountButton":"Перейти на сторінку оплати","applicationBalanceAmountButtonLoading":"Завантаження...","applicationBalanceAmountButtonErr":"❌ Невірно вказана сума ❌","applicationBalanceCurrency":"Метод оплати","applicationBalanceCurrencyDesc":"Комісія платіжної системи: ≈%1%%","applicationServersTitle":"Статус серверів","paymentCompleteNotify":"🎉 Ваш баланс був успішно поповнений на <b>%1%</b>.\\n\\nID платежу: <b>%2%</b>\\n(Він знадобиться у разі звернення до <a href=\\"https://t.me/rocketman_vpn\\">служби підтримки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyRef":"🎉 Ваш баланс був успішно поповнений на <b>%1%</b>.\\nОскільки Ви є рефералом @%4% у нашому сервісі, ми нарахували бонус у розмірі <b>%3%</b> (%5%%)\\n\\nID платежу: <b>%2%</b>\\n(Він знадобиться у разі звернення до <a href=\\"https://t.me/rocketman_vpn\\">служби підтримки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyRefHost":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> (%3%%) за поповнення балансу Вашим рефералом @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyAdmin":"💵 Користувач %1% [UID: %7%] поповнив баланс на <b>%2%</b>.\\n💰 У чистий прибуток проєкту зараховано +<b>%5%</b>\\n\\nПлатіжна система: <b>%6%</b>\\nID платежу: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Увага ❗️\\nПо платежу `%1%` був сформований запит на повернення коштів.\\n\\nОскільки вони були повернені Вам у повному обсязі, з балансу в додатку було списано *%2%*.\\n\\nУ разі виникнення питань зверніться до [служби підтримки](https://t.me/rocketman_vpn), ми обов\'язково допоможемо!\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Ноди","admin-routing":"🔀 Роутинг","admin-presets":"📋 Пресети","admin-firewall":"📜 Записи фаєрвола (x%1%)","admin-firewall_add":"Новий запис фаєрвола","admin-nav-messages":"Розсилка","admin-nav-firewall":"Фаєрвол","admin-nav-logs":"Логи адміністрації","logRecord-title":"📊 Логи адміністрації (x%1%)","logRecord-title-user":"📜 Логи користувача (x%1%)","logRecord-log-time":"Створений: %1%","logRecord-log-who":"Хто","logRecord-log-target":"Ціль","logRecord-log-reason":"Текст: %1%","logRecord-setPaymentStatus":"Зміна статусу платежу %1%","logRecord-removePromo":"Видалення промокоду %1%","logRecord-editPromo":"Редагування промокоду %1%","logRecord-editBalance":"Редагування балансу (%1%$ -> %2%$)","logRecord-returnOrder":"Скасування замовлення %1% (%2%$)","logRecord-addOrder":"Видача замовлення %1%","logRecord-payOrder":"Продовження замовлення %1% на %2% днів","logRecord-partnerNotify":"Виплата партнеру %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"СБП (Система швидких платежів)","paymentMethodCrypto":"Криптовалюта","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Не вдалося виявити дані користувача для формування посилання. Мабуть, цей користувач заблокував нашого бота 😐","partner_title":"🏆 Партнерська програма 🏆","partner_desc":"Ви є учасником партнерської програми. Крім основного бонусу за реферала Ви також отримуватимете фінансові відрахування.\\n\\nВаша поточна ставка — %1%% від реферального балансу\\n\\nВсього Ви заробили: %2%\\nПоточний баланс: %3%","ref_title":"🏆 Реферальна система 🏆","ref_desc":"Запрошуйте друзів та знайомих до нашого сервісу та отримуйте бонуси на свій баланс!\\n\\n<font color=#2DA618>Від кожного реферала Ви отримаєте по <font color=#54E13B>%1%</font> за їхні перші замовлення та <font color=#54E13B>%2%%</font> від усіх поповнень їхнього балансу.</font>\\n\\n<font color=#00B7B7>Усі Ваші реферали отримають <font color=#15DBDB>%3%</font> бонусом після першого замовлення (включаючи тестове) та <font color=#15DBDB>%4%%</font> кешбеку від усіх своїх майбутніх поповнень.</font>\\n\\nТаким чином ця система вигідна і для Вас, і для Ваших рефералів 😉","ref_stats":"Ваша статистика","ref_stats_data":"Кількість приведених рефералів: %1%\\nОтримали бонусом на баланс: %2%","ref_link_text":"Ваші дані реферальної системи","ref_link_text_copy":"📋 Посилання+текст","ref_only_link_copy":"🔗 Посилання","ref_link_text_copy_sendText":"Привіт! Я користуюся зручним способом для захисту своїх даних в інтернеті та сміливо рекомендую його тобі 😎\\n\\nКрім того, перейшовши саме за моїм посиланням, ти отримаєш бонусом %1% після першого замовлення (включаючи тестове) та довічний кешбек у %2%% від усіх поповнень балансу 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Ваше реферальне посилання та додатковий текст були скопійовані в буфер обміну.\\n\\nВикористовуйте це для запрошення друзів та знайомих у наш сервіс, щоб отримувати вигоду спільно 😎","ref_only_link_copy_alert":"🔗 Ваше реферальне посилання було скопійоване в буфер обміну.\\n\\nВикористовуйте його для запрошення друзів та знайомих у наш сервіс, щоб отримувати вигоду спільно 😎","ref_link_text_share":"💌 Поділитися","ref_link_text_share_message":"Привіт! Я користуюся зручним способом для захисту своїх даних в інтернеті та сміливо рекомендую его тобі 😎\\n\\nКрім того, перейшовши саме за моїм посиланням, ти отримаєш бонусом %1% після першого замовлення (включаючи тестове) та довічний кешбек у %2%% від усіх поповнень балансу 🎉\\n","ref_message_personal":"Ви не можете зареєструватися за своїм реферальним посиланням 😐","ref_message":"🎁 Реферальна система:\\nВи успішно зареєструвалися як реферал користувача @%1% 🎉\\n\\nВи отримаєте бонус у розмірі <b>%2%</b> при першому замовленні (включаючи тестове), а також довічний кешбек у розмірі <b>%3%%</b> при кожному поповненні балансу!","ref_message_host":"🎁 Реферальна система:\\n🎉 Користувач @%1% зареєструвався як Ваш новий реферал 🎉\\n\\nВи отримаєте бонус у розмірі <b>%2%</b> при першому його замовленні (включаючи тестове), а також кешбек у розмірі <b>%3%%</b> від кожного його поповнення балансу.","ref_message_order":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> на свій баланс","ref_message_order_host":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> на свій баланс від користувача @%2%","traffic_limit_notify_close":"⚠️ У Вас закінчується трафік на замовленні `%1%` з тарифом `%2%`! Якщо це повідомлення з\'являтиметься досить часто, рекомендуємо задуматися про зміну тарифу на більш просунутий, щоб завжди залишатися на зв\'язку ❤️\\n\\n🚀 Зробити це Ви зможете, [запустивши додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на потрібне замовлення ⇒ ♻️ Змінити тариф на інший ♻️","traffic_limit_notify_end":"❗️ УВАГА ❗️ У Вас закінчився весь трафік на замовленні `%1%` з тарифом `%2%`. Його скидання відбудеться %3%. Але якщо Ви хочете завжди залишатися на зв\'язку, подумайте про зміну тарифу на більш просунутий.\\n\\n🚀 Зробити це Ви зможете, [запустивши додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на потрібне замовлення ⇒ ♻️ Змінити тариф на інший ♻️","traffic_limit_notify_restore":"🎉 У замовлення `%1%` з тарифом `%2%` була скинута статистика використаного трафіку. Тепер він знову доступний у повному обсязі :)\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Застосувати промокод","example":"Приклад","deleteMessageFailed":"❌ Не вдалося видалити повідомлення. Можливо, воно занадто старе або вже видалене.","cryptoPayTitle":"Оплата через криптовалюту","cryptoPayUserId":"ID користувача","cryptoPayAmount":"Сума до оплати (USDT)","cryptoPayInstruction":"Переведіть вказану суму в USDT на надану адресу","cryptoPayLoading":"Завантаження реквізитів...","cryptoPayErrorNoParam":"Не передано параметр crypto_id у посиланні.","cryptoPayErrorInvalidData":"Некоректні дані для оплати.","cryptoPayErrorParse":"Помилка при обробці даних для оплати. Спробуйте оновити сторінку або зверніться в підтримку.","cryptoPayWallet":"Адреса гаманця для переказу","cryptoPayNetwork":"Мережа (блокчейн)","cryptoPayCopy":"Скопіювати","cryptoPayCopyAmountAlert":"Сума скопійована в буфер обміну!","cryptoPayCopyWalletAlert":"Адреса гаманця скопійована в буфер обміну!","cryptoPayWarning":"УВАЖНО перевірте реквізити та суму перед оплатою! У разі помилки ми не можемо гарантувати зарахування коштів.","telegramPayment":"✅ Для Вас був сформований рахунок на оплату\\n\\n⚖️ Сума оплати: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 ID користувача: <b>%7%</b>\\n📋 ID платежу: <b>%6%</b>\\n\\n🔗 Для оплати перейдіть за посиланням: %5%","orderManipulationBlock":"Ваше минуле замовлення все ще в обробці. Будь ласка, зачекайте його завершення або зверніться до служби підтримки для отримання допомоги.","subPage.orderInfo":"Нижче представлені всі доступні методи підключення для Вашого замовлення через цей додаток","subPage.userInfo":"Нижче представлені всі доступні методи підключення для всіх Ваших активних замовлень через цей додаток","subPage.orderId":"🛒 ID Замовлення: %1%\\n⬇️ Оберіть регіон кінцевого підключення:","subPage.nodeInfo":"📍 Точка обходу: %1%\\n⚠️ Це означає, що спочатку весь трафік йтиме через неї для маскування.","subPage.protocolInfo":"Протокол підключення: %1%","subPage.allTitle":"Усі замовлення","subPage.expiredNotifyList":"❌ Термін дії передплати закінчився\\nПродовжити VPN у боті\\n%1%","ping.admin.initOk":"✅ Система ініціалізована, всі ноди доступні в штатному режимі.","ping.admin.initFail":"❌ Система ініціалізована, але деякі ноди не доступні:\\n\\n%1%","speedtest.admin.failTest":"❌ Тест швидкості не пройдений. Будь ласка, перевірте працездатність.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Зафіксована низька швидкість з\'єднання (%2% Mbps download, %3% Mbps upload). Будь ласка, перевірте працездатність.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Нода відновила нормальну швидкість з\'єднання (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ На сервері виявлені проблеми зі швидкістю з\'єднання","applicationServersSpeedtestLastSpeed":"Останній замір швидкості (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Попередній замір швидкості (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ На сервері ще не було зроблено замірів швидкості","applicationServersPingIssueDetected":"❌ Сервер не відповідає на пінг-запити","actionUpdateStartNodes":"⚠️ Запущена процедура оновлення нод (%1%), через деякий час ноди будуть перезапущені. Після завершення робіт буде надіслано додаткове повідомлення (якщо не було надіслано — можливо, підвис github action і все гаразд, але можуть бути і проблеми)","actionUpdateStartHeader":"Запущена процедура оновлення:","actionUpdateStartSite":"• Оновлюється головна сторінка проєкту","actionUpdateStartApp":"• Оновлюється бекенд-додаток","actionUpdateStartProxy":"• Оновлюється проксі або xray служба (Ноди: %1%)","actionUpdateStartMTProto":"• Оновлюється сервер MTProto","actionUpdateStartFirewall":"• Оновлюємо фаєрвол (Ноди: %1%)","actionUpdateStartBackup":"• Оновлюємо дочірній API інтерфейс (Ноди: %1%)","actionUpdateStartFooter":"Через деякий час ноди будуть перезапущені. Після завершення робіт буде надіслано повідомлення.","actionUpdateCompletedNodes":"✅ Процедура оновлення нод (%1%) завершена, ноди перезапущені і вже повинні бути активні","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Швидкий та безпечний","mtproto.subtitle.2":"доступ до Telegram","mtproto.description.1":"Безкоштовний проксі-сервер для стабільного підключення до Telegram.","mtproto.description.2":"Без реєстрації, без обмежень, з повною конфіденційністю.","button.connect":"Підключити проксі","button.copy":"Скопіювати посилання","button.copied":"Скопійовано","link.label":"Посилання для підключення вручну","feature.encryption.title":"Наскрізне шифрування","feature.encryption.description":"Ваші повідомлення залишаються конфіденційними. Ми не маємо доступу до вашого листування.","feature.free.title":"Без обмежень","feature.free.description":"Безкоштовний доступ без реєстрації та лімітів на трафік.","feature.rocketman.title":"Більше можливостей","feature.rocketman.description":"Цей проксі працює тільки для Telegram. Для повноцінного захисту використовуйте RocketMan-VPN.","rocketman.title":"RocketMan VPN — це Ваш надійний друг","rocketman.description":"Даний MTProto проксі є додатковим проєктом — RocketMan VPN. З нами Ви отримаєте повний захист інтернет-з\'єднання у всіх додатках та улюблених сервісах. Спробуйте безкоштовно те, що ми надаємо для своїх клієнтів, та оцініть якість!","rocketman.button":"Відкрити RocketMan VPN","howto.title":"Як підключитися?","howto.step1.title":"Натисніть на кнопку \\"Підключити проксі\\"","howto.step1.description":"Або скопіюйте посилання та підключіться вручну","howto.step2.title":"Відкрийте Telegram","howto.step2.description":"Посилання автоматично запустить додаток","howto.step3.title":"Підтвердіть","howto.step3.description":"Натисніть «Підключити» в діалоговому вікні","web.orders":"Мої замовлення","web.settings":"Налаштування","web.exit":"Вихід","web.back":"← Назад","settings.accountInfo":"Інформація про акаунт","settings.language":"Мова","settings.currency":"Валюта відображення","settings.currencyDesc":"Оберіть валюту для відображення цін та балансу в додатку.","settings.webCredentials":"Дані для входу на сайт","settings.webCredentialsDesc":"Ці дані використовуються для входу у веб-інтерфейс поза Telegram. Хоча ми не обмежуємо вас у виборі пароля, але наполегливо рекомендуємо вказувати складний","settings.login":"Логін","settings.loginPlaceholder":"Введіть новий логін","settings.newPassword":"Новий пароль","settings.passwordPlaceholder":"Не менше %1% символів","settings.repeatPassword":"Повторіть пароль","settings.repeatPasswordPlaceholder":"Повторіть новий пароль","settings.passwordMismatch":"Паролі не збігаються","settings.saved":"Збережено!","settings.saveError":"Помилка збереження","settings.saving":"Збереження…","settings.saveCredentials":"Зберегти дані","settings.show":"Показати","settings.hide":"Приховати","settings.copy":"Копіювати","settings.reset":"Скинути","settings.apiKeyHint":"Використовуйте API-ключ для входу у <a href=\\"https://%1%\\" target=\'_blank\'>веб-інтерфейс</a> без Telegram, а також для інтеграції з іншими нашими продуктами. Не передавайте його третім особам, цей ключ надає повний доступ до вашого акаунту","settings.referral":"Реферал (ID запрошувача)","settings.referralDesc":"Якщо ви пропустили реферальне посилання, ви можете вказати ID запрошувача тут. Застосовується лише один раз.","settings.referralApplied":"ID запрошувача","settings.referralAppliedAlert":"ID запрошувача скопійовано в буфер обміну.","settings.referralHostId":"Ваш ID запрошувача","settings.referralHostIdPlaceholder":"Введіть ID користувача (тільки цифри)","settings.referralHostIdInvalid":"Невірний формат ID. Використовуйте тільки цифри.","settings.referralApply":"Застосувати ID запрошувача","settings.referralSaved":"Реферал застосовано!","settings.referralErr.already_applied":"Реферал вже був застосований.","settings.referralErr.invalid_ref_host":"Невірний ID запрошувача.","settings.referralErr.same_account":"Неможна використовувати власний ID як реферал.","login.tabCredentials":"Логін та пароль","login.tabApiKey":"API-ключ","login.tabRegister":"Реєстрація","login.labelLogin":"Логін","login.labelPassword":"Пароль","login.labelConfirmPassword":"Підтвердження пароля","login.labelApiKey":"API-ключ","login.placeholderLogin":"Введіть логін","login.placeholderPassword":"Введіть пароль","login.placeholderConfirmPassword":"Підтвердіть пароль","login.placeholderApiKey":"Введіть API-ключ","login.signIn":"Увійти","login.signInApiKey":"Увійти за API-ключем","login.signUp":"Зареєструватися","login.signingIn":"Входимо…","login.signingUp":"Реєструємося…","login.orUseApiKey":"або увійдіть за API-ключем","login.orUseCredentials":"або увійдіть за логіном та паролем","login.switchToApiKey":"Увійти за API-ключем","login.switchToCredentials":"Увійти за логіном та паролем","login.errLoginRequired":"Введіть логін та пароль","login.errPasswordRequired":"Введіть пароль","login.errConfirmPasswordRequired":"Підтвердіть пароль","login.errPasswordMismatch":"Паролі не збігаються","login.errApiKeyRequired":"Введіть API-ключ","login.errIncorrect":"Невірний логін або пароль","login.errInvalidKey":"Невірний API-ключ","login.errServer":"Помилка сервера, спробуйте ще раз","login.errRegistration":"Помилка реєстрації","login.tabTelegram":"Через Telegram","login.tg.title":"Вхід через Telegram","login.tg.instruction":"1. Надішліть команду нижче боту <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a>\\n2. Після відправки натисніть кнопку «Підтвердити вхід»","login.tg.commandLabel":"Команда для бота:","login.tg.showCommand":"Показати","login.tg.hideCommand":"Приховати","login.tg.copyCommand":"Копіювати","login.tg.copied":"Команда скопійована!","login.tg.timerLabel":"Код дійсний: %1%","login.tg.timerExpired":"Термін дії коду закінчився","login.tg.verifyButton":"Підтвердити вхід","login.tg.verifying":"Перевіряємо…","login.tg.requestNew":"Запросити новий код","login.tg.loading":"Генеруємо код…","login.tg.enter_correct":"Особистість підтверджена. Поверніться на сайт і натисніть на кнопку \\"%1%\\" для завершення","login.tg.enter_fail":"Не вдалося виконати дію. Переконайтеся, що вказаний ключ коректний, а термін дії не закінчився","login.tg.errNotSent":"Не вдалося підтвердити вхід. Переконайтеся, що ви надіслали команду боту, і спробуйте ще раз. Якщо код закінчився — запросіть новий.","lang.ru":"Російська","lang.en":"Англійська","lang.uk":"Українська","footer.info":"MTProto проксі працює тільки з офіційними додатками Telegram","instructionModalTitleVpn":"Інструкція з підключення VPN","instructionModalTitleProxy":"Інструкція з підключення Proxy","instructionModalSendToTg":"📩 Надіслати в Telegram","instructionModalSentToTg":"Інструкція надіслана у ваші особисті повідомлення Telegram","settings.name":"Ваше ім\'я","settings.nameDesc":"Вкажіть ім\'я для персоналізації звернень у додатку. Воно є публічним і може використовуватися для відображення іншим користувачам","settings.namePlaceholder":"Введіть ім\'я (3-15 символів)","settings.nameInvalid":"Допускаються лише кирилиця, латиниця, цифри та пробіли (3-15 символів)","settings.promoTitle":"Активація промокоду","settings.promoDesc":"Якщо у Вас є промокод, введіть його тут, щоб отримати приємний бонус на Ваш баланс.","settings.promoPlaceholder":"Введіть промокод","settings.promoApply":"Застосувати промокод","settings.promoApplied":"Промокод успішно застосовано!","adminDashboardTitle":"Статистика (Дашборд)","adminDashboardActiveOrders":"Активність підписок","adminDashboardActiveLabel":"Активні","adminDashboardExpiredLabel":"Закінчилися","adminDashboardOrdersByTariff":"Підписки за Тарифами","adminDashboardPayments":"Платежі","adminDashboardTrial":"Тестовий період","adminDashboardLang":"Мова","adminDashboardCurrency":"Валюта","adminDashboardActivity":"Активність користувачів","adminDashboardOrdersPerUser":"Кількість підписок на юзера","adminDashboardRefIncome":"Дохід з рефералів","applicationAdminBackButton":"Назад","settings.passkeys.title":"Ключі доступу (Passkeys)","settings.passkeys.desc":"Додайте до 5 пристроїв для швидкого та безпечного входу без пароля за допомогою біометрії або фізичних ключів.","settings.passkeys.add":"➕ Додати новий ключ","settings.passkeys.name":"Назва пристрою","settings.passkeys.name_placeholder":"Напр: iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"У вас поки немає доданих ключів доступу","settings.passkeys.delete_confirm":"Ви впевнені, що хочете видалити цей ключ доступу? Ви більше не зможете увійти за його допомогою.","settings.passkeys.limit_reached":"Досягнуто ліміт ключів (максимум 5)","settings.passkeys.add_success":"Ключ доступу успішно додано!","settings.passkeys.add_error":"Не вдалося додати ключ доступу","login.tabPasskey":"За ключем","login.passkey.btn":"Увійти через Passkey","login.passkey.error":"Помилка авторизації через ключ доступу","login.passkey.not_supported":"Ваш браузер або пристрій не підтримують вхід через Passkey","admin.bulkRenewal.button":"📅 Масове продовження замовлень","admin.bulkRenewal.title":"📅 Масове продовження замовлень","admin.bulkRenewal.afterDateLabel":"Враховувати замовлення, термін яких закінчився після зазначеної дати (або ще не закінчився). Часовий пояс: %1%","admin.bulkRenewal.daysLabel":"Кількість днів для продовження","admin.bulkRenewal.ordersCount":"Замовлень буде продовжено","admin.bulkRenewal.usersCount":"Унікальних користувачів","admin.bulkRenewal.applying":"⏳ Застосовується...","admin.bulkRenewal.done":"✅ Готово!","admin.bulkRenewal.apply":"📅 Продовжити %1% замовл. на %2% дн.","admin.bulkRenewal.notifyUser":"📅 Адміністратор продовжив ваші активні замовлення на %1% дн. Список замовлень: %2%","admin.bulkRenewal.notifyUsers":"Повідомити користувачів у Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ При великій кількості користувачів сповіщення можуть працювати нестабільно або із затримкою"}');
 ;// ./src/lang/shared.json
 const shared_namespaceObject = {};
 ;// ./src/lang/index.ts
@@ -13194,7 +15527,70 @@ const APPLICATIONS_CATALOG = [
   }
 ];
 
+;// ./src/shared/referral.ts
+
+const REFERRAL_STORAGE_KEY = "rocketman_web_referral_host";
+const REFERRAL_START_PREFIX = "ref_";
+function getReferralHostIdFromStartParam(start) {
+  if (!start || typeof start !== "string") return null;
+  if (!start.startsWith(REFERRAL_START_PREFIX)) return null;
+  const hostId = start.slice(REFERRAL_START_PREFIX.length);
+  if (!hostId) return null;
+  return hostId;
+}
+function readSavedReferralHostId() {
+  try {
+    const v = localStorage.getItem(REFERRAL_STORAGE_KEY);
+    return v || null;
+  } catch (e) {
+    return null;
+  }
+}
+function saveReferralHostIdOnce(hostId) {
+  if (!hostId) return;
+  try {
+    const existing = localStorage.getItem(REFERRAL_STORAGE_KEY);
+    if (!existing) localStorage.setItem(REFERRAL_STORAGE_KEY, hostId);
+  } catch (e) {
+  }
+}
+function clearSavedReferralHostId() {
+  try {
+    localStorage.removeItem(REFERRAL_STORAGE_KEY);
+  } catch (e) {
+  }
+}
+
+;// ./src/frontend/modules/landing.links.ts
+
+
+
+
+const getReferralStart = () => {
+  const url = new URL(location.href);
+  const savedRef = readSavedReferralHostId();
+  const ref = url.searchParams.has("start") ? `?start=${url.searchParams.get("start")}` : savedRef ? `?start=${REFERRAL_START_PREFIX}${savedRef}` : "";
+  if (url.searchParams.has("start")) {
+    url.searchParams.delete("start");
+    history.replaceState(null, "", url.toString());
+  }
+  return ref;
+};
+const GetApplicationHostname = () => {
+  if (typeof window !== "undefined" && window.useMirror)
+    return MIRROR_APP_URL;
+  return "rocketman-vpn.com";
+};
+function getLandingSiteConnectUrl() {
+  if (false) {}
+  return `https://${GetApplicationHostname()}/application${getReferralStart()}`;
+}
+function getLandingTelegramConnectUrl() {
+  return `https://t.me/${Core.GetConfigValue("projectBot")}/${getReferralStart()}`;
+}
+
 ;// ./src/frontend/pages/index.tsx
+
 
 
 
@@ -13244,6 +15640,57 @@ const FEATURES_LIST = [
     text: "features4Text"
   }
 ];
+const TRUST_STRIP = [
+  { value: "landingTrust1Value", label: "landingTrust1Label" },
+  { value: "landingTrust2Value", label: "landingTrust2Label" },
+  { value: "landingTrust3Value", label: "landingTrust3Label" },
+  { value: "landingTrust4Value", label: "landingTrust4Label" }
+];
+const HOW_STEPS = [
+  { title: "landingHowStep1Title", text: "landingHowStep1Text" },
+  { title: "landingHowStep2Title", text: "landingHowStep2Text" },
+  { title: "landingHowStep3Title", text: "landingHowStep3Text" }
+];
+const COMPARE_ROWS = [
+  {
+    label: "landingCompareRow1",
+    bad: "landingCompareBad1",
+    good: "landingCompareGood1"
+  },
+  {
+    label: "landingCompareRow2",
+    bad: "landingCompareBad2",
+    good: "landingCompareGood2"
+  },
+  {
+    label: "landingCompareRow3",
+    bad: "landingCompareBad3",
+    good: "landingCompareGood3"
+  },
+  {
+    label: "landingCompareRow4",
+    bad: "landingCompareBad4",
+    good: "landingCompareGood4"
+  },
+  {
+    label: "landingCompareRow5",
+    bad: "landingCompareBad5",
+    good: "landingCompareGood5"
+  },
+  {
+    label: "landingCompareRow6",
+    bad: "landingCompareBad6",
+    good: "landingCompareGood6"
+  },
+  {
+    label: "landingCompareRow7",
+    bad: "landingCompareBad7",
+    good: "landingCompareGood7"
+  }
+];
+const FEATURED_TARIF_ID = "middle";
+const TGPROXY_URL = "https://tgproxy.work/";
+const TGPROXY_LOGO_URL = "https://tgproxy.work/logo.png";
 class LandingPage extends BasePage {
   constructor(props) {
     super(props);
@@ -13251,7 +15698,9 @@ class LandingPage extends BasePage {
     history.pushState({}, null, "/");
   }
   render() {
-    return /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("section", { id: "about" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("h2", null, this.LangString("landingFeaturesTitle")), /* @__PURE__ */ react.createElement("div", { className: "features" }, FEATURES_LIST.map((feature) => {
+    const siteConnectUrl = getLandingSiteConnectUrl();
+    const telegramConnectUrl = getLandingTelegramConnectUrl();
+    return /* @__PURE__ */ react.createElement("div", { className: "landing-page" }, /* @__PURE__ */ react.createElement("section", { className: "trust-strip", "aria-label": "trust metrics" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("div", { className: "trust-strip__grid" }, TRUST_STRIP.map((item) => /* @__PURE__ */ react.createElement("div", { className: "trust-strip__item", key: item.label }, /* @__PURE__ */ react.createElement("span", { className: "trust-strip__value" }, this.LangString(item.value)), /* @__PURE__ */ react.createElement("span", { className: "trust-strip__label" }, this.LangString(item.label))))))), /* @__PURE__ */ react.createElement("section", { id: "about", className: "landing-section" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("div", { className: "section-header" }, /* @__PURE__ */ react.createElement("h2", null, this.LangString("landingFeaturesTitle")), /* @__PURE__ */ react.createElement("p", { className: "section-lead" }, this.LangString("landingFeaturesLead"))), /* @__PURE__ */ react.createElement("div", { className: "features" }, FEATURES_LIST.map((feature) => {
       return /* @__PURE__ */ react.createElement("div", { className: "feature", key: feature.icon }, /* @__PURE__ */ react.createElement(
         "img",
         {
@@ -13259,30 +15708,60 @@ class LandingPage extends BasePage {
           alt: this.LangString(feature.title)
         }
       ), /* @__PURE__ */ react.createElement("h3", null, this.LangString(feature.title)), /* @__PURE__ */ react.createElement("p", null, this.LangString(feature.text)));
-    })))), /* @__PURE__ */ react.createElement("section", { id: "pricing" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("h2", null, this.LangString("landingTarifs")), /* @__PURE__ */ react.createElement("div", { className: "plans" }, TARIF_LIST.map((tarif) => {
+    })))), /* @__PURE__ */ react.createElement("section", { id: "compare", className: "landing-section compare-section" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("div", { className: "section-header" }, /* @__PURE__ */ react.createElement("h2", null, this.LangString("landingCompareTitle")), /* @__PURE__ */ react.createElement("p", { className: "section-lead section-lead--split" }, /* @__PURE__ */ react.createElement("span", null, this.LangString("landingCompareLead1")), /* @__PURE__ */ react.createElement("span", null, this.LangString("landingCompareLead2")))), /* @__PURE__ */ react.createElement("div", { className: "compare-table" }, /* @__PURE__ */ react.createElement("div", { className: "compare-table__head" }, /* @__PURE__ */ react.createElement("span", { className: "compare-table__corner" }), /* @__PURE__ */ react.createElement("span", { className: "compare-table__col compare-table__col--bad" }, this.LangString("landingCompareColBad")), /* @__PURE__ */ react.createElement("span", { className: "compare-table__col compare-table__col--good" }, this.LangString("landingCompareColGood"))), COMPARE_ROWS.map((row) => /* @__PURE__ */ react.createElement("div", { className: "compare-table__row", key: row.label }, /* @__PURE__ */ react.createElement("span", { className: "compare-table__label" }, this.LangString(row.label)), /* @__PURE__ */ react.createElement("span", { className: "compare-table__cell compare-table__cell--bad" }, /* @__PURE__ */ react.createElement("span", { className: "compare-table__icon compare-table__icon--bad" }, "\u2715"), this.LangString(row.bad)), /* @__PURE__ */ react.createElement("span", { className: "compare-table__cell compare-table__cell--good" }, /* @__PURE__ */ react.createElement("span", { className: "compare-table__icon compare-table__icon--good" }, "\u2713"), this.LangString(row.good))))))), /* @__PURE__ */ react.createElement("section", { id: "how", className: "landing-section how-section" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("div", { className: "section-header" }, /* @__PURE__ */ react.createElement("h2", null, this.LangString("landingHowTitle")), /* @__PURE__ */ react.createElement("p", { className: "section-lead" }, this.LangString("landingHowLead"))), /* @__PURE__ */ react.createElement("div", { className: "how-steps" }, HOW_STEPS.map((step, i) => /* @__PURE__ */ react.createElement("div", { className: "how-step", key: step.title }, /* @__PURE__ */ react.createElement("span", { className: "how-step__num" }, String(i + 1).padStart(2, "0")), /* @__PURE__ */ react.createElement("h3", null, this.LangString(step.title)), /* @__PURE__ */ react.createElement("p", null, this.LangString(step.text))))))), /* @__PURE__ */ react.createElement("section", { id: "pricing", className: "landing-section pricing-section" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("div", { className: "section-header" }, /* @__PURE__ */ react.createElement("h2", null, this.LangString("landingTarifs")), /* @__PURE__ */ react.createElement("p", { className: "section-lead" }, this.LangString("landingPricingLead"))), /* @__PURE__ */ react.createElement("div", { className: "plans" }, TARIF_LIST.map((tarif) => {
       if (tarif.disable_order) return /* @__PURE__ */ react.createElement(react.Fragment, null);
-      return /* @__PURE__ */ react.createElement("div", { className: "plan", key: tarif.id }, /* @__PURE__ */ react.createElement("h3", null, this.LangString(tarif.name)), tarif.trialHours ? /* @__PURE__ */ react.createElement("span", { className: "plan-badge" }, this.LangString(
-        "landingTarifsTrial",
-        tarif.trialHours
-      )) : /* @__PURE__ */ react.createElement(react.Fragment, null), tarif.oldPrice ? /* @__PURE__ */ react.createElement("span", { className: "plan-badge" }, this.LangString("landingTarifsDiscount"), " ", /* @__PURE__ */ react.createElement("b", null, (tarif.price / tarif.oldPrice * 100).toFixed(0), "%")) : /* @__PURE__ */ react.createElement(react.Fragment, null), /* @__PURE__ */ react.createElement("p", { className: "price" }, tarif.oldPrice ? /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("s", null, CurrencyConvertText(
-        tarif.oldPrice,
-        this.currency,
-        true
-      )), " ") : "", this.LangString(
-        "landingTarifsPrice",
-        CurrencyConvertText(tarif.price, this.currency, true),
-        tarif.days
-      )), /* @__PURE__ */ react.createElement(
-        "a",
+      const isFeatured = tarif.id === FEATURED_TARIF_ID;
+      return /* @__PURE__ */ react.createElement(
+        "div",
         {
-          href: `https://t.me/${Core.GetConfigValue("projectBot")}`,
-          target: "_blank",
-          className: "btn-primary",
-          rel: "noreferrer"
+          className: `plan${isFeatured ? " featured" : ""}`,
+          key: tarif.id
         },
-        this.LangString("landingTarifsGo")
-      ));
-    })))), APPLICATIONS_CATALOG.length > 0 && /* @__PURE__ */ react.createElement("section", { id: "apps" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("h2", null, this.LangString("landingAppsTitle")), /* @__PURE__ */ react.createElement("div", { className: "apps-list" }, APPLICATIONS_CATALOG.map((app) => /* @__PURE__ */ react.createElement("div", { className: "app-card", key: app.id }, app.iconURL ? /* @__PURE__ */ react.createElement(
+        isFeatured ? /* @__PURE__ */ react.createElement("span", { className: "plan-popular-badge" }, this.LangString("landingPlanPopular")) : null,
+        /* @__PURE__ */ react.createElement("div", { className: "plan-header" }, /* @__PURE__ */ react.createElement("h3", null, this.LangString(tarif.name)), tarif.trialHours ? /* @__PURE__ */ react.createElement("span", { className: "plan-badge" }, this.LangString(
+          "landingTarifsTrial",
+          tarif.trialHours
+        )) : /* @__PURE__ */ react.createElement(react.Fragment, null), tarif.oldPrice ? /* @__PURE__ */ react.createElement("span", { className: "plan-badge plan-badge--discount" }, this.LangString("landingTarifsDiscount"), " ", /* @__PURE__ */ react.createElement("b", null, (tarif.price / tarif.oldPrice * 100).toFixed(0), "%")) : /* @__PURE__ */ react.createElement(react.Fragment, null)),
+        /* @__PURE__ */ react.createElement("p", { className: "price" }, tarif.oldPrice ? /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("s", null, CurrencyConvertText(
+          tarif.oldPrice,
+          this.currency,
+          true
+        )), " ") : "", this.LangString(
+          "landingTarifsPrice",
+          CurrencyConvertText(tarif.price, this.currency, true),
+          tarif.days
+        )),
+        /* @__PURE__ */ react.createElement("ul", { className: "plan-perks" }, /* @__PURE__ */ react.createElement("li", null, this.LangString("landingPlanTraffic", tarif.gb)), /* @__PURE__ */ react.createElement("li", null, this.LangString("landingPlanDevices")), /* @__PURE__ */ react.createElement("li", null, this.LangString("landingPlanVpnProxy"))),
+        tarif.desc ? /* @__PURE__ */ react.createElement(
+          "div",
+          {
+            className: "plan-desc",
+            dangerouslySetInnerHTML: {
+              __html: this.LangString(tarif.desc)
+            }
+          }
+        ) : null,
+        /* @__PURE__ */ react.createElement("div", { className: "plan-actions" }, /* @__PURE__ */ react.createElement(
+          "a",
+          {
+            href: siteConnectUrl,
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "btn-primary plan-actions__btn"
+          },
+          this.LangString("landingPlanConnectSite")
+        ), /* @__PURE__ */ react.createElement(
+          "a",
+          {
+            href: telegramConnectUrl,
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "plan-actions__btn plan-actions__btn--secondary"
+          },
+          this.LangString("landingPlanConnectTelegram")
+        ))
+      );
+    })))), APPLICATIONS_CATALOG.length > 0 && /* @__PURE__ */ react.createElement("section", { id: "apps", className: "landing-section" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("div", { className: "section-header" }, /* @__PURE__ */ react.createElement("h2", null, this.LangString("landingAppsTitle"))), /* @__PURE__ */ react.createElement("div", { className: "apps-list" }, APPLICATIONS_CATALOG.map((app) => /* @__PURE__ */ react.createElement("div", { className: "app-card", key: app.id }, app.iconURL ? /* @__PURE__ */ react.createElement(
       "img",
       {
         className: "app-icon",
@@ -13313,7 +15792,48 @@ class LandingPage extends BasePage {
         alt: this.LangString(app.name),
         onClick: () => this.setState({ previewModal: app.previewImageURL })
       }
-    ) : null))))), /* @__PURE__ */ react.createElement("section", { id: "faq" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("h2", null, "FAQ"), FAQ_LIST().map((q, i) => {
+    ) : null)), /* @__PURE__ */ react.createElement("div", { className: "app-card app-card--tgproxy" }, /* @__PURE__ */ react.createElement(
+      "img",
+      {
+        className: "app-icon",
+        src: TGPROXY_LOGO_URL,
+        alt: this.LangString("app.tgproxy.name")
+      }
+    ), /* @__PURE__ */ react.createElement("div", { className: "app-info" }, /* @__PURE__ */ react.createElement("div", { className: "app-info__head" }, /* @__PURE__ */ react.createElement("h3", null, this.LangString("app.tgproxy.name")), /* @__PURE__ */ react.createElement("span", { className: "app-badge app-badge--free" }, this.LangString("landingAppsFree"))), /* @__PURE__ */ react.createElement(
+      "p",
+      {
+        dangerouslySetInnerHTML: {
+          __html: this.LangString("app.tgproxy.description")
+        }
+      }
+    ), /* @__PURE__ */ react.createElement(
+      "a",
+      {
+        href: TGPROXY_URL,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: "btn-primary"
+      },
+      this.LangString("landingAppsOpen")
+    )), /* @__PURE__ */ react.createElement("div", { className: "app-preview-mock app-preview-mock--tgproxy", "aria-hidden": "true" }, /* @__PURE__ */ react.createElement("span", { className: "app-preview-mock__badge" }, "MTProto"), /* @__PURE__ */ react.createElement("span", { className: "app-preview-mock__title" }, "tgproxy.work"), /* @__PURE__ */ react.createElement("span", { className: "app-preview-mock__line app-preview-mock__line--short" }), /* @__PURE__ */ react.createElement("span", { className: "app-preview-mock__line" }), /* @__PURE__ */ react.createElement("span", { className: "app-preview-mock__btn" }, this.LangString("landingAppsOpen"))))))), /* @__PURE__ */ react.createElement("section", { className: "landing-cta" }, /* @__PURE__ */ react.createElement("div", { className: "container landing-cta__inner" }, /* @__PURE__ */ react.createElement("div", { className: "landing-cta__glow landing-cta__glow--cyan", "aria-hidden": "true" }), /* @__PURE__ */ react.createElement("div", { className: "landing-cta__glow landing-cta__glow--violet", "aria-hidden": "true" }), /* @__PURE__ */ react.createElement("div", { className: "landing-cta__grid", "aria-hidden": "true" }), /* @__PURE__ */ react.createElement("span", { className: "landing-cta__badge" }, /* @__PURE__ */ react.createElement("span", { className: "landing-cta__badge-dot", "aria-hidden": "true" }), this.LangString("landingSecurityBadge")), /* @__PURE__ */ react.createElement("h2", null, this.LangString("landingCtaTitle")), /* @__PURE__ */ react.createElement("p", null, this.LangString("landingCtaDesc")), /* @__PURE__ */ react.createElement("div", { className: "landing-cta__actions" }, /* @__PURE__ */ react.createElement(
+      "a",
+      {
+        href: siteConnectUrl,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: "landing-cta__btn"
+      },
+      this.LangString("landingCtaSite")
+    ), /* @__PURE__ */ react.createElement(
+      "a",
+      {
+        href: telegramConnectUrl,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: "landing-cta__btn landing-cta__btn--secondary"
+      },
+      this.LangString("landingCtaTelegram")
+    )))), /* @__PURE__ */ react.createElement("section", { id: "faq", className: "landing-section" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("div", { className: "section-header" }, /* @__PURE__ */ react.createElement("h2", null, "FAQ")), FAQ_LIST().map((q, i) => {
       const id = `faq_${i}`;
       return /* @__PURE__ */ react.createElement("div", { className: "faq-item", key: i }, /* @__PURE__ */ react.createElement(
         "h3",
@@ -13340,7 +15860,25 @@ class LandingPage extends BasePage {
           }
         )
       ));
-    }))), this.state.previewModal && /* @__PURE__ */ react.createElement(
+    }))), /* @__PURE__ */ react.createElement("div", { className: "landing-sticky-cta" }, /* @__PURE__ */ react.createElement(
+      "a",
+      {
+        href: siteConnectUrl,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: "landing-sticky-cta__btn"
+      },
+      this.LangString("landingPlanConnectSite")
+    ), /* @__PURE__ */ react.createElement(
+      "a",
+      {
+        href: telegramConnectUrl,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: "landing-sticky-cta__btn landing-sticky-cta__btn--secondary"
+      },
+      this.LangString("landingPlanConnectTelegram")
+    )), this.state.previewModal && /* @__PURE__ */ react.createElement(
       "div",
       {
         className: "preview-modal-overlay",
@@ -13362,7 +15900,7 @@ class LandingPage extends BasePage {
 ;// ./src/shared/application.path.ts
 
 
-const GetApplicationHostname = () => {
+const application_path_GetApplicationHostname = () => {
   if (typeof window !== "undefined" && window.useMirror)
     return MIRROR_APP_URL;
   return "application.rocketman-vpn.com";
@@ -13489,7 +16027,7 @@ class PaymentPage extends BasePage {
           if (!this.state.userID || !this.state.amount || this.state.amount < 0)
             return;
           lib_axios.get(
-            `https://${location.hostname === "localhost" ? "localhost" : GetApplicationHostname()}:${"8443"}/payments/create/${this.state.userID}/${this.state.amount}/${this.currency}`
+            `https://${location.hostname === "localhost" ? "localhost" : application_path_GetApplicationHostname()}:${"8443"}/payments/create/${this.state.userID}/${this.state.amount}/${this.currency}`
           ).then((res) => {
             const data = res.data;
             if (!data.status) return;
@@ -14115,40 +16653,6 @@ class PaymentCryptoPage extends BasePage {
   }
 }
 
-;// ./src/shared/referral.ts
-
-const REFERRAL_STORAGE_KEY = "rocketman_web_referral_host";
-const REFERRAL_START_PREFIX = "ref_";
-function getReferralHostIdFromStartParam(start) {
-  if (!start || typeof start !== "string") return null;
-  if (!start.startsWith(REFERRAL_START_PREFIX)) return null;
-  const hostId = start.slice(REFERRAL_START_PREFIX.length);
-  if (!hostId) return null;
-  return hostId;
-}
-function readSavedReferralHostId() {
-  try {
-    const v = localStorage.getItem(REFERRAL_STORAGE_KEY);
-    return v || null;
-  } catch (e) {
-    return null;
-  }
-}
-function saveReferralHostIdOnce(hostId) {
-  if (!hostId) return;
-  try {
-    const existing = localStorage.getItem(REFERRAL_STORAGE_KEY);
-    if (!existing) localStorage.setItem(REFERRAL_STORAGE_KEY, hostId);
-  } catch (e) {
-  }
-}
-function clearSavedReferralHostId() {
-  try {
-    localStorage.removeItem(REFERRAL_STORAGE_KEY);
-  } catch (e) {
-  }
-}
-
 ;// ./src/frontend/pages/wiki.tsx
 
 var wiki_defProp = Object.defineProperty;
@@ -14201,7 +16705,7 @@ var wiki_async = (__this, __arguments, generator) => {
 
 const WIKI_PROXY_BRIDGE_GUIDE_ARTICLE_ID = "LrWKZS6mnN";
 const WIKI_NAV_SCROLL_MIN_ITEMS = 30;
-const endpoint = `https://${ false ? 0 : GetApplicationHostname()}:${"8443"}`;
+const endpoint = `https://${ false ? 0 : application_path_GetApplicationHostname()}:${"8443"}`;
 const WIKI_SIDE_LABELS = {
   ru: {
     connectTelegram: "\u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0447\u0435\u0440\u0435\u0437 Telegram",
@@ -15080,7 +17584,7 @@ const RenderWikiProxyBridgeDesc = (lang) => {
   return /* @__PURE__ */ react.createElement(react.Fragment, null, "Desktop proxy client with ", /* @__PURE__ */ react.createElement("b", null, "HTTPS"), " and ", /* @__PURE__ */ react.createElement("b", null, "Vless"), " for gamers and everyday users.");
 };
 const BuildWikiApplicationUrl = () => {
-  const host =  false ? 0 : GetApplicationHostname();
+  const host =  false ? 0 : application_path_GetApplicationHostname();
   const port = "8443" || 0;
   return `https://${host}:${port}/application`;
 };
@@ -15274,6 +17778,188 @@ const IsOrphanInlineElement = (el) => {
   return false;
 };
 const ShouldMergeInlineFlow = (el) => IsOrphanInlineElement(el) || IsTinyParagraphFragment(el);
+const IsWikiCopyOnlyParagraph = (el) => {
+  if (!el || el.tagName !== "P") return false;
+  if (el.querySelector(BLOCK_IN_PARAGRAPH_SELECTOR)) return false;
+  const copy = el.querySelector(
+    ".wiki-copy, .wiki-copy-btn, [data-wiki-copy]"
+  );
+  if (!copy) return false;
+  const text = (el.textContent || "").trim();
+  const copyText = (copy.textContent || "").trim();
+  return text === copyText || el.children.length === 1;
+};
+const IsImageOnlyParagraph = (el) => {
+  if (!el || el.tagName !== "P") return false;
+  if (el.querySelector("pre, blockquote, table, ul, ol, hr")) return false;
+  const elements = Array.from(el.children).filter(
+    (child) => child.tagName !== "BR"
+  );
+  if (elements.length !== 1) return false;
+  const only = elements[0];
+  return only.tagName === "IMG" || only.classList.contains("wiki-image-button");
+};
+const IsHintContinuationParagraph = (el) => {
+  if (!el || el.tagName !== "P") return false;
+  if (el.querySelector(BLOCK_IN_PARAGRAPH_SELECTOR)) return false;
+  const em = el.querySelector(":scope > em:first-child, :scope > i:first-child");
+  if (em) {
+    const emText = (em.textContent || "").trim();
+    if (emText && emText.length <= 140 && /[:;]$/.test(emText)) return true;
+  }
+  const text = (el.textContent || "").trim();
+  if (!text || text.length > 140 || !/[:;]$/.test(text)) return false;
+  return Boolean(el.querySelector(":scope > em:first-child, :scope > i:first-child"));
+};
+const IsListContinuationParagraph = (el) => {
+  if (!el || el.tagName !== "P") return false;
+  if (el.querySelector(BLOCK_IN_PARAGRAPH_SELECTOR)) return false;
+  if (IsWikiCopyOnlyParagraph(el)) return true;
+  if (IsHintContinuationParagraph(el)) return true;
+  const text = (el.textContent || "").trim();
+  if (!text) return true;
+  if (/[:;]$/.test(text) && text.length <= 140) return true;
+  return IsTinyParagraphFragment(el) && !/^[А-ЯA-Z«"'(\[]/.test(text);
+};
+const ShouldJoinToPreviousParagraph = (prev, cur) => {
+  if (cur.tagName !== "P") return false;
+  if (cur.querySelector(BLOCK_IN_PARAGRAPH_SELECTOR)) return false;
+  if (IsWikiCopyOnlyParagraph(cur)) {
+    return prev.tagName === "P" || prev.tagName === "LI";
+  }
+  if (IsHintContinuationParagraph(cur)) {
+    if (prev.tagName === "LI") return true;
+    if (prev.tagName === "P" && !prev.querySelector(BLOCK_IN_PARAGRAPH_SELECTOR)) {
+      return true;
+    }
+    return false;
+  }
+  if (IsImageOnlyParagraph(prev)) {
+    if (cur.tagName !== "P") return false;
+    if (cur.querySelector(
+      "img, pre, blockquote, table, ul, ol, hr, .wiki-image-button"
+    )) {
+      return false;
+    }
+    return Boolean((cur.textContent || "").trim());
+  }
+  if (prev.tagName !== "P") return false;
+  if (prev.querySelector(BLOCK_IN_PARAGRAPH_SELECTOR)) return false;
+  const prevText = (prev.textContent || "").trim();
+  const curText = (cur.textContent || "").trim();
+  const curHtml = cur.innerHTML.trim();
+  if (!curText) return true;
+  if (/[:;,]$/.test(prevText)) return true;
+  if (/^<mark[\s>]/i.test(curHtml)) return true;
+  if (IsTinyParagraphFragment(cur) && !/^[А-ЯA-Z«"'(\[]/.test(curText)) {
+    return true;
+  }
+  return false;
+};
+const AppendContinuationBreak = (parent) => {
+  var _a;
+  const TEXT_NODE = typeof Node !== "undefined" ? Node.TEXT_NODE : 3;
+  let prev = parent.lastChild;
+  while (prev && prev.nodeType === TEXT_NODE && !(prev.textContent || "").trim()) {
+    prev = prev.previousSibling;
+  }
+  if ((prev == null ? void 0 : prev.nodeName) === "BR") return;
+  if ((prev == null ? void 0 : prev.nodeName) === "IMG" || (prev == null ? void 0 : prev.nodeType) === 1 && ((_a = prev.classList) == null ? void 0 : _a.contains("wiki-image-button"))) {
+    return;
+  }
+  parent.appendChild(document.createElement("br"));
+};
+const DedupeConsecutiveBreaks = (root) => {
+  root.querySelectorAll("li, p, blockquote, td, th").forEach((el) => {
+    let node = el.firstChild;
+    while (node) {
+      const next = node.nextSibling;
+      if (node.nodeName === "BR" && (next == null ? void 0 : next.nodeName) === "BR") {
+        next.remove();
+        continue;
+      }
+      node = next;
+    }
+  });
+};
+const UnwrapParagraphsInListItems = (root) => {
+  const TEXT_NODE = typeof Node !== "undefined" ? Node.TEXT_NODE : 3;
+  root.querySelectorAll("li > p").forEach((p) => {
+    const li = p.parentElement;
+    if (!li) return;
+    let hasPriorContent = false;
+    let node = p.previousSibling;
+    while (node) {
+      if (node.nodeType === TEXT_NODE) {
+        if ((node.textContent || "").trim()) hasPriorContent = true;
+      } else if (node.nodeName !== "BR") {
+        hasPriorContent = true;
+      }
+      node = node.previousSibling;
+    }
+    if (hasPriorContent) {
+      let prev = p.previousSibling;
+      while (prev && prev.nodeType === TEXT_NODE && !(prev.textContent || "").trim()) {
+        prev = prev.previousSibling;
+      }
+      if ((prev == null ? void 0 : prev.nodeName) !== "BR") {
+        li.insertBefore(document.createElement("br"), p);
+      }
+    }
+    while (p.firstChild) {
+      li.insertBefore(p.firstChild, p);
+    }
+    p.remove();
+  });
+};
+const JoinOrphanParagraphsAfterList = (container) => {
+  let changed = false;
+  container.querySelectorAll("ol, ul").forEach((list) => {
+    let next = list.nextElementSibling;
+    const toMerge = [];
+    while (next && next.tagName === "P" && IsListContinuationParagraph(next)) {
+      toMerge.push(next);
+      next = next.nextElementSibling;
+    }
+    if (!toMerge.length) return;
+    const lastLi = list.querySelector("li:last-child");
+    if (!lastLi) return;
+    toMerge.forEach((p) => {
+      AppendContinuationBreak(lastLi);
+      while (p.firstChild) {
+        lastLi.appendChild(p.firstChild);
+      }
+      p.remove();
+      changed = true;
+    });
+  });
+  return changed;
+};
+const JoinContinuationParagraphs = (container) => {
+  let changed = false;
+  let child = container.firstElementChild;
+  while (child) {
+    const next = child.nextElementSibling;
+    if (next && ShouldJoinToPreviousParagraph(child, next)) {
+      if (IsImageOnlyParagraph(child)) {
+        const lead = (next.textContent || "").replace(/^\s*/, "");
+        if (lead && !/\s$/.test(child.textContent || "")) {
+          child.appendChild(document.createTextNode(" "));
+        }
+      } else {
+        AppendContinuationBreak(child);
+      }
+      while (next.firstChild) {
+        child.appendChild(next.firstChild);
+      }
+      next.remove();
+      changed = true;
+      continue;
+    }
+    child = next;
+  }
+  return changed;
+};
 const MergeFragmentedParagraphs = (container) => {
   const children = () => Array.from(container.children);
   for (let i = 0; i < children().length; i++) {
@@ -15298,11 +17984,140 @@ const MergeFragmentedParagraphs = (container) => {
   }
   return false;
 };
-const MergeAllFragmentedParagraphs = (root) => {
-  const containers = [root, ...root.querySelectorAll(".wiki-article-section")];
-  containers.forEach((container) => {
-    while (MergeFragmentedParagraphs(container)) {
+const FLOW_WRAPPER_SKIP_SELECTOR = ".wiki-table-wrap, .wiki-code-wrap, .wiki-video, .wiki-native-video, .wiki-article-section, .wiki-embed__shell";
+const IsServerFlowWrapper = (el) => {
+  if (!el || el.tagName !== "DIV") return false;
+  if (el.matches(FLOW_WRAPPER_SKIP_SELECTOR)) return false;
+  if (el.querySelector(":scope > table, :scope > pre")) return false;
+  return true;
+};
+const UnwrapServerFlowWrappers = (root) => {
+  let changed = true;
+  while (changed) {
+    changed = false;
+    if (root.children.length === 1 && IsServerFlowWrapper(root.firstElementChild)) {
+      const wrapper = root.firstElementChild;
+      while (wrapper.firstChild) {
+        root.insertBefore(wrapper.firstChild, wrapper);
+      }
+      wrapper.remove();
+      changed = true;
     }
+  }
+};
+const PARAGRAPH_MERGE_CONTAINER_SELECTOR = "article, section, .wiki-article-section, blockquote, li, td, th, div:not(.wiki-table-wrap):not(.wiki-code-wrap):not(.wiki-video):not(.wiki-native-video):not(.wiki-embed__shell)";
+const CollectParagraphMergeContainers = (root) => {
+  const seen = /* @__PURE__ */ new Set();
+  const containers = [];
+  const add = (el) => {
+    if (!el || seen.has(el)) return;
+    seen.add(el);
+    containers.push(el);
+  };
+  add(root);
+  root.querySelectorAll(PARAGRAPH_MERGE_CONTAINER_SELECTOR).forEach((el) => {
+    add(el);
+  });
+  return containers;
+};
+const MergeAllFragmentedParagraphs = (root) => {
+  CollectParagraphMergeContainers(root).forEach((container) => {
+    const el = container;
+    while (JoinOrphanParagraphsAfterList(el)) {
+    }
+    while (JoinContinuationParagraphs(el)) {
+    }
+    while (MergeFragmentedParagraphs(el)) {
+    }
+    while (JoinContinuationParagraphs(el)) {
+    }
+    while (JoinOrphanParagraphsAfterList(el)) {
+    }
+    DedupeConsecutiveBreaks(el);
+  });
+};
+const ProtectEmphasisAttributeValues = (html) => {
+  const slots = [];
+  const protectedHtml = html.replace(
+    /\b(href|src|data-[\w-]+)=(["'])(.*?)\2/gi,
+    (full, attr, quote, value) => {
+      const index = slots.length;
+      slots.push(value);
+      return `${attr}=${quote}WIKIATTR${index}PLACEHOLDER${quote}`;
+    }
+  );
+  return { protectedHtml, slots };
+};
+const RestoreEmphasisAttributeValues = (html, slots) => {
+  let next = html;
+  slots.forEach((value, index) => {
+    next = next.split(`WIKIATTR${index}PLACEHOLDER`).join(value);
+  });
+  return next;
+};
+const EMPHASIS_INLINE_PROTECT_PATTERNS = [
+  /<span[^>]*class="[^"]*wiki-copy[^"]*"[^>]*>[\s\S]*?<\/span>/gi,
+  /<span[^>]*data-wiki-copy[^>]*>[\s\S]*?<\/span>/gi,
+  /<a\s[^>]*>[\s\S]*?<\/a>/gi,
+  /<kbd>[\s\S]*?<\/kbd>/gi,
+  /<code>[\s\S]*?<\/code>/gi,
+  /<mark>[\s\S]*?<\/mark>/gi
+];
+const ProtectEmphasisInlineHtml = (html) => {
+  const slots = [];
+  let next = html;
+  for (const pattern of EMPHASIS_INLINE_PROTECT_PATTERNS) {
+    next = next.replace(pattern, (match) => {
+      const index = slots.length;
+      slots.push(match);
+      return `WIKIEMPH${index}INLINE`;
+    });
+  }
+  return { protectedHtml: next, slots };
+};
+const RestoreEmphasisInlineHtml = (html, slots) => {
+  let next = html;
+  slots.forEach((value, index) => {
+    next = next.split(`WIKIEMPH${index}INLINE`).join(value);
+  });
+  return next;
+};
+const NormalizeMarkdownLineBreaks = (root) => {
+  var _a;
+  const textFilter = typeof NodeFilter !== "undefined" ? NodeFilter.SHOW_TEXT : 4;
+  const walker = document.createTreeWalker(root, textFilter);
+  const toFix = [];
+  let node = walker.nextNode();
+  while (node) {
+    if ((_a = node.textContent) == null ? void 0 : _a.includes("\n")) {
+      const parent = node.parentElement;
+      if (parent && !parent.closest("pre, code, script, style") && parent.closest("p, li, td, th, blockquote, h1, h2, h3, h4")) {
+        toFix.push(node);
+      }
+    }
+    node = walker.nextNode();
+  }
+  toFix.forEach((textNode) => {
+    const raw = textNode.textContent || "";
+    if (/^\n+$/.test(raw)) {
+      textNode.remove();
+      return;
+    }
+    if (!raw.includes("\n")) return;
+    const parts = raw.split("\n");
+    const frag = document.createDocumentFragment();
+    parts.forEach((part, index) => {
+      if (part) frag.appendChild(document.createTextNode(part));
+      if (index < parts.length - 1) frag.appendChild(document.createElement("br"));
+    });
+    textNode.replaceWith(frag);
+  });
+  root.querySelectorAll("blockquote, p, li, td, th").forEach((el) => {
+    if (el.closest("pre, code")) return;
+    const first = el.firstChild;
+    if ((first == null ? void 0 : first.nodeName) === "BR") first.remove();
+    const last = el.lastChild;
+    if ((last == null ? void 0 : last.nodeName) === "BR") last.remove();
   });
 };
 const RepairMarkdownEmphasis = (root) => {
@@ -15311,10 +18126,14 @@ const RepairMarkdownEmphasis = (root) => {
     if (el.querySelector("pre, code")) return;
     const html = el.innerHTML;
     if (!/\*\*/.test(html) && !/\*[^*]/.test(html) && !/_\w/.test(html)) return;
-    let next = html;
+    const { protectedHtml: inlineProtected, slots: inlineSlots } = ProtectEmphasisInlineHtml(html);
+    const { protectedHtml, slots } = ProtectEmphasisAttributeValues(inlineProtected);
+    let next = protectedHtml;
     next = next.replace(/\*\*([^*<\n]+)\*\*/g, "<strong>$1</strong>");
     next = next.replace(/\*([^*<\n]+)\*/g, "<em>$1</em>");
     next = next.replace(/_([^_<>\n]+)_/g, "<em>$1</em>");
+    next = RestoreEmphasisAttributeValues(next, slots);
+    next = RestoreEmphasisInlineHtml(next, inlineSlots);
     if (next !== html) el.innerHTML = next;
   });
 };
@@ -15367,7 +18186,7 @@ const EnhanceCopyElements = (root, labels) => {
   root.querySelectorAll("[data-wiki-copy], .wiki-copy").forEach((el) => {
     if (el.classList.contains("wiki-copy-btn")) return;
     const value = el.getAttribute("data-wiki-copy") || el.getAttribute("data-copy") || (el.textContent || "").trim();
-    const label = (el.textContent || value).trim();
+    const label = (el.getAttribute("data-wiki-copy") || el.getAttribute("data-copy") || el.textContent || value).trim();
     const button = document.createElement("button");
     button.type = "button";
     button.className = "wiki-copy-btn";
@@ -15383,6 +18202,20 @@ const EnhanceCopyElements = (root, labels) => {
     hint.textContent = labels.copyText;
     button.append(icon, text, hint);
     el.replaceWith(button);
+  });
+};
+const EnsureLineBreakBeforeWikiCopy = (root) => {
+  root.querySelectorAll(".wiki-copy-btn").forEach((btn) => {
+    var _a;
+    let prev = btn.previousSibling;
+    while (prev && prev.nodeType === Node.TEXT_NODE && !(prev.textContent || "").trim()) {
+      prev = prev.previousSibling;
+    }
+    if (!prev || prev.nodeName === "BR") return;
+    const needsBreak = prev.nodeName === "EM" || prev.nodeName === "STRONG" || prev.nodeType === Node.TEXT_NODE && /:\s*$/.test(prev.textContent || "");
+    if (needsBreak) {
+      (_a = btn.parentNode) == null ? void 0 : _a.insertBefore(document.createElement("br"), btn);
+    }
   });
 };
 const EnhanceExternalLinks = (root) => {
@@ -15420,8 +18253,12 @@ const EnrichArticleHtml = (html, articleId, labels) => {
   const root = document.createElement("div");
   root.innerHTML = html;
   RemoveWikiMetaArtifacts(root);
+  NormalizeMarkdownLineBreaks(root);
+  UnwrapParagraphsInListItems(root);
   RepairMarkdownEmphasis(root);
   RemoveSpuriousHorizontalRules(root);
+  UnwrapServerFlowWrappers(root);
+  MergeAllFragmentedParagraphs(root);
   const usedSlugs = /* @__PURE__ */ new Set();
   root.querySelectorAll("h1, h2, h3").forEach((el, index) => {
     const text = (el.textContent || "").trim();
@@ -15486,9 +18323,9 @@ const EnrichArticleHtml = (html, articleId, labels) => {
     button.setAttribute("data-full-src", src);
     button.setAttribute("aria-label", (labels == null ? void 0 : labels.enlargeImage) || "Enlarge image");
     const preview = document.createElement("img");
+    preview.className = "wiki-article-image";
     preview.src = src;
     preview.alt = alt;
-    preview.className = "wiki-article-image";
     preview.loading = "lazy";
     preview.decoding = "async";
     button.appendChild(preview);
@@ -15515,6 +18352,7 @@ const EnrichArticleHtml = (html, articleId, labels) => {
       enlargeImage: ""
     }
   );
+  EnsureLineBreakBeforeWikiCopy(root);
   EnhanceExternalLinks(root);
   WrapArticleSections(root);
   return { html: root.innerHTML, toc };
@@ -17469,10 +20307,7 @@ class App extends react.Component {
       if (!this.state.loaded) {
         return /* @__PURE__ */ react.createElement(react.Fragment, null);
       }
-      const url = new URL(location.href);
-      const savedRef = readSavedReferralHostId();
-      const ref = url.searchParams.has("start") ? `?start=${url.searchParams.get("start")}` : savedRef ? `?start=${REFERRAL_START_PREFIX}${savedRef}` : "";
-      return /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("header", null, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("nav", null, /* @__PURE__ */ react.createElement(
+      return /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("header", { className: "site-header" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("nav", null, /* @__PURE__ */ react.createElement(
         "div",
         {
           className: "logo",
@@ -17481,8 +20316,8 @@ class App extends react.Component {
             this.setState({ page: "index" });
           }
         },
-        "\u{1F680} ",
-        Core.GetConfigValue("projectName")
+        /* @__PURE__ */ react.createElement("span", { className: "logo-mark", "aria-hidden": "true" }, "\u{1F680}"),
+        /* @__PURE__ */ react.createElement("span", { className: "logo-text" }, Core.GetConfigValue("projectName"))
       ), /* @__PURE__ */ react.createElement("div", { className: "right" }, /* @__PURE__ */ react.createElement(
         "button",
         {
@@ -17507,23 +20342,24 @@ class App extends react.Component {
         /* @__PURE__ */ react.createElement(
           "a",
           {
-            href: `https://t.me/${Core.GetConfigValue("projectBot")}`,
+            href: getLandingTelegramConnectUrl(),
             target: "_blank",
             rel: "noopener noreferrer",
             className: "btn",
             onClick: this.closeMobileMenu
           },
-          /* @__PURE__ */ react.createElement("b", null, this.LangString("landingTGBotButton"))
+          /* @__PURE__ */ react.createElement("b", null, this.LangString("landingHeaderTelegram"))
         ),
         /* @__PURE__ */ react.createElement(
           "a",
           {
-            href: `https://${ false ? 0 : GetApplicationHostname()}:${"8443"}/application${ref}`,
+            href: getLandingSiteConnectUrl(),
+            target: "_blank",
             rel: "noopener noreferrer",
-            className: "btn",
+            className: "btn btn--secondary",
             onClick: this.closeMobileMenu
           },
-          /* @__PURE__ */ react.createElement("b", null, this.LangString("landingDashboardButton"))
+          /* @__PURE__ */ react.createElement("b", null, this.LangString("landingHeaderSite"))
         ),
         /* @__PURE__ */ react.createElement(
           "select",
@@ -17538,14 +20374,80 @@ class App extends react.Component {
             return /* @__PURE__ */ react.createElement("option", { key: q, value: q }, this.LangString(`lang.${q}`));
           })
         )
-      ))))), /* @__PURE__ */ react.createElement("section", { id: "hero" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("h1", null, this.LangString("landingTitle")), /* @__PURE__ */ react.createElement("p", null, this.LangString("landingTitleDesc")))), this.state.page === "index" ? /* @__PURE__ */ react.createElement(LandingPage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "payment" ? /* @__PURE__ */ react.createElement(
+      ))))), /* @__PURE__ */ react.createElement("main", { className: "site-main" }, /* @__PURE__ */ react.createElement("section", { id: "hero" }, /* @__PURE__ */ react.createElement("div", { className: "hero-backdrop", "aria-hidden": "true" }, /* @__PURE__ */ react.createElement("span", { className: "hero-orb hero-orb--left" }), /* @__PURE__ */ react.createElement("span", { className: "hero-orb hero-orb--right" })), /* @__PURE__ */ react.createElement("div", { className: "container hero-inner" }, /* @__PURE__ */ react.createElement("div", { className: "hero-content" }, /* @__PURE__ */ react.createElement("div", { className: "hero-intro" }, /* @__PURE__ */ react.createElement("div", { className: "hero-status" }, /* @__PURE__ */ react.createElement("span", { className: "hero-status__dot", "aria-hidden": "true" }), /* @__PURE__ */ react.createElement("span", { className: "hero-status__label" }, this.LangString("landingSecurityBadge"))), /* @__PURE__ */ react.createElement("h1", { className: "hero-title" }, /* @__PURE__ */ react.createElement("span", { className: "hero-title__brand" }, this.LangString("landingTitleBrand")), /* @__PURE__ */ react.createElement("span", { className: "hero-title__tagline" }, this.LangString("landingTitleTagline"))), /* @__PURE__ */ react.createElement("p", { className: "hero-desc" }, this.LangString("landingTitleDesc"))), /* @__PURE__ */ react.createElement("ul", { className: "hero-guarantee" }, /* @__PURE__ */ react.createElement("li", { className: "hero-guarantee__pill" }, this.LangString("landingHeroPill2")), /* @__PURE__ */ react.createElement("li", { className: "hero-guarantee__pill hero-guarantee__pill--accent" }, this.LangString("landingHeroPill4")), /* @__PURE__ */ react.createElement("li", { className: "hero-guarantee__pill hero-guarantee__pill--ultimate" }, this.LangString("landingHeroPill5"))), /* @__PURE__ */ react.createElement("div", { className: "hero-actions" }, /* @__PURE__ */ react.createElement(
+        "a",
+        {
+          href: getLandingTelegramConnectUrl(),
+          target: "_blank",
+          rel: "noopener noreferrer",
+          className: "btn-primary hero-actions__primary"
+        },
+        this.LangString("landingTGBotButton")
+      ), /* @__PURE__ */ react.createElement(
+        "a",
+        {
+          href: getLandingSiteConnectUrl(),
+          target: "_blank",
+          rel: "noopener noreferrer",
+          className: "hero-actions__secondary hero-actions__site"
+        },
+        this.LangString("landingPlanConnectSite")
+      ), /* @__PURE__ */ react.createElement("a", { href: "#pricing", className: "hero-actions__secondary" }, this.LangString("landingTarifs"))), /* @__PURE__ */ react.createElement("div", { className: "hero-foot" }, /* @__PURE__ */ react.createElement("ul", { className: "hero-checklist" }, /* @__PURE__ */ react.createElement("li", null, this.LangString("features1Title")), /* @__PURE__ */ react.createElement("li", null, this.LangString("features2Title")), /* @__PURE__ */ react.createElement("li", null, this.LangString("features3Title")), /* @__PURE__ */ react.createElement("li", null, this.LangString("features4Title"))), /* @__PURE__ */ react.createElement("ul", { className: "hero-trust" }, /* @__PURE__ */ react.createElement("li", { className: "hero-trust__item" }, this.LangString("landingProtocolVless")), /* @__PURE__ */ react.createElement("li", { className: "hero-trust__item" }, this.LangString("landingProtocolProxy")), /* @__PURE__ */ react.createElement("li", { className: "hero-trust__item" }, this.LangString("landingProtocolHysteria"))))), /* @__PURE__ */ react.createElement("div", { className: "hero-visual", "aria-hidden": "true" }, /* @__PURE__ */ react.createElement("div", { className: "hero-compare" }, /* @__PURE__ */ react.createElement("div", { className: "hero-compare__lane hero-compare__lane--bad" }, /* @__PURE__ */ react.createElement("div", { className: "hero-compare__head" }, /* @__PURE__ */ react.createElement("div", { className: "hero-compare__head-main" }, /* @__PURE__ */ react.createElement("span", { className: "hero-compare__icon hero-compare__icon--bad" }, "\u2715"), /* @__PURE__ */ react.createElement("span", { className: "hero-compare__title" }, this.LangString("landingHeroCompareBad"))), /* @__PURE__ */ react.createElement("span", { className: "hero-compare__path-hint hero-compare__path-hint--bad" }, this.LangString("landingHeroCompareBadWire"))), /* @__PURE__ */ react.createElement("div", { className: "hero-compare__route" }, /* @__PURE__ */ react.createElement("span", { className: "hero-compare__node-label" }, this.LangString("landingHeroCompareYou")), /* @__PURE__ */ react.createElement("div", { className: "hero-compare__path hero-compare__path--bad" }, /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "hero-compare__wire hero-compare__wire--bad",
+          "aria-hidden": "true"
+        }
+      ), /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "hero-compare__break-mark",
+          "aria-hidden": "true"
+        }
+      ), /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "hero-compare__packet hero-compare__packet--bad",
+          "aria-hidden": "true"
+        }
+      )), /* @__PURE__ */ react.createElement("span", { className: "hero-compare__node-label" }, this.LangString("landingHeroCompareWeb"))), /* @__PURE__ */ react.createElement("ul", { className: "hero-compare__list" }, /* @__PURE__ */ react.createElement("li", null, this.LangString("landingHeroCompareBad1")), /* @__PURE__ */ react.createElement("li", null, this.LangString("landingHeroCompareBad2")))), /* @__PURE__ */ react.createElement("div", { className: "hero-compare__divider" }, /* @__PURE__ */ react.createElement("span", { className: "hero-compare__vs" }, "VS")), /* @__PURE__ */ react.createElement("div", { className: "hero-compare__lane hero-compare__lane--good" }, /* @__PURE__ */ react.createElement("div", { className: "hero-compare__head" }, /* @__PURE__ */ react.createElement("div", { className: "hero-compare__head-main" }, /* @__PURE__ */ react.createElement("span", { className: "hero-compare__icon hero-compare__icon--good" }, "\u26E8"), /* @__PURE__ */ react.createElement("span", { className: "hero-compare__title" }, this.LangString("landingHeroCompareGood"))), /* @__PURE__ */ react.createElement("span", { className: "hero-compare__path-hint hero-compare__path-hint--good" }, this.LangString("landingHeroCompareGoodWire"))), /* @__PURE__ */ react.createElement("div", { className: "hero-compare__route" }, /* @__PURE__ */ react.createElement("span", { className: "hero-compare__node-label" }, this.LangString("landingHeroCompareYou")), /* @__PURE__ */ react.createElement("div", { className: "hero-compare__path hero-compare__path--good" }, /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "hero-compare__wire hero-compare__wire--good",
+          "aria-hidden": "true"
+        }
+      ), /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "hero-compare__wire hero-compare__wire--good hero-compare__wire--secure",
+          "aria-hidden": "true"
+        }
+      ), /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "hero-compare__shield-mini",
+          "aria-hidden": "true"
+        }
+      ), /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "hero-compare__packet hero-compare__packet--good",
+          "aria-hidden": "true"
+        }
+      ), /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "hero-compare__packet hero-compare__packet--good hero-compare__packet--secured",
+          "aria-hidden": "true"
+        }
+      )), /* @__PURE__ */ react.createElement("span", { className: "hero-compare__node-label" }, this.LangString("landingHeroCompareWeb"))), /* @__PURE__ */ react.createElement("ul", { className: "hero-compare__list" }, /* @__PURE__ */ react.createElement("li", null, this.LangString("landingHeroCompareGood1")), /* @__PURE__ */ react.createElement("li", { className: "hero-compare__list-item--highlight" }, this.LangString("landingHeroCompareGood2")))))))), this.state.page === "index" ? /* @__PURE__ */ react.createElement(LandingPage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "payment" ? /* @__PURE__ */ react.createElement(
         PaymentPage,
         {
           lang: this.state.lang,
           usrID: this.state.fix_id,
           usrAmount: this.state.fix_amount
         }
-      ) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "term" ? /* @__PURE__ */ react.createElement(TermPage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "contacts" ? /* @__PURE__ */ react.createElement(ContactsPage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "wiki" ? /* @__PURE__ */ react.createElement(WikiPage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "subscribe" ? /* @__PURE__ */ react.createElement(SubscribePage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "crypto" ? /* @__PURE__ */ react.createElement(PaymentCryptoPage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null), /* @__PURE__ */ react.createElement("footer", null, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("p", null, "\xA9 2024-", (/* @__PURE__ */ new Date()).getFullYear(), " ", Core.GetConfigValue("projectName")), /* @__PURE__ */ react.createElement("span", { className: "links" }, /* @__PURE__ */ react.createElement("a", { href: "/?term", target: "_blank", rel: "noopener noreferrer" }, this.LangString("terms")), /* @__PURE__ */ react.createElement("a", { href: "/?contacts", target: "_blank", rel: "noopener noreferrer" }, this.LangString("contacts")), /* @__PURE__ */ react.createElement("a", { href: "/?wiki", target: "_blank", rel: "noopener noreferrer" }, this.LangString("wiki"))), /* @__PURE__ */ react.createElement(
+      ) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "term" ? /* @__PURE__ */ react.createElement(TermPage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "contacts" ? /* @__PURE__ */ react.createElement(ContactsPage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "wiki" ? /* @__PURE__ */ react.createElement(WikiPage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "subscribe" ? /* @__PURE__ */ react.createElement(SubscribePage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.state.page === "crypto" ? /* @__PURE__ */ react.createElement(PaymentCryptoPage, { lang: this.state.lang }) : /* @__PURE__ */ react.createElement(react.Fragment, null)), /* @__PURE__ */ react.createElement("footer", { className: "site-footer" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("p", null, "\xA9 2024-", (/* @__PURE__ */ new Date()).getFullYear(), " ", Core.GetConfigValue("projectName")), /* @__PURE__ */ react.createElement("span", { className: "links" }, /* @__PURE__ */ react.createElement("a", { href: "/?term", target: "_blank", rel: "noopener noreferrer" }, this.LangString("terms")), /* @__PURE__ */ react.createElement("a", { href: "/?contacts", target: "_blank", rel: "noopener noreferrer" }, this.LangString("contacts")), /* @__PURE__ */ react.createElement("a", { href: "/?wiki", target: "_blank", rel: "noopener noreferrer" }, this.LangString("wiki"))), /* @__PURE__ */ react.createElement(
         "a",
         {
           href: "https://rocketman-streams.com/",
@@ -17597,7 +20499,7 @@ class App extends react.Component {
       }
       yield this.awaitLoadConfig();
       lib_axios.get(
-        `https://${GetApplicationHostname()}:${"8443"}/api/loadCurrency`
+        `https://${application_path_GetApplicationHostname()}:${"8443"}/api/loadCurrency`
       ).then((res) => {
         const data = res.data;
         if (data.status) {
