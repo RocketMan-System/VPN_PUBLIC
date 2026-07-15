@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 7/14/2026, 1:12:11 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 7/15/2026, 5:08:32 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -15583,7 +15583,7 @@ const GetApplicationHostname = () => {
 };
 function getLandingSiteConnectUrl() {
   if (false) {}
-  return `https://${GetApplicationHostname()}/application${getReferralStart()}`;
+  return `https://${GetApplicationHostname()}:${"8443"}/application${getReferralStart()}`;
 }
 function getLandingTelegramConnectUrl() {
   return `https://t.me/${Core.GetConfigValue("projectBot")}/${getReferralStart()}`;
