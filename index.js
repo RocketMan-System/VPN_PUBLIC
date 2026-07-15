@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 7/15/2026, 5:08:32 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 7/15/2026, 5:14:31 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -15579,7 +15579,7 @@ const getReferralStart = () => {
 const GetApplicationHostname = () => {
   if (typeof window !== "undefined" && window.useMirror)
     return MIRROR_APP_URL;
-  return "rocketman-vpn.com";
+  return "application.rocketman-vpn.com";
 };
 function getLandingSiteConnectUrl() {
   if (false) {}
