@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 7/28/2026, 4:14:08 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 7/28/2026, 4:33:35 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -9219,8 +9219,8 @@ class LandingPage extends BasePage {
     this.state = {};
   }
   render() {
-    const siteConnectUrl = getLandingSiteConnectUrl();
-    const telegramConnectUrl = getLandingTelegramConnectUrl();
+    const siteConnectUrl = this.props.siteConnectUrl || getLandingSiteConnectUrl();
+    const telegramConnectUrl = this.props.telegramConnectUrl || getLandingTelegramConnectUrl();
     return /* @__PURE__ */ react.createElement("div", { className: "landing-page" }, /* @__PURE__ */ react.createElement("section", { className: "trust-strip", "aria-label": "trust metrics" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("div", { className: "trust-strip__grid" }, TRUST_STRIP.map((item) => /* @__PURE__ */ react.createElement("div", { className: "trust-strip__item", key: item.label }, /* @__PURE__ */ react.createElement("span", { className: "trust-strip__value" }, this.LangString(item.value)), /* @__PURE__ */ react.createElement("span", { className: "trust-strip__label" }, this.LangString(item.label))))))), /* @__PURE__ */ react.createElement("section", { id: "about", className: "landing-section" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("div", { className: "section-header" }, /* @__PURE__ */ react.createElement("h2", null, this.LangString("landingFeaturesTitle")), /* @__PURE__ */ react.createElement("p", { className: "section-lead" }, this.LangString("landingFeaturesLead"))), /* @__PURE__ */ react.createElement("div", { className: "features" }, FEATURES_LIST.map((feature) => {
       return /* @__PURE__ */ react.createElement("div", { className: "feature", key: feature.icon }, /* @__PURE__ */ react.createElement(
         "img",
@@ -14068,7 +14068,10 @@ class App extends react.Component {
   constructor(props) {
     super(props);
     this.state = App_spreadProps(App_spreadValues({}, readLocationState(this.props.initialLang, this.props.initialPage)), {
-      mobileMenuOpen: false
+      mobileMenuOpen: false,
+      siteConnectUrl: getLandingSiteConnectUrl(),
+      telegramConnectUrl: getLandingTelegramConnectUrl(),
+      linksReady: false
     });
     this.onPopState = () => {
       const parsed = parseLocation(location.pathname, location.search);
@@ -14124,7 +14127,8 @@ class App extends react.Component {
         /* @__PURE__ */ react.createElement(
           "a",
           {
-            href: getLandingTelegramConnectUrl(),
+            key: this.state.linksReady ? "header-tg-ready" : "header-tg-ssr",
+            href: this.state.telegramConnectUrl,
             target: "_blank",
             rel: "noopener noreferrer",
             className: "btn",
@@ -14135,7 +14139,8 @@ class App extends react.Component {
         /* @__PURE__ */ react.createElement(
           "a",
           {
-            href: getLandingSiteConnectUrl(),
+            key: this.state.linksReady ? "header-site-ready" : "header-site-ssr",
+            href: this.state.siteConnectUrl,
             target: "_blank",
             rel: "noopener noreferrer",
             className: "btn btn--secondary",
@@ -14159,7 +14164,8 @@ class App extends react.Component {
       ))))), /* @__PURE__ */ react.createElement("main", { className: "site-main" }, /* @__PURE__ */ react.createElement("section", { id: "hero" }, /* @__PURE__ */ react.createElement("div", { className: "hero-backdrop", "aria-hidden": "true" }, /* @__PURE__ */ react.createElement("span", { className: "hero-orb hero-orb--left" }), /* @__PURE__ */ react.createElement("span", { className: "hero-orb hero-orb--right" })), /* @__PURE__ */ react.createElement("div", { className: "container hero-inner" }, /* @__PURE__ */ react.createElement("div", { className: "hero-content" }, /* @__PURE__ */ react.createElement("div", { className: "hero-intro" }, /* @__PURE__ */ react.createElement("div", { className: "hero-status" }, /* @__PURE__ */ react.createElement("span", { className: "hero-status__dot", "aria-hidden": "true" }), /* @__PURE__ */ react.createElement("span", { className: "hero-status__label" }, this.LangString("landingSecurityBadge"))), /* @__PURE__ */ react.createElement("h1", { className: "hero-title" }, /* @__PURE__ */ react.createElement("span", { className: "hero-title__brand" }, this.LangString("landingTitleBrand")), /* @__PURE__ */ react.createElement("span", { className: "hero-title__tagline" }, this.LangString("landingTitleTagline"))), /* @__PURE__ */ react.createElement("p", { className: "hero-desc" }, this.LangString("landingTitleDesc"))), /* @__PURE__ */ react.createElement("ul", { className: "hero-guarantee" }, /* @__PURE__ */ react.createElement("li", { className: "hero-guarantee__pill" }, this.LangString("landingHeroPill2")), /* @__PURE__ */ react.createElement("li", { className: "hero-guarantee__pill hero-guarantee__pill--accent" }, this.LangString("landingHeroPill4")), /* @__PURE__ */ react.createElement("li", { className: "hero-guarantee__pill hero-guarantee__pill--ultimate" }, this.LangString("landingHeroPill5"))), /* @__PURE__ */ react.createElement("div", { className: "hero-actions" }, /* @__PURE__ */ react.createElement(
         "a",
         {
-          href: getLandingTelegramConnectUrl(),
+          key: this.state.linksReady ? "hero-tg-ready" : "hero-tg-ssr",
+          href: this.state.telegramConnectUrl,
           target: "_blank",
           rel: "noopener noreferrer",
           className: "btn-primary hero-actions__primary"
@@ -14168,7 +14174,8 @@ class App extends react.Component {
       ), /* @__PURE__ */ react.createElement(
         "a",
         {
-          href: getLandingSiteConnectUrl(),
+          key: this.state.linksReady ? "hero-site-ready" : "hero-site-ssr",
+          href: this.state.siteConnectUrl,
           target: "_blank",
           rel: "noopener noreferrer",
           className: "hero-actions__secondary hero-actions__site"
@@ -14222,7 +14229,15 @@ class App extends react.Component {
           className: "hero-compare__packet hero-compare__packet--good hero-compare__packet--secured",
           "aria-hidden": "true"
         }
-      )), /* @__PURE__ */ react.createElement("span", { className: "hero-compare__node-label" }, this.LangString("landingHeroCompareWeb"))), /* @__PURE__ */ react.createElement("ul", { className: "hero-compare__list" }, /* @__PURE__ */ react.createElement("li", null, this.LangString("landingHeroCompareGood1")), /* @__PURE__ */ react.createElement("li", { className: "hero-compare__list-item--highlight" }, this.LangString("landingHeroCompareGood2")))))))), this.state.page === "index" ? /* @__PURE__ */ react.createElement(LandingPage, { lang: this.state.lang }) : null, this.state.page === "payment" ? /* @__PURE__ */ react.createElement(
+      )), /* @__PURE__ */ react.createElement("span", { className: "hero-compare__node-label" }, this.LangString("landingHeroCompareWeb"))), /* @__PURE__ */ react.createElement("ul", { className: "hero-compare__list" }, /* @__PURE__ */ react.createElement("li", null, this.LangString("landingHeroCompareGood1")), /* @__PURE__ */ react.createElement("li", { className: "hero-compare__list-item--highlight" }, this.LangString("landingHeroCompareGood2")))))))), this.state.page === "index" ? /* @__PURE__ */ react.createElement(
+        LandingPage,
+        {
+          key: this.state.linksReady ? "landing-ready" : "landing-ssr",
+          lang: this.state.lang,
+          siteConnectUrl: this.state.siteConnectUrl,
+          telegramConnectUrl: this.state.telegramConnectUrl
+        }
+      ) : null, this.state.page === "payment" ? /* @__PURE__ */ react.createElement(
         PaymentPage,
         {
           lang: this.state.lang,
@@ -14333,7 +14348,11 @@ class App extends react.Component {
       );
     }
     localStorage.setItem("lang", this.state.lang);
-    this.forceUpdate();
+    this.setState({
+      siteConnectUrl: getLandingSiteConnectUrl(),
+      telegramConnectUrl: getLandingTelegramConnectUrl(),
+      linksReady: true
+    });
     lib_axios.get(
       `https://${application_path_GetApplicationHostname()}:${"8443"}/api/loadCurrency`
     ).then((res) => {
