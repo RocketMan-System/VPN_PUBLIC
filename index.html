@@ -1,1 +1,38 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>RocketMan VPN</title><link rel="icon" href="./logo.png"/><script defer="defer" src="index.js"></script></head><body><div id="root"></div></body></html>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RocketMan VPN</title>
+		<meta name="description" content="Lightning-fast access to your favorite sites and services from PC and smartphone." />
+		<link rel="icon" href="/logo.png" />
+		<link rel="stylesheet" href="/index.css" />
+		<script defer src="/index.js"></script>
+		<script>(function(){
+  var langs=['en','ru','uk'];
+  var params=new URLSearchParams(location.search);
+  var stored=null;
+  try{stored=localStorage.getItem('lang')}catch(e){}
+  var nav=(navigator.language||'en').toLowerCase();
+  var lang=params.get('lang')||stored||langs.find(function(l){return nav.indexOf(l)===0})||'en';
+  if(langs.indexOf(lang)<0) lang='en';
+  var page='';
+  if(params.has('payment')) page='payment';
+  else if(params.has('crypto_id')) page='crypto';
+  else if(params.has('term')||params.has('terms')) page='term';
+  else if(params.has('subscribe')) page='subscribe';
+  else if(params.has('contacts')) page='contacts';
+  else if(params.has('wiki')) page='wiki';
+  var q=new URLSearchParams();
+  ['id','amount','article','crypto_id','start'].forEach(function(k){
+    var v=params.get(k); if(v) q.set(k,v);
+  });
+  var path='/'+lang+'/'+(page?page+'/':'');
+  var qs=q.toString();
+  location.replace(path+(qs?'?'+qs:'')+location.hash);
+})();</script>
+	</head>
+	<body>
+		<div id="root"></div>
+	</body>
+</html>
