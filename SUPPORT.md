@@ -40,7 +40,13 @@ App languages: **English** (`en`), **Русский** (`ru`), **Українсь
 - If the client first used the Telegram app — they can use **both** https://t.me/rocketman_vpn_bot/?startapp and https://application.rocketman-vpn.com:8443/application/ (mirror: https://ru-app.rocketman-vpn.com:8443/application/).
 - If the client first created the account on the website — they can use **only** the website panel. Do not send them to the Telegram mini-app as a primary entry for that account.
 
-Support contact (no ticket system): mini-app home → **Contact Support** / **Связь со службой поддержки** / **Зв'язок зі службою підтримки**, or https://t.me/rocketman_vpn. Wiki: https://rocketman-vpn.com/{lang}/wiki/.
+Support contact / Связь с поддержкой / Зв'язок з підтримкою:
+
+1. **In-app chat (preferred):** control panel floating **💬** button (any page), or mini-app home → **Contact Support** / **Связь со службой поддержки** / **Зв'язок зі службою підтримки**. Client ID is verified when the ticket is opened from the logged-in panel.
+2. Telegram group (public): https://t.me/rocketman_vpn
+3. Wiki: https://rocketman-vpn.com/{lang}/wiki/ (e.g. https://rocketman-vpn.com/ru/wiki/)
+
+Landing site https://rocketman-vpn.com/ also shows the default Support Board chat launcher.
 
 ---
 
@@ -268,7 +274,7 @@ Do not give, quote, paraphrase, or confirm any legal address, company name, regi
 | Trial | If Telegram-linked | Needs Telegram login or bind |
 | Instructions | Bot DMs | Modal (+ optional send to TG) |
 | Referral | Button in cabinet | Nav item + cabinet |
-| Support CTA on home | Yes → https://t.me/rocketman_vpn | FAQ / Wiki on https://rocketman-vpn.com/ |
+| Support CTA | Floating **💬** / home **Contact Support** → in-app chat; also https://t.me/rocketman_vpn | Floating **💬** → in-app chat; FAQ / Wiki on https://rocketman-vpn.com/ |
 | Top-up | In-app balance flow | Balance page and/or https://rocketman-vpn.com/{lang}/payment/?id=`<userId>` |
 
 Useful bot commands: `/start`, `/faq`, `/promo`.

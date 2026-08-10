@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 8/10/2026, 10:57:04 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 8/10/2026, 11:13:04 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -3086,6 +3086,35 @@ button:active {
 }
 .notify-item__img--unread {
   background-color: rgba(255, 255, 255, 0.05);
+}
+.support-fab {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 40;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tg-theme-button-color, #8774e1);
+  color: var(--tg-theme-button-text-color, #ffffff);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+.support-fab:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+.support-fab:active {
+  transform: translateY(0);
+}
+.support-fab__icon {
+  font-size: 1.35rem;
+  line-height: 1;
 }
 `, ""]);
 // Exports
@@ -10678,6 +10707,166 @@ class BasePage extends react.Component {
   }
 }
 
+;// ./src/application/modules/tgapi.ts
+
+var tgapi_defProp = Object.defineProperty;
+var tgapi_getOwnPropSymbols = Object.getOwnPropertySymbols;
+var tgapi_hasOwnProp = Object.prototype.hasOwnProperty;
+var tgapi_propIsEnum = Object.prototype.propertyIsEnumerable;
+var tgapi_defNormalProp = (obj, key, value) => key in obj ? tgapi_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var tgapi_spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (tgapi_hasOwnProp.call(b, prop))
+      tgapi_defNormalProp(a, prop, b[prop]);
+  if (tgapi_getOwnPropSymbols)
+    for (var prop of tgapi_getOwnPropSymbols(b)) {
+      if (tgapi_propIsEnum.call(b, prop))
+        tgapi_defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+
+
+
+function authParams() {
+  var _a;
+  if (telegram_isTelegramEnv()) {
+    return `verify=${System/* System */.i.toBinary(Telegram.WebApp.initData)}`;
+  }
+  return `api_key=${encodeURIComponent((_a = WebApp.api_token) != null ? _a : "")}`;
+}
+function authParamsPost() {
+  var _a;
+  if (telegram_isTelegramEnv()) {
+    return { verify: System/* System */.i.toBinary(Telegram.WebApp.initData) };
+  }
+  return { api_key: encodeURIComponent((_a = WebApp.api_token) != null ? _a : "") };
+}
+function tgapiGet(path) {
+  const sep = path.includes("?") ? "&" : "?";
+  return lib_axios.get(`${path}${sep}${authParams()}`);
+}
+function tgapiPost(path, data) {
+  return lib_axios.post(`${path}`, tgapi_spreadValues(tgapi_spreadValues({}, data), authParamsPost()));
+}
+
+;// ./src/application/modules/support.board.tsx
+
+var support_board_async = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
+  });
+};
+
+
+function ensureBoard() {
+  if (!window.SupportBoard) {
+    window.SupportBoard = { q: [] };
+  }
+  if (!window.SupportBoard.q) {
+    window.SupportBoard.q = [];
+  }
+  return window.SupportBoard;
+}
+function queueOrCall(cmd, arg) {
+  const board = ensureBoard();
+  const fn = board[cmd];
+  if (typeof fn === "function") {
+    if (cmd === "setVisitor") {
+      fn(
+        arg
+      );
+    } else {
+      fn();
+    }
+    return;
+  }
+  if (cmd === "setVisitor") {
+    board.q.push([cmd, arg]);
+  } else {
+    board.q.push([cmd]);
+  }
+}
+function setSupportVisitor(data) {
+  queueOrCall("setVisitor", data);
+}
+function openSupportBoard() {
+  queueOrCall("open");
+}
+let visitorPromise = null;
+let lastClientId = null;
+function resetSupportVisitor() {
+  visitorPromise = null;
+  lastClientId = null;
+}
+function syncSupportVisitor(clientId) {
+  if (visitorPromise && (!clientId || lastClientId === clientId)) {
+    return visitorPromise;
+  }
+  visitorPromise = tgapiPost("/api/support/visitor", {}).then((res) => {
+    const data = res.data;
+    if (!(data == null ? void 0 : data.status) || !data.clientId || !data.clientToken || !data.name) {
+      visitorPromise = null;
+      return false;
+    }
+    lastClientId = data.clientId;
+    setSupportVisitor({
+      name: data.name,
+      clientId: data.clientId,
+      clientToken: data.clientToken,
+      custom: data.custom
+    });
+    return true;
+  }).catch(() => {
+    visitorPromise = null;
+    return false;
+  });
+  return visitorPromise;
+}
+function openSupportWithVisitor() {
+  return support_board_async(this, null, function* () {
+    yield syncSupportVisitor();
+    openSupportBoard();
+  });
+}
+class SupportFab extends react.Component {
+  constructor() {
+    super(...arguments);
+    this.handleClick = () => {
+      void openSupportWithVisitor();
+    };
+  }
+  render() {
+    if (!this.props.ready) return null;
+    return /* @__PURE__ */ react.createElement(
+      "button",
+      {
+        type: "button",
+        className: "support-fab",
+        onClick: this.handleClick,
+        title: this.props.label,
+        "aria-label": this.props.label
+      },
+      /* @__PURE__ */ react.createElement("span", { className: "support-fab__icon", "aria-hidden": "true" }, "\u{1F4AC}")
+    );
+  }
+}
+
 ;// ./src/application/pages/index.tsx
 
 var pages_defProp = Object.defineProperty;
@@ -10748,7 +10937,7 @@ class LandingPage extends BasePage {
       {
         className: "contactButton",
         onClick: () => {
-          WebApp.openTelegramLink("https://t.me/" + TG_GROUP_USERNAME);
+          void openSupportWithVisitor();
         }
       },
       this.LangString("applicationContactButton")
@@ -10781,49 +10970,6 @@ class LandingPage extends BasePage {
 
 // EXTERNAL MODULE: ./src/config/tarifs.ts
 var tarifs = __webpack_require__(923);
-;// ./src/application/modules/tgapi.ts
-
-var tgapi_defProp = Object.defineProperty;
-var tgapi_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var tgapi_hasOwnProp = Object.prototype.hasOwnProperty;
-var tgapi_propIsEnum = Object.prototype.propertyIsEnumerable;
-var tgapi_defNormalProp = (obj, key, value) => key in obj ? tgapi_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var tgapi_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (tgapi_hasOwnProp.call(b, prop))
-      tgapi_defNormalProp(a, prop, b[prop]);
-  if (tgapi_getOwnPropSymbols)
-    for (var prop of tgapi_getOwnPropSymbols(b)) {
-      if (tgapi_propIsEnum.call(b, prop))
-        tgapi_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-
-
-
-function authParams() {
-  var _a;
-  if (telegram_isTelegramEnv()) {
-    return `verify=${System/* System */.i.toBinary(Telegram.WebApp.initData)}`;
-  }
-  return `api_key=${encodeURIComponent((_a = WebApp.api_token) != null ? _a : "")}`;
-}
-function authParamsPost() {
-  var _a;
-  if (telegram_isTelegramEnv()) {
-    return { verify: System/* System */.i.toBinary(Telegram.WebApp.initData) };
-  }
-  return { api_key: encodeURIComponent((_a = WebApp.api_token) != null ? _a : "") };
-}
-function tgapiGet(path) {
-  const sep = path.includes("?") ? "&" : "?";
-  return lib_axios.get(`${path}${sep}${authParams()}`);
-}
-function tgapiPost(path, data) {
-  return lib_axios.post(`${path}`, tgapi_spreadValues(tgapi_spreadValues({}, data), authParamsPost()));
-}
-
 ;// ./src/utils/traffic.ts
 
 var __pow = Math.pow;
@@ -56875,6 +57021,7 @@ var App_spreadProps = (a, b) => App_defProps(a, App_getOwnPropDescs(b));
 
 
 
+
 const isTelegram = telegram_isTelegramEnv();
 const NAV_ITEMS = [
   { key: "cabinet", label: "web.orders", icon: "\u{1F4E6}" },
@@ -56907,6 +57054,7 @@ class App extends react.Component {
     this.ShowInCurrency = (amount, symbol, mode = "round") => (0,config_currency/* CurrencyConvertText */.IK)(amount, this.currency, symbol, mode);
     this.UserDataEv = Sse.OnData("user", (user) => {
       this.setState({ userdata: user });
+      void syncSupportVisitor(user.id);
     });
     this.NodesDataEv = Sse.OnData("public/nodes", (nodes) => {
       if (this.state.userdata && Core.configAdmins.includes(this.state.userdata.id))
@@ -56954,7 +57102,7 @@ class App extends react.Component {
       }
       if (!this.state.loaded) return /* @__PURE__ */ react.createElement(react.Fragment, null);
       if (isTelegram) {
-        const { page, pageOld, userdata } = this.state;
+        const { page, pageOld, userdata: userdata2 } = this.state;
         const PAGE_ORDER = [
           "index",
           "cabinet",
@@ -56966,7 +57114,7 @@ class App extends react.Component {
           "speedtest"
         ];
         const involved = ["index", page, pageOld].filter(
-          (q) => q && (q !== "admin" || userdata && Core.configAdmins.includes(userdata.id))
+          (q) => q && (q !== "admin" || userdata2 && Core.configAdmins.includes(userdata2.id))
         );
         const uniqueInvolved = Array.from(
           new Set(involved)
@@ -56975,17 +57123,29 @@ class App extends react.Component {
           (a, b) => PAGE_ORDER.indexOf(a) - PAGE_ORDER.indexOf(b)
         );
         const pageIndex = pages.indexOf(page);
-        return /* @__PURE__ */ react.createElement(
+        return /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement(
           "div",
           {
             className: "split",
             style: { transform: `translateX(-${pageIndex * 100}vw)` }
           },
           pages.map((p) => /* @__PURE__ */ react.createElement("div", { className: "splitInside", key: p }, /* @__PURE__ */ react.createElement("div", { className: "application" }, this.renderHeader(), this.renderActivePage(p))))
-        );
+        ), /* @__PURE__ */ react.createElement(
+          SupportFab,
+          {
+            ready: !!userdata2,
+            label: this.LangString("applicationContactButton")
+          }
+        ));
       }
-      const { mobileMenuOpen } = this.state;
-      return /* @__PURE__ */ react.createElement("div", { className: "app-layout" }, this.renderHeader(), mobileMenuOpen && /* @__PURE__ */ react.createElement("div", { className: "app-mobile-menu" }, this.renderUserInfo(), /* @__PURE__ */ react.createElement("ul", { className: "app-nav" }, this.renderNavItems())), /* @__PURE__ */ react.createElement("div", { className: "app-body" }, /* @__PURE__ */ react.createElement("nav", { className: "app-sidebar" }, /* @__PURE__ */ react.createElement("ul", { className: "app-nav" }, this.renderNavItems())), /* @__PURE__ */ react.createElement("main", { className: "app-content" }, this.renderActivePage())));
+      const { mobileMenuOpen, userdata } = this.state;
+      return /* @__PURE__ */ react.createElement("div", { className: "app-layout" }, this.renderHeader(), mobileMenuOpen && /* @__PURE__ */ react.createElement("div", { className: "app-mobile-menu" }, this.renderUserInfo(), /* @__PURE__ */ react.createElement("ul", { className: "app-nav" }, this.renderNavItems())), /* @__PURE__ */ react.createElement("div", { className: "app-body" }, /* @__PURE__ */ react.createElement("nav", { className: "app-sidebar" }, /* @__PURE__ */ react.createElement("ul", { className: "app-nav" }, this.renderNavItems())), /* @__PURE__ */ react.createElement("main", { className: "app-content" }, this.renderActivePage())), /* @__PURE__ */ react.createElement(
+        SupportFab,
+        {
+          ready: !!userdata,
+          label: this.LangString("applicationContactButton")
+        }
+      ));
     };
     if (isTelegram) {
       this.loadAppData();
@@ -57029,6 +57189,7 @@ class App extends react.Component {
       const data = res.data;
       WebApp.api_token = data.api_key;
       this.setState({ userdata: data, needLogin: false }, () => {
+        void syncSupportVisitor(data.id);
         GetPublicNodes(true, data.api_key).then((res2) => {
           if (res2.data.status) {
             this.setState({
@@ -57152,6 +57313,7 @@ class App extends react.Component {
             if (item.key === "exit") {
               localStorage.removeItem(STORAGE_KEY);
               WebApp.api_token = void 0;
+              resetSupportVisitor();
               this.setState({
                 needLogin: true,
                 page: "index",
