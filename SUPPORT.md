@@ -42,8 +42,8 @@ App languages: **English** (`en`), **Русский** (`ru`), **Українсь
 
 Support contact / Связь с поддержкой / Зв'язок з підтримкою:
 
-1. **In-app chat (preferred):** control panel floating **💬** button (any page), or mini-app home → **Contact Support** / **Связь со службой поддержки** / **Зв'язок зі службою підтримки**. Client ID is verified when the ticket is opened from the logged-in panel.
-2. Telegram group (public): https://t.me/rocketman_vpn
+1. **Website control panel:** floating **💬** button (any page) → Support Board in-app chat. Client ID is verified when the ticket is opened from the logged-in panel.
+2. **Telegram mini-app:** home → **Contact Support** / **Связь со службой поддержки** / **Зв'язок зі службою підтримки** → https://t.me/rocketman_vpn (no Support Board widget in mini-app).
 3. Wiki: https://rocketman-vpn.com/{lang}/wiki/ (e.g. https://rocketman-vpn.com/ru/wiki/)
 
 Landing site https://rocketman-vpn.com/ also shows the default Support Board chat launcher.
@@ -274,7 +274,7 @@ Do not give, quote, paraphrase, or confirm any legal address, company name, regi
 | Trial | If Telegram-linked | Needs Telegram login or bind |
 | Instructions | Bot DMs | Modal (+ optional send to TG) |
 | Referral | Button in cabinet | Nav item + cabinet |
-| Support CTA | Floating **💬** / home **Contact Support** → in-app chat; also https://t.me/rocketman_vpn | Floating **💬** → in-app chat; FAQ / Wiki on https://rocketman-vpn.com/ |
+| Support CTA | Home **Contact Support** → https://t.me/rocketman_vpn (no in-app chat widget) | Floating **💬** → in-app chat; FAQ / Wiki on https://rocketman-vpn.com/ |
 | Top-up | In-app balance flow | Balance page and/or https://rocketman-vpn.com/{lang}/payment/?id=`<userId>` |
 
 Useful bot commands: `/start`, `/faq`, `/promo`.

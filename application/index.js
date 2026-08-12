@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 8/10/2026, 11:26:36 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 8/12/2026, 12:52:09 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -10707,166 +10707,6 @@ class BasePage extends react.Component {
   }
 }
 
-;// ./src/application/modules/tgapi.ts
-
-var tgapi_defProp = Object.defineProperty;
-var tgapi_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var tgapi_hasOwnProp = Object.prototype.hasOwnProperty;
-var tgapi_propIsEnum = Object.prototype.propertyIsEnumerable;
-var tgapi_defNormalProp = (obj, key, value) => key in obj ? tgapi_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var tgapi_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (tgapi_hasOwnProp.call(b, prop))
-      tgapi_defNormalProp(a, prop, b[prop]);
-  if (tgapi_getOwnPropSymbols)
-    for (var prop of tgapi_getOwnPropSymbols(b)) {
-      if (tgapi_propIsEnum.call(b, prop))
-        tgapi_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-
-
-
-function authParams() {
-  var _a;
-  if (telegram_isTelegramEnv()) {
-    return `verify=${System/* System */.i.toBinary(Telegram.WebApp.initData)}`;
-  }
-  return `api_key=${encodeURIComponent((_a = WebApp.api_token) != null ? _a : "")}`;
-}
-function authParamsPost() {
-  var _a;
-  if (telegram_isTelegramEnv()) {
-    return { verify: System/* System */.i.toBinary(Telegram.WebApp.initData) };
-  }
-  return { api_key: encodeURIComponent((_a = WebApp.api_token) != null ? _a : "") };
-}
-function tgapiGet(path) {
-  const sep = path.includes("?") ? "&" : "?";
-  return lib_axios.get(`${path}${sep}${authParams()}`);
-}
-function tgapiPost(path, data) {
-  return lib_axios.post(`${path}`, tgapi_spreadValues(tgapi_spreadValues({}, data), authParamsPost()));
-}
-
-;// ./src/application/modules/support.board.tsx
-
-var support_board_async = (__this, __arguments, generator) => {
-  return new Promise((resolve, reject) => {
-    var fulfilled = (value) => {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var rejected = (value) => {
-      try {
-        step(generator.throw(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
-    step((generator = generator.apply(__this, __arguments)).next());
-  });
-};
-
-
-function ensureBoard() {
-  if (!window.SupportBoard) {
-    window.SupportBoard = { q: [] };
-  }
-  if (!window.SupportBoard.q) {
-    window.SupportBoard.q = [];
-  }
-  return window.SupportBoard;
-}
-function queueOrCall(cmd, arg) {
-  const board = ensureBoard();
-  const fn = board[cmd];
-  if (typeof fn === "function") {
-    if (cmd === "setVisitor") {
-      fn(
-        arg
-      );
-    } else {
-      fn();
-    }
-    return;
-  }
-  if (cmd === "setVisitor") {
-    board.q.push([cmd, arg]);
-  } else {
-    board.q.push([cmd]);
-  }
-}
-function setSupportVisitor(data) {
-  queueOrCall("setVisitor", data);
-}
-function openSupportBoard() {
-  queueOrCall("open");
-}
-let visitorPromise = null;
-let lastClientId = null;
-function resetSupportVisitor() {
-  visitorPromise = null;
-  lastClientId = null;
-}
-function syncSupportVisitor(clientId) {
-  if (visitorPromise && (!clientId || lastClientId === clientId)) {
-    return visitorPromise;
-  }
-  visitorPromise = tgapiPost("/api/support/visitor", {}).then((res) => {
-    const data = res.data;
-    if (!(data == null ? void 0 : data.status) || !data.clientId || !data.clientToken || !data.name) {
-      visitorPromise = null;
-      return false;
-    }
-    lastClientId = data.clientId;
-    setSupportVisitor({
-      name: data.name,
-      clientId: data.clientId,
-      clientToken: data.clientToken,
-      custom: data.custom
-    });
-    return true;
-  }).catch(() => {
-    visitorPromise = null;
-    return false;
-  });
-  return visitorPromise;
-}
-function openSupportWithVisitor() {
-  return support_board_async(this, null, function* () {
-    yield syncSupportVisitor();
-    openSupportBoard();
-  });
-}
-class SupportFab extends react.Component {
-  constructor() {
-    super(...arguments);
-    this.handleClick = () => {
-      void openSupportWithVisitor();
-    };
-  }
-  render() {
-    if (!this.props.ready) return null;
-    return /* @__PURE__ */ react.createElement(
-      "button",
-      {
-        type: "button",
-        className: "support-fab",
-        onClick: this.handleClick,
-        title: this.props.label,
-        "aria-label": this.props.label
-      },
-      /* @__PURE__ */ react.createElement("span", { className: "support-fab__icon", "aria-hidden": "true" }, "\u{1F4AC}")
-    );
-  }
-}
-
 ;// ./src/application/pages/index.tsx
 
 var pages_defProp = Object.defineProperty;
@@ -10937,7 +10777,7 @@ class LandingPage extends BasePage {
       {
         className: "contactButton",
         onClick: () => {
-          void openSupportWithVisitor();
+          WebApp.openTelegramLink("https://t.me/" + TG_GROUP_USERNAME);
         }
       },
       this.LangString("applicationContactButton")
@@ -10970,6 +10810,49 @@ class LandingPage extends BasePage {
 
 // EXTERNAL MODULE: ./src/config/tarifs.ts
 var tarifs = __webpack_require__(923);
+;// ./src/application/modules/tgapi.ts
+
+var tgapi_defProp = Object.defineProperty;
+var tgapi_getOwnPropSymbols = Object.getOwnPropertySymbols;
+var tgapi_hasOwnProp = Object.prototype.hasOwnProperty;
+var tgapi_propIsEnum = Object.prototype.propertyIsEnumerable;
+var tgapi_defNormalProp = (obj, key, value) => key in obj ? tgapi_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var tgapi_spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (tgapi_hasOwnProp.call(b, prop))
+      tgapi_defNormalProp(a, prop, b[prop]);
+  if (tgapi_getOwnPropSymbols)
+    for (var prop of tgapi_getOwnPropSymbols(b)) {
+      if (tgapi_propIsEnum.call(b, prop))
+        tgapi_defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+
+
+
+function authParams() {
+  var _a;
+  if (telegram_isTelegramEnv()) {
+    return `verify=${System/* System */.i.toBinary(Telegram.WebApp.initData)}`;
+  }
+  return `api_key=${encodeURIComponent((_a = WebApp.api_token) != null ? _a : "")}`;
+}
+function authParamsPost() {
+  var _a;
+  if (telegram_isTelegramEnv()) {
+    return { verify: System/* System */.i.toBinary(Telegram.WebApp.initData) };
+  }
+  return { api_key: encodeURIComponent((_a = WebApp.api_token) != null ? _a : "") };
+}
+function tgapiGet(path) {
+  const sep = path.includes("?") ? "&" : "?";
+  return lib_axios.get(`${path}${sep}${authParams()}`);
+}
+function tgapiPost(path, data) {
+  return lib_axios.post(`${path}`, tgapi_spreadValues(tgapi_spreadValues({}, data), authParamsPost()));
+}
+
 ;// ./src/utils/traffic.ts
 
 var __pow = Math.pow;
@@ -56980,6 +56863,175 @@ class NewOrderPage extends BasePage {
   }
 }
 
+;// ./src/config/support.board.ts
+
+const SUPPORT_BOARD_WIDGET_URL = "https://support.rocketman-streams.com:3001/widget.js";
+const SUPPORT_BOARD_PUBLIC_KEY = "3UIK9JXBZRGBSEKCHxQBHEe03jERYhcz";
+
+;// ./src/application/modules/support.board.tsx
+
+var support_board_async = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
+  });
+};
+
+
+
+
+let widgetLoadStarted = false;
+function ensureSupportWidgetLoaded() {
+  if (telegram_isTelegramEnv() || typeof document === "undefined") return;
+  if (widgetLoadStarted) return;
+  widgetLoadStarted = true;
+  ensureBoard();
+  if (document.querySelector(`script[src="${SUPPORT_BOARD_WIDGET_URL}"]`)) {
+    return;
+  }
+  const script = document.createElement("script");
+  script.src = SUPPORT_BOARD_WIDGET_URL;
+  script.async = true;
+  script.dataset.key = SUPPORT_BOARD_PUBLIC_KEY;
+  script.dataset.hideLauncher = "1";
+  document.body.appendChild(script);
+}
+function ensureBoard() {
+  if (!window.SupportBoard) {
+    window.SupportBoard = { q: [] };
+  }
+  if (!window.SupportBoard.q) {
+    window.SupportBoard.q = [];
+  }
+  return window.SupportBoard;
+}
+function queueOrCall(cmd, arg) {
+  const board = ensureBoard();
+  const fn = board[cmd];
+  if (typeof fn === "function") {
+    if (cmd === "setVisitor") {
+      fn(
+        arg
+      );
+    } else {
+      fn();
+    }
+    return;
+  }
+  if (cmd === "setVisitor") {
+    board.q.push([cmd, arg]);
+  } else {
+    board.q.push([cmd]);
+  }
+}
+function setSupportVisitor(data) {
+  queueOrCall("setVisitor", data);
+}
+function openSupportBoard() {
+  queueOrCall("open");
+}
+function closeSupportBoard() {
+  queueOrCall("close");
+}
+function isSupportBoardOpen() {
+  return !!ensureBoard().isOpen;
+}
+let visitorPromise = null;
+let lastClientId = null;
+function resetSupportVisitor() {
+  visitorPromise = null;
+  lastClientId = null;
+}
+function syncSupportVisitor(clientId) {
+  if (telegram_isTelegramEnv()) return Promise.resolve(false);
+  ensureSupportWidgetLoaded();
+  if (visitorPromise && (!clientId || lastClientId === clientId)) {
+    return visitorPromise;
+  }
+  visitorPromise = tgapiPost("/api/support/visitor", {}).then((res) => {
+    const data = res.data;
+    if (!(data == null ? void 0 : data.status) || !data.clientId || !data.clientToken || !data.name) {
+      visitorPromise = null;
+      return false;
+    }
+    lastClientId = data.clientId;
+    setSupportVisitor({
+      name: data.name,
+      clientId: data.clientId,
+      clientToken: data.clientToken,
+      custom: data.custom
+    });
+    return true;
+  }).catch(() => {
+    visitorPromise = null;
+    return false;
+  });
+  return visitorPromise;
+}
+function openSupportWithVisitor() {
+  return support_board_async(this, null, function* () {
+    if (telegram_isTelegramEnv()) return;
+    yield syncSupportVisitor();
+    openSupportBoard();
+  });
+}
+function toggleSupportWithVisitor() {
+  return support_board_async(this, null, function* () {
+    if (telegram_isTelegramEnv()) return;
+    if (isSupportBoardOpen()) {
+      closeSupportBoard();
+      return;
+    }
+    yield openSupportWithVisitor();
+  });
+}
+class SupportFab extends react.Component {
+  constructor() {
+    super(...arguments);
+    this.handleClick = () => {
+      void toggleSupportWithVisitor();
+    };
+  }
+  componentDidMount() {
+    if (!telegram_isTelegramEnv() && this.props.ready) {
+      ensureSupportWidgetLoaded();
+    }
+  }
+  componentDidUpdate(prev) {
+    if (!telegram_isTelegramEnv() && this.props.ready && !prev.ready) {
+      ensureSupportWidgetLoaded();
+    }
+  }
+  render() {
+    if (telegram_isTelegramEnv() || !this.props.ready) return null;
+    return /* @__PURE__ */ react.createElement(
+      "button",
+      {
+        type: "button",
+        className: "support-fab",
+        onClick: this.handleClick,
+        title: this.props.label,
+        "aria-label": this.props.label
+      },
+      /* @__PURE__ */ react.createElement("span", { className: "support-fab__icon", "aria-hidden": "true" }, "\u{1F4AC}")
+    );
+  }
+}
+
 ;// ./src/application/App.tsx
 
 var App_defProp = Object.defineProperty;
@@ -57123,20 +57175,14 @@ class App extends react.Component {
           (a, b) => PAGE_ORDER.indexOf(a) - PAGE_ORDER.indexOf(b)
         );
         const pageIndex = pages.indexOf(page);
-        return /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement(
+        return /* @__PURE__ */ react.createElement(
           "div",
           {
             className: "split",
             style: { transform: `translateX(-${pageIndex * 100}vw)` }
           },
           pages.map((p) => /* @__PURE__ */ react.createElement("div", { className: "splitInside", key: p }, /* @__PURE__ */ react.createElement("div", { className: "application" }, this.renderHeader(), this.renderActivePage(p))))
-        ), /* @__PURE__ */ react.createElement(
-          SupportFab,
-          {
-            ready: !!userdata2,
-            label: this.LangString("applicationContactButton")
-          }
-        ));
+        );
       }
       const { mobileMenuOpen, userdata } = this.state;
       return /* @__PURE__ */ react.createElement("div", { className: "app-layout" }, this.renderHeader(), mobileMenuOpen && /* @__PURE__ */ react.createElement("div", { className: "app-mobile-menu" }, this.renderUserInfo(), /* @__PURE__ */ react.createElement("ul", { className: "app-nav" }, this.renderNavItems())), /* @__PURE__ */ react.createElement("div", { className: "app-body" }, /* @__PURE__ */ react.createElement("nav", { className: "app-sidebar" }, /* @__PURE__ */ react.createElement("ul", { className: "app-nav" }, this.renderNavItems())), /* @__PURE__ */ react.createElement("main", { className: "app-content" }, this.renderActivePage())), /* @__PURE__ */ react.createElement(
