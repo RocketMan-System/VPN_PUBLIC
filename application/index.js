@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 8/24/2026, 11:29:37 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 8/26/2026, 11:04:42 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -67277,6 +67277,8 @@ const WorldMap = ({ regions, colorForNode }) => {
       worldCopyJump: true,
       minZoom: 1,
       maxZoom: MAP_MAX_ZOOM,
+      zoomSnap: 0.25,
+      zoomDelta: 0.5,
       zoomControl: true,
       attributionControl: true
     }).setView([20, 15], 2);
