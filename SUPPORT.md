@@ -121,6 +121,8 @@ Traffic limits and prices: prefer the tariffs API; otherwise what is shown on th
 
 - Backup VLESS subscription link.
 - Geo-routing in subscription data (HAPP).
+- **Reset Proxy Password** / **Сбросить Proxy-пароль** / **Скинути Proxy пароль** — on the order card; or change the password in order **Settings** and **Save all changes**.
+- **Reset VPN subscription link** / **Сбросить ссылку на VPN подписку** / **Скинути посилання на VPN підписку** — in order **Settings** or on the order card. Regenerates the subscription URL and VLESS/Hysteria keys (main and relay). The old link stops working; the client must add the new link from VPN Instructions.
 
 Home shortcut: **How to connect to VPN or Proxy?** / **Как подключиться к VPN или Proxy?** / equivalent → FAQ in bot (`/faq`), or Wiki https://rocketman-vpn.com/{lang}/wiki/.
 
@@ -145,8 +147,8 @@ Referral cashback may apply on top-ups (see §7).
 Guide the client in this order:
 
 1. Confirm they have an **active** order and open fresh **VPN / Proxy Instructions** from that order.
-2. **VPN:** add **VLESS Multi-link** again; update subscription in the client; try another protocol or location; enable **backup subscription link** in Settings if links do not open.
-3. **Proxy:** try EU direct, then SPB → Europe with the correct relay login.
+2. **VPN:** add **VLESS Multi-link** again; update subscription in the client; try another protocol or location; enable **backup subscription link** in Settings if links do not open. If the link may have been leaked: **Reset VPN subscription link** / **Сбросить ссылку на VPN подписку** / **Скинути посилання на VPN підписку** in order Settings, then **add the new link** from VPN Instructions (refreshing the old one is not enough).
+3. **Proxy:** try EU direct, then SPB → Europe with the correct relay login. If the password may have been leaked: change it in order Settings or tap **Reset Proxy Password**.
 4. Try another recommended app (prefer **Happ**).
 5. Check traffic not exhausted / order not expired; renew or change plan if needed.
 6. Check Wiki troubleshooting: https://rocketman-vpn.com/{lang}/wiki/.
@@ -278,3 +280,32 @@ Do not give, quote, paraphrase, or confirm any legal address, company name, regi
 | Top-up | In-app balance flow | Balance page and/or https://rocketman-vpn.com/{lang}/payment/?id=`<userId>` |
 
 Useful bot commands: `/start`, `/faq`, `/promo`.
+
+---
+
+## 14. Reset Proxy password / VPN subscription / Сброс пароля Proxy и ссылки VPN / Скидання пароля Proxy і посилання VPN
+
+Use this when the client wants to revoke access (leaked password/key, shared config, leftover devices).
+
+**Change Proxy password**
+
+1. **Account** / **My Orders** → tap the order → **Settings** / **Настройки** / **Налаштування**.
+2. Edit **Your connection password (4-12 characters)** / **Ваш пароль для подключения (4-12 символов)** / **Ваш пароль для підключення (4-12 символів)**.
+3. **Save all changes** / **Сохранить все изменения** / **Зберегти всі зміни**.
+4. Reconfigure Proxy with the new password.
+
+**Reset Proxy password**
+
+1. **Account** / **My Orders** → tap the order.
+2. **Reset Proxy Password** / **Сбросить Proxy-пароль** / **Скинути Proxy пароль**.
+3. Confirm. The old password stops working. Telegram users get a new instruction in the bot.
+
+**Reset VPN subscription link** (URL + VLESS/Hysteria keys; main location and relay)
+
+1. **Account** / **My Orders** → tap the order → **Settings**, or the same button on the order card.
+2. **Reset VPN subscription link** / **Сбросить ссылку на VPN подписку** / **Скинути посилання на VPN підписку**.
+3. Confirm. The old subscription URL and access keys stop working immediately (including backup/relay locations).
+4. Tell the client to **add the new subscription link again** in the VPN app (Happ or other) from **VPN Instructions**. Refreshing the old link is not enough — it no longer works.
+5. Telegram-linked accounts also receive a VPN instruction in the bot with the new link.
+
+Do not ask the client to paste the new subscription link into chat.
