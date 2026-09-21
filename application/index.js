@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 9/18/2026, 11:25:51 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 9/21/2026, 2:10:42 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -27628,6 +27628,9 @@ const initialState = shared_spreadProps(shared_spreadValues({}, stateData), {
     xray_port: "443",
     hysteria_port: "1462-1470",
     xray_fingerprint: "firefox",
+    xray_transport: "tcp",
+    xray_xhttp_path: "/",
+    xray_xhttp_mode: "auto",
     nft_whitelist: false,
     nft_whitelist_domains: false
   },
@@ -28805,6 +28808,130 @@ function parseHysteriaPortSpec(spec) {
   };
 }
 
+;// ./src/shared/xray/transport.ts
+
+var transport_defProp = Object.defineProperty;
+var transport_defProps = Object.defineProperties;
+var transport_getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var transport_getOwnPropSymbols = Object.getOwnPropertySymbols;
+var transport_hasOwnProp = Object.prototype.hasOwnProperty;
+var transport_propIsEnum = Object.prototype.propertyIsEnumerable;
+var transport_defNormalProp = (obj, key, value) => key in obj ? transport_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var transport_spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (transport_hasOwnProp.call(b, prop))
+      transport_defNormalProp(a, prop, b[prop]);
+  if (transport_getOwnPropSymbols)
+    for (var prop of transport_getOwnPropSymbols(b)) {
+      if (transport_propIsEnum.call(b, prop))
+        transport_defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var transport_spreadProps = (a, b) => transport_defProps(a, transport_getOwnPropDescs(b));
+const XRAY_VLESS_TRANSPORTS = (/* unused pure expression or super */ null && (["tcp", "xhttp"]));
+const XRAY_XHTTP_MODES = [
+  "auto",
+  "packet-up",
+  "stream-up",
+  "stream-one"
+];
+const XRAY_VLESS_DEFAULT_TRANSPORT = "tcp";
+const XRAY_XHTTP_DEFAULT_PATH = "/";
+const XRAY_XHTTP_DEFAULT_MODE = "auto";
+const XRAY_VLESS_VISION_FLOW = "xtls-rprx-vision";
+function isXrayVlessTransport(value) {
+  return typeof value === "string" && XRAY_VLESS_TRANSPORTS.includes(value);
+}
+function normalizeXrayVlessTransport(value) {
+  return value === "xhttp" ? "xhttp" : XRAY_VLESS_DEFAULT_TRANSPORT;
+}
+function isXrayXhttpMode(value) {
+  return typeof value === "string" && XRAY_XHTTP_MODES.includes(value);
+}
+function normalizeXrayXhttpMode(value) {
+  return isXrayXhttpMode(value) ? value : XRAY_XHTTP_DEFAULT_MODE;
+}
+function normalizeXrayXhttpPath(value) {
+  const raw = (value || "").trim();
+  if (!raw) return XRAY_XHTTP_DEFAULT_PATH;
+  return raw.startsWith("/") ? raw : `/${raw}`;
+}
+function xhttpSettingsFromNode(node) {
+  return {
+    path: normalizeXrayXhttpPath(node == null ? void 0 : node.xray_xhttp_path),
+    mode: normalizeXrayXhttpMode(node == null ? void 0 : node.xray_xhttp_mode)
+  };
+}
+function vlessFlowForTransport(transport) {
+  return normalizeXrayVlessTransport(transport) === "xhttp" ? void 0 : XRAY_VLESS_VISION_FLOW;
+}
+function vlessTransportFromStream(streamSettings) {
+  return normalizeXrayVlessTransport(streamSettings == null ? void 0 : streamSettings.network);
+}
+function vlessTransportLabel(transport) {
+  return normalizeXrayVlessTransport(transport) === "xhttp" ? "XHTTP Reality" : "TCP Reality";
+}
+function vlessPortForNode(node) {
+  return parseInt(
+    (node == null ? void 0 : node.xray_port) || "443",
+    10
+  );
+}
+function applyVlessInboundTransport(inbound, node) {
+  const transport = normalizeXrayVlessTransport(node == null ? void 0 : node.xray_transport);
+  if (transport !== "xhttp") return inbound;
+  const stream = transport_spreadValues({}, inbound.streamSettings || {});
+  delete stream.tcpSettings;
+  delete stream.finalMask;
+  inbound.streamSettings = transport_spreadProps(transport_spreadValues({}, stream), {
+    network: "xhttp",
+    security: stream.security || "reality",
+    xhttpSettings: xhttpSettingsFromNode(node)
+  });
+  return inbound;
+}
+function buildVlessOutboundUser(uuid, transport) {
+  const flow = vlessFlowForTransport(transport);
+  return transport_spreadValues({
+    encryption: "none",
+    id: uuid
+  }, flow ? { flow } : {});
+}
+function buildVlessOutboundStreamSettings(opts) {
+  const transport = normalizeXrayVlessTransport(opts.transport);
+  const realitySettings = {
+    allowInsecure: false,
+    fingerprint: opts.fingerprint || "firefox",
+    publicKey: opts.publicKey,
+    serverName: opts.serverName || "template.rocketman-vpn.com",
+    shortId: opts.shortId || "",
+    show: false,
+    spiderX: "/"
+  };
+  if (transport === "xhttp") {
+    return {
+      network: "xhttp",
+      security: "reality",
+      realitySettings,
+      xhttpSettings: {
+        path: normalizeXrayXhttpPath(opts.path),
+        mode: normalizeXrayXhttpMode(opts.mode)
+      }
+    };
+  }
+  return {
+    network: "tcp",
+    security: "reality",
+    realitySettings,
+    tcpSettings: {
+      header: {
+        type: "none"
+      }
+    }
+  };
+}
+
 ;// ./src/application/pages/admin/modules/NodeModule.tsx
 
 var NodeModule_defProp = Object.defineProperty;
@@ -28826,6 +28953,7 @@ var NodeModule_spreadValues = (a, b) => {
   return a;
 };
 var NodeModule_spreadProps = (a, b) => NodeModule_defProps(a, NodeModule_getOwnPropDescs(b));
+
 
 
 
@@ -28875,7 +29003,7 @@ const NodeItem = ({ node, index, ctx }) => {
       className: `status-badge ${node.beta ? "orangeText" : "greenText"}`
     },
     node.beta ? "BETA" : "STABLE"
-  )), /* @__PURE__ */ react.createElement("div", { className: "item-details" }, /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "ID:"), " ", node.id), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "Host:"), " ", node.host), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "Type:"), " ", node.relay ? "Relay" : "Main Node"), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "SNI:"), " ", node.xray_sni || "Default"), speedTestHas && /* @__PURE__ */ react.createElement(
+  )), /* @__PURE__ */ react.createElement("div", { className: "item-details" }, /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "ID:"), " ", node.id), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "Host:"), " ", node.host), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "Type:"), " ", node.relay ? "Relay" : "Main Node"), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "SNI:"), " ", node.xray_sni || "Default"), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "VLESS:"), " ", vlessTransportLabel(node.xray_transport)), speedTestHas && /* @__PURE__ */ react.createElement(
     "div",
     {
       className: "speedTest",
@@ -28944,8 +29072,11 @@ const NewNodeForm = ({ ctx }) => {
     (q) => q.host === new_node.host && q.id !== new_node.id
   );
   const nameEmpty = !!Object.values(new_node.name).find((q) => !q);
-  const hysteriaPortsValidation = validateHysteriaPortSpec(new_node.hysteria_port);
+  const hysteriaPortsValidation = validateHysteriaPortSpec(
+    new_node.hysteria_port
+  );
   const hysteriaPortsInvalid = !hysteriaPortsValidation.ok;
+  const vlessTransport = normalizeXrayVlessTransport(new_node.xray_transport);
   return /* @__PURE__ */ react.createElement("div", { className: "editUser" }, /* @__PURE__ */ react.createElement("div", { className: "edit-section" }, /* @__PURE__ */ react.createElement("div", { className: "section-title" }, langString("applicationAdminAddNode")), /* @__PURE__ */ react.createElement("div", { className: "info-grid high-density" }, /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "NODE_ID", " ", allNodes.find((q) => q.id === new_node.id) && /* @__PURE__ */ react.createElement("span", { className: "redText" }, "(EXIST!!!)")), /* @__PURE__ */ react.createElement(
     "input",
     {
@@ -28996,7 +29127,42 @@ const NewNodeForm = ({ ctx }) => {
         new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), { xray_port: e.currentTarget.value })
       })
     }
-  )), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Hysteria Ports"), /* @__PURE__ */ react.createElement(
+  )), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XRay VLESS Transport"), /* @__PURE__ */ react.createElement(
+    "select",
+    {
+      value: vlessTransport,
+      onChange: (e) => setState({
+        new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), {
+          xray_transport: e.currentTarget.value
+        })
+      })
+    },
+    /* @__PURE__ */ react.createElement("option", { value: "tcp" }, "TCP Reality (default)"),
+    /* @__PURE__ */ react.createElement("option", { value: "xhttp" }, "XHTTP Reality")
+  )), vlessTransport === "xhttp" && /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XHTTP Path"), /* @__PURE__ */ react.createElement(
+    "input",
+    {
+      type: "text",
+      value: new_node.xray_xhttp_path || "",
+      placeholder: "/",
+      onChange: (e) => setState({
+        new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), {
+          xray_xhttp_path: e.currentTarget.value
+        })
+      })
+    }
+  )), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XHTTP Mode"), /* @__PURE__ */ react.createElement(
+    "select",
+    {
+      value: new_node.xray_xhttp_mode || "auto",
+      onChange: (e) => setState({
+        new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), {
+          xray_xhttp_mode: e.currentTarget.value
+        })
+      })
+    },
+    XRAY_XHTTP_MODES.map((mode) => /* @__PURE__ */ react.createElement("option", { key: mode, value: mode }, mode))
+  ))), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Hysteria Ports"), /* @__PURE__ */ react.createElement(
     "input",
     {
       type: "text",
