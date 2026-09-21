@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 9/21/2026, 8:50:02 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 9/21/2026, 9:14:04 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -68105,7 +68105,9 @@ const AnalyticsPanel = ({ ctx }) => {
 
 ;// ./src/shared/backup.ts
 
-const BACKUP_INTERVAL_MS = 10 * 60 * 1e3;
+const BACKUP_INTERVAL_MS = 60 * 60 * 1e3;
+const BACKUP_INITIAL_DELAY_MS = (/* unused pure expression or super */ null && (10 * 60 * 1e3));
+const BACKUP_ZIP_LEVEL = 1;
 function backupIntervalMinutes(intervalMs = BACKUP_INTERVAL_MS) {
   return Math.max(1, Math.round(intervalMs / 6e4));
 }
