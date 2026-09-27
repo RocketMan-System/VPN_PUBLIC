@@ -186,7 +186,7 @@ Requires enough balance. Extension may be limited by project max term settings (
 
 **Change plan:** **Change Plan** / **Смена тарифа** / equivalent → cooldown **72 hours**; expired orders usually need renew before change.
 
-Traffic may reset on full renew according to plan rules (shown in the order).
+Used traffic resets when the client renews the order for a full plan period (manual renew or auto-renew). Renewing an order that has already expired also resets used traffic. A short extension while the order is still active does not. Time added by an administrator on one order does not reset used traffic. Bulk renewal leaves used traffic unchanged unless the administrator chooses a change: a full clear, or a share of the plan limit or of traffic already used (the result is never below zero). That bulk action can add days, change traffic only (0 days), or both; 0 days without a traffic change is rejected. With 0 days the date filter is ignored and only orders active at that moment are updated. The Telegram notice names the added days, the traffic change (including which kind), or both. The next reset time is shown on the order.
 
 ---
 
