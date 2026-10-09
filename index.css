@@ -5554,6 +5554,21 @@ footer .footerLicense {
   justify-content: center;
   padding: 40px 0;
 }
+.payment-info .support-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 16px;
+}
+.payment-info .support-link a {
+  color: #22d3ee;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(34, 211, 238, 0.35);
+}
+.payment-info .support-link a:hover {
+  border-bottom-color: #22d3ee;
+}
 .payment-form,
 .payment-info {
   background-color: rgba(14, 16, 24, 0.82);
@@ -5594,7 +5609,8 @@ footer .footerLicense {
   font-size: 0.9em;
 }
 .form-group input[type='text'],
-.form-group input[type='number'] {
+.form-group input[type='number'],
+.form-group select {
   width: 100%;
   padding: 12px;
   background: #07080d;
@@ -5605,8 +5621,25 @@ footer .footerLicense {
   outline: none;
 }
 .form-group input[type='text']:focus,
-.form-group input[type='number']:focus {
+.form-group input[type='number']:focus,
+.form-group select:focus {
   border-color: #818cf8;
+}
+.payment-form .pay-desc {
+  display: block;
+  margin-top: 12px;
+  color: #7a8094;
+  white-space: pre-line;
+  line-height: 1.55;
+  font-size: 0.92em;
+}
+.payment-form .pay-error {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(255, 80, 80, 0.12);
+  color: #ffb4b4;
+  white-space: pre-line;
 }
 .plan-selection {
   display: flex;
