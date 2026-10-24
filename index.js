@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 10/24/2026, 4:23:26 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 10/24/2026, 4:50:17 AM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -10340,6 +10340,7 @@ class SubscribePage extends BasePage {
 var lib_browser = __webpack_require__(7583);
 ;// ./src/config/crypto.ts
 
+var __pow = Math.pow;
 var __async = (__this, __arguments, generator) => {
   return new Promise((resolve, reject) => {
     var fulfilled = (value) => {
@@ -10365,6 +10366,42 @@ var __async = (__this, __arguments, generator) => {
 
 const TRON_WALLER_ADDRESS = "TVeBcLFkhhrUpgGyfpC9VsKvw8BkgLAbbF";
 const CRYPTO_PAYMENT_EXPIRE_MINUTES = 240;
+const CRYPTO_AMOUNT_DECIMALS = 6;
+const CRYPTO_AMOUNT_SCALE = __pow(10, CRYPTO_AMOUNT_DECIMALS);
+const formatCryptoAmount = (amount) => {
+  if (!Number.isFinite(amount)) return "0";
+  const negative = amount < 0;
+  const text = Math.abs(amount).toFixed(CRYPTO_AMOUNT_DECIMALS).replace(/\.?0+$/, "");
+  return negative ? `-${text}` : text;
+};
+const roundCryptoAmount = (amount) => Number(formatCryptoAmount(amount));
+const cryptoAmountUnits = (amount) => {
+  const negative = amount < 0;
+  const [whole, frac = ""] = formatCryptoAmount(Math.abs(amount)).split(".");
+  const units = Number(whole) * CRYPTO_AMOUNT_SCALE + Number(frac.padEnd(CRYPTO_AMOUNT_DECIMALS, "0"));
+  return negative ? -units : units;
+};
+const formatCryptoUnits = (units) => {
+  const negative = units < 0;
+  const abs = Math.abs(Math.trunc(units));
+  const whole = Math.floor(abs / CRYPTO_AMOUNT_SCALE);
+  const frac = String(abs % CRYPTO_AMOUNT_SCALE).padStart(CRYPTO_AMOUNT_DECIMALS, "0").replace(/0+$/, "");
+  const text = frac ? `${whole}.${frac}` : String(whole);
+  return negative ? `-${text}` : text;
+};
+const cryptoAmountWithSuffix = (amountUsd, id) => Number(formatCryptoUnits(cryptoAmountUnits(amountUsd) + id * 10));
+const parseCryptoChainAmount = (value, decimals) => {
+  const raw = String(value != null ? value : "").trim().replace(",", ".");
+  if (!raw || raw === "." || raw === "-") return 0;
+  if (raw.includes(".")) return roundCryptoAmount(Number(raw));
+  const negative = raw.startsWith("-");
+  const digits = (negative ? raw.slice(1) : raw).replace(/\D/g, "");
+  if (!digits) return 0;
+  const places = Number.isFinite(decimals) ? Math.max(0, Math.trunc(decimals)) : 0;
+  const amount = Number(digits) / Math.pow(10, places);
+  const rounded = roundCryptoAmount(amount);
+  return negative ? -rounded : rounded;
+};
 const buildCryptoPaymentUrl = (lang, cryptoId) => {
   const safeLang = lang === "ru" || lang === "uk" ? lang : "en";
   const origin =  false ? 0 : `https://${"rocketman-vpn.com"}`;
@@ -10387,10 +10424,15 @@ const getTronUSDTTransactions = (..._0) => __async(void 0, [..._0], function* (a
       var _a;
       return ((_a = tx.token_info) == null ? void 0 : _a.symbol) === "USDT";
     }).map((tx) => {
+      var _a;
       const amountRaw = tx.value;
       const timestampMs = tx.block_timestamp;
+      const decimals = Number((_a = tx.token_info) == null ? void 0 : _a.decimals);
       return {
-        amountNumber: parseFloat(amountRaw),
+        amountNumber: parseCryptoChainAmount(
+          amountRaw,
+          Number.isFinite(decimals) ? decimals : void 0
+        ),
         amountString: amountRaw,
         from: tx.from,
         timestamp: Math.floor(timestampMs / 1e3),
@@ -10414,7 +10456,7 @@ function generateTRC20PaymentQR(options) {
   return __async(this, null, function* () {
     try {
       const { address, amount, label } = options;
-      const uri = `tron:${address}?amount=${amount}${label ? `&label=${encodeURIComponent(label)}` : ""}`;
+      const uri = `tron:${address}?amount=${formatCryptoAmount(amount)}${label ? `&label=${encodeURIComponent(label)}` : ""}`;
       const base64 = yield lib_browser.toDataURL(uri, { width: 400 });
       return base64;
     } catch (error) {
@@ -10425,6 +10467,25 @@ function generateTRC20PaymentQR(options) {
 
 ;// ./src/frontend/pages/payment.crypto.tsx
 
+var payment_crypto_defProp = Object.defineProperty;
+var payment_crypto_defProps = Object.defineProperties;
+var payment_crypto_getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var payment_crypto_getOwnPropSymbols = Object.getOwnPropertySymbols;
+var payment_crypto_hasOwnProp = Object.prototype.hasOwnProperty;
+var payment_crypto_propIsEnum = Object.prototype.propertyIsEnumerable;
+var payment_crypto_defNormalProp = (obj, key, value) => key in obj ? payment_crypto_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var payment_crypto_spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (payment_crypto_hasOwnProp.call(b, prop))
+      payment_crypto_defNormalProp(a, prop, b[prop]);
+  if (payment_crypto_getOwnPropSymbols)
+    for (var prop of payment_crypto_getOwnPropSymbols(b)) {
+      if (payment_crypto_propIsEnum.call(b, prop))
+        payment_crypto_defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var payment_crypto_spreadProps = (a, b) => payment_crypto_defProps(a, payment_crypto_getOwnPropDescs(b));
 
 
 
@@ -10485,12 +10546,17 @@ class PaymentCryptoPage extends BasePage {
           wallet = { wallet: found.wallet, name: found.name };
         }
       }
+      const amount = formatCryptoAmount(data.a);
       generateTRC20PaymentQR({
         address: (_a = wallet == null ? void 0 : wallet.wallet) != null ? _a : "",
-        amount: data.a,
+        amount: Number(amount),
         label: `${Core.GetConfigValue("projectName")} Payment (UID: ${data.u})`
       }).then((img) => {
-        this.setState({ cryptoId: data, wallet, img });
+        this.setState({
+          cryptoId: payment_crypto_spreadProps(payment_crypto_spreadValues({}, data), { a: Number(amount) }),
+          wallet,
+          img
+        });
       });
     } catch (e) {
       this.setState({ error: this.LangString("cryptoPayErrorParse") });
@@ -10498,12 +10564,13 @@ class PaymentCryptoPage extends BasePage {
   }
   render() {
     const { cryptoId, error, wallet, img } = this.state;
+    const amountText = cryptoId ? formatCryptoAmount(cryptoId.a) : "";
     return /* @__PURE__ */ react.createElement("section", { id: "payment-crypto", className: "payment-crypto-section" }, /* @__PURE__ */ react.createElement("div", { className: "container" }, /* @__PURE__ */ react.createElement("div", { className: "payment-crypto-wrapper" }, /* @__PURE__ */ react.createElement("div", { className: "payment-crypto-form" }, /* @__PURE__ */ react.createElement("h2", null, this.LangString("cryptoPayTitle")), error ? /* @__PURE__ */ react.createElement("div", { className: "crypto-error" }, error) : cryptoId ? /* @__PURE__ */ react.createElement("div", { className: "crypto-details" }, img ? /* @__PURE__ */ react.createElement("img", { src: img, className: "crypto_image" }) : /* @__PURE__ */ react.createElement(react.Fragment, null), /* @__PURE__ */ react.createElement("div", { className: "crypto-row" }, /* @__PURE__ */ react.createElement("span", { className: "crypto-label" }, this.LangString("cryptoPayUserId")), /* @__PURE__ */ react.createElement("span", { className: "crypto-value" }, cryptoId.u)), /* @__PURE__ */ react.createElement("div", { className: "crypto-row" }, /* @__PURE__ */ react.createElement("span", { className: "crypto-label" }, this.LangString("cryptoPayAmount")), /* @__PURE__ */ react.createElement(
       "div",
       {
         style: { display: "flex", alignItems: "center", gap: 8 }
       },
-      /* @__PURE__ */ react.createElement("span", { className: "crypto-value" }, cryptoId.a, " USDT"),
+      /* @__PURE__ */ react.createElement("span", { className: "crypto-value" }, amountText, " USDT"),
       /* @__PURE__ */ react.createElement(
         "span",
         {
@@ -10514,7 +10581,7 @@ class PaymentCryptoPage extends BasePage {
           },
           className: "btn-copy",
           onClick: () => this.handleCopy(
-            String(cryptoId.a),
+            amountText,
             this.LangString("cryptoPayCopyAmountAlert")
           ),
           title: this.LangString("cryptoPayCopy")

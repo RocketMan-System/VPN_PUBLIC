@@ -138,6 +138,8 @@ Home shortcut: **How to connect to VPN or Proxy?** / **Как подключит
 
 **Public payment page:** https://rocketman-vpn.com/{lang}/payment/?id=`<userId>` — enter unique ID, then choose the same payment platform and method as in the app (**Payment platform** / **Платёжная платформа** / **Платіжна платформа**, **Payment method** / **Метод оплаты** / **Метод оплати**), amount, and email if asked. The page shows commission, limits, and the total to pay. It does not show referral cashback; cashback still applies after a successful top-up (see §7).
 
+**Cryptocurrency / Криптовалюта:** the USDT amount on the payment page has at most **6 digits after the decimal**. The client must send that exact amount (copy it from the page). Example: https://rocketman-vpn.com/ru/crypto/
+
 **Unique ID / Уникальный ID / Унікальний ID** is in **Settings** / **Настройки** / **Налаштування** → **Account Info** / **Информация об аккаунте** / **Інформація про акаунт** → **Your ID** / **Ваш ID** (tap to copy). Open either the website panel https://application.rocketman-vpn.com:8443/application/ (mirror: https://ru-app.rocketman-vpn.com:8443/application/) or the Telegram app https://t.me/rocketman_vpn_bot/?startapp. A website-only account uses the website panel.
 
 Referral cashback may apply on top-ups (see §7).
