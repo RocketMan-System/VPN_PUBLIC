@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 11/4/2026, 8:53:42 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 11/4/2026, 9:58:43 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -2293,18 +2293,23 @@ input[type='checkbox']:checked::after {
   padding-top: calc(10px / 2);
   font-size: 0.8em;
   border-top: 0 solid rgba(0, 0, 0, 0);
-  transition: max-height 0.5s ease-in-out, border-top 0.5s ease-in-out;
-  max-height: 0;
-  overflow: hidden;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-in-out, border-top 0.5s ease-in-out;
 }
 .cabinet > .orders > .order > .editBlock.show {
   border-top: 1px solid var(--rm-line);
-  max-height: 40vh;
+  grid-template-rows: 1fr;
 }
-.cabinet > .orders > .order > .editBlock > div {
+.cabinet > .orders > .order > .editBlock > .editBlockInner {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+.cabinet > .orders > .order > .editBlock > .editBlockInner > div {
   margin-top: 0.5em;
 }
-.cabinet > .orders > .order > .editBlock > .buttons {
+.cabinet > .orders > .order > .editBlock > .editBlockInner > .buttons {
   gap: 8px;
   display: flex;
   flex-direction: row;
@@ -2313,7 +2318,7 @@ input[type='checkbox']:checked::after {
   align-items: center;
   margin-top: 10px;
 }
-.cabinet > .orders > .order > .editBlock > .buttons > button {
+.cabinet > .orders > .order > .editBlock > .editBlockInner > .buttons > button {
   font-size: 13px;
   padding: 6px 12px;
   border-radius: var(--rm-r-sm);
@@ -27804,7 +27809,7 @@ class CabinetPage extends BasePage {
           style: { width: `${progress}%` }
         }
       )) : /* @__PURE__ */ react.createElement(react.Fragment, null),
-      /* @__PURE__ */ react.createElement("div", { className: `editBlock ${current ? "show" : ""}` }, /* @__PURE__ */ react.createElement(
+      /* @__PURE__ */ react.createElement("div", { className: `editBlock ${current ? "show" : ""}` }, /* @__PURE__ */ react.createElement("div", { className: "editBlockInner" }, /* @__PURE__ */ react.createElement(
         "div",
         {
           dangerouslySetInnerHTML: {
@@ -27936,7 +27941,9 @@ class CabinetPage extends BasePage {
             e.preventDefault();
             e.stopPropagation();
             WebApp.showConfirm(
-              this.LangString("applicationCabinetOrderEditResetPassAccept"),
+              this.LangString(
+                "applicationCabinetOrderEditResetPassAccept"
+              ),
               (ok) => {
                 if (!ok) return;
                 WebApp.showAlert(
@@ -28008,7 +28015,7 @@ class CabinetPage extends BasePage {
           }
         },
         this.LangString("applicationCabinetOrderRemove")
-      )))
+      ))))
     );
   }
   render() {
@@ -28149,9 +28156,7 @@ class CabinetPage extends BasePage {
         },
         this.LangString("applicationCabinetOrderEditResetUid")
       ),
-      /* @__PURE__ */ react.createElement("span", { className: "info" }, this.LangString(
-        "applicationCabinetOrderEditResetUidDesc"
-      )),
+      /* @__PURE__ */ react.createElement("span", { className: "info" }, this.LangString("applicationCabinetOrderEditResetUidDesc")),
       /* @__PURE__ */ react.createElement("hr", null),
       /* @__PURE__ */ react.createElement("div", { className: "cabinet-field" }, /* @__PURE__ */ react.createElement("label", null, this.LangString(
         "applicationCabinetOrderEditChangeTarif"
