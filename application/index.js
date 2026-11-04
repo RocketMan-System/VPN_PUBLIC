@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 10/30/2026, 9:13:21 PM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 11/4/2026, 6:45:56 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1069,29 +1069,170 @@ svg.leaflet-image-layer.leaflet-interactive path {
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(314);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(417);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(130), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* width */
+___CSS_LOADER_EXPORT___.push([module.id, `:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --rm-desk: #07080b;
+  --rm-bg: #0f1116;
+  --rm-rail: #0b0d12;
+  --rm-panel: #151922;
+  --rm-panel-2: #1b202b;
+  --rm-field: #0d1016;
+  --rm-line: #242a36;
+  --rm-line-strong: #323a4a;
+  --rm-text: #e8eaf0;
+  --rm-muted: #8b92a3;
+  --rm-faint: #5f6677;
+  --rm-accent: #6470f0;
+  --rm-accent-hover: #7883f6;
+  --rm-accent-soft: rgba(100, 112, 240, 0.14);
+  --rm-accent-line: rgba(120, 131, 246, 0.55);
+  --rm-accent-text: #b3b9ff;
+  --rm-accent-shadow: rgba(100, 112, 240, 0.3);
+  --rm-link: #aab1ff;
+  --rm-flame: #ff8a3d;
+  --rm-flame-2: #ffb347;
+  --rm-flame-soft: rgba(255, 138, 61, 0.12);
+  --rm-flame-line: rgba(255, 138, 61, 0.4);
+  --rm-flame-text: #ffb347;
+  --rm-flame-ink: #1d0f04;
+  --rm-ok: #3ecf7a;
+  --rm-ok-dark: #23995a;
+  --rm-ok-soft: rgba(62, 207, 122, 0.12);
+  --rm-danger: #f0625a;
+  --rm-danger-soft: rgba(240, 98, 90, 0.12);
+  --rm-danger-line: rgba(240, 98, 90, 0.35);
+  --rm-info: #5aa9f0;
+  --rm-purple: #a05cf0;
+  --rm-hover: #151a24;
+  --rm-ghost-hover: #1c212c;
+  --rm-btn-hover: #232937;
+  --rm-btn-hover-line: #414a5e;
+  --rm-input-hover: #465066;
+  --rm-track: #232937;
+  --rm-switch-off: #2b3140;
+  --rm-chip-muted: #1e2330;
+  --rm-popover: #1a1f2b;
+  --rm-modal: #171b25;
+  --rm-overlay: rgba(4, 5, 8, 0.6);
+  --rm-shadow: rgba(0, 0, 0, 0.55);
+  --rm-shadow-soft: rgba(0, 0, 0, 0.3);
+  --rm-hero-bg: #131722;
+  --rm-hero-line: #2a3144;
+  --rm-hero-sub: #b4b9c7;
+  --rm-glass: rgba(7, 9, 13, 0.55);
+  --rm-glass-line: #232a3a;
+  --rm-star: #ffffff;
+  --rm-star-2: #cfd3ff;
+  --rm-stars-opacity: 0.55;
+  --rm-hero-glow: rgba(100, 112, 240, 0.28);
+  --rm-hero-glow-2: rgba(255, 138, 61, 0.1);
+  --rm-tint: rgba(255, 255, 255, 0.05);
+  --rm-tint-strong: rgba(255, 255, 255, 0.1);
+}
+:root[data-theme='light'] {
+  color-scheme: light;
+  --rm-desk: #e9ecf3;
+  --rm-bg: #f4f5f9;
+  --rm-rail: #ffffff;
+  --rm-panel: #ffffff;
+  --rm-panel-2: #f0f2f7;
+  --rm-field: #f7f8fb;
+  --rm-line: #e3e6ee;
+  --rm-line-strong: #d0d5e0;
+  --rm-text: #161922;
+  --rm-muted: #5c6375;
+  --rm-faint: #8d93a3;
+  --rm-accent: #5561e6;
+  --rm-accent-hover: #4752d8;
+  --rm-accent-soft: rgba(85, 97, 230, 0.1);
+  --rm-accent-line: rgba(85, 97, 230, 0.45);
+  --rm-accent-text: #3f4ad0;
+  --rm-accent-shadow: rgba(85, 97, 230, 0.25);
+  --rm-link: #4752d8;
+  --rm-flame: #f07a2a;
+  --rm-flame-2: #ffa63a;
+  --rm-flame-soft: rgba(240, 122, 42, 0.1);
+  --rm-flame-line: rgba(240, 122, 42, 0.4);
+  --rm-flame-text: #b85410;
+  --rm-flame-ink: #2a1505;
+  --rm-ok: #1f9d55;
+  --rm-ok-dark: #17834a;
+  --rm-ok-soft: rgba(31, 157, 85, 0.1);
+  --rm-danger: #d9443b;
+  --rm-danger-soft: rgba(217, 68, 59, 0.08);
+  --rm-danger-line: rgba(217, 68, 59, 0.35);
+  --rm-info: #2f7fd0;
+  --rm-purple: #8a45dc;
+  --rm-hover: #eef0f6;
+  --rm-ghost-hover: #eceef4;
+  --rm-btn-hover: #e7eaf1;
+  --rm-btn-hover-line: #bfc5d2;
+  --rm-input-hover: #b8bfcd;
+  --rm-track: #e6e9f0;
+  --rm-switch-off: #cfd4de;
+  --rm-chip-muted: #eceef3;
+  --rm-popover: #ffffff;
+  --rm-modal: #ffffff;
+  --rm-overlay: rgba(15, 18, 30, 0.35);
+  --rm-shadow: rgba(20, 24, 40, 0.14);
+  --rm-shadow-soft: rgba(20, 24, 40, 0.08);
+  --rm-hero-bg: #ffffff;
+  --rm-hero-line: #dfe3f0;
+  --rm-hero-sub: #4a5163;
+  --rm-glass: rgba(255, 255, 255, 0.72);
+  --rm-glass-line: #e3e6ee;
+  --rm-star: #8b93f5;
+  --rm-star-2: #b3b9ff;
+  --rm-stars-opacity: 0.35;
+  --rm-hero-glow: rgba(100, 112, 240, 0.16);
+  --rm-hero-glow-2: rgba(255, 138, 61, 0.08);
+  --rm-tint: rgba(20, 24, 40, 0.04);
+  --rm-tint-strong: rgba(20, 24, 40, 0.08);
+}
+:root {
+  --rm-r-sm: 8px;
+  --rm-r: 12px;
+  --rm-r-lg: 16px;
+  --rm-font: 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system, Inter, sans-serif;
+  --rm-display: 'Segoe UI Variable Display', 'Segoe UI', system-ui, -apple-system, Inter, sans-serif;
+  --rm-mono: 'Cascadia Code', 'Cascadia Mono', Consolas, ui-monospace, monospace;
+}
+/* width */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--tg-theme-secondary-bg-color, #181818);
+  background: transparent;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--tg-theme-accent-text-color, #8774e1);
+  background: var(--rm-line-strong);
+  border-radius: 99px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--rm-faint);
 }
 .switch {
   position: relative;
   display: inline-block;
-  width: 3.5em;
-  height: 1.2em;
-  /* Rounded sliders */
+  flex: none;
+  width: 40px;
+  height: 22px;
 }
 .switch input {
   opacity: 0;
@@ -1101,80 +1242,77 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* width */
 .switch .slider {
   position: absolute;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  inset: 0;
+  background-color: var(--rm-switch-off);
+  border-radius: 99px;
+  transition: background-color 0.2s;
 }
 .switch .slider:before {
   position: absolute;
   content: '';
-  height: 1em;
-  width: 1em;
-  left: 4px;
-  bottom: 0.12em;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
 }
 .switch input:checked + .slider {
-  background-color: #2196f3;
+  background-color: var(--rm-accent);
 }
-.switch input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+.switch input:focus-visible + .slider {
+  outline: 2px solid var(--rm-accent-hover);
+  outline-offset: 2px;
 }
 .switch input:checked + .slider:before {
-  -webkit-transform: translateX(2em);
-  -ms-transform: translateX(2em);
-  transform: translateX(2em);
+  transform: translateX(18px);
 }
-.switch .slider.round {
-  border-radius: 34px;
+.switch .slider:not(.round) {
+  border-radius: 6px;
 }
-.switch .slider.round:before {
-  border-radius: 50%;
+.switch .slider:not(.round):before {
+  border-radius: 4px;
 }
 *.greenText {
-  color: #2ecf51 !important;
+  color: var(--rm-ok) !important;
 }
 *.greenDarkText {
-  color: #1f8a36 !important;
+  color: var(--rm-ok-dark) !important;
 }
 *.redText {
-  color: var(--tg-theme-destructive-text-color, #ff5842) !important;
+  color: var(--rm-danger) !important;
 }
 *.orangeText {
-  color: #f08a4a !important;
+  color: var(--rm-flame) !important;
 }
 *.orangeDarkText {
-  color: #c56225 !important;
+  color: #d96a1f !important;
 }
 *.blueText {
-  color: #338ae5 !important;
+  color: var(--rm-info) !important;
 }
 *.greenBg {
-  background-color: #2ecf51 !important;
+  background-color: var(--rm-ok) !important;
 }
 *.greenDarkBg {
-  background-color: #1f8a36 !important;
+  background-color: var(--rm-ok-dark) !important;
 }
 *.purple {
-  background-color: #8f1fa5 !important;
+  background-color: var(--rm-purple) !important;
 }
 *.redBg {
-  background-color: var(--tg-theme-destructive-text-color, #ff5842) !important;
+  background-color: var(--rm-danger) !important;
 }
 *.orangeBg {
-  background-color: #f08a4a !important;
+  background-color: var(--rm-flame) !important;
 }
 *.orangeDarkBg {
-  background-color: #c56225 !important;
+  background-color: #d96a1f !important;
 }
 *.blueBg {
-  background-color: #338ae5 !important;
+  background-color: var(--rm-info) !important;
 }
 *:disabled {
   cursor: not-allowed !important;
@@ -1189,48 +1327,199 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: Inter, sans-serif;
-  background-color: var(--tg-theme-bg-color, #212121);
-  color: var(--tg-theme-text-color, #ffffff);
+  font: 14px/1.45 var(--rm-font);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--rm-bg);
+  color: var(--rm-text);
   height: 100%;
   overflow: hidden;
+  transition: background-color 0.2s, color 0.2s;
+}
+:focus-visible {
+  outline: 2px solid var(--rm-accent-hover);
+  outline-offset: 2px;
+}
+.ico {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.ico.sm {
+  width: 15px;
+  height: 15px;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
 }
 button {
-  background-color: var(--tg-theme-button-color, #8774e1);
-  color: var(--tg-theme-button-text-color, #ffffff);
-  border-radius: 5px;
-  font-size: 1.2em;
-  padding: 10px calc(10px * 2);
-  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 38px;
+  background-color: var(--rm-accent);
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 8px 16px;
   cursor: pointer;
+  box-shadow: 0 6px 18px var(--rm-accent-shadow);
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, filter 0.15s, box-shadow 0.15s, transform 0.1s;
+}
+button:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+button:active:not(:disabled) {
+  transform: translateY(1px);
 }
 button.small {
-  font-size: 0.8em;
-  padding: calc(10px / 2);
+  min-height: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 11px;
+  border-radius: var(--rm-r-sm);
+  box-shadow: none;
+}
+button.smallVPN,
+button.smallProxy {
+  min-height: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: var(--rm-r-sm);
+  box-shadow: none;
 }
 button.smallVPN {
-  font-size: 0.8em;
-  padding: calc(10px / 2);
-  background-color: #6c00b4;
+  background-color: var(--rm-accent-soft);
+  border-color: var(--rm-accent-line);
+  color: var(--rm-accent-text);
 }
 button.smallProxy {
-  font-size: 0.8em;
-  padding: calc(10px / 2);
-  background-color: #642349;
+  background-color: var(--rm-flame-soft);
+  border-color: var(--rm-flame-line);
+  color: var(--rm-flame-text);
 }
 button.disabled {
-  opacity: 0.7;
+  opacity: 0.55;
+}
+button.second,
+button.secondary {
+  background-color: var(--rm-panel-2);
+  border-color: var(--rm-line-strong);
+  color: var(--rm-text);
+  font-weight: 500;
+  box-shadow: none;
+}
+button.second:hover:not(:disabled),
+button.secondary:hover:not(:disabled) {
+  filter: none;
+  background-color: var(--rm-btn-hover);
+  border-color: var(--rm-btn-hover-line);
+}
+button.ghost {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--rm-muted);
+  box-shadow: none;
+}
+button.ghost:hover:not(:disabled) {
+  filter: none;
+  background-color: var(--rm-ghost-hover);
+  color: var(--rm-text);
+}
+button.redBg,
+button.greenBg,
+button.greenDarkBg,
+button.orangeBg,
+button.orangeDarkBg,
+button.blueBg,
+button.purple {
+  box-shadow: none;
+}
+button.orangeBg {
+  background: linear-gradient(180deg, var(--rm-flame-2), var(--rm-flame)) !important;
+  color: var(--rm-flame-ink);
+  font-weight: 650;
+}
+button.redBg {
+  background-color: var(--rm-danger-soft) !important;
+  border-color: var(--rm-danger-line);
+  color: var(--rm-danger);
+}
+button.redBg:hover:not(:disabled) {
+  filter: none;
+  border-color: var(--rm-danger);
 }
 .tarif-button {
-  background-color: #008035;
-  color: #fff;
+  background-color: var(--rm-ok-soft);
+  border-color: rgba(62, 207, 122, 0.4) !important;
+  color: var(--rm-ok) !important;
+  box-shadow: none;
 }
 a {
-  color: var(--tg-theme-link-color, #8774e1);
+  color: var(--rm-link);
+  text-decoration: none;
 }
-input {
+a:hover {
+  text-decoration: underline;
+}
+input,
+select,
+textarea {
+  color: var(--rm-text);
   border: none;
-  border-radius: 2px;
+  border-radius: 10px;
+}
+select {
+  appearance: none;
+  padding-right: 34px !important;
+  cursor: pointer;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+input[type='checkbox'] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  flex: none;
+  margin: 0;
+  display: inline-grid;
+  place-items: center;
+  border: 1.5px solid var(--rm-line-strong);
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+input[type='checkbox']::after {
+  content: '';
+  width: 9px;
+  height: 5px;
+  margin-top: -2px;
+  border: solid #fff;
+  border-width: 0 0 2px 2px;
+  transform: rotate(-45deg) scale(0);
+  transition: transform 0.12s;
+}
+input[type='checkbox']:checked {
+  background: var(--rm-accent);
+  border-color: var(--rm-accent);
+}
+input[type='checkbox']:checked::after {
+  transform: rotate(-45deg) scale(1);
 }
 .userShow {
   display: flex;
@@ -1245,9 +1534,8 @@ input {
   transform: rotateZ(0deg);
   transition: transform 1.5s ease-in-out;
 }
-.app-header__brand:hover .rotate,
-.app-header__balance:hover .rotate {
-  transform: rotateZ(720deg);
+.app-header__brand:hover img {
+  transform: rotateZ(-12deg) translateY(-1px);
 }
 .split {
   touch-action: none;
@@ -1262,52 +1550,63 @@ input {
 .application {
   display: flex;
   flex-direction: column;
-  margin: 0 1vh;
-  height: 98dvh;
+  padding: 0 12px;
+  height: 100dvh;
   overflow: hidden;
   touch-action: none;
 }
 .app-header {
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  height: 54px;
+  background-color: var(--rm-rail);
+  color: var(--rm-text);
+  height: 56px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 12px;
+  gap: 10px;
+  padding: 0 14px;
   flex-shrink: 0;
-  border-radius: 6px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--rm-line);
+  border-radius: var(--rm-r);
   margin-bottom: 10px;
 }
 .application .app-header {
-  border-radius: 5px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 12px;
 }
 .app-layout .app-header {
   border-radius: 0;
+  border-width: 0 0 1px;
   margin-bottom: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 0 18px;
   z-index: 20;
 }
 .app-header__left {
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 0;
 }
 .app-header__brand {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-weight: 700;
-  font-size: 1.05em;
+  gap: 10px;
+  font: 650 15px/1.1 var(--rm-display);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  min-width: 0;
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .app-header__brand .rotate {
-    display: none;
-  }
+.app-header__brand img {
+  width: 30px;
+  height: 30px;
+  flex: none;
+  transition: transform 0.3s ease;
+}
+.app-header__brand span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media (max-width: 360px) {
   .app-header__brand span {
@@ -1317,76 +1616,101 @@ input {
 .app-header__right {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
 }
+.app-header__icon-btn,
 .app-header__notifies-container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 36px;
+  min-height: 0;
   height: 36px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0;
+  flex: none;
+  border: 1px solid var(--rm-line);
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--rm-muted);
+  box-shadow: none;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
 }
-.app-header__notifies-container:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: scale(1.05);
+.app-header__icon-btn:hover:not(:disabled),
+.app-header__notifies-container:hover:not(:disabled) {
+  filter: none;
+  background-color: var(--rm-hover);
+  border-color: var(--rm-line-strong);
+  color: var(--rm-text);
 }
 .app-header__bell {
-  font-size: 1.2em;
+  display: flex;
   user-select: none;
 }
 .app-header__bell-badge {
   position: absolute;
-  top: -2px;
-  right: -2px;
-  background-color: var(--tg-theme-destructive-text-color, #ff5842);
+  top: -6px;
+  right: -6px;
+  background-color: var(--rm-danger);
   color: white;
-  font-size: 0.65em;
-  font-weight: bold;
-  min-width: 16px;
-  height: 16px;
+  font-size: 10.5px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 99px;
   padding: 0 4px;
-  border: 2px solid var(--tg-theme-secondary-bg-color, #181818);
+  border: 2px solid var(--rm-rail);
 }
 .app-header__username {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  font-size: 0.88em;
+  color: var(--rm-muted);
+  font-size: 13px;
 }
 .app-header__balance {
-  color: #2ecf51;
-  font-weight: bold;
-  cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 99px;
+  background-color: var(--rm-ok-soft);
+  color: var(--rm-ok);
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: filter 0.15s;
+}
+.app-header__balance:hover {
+  filter: brightness(1.1);
 }
 .app-header__topup {
-  font-size: 0.82em !important;
-  padding: 6px 12px !important;
-  border-radius: 6px !important;
+  min-height: 32px !important;
+  font-size: 13px !important;
+  padding: 0 12px !important;
+  border-radius: var(--rm-r-sm) !important;
 }
 .app-header__hamburger {
   background: transparent !important;
-  color: var(--tg-theme-text-color, #ffffff) !important;
-  font-size: 1.3em !important;
-  padding: 4px 8px !important;
-  border-radius: 4px;
-  line-height: 1;
+  color: var(--rm-text) !important;
+  min-height: 0 !important;
+  width: 36px;
+  height: 36px;
+  padding: 0 !important;
+  border: 1px solid var(--rm-line) !important;
+  border-radius: 10px;
+  box-shadow: none !important;
+  flex: none;
   display: none;
 }
 .app-layout {
   display: flex;
   flex-direction: column;
   height: 100dvh;
-  background-color: var(--tg-theme-bg-color, #212121);
+  background-color: var(--rm-bg);
   overflow: hidden;
 }
 .app-body {
@@ -1396,96 +1720,120 @@ input {
   overflow: hidden;
 }
 .app-sidebar {
-  width: 220px;
+  width: 224px;
   flex-shrink: 0;
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  background-color: var(--rm-rail);
+  border-right: 1px solid var(--rm-line);
   overflow-y: auto;
-  padding-top: 8px;
+  padding: 16px 12px 12px;
 }
 .app-nav {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 .app-nav__item {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 13px 20px;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 10px;
   cursor: pointer;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  font-size: 0.92em;
+  color: var(--rm-muted);
+  font-size: 14px;
   font-weight: 500;
   transition: background-color 0.15s, color 0.15s;
   position: relative;
 }
 .app-nav__item:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  color: var(--tg-theme-text-color, #ffffff);
+  background-color: var(--rm-hover);
+  color: var(--rm-text);
 }
 .app-nav__item.active {
-  color: var(--tg-theme-text-color, #ffffff);
-  background-color: rgba(135, 116, 225, 0.15);
+  color: var(--rm-text);
+  font-weight: 600;
+  background-color: var(--rm-accent-soft);
 }
 .app-nav__item.active::before {
   content: '';
   position: absolute;
-  left: 0;
-  top: 6px;
-  bottom: 6px;
+  left: -12px;
+  top: 10px;
+  bottom: 10px;
   width: 3px;
-  background-color: var(--tg-theme-accent-text-color, #8774e1);
+  background-color: var(--rm-accent);
   border-radius: 0 3px 3px 0;
 }
+.app-nav__item.active .app-nav__icon {
+  color: var(--rm-accent-text);
+}
 .app-nav__item.admin_button {
-  color: var(--tg-theme-destructive-text-color, #ff5842);
+  color: var(--rm-danger);
 }
 .app-nav__item.admin_button:hover {
-  background-color: rgba(255, 88, 66, 0.08);
+  background-color: var(--rm-danger-soft);
 }
 .app-nav__item.admin_button.active {
-  background-color: rgba(255, 88, 66, 0.12);
+  background-color: var(--rm-danger-soft);
+}
+.app-nav__item.admin_button.active .app-nav__icon {
+  color: var(--rm-danger);
 }
 .app-nav__item.admin_button.active::before {
-  background-color: var(--tg-theme-destructive-text-color, #ff5842);
+  background-color: var(--rm-danger);
 }
 .app-nav__icon {
-  font-size: 1.1em;
-  width: 22px;
-  text-align: center;
+  display: flex;
+  width: 18px;
   flex-shrink: 0;
 }
 .app-nav__divider {
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.07);
+  background-color: var(--rm-line);
   margin: 8px 0;
 }
 .app-content {
   flex: 1;
+  min-width: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background-color: var(--rm-bg);
+}
+.app-content > .cabinet,
+.app-content > .index,
+.app-content > .balance,
+.app-content > .servers-charts,
+.app-content > .settings-page {
+  padding: 22px 24px 24px;
 }
 .app-content > * {
   flex: 1;
   min-height: 0;
 }
 .app-mobile-menu {
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background-color: var(--rm-rail);
+  border-bottom: 1px solid var(--rm-line);
   z-index: 15;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 8px 12px 12px;
+  box-shadow: 0 12px 30px var(--rm-shadow);
+  animation: cabinet-fade-in 0.2s ease-out;
 }
 .app-mobile-menu .app-nav__item {
-  padding: 14px 20px;
+  height: 44px;
+}
+.app-mobile-menu .app-nav__item.active::before {
+  display: none;
 }
 .web-main-button {
   width: 100%;
   margin-bottom: 10px;
-  font-size: 1em;
-  padding: 11px;
-  border-radius: 8px;
+  min-height: 42px;
+  border-radius: 10px;
 }
 .web-back-button {
   margin-bottom: 10px;
@@ -1499,8 +1847,11 @@ input {
   flex-direction: column;
   flex-grow: 1;
   height: 0;
-  gap: 10px;
+  gap: 14px;
   overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rm-line-strong) transparent;
+  animation: page-in 0.25s ease-out;
 }
 .cabinet > .title,
 .index > .title,
@@ -1509,6 +1860,14 @@ input {
 .servers-charts > .title {
   text-align: center;
   flex-shrink: 0;
+  font: 650 18px/1.3 var(--rm-display);
+  letter-spacing: -0.005em;
+}
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
 }
 .index {
   margin-bottom: 10px;
@@ -1526,12 +1885,32 @@ input {
 .index > .welcome::first-line {
   font-weight: bold;
 }
-.index > .welcome.web {
-  margin: calc(10px * 2);
-  background: var(--tg-theme-secondary-bg-color, #181818);
-  padding: 10px;
-  border-radius: 5px;
+.index > .welcome.web,
+.index > .welcome.tg {
+  position: relative;
+  overflow: auto;
   flex-grow: 0;
+  padding: 24px 26px;
+  line-height: 1.55;
+  color: var(--rm-hero-sub);
+  background: radial-gradient(110% 140% at 100% 0%, var(--rm-hero-glow), transparent 55%), radial-gradient(70% 120% at 0% 100%, var(--rm-hero-glow-2), transparent 60%), var(--rm-hero-bg);
+  border: 1px solid var(--rm-hero-line);
+  border-radius: var(--rm-r-lg);
+}
+.index > .welcome.web::first-line,
+.index > .welcome.tg::first-line {
+  color: var(--rm-text);
+  font: 650 22px/1.5 var(--rm-display);
+}
+.index > .welcome.web b,
+.index > .welcome.tg b,
+.index > .welcome.web strong,
+.index > .welcome.tg strong {
+  color: var(--rm-text);
+}
+.index > .welcome.tg {
+  flex-grow: 1;
+  padding: 18px;
 }
 .index > .userinfo {
   display: flex;
@@ -1554,11 +1933,11 @@ input {
   gap: 10px;
 }
 .index > .userinfo .timeWithUs {
-  color: #e29300;
+  color: var(--rm-flame-text);
   cursor: pointer;
 }
 .index > .userinfo .youWithUs {
-  color: #ffffff;
+  color: var(--rm-text);
 }
 .index > .contactButtonSection {
   display: flex;
@@ -1568,20 +1947,22 @@ input {
   gap: 10px;
 }
 .index > .contactButtonSection > .contactButton {
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  color: var(--tg-theme-text-color, #ffffff);
-  font-size: 0.9em;
+  width: 80%;
+  background-color: var(--rm-panel-2);
+  border-color: var(--rm-line-strong);
+  color: var(--rm-text);
+  font-weight: 500;
+  box-shadow: none;
 }
 .index > .contactButtonSection > .contactButton1 {
-  background-color: #0baa00;
-  color: #ffffff;
-  font-size: 0.9em;
-  border: none;
-  padding: 0.7em 1em;
-  border-radius: 4px;
+  width: 80%;
+  background-color: var(--rm-ok-soft);
+  border-color: rgba(62, 207, 122, 0.4);
+  color: var(--rm-ok);
+  box-shadow: none;
 }
 .index > .buttons {
-  border-top: 1px solid var(--tg-theme-subtitle-text-color, #aaaaaa);
+  border-top: 1px solid var(--rm-line);
   padding-top: 10px;
   display: flex;
   flex-direction: column;
@@ -1594,8 +1975,10 @@ input {
   width: 80%;
 }
 .index > .buttons > button.second {
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  color: var(--tg-theme-text-color, #ffffff);
+  background-color: var(--rm-panel-2);
+  border-color: var(--rm-line-strong);
+  color: var(--rm-text);
+  box-shadow: none;
 }
 .cabinet > .newOrder,
 .cabinet > .orders {
@@ -1607,58 +1990,80 @@ input {
   animation: cabinet-fade-in 0.4s ease-out;
 }
 .cabinet > .referal {
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  color: var(--tg-theme-text-color, #ffffff);
-  padding: 10px;
-  border-radius: 12px;
+  background-color: var(--rm-panel);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line);
+  border-radius: var(--rm-r);
+  padding: 16px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: calc(10px / 2);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 8px;
 }
 .cabinet > .referal > .title {
   text-align: center;
-  font-weight: 700;
-  color: var(--tg-theme-accent-text-color, #8774e1);
+  font: 600 15px/1.3 var(--rm-display);
+  color: var(--rm-text);
 }
 .cabinet > .referal > .tarifDesc {
   text-align: left;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   white-space: pre-line;
   font-size: 0.9em;
 }
 .cabinet > .referal > .desc {
   text-align: center;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   white-space: pre-line;
   font-size: 0.9em;
 }
 .cabinet > .referal > .info {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   white-space: pre-line;
   font-size: 0.85em;
 }
 .cabinet > .referal > .links {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 5px;
+  gap: 8px;
+  margin-top: 6px;
+}
+.cabinet > .referal > .links a {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 14px;
+  border: 1px solid var(--rm-line-strong);
+  border-radius: 10px;
+  background-color: var(--rm-panel-2);
+  color: var(--rm-text);
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+.cabinet > .referal > .links a:hover {
+  text-decoration: none;
+  background-color: var(--rm-btn-hover);
+  border-color: var(--rm-btn-hover-line);
+}
+.cabinet > .referral_button,
+.cabinet > .save {
+  align-self: center;
+  flex-shrink: 0;
 }
 .cabinet > .editOrder,
 .cabinet > .newOrder > div,
 .cabinet > .orders > div {
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  color: var(--tg-theme-text-color, #ffffff);
-  border-radius: 12px;
+  background-color: var(--rm-panel);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line);
+  border-radius: var(--rm-r);
+  padding: 16px;
   position: relative;
-  padding: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.3s ease;
+  transition: background-color 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 .cabinet > .editOrder:not(.editOrder),
 .cabinet > .newOrder > div:not(.editOrder),
@@ -1668,28 +2073,27 @@ input {
 .cabinet > .editOrder:not(.editOrder):hover,
 .cabinet > .newOrder > div:not(.editOrder):hover,
 .cabinet > .orders > div:not(.editOrder):hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--rm-line-strong);
+  box-shadow: 0 8px 24px var(--rm-shadow-soft);
 }
 .cabinet > .editOrder.current,
 .cabinet > .newOrder > div.current,
 .cabinet > .orders > div.current {
-  border-color: var(--tg-theme-button-color, #8774e1);
-  background: var(--tg-theme-secondary-bg-color, #181818);
-  background-image: linear-gradient(145deg, transparent, rgba(255, 255, 255, 0.05));
+  border-color: var(--rm-accent-line);
+  background: radial-gradient(70% 90% at 100% 0%, var(--rm-hero-glow), transparent 65%), radial-gradient(60% 90% at 0% 100%, var(--rm-hero-glow-2), transparent 65%), var(--rm-panel);
+  box-shadow: inset 0 0 0 1px var(--rm-accent-line), 0 10px 30px var(--rm-accent-soft);
 }
 .cabinet > .editOrder:not(:last-child),
 .cabinet > .newOrder > div:not(:last-child),
 .cabinet > .orders > div:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .cabinet > .editOrder > .name,
 .cabinet > .newOrder > div > .name,
 .cabinet > .orders > div > .name {
-  font-size: 1.1em;
-  font-weight: 700;
-  margin-bottom: calc(10px / 2);
-  color: var(--tg-theme-text-color, #ffffff);
+  font: 650 16px/1.3 var(--rm-display);
+  margin-bottom: 6px;
+  color: var(--rm-text);
 }
 .cabinet > .editOrder {
   display: flex;
@@ -1702,49 +2106,57 @@ input {
 }
 .cabinet > .editOrder > .orderName {
   text-align: center;
-  font-weight: 700;
-  font-size: 1.15em;
-  margin-bottom: 10px;
-  color: var(--tg-theme-accent-text-color, #8774e1);
+  font: 650 18px/1.3 var(--rm-display);
+  margin-bottom: 4px;
+  color: var(--rm-text);
 }
 .cabinet > .editOrder .cabinet-field {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 7px;
   width: 100%;
 }
 .cabinet > .editOrder .cabinet-field label {
-  font-size: 0.85em;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--rm-text);
 }
 .cabinet > .editOrder .cabinet-field input,
 .cabinet > .editOrder .cabinet-field select {
-  background-color: var(--tg-theme-bg-color, #212121);
-  color: var(--tg-theme-text-color, #ffffff);
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 6px;
-  padding: 10px 12px;
-  font-size: 0.95em;
+  background-color: var(--rm-field);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line-strong) !important;
+  border-radius: 10px;
+  min-height: 38px;
+  padding: 8px 12px;
+  font-size: 14px;
   width: -webkit-fill-available;
-  transition: border-color 0.2s;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.cabinet > .editOrder .cabinet-field input:hover,
+.cabinet > .editOrder .cabinet-field select:hover {
+  border-color: var(--rm-input-hover) !important;
 }
 .cabinet > .editOrder .cabinet-field input:focus,
-.cabinet > .editOrder .cabinet-field select:focus {
+.cabinet > .editOrder .cabinet-field select:focus,
+.cabinet > .editOrder .cabinet-field input:focus-visible,
+.cabinet > .editOrder .cabinet-field select:focus-visible {
   outline: none;
-  border-color: var(--tg-theme-accent-text-color, #8774e1) !important;
+  border-color: var(--rm-accent) !important;
+  box-shadow: 0 0 0 3px var(--rm-accent-soft);
 }
 .cabinet > .editOrder .cabinet-field input.error,
 .cabinet > .editOrder .cabinet-field select.error {
-  border-color: var(--tg-theme-destructive-text-color, #ff5842) !important;
+  border-color: var(--rm-danger) !important;
+  box-shadow: 0 0 0 3px var(--rm-danger-soft);
 }
 .cabinet > .editOrder .cabinet-field input::placeholder,
 .cabinet > .editOrder .cabinet-field select::placeholder {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  opacity: 0.5;
+  color: var(--rm-faint);
 }
 .cabinet > .editOrder .cabinet-field__error {
-  font-size: 0.8em;
-  color: var(--tg-theme-destructive-text-color, #ff5842);
+  font-size: 12px;
+  color: var(--rm-danger);
 }
 .cabinet > .editOrder .cabinet-field label {
   margin-bottom: 4px;
@@ -1756,9 +2168,7 @@ input {
 }
 .cabinet > .editOrder .cabinet-save {
   width: -webkit-fill-available;
-  padding: 11px;
-  font-size: 0.95em;
-  border-radius: 8px;
+  min-height: 40px;
   margin-top: calc(10px / 2);
 }
 .cabinet > .editOrder .cabinet-save.small {
@@ -1772,19 +2182,14 @@ input {
   gap: 10px;
   padding: 8px 0;
 }
-.cabinet > .editOrder > .check input[type='checkbox'] {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-}
 .cabinet > .editOrder > .check span {
-  font-size: 0.95em;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
 }
 .cabinet > .editOrder > .info {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  font-size: 0.85em;
-  line-height: 1.4;
+  color: var(--rm-muted);
+  font-size: 12.5px;
+  line-height: 1.45;
   white-space: pre-line;
   margin-top: -8px;
   margin-bottom: 4px;
@@ -1795,11 +2200,11 @@ input {
   margin-top: 0;
 }
 .cabinet > .editOrder > .info.infoRed {
-  color: var(--tg-theme-destructive-text-color, #ff5842);
+  color: var(--rm-danger);
 }
 .cabinet > .editOrder hr {
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: 1px solid var(--rm-line);
   width: 100%;
   margin: 10px 0;
 }
@@ -1813,7 +2218,7 @@ input {
 }
 .cabinet > .newOrder > div > .desc {
   margin-top: 10px;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   margin-bottom: 10px;
   white-space: pre-line;
 }
@@ -1839,26 +2244,37 @@ input {
   width: -webkit-fill-available;
 }
 .cabinet > .orders > .order > .trafic {
-  margin-top: 10px;
-  font-weight: bold;
+  margin-top: 12px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
 }
 .cabinet > .orders > .order > .tarif {
-  font-size: 0.9em;
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  margin-bottom: 6px;
+  padding: 2px 9px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, rgba(100, 112, 240, 0.22), rgba(255, 138, 61, 0.18));
+  box-shadow: inset 0 0 0 1px rgba(150, 158, 255, 0.25);
+  color: var(--rm-accent-text);
+  font-size: 12px;
+  font-weight: 600;
 }
 .cabinet > .orders > .order > .status {
-  margin-bottom: calc(10px / 4);
-  font-size: 0.9em;
+  margin-bottom: 2px;
+  font-size: 13px;
 }
 .cabinet > .orders > .order > .progress {
   display: flex;
-  border-radius: 20px;
-  background-color: var(--tg-theme-bg-color, #212121);
+  border-radius: 99px;
+  background-color: var(--rm-track);
   height: 6px;
   margin: 12px 0 8px;
   overflow: hidden;
 }
 .cabinet > .orders > .order > .progress > .value {
-  border-radius: 20px;
+  border-radius: 99px;
   transition: width 1s cubic-bezier(0.1, 0.5, 0.5, 1);
   position: relative;
 }
@@ -1882,7 +2298,7 @@ input {
   overflow: hidden;
 }
 .cabinet > .orders > .order > .editBlock.show {
-  border-top: 1px solid var(--tg-theme-subtitle-text-color, #aaaaaa);
+  border-top: 1px solid var(--rm-line);
   max-height: 40vh;
 }
 .cabinet > .orders > .order > .editBlock > div {
@@ -1898,17 +2314,17 @@ input {
   margin-top: 10px;
 }
 .cabinet > .orders > .order > .editBlock > .buttons > button {
-  font-size: 0.9em;
-  padding: 8px 12px;
-  border-radius: 8px;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: var(--rm-r-sm);
 }
 .cabinet .order-skeleton {
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  color: var(--tg-theme-text-color, #ffffff);
-  border-radius: 12px;
-  padding: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  margin-bottom: 10px;
+  background-color: var(--rm-panel);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line);
+  border-radius: var(--rm-r);
+  padding: 16px;
+  margin-bottom: 12px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1923,12 +2339,12 @@ input {
   bottom: 0;
   left: 0;
   transform: translateX(-100%);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.03) 20%, rgba(255, 255, 255, 0.06) 60%, rgba(255, 255, 255, 0));
+  background: linear-gradient(90deg, transparent 0, var(--rm-tint) 20%, var(--rm-tint-strong) 60%, transparent);
   animation: skeleton-shimmer 2s infinite;
 }
 .cabinet .order-skeleton .skeleton-line {
   height: 14px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--rm-track);
   border-radius: 4px;
 }
 .cabinet .order-skeleton .skeleton-line.title {
@@ -1988,11 +2404,11 @@ input {
   border-radius: 5px;
 }
 .balance > .item {
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  color: var(--tg-theme-text-color, #ffffff);
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: var(--rm-panel);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line);
+  border-radius: var(--rm-r);
+  padding: 16px;
   width: -webkit-fill-available;
 }
 .balance > .item > .first {
@@ -2004,7 +2420,7 @@ input {
   align-items: center;
 }
 .balance > .item > .desc {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   text-align: center;
   display: block;
   white-space: pre-line;
@@ -2013,11 +2429,11 @@ input {
   margin-top: 10px;
 }
 .balance > .amount {
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  color: var(--tg-theme-text-color, #ffffff);
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: var(--rm-panel);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line);
+  border-radius: var(--rm-r);
+  padding: 16px;
   width: -webkit-fill-available;
   display: flex;
   gap: 10px;
@@ -2031,17 +2447,17 @@ input {
   width: -webkit-fill-available;
 }
 .balance > .amount > .desc {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
 }
 .MuiChartsLegend-label {
-  color: white;
+  color: var(--rm-text);
 }
 .admin {
   display: flex;
   flex-direction: column;
   height: 100%;
   overflow: hidden !important;
-  background: var(--tg-theme-bg-color, #212121);
+  background: var(--rm-bg);
   position: relative;
 }
 .admin-container {
@@ -2056,13 +2472,13 @@ input {
   }
 }
 .admin select option {
-  background-color: #1e1e1e !important;
-  color: white !important;
+  background-color: var(--rm-popover) !important;
+  color: var(--rm-text) !important;
 }
 .admin-sidebar {
   width: 240px;
-  background: var(--tg-theme-secondary-bg-color, #181818);
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--rm-panel);
+  border-right: 1px solid var(--rm-line);
   display: flex;
   flex-direction: column;
   z-index: 100;
@@ -2076,7 +2492,7 @@ input {
     bottom: 0;
     transform: translateX(-100%);
     width: 280px;
-    box-shadow: 20px 0 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 20px 0 50px var(--rm-shadow);
   }
   .admin-sidebar.open {
     transform: translateX(0);
@@ -2086,8 +2502,8 @@ input {
   padding: 24px;
   font-size: 1.2em;
   font-weight: 700;
-  color: var(--tg-theme-text-color, #ffffff);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--rm-text);
+  border-bottom: 1px solid var(--rm-line);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -2106,7 +2522,7 @@ input {
 .admin-sidebar-nav .nav-group .group-label {
   font-size: 0.75em;
   text-transform: uppercase;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   letter-spacing: 1px;
   margin: 0 12px 8px;
   font-weight: 600;
@@ -2117,22 +2533,22 @@ input {
   gap: 12px;
   padding: 12px 16px;
   border-radius: 10px;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   cursor: pointer;
   transition: all 0.2s ease;
   margin-bottom: 4px;
   font-weight: 500;
 }
 .admin-sidebar-nav .nav-item:hover {
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--tg-theme-text-color, #ffffff);
+  background: var(--rm-tint);
+  color: var(--rm-text);
 }
 .admin-sidebar-nav .nav-item.active {
   background: rgba(135, 116, 225, 0.15);
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
 }
 .admin-sidebar-nav .nav-item.active .icon {
-  color: var(--tg-theme-accent-text-color, #8774e1);
+  color: var(--rm-accent);
 }
 .admin-sidebar-nav .nav-item .icon {
   font-size: 1.2em;
@@ -2142,9 +2558,9 @@ input {
 }
 .admin-sidebar-footer {
   padding: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--rm-line);
   font-size: 0.85em;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
 }
 .admin-content {
   flex: 1;
@@ -2169,7 +2585,7 @@ input {
   margin: 0;
   font-size: 1.8em;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--tg-theme-text-color, #ffffff) 0%, rgba(255, 255, 255, 0.5) 100%);
+  background: linear-gradient(135deg, var(--rm-text) 0%, rgba(255, 255, 255, 0.5) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2189,8 +2605,8 @@ input {
   margin-bottom: 8px;
 }
 .admin-header-stats .stat-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--rm-panel);
+  border: 1px solid var(--rm-line);
   padding: 20px;
   border-radius: 16px;
   display: flex;
@@ -2200,33 +2616,33 @@ input {
 }
 .admin-header-stats .stat-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(135, 116, 225, 0.3);
+  border-color: rgba(100, 112, 240, 0.3);
 }
 .admin-header-stats .stat-card .label {
   font-size: 0.85em;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   font-weight: 500;
 }
 .admin-header-stats .stat-card .value {
   font-size: 1.4em;
   font-weight: 700;
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
 }
 .admin-header-stats .stat-card.accent .value {
-  color: var(--tg-theme-accent-text-color, #8774e1);
+  color: var(--rm-accent);
 }
 .admin-header-stats .stat-card.green .value {
-  color: #2ecf51;
+  color: var(--rm-ok);
 }
 .admin-header-stats .stat-card.red .value {
-  color: var(--tg-theme-destructive-text-color, #ff5842);
+  color: var(--rm-danger);
 }
 .admin .admin-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--rm-panel);
+  border: 1px solid var(--rm-line);
   border-radius: 20px;
   padding: 24px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px var(--rm-shadow);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -2235,7 +2651,7 @@ input {
   margin: 0;
   font-size: 1.25em;
   font-weight: 700;
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
 }
 .admin .admin-card .form-header {
   display: flex;
@@ -2243,7 +2659,7 @@ input {
   align-items: center;
   margin-bottom: 20px;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid var(--rm-line);
 }
 .admin .admin-card .form-header h3 {
   margin: 0;
@@ -2291,7 +2707,7 @@ input {
   margin: 0 0 12px 0;
   font-size: 1em;
   opacity: 0.8;
-  color: var(--tg-theme-accent-text-color, #8774e1);
+  color: var(--rm-accent);
 }
 .admin .admin-card .form-grid .form-section.full-width {
   grid-column: 1 / -1;
@@ -2309,11 +2725,11 @@ input {
 .admin .admin-card .option input,
 .admin .admin-card .option select,
 .admin .admin-card .option textarea {
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--rm-field);
+  border: 1px solid var(--rm-line);
   border-radius: 10px;
   padding: 10px 14px;
-  color: white;
+  color: var(--rm-text);
   width: 100%;
   outline: none;
   transition: all 0.2s;
@@ -2321,14 +2737,14 @@ input {
 .admin .admin-card .option input option,
 .admin .admin-card .option select option,
 .admin .admin-card .option textarea option {
-  background-color: #222;
-  color: white;
+  background-color: var(--rm-popover);
+  color: var(--rm-text);
 }
 .admin .admin-card .option input:focus,
 .admin .admin-card .option select:focus,
 .admin .admin-card .option textarea:focus {
-  border-color: var(--tg-theme-accent-text-color, #8774e1);
-  box-shadow: 0 0 0 2px rgba(135, 116, 225, 0.2);
+  border-color: var(--rm-accent);
+  box-shadow: 0 0 0 2px rgba(100, 112, 240, 0.2);
 }
 .admin .admin-card .checkbox-grid {
   display: grid;
@@ -2341,15 +2757,15 @@ input {
   align-items: center;
   gap: 8px;
   padding: 8px 12px;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--rm-field);
   border-radius: 8px;
   font-size: 0.85em;
   cursor: pointer;
   transition: all 0.2s;
 }
 .admin .admin-card .checkbox-grid .checkbox-label.active {
-  background: rgba(135, 116, 225, 0.2);
-  border: 1px solid rgba(135, 116, 225, 0.4);
+  background: rgba(100, 112, 240, 0.2);
+  border: 1px solid rgba(100, 112, 240, 0.4);
 }
 .admin .admin-card .checkbox-grid .checkbox-label input {
   width: auto;
@@ -2371,7 +2787,7 @@ input {
   margin-top: 15px;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--rm-line);
 }
 .admin .admin-card .image-preview img {
   max-width: 100%;
@@ -2388,7 +2804,7 @@ input {
   justify-content: space-between;
   align-items: center;
   padding: 14px 20px;
-  background: rgba(0, 0, 0, 0.15);
+  background: var(--rm-field);
   border-radius: 12px;
   gap: 20px;
 }
@@ -2401,7 +2817,7 @@ input {
 .admin .admin-card .settings-grid .setting-item .setting-info label {
   font-weight: 600;
   font-size: 1em;
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
 }
 .admin .admin-card .settings-grid .setting-item .setting-info .setting-desc {
   font-size: 0.85em;
@@ -2425,7 +2841,7 @@ input {
   gap: 12px;
   margin-top: 25px;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--rm-line);
 }
 .admin .admin-card .form-actions button {
   flex: 1;
@@ -2451,11 +2867,11 @@ input {
   font-size: 1.25em;
 }
 .admin .admin-card.collapsible .card-header .title-wrap .count {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--rm-tint-strong);
   padding: 2px 10px;
   border-radius: 20px;
   font-size: 0.85em;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
 }
 .admin .admin-card.collapsible .card-header .chevron {
   transition: transform 0.3s ease;
@@ -2475,10 +2891,10 @@ input {
   flex-wrap: wrap;
   gap: 12px;
   align-items: center;
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--rm-tint);
   padding: 12px;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--rm-line);
 }
 .admin .admin-controls .search-input {
   flex: 1;
@@ -2487,15 +2903,15 @@ input {
 }
 .admin .admin-controls .search-input input {
   width: 100%;
-  background: rgba(0, 0, 0, 0.2) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: var(--rm-field) !important;
+  border: 1px solid var(--rm-line) !important;
   padding: 10px 16px 10px 36px !important;
   border-radius: 10px !important;
-  color: var(--tg-theme-text-color, #ffffff) !important;
+  color: var(--rm-text) !important;
   font-size: 0.9em;
 }
 .admin .admin-controls .search-input input:focus {
-  border-color: var(--tg-theme-accent-text-color, #8774e1) !important;
+  border-color: var(--rm-accent) !important;
   outline: none;
 }
 .admin .admin-controls .search-input::before {
@@ -2508,8 +2924,8 @@ input {
   font-size: 0.9em;
 }
 .admin .admin-controls .sort-toggle {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--rm-tint);
+  border: 1px solid var(--rm-line);
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
@@ -2519,7 +2935,7 @@ input {
   gap: 6px;
 }
 .admin .admin-controls .sort-toggle:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--rm-tint-strong);
 }
 .admin .admin-data-grid {
   display: flex;
@@ -2545,7 +2961,7 @@ input {
 }
 .admin .dashboard .dashboard-header-row .dashboard-filter-pills {
   display: flex;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--rm-field);
   padding: 4px;
   border-radius: 12px;
   gap: 4px;
@@ -2555,13 +2971,13 @@ input {
   border-radius: 10px;
   font-size: 0.85em;
   background: transparent;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   transition: all 0.2s;
 }
 .admin .dashboard .dashboard-header-row .dashboard-filter-pills button.active {
-  background: var(--tg-theme-accent-text-color, #8774e1);
+  background: var(--rm-accent);
   color: white;
-  box-shadow: 0 4px 12px rgba(135, 116, 225, 0.3);
+  box-shadow: 0 4px 12px rgba(100, 112, 240, 0.3);
 }
 .admin .dashboard .charts-grid {
   display: grid;
@@ -2584,8 +3000,8 @@ input {
 .logItem,
 .orderItem,
 .paymentItem {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: var(--rm-tint) !important;
+  border: 1px solid var(--rm-line) !important;
   border-radius: 16px !important;
   padding: 16px !important;
   transition: all 0.2s ease !important;
@@ -2599,8 +3015,8 @@ input {
 .logItem:hover,
 .orderItem:hover,
 .paymentItem:hover {
-  background: rgba(255, 255, 255, 0.07) !important;
-  border-color: rgba(135, 116, 225, 0.4) !important;
+  background: var(--rm-tint-strong) !important;
+  border-color: rgba(100, 112, 240, 0.4) !important;
   transform: translateY(-2px);
 }
 .userItem .item-header,
@@ -2627,7 +3043,7 @@ input {
   flex-direction: column;
   gap: 6px;
   font-size: 0.9em;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
 }
 .userItem .item-details > span,
 .nodeItem .item-details > span,
@@ -2638,7 +3054,7 @@ input {
 .paymentItem .item-details > span {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--rm-tint);
   padding-bottom: 4px;
 }
 .userItem .item-details > span b,
@@ -2648,7 +3064,7 @@ input {
 .logItem .item-details > span b,
 .orderItem .item-details > span b,
 .paymentItem .item-details > span b {
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
   font-weight: 600;
 }
 .userItem .buttons,
@@ -2690,11 +3106,11 @@ input {
   flex-wrap: wrap;
 }
 .admin-form-overlay {
-  background: rgba(30, 30, 30, 0.7);
+  background: var(--rm-popover);
   backdrop-filter: blur(10px);
   border-radius: 24px;
   padding: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--rm-line);
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
@@ -2716,11 +3132,11 @@ input {
   min-height: 260px;
   max-width: calc(100vw - 16px);
   max-height: calc(100vh - 16px);
-  background: rgba(30, 30, 30, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--rm-popover);
+  border: 1px solid var(--rm-line);
   border-radius: 18px;
   backdrop-filter: blur(12px);
-  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 18px 55px var(--rm-shadow);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -2731,8 +3147,8 @@ input {
   justify-content: space-between;
   gap: 12px;
   padding: 10px 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(0, 0, 0, 0.18);
+  border-bottom: 1px solid var(--rm-tint-strong);
+  background: var(--rm-field);
   cursor: move;
   user-select: none;
 }
@@ -2757,13 +3173,13 @@ input {
   margin: 0;
   padding: 12px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid var(--rm-tint-strong);
+  background: var(--rm-field);
   white-space: pre-wrap;
   word-break: break-word;
   font-size: 12px;
   line-height: 1.45;
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
 }
 .admin-floating-user-modal .admin-floating-user-modal-resize {
   position: absolute;
@@ -2848,49 +3264,35 @@ input {
   letter-spacing: 0.5px;
 }
 .status-badge.greenBg {
-  background: rgba(46, 207, 81, 0.15) !important;
-  color: #2ecf51 !important;
-  border: 1px solid rgba(46, 207, 81, 0.3);
+  background: var(--rm-ok-soft) !important;
+  color: var(--rm-ok) !important;
+  border: 1px solid rgba(62, 207, 122, 0.35);
 }
 .status-badge.redBg {
   background: rgba(255, 88, 66, 0.15) !important;
-  color: var(--tg-theme-destructive-text-color, #ff5842) !important;
+  color: var(--rm-danger) !important;
   border: 1px solid rgba(255, 88, 66, 0.3);
 }
 .status-badge.orangeBg {
-  background: rgba(240, 138, 74, 0.15) !important;
-  color: #f08a4a !important;
-  border: 1px solid rgba(240, 138, 74, 0.3);
+  background: var(--rm-flame-soft) !important;
+  color: var(--rm-flame) !important;
+  border: 1px solid var(--rm-flame-line);
 }
 .status-badge.blueBg {
-  background: rgba(51, 138, 229, 0.15) !important;
-  color: #338ae5 !important;
-  border: 1px solid rgba(51, 138, 229, 0.3);
+  background: rgba(90, 169, 240, 0.14) !important;
+  color: var(--rm-info) !important;
+  border: 1px solid rgba(90, 169, 240, 0.35);
 }
 button.greenBg {
-  background-color: #2ecf51 !important;
-  color: white !important;
-}
-button.redBg {
-  background-color: var(--tg-theme-destructive-text-color, #ff5842) !important;
-  color: white !important;
-}
-button.orangeBg {
-  background-color: #f08a4a !important;
+  background-color: var(--rm-ok) !important;
   color: white !important;
 }
 button.blueBg {
-  background-color: #338ae5 !important;
+  background-color: var(--rm-info) !important;
   color: white !important;
 }
-button:hover {
-  filter: brightness(1.1);
-}
-button:active {
-  transform: scale(0.98);
-}
 .admin-btn {
-  background: var(--tg-theme-accent-text-color, #8774e1);
+  background: var(--rm-accent);
   color: white;
   border: none;
   border-radius: 12px;
@@ -2903,11 +3305,11 @@ button:active {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-shadow: 0 4px 12px rgba(135, 116, 225, 0.2);
+  box-shadow: 0 4px 12px rgba(100, 112, 240, 0.2);
 }
 .admin-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(135, 116, 225, 0.4);
+  box-shadow: 0 6px 16px rgba(100, 112, 240, 0.4);
   filter: brightness(1.1);
 }
 .admin-btn:active {
@@ -2925,28 +3327,28 @@ button:active {
   border-radius: 8px;
 }
 .admin-btn.blueBg {
-  background-color: #338ae5;
+  background-color: var(--rm-info);
   box-shadow: 0 4px 12px rgba(51, 138, 229, 0.2);
 }
 .admin-btn.blueBg:hover {
   box-shadow: 0 6px 16px rgba(51, 138, 229, 0.4);
 }
 .admin-btn.greenBg {
-  background-color: #2ecf51;
+  background-color: var(--rm-ok);
   box-shadow: 0 4px 12px rgba(46, 207, 81, 0.2);
 }
 .admin-btn.greenBg:hover {
   box-shadow: 0 6px 16px rgba(46, 207, 81, 0.4);
 }
 .admin-btn.orangeBg {
-  background-color: #f08a4a;
+  background-color: var(--rm-flame);
   box-shadow: 0 4px 12px rgba(240, 138, 74, 0.2);
 }
 .admin-btn.orangeBg:hover {
   box-shadow: 0 6px 16px rgba(240, 138, 74, 0.4);
 }
 .admin-btn.redBg {
-  background-color: var(--tg-theme-destructive-text-color, #ff5842);
+  background-color: var(--rm-danger);
   box-shadow: 0 4px 12px rgba(255, 88, 66, 0.2);
 }
 .admin-btn.redBg:hover {
@@ -2978,7 +3380,7 @@ button:active {
 }
 .action-row .currency-selector {
   display: flex;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--rm-field);
   border-radius: 8px;
   padding: 2px;
   gap: 2px;
@@ -2994,32 +3396,32 @@ button:active {
 }
 .action-row .currency-selector .currency-option:hover {
   opacity: 0.8;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--rm-tint);
 }
 .action-row .currency-selector .currency-option.active {
   opacity: 1;
-  background: var(--tg-theme-accent-text-color, #8774e1);
+  background: var(--rm-accent);
   color: white;
-  box-shadow: 0 2px 8px rgba(135, 116, 225, 0.3);
+  box-shadow: 0 2px 8px rgba(100, 112, 240, 0.3);
 }
 .action-row input,
 .action-row select {
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--rm-field);
+  border: 1px solid var(--rm-line);
   border-radius: 8px;
   padding: 8px 12px;
-  color: white;
+  color: var(--rm-text);
   flex: 1;
   outline: none;
 }
 .action-row input:focus,
 .action-row select:focus {
-  border-color: var(--tg-theme-accent-text-color, #8774e1);
+  border-color: var(--rm-accent);
 }
 .action-row input option,
 .action-row select option {
-  background-color: #222;
-  color: white;
+  background-color: var(--rm-popover);
+  color: var(--rm-text);
 }
 .action-row button {
   padding: 8px 16px;
@@ -3031,15 +3433,15 @@ button:active {
   gap: 24px;
 }
 .editUser .edit-section {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--rm-tint);
+  border: 1px solid var(--rm-line);
   border-radius: 16px;
   padding: 20px;
 }
 .editUser .edit-section .section-title {
   font-size: 1.1em;
   font-weight: 700;
-  color: var(--tg-theme-accent-text-color, #8774e1);
+  color: var(--rm-accent);
   margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
@@ -3072,11 +3474,11 @@ button:active {
 .editUser .edit-section .info-grid .info-item span,
 .editUser .edit-section .info-grid .info-item a {
   font-weight: 600;
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
   text-decoration: none;
 }
 .editUser .edit-section .info-grid .info-item a:hover {
-  color: var(--tg-theme-accent-text-color, #8774e1);
+  color: var(--rm-accent);
 }
 .editUser .edit-section .data-list {
   display: flex;
@@ -3092,15 +3494,15 @@ button:active {
 .conn-test-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--rm-overlay);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1400;
 }
 .conn-test-modal {
-  background: var(--tg-theme-secondary-bg-color, #181818);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--rm-panel);
+  border: 1px solid var(--rm-line);
   border-radius: 12px;
   width: min(920px, 94vw);
   max-height: 86vh;
@@ -3108,7 +3510,7 @@ button:active {
   flex-direction: column;
   gap: 10px;
   padding: 18px 18px 14px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 12px 40px var(--rm-shadow);
 }
 .conn-test-header {
   display: flex;
@@ -3118,19 +3520,19 @@ button:active {
 }
 .conn-test-header h3 {
   margin: 0;
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
   font-size: 1.15em;
 }
 .conn-test-header button {
   margin: 0;
 }
 .conn-test-desc {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   font-size: 13px;
   line-height: 1.4;
 }
 .conn-test-empty {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   padding: 24px 8px;
   text-align: center;
 }
@@ -3138,9 +3540,9 @@ button:active {
   overflow: auto;
   min-height: 180px;
   max-height: 52vh;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--rm-line);
   border-radius: 8px;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--rm-field);
 }
 .conn-test-table {
   width: 100%;
@@ -3150,15 +3552,15 @@ button:active {
 .conn-test-table th,
 .conn-test-table td {
   padding: 10px 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid var(--rm-line);
   text-align: left;
   vertical-align: top;
 }
 .conn-test-table th {
   position: sticky;
   top: 0;
-  background: var(--tg-theme-secondary-bg-color, #181818);
-  color: var(--tg-theme-text-color, #ffffff);
+  background: var(--rm-panel);
+  color: var(--rm-text);
   font-weight: 600;
   z-index: 1;
 }
@@ -3171,8 +3573,8 @@ button:active {
   border-bottom: none;
 }
 .conn-test-section td {
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  background: var(--rm-tint);
+  color: var(--rm-muted);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -3180,13 +3582,13 @@ button:active {
   padding: 8px 12px;
 }
 .conn-test-server {
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
   font-weight: 600;
 }
 .conn-test-path {
   display: block;
   margin-top: 2px;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   font-weight: 500;
   font-size: 12px;
 }
@@ -3196,21 +3598,21 @@ button:active {
   align-items: flex-start;
   gap: 3px;
   min-height: 42px;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
 }
 .conn-test-cell.ok {
-  color: #2ecf51;
+  color: var(--rm-ok);
   flex-direction: column;
 }
 .conn-test-cell.fail {
-  color: var(--tg-theme-destructive-text-color, #ff5842);
+  color: var(--rm-danger);
   word-break: break-word;
   flex-direction: row;
   align-items: flex-start;
   gap: 6px;
 }
 .conn-test-cell.testing {
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
   flex-direction: row;
   align-items: center;
   gap: 8px;
@@ -3224,15 +3626,15 @@ button:active {
   gap: 6px;
 }
 .conn-test-meta {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   font-size: 12px;
   opacity: 0.85;
 }
 .conn-test-spinner {
   width: 14px;
   height: 14px;
-  border: 2px solid rgba(255, 255, 255, 0.25);
-  border-top-color: var(--tg-theme-accent-text-color, #8774e1);
+  border: 2px solid var(--rm-line-strong);
+  border-top-color: var(--rm-accent);
   border-radius: 50%;
   animation: conn-test-spin 0.7s linear infinite;
   display: inline-block;
@@ -3243,7 +3645,7 @@ button:active {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   font-size: 13px;
 }
 .conn-test-footer button {
@@ -3262,7 +3664,7 @@ button:active {
 .analytics-hint {
   font-size: 13px;
   line-height: 1.45;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
 }
 .analytics-privacy {
   padding: 12px 14px;
@@ -3273,7 +3675,7 @@ button:active {
 .analytics-privacy summary {
   cursor: pointer;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.88);
+  color: var(--rm-text);
 }
 .analytics-privacy .analytics-privacy-body {
   margin-top: 12px;
@@ -3287,7 +3689,7 @@ button:active {
   margin: 14px 0 6px;
   font-size: 13px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--rm-text);
 }
 .analytics-privacy .analytics-privacy-body ul {
   margin: 0 0 8px;
@@ -3312,13 +3714,13 @@ button:active {
   flex-direction: column;
   gap: 4px;
   font-size: 12px;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
 }
 .analytics-range label input,
 .analytics-range label select {
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: var(--tg-theme-text-color, #ffffff);
+  background: var(--rm-field);
+  border: 1px solid var(--rm-line);
+  color: var(--rm-text);
   border-radius: 8px;
   padding: 8px 10px;
 }
@@ -3380,13 +3782,173 @@ button:active {
 .analytics-table td {
   text-align: left;
   padding: 8px 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid var(--rm-line);
 }
 .analytics-table th {
   position: sticky;
   top: 0;
-  background: rgba(20, 20, 20, 0.95);
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  background: var(--rm-popover);
+  color: var(--rm-muted);
+}
+.node-usage .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+.node-usage-pills,
+.node-usage-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.node-usage-pills button,
+.node-usage-chips button {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  border-radius: 10px;
+  font-size: 0.85em;
+  background: var(--rm-field);
+  border: 1px solid var(--rm-line);
+  color: var(--rm-muted);
+}
+.node-usage-pills button.active,
+.node-usage-chips button.active {
+  background: var(--rm-accent);
+  border-color: var(--rm-accent);
+  color: white;
+}
+.node-usage-chips button {
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+.node-usage-chips button.active .dot {
+  box-shadow: 0 0 0 2px white;
+}
+.node-usage .analytics-hint.warn {
+  color: var(--rm-flame-text);
+}
+.node-usage-ok {
+  margin: 0;
+  color: var(--rm-ok);
+  font-size: 13px;
+}
+.node-usage-signals {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.node-usage-signals .signal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  background: var(--rm-flame-soft);
+  border: 1px solid var(--rm-flame-line);
+}
+.node-usage-signals .signal .badge {
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--rm-flame);
+  color: var(--rm-flame-ink);
+}
+.node-usage-signals .signal.stopped {
+  background: var(--rm-danger-soft);
+  border-color: var(--rm-danger-line);
+}
+.node-usage-signals .signal.stopped .badge {
+  background: var(--rm-danger);
+  color: white;
+}
+.node-usage-heatmap {
+  display: flex;
+  gap: 8px;
+  overflow: hidden;
+}
+.node-usage-heatmap .labels {
+  flex-shrink: 0;
+  font-size: 11px;
+  color: var(--rm-muted);
+}
+.node-usage-heatmap .labels div {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.node-usage-heatmap svg {
+  flex: 1;
+  min-width: 0;
+  display: block;
+  background: var(--rm-field);
+  border-radius: 4px;
+}
+.node-usage-heatmap-axis {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 178px;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--rm-muted);
+}
+.node-usage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 16px;
+}
+@media (max-width: 600px) {
+  .node-usage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.node-usage-card {
+  padding: 14px 16px;
+}
+.node-usage-card.alert {
+  border-color: var(--rm-danger-line);
+}
+.node-usage-card .head {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.node-usage-card .head h3 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 15px;
+}
+.node-usage-card .latest {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--rm-muted);
+}
+.node-usage-card .latest span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.node-usage-card .latest span.flagged {
+  color: var(--rm-danger);
+  font-weight: 700;
+}
+.node-usage-card .latest i {
+  display: inline-block;
+  width: 10px;
+  height: 3px;
+  border-radius: 2px;
 }
 .servers-charts > .title {
   text-align: center;
@@ -3396,21 +3958,23 @@ button:active {
   width: -webkit-fill-available;
 }
 .servers-charts .speedtest-chart {
-  border-radius: 5px;
-  width: calc(100% - 20px);
-  padding: calc(10px / 2);
+  background-color: var(--rm-panel);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line);
+  border-radius: var(--rm-r);
+  padding: 16px;
+  width: -webkit-fill-available;
   margin-top: 10px;
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  color: var(--tg-theme-text-color, #ffffff);
 }
 .servers-charts .speedtest-chart > .title {
   margin-bottom: 10px;
   text-align: center;
+  font-weight: 600;
 }
 .servers-charts .speedtest-chart .MuiChartsLegend-series,
 .servers-charts .speedtest-chart .MuiChartsAxis-tickLabel {
-  fill: var(--tg-theme-text-color, #ffffff);
-  color: var(--tg-theme-text-color, #ffffff);
+  fill: var(--rm-text);
+  color: var(--rm-text);
   opacity: 0.87;
 }
 .login-page {
@@ -3418,16 +3982,20 @@ button:active {
   align-items: center;
   justify-content: center;
   min-height: 100dvh;
-  background-color: var(--tg-theme-bg-color, #212121);
+  background-color: var(--rm-bg);
   padding: 20px;
+  background: radial-gradient(80% 60% at 100% 0%, var(--rm-hero-glow), transparent 60%), radial-gradient(60% 50% at 0% 100%, var(--rm-hero-glow-2), transparent 60%), var(--rm-bg);
 }
 .login-page .login-card {
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  border-radius: 12px;
-  padding: 40px;
+  position: relative;
+  background-color: var(--rm-panel);
+  border: 1px solid var(--rm-line);
+  border-radius: var(--rm-r-lg);
+  padding: 36px;
   width: 100%;
-  max-width: 400px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  max-width: 420px;
+  box-shadow: 0 30px 80px var(--rm-shadow);
+  animation: pop-in 0.2s ease-out;
 }
 .login-page .login-card .login-header {
   display: flex;
@@ -3438,35 +4006,45 @@ button:active {
 }
 .login-page .login-card .login-header h1 {
   margin: 0;
-  font-size: 1.5em;
-  color: var(--tg-theme-text-color, #ffffff);
+  font: 650 22px/1.2 var(--rm-display);
+  color: var(--rm-text);
 }
 .login-page .login-card .login-tabs {
-  display: flex;
-  border-radius: 8px;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--rm-line);
+  border-radius: var(--rm-r);
   margin-bottom: 24px;
-  background-color: var(--tg-theme-bg-color, #212121);
-  flex-direction: row;
-  flex-wrap: wrap;
+  background-color: var(--rm-field);
 }
 .login-page .login-card .login-tabs button {
-  width: 50%;
-  font-size: 0.9em;
-  padding: 10px;
-  border-radius: 0;
+  width: 100%;
+  min-height: 34px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0 10px;
+  border-radius: 9px;
   background-color: transparent;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  transition: background-color 0.2s, color 0.2s;
+  color: var(--rm-muted);
+  box-shadow: none;
+}
+.login-page .login-card .login-tabs button:hover:not(:disabled) {
+  filter: none;
+  color: var(--rm-text);
 }
 .login-page .login-card .login-tabs button.active {
-  background-color: var(--tg-theme-button-color, #8774e1);
-  color: var(--tg-theme-button-text-color, #ffffff);
+  background-color: var(--rm-panel-2);
+  color: var(--rm-text);
+  font-weight: 600;
+  box-shadow: 0 0 0 1px var(--rm-line-strong), 0 2px 8px var(--rm-shadow-soft);
 }
 .login-page .login-card .login-error {
-  background-color: rgba(255, 88, 66, 0.15);
-  color: var(--tg-theme-destructive-text-color, #ff5842);
-  border-radius: 6px;
+  background-color: var(--rm-danger-soft);
+  border: 1px solid var(--rm-danger-line);
+  color: var(--rm-danger);
+  border-radius: 10px;
   padding: 10px;
   margin-bottom: 16px;
   font-size: 0.9em;
@@ -3483,42 +4061,53 @@ button:active {
   gap: 6px;
 }
 .login-page .login-card .login-form .login-field label {
-  font-size: 0.85em;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--rm-text);
 }
 .login-page .login-card .login-form .login-field input,
 .login-page .login-card .login-form .login-field select {
-  background-color: var(--tg-theme-bg-color, #212121);
-  color: var(--tg-theme-text-color, #ffffff);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 12px;
-  font-size: 1em;
-  transition: border-color 0.2s;
+  background-color: var(--rm-field);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line-strong) !important;
+  border-radius: 10px;
+  min-height: 38px;
+  padding: 8px 12px;
+  font-size: 14px;
   width: -webkit-fill-available;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.login-page .login-card .login-form .login-field input:hover,
+.login-page .login-card .login-form .login-field select:hover {
+  border-color: var(--rm-input-hover) !important;
 }
 .login-page .login-card .login-form .login-field input:focus,
-.login-page .login-card .login-form .login-field select:focus {
+.login-page .login-card .login-form .login-field select:focus,
+.login-page .login-card .login-form .login-field input:focus-visible,
+.login-page .login-card .login-form .login-field select:focus-visible {
   outline: none;
-  border-color: var(--tg-theme-accent-text-color, #8774e1);
+  border-color: var(--rm-accent) !important;
+  box-shadow: 0 0 0 3px var(--rm-accent-soft);
+}
+.login-page .login-card .login-form .login-field input.error,
+.login-page .login-card .login-form .login-field select.error {
+  border-color: var(--rm-danger) !important;
+  box-shadow: 0 0 0 3px var(--rm-danger-soft);
 }
 .login-page .login-card .login-form .login-field input::placeholder,
 .login-page .login-card .login-form .login-field select::placeholder {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  opacity: 0.6;
+  color: var(--rm-faint);
 }
 .login-page .login-card .login-form .login-submit {
   width: -webkit-fill-available;
-  padding: 13px;
-  font-size: 1em;
-  border-radius: 8px;
+  min-height: 42px;
   margin-top: 4px;
 }
 .login-page .login-card .login-form .login-divider {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   font-size: 0.85em;
 }
 .login-page .login-card .login-form .login-divider::before,
@@ -3526,19 +4115,21 @@ button:active {
   content: '';
   flex: 1;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--rm-line);
 }
 .login-page .login-card .login-form .login-alt {
   width: -webkit-fill-available;
-  background-color: transparent;
-  color: var(--tg-theme-accent-text-color, #8774e1);
-  border: 1px solid var(--tg-theme-accent-text-color, #8774e1);
-  padding: 11px;
-  font-size: 0.9em;
-  border-radius: 8px;
+  min-height: 40px;
+  background-color: var(--rm-panel-2);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line-strong);
+  font-weight: 500;
+  box-shadow: none;
 }
-.login-page .login-card .login-form .login-alt:hover {
-  background-color: rgba(135, 116, 225, 0.1);
+.login-page .login-card .login-form .login-alt:hover:not(:disabled) {
+  filter: none;
+  background-color: var(--rm-btn-hover);
+  border-color: var(--rm-btn-hover-line);
 }
 @media (max-width: 768px) {
   .app-sidebar {
@@ -3546,9 +4137,15 @@ button:active {
   }
   .app-header__hamburger {
     display: flex !important;
+    align-items: center;
+    justify-content: center;
   }
-  .app-content {
-    padding: 8px;
+  .app-content > .cabinet,
+  .app-content > .index,
+  .app-content > .balance,
+  .app-content > .servers-charts,
+  .app-content > .settings-page {
+    padding: 14px 12px 16px;
   }
   .app-sidebar {
     display: none !important;
@@ -3576,14 +4173,14 @@ button:active {
   margin-top: auto;
 }
 .app-nav__user-info {
-  padding: 14px 20px 8px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  margin-bottom: 4px;
+  padding: 8px 4px 12px;
+  border-bottom: 1px solid var(--rm-line);
+  margin-bottom: 8px;
 }
 .app-nav__username {
   display: block;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  font-size: 0.88em;
+  color: var(--rm-muted);
+  font-size: 13px;
   margin-bottom: 8px;
 }
 .app-nav__user-row {
@@ -3592,21 +4189,32 @@ button:active {
   gap: 12px;
 }
 .app-nav__balance {
-  color: #2ecf51;
-  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--rm-ok);
+  font-weight: 650;
   cursor: pointer;
 }
 .app-nav__topup {
-  font-size: 0.78em !important;
-  padding: 5px 10px !important;
+  min-height: 30px !important;
+  font-size: 13px !important;
+  padding: 0 10px !important;
 }
 .app-header__back {
-  background: transparent !important;
-  color: var(--tg-theme-accent-text-color, #8774e1) !important;
-  font-size: 0.9em !important;
-  padding: 4px 8px !important;
-  border-radius: 4px;
-  border: 1px solid var(--tg-theme-accent-text-color, #8774e1) !important;
+  background: var(--rm-panel-2) !important;
+  color: var(--rm-text) !important;
+  min-height: 30px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding: 0 10px !important;
+  border-radius: var(--rm-r-sm) !important;
+  border: 1px solid var(--rm-line-strong) !important;
+  box-shadow: none !important;
+  align-self: flex-start;
+}
+.app-header__back:hover {
+  background: var(--rm-btn-hover) !important;
 }
 @media (min-width: 1200px) {
   .cabinet > .orders,
@@ -3644,29 +4252,30 @@ button:active {
 .settings-page {
   display: flex;
   flex-direction: column;
-  gap: calc(10px * 1.5);
+  gap: 14px;
+  animation: page-in 0.25s ease-out;
   overflow-y: auto;
   flex: 1;
   min-height: 0;
 }
 .settings-section {
-  background-color: var(--tg-theme-secondary-bg-color, #181818);
-  color: var(--tg-theme-text-color, #ffffff);
-  border-radius: 8px;
-  padding: 10px calc(10px * 1.5);
+  background-color: var(--rm-panel);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line);
+  border-radius: var(--rm-r);
+  padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 .settings-section__title {
-  font-size: 1em;
-  font-weight: 700;
-  color: var(--tg-theme-accent-text-color, #8774e1);
+  font: 600 14px/1.3 var(--rm-display);
+  color: var(--rm-text);
   margin-bottom: 2px;
 }
 .settings-section__desc {
-  font-size: 0.85em;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  font-size: 12.5px;
+  color: var(--rm-muted);
   line-height: 1.5;
 }
 .settings-row {
@@ -3676,27 +4285,27 @@ button:active {
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  font-size: 0.9em;
+  font-size: 13.5px;
 }
 .settings-row--col {
   flex-direction: column;
   align-items: flex-start;
 }
 .settings-row__label {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
 }
 .settings-row__label.space {
   margin-right: 10px;
 }
 .settings-row__value {
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
 }
 .settings-row__value--copy {
-  color: var(--tg-theme-accent-text-color, #8774e1);
+  color: var(--rm-accent);
   cursor: pointer;
 }
 .settings-row__value--accent {
-  color: #e29300;
+  color: var(--rm-flame-text);
 }
 .settings-row__api {
   display: flex;
@@ -3709,117 +4318,131 @@ button:active {
   gap: calc(10px / 2);
 }
 .settings-row__hint {
-  font-size: 0.8em;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  font-size: 12px;
+  color: var(--rm-muted);
 }
 .input-item {
-  background-color: var(--tg-theme-bg-color, #212121);
-  color: var(--tg-theme-text-color, #ffffff);
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 6px;
-  padding: 10px 12px;
-  font-size: 0.95em;
+  background-color: var(--rm-field);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line-strong) !important;
+  border-radius: 10px;
+  min-height: 38px;
+  padding: 8px 12px;
+  font-size: 14px;
   width: -webkit-fill-available;
-  transition: border-color 0.2s;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
-.input-item:focus {
+.input-item:hover {
+  border-color: var(--rm-input-hover) !important;
+}
+.input-item:focus,
+.input-item:focus-visible {
   outline: none;
-  border-color: var(--tg-theme-accent-text-color, #8774e1) !important;
+  border-color: var(--rm-accent) !important;
+  box-shadow: 0 0 0 3px var(--rm-accent-soft);
 }
 .input-item.error {
-  border-color: var(--tg-theme-destructive-text-color, #ff5842) !important;
+  border-color: var(--rm-danger) !important;
+  box-shadow: 0 0 0 3px var(--rm-danger-soft);
 }
 .input-item::placeholder {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  opacity: 0.5;
+  color: var(--rm-faint);
 }
 .settings-field {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 7px;
 }
 .settings-field label {
-  font-size: 0.85em;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--rm-text);
 }
 .settings-field input,
 .settings-field select {
-  background-color: var(--tg-theme-bg-color, #212121);
-  color: var(--tg-theme-text-color, #ffffff);
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 6px;
-  padding: 10px 12px;
-  font-size: 0.95em;
+  background-color: var(--rm-field);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line-strong) !important;
+  border-radius: 10px;
+  min-height: 38px;
+  padding: 8px 12px;
+  font-size: 14px;
   width: -webkit-fill-available;
-  transition: border-color 0.2s;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.settings-field input:hover,
+.settings-field select:hover {
+  border-color: var(--rm-input-hover) !important;
 }
 .settings-field input:focus,
-.settings-field select:focus {
+.settings-field select:focus,
+.settings-field input:focus-visible,
+.settings-field select:focus-visible {
   outline: none;
-  border-color: var(--tg-theme-accent-text-color, #8774e1) !important;
+  border-color: var(--rm-accent) !important;
+  box-shadow: 0 0 0 3px var(--rm-accent-soft);
 }
 .settings-field input.error,
 .settings-field select.error {
-  border-color: var(--tg-theme-destructive-text-color, #ff5842) !important;
+  border-color: var(--rm-danger) !important;
+  box-shadow: 0 0 0 3px var(--rm-danger-soft);
 }
 .settings-field input::placeholder,
 .settings-field select::placeholder {
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  opacity: 0.5;
+  color: var(--rm-faint);
 }
 .settings-field__error {
-  font-size: 0.8em;
-  color: var(--tg-theme-destructive-text-color, #ff5842);
+  font-size: 12px;
+  color: var(--rm-danger);
 }
 .settings-msg {
   text-align: center;
-  padding: 8px;
-  border-radius: 6px;
-  font-size: 0.9em;
+  padding: 9px 12px;
+  border-radius: 10px;
+  font-size: 13px;
 }
 .settings-msg--ok {
-  background-color: rgba(46, 207, 81, 0.12);
-  color: #2ecf51;
+  background-color: var(--rm-ok-soft);
+  color: var(--rm-ok);
 }
 .settings-msg--err {
-  background-color: rgba(255, 88, 66, 0.12);
-  color: var(--tg-theme-destructive-text-color, #ff5842);
+  background-color: var(--rm-danger-soft);
+  color: var(--rm-danger);
 }
 .settings-save {
   width: -webkit-fill-available;
-  padding: 11px;
-  font-size: 0.95em;
-  border-radius: 8px;
+  min-height: 40px;
 }
 .login-tg-loading {
   text-align: center;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   padding: 10px 0;
   font-size: 0.95em;
 }
 .login-tg-instruction {
   font-size: 0.9em;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   line-height: 1.6;
   margin-bottom: 10px;
   white-space: pre-line;
 }
 .login-tg-instruction b,
 .login-tg-instruction strong {
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
 }
 .login-tg-command-block {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  background-color: var(--tg-theme-bg-color, #212121);
-  border-radius: 8px;
+  background-color: var(--rm-field);
+  border: 1px solid var(--rm-line);
+  border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
 }
 .login-tg-command-label {
   font-size: 0.82em;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
 }
 .login-tg-command-row {
   display: flex;
@@ -3830,9 +4453,9 @@ button:active {
 }
 .login-tg-command {
   flex: 1;
-  font-family: monospace;
+  font-family: var(--rm-mono);
   font-size: 0.95em;
-  color: var(--tg-theme-accent-text-color, #8774e1);
+  color: var(--rm-accent);
   word-break: break-all;
   min-width: 0;
   background: transparent;
@@ -3853,18 +4476,20 @@ button:active {
   text-align: center;
   font-size: 0.88em;
   padding: 6px 0;
-  color: #2ecf51;
+  color: var(--rm-ok);
   font-weight: 600;
   letter-spacing: 0.02em;
 }
 .login-tg-timer.expired {
-  color: var(--tg-theme-destructive-text-color, #ff5842);
+  color: var(--rm-danger);
   font-weight: normal;
 }
 .instruction-modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  background: var(--rm-overlay);
+  backdrop-filter: blur(2px);
+  animation: fade-in 0.15s ease-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3872,39 +4497,43 @@ button:active {
   padding: 10px;
 }
 .instruction-modal {
-  background: var(--tg-theme-secondary-bg-color, #181818);
-  border-radius: 12px;
+  background: var(--rm-modal);
+  border: 1px solid var(--rm-line-strong);
+  border-radius: var(--rm-r-lg);
+  animation: pop-in 0.18s ease-out;
   width: 100%;
   max-width: 640px;
   max-height: 90dvh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 80px var(--rm-shadow);
 }
 .instruction-modal__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: calc(10px * 1.5) calc(10px * 1.5) 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid var(--rm-line);
   flex-shrink: 0;
 }
 .instruction-modal__title {
-  font-size: 1.05em;
-  font-weight: 600;
-  color: var(--tg-theme-text-color, #ffffff);
+  font: 650 17px/1.3 var(--rm-display);
+  color: var(--rm-text);
 }
 .instruction-modal__close {
   background: transparent;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  font-size: 1em;
-  padding: 4px 8px;
+  color: var(--rm-muted);
+  min-height: 30px;
+  font-size: 14px;
+  padding: 4px 9px;
   line-height: 1;
+  box-shadow: none;
 }
-.instruction-modal__close:hover {
-  color: var(--tg-theme-text-color, #ffffff);
-  background: rgba(255, 255, 255, 0.08);
+.instruction-modal__close:hover:not(:disabled) {
+  filter: none;
+  color: var(--rm-text);
+  background: var(--rm-ghost-hover);
 }
 .instruction-modal__body {
   padding: calc(10px * 1.5);
@@ -3912,29 +4541,30 @@ button:active {
   flex: 1;
   font-size: 0.92em;
   line-height: 1.65;
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
   word-break: break-word;
 }
 .instruction-modal__body code {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
+  background: var(--rm-field);
+  border: 1px solid var(--rm-line);
+  border-radius: 5px;
   padding: 1px 5px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--rm-mono);
   font-size: 0.9em;
   user-select: all;
   cursor: text;
 }
 .instruction-modal__body a {
-  color: var(--tg-theme-link-color, #8774e1);
+  color: var(--rm-link);
   word-break: break-all;
 }
 .instruction-modal__body b {
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
   font-weight: 700;
 }
 .instruction-modal__footer {
   padding: 10px calc(10px * 1.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: 1px solid var(--rm-line);
   display: flex;
   justify-content: flex-end;
   flex-shrink: 0;
@@ -3949,14 +4579,13 @@ button:active {
   /* shift a bit so it doesn't glue to edge */
   width: 320px;
   max-height: 450px;
-  background: rgba(24, 24, 24, 0.85);
-  /* secondary-bg with transparency */
-  backdrop-filter: blur(14px);
-  /* glass effect */
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
+  background: var(--rm-popover);
+  border: 1px solid var(--rm-line-strong);
+  box-shadow: 0 16px 40px var(--rm-shadow);
+  border-radius: var(--rm-r);
+  color: var(--rm-text);
+  animation: pop-in 0.14s ease-out;
+  transform-origin: top right;
   display: flex;
   flex-direction: column;
   z-index: 1000;
@@ -3975,22 +4604,25 @@ button:active {
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  font-weight: 600;
-  font-size: 1.05em;
-  color: var(--tg-theme-text-color, #ffffff);
+  border-bottom: 1px solid var(--rm-line);
+  font: 600 14px/1.3 var(--rm-display);
+  color: var(--rm-text);
 }
 .notifies-popup__header span {
   width: -webkit-fill-available;
 }
 .notifies-popup__header .notifies-popup__close {
   background: transparent;
-  padding: 4px;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  min-height: 28px;
+  width: 28px;
+  padding: 0;
+  color: var(--rm-muted);
+  box-shadow: none;
 }
-.notifies-popup__header .notifies-popup__close:hover {
-  color: var(--tg-theme-destructive-text-color, #ff5842);
-  background: rgba(255, 88, 66, 0.1);
+.notifies-popup__header .notifies-popup__close:hover:not(:disabled) {
+  filter: none;
+  color: var(--rm-danger);
+  background: var(--rm-danger-soft);
 }
 .notifies-popup__list {
   display: flex;
@@ -4000,21 +4632,21 @@ button:active {
 .notifies-popup__empty {
   padding: 24px;
   text-align: center;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   font-size: 0.95em;
 }
 .notify-item {
   display: flex;
   flex-direction: column;
   padding: 12px 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--rm-line);
   transition: background-color 0.2s ease;
 }
 .notify-item:last-child {
   border-bottom: none;
 }
 .notify-item:hover {
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: var(--rm-hover);
 }
 .notify-item__img {
   max-width: 100%;
@@ -4025,19 +4657,19 @@ button:active {
 .notify-item__text {
   font-size: 0.92em;
   line-height: 1.4;
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
   margin-bottom: 10px;
   word-break: break-word;
 }
 .notify-item__text a {
-  color: var(--tg-theme-link-color, #8774e1);
+  color: var(--rm-link);
   text-decoration: none;
 }
 .notify-item__text a:hover {
   text-decoration: underline;
 }
 .notify-item__text code {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--rm-field);
   padding: 2px 4px;
   border-radius: 4px;
   font-family: inherit;
@@ -4048,31 +4680,22 @@ button:active {
   align-items: center;
 }
 .notify-item__actions .notify-item__btn-primary {
-  background-color: var(--tg-theme-button-color, #8774e1);
-  color: white;
   flex-grow: 1;
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-weight: 500;
-}
-.notify-item__actions .notify-item__btn-primary:hover {
-  filter: brightness(1.1);
 }
 .notify-item__actions .notify-item__btn-delete {
   background-color: transparent;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  color: var(--rm-muted);
   flex-grow: 0;
-  padding: 6px 10px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--rm-line-strong);
 }
-.notify-item__actions .notify-item__btn-delete:hover {
-  background-color: rgba(255, 88, 66, 0.1);
-  color: var(--tg-theme-destructive-text-color, #ff5842);
-  border-color: var(--tg-theme-destructive-text-color, #ff5842);
+.notify-item__actions .notify-item__btn-delete:hover:not(:disabled) {
+  filter: none;
+  background-color: var(--rm-danger-soft);
+  color: var(--rm-danger);
+  border-color: var(--rm-danger);
 }
 .notify-item__img--unread {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--rm-tint);
 }
 .support-fab {
   position: fixed;
@@ -4087,9 +4710,11 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--tg-theme-button-color, #8774e1);
-  color: var(--tg-theme-button-text-color, #ffffff);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  min-height: 0;
+  padding: 0;
+  background: var(--rm-accent);
+  color: #ffffff;
+  box-shadow: 0 10px 24px var(--rm-accent-shadow);
   transition: transform 0.15s ease, filter 0.15s ease;
 }
 .support-fab:hover {
@@ -4105,7 +4730,7 @@ button:active {
 }
 .browser-alerts {
   position: fixed;
-  top: calc(54px + 10px);
+  top: calc(56px + 10px);
   right: 10px;
   z-index: 1200;
   display: flex;
@@ -4126,14 +4751,12 @@ button:active {
 .browser-alert {
   pointer-events: auto;
   width: 100%;
-  background: rgba(24, 24, 24, 0.92);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  color: var(--tg-theme-text-color, #ffffff);
-  border-radius: 12px;
+  background: var(--rm-popover);
+  color: var(--rm-text);
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px var(--rm-shadow);
+  border: 1px solid var(--rm-line-strong);
   border-bottom: none;
   cursor: pointer;
   animation: browser-alert-in 0.28s ease-out;
@@ -4147,7 +4770,7 @@ button:active {
 }
 .browser-alert__progress {
   height: 3px;
-  background: var(--tg-theme-accent-text-color, #8774e1);
+  background: var(--rm-accent);
   transform-origin: left center;
   animation-name: browser-alert-progress;
   animation-timing-function: linear;
@@ -4177,7 +4800,9 @@ button:active {
 .browser-confirm-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  background: var(--rm-overlay);
+  backdrop-filter: blur(2px);
+  animation: fade-in 0.15s ease-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4185,19 +4810,20 @@ button:active {
   padding: 10px;
 }
 .browser-confirm {
-  background: var(--tg-theme-secondary-bg-color, #181818);
-  border-radius: 12px;
+  background: var(--rm-modal);
+  border-radius: var(--rm-r-lg);
   width: 100%;
   max-width: 420px;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 30px 80px var(--rm-shadow);
+  border: 1px solid var(--rm-line-strong);
+  animation: pop-in 0.18s ease-out;
 }
 .browser-confirm__body {
   padding: calc(10px * 2) calc(10px * 1.5) calc(10px * 1.5);
   font-size: 0.98em;
   line-height: 1.55;
-  color: var(--tg-theme-text-color, #ffffff);
+  color: var(--rm-text);
   white-space: pre-wrap;
   word-break: break-word;
 }
@@ -4208,19 +4834,35 @@ button:active {
   gap: 10px;
 }
 .browser-confirm__cancel {
-  background: transparent;
-  color: var(--tg-theme-subtitle-text-color, #aaaaaa);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  font-size: 0.95em;
-  padding: 8px 16px;
+  background: var(--rm-panel-2);
+  color: var(--rm-text);
+  border: 1px solid var(--rm-line-strong);
+  font-weight: 500;
+  box-shadow: none;
 }
-.browser-confirm__cancel:hover {
-  color: var(--tg-theme-text-color, #ffffff);
-  background: rgba(255, 255, 255, 0.08);
+.browser-confirm__cancel:hover:not(:disabled) {
+  filter: none;
+  background: var(--rm-btn-hover);
+  border-color: var(--rm-btn-hover-line);
 }
-.browser-confirm__ok {
-  font-size: 0.95em;
-  padding: 8px 18px;
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 `, ""]);
 // Exports
@@ -4626,11 +5268,11 @@ __webpack_require__.d(__webpack_exports__, {
 // UNUSED EXPORTS: allLangStrings, getAllLangData, getAllLangsKeys, langSharedData, langs
 
 ;// ./src/lang/ru.json
-const ru_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"Для включения уведомлений на iPhone:\\n1. Нажмите иконку [⎋] (Поделиться) в нижней панели.\\n2. Выберите пункт «На экран Домой».\\n3. Запустите сайт с рабочего стола и вернитесь в этот раздел.","settings.pushSupportError":"Web Push не поддерживается на этом устройстве","settings.pushTitle":"Push-уведомления","settings.pushDesc":"Подпишите это устройство для получения системных уведомлений","settings.pushSubscribed":"✅ Это устройство подписано","settings.pushNotSubscribed":"❌ Устройство не подписано","settings.pushSubscribeBtn":"Подписаться","settings.pushUnsubscribeAllBtn":"Отвязать все устройства","settings.pushSuccess":"Успешно подписано","settings.pushUnsubscribeSuccess":"Все устройства отвязаны","settings.pushError":"Ошибка при подписке","settings.disableSiteNotify":"Отключить уведомления на сайте","settings.disableSiteNotifyDesc":"Отключите уведомления на сайте, оставив только Push-уведомления и уведомления в Telegram (если учётная запись привязана к Telegram)","settings.disableSiteNotifyYes":"Да","settings.disableSiteNotifyNo":"Нет","settings.geoRouting":"Добавить гео-роутинг в данных подписки","settings.geoRoutingDesc":"Вы можете выбрать определённый гео-роутинг для своих заказов. Если он будет добавлен, то при подключении к VPN / Proxy через инструкции из приложения, в данных подписки будет указано, что вы хотите использовать определённый гео-роутинг. Это может помочь в обходе блокировок и улучшении стабильности подключения, если основной сервер недоступен или работает нестабильно в вашем регионе. Если вы не уверены, какой вариант вам лучше подходит - оставьте значение по умолчанию (%1%)","settings.disabled":"Отключить (не рекомендуется)","settings.reserveConnectionLink":"Использовать резервную ссылку на подписку Vless, Hysteria","settings.reserveConnectionLinkDesc":"Включите эту настройку, если у вас нет доступа к основному серверу. Тогда инструкции по подключению будут содержать резервную ссылку вместо основной.","settings.reserveConnectionLinkYes":"Да","settings.reserveConnectionLinkNo":"Нет","applicationNotifyTitle":"Уведомления","applicationNotifyConfirmDeleteAll":"Вы уверены, что хотите удалить все уведомления?","applicationNotifyEmpty":"Нет новых уведомлений","applicationNotifyPromoSuccess":"Промокод успешно применён","applicationNotifyPromoError":"Ошибка активации промокода: возможно он уже использован или исчерпан лимит","applicationNetworkError":"Ошибка сети","applicationNotifyConfirmDelete":"Вы уверены, что хотите удалить это уведомление?","applicationNotifyDelete":"🗑️ Удалить","applicationNotifyPromoApply":"Применить промокод (%1%)","applicationDialogOk":"ОК","applicationDialogCancel":"Отмена","pagePayTitle":"Приобретение VPN","pagePayBalance":"Пополнение баланса","pagePayID":"Ваш уникальный ID","pagePayIDPlaceholder":"Введите свой ID","pagePayAmount":"Сумма пополнения баланса (временно от %1%)","pagePayButton":"Перейти к оплате","pagePayAmountTotal":"\\n<font color=#00AE09>Итоговая сумма оплаты: ≈%1%</font>","pageFAQId":"Как получить ID?","pageFAQStep1":"Откройте панель на сайте или приложение в Telegram","pageFAQStep2":"Откройте раздел «Настройки»","pageFAQStep3":"В блоке «Информация об аккаунте» нажмите «Ваш ID», чтобы скопировать номер","pageFAQStep4":"Вставьте ID в поле слева","pageFAQOpen":"Открыть приложение в Telegram","pageFAQOpenSite":"Открыть панель на сайте","pageFAQQR":"QR-код приложения в Telegram","landingTGBotButton":"Запустить Telegram-бота","landingDashboardButton":"Открыть панель управления","landingTarifs":"Тарифы","landingTarifsTrial":"+ Пробный период %1%ч","landingTarifsDiscount":"Скидка","landingTarifsPrice":"%1%/%2%дн.","landingTarifsGo":"Подключить","landingFooterText":"А здесь наш основной проект","landingTitle":"RocketMan VPN — Интернет под защитой!","landingTitleBrand":"RocketMan VPN","landingTitleTagline":"Интернет под защитой!","landingTitleDesc":"Молниеносный доступ к любимым сайтам и сервисам с ПК и смартфона.","landingFeaturesTitle":"Почему выбирают именно нас?","landingAppsTitle":"Наши продукты для вас","landingAppsDownload":"Скачать","landingAppsOpen":"Перейти","landingAppsFree":"Бесплатно","landingTrust1Value":"256-bit","landingTrust1Label":"AES-шифрование · данные под замком","landingTrust2Value":"до 1 Гбит/с","landingTrust2Label":"Скорость канала","landingTrust3Value":"24/7","landingTrust3Label":"Живая поддержка","landingTrust4Value":"НЕОГРАНИЧЕННО","landingTrust4Label":"Устройств на 1 ключ","landingFeaturesLead":"Защита, скорость и простота — без компромиссов","landingCompareTitle":"Без защиты vs RocketMan VPN","landingCompareLead1":"Без VPN — тревога и «Доступ запрещён».","landingCompareLead2":"С нашим сервисом — защита и безопасность в пару кликов","landingCompareColBad":"Без VPN","landingCompareColGood":"С RocketMan VPN","landingCompareRow1":"Что видят сайты","landingCompareBad1":"Ваш город, провайдер и активность","landingCompareGood1":"Только страну сервера","landingCompareRow2":"Wi-Fi в кафе и аэропортах","landingCompareBad2":"Пароли и переписку можно перехватить","landingCompareGood2":"Трафик зашифрован — виден лишь «белый шум»","landingCompareRow3":"Передача данных","landingCompareBad3":"В открытых сетях пароли — открытым текстом","landingCompareGood3":"VLESS · Proxy HTTPS · Hysteria2","landingCompareRow4":"Блокировки и DPI","landingCompareBad4":"«Доступ запрещён», сервисы и мессенджеры ложатся","landingCompareGood4":"Наши обходы работают даже в Китае (проверено в июне 2026)","landingCompareRow5":"Скорость","landingCompareBad5":"Провайдер может резать маршрут и скорость","landingCompareGood5":"До 1 Гбит/с, в том числе на 5G","landingCompareRow6":"Настройка","landingCompareBad6":"Вручную на каждом устройстве и в приложении","landingCompareGood6":"QR-код за 10 секунд · iOS, Android, ПК, TV","landingCompareRow7":"Поддержка","landingCompareBad7":"Разбираетесь сами","landingCompareGood7":"Живая поддержка в Telegram 24/7","landingHowTitle":"3 шага до защищённого интернета","landingHowLead":"Подключение займёт меньше двух минут — мы проведём вас за руку","landingHowStep1Title":"Выберите тариф","landingHowStep1Text":"От бесплатного теста до премиума — план под любые задачи","landingHowStep2Title":"Оплатите","landingHowStep2Text":"Удобная оплата и мгновенная активация в Telegram или на сайте","landingHowStep3Title":"Включите VPN / Proxy","landingHowStep3Text":"Пошаговая инструкция — дальше только ВКЛ/ВЫКЛ","landingPricingLead":"Удобные тарифы · пробный период · реферальная система","landingPlanTraffic":"📊 %1% ГБ трафика","landingPlanDevices":"📱 Без лимита устройств","landingPlanVpnProxy":"🔐 VPN + Proxy в одном","landingCtaTitle":"Готовы защитить свой интернет?","landingCtaDesc":"Присоединяйтесь — подключение займёт пару минут, а спокойствие останется надолго.","landingCtaButton":"Подключить сейчас","landingCtaSite":"Подключить через сайт","landingCtaTelegram":"Подключить через Telegram","landingPlanConnectSite":"Подключить на сайте","landingPlanConnectTelegram":"Подключить в Telegram","landingHeaderTelegram":"Запустить в Telegram","landingHeaderSite":"Подключить прямо здесь","landingHeroGuarantee":"✓ Пробный период · ✓ VPN + Proxy · ✓ Поддержка 24/7","landingHeroPill1":"Пробный период","landingHeroPill2":"VPN + Proxy","landingHeroPill3":"Поддержка 24/7","landingHeroPill4":"Работает даже в Китае","landingHeroPill5":"Обход Белых Списков","landingHeroCompareBad":"Без VPN","landingHeroCompareGood":"С RocketMan VPN","landingHeroCompareYou":"ВЫ","landingHeroCompareWeb":"СЕТЬ","landingHeroCompareBadWire":"открытый канал","landingHeroCompareGoodWire":"зашифрованный туннель","landingHeroCompareBad1":"Ваш реальный IP утекает в сеть","landingHeroCompareBad2":"Блокировки · «Доступ запрещён»","landingHeroCompareGood1":"Мы защитили и зашифровали ваше пребывание в интернете","landingHeroCompareGood2":"No-logs · мы не храним ваши данные","landingProtocolVless":"VLESS","landingProtocolProxy":"Proxy HTTPS","landingProtocolHysteria":"Hysteria2","landingShieldMeta":"VLESS · Proxy HTTPS · Hysteria2","landingPlanPopular":"ХИТ","landingSecurityBadge":"С нами безопасно","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"Многофункциональный прокси-клиент для <b>Windows, Linux и macOS</b>. Поддерживает протоколы <b>HTTPS / VLESS / Hysteria2</b>. API-режим для управления заказами прямо из приложения, TUN-туннелирование, VLESS-подписки и интеграция с Discord (Windows).","app.tgproxy.name":"TGProxy — MTProto для Telegram","app.tgproxy.description":"Бесплатный <b>MTProto-прокси</b> для стабильного доступа к Telegram. Без регистрации и лимитов трафика, сквозное шифрование переписки. Подключение в один клик из браузера — открывается прямо в Telegram.","features1Title":"Анонимность","features1Text":"Благодаря нескольким слоям защиты с нашей стороны — Ваш реальный IP не узнает ни один сервис.","features2Title":"Скорость","features2Text":"Загружайте, смотрите любимый контент и делитесь на скоростях до 1 Гбит/с.","features3Title":"Пробный период","features3Text":"Подключайтесь в 1 клик с любого своего устройства! ПК, смартфон, ТВ, планшет и ноутбук.","features4Title":"Поддержка","features4Text":"Мы всегда готовы помочь Вам с решением любых вопросов. На связи практически 24/7","faq1title":"Как оплатить?","faq1text":"Пополните свой баланс, оплатите через удобный метод. После оплаты получите инструкции в Telegram-боте или на сайте (зависит от того, где приобретали заказ).","faq2title":"Как настроить VPN?","faq2text":"В нашем <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram-боте</a> и в <a href=\\"https://ru-app.rocketman-vpn.com:8443/application\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Личном кабинете</a> на сайте максимально подробно и понятно расписан весь процесс подключения.\\nБуквально от и до, поэтому Вы вряд ли в чем-то сможете заблудиться. Главное — следуйте инструкциям :)","faq3title":"Что делать, если что-то не работает?","faq3text":"Ознакомьтесь с нашей <a href=\\"https://rocketman-vpn.com/ru/wiki/\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Базой знаний</a>, мы постарались собрать все полезные статьи и ответить на возможные вопросы заранее. Если будут какие-то нерешаемые самостоятельно вопросы — напишите в <a href=\\"https://t.me/%1%\\" target=\'_blank\'>поддержку через Telegram</a>, и мы Вам поможем.","locationSelectTitle":"Выберите локацию сервера","locationSelectLoad":"Загруженность: %1%%","locationReserve1":"Санкт-Петербург","locationLocal":"Локальный сервер","locationStockholm":"Стокгольм","locationAustria":"Вена","locationNetherland":"Амстердам","locationFrankfurt":"Франкфурт","locationParis":"Париж","tarif.test_drive":"🚗 Тест-драйв","tarif.start":"🚀 Старт","tarif.gamer":"🎮 Геймер","tarif.pro":"👑 Семейная+","tarif.ultra":"🌌 Космос","httpTarifPro":"🔒 Proxy-Безлимит","httpTarifGamer":"🔒 Proxy-Геймер","tarifNameFull":"%1% (%2% дней | %3% GB/д) - %4%","welcomeMessage":"Добро пожаловать!\\nБлагодаря нашему сервису Вы сможете получить защищенный доступ к любимым сайтам и приложениям, как это делают другие наши любимые клиенты ❤️\\n\\n⭐️ У нас нет ограничений на количество устройств, поэтому можете использовать 1 ключ на всех своих девайсах! Вместе с VPN Вы получаете доступ и к нашему Proxy.\\n\\n🛒 Мы предоставляем:\\n- VPN для iOS, Android, Windows, macOS, Android TV\\n- Proxy для браузера, Discord, Windows и т.д.","basketBalance":"Пополнить баланс","secondsToStringD":"%4% дн. %3% ч. %2% мин. %1% сек.","secondsToStringH":"%3% ч. %2% мин. %1% сек.","secondsToStringM":"%2% мин. %1% сек.","readButton":"🗑 Удалить это сообщение","openPage":"🌐 Сайт","openApp":"📱 Приложение","expireNotifyOrderData":"▪️ Тариф: `%1%`\\n▪️ Название: `%2%`\\n▪️ Срок продления: `%3% дней`","expireNotifyTemplate":"Здравствуйте, %1%!\\n%2%\\n\\n%3%\\n▪️ Стоимость продления: `%4%`\\n\\n%5%","expireNotifyFull":"Срок действия Вашего заказа подошёл к концу 🙁\\n\\nЧтобы оставаться на связи со свободным Интернетом — [запустите приложение](https://t.me/rocketman_vpn_bot/?startapp), далее нажмите на 💸 свой баланс справа сверху и, пополнив его, в настройках заказа включите автопродление 😇","expireNotifyTime":"Срок действия Вашего заказа завершится менее чем через `%1%` часа 🙁","expireNotifyRenewAutoNoMoney":"❗️ У Вас включена функция автопродления, однако Ваш текущий баланс не позволяет продлить его 🙁\\n\\nУбедитесь в том, что на счету достаточно средств, чтобы функция работала без проблем в течение ближайших месяцев. [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp), в правом верхнем углу приложения нажмите на свой баланс и пополните на желаемую сумму.","expireNotifyRenewAuto":"✅ У Вас включена функция автопродления, поэтому заказ будет продлён автоматически, когда на нём останется менее 24 часов 😎","expireNotifyRenewManual":"ℹ️ Как включить автопродление?\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Нажмите на свой заказ ⇒ Настройки ⇒ Поставьте галочку возле Автопродления ⇒ Сохранить все изменения.","expireNotifyRenewSuccessAuto":"Здравствуйте, %1%!\\nВаш заказ был продлён автоматически.\\n\\n%2% 🎉\\n\\nСпасибо, что доверяете нам ❤️\\nЛучшей благодарностью за сервис будет инвайт Ваших друзей через реферальную систему!\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"Команда использована неверно\\n`%1%`\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Команда `%1%` использована неверно!\\n\\n✅ Правильный пример: `%2%`\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Начать работу","usePromoCommand":"Применить промокод — /promo PROMO_NAME","useFaqCommand":"Как подключиться к VPN / Proxy?","usePromoAlready":"Вы уже применили данный промокод. Применить промокод можно лишь 1 раз.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Промокод `%1%` не найден 🙁\\n\\nПроверьте правильность написания, а также убедитесь, что промокод действителен.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Лимит активации промокода `%1%` исчерпан 🙁\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"Вы уже применили схожий промокод.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Не удалось применить промокод `%1%` 🙁\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Промокод `%1%` успешно применён 🎉\\nНа Ваш баланс зачислено %2%\\n💰 Ваш текущий баланс: %3%\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"У Вас нет доступа для выполнения данного действия.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Меню админа","adminMenu":"Раздел администратора\\n\\n\\nМеню промокодов\\nСписок промокодов: /listPromo\\nИнформация по промокоду: `/infoPromo {PROMO_NAME}`\\nСоздать промокод: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nУдалить промокод: `/deletePromo {PROMO_NAME}`\\n\\n\\nМеню пользователей\\nВыдать заказ пользователю: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nУдалить заказ: `/removeOrder {ORDER_ID}`\\nВыдать баланс пользователю: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Заказ не найден","adminUserRemoveOrderStatus":"Статус удаления заказа: %1%","adminUserGiveTarifErrUser":"Пользователь не найден!","adminUserGiveTarifErrTarif":"Тариф не найден","adminUserGiveTarifErrNode":"Нода тарифа не найдена. Конфигурация тарифа неверная","adminUserGiveTarifErrMarzban":"MarzBan не дал создать заказ. Причина неизвестна","adminUserGiveTarifSuccess":"Вы успешно выдали заказ для @%1%","adminUserGiveTarifNotify":"🎉 Администратор подключил на Ваш аккаунт\\nтариф `%1%` на `%2% дн.` 📆\\n\\n*Информация о заказе:*\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒\\nнажмите на свой заказ ⇒ 📚 Инструкция VPN / Proxy","adminPromoCreateAlreadyExist":"Данный промокод уже существует","adminPromoCreateAlreadyExistWas":"Данный промокод уже однажды существовал и не может быть создан повторно","adminPromoCreateFailed":"Не удалось создать промокод","adminPromoCreateDone":"Промокод `%1%` успешно создан.\\nДоступно активаций: %2%\\nБаланс: %3%","adminPromoList":"Список всех промокодов:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% исп. / %3% всего / %4%)","adminPromoInfo":"Информация по промокоду:\\n\\nID: `%1%`\\nЛимит активаций: %2%\\nКоличество активаций: %3%\\nБаланс: %4%\\n\\nСписок активаций:\\n%5%","adminPromoDeleteDone":"Промокод `%1%` успешно удалён","terms":"Пользовательское соглашение","contacts":"Контакты для связи","wiki":"База знаний","wikiPage.description":"Инструкции, ответы на вопросы и примеры настройки VPN.","wikiPage.articleLead":"Статья из базы знаний RocketMan VPN.","wikiPage.articleHint":"Навигация по всем статьям слева · содержание справа","wikiPage.subtitle":"Выберите тему слева или воспользуйтесь поиском","wikiPage.heroTopic.faq":"Ответы на вопросы","wikiPage.heroTopic.setup":"Настройка и подключение","wikiPage.heroTopic.troubleshoot":"Примеры и решения","wikiPage.searchPlaceholder":"Поиск по названию и тексту статей...","wikiPage.loadingList":"Загрузка списка статей...","wikiPage.emptyList":"Статьи пока не добавлены.","wikiPage.loadingArticle":"Загрузка статьи...","wikiPage.openHint":"Выберите статью в списке","wikiPage.back":"Назад к списку","wikiPage.error.loadList":"Не удалось загрузить список статей.","wikiPage.error.emptyFile":"Для текущего языка статья недоступна.","wikiPage.error.loadArticle":"Не удалось загрузить статью.","wikiPage.navigation":"Навигация","wikiPage.contents":"Содержание","wikiPage.readMore":"Читать","wikiPage.readingTime":"мин чтения","wikiPage.articlesCount":"статей","wikiPage.backToTop":"Наверх","wikiPage.home":"🏠 Главная страница Базы знаний","wikiPage.copyLink":"Копировать ссылку на эту статью","wikiPage.articleLinkCopied":"Ссылка на эту статью скопирована","wikiPage.linkCopied":"Ссылка скопирована","wikiPage.closeLightbox":"Закрыть","wikiPage.openImageInNewTab":"Открыть в новой вкладке","wikiPage.copySectionLink":"Копировать ссылку на раздел","wikiPage.copyCurrentSectionLink":"Копировать ссылку на текущий абзац","wikiPage.sectionLinkCopied":"Ссылка на текущий абзац скопирована","wikiPage.enlargeImage":"Увеличить изображение","wikiPage.copyCode":"Копировать","wikiPage.copied":"Скопировано","wikiPage.copyText":"Нажмите, чтобы скопировать","wikiPage.searchNoResults":"Ничего не найдено. Попробуйте другое слово.","wikiPage.searchHint":"Результаты поиска по названию и тексту","wikiPage.searching":"Ищем...","wikiPage.searchMatchTitle":"В названии","wikiPage.searchMatchBody":"В тексте","wikiPage.updatedAt":"Обновлено","wikiPage.featured":"Важное к прочтению","wikiPage.groupOther":"Другие статьи","wikiPage.allArticles":"Все статьи","wikiPage.cardUpdated":"Обновлено","wikiPage.updatedToday":"сегодня","wikiPage.updatedYesterday":"вчера","wikiPage.updatedDaysAgo":"%1% дн. назад","wikiPage.badge.important":"Важно","wikiPage.badge.new":"Новое","wikiPage.badge.updated":"Обновлено","wikiPage.badge.hot":"Актуально","contactsTG":"Телеграм-чат","contactsEmail":"E-Mail","trialNotify":"✅ Вы получили тариф `%1%` на `%2% часа` в качестве ознакомительного доступа.\\n\\n📌 Информация о заказе в приложении:\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒\\nнажмите на свой заказ ⇒ 📚 Инструкция VPN / Proxy.\\n\\nМы предоставляем Вам возможность бесплатно ознакомиться с нашими продуктами для того, чтобы Вы оценили качество и стабильность перед будущими покупками 🤝","launchBot":"Запустить","launchBotLong":"Открыть приложение 📱","applicationMainMenu":"Главное меню","applicationMainMenuBack":"Назад","applicationButtonsRef":"Реферальная система","applicationButtonsFaq":"База данных","applicationButtonsCabinet":"Личный кабинет","applicationButtonsAdmin":"Кабинет администратора","applicationButtonsAdminDisk":"Свободно дискового пространства: %1%","applicationButtonsAdminPayments":"Статистика дохода:<br/>%1% текущий мес.<br/>%2% прошлый мес.<br/>%3% за весь период | %4% в ожидании","applicationUserInfoWithUs":"Вы с нами","applicationUserInfoBalance":"Ваш баланс","applicationUserInfoId":"Ваш ID","applicationUserInfoTgId":"ID Привязанного аккаунта TG","applicationUserInfoAPIKey":"Ваш API ключ","applicationUserInfoAPIKeyAlert":"📝 Ваш API ключ был скопирован в буфер обмена. Никому не разглашайте этот ключ, администрация проекта никогда не попросит вас назвать его","applicationUserInfoAPIResetAlertAsk":"📝 Вы уверены, что хотите сгенерировать новый API ключ?","applicationUserInfoAPIResetAlert":"📝 Ваш API ключ был сгенерирован заново","applicationUserInfoIdAlert":"📝 Ваш ID был скопирован в буфер обмена.","applicationUserInfoTgIdAlert":"📝 Ваш Telegram ID был скопирован в буфер обмена.","applicationContactButton":"Связь со службой поддержки","applicationServersButton":"Статус серверов","applicationHowToConnectFAQButton":"Как подключиться к VPN или Proxy?","applicationHowToConnectFAQButtonModal":"Бот отправил вам информацию в личные сообщения 📝","applicationCabinetTitle":"Личный кабинет","applicationCabinetTitleDesc_title":"Нажмите на заказ для управления им","applicationCabinetTitleOrder":"Выбор тарифного плана","applicationCabinetTitleOrder_detail_back":"Вернуться к списку тарифов","applicationCabinetTitleOrder_help_button":"⚠️ Помогите мне определиться с тарифным планом ⚠️","applicationCabinetTitleOrder_help_button_back":"Вернуться к оформлению заказа","applicationCabinetTitleOrder_help_button_header":"Среднее потребление трафика:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 час видео в 1440p ≈6 ГБ\\n<font color=#E10070>Instagram</font>: 1 час Reels ≈2 ГБ\\n<font color=#69C9D0>TikTok</font>: 1 час видео ≈2 ГБ\\n<font color=#7289DA>Discord</font>: 1 час войса c демкой ≈1 ГБ\\n<font color=#BD37FF>Twitch</font>: 2 часа стрима в 1080p ≈5 ГБ\\n<font color=#D0A823>Онлайн-игры</font>: 1 час ≈0.5 ГБ\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 часа в 1080р ≈5 ГБ\\n\\nЕсли сложить все указанные данные, то выходит <font color=#DA7F00>≈20-25 ГБ в день</font>. Эти данные приведены для ориентира, чтобы Вам было проще выбрать подходящий тариф.\\n\\n<font color=#A7C800>VPN и Proxy — по-своему удобны.</font>\\n<font color=#BAD821>VPN:</font> удобно для смартфонов, планшетов и ТВ; можно использовать и на ПК.\\n<font color=#BAD821>Proxy:</font> подходит для Discord, браузера на ПК (YouTube, Twitch, Netflix, HDRezka и т.д.).\\n<font color=#B3D023>Кратко о протоколах:</font>\\n<font color=#2EB3FF>• Vless</font> — лучший обход блокировок, стабильность, скорость, “невидимость”.\\n<font color=#29a1e6>• Hysteria</font> — баланс стабильности и скорости, отлично подходит для гейминга.\\n<font color=#2884BA>• HTTPS</font> — подходит только для сайтов и приложений через Proxifier.\\n\\n🚀 Старт — для обычного сёрфинга\\n🎮 Геймер — для активных юзеров девайсов\\n👑 Семейная+ — для большого объёма трафика","applicationCabinetButtonNew":"Сделать новый заказ","applicationCabinetButtonNewCancel":"Вернуться к списку заказов","applicationCabinetButtonAddBalance":"Пополнить баланс","applicationCabinetIsTrial":"Бесплатный тестовый доступ","applicationCabinetPing":"Пинг к серверу: %1%ms","applicationCabinetEndActive":"Доступ к подписке: %1%","applicationCabinetEndNotActive":"Подписка не оплачена. Нажмите сюда и активируйте её через кнопку «⌛️ Продлить заказ» в выпадающем меню.","applicationCabinetOrderTraficWeek":"в неделю","applicationCabinetOrderTraficMonth":"в месяц","applicationCabinetOrderPriceDay":"/ день","applicationCabinetOrderPriceDays":"/ %1% дней","applicationCabinetOrderPrice":"%1% за %2% дн 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 Ознакомиться с деталями этого тарифа 📋","tarif_desc_drive":"📚 Идеально для знакомства с нашим сервисом и лёгкого серфинга в соцсетях. Позволит полностью опробовать работу VPN / Proxy 😉","tarif_desc_start":"📚 Подходит для соцсетей и лёгкого использования на смартфоне со средним экранным временем ≈4ч в день. На ПК месячный лимит может расходоваться быстрее, учитывайте активность.","tarif_desc_gamer":"🎮 Для тех, кто активно проводит время за ПК:<br/><font color=#DA7F00>•</font> Игры через Steam и другие лаунчеры<br/><font color=#DA7F00>•</font> Голосовое общение в мессенджерах для геймеров с надёжным подключением через Proxy<br><font color=#DA7F00>•</font> Просмотр Twitch с плагином 7TV в 1080p и выше<br/><font color=#DA7F00>•</font> YouTube и другие соцсети, где важно защищённое подключение\\n\\n✅ Данного трафика достаточно для смартфона и ПК с активным использованием ≈5-6 часов в день.","tarif_desc_unlim":"🚀 Тариф для больших объёмов трафика и любых задач: ПК, ноутбуки, смартфоны, планшеты, ТВ и другие устройства.\\n\\n🧡 Один ключ можно использовать на нескольких устройствах — этого трафика хватит для семьи и Ваших друзей!","tarif_desc_ultra":"💠 Премиальный тариф для широкого спектра задач и очень активных пользователей!\\n\\nПодходит тем, кто приближается к верхней границе тарифа в 1 ТБ и хочет пользоваться сервисом без переживаний о трафике.\\n\\n💜 С этим вариантом Вы сможете спокойно загружать крупные файлы, стримить, играть и использовать VPN / Proxy на десятке устройств.","applicationCabinetOrderBack":"Назад","applicationCabinetOrderSelect":"☑️ Заказать этот тариф ☑️","applicationCabinetOrderSelectTrial":"🎁 Активировать тестовый доступ на %1% часа 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Получить тестовый доступ на %1% часа в качестве бонуса?","applicationCabinetOrderSelectAccept":"Подтвердите действие ✅\\nС баланса будет списано: %1%\\n\\n💰 Сейчас у Вас: %2%","applicationCabinetOrderTrial":"🎁 Доступен тестовый период на %1% часа","applicationCabinetOrderTrialUsed":"Вы уже использовали тестовый доступ ранее 🙁","applicationCabinetOrderSelectErrTimeMax":"Максимальный срок продления услуги: 2 месяца","applicationCabinetOrderSelectErrBalance":"У Вас недостаточно средств на внутреннем балансе для заказа 🙁","applicationCabinetOrderSelectErrTrialCfg":"Данный тариф нельзя заказать в тестовом режиме 🙁","applicationCabinetOrderSelectErrTrial":"Вы уже использовали этот тестовый тариф 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Тестовый период доступен только пользователям, авторизованным через Telegram. Войдите через Telegram (или привяжите Telegram в «Настройки») и попробуйте ещё раз.","applicationCabinetOrderSelectSuccess":"Заказ успешно выполнен 🎉","applicationCabinetOrderSelectSuccessTrial":"Тестовый заказ успешно выполнен 🎉","applicationCabinetOrderSelectErrOrder":"Не удалось создать Ваш заказ 😕","applicationCabinetOrderEditChangeTarif":"♻️ Сменить тариф на другой ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ Это текущий тариф","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>При смене тарифа у Вашего заказа останется<br>приблизительно %1%</font><br>дни:часы:минуты:секунды<br><br>Для подтверждения нажмите кнопку ниже","applicationCabinetOrderEditChangeTarifExpired":"❌ Невозможно выполнить смену тарифа у заказа с истёкшим сроком действия. Сначала необходимо его продлить (сделать активным), а уже после сменить тариф на тот, что Вы выбрали. При смене время заказа пересчитается в зависимости от выбранного тарифа.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>Каждые %1% ч. Вы можете изменять тариф на любой другой.</font><br><br>При смене тарифа остаток дней с предыдущего заказа переносится на новый с учётом актуальной стоимости и оставшегося срока доступа.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>Вы уже недавно меняли тариф!</font><br>Следующая смена будет доступна<br>через %1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Подтвердить смену тарифа на выбранный ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Вы уверены, что хотите сменить тариф на выбранный?\\n\\n⚠️ Имейте в виду, что следующую смену тарифа Вы сможете произвести только через %1% ч.","applicationCabinetOrderEditAuto":"Автопродление заказа","applicationCabinetOrderEditAutoOn":"✅ Активно","applicationCabinetOrderEditAutoOff":"❌ Не активно (в ⚙️Настройках)","applicationCabinetOrderEditAutoDesc":"При окончании срока действия заказа, если на Вашем балансе достаточно средств, система автоматически продлит заказ, если включить автопродление.","applicationCabinetOrderEditResetTime":"Сброс трафика","applicationCabinetOrderEditCreated":"Заказ активирован","applicationCabinetOrderEditSpent":"Суммарно потрачено","applicationCabinetOrderEditOverTime":"Подписка активна до","applicationCabinetOrderChangeTarif":"♻️ Смена тарифа","applicationCabinetOrderEditParams":"⚙️ Настройки","applicationCabinetOrderEditParamsTitle":"⚙️ Настройка заказа: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Метка заказа","applicationCabinetOrderEditParamsLabelDesc":"Вы можете добавить метки к Вашим заказам, чтобы Вам было проще определять какой из них где используется","applicationCabinetOrderEditParamsPassword":"🔸 Ваш пароль для подключения (4-12 символов)","applicationCabinetOrderEditParamsIP":"🔸 IP-адрес для доступа без пароля","applicationCabinetOrderEditParamsIPDesc":"В этом поле Вы можете указать свой личный IP-адрес (взяв его, например, с 2ip.io), чтобы получить доступ к нашему Proxy-серверу без указывания логина и пароля в тех местах, где это требуется. Этот вариант удобнее и ничем не отличается по уровню безопасности.\\n⚠️ Важное уточнение: данная функция работает только при подключении через HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"Для того чтобы обезопасить подключение к Proxy, мы сгенерировали случайный пароль. В случае необходимости его можно заменить на любой другой. Он нужен для аутентификации при помощи логина и пароля там, где это потребуется.","applicationCabinetOrderEditSave":"✔️ Сохранить все изменения ✔️","applicationCabinetOrderEditSaveOk":"Изменения успешно приняты ✅","applicationCabinetOrderEditSaveFail":"❌ Настройки не были сохранены. %1%","applicationCabinetOrderEditLinkVpn":"📚 Инструкция VPN","applicationCabinetOrderEditLinkProxy":"📚 Инструкция Proxy","applicationCabinetOrderEditResetPass":"🔄 Сбросить Proxy-пароль","applicationCabinetOrderEditResetPassAccept":"🔄 Вы уверены, что хотите сбросить пароль?\\n\\nСтарый пароль перестанет действовать, и Вам необходимо будет выполнить повторную настройку Proxy-соединения!","applicationCabinetOrderEditResetUid":"🔄 Сбросить ссылку на VPN подписку","applicationCabinetOrderEditResetUidAccept":"🔄 Вы уверены, что хотите сбросить ссылку на VPN подписку?\\n\\nСтарая ссылка и ключи доступа перестанут действовать, включая резервные/relay-локации. Ссылку нужно будет добавить в VPN-приложение заново!","applicationCabinetOrderEditResetUidDesc":"Сбрасывает ссылку подписки и ключи доступа VPN (VLESS и Hysteria, основная локация и relay). Используйте, если ссылка могла попасть к посторонним. После сброса старая ссылка перестанет работать — добавьте новую из инструкции VPN.","applicationCabinetOrderEditResetUidOk":"Ссылка на VPN подписку сброшена. Добавьте новую ссылку в VPN-приложение — прежняя ссылка и ключи больше не будут работать.","applicationCabinetOrderEditLinkAccept":"💬 Вам было отправлено сообщение с подробностями и инструкцией для подключения к нашему VPN / Proxy.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS порт*: `%4%`\\n%5%\\n🔑 *Пароль*: `%6%`","proxyInstructionReserveSubItem":"👤 *Логин* %1% » %2%: `%3%`","proxyInstruction":"Инструкция для подключения к Proxy:\\n\\n%1%\\nМы предоставляем Вам доступ к Proxy сразу во всех наших локациях. ✅ *Рекомендуем сначала попробовать подключение напрямую к европейскому серверу.* В случае если работает некорректно — пробуйте способ через РФ » Европа.\\n\\n\\n*Данные для подключения к Proxy напрямую:*\\n%2%\\n🌐 HTTPS порт: `%3%`\\n👤 Логин: `%5%`\\n🔑 Пароль: `%6%`\\n\\n\\n*Для некоторых клиентов из РФ:*\\n_(перенаправляет трафик через РФ при недоступности прямого подключения к Европе. В этом режиме обязательно укажите верный логин из блока ниже — он другой)_\\n%7%\\n\\n\\n*Для работы с Proxy-подключением:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Инструкция](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Инструкция](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 ПК на Windows и macOS: [Proxifier](https://www.proxifier.com/) — [Инструкция](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Инструкция для подключения к VPN:\\n\\n%1%\\nМы предоставляем Вам доступ к VPN сразу во всех наших локациях! *Каждая ссылка ниже = личный ключ*, а также страница с инструкцией к подключению. \\n✅ *Рекомендуем сначала добавить Vless от Мультиссылки*, в случае если работает некорректно — пробуйте другие протоколы или резервный вариант.\\n\\n\\n\\n🔹 *Простое объяснение для новичков:*\\n▪️ Нажмите на [эту ссылку](%5%) и следуйте инструкции.\\n\\n\\n\\n🔸 *Для пользователей с опытом*:\\n🌏 Все локации в мультиссылке\\n- %2%\\n\\n*Для некоторых клиентов из РФ:*\\n%3%\\nЭтот способ для тех, у кого нет прямого подключения к европейским серверам и нужен обходной способ доступа к ним через российский сервер.\\n\\n*Прямой доступ к локации на всех протоколах:*\\n%4%\\n\\n⚠️ Если указанные ссылки не открываются, включите в настройках отображение резервной ссылки.%7%","vpnInstructionRoute":"\\n\\nℹ️ Клиенты, использующие HAPP могут добавить кастомные правила для маршрутизации. Вы можете воспользоваться заготовленными настройками ниже или создать свои собственные, указав нужные домены и IP-адреса для обхода VPN. \\n%1%","vpnInstructionAll":"Все протоколы сразу","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Европа","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Ваш личный ключ доступа к VPN*\\n\\nВсе данные для подключения и список рекомендованных приложений находятся по ссылке:  \\n👉 [Открыть ссылку для подключения](%2%)\\n\\n⚠️ *Храните ссылку в секрете!* \\nОна является Вашим персональным ключом авторизации в VPN.\\n\\n✅ Чтобы активировать подписку:  \\nСкопируйте ссылку и вставьте её в выбранное приложение — после этого автоматически загрузятся актуальные настройки.\\n\\n📦 Хотите управлять всеми заказами?  \\nИспользуйте [🔑 ссылку подписки на все подключения](%4%).\\n\\n───────────────\\n🌐 *Ваши данные для подключения к Proxy:*\\n🌐 *Адрес сервера:* `%6%%7%`\\n🌐 *HTTPS порт:* `%9%`\\n👤 *Ваш логин:* `%10%`\\n🔑 *Пароль для подключения:* `%5%`\\n\\n⚠️ В случае недоступности основного сервера вы можете подключиться к резервному серверу:  \\n%11% *Адрес сервера:* `%12%`  \\n🌐 *HTTPS порт:* `%9%`  \\n👤 *Ваш логин:* `%13%.%10%`  \\n🔑 *Пароль для подключения:* `%5%`\\n\\n💡 Proxy можно использовать в любом приложении, которое поддерживает Proxy-соединение.  \\nК примеру, *для работы в браузере Chrome* рекомендуем расширения:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*Инструкции по подключению к VPN:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*Как подключиться к Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows-приложения](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Веб-браузер](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Данные заказа `%1%`\\n⌛️ Тариф: `%2%`\\n⚙️ Автопродление: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Внимание! Обязательно обновите конфигурацию в настройках приложения, где используете данный заказ\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Включено","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Выключено","faqButtonCommand":"🔑 Наши VPN и Proxy могут быть применимы на широком списке устройств и *без ограничений на кол-во подключений* к одному ключу доступа! Настройка очень простая и займет не больше двух минут Вашего времени, далее все будет сведено лишь к кнопке ВКЛ/ВЫКЛ.\\n\\n✅ После того, как Вы оформите свой первый заказ _(включая тестовый)_, Вам придет два сообщения с деталями и инструкциями для подключения как к VPN, так и к Proxy.\\n\\n\\n📦 *Если у Вас ещё нет заказа, то:*\\n[Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ➛ Личный кабинет ➛ Сделать новый заказ ➛ Выбирайте подходящий, нажав на него, и переходите к деталям тарифа ➛ Заказываем.\\n\\n\\nЕсли у Вас возникнут какие-то вопросы, то свяжитесь с нами из приложения, мы обязательно поможем ❤️","applicationCabinetOrderEditPay":"⌛️ Продлить заказ (на %1% дней за %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Заказ успешно продлён на %1% дней.\\n\\nСтатус заказа будет обновлён в течение нескольких минут.","applicationCabinetOrderEditPayErr":"Не удалось продлить заказ 🙁","applicationCabinetOrderRemove":"Удалить заказ","applicationCabinetOrderRemoveFailed":"❌ Невозможно удалить активный заказ!","applicationCabinetOrderRemoveConfirm":"Вы уверены, что хотите удалить заказ? 🤨\\n\\nВ случае необходимости Вы всегда можете сделать новый заказ, а если у Вас возникли проблемы с заказом, то обратитесь в нашу службу поддержки, и мы с радостью Вам поможем!","applicationCabinetOrderRemoveConfirmMessage":"✅ Заказ был успешно удалён!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Не удалось удалить заказ!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Протоколы: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Ваш баланс был пополнен на %1%","applicationAdminDashboard":"📊 Дашборд","applicationAdminUsers":"👥 Пользователи (x%1%)","applicationAdminUsersActive":"🫂 Активные пользователи (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Текущий баланс: %1% | %2% USD","applicationAdminUserRef":"Рефералы (x%1% | %2%)","applicationAdminUserRefTarget":"Реферал от","applicationAdminUserOrders":"📦 Заказы (x%1% всего | x%2% активных)","applicationAdminUserRefs":"💸 Рефералы (x%1% всего)","applicationAdminUserPayments":"💸 Платежи (x%1% всего) | Зачислено %2%","applicationAdminUserPaymentsType":"Платёжная система: %1%","applicationAdminUserPaymentsStatus":"Статус платежа: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Отменить платёж и списать сумму с баланса","applicationAdminUserPaymentsStatusSetFailAccept":"Вы уверены?\\n\\nВ случае подтверждения платёж изменит свой статус, а также с баланса пользователя\\n\\n❌ будет списано %1%","applicationAdminUserPaymentsStatusSetOk":"✅ Подтвердить платёж и зачислить сумму на баланс","applicationAdminUserPaymentsStatusSetOkAccept":"Вы уверены?\\n\\nВ случае подтверждения платёж изменит свой статус, а также баланс пользователя\\n\\n✅ будет пополнен на %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Действие выполнено успешно ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Не удалось выполнить действие!\\nОтвет сервера: %1%","applicationAdminUserCreated":"Создан: %1%","applicationAdminUserUpdated":"Изменён: %1%","applicationAdminUserLast":"🚪 Последний вход: %1%","applicationAdminUserOrdersTotal":"💰 Пополнений баланса на: %1%","applicationAdminUserResetOrderChangeBlock":"Сбросить зависшую блокировку заказа","applicationAdminUserResetOrderChangeBlockAccept":"Вы уверены, что хотите сбросить зависшую блокировку заказа?","applicationAdminUserMedia":"Партнёрская программа","applicationAdminUserMediaOn":"Статус: ✅ Партнёр","applicationAdminUserMediaOff":"Статус: ❌ НЕ Партнёр","applicationAdminUserMediaConfirm":"Статус: ❌ НЕ Партнёр","applicationAdminUserMediaTotal":"Суммарный доход: %1%","applicationAdminUserMediaPayed":"Выплачено партнёру: %1%","applicationAdminUserMediaPayWait":"Необходимо выплатить: %1%","applicationAdminUserMediaPayWaitButton":"💸 Отметить выплату","applicationAdminUserMediaPayWaitButtonAccept":"Вы уверены, что хотите отметить выплату как выполненную? Сумма транзакции %1% (%2%)\\n\\n💸 После подтверждения пользователю будет отправлено уведомление о том, что средства были выплачены и они уже в пути к нему.","applicationAdminUserMediaPayWaitNotify":"Уважаемый партнёр! \\n\\n💸 Вам была выплачена сумма в размере *%1%* по партнёрской программе. Средства уже в пути и потребуется некоторое время, чтобы они достигли Ваших реквизитов","applicationAdminUserMediaPercent":"%2%%1%% Процент от рефералки в доход","applicationAdminUserMediaPercentDesc":"Этот процент указывает, сколько от рефералки будет выплачено пользователю в качестве дохода от партнёрской программы","applicationAdminUserGiveOrder":"Выдать заказ пользователю","applicationAdminUserGiveOrderDays":"Количество дней","applicationAdminUserGiveOrderButton":"Выдать","applicationAdminUserGiveOrderButtonConfirm":"Вы собираетесь выдать заказ\\n\\"%1%\\"\\nпользователю на %2% дней?","applicationAdminUserEditButton":"Управление пользователем","applicationAdminUserEditPromos":"Использованные промокоды: %1%","applicationAdminUserEditBalance":"Изменить баланс","applicationAdminUserAddBalance":"Добавить на баланс","applicationAdminUserEditBalanceAccept":"Вы уверены, что хотите изменить баланс пользователя?","applicationAdminUserEditBalanceAcceptFail":"Не удалось изменить баланс. Возможно, во время редактирования текущий баланс пользователя был изменён\\nОтвет сервера: %1%","applicationAdminUserEditBalanceAcceptOk":"Баланс был успешно изменён","applicationAdminUserEditBalanceChangeNotify":"Администратор изменил Ваш баланс на *%1%*.\\n💰 Текущий баланс: *%2%*\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Администратор добавил *%1%* на Ваш баланс.\\n💰 Текущий баланс: *%2%*\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Поиск","applicationAdminOrders":"🛒 Все заказы (x%1%)","applicationAdminOrdersActive":"💳 Активные заказы (x%1%)","applicationAdminOrdersExpired":"⛔ Остановленные заказы (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% дней","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Трафик: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Блокировка смены тарифа","applicationAdminOrderReload":"Обновить данные MarzBan","applicationAdminOrderReloadAccept":"⚠️ Обновить данные?\\n\\nЭто действие загрузит данные заказа из MarzBan и обновит их в приложении!","applicationAdminOrderReloadAcceptDone":"✅ Запрос на обновление данных отправлен!","applicationAdminOrderReloadAcceptFail":"❌ Не удалось обновить данные заказа!","applicationAdminOrderResetChangeTime":"Сбросить время смены тарифа","applicationAdminOrderResetChangeTimeAccept":"Вы уверены, что хотите это сделать? При подтверждении пользователь сможет сменить тариф на другой","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Запрос успешно выполнен. Теперь пользователь может изменить тариф самостоятельно","applicationAdminOrderResetTraffic":"Сбросить трафик","applicationAdminOrderResetTrafficAccept":"⚠️ Отменить заказ?\\n\\nПользователь не получит уведомление!","applicationAdminOrderResetTrafficAcceptOk":"✅ Готово","applicationAdminOrderReturn":"Отменить заказ","applicationAdminOrderReturnAccept":"⚠️ Отменить заказ?\\n\\nПользователь ПОЛУЧИТ назад средства за весь НЕИСПОЛЬЗОВАННЫЙ период!","applicationAdminOrderReturnAcceptDone":"⚠️ Заказ удалён. Пользователю возвращено %1% на баланс.","applicationAdminOrderReturnNotify":"⚠️ Администратор отменил Ваш заказ\\n🛒 `%1%` и вернул Вам *%2%* на баланс.\\nВы можете сделать новый заказ, чтобы всегда оставаться на связи со свободным Интернетом, зайдя в приложение.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Сделать новый заказ","applicationAdminOrderRemove":"Удалить заказ","applicationAdminOrderRemoveAccept":"⚠️ Удалить заказ?\\n\\nЕсли заказ всё ещё активен, средства НЕ будут возвращены!","applicationAdminOrderRemoveAcceptDone":"Заказ удалён","applicationAdminOrderAddTime":"Продлить заказ (%1% дн.)","applicationAdminOrderAddTimeAccept":"⚠️ Продлить заказ (%1% дн.)?\\n\\nЭто действие НЕ изменит баланс пользователя!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Администратор продлил Ваш заказ\\n🛒 `%1%` на *%2% дн.* 📆\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Нажмите на указанный заказ для ознакомления с деталями.","applicationAdminPromos":"🎁 Промокоды (x%1%)","applicationAdminPaymentsLast":"⏰ Последние платежи (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Последние успешные платежи (x%1%)","applicationAdminPromosCreate":"Создать промокод","applicationAdminPromoID":"Название: %1%","applicationAdminPromoUSED":"Использований: %1%","applicationAdminPromoCOUNT_USE":"Лимит: %1%","applicationAdminPromoBALANCE":"Сумма: %1%","applicationAdminPromoEditID":"Название","applicationAdminPromoEditCOUNT_USE":"Количество применений (макс)","applicationAdminPromoEditAMOUNT":"Сумма в $","applicationAdminPromoEditCATEGORY":"Категория","applicationAdminPromoEditCATEGORYEmpty":"Обычный / без категории","applicationAdminPromoEditCATEGORYMedia":"Медиапромо","applicationAdminPromoEditCATEGORYNew":"Для новичков","applicationAdminPromoEditSave":"Сохранить промокод","applicationAdminPromoEditPromo":"Изменить","applicationAdminPromoCategory":"Категория: %1%","applicationAdminPromoSendUseList":"Список применивших","applicationAdminPromoRemovePromo":"Удалить","applicationAdminPromoRemovePromoAccept":"Вы уверены?","applicationAdminAddNode":"Добавление новой ноды","applicationAdminAddNodeDesc":"Данный раздел позволит в 2 клика развернуть весь проект на новой ноде. Это лишь установит всё, что надо, но не будет добавлять ноду в список нод","applicationAdminAddNodeIP":"IP-адрес сервера","applicationAdminAddNodeHostname":"Поддомен сервера (s1, s2 и т.д., без точки и прочего)","applicationAdminAddNodeHostnameDesc":"Указанный поддомен автоматически пропишется в CloudFlare со всеми параметрами для работы с нашим сервисом. Если указать уже существующий — то будет перезаписан, так что внимательнее","applicationAdminAddNodeUsername":"Имя пользователя (root)","applicationAdminAddNodePassword":"Пароль пользователя (root)","applicationAdminAddNodePasswordDesc":"Если не указать пароль — будет использоваться авторизация по SSH-ключу. В этом случае убедитесь, что Ваш SSH-ключ добавлен в ноду и имеет доступ к серверу","applicationAdminAddNodePasswordKeyInfo":"Внимание. Пароль не указан, будет использоваться авторизация по SSH-ключу. Убедитесь, что Ваш SSH-ключ добавлен в ноду и имеет доступ к серверу","applicationAdminAddNodeSshPort":"SSH-порт (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Для работы требуются такие права: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Нажмите, чтобы получить токен","applicationAdminAddNodeStart":"Выполнить деплой","applicationAdminAddNodeStarted":"Процесс деплоя запущен, не закрывайте страницу и дождитесь выполнения. Если в течение 5 минут процесс не будет завершён — скорее всего что-то зависло(","applicationAdminAddNodeDoneOk":"Деплой завершён успешно","applicationAdminAddNodeDoneFail":"Ошибка: %1%","applicationAdminAddNodeClearLogs":"Очистить логи","applicationAdminInstallNode":"Развёртывание ноды","applicationAdminCoreSettings":"Настройки ядра","applicationAdminCoreSettingsDesc":"Данный раздел позволяет настроить базовые параметры системы. Параметры применяются на лету, без перезапуска ядра","applicationAdminSaveCoreSettings":"Сохранить настройки","applicationAdminCoreSettingsSaved":"Настройки успешно сохранены","adminBackupTitle":"Резервная копия Telegram","adminBackupInterval":"Автоматические бэкапы создаются каждые %1% мин. и отправляются админам бэкапов в Telegram.","adminBackupLastRun":"Последний бэкап: %1%","adminBackupNever":"Бэкап ещё не создавался","adminBackupRunning":"Идёт создание бэкапа","adminBackupOffline":"Сервис бэкапа не отвечает. Запрос выполнится, когда сервис станет доступен.","adminBackupCreate":"Создать бэкап сейчас","adminBackupCreateConfirm":"Создать бэкап сейчас и отправить в Telegram?","adminBackupCreateOk":"Бэкап запущен. Файлы придут в Telegram после завершения.","adminBackupCreateFail":"Не удалось запустить бэкап: %1%","adminBackupCreateBusy":"Бэкап уже выполняется","adminBackupLastResultOk":"Последний результат: успешно","adminBackupLastResultFail":"Последний результат: ошибка (%1%)","applicationAdminCoreName.projectName":"Название проекта","applicationAdminCoreName.projectMain":"Основной домен","applicationAdminCoreName.projectBot":"Логин бота проекта","applicationAdminCoreDesc.projectBot":"Через какого бота происходит взаимодействие с пользователями. Укажите логин без @","applicationAdminCoreName.admins":"ID Администраторов","applicationAdminCoreDesc.admins":"ID указывайте строго через запятую и не используйте пробелы. К примеру: `123456789,987654321`. И не удалите себя случайно)","applicationAdminCoreName.backup_admins":"ID Администраторов для получения бэкапа","applicationAdminCoreDesc.backup_admins":"Данным администраторам бот будет присылать бэкапы в личку. ID указывайте строго через запятую и не используйте пробелы. К примеру: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Максимальный срок продления заказа (в месяцах)","applicationAdminCoreDesc.order_end_limit_month":"Пользователь не сможет продлить свой заказ на срок больше, чем указан","applicationAdminSendMessage":"Рассылка сообщений","applicationAdminSendMessageTargets":"Количество человек, кто получит сообщение","applicationAdminSendMessageType":"Тип фильтрации пользователей","applicationAdminSendMessageTypeAll":"Все пользователи","applicationAdminSendMessageTypeOrders":"Определённые заказы (любые)","applicationAdminSendMessageTypeOrdersActive":"Определённые заказы (активные)","applicationAdminSendMessageTypeHas":"Есть хоть 1 заказ","applicationAdminSendMessageTypeNotHas":"Нет никаких заказов","applicationAdminSendMessageTypeHasActive":"Есть хоть 1 активный заказ","applicationAdminSendMessageTypeHasUnActive":"Есть хоть 1 НЕактивный заказ","applicationBalanceErr":"Возникла ошибка при формировании платежа: %1%","applicationBalanceErrBalanceLimit":"На Вашем счету уже максимально допустимое количество средств (%1%)","applicationBalanceErrBalanceLimitButton":"Недоступно","applicationBalanceErrData":"Платёжная система не смогла сформировать платёж. Пожалуйста, попробуйте позже.","applicationBalanceErrNetwork":"Сетевая ошибка. Пожалуйста, попробуйте позже.","applicationBalanceErrCurrency":"Ошибка валюты. Пожалуйста, попробуйте позже.","applicationBalanceErrAuth":"Ошибка авторизации","applicationBalanceErrPaymentLink":"Не удалось получить ссылку на платёж","applicationBalanceSettingsTitle":"Выбор валюты","applicationBalanceTitle":"Раздел пополнения баланса","applicationBalanceSelect":"Выберите валюту для отображения","applicationBalanceEmail":"Ваш email","applicationBalancePlatform":"Платёжная платформа","applicationBalanceAmount":"Сумма пополнения (в %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Итоговая сумма оплаты: ≈%1%</font>\\n\\n<font color=#F28100>Если Вы чей-то реферал,\\nто на баланс вернётся %2% в виде 20% кэшбэка!</font>","applicationBalanceAmountLimit":"Минимальная сумма: %1%\\nМаксимальная сумма: %2%\\n\\n💵 <font color=#00AE09>Ваш способ оплаты: %4%</font>\\nКомиссия платёжной системы: %3%%\\n\\nПосле самой оплаты баланс зачисляется автоматически в течение нескольких минут, также Вам придёт сообщение о статусе платежа с другими деталями на случай обращения в службу поддержки.","applicationBalanceAmountDesc":"Пополнение происходит через сервис %1%","applicationBalanceAmountButton":"Перейти на страницу оплаты","applicationBalanceAmountButtonLoading":"Загрузка...","applicationBalanceAmountButtonErr":"❌ Неверно указана сумма ❌","applicationBalanceCurrency":"Метод оплаты","applicationBalanceCurrencyDesc":"Комиссия платёжной системы: ≈%1%%","applicationServersTitle":"Статус серверов","paymentCompleteNotify":"🎉 Ваш баланс был успешно пополнен на <b>%1%</b>.\\n\\nID платежа: <b>%2%</b>\\n(Он понадобится в случае обращения в <a href=\\"https://t.me/rocketman_vpn\\">службу поддержки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyRef":"🎉 Ваш баланс был успешно пополнен на <b>%1%</b>.\\nТак как Вы являетесь рефералом @%4% в нашем сервисе, мы начислили бонус в размере <b>%3%</b> (%5%%)\\n\\nID платежа: <b>%2%</b>\\n(Он понадобится в случае обращения в <a href=\\"https://t.me/rocketman_vpn\\">службу поддержки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyRefHost":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> (%3%%) за пополнение баланса Вашим рефералом @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyAdmin":"💵 Пользователь %1% [UID: %7%] пополнил баланс на <b>%2%</b>.\\n💰 В чистую прибыль проекта зачислено +<b>%5%</b>\\n\\nПлатёжная система: <b>%6%</b>\\nID платежа: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Внимание ❗️\\nПо платежу `%1%` был сформирован запрос на возврат средств.\\n\\nТак как они были возвращены Вам в полном объёме, с баланса в приложении было списано *%2%*.\\n\\nВ случае возникновения вопросов обратитесь в [службу поддержки](https://t.me/rocketman_vpn), мы обязательно поможем!\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Ноды","adminXrayVersionTitle":"Xray-core","adminXrayVersionCurrent":"Текущая версия: %1%","adminXrayVersionLatest":"Доступна новая версия: %1%","adminXrayVersionUnknown":"Версия в скрипте установки не указана","adminXrayVersionLoading":"Проверяем версию…","admin-routing":"🔀 Роутинг","admin-presets":"📋 Пресеты","admin-firewall":"📜 Записи фаервола (x%1%)","admin-firewall_add":"Новая запись фаервола","admin-nav-messages":"Рассылка","admin-nav-firewall":"Фаервол","admin-nav-logs":"Логи администрации","logRecord-title":"📊 Логи администрации (x%1%)","logRecord-title-user":"📜 Логи пользователя (x%1%)","logRecord-log-time":"Создан: %1%","logRecord-log-who":"Кто","logRecord-log-target":"Цель","logRecord-log-reason":"Текст: %1%","logRecord-setPaymentStatus":"Смена статуса платежа %1%","logRecord-removePromo":"Удаление промокода %1%","logRecord-editPromo":"Редактирование промокода %1%","logRecord-editBalance":"Редактирование баланса (%1%$ -> %2%$)","logRecord-returnOrder":"Отмена заказа %1% (%2%$)","logRecord-addOrder":"Выдача заказа %1%","logRecord-payOrder":"Продление заказа %1% на %2% дней","logRecord-partnerNotify":"Выплата партнёру %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"СБП (Система быстрых платежей)","paymentMethodCrypto":"Криптовалюта","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Не удалось обнаружить данные пользователя для формирования ссылки. Видимо, этот пользователь заблокировал нашего бота 😐","partner_title":"🏆 Партнёрская программа 🏆","partner_desc":"Вы являетесь участником партнёрской программы. Помимо основного бонуса за реферата Вы также будете получать финансовые отчисления.\\n\\nВаша текущая ставка — %1%% от реферального баланса\\n\\nВсего Вы заработали: %2%\\nТекущий баланс: %3%","ref_title":"🏆 Реферальная система 🏆","ref_desc":"Приглашайте друзей и знакомых в наш сервис и получайте бонусы на свой баланс!\\n\\n<font color=#2DA618>От каждого реферала Вы получите по <font color=#54E13B>%1%</font> за их первые заказы и <font color=#54E13B>%2%%</font> от всех пополнений их баланса.</font>\\n\\n<font color=#00B7B7>Все Ваши рефералы получат <font color=#15DBDB>%3%</font> бонусом после первого заказа (включая тестовый) и <font color=#15DBDB>%4%%</font> кэшбэка от всех своих будущих пополнений.</font>\\n\\nТаким образом эта система выгодна и для Вас, и для Ваших рефералов 😉","ref_stats":"Ваша статистика","ref_stats_data":"Количество приведённых рефералов: %1%\\nПолучили бонусом на баланс: %2%","ref_link_text":"Ваши данные реферальной системы","ref_link_text_copy":"📋 Ссылка+текст","ref_only_link_copy":"🔗 Ссылка","ref_link_text_copy_sendText":"Привет! Я пользуюсь удобным способом для защиты своих данных в интернете и смело рекомендую его тебе 😎\\n\\nКроме того, перейдя именно по моей ссылке, ты получишь бонусом %1% после первого заказа (включая тестовый) и пожизненный кэшбэк в %2%% от всех пополнений баланса 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Ваша реферальная ссылка и дополнительный текст были скопированы в буфер обмена.\\n\\nИспользуйте это для приглашения друзей и знакомых в наш сервис, чтобы извлекать выгоду совместно 😎","ref_only_link_copy_alert":"🔗 Ваша реферальная ссылка была скопирована в буфер обмена.\\n\\nИспользуйте её для приглашения друзей и знакомых в наш сервис, чтобы извлекать выгоду совместно 😎","ref_link_text_share":"💌 Поделиться","ref_link_text_share_message":"Привет! Я пользуюсь удобным способом для защиты своих данных в интернете и смело рекомендую его тебе 😎\\n\\nКроме того, перейдя именно по моей ссылке, ты получишь бонусом %1% после первого заказа (включая тестовый) и пожизненный кэшбэк в %2%% от всех пополнений баланса 🎉\\n","ref_message_personal":"Вы не можете зарегистрироваться по своей реферальной ссылке 😐","ref_message":"🎁 Реферальная система:\\nВы успешно зарегистрировались как реферал пользователя @%1% 🎉\\n\\nВы получите бонус в размере <b>%2%</b> при первом заказе (включая тестовый), а также пожизненный кэшбэк в размере <b>%3%%</b> при каждом пополнении баланса!","ref_message_host":"🎁 Реферальная система:\\n🎉 Пользователь @%1% зарегистрировался как Ваш новый реферал 🎉\\n\\nВы получите бонус в размере <b>%2%</b> при первом его заказе (включая тестовый), а также кэшбэк в размере <b>%3%%</b> от каждого его пополнения баланса.","ref_message_order":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> на свой баланс","ref_message_order_host":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> на свой баланс от пользователя @%2%","traffic_limit_notify_close":"⚠️ У Вас заканчивается трафик на заказе `%1%` с тарифом `%2%`! Если это сообщение будет появляться достаточно часто, то рекомендуем задуматься о смене тарифа на более продвинутый, чтобы всегда оставаться на связи ❤️\\n\\n🚀 Сделать это Вы сможете, [запустив приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ нажмите на нужный заказ ⇒ ♻️ Сменить тариф на другой ♻️","traffic_limit_notify_end":"❗️ ВНИМАНИЕ ❗️ У Вас закончился весь трафик на заказе `%1%` с тарифом `%2%`. Его сброс произойдёт %3%. Но если Вы хотите всегда оставаться на связи, то подумайте о смене тарифа на более продвинутый.\\n\\n🚀 Сделать это Вы сможете, [запустив приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ нажмите на нужный заказ ⇒ ♻️ Сменить тариф на другой ♻️","traffic_limit_notify_restore":"🎉 У заказа `%1%` с тарифом `%2%` была сброшена статистика использованного трафика. Теперь он снова доступен в полном объёме :)\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Применить промокод","example":"Example","deleteMessageFailed":"❌ Не удалось удалить сообщение. Возможно, оно слишком старое или уже удалено.","cryptoPayTitle":"Оплата через криптовалюту","cryptoPayUserId":"ID пользователя","cryptoPayAmount":"Сумма к оплате (USDT)","cryptoPayInstruction":"Переведите указанную сумму в USDT на предоставленный адрес","cryptoPayLoading":"Загрузка реквизитов...","cryptoPayErrorNoParam":"Не передан параметр crypto_id в ссылке.","cryptoPayErrorInvalidData":"Некорректные данные для оплаты.","cryptoPayErrorParse":"Ошибка при обработке данных для оплаты. Попробуйте обновить страницу или обратитесь в поддержку.","cryptoPayWallet":"Адрес кошелька для перевода","cryptoPayNetwork":"Сеть (блокчейн)","cryptoPayCopy":"Скопировать","cryptoPayCopyAmountAlert":"Сумма скопирована в буфер обмена!","cryptoPayCopyWalletAlert":"Адрес кошелька скопирован в буфер обмена!","cryptoPayWarning":"ВНИМАТЕЛЬНО проверьте реквизиты и сумму перед оплатой! В случае ошибки мы не можем гарантировать зачисление средств.","telegramPayment":"✅ Для Вас был сформирован счёт на оплату\\n\\n⚖️ Сумма оплаты: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 ID пользователя: <b>%7%</b>\\n📋 ID платежа: <b>%6%</b>\\n\\n🔗 Для оплаты перейдите по ссылке: %5%","orderManipulationBlock":"Ваш прошлый заказ всё ещё в обработке. Пожалуйста, подождите его завершения или обратитесь в службу поддержки для получения помощи.","subPage.orderInfo":"Ниже представлены все доступные методы подключения для Вашего заказа через это приложение","subPage.userInfo":"Ниже представлены все доступные методы подключения для всех Ваших активных заказов через это приложение","subPage.orderId":"🛒 ID Заказа: %1%\\n⬇️ Выберите регион конечного подключения:","subPage.nodeInfo":"📍 Точка обхода: %1%\\n⚠️ Это значит, что сначала весь трафик будет идти через неё для маскировки.","subPage.protocolInfo":"Протокол подключения: %1%","subPage.allTitle":"Все заказы","subPage.expiredNotifyList":"❌ Срок действия подписки истёк\\nПродлить VPN в боте\\n%1%","ping.admin.initOk":"✅ Система инициализирована, все ноды доступны в штатном режиме.","ping.admin.initFail":"❌ Система инициализирована, но некоторые ноды не доступны:\\n\\n%1%","speedtest.admin.failTest":"❌ Тест скорости не пройден. Пожалуйста, проверьте работоспособность.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Зафиксирована низкая скорость соединения (%2% Mbps download, %3% Mbps upload). Пожалуйста, проверьте работоспособность.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Скорость соединения восстановлена (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ На сервере обнаружены проблемы со скоростью соединения","applicationServersSpeedtestLastSpeed":"Последний замер скорости (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Предыдущий замер скорости (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ На сервере не было сделано ещё замеров скорости","applicationServersPingIssueDetected":"❌ Сервер не отвечает на пинг-запросы","actionUpdateStartNodes":"⚠️ Запущена процедура обновления нод (%1%), через некоторое время ноды будут перезапущены. После завершения выполнения работ будет отправлено дополнительное уведомление (если не было отправлено — возможно, подвис github action и всё в порядке, но могут быть и проблемы)","actionUpdateStartHeader":"Запущена процедура обновления:","actionUpdateStartSite":"• Обновляется главная страница проекта","actionUpdateStartApp":"• Обновляется бэкенд приложение","actionUpdateStartProxy":"• Обновляется прокси или xray служба (Ноды: %1%)","actionUpdateStartMTProto":"• Обновляется сервер MTProto","actionUpdateStartFirewall":"• Обновляем фаервол (Ноды: %1%)","actionUpdateStartBackup":"• Обновляем дочерний API интерфейс (Ноды: %1%)","actionUpdateStartFooter":"Через некоторое время ноды будут перезапущены. После завершения работ будет отправлено уведомление.","actionUpdateCompletedNodes":"✅ Процедура обновления нод (%1%) завершена, ноды перезапущены и уже должны быть активны","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Быстрый и безопасный","mtproto.subtitle.2":"доступ к Telegram","mtproto.description.1":"Бесплатный прокси-сервер для стабильного подключения к Telegram.","mtproto.description.2":"Без регистрации, без ограничений, с полной конфиденциальностью.","button.connect":"Подключить прокси","button.copy":"Скопировать ссылку","button.copied":"Скопировано","link.label":"Ссылка для подключения вручную","feature.encryption.title":"Сквозное шифрование","feature.encryption.description":"Ваши сообщения остаются конфиденциальными. Мы не имеем доступа к Вашей переписке.","feature.free.title":"Без ограничений","feature.free.description":"Бесплатный доступ без регистрации и лимитов на трафик.","feature.rocketman.title":"Больше возможностей","feature.rocketman.description":"Этот прокси работает только для Telegram. Для полноценной защиты используйте RocketMan-VPN.","rocketman.title":"RocketMan VPN — это Ваш надежный друг","rocketman.description":"Данный MTProto-прокси является дополнительным проектом — RocketMan VPN. С нами Вы получите полную защиту интернет-соединения во всех приложениях и любимых сервисах. Попробуйте бесплатно то, что мы предоставляем для своих клиентов, и оцените качество!","rocketman.button":"Открыть RocketMan VPN","howto.title":"Как подключиться?","howto.step1.title":"Нажмите на кнопку \\"Подключить прокси\\"","howto.step1.description":"Или скопируйте ссылку и подключитесь вручную","howto.step2.title":"Откройте Telegram","howto.step2.description":"Ссылка автоматически запустит приложение","howto.step3.title":"Подтвердите","howto.step3.description":"Нажмите «Подключить» в диалоговом окне","web.orders":"Мои заказы","web.settings":"Настройки","web.exit":"Выход","web.back":"← Назад","settings.accountInfo":"Информация об аккаунте","settings.language":"Язык","settings.currency":"Валюта отображения","settings.currencyDesc":"Выберите валюту для отображения цен и баланса в приложении.","settings.webCredentials":"Данные для входа на сайт","settings.webCredentialsDesc":"Эти данные используются для входа в веб-интерфейс вне Telegram. Хоть мы и не ограничиваем Вас в выборе пароля, но настоятельно рекомендуем указывать сложный","settings.login":"Логин","settings.loginPlaceholder":"Введите новый логин","settings.newPassword":"Новый пароль","settings.passwordPlaceholder":"Не менее %1% символов","settings.repeatPassword":"Повторите пароль","settings.repeatPasswordPlaceholder":"Повторите новый пароль","settings.passwordMismatch":"Пароли не совпадают","settings.saved":"Сохранено!","settings.saveError":"Ошибка сохранения","settings.saving":"Сохранение…","settings.saveCredentials":"Сохранить данные","settings.show":"Показать","settings.hide":"Скрыть","settings.copy":"Копировать","settings.reset":"Сбросить","settings.apiKeyHint":"Используйте API-ключ для входа в <a href=\\"https://%1%\\" target=\'_blank\'>веб-интерфейс</a> без Telegram, а также для интеграции с другими нашими продуктами. Не передавайте его третьим лицам, этот ключ предоставляет полный доступ к вашему аккаунту","settings.referral":"Реферал (ID пригласившего)","settings.referralDesc":"Если вы пропустили реферальную ссылку, укажите ID пригласившего здесь. Применится только один раз.","settings.referralApplied":"ID пригласившего","settings.referralAppliedAlert":"ID пригласившего скопирован в буфер обмена.","settings.referralHostId":"Ваш ID пригласившего","settings.referralHostIdPlaceholder":"Введите ID пользователя (только цифры)","settings.referralHostIdInvalid":"Неверный формат ID. Используйте только цифры.","settings.referralApply":"Применить ID","settings.referralSaved":"Реферал применён!","settings.referralErr.already_applied":"Реферал уже был применён.","settings.referralErr.invalid_ref_host":"Неверный ID пригласившего.","settings.referralErr.same_account":"Нельзя использовать свой собственный ID в качестве реферала.","login.tabCredentials":"Логин и пароль","login.tabApiKey":"API-ключ","login.tabRegister":"Регистрация","login.labelLogin":"Логин","login.labelPassword":"Пароль","login.labelConfirmPassword":"Подтверждение пароля","login.labelApiKey":"API-ключ","login.placeholderLogin":"Введите логин","login.placeholderPassword":"Введите пароль","login.placeholderConfirmPassword":"Подтвердите пароль","login.placeholderApiKey":"Введите API-ключ","login.signIn":"Войти","login.signInApiKey":"Войти по API-ключу","login.signUp":"Зарегистрироваться","login.signingIn":"Входим…","login.signingUp":"Регистрируемся…","login.orUseApiKey":"или войдите по API-ключу","login.orUseCredentials":"или войдите по логину и паролю","login.switchToApiKey":"Войти по API-ключу","login.switchToCredentials":"Войти по логину и паролю","login.errLoginRequired":"Введите логин и пароль","login.errPasswordRequired":"Введите пароль","login.errConfirmPasswordRequired":"Подтвердите пароль","login.errPasswordMismatch":"Пароли не совпадают","login.errApiKeyRequired":"Введите API-ключ","login.errIncorrect":"Неверный логин или пароль","login.errInvalidKey":"Неверный API-ключ","login.errServer":"Ошибка сервера, попробуйте ещё раз","login.errRegistration":"Ошибка регистрации","login.tabTelegram":"Через Telegram","login.tg.title":"Вход через Telegram","login.tg.instruction":"1. Отправьте команду ниже боту <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a>\\n2. После отправки нажмите кнопку «Подтвердить вход»","login.tg.commandLabel":"Команда для бота:","login.tg.showCommand":"Показать","login.tg.hideCommand":"Скрыть","login.tg.copyCommand":"Копировать","login.tg.copied":"Команда скопирована!","login.tg.timerLabel":"Код действителен: %1%","login.tg.timerExpired":"Срок действия кода истёк","login.tg.verifyButton":"Подтвердить вход","login.tg.verifying":"Проверяем…","login.tg.requestNew":"Запросить новый код","login.tg.loading":"Генерируем код…","login.tg.enter_correct":"Личность подтверждена. Вернитесь на сайт и нажмите на кнопку \\"%1%\\" для завершения","login.tg.enter_fail":"Не удалось выполнить действие. Убедитесь, что указанный ключ корректен, а срок действия не истёк","login.tg.errNotSent":"Не удалось подтвердить вход. Убедитесь, что вы отправили команду боту, и попробуйте ещё раз. Если код истёк — запросите новый.","lang.ru":"Русский","lang.en":"Английский","lang.uk":"Украинский","footer.info":"MTProto-прокси работает только с официальными приложениями Telegram","instructionModalTitleVpn":"Инструкция по подключению VPN","instructionModalTitleProxy":"Инструкция по подключению Proxy","instructionModalSendToTg":"📩 Отправить в Telegram","instructionModalSentToTg":"Инструкция отправлена в ваши личные сообщения Telegram","settings.name":"Ваше имя","settings.nameDesc":"Укажите имя для персонализации обращений в приложении. Он является публичным и может использоваться для отображения другим пользователям, например в реферальной системе.","settings.namePlaceholder":"Введите имя (3-15 символов)","settings.nameInvalid":"Допускаются только кириллица, латиница, цифры и пробелы (3-15 символов)","settings.promoTitle":"Активация промокода","settings.promoDesc":"Если у Вас есть промокод, то введите его здесь, чтобы получить приятный бонус на Ваш баланс.","settings.promoPlaceholder":"Введите промокод","settings.promoApply":"Применить промокод","settings.promoApplied":"Промокод успешно применён!","adminDashboardTitle":"Статистика (Дашборд)","adminDashboardActiveOrders":"Активность подписок","adminDashboardActiveLabel":"Активные","adminDashboardExpiredLabel":"Истекшие","adminDashboardOrdersByTariff":"Подписки по Тарифам","adminDashboardPayments":"Платежи","adminDashboardTrial":"Пробный период","adminDashboardLang":"Язык пользователей","adminDashboardCurrency":"Валюта пользователей","adminDashboardActivity":"Активность в приложении","adminDashboardOrdersPerUser":"Кол-во подписок на юзера","adminDashboardRefIncome":"Медианный доход с рефералов","applicationAdminBackButton":"Назад","settings.passkeys.title":"Ключи доступа (Passkeys)","settings.passkeys.desc":"Добавьте до 5 устройств для быстрого и безопасного входа без пароля с помощью биометрии или физических ключей.","settings.passkeys.add":"➕ Добавить новый ключ","settings.passkeys.name":"Название устройства","settings.passkeys.name_placeholder":"Напр: iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"У вас пока нет привязанных ключей доступа","settings.passkeys.delete_confirm":"Вы уверены, что хотите отвязать этот ключ доступа? Вы больше не сможете войти с его помощью.","settings.passkeys.limit_reached":"Достигнут лимит ключей (максимум 5)","settings.passkeys.add_success":"Ключ доступа успешно добавлен!","settings.passkeys.add_error":"Не удалось добавить ключ доступа","login.tabPasskey":"По ключу","login.passkey.btn":"Войти через Passkey","login.passkey.error":"Ошибка авторизации через ключ доступа","login.passkey.not_supported":"Ваш браузер или устройство не поддерживают вход через Passkey","admin.bulkRenewal.button":"📅 Массовое продление заказов","admin.bulkRenewal.title":"📅 Массовое продление заказов","admin.bulkRenewal.afterDateLabel":"Учитывать заказы, срок которых истёк после указанной даты (или не истёк). Часовой пояс: %1%","admin.bulkRenewal.daysLabel":"Количество дней для продления","admin.bulkRenewal.ordersCount":"Заказов будет продлено","admin.bulkRenewal.ordersCountUpdate":"Заказов будет обновлено","admin.bulkRenewal.usersCount":"Уникальных пользователей","admin.bulkRenewal.applying":"⏳ Применяется...","admin.bulkRenewal.done":"✅ Готово!","admin.bulkRenewal.apply":"📅 Продлить %1% заказ(ов) на %2% дн.","admin.bulkRenewal.applyTraffic":"📉 Сбросить трафик у %1% заказ(ов)","admin.bulkRenewal.applyDaysAndTraffic":"📅 Продлить %1% заказ(ов) на %2% дн. и сбросить трафик","admin.bulkRenewal.blockedDays":"Укажите количество дней от 0 до 3650","admin.bulkRenewal.blockedNoEffect":"Укажите больше 0 дней или выберите сброс трафика","admin.bulkRenewal.blockedNoOrders":"Нет заказов, подходящих под выбранную дату","admin.bulkRenewal.blockedNoActiveOrders":"Нет заказов, активных на данный момент","admin.bulkRenewal.activeOnlyHint":"При 0 днях дата не используется: обновляются только заказы, активные на данный момент.","admin.bulkRenewal.notifyUser":"📅 Администратор продлил ваши активные заказы на %1% дн. Список заказов: %2%","admin.bulkRenewal.notifyUserTraffic":"📅 Администратор изменил использованный трафик по вашим заказам: %1%. Список заказов: %2%","admin.bulkRenewal.notifyUserDaysAndTraffic":"📅 Администратор продлил ваши активные заказы на %1% дн. и изменил использованный трафик: %2%. Список заказов: %3%","admin.bulkRenewal.notifyUsers":"Уведомить пользователей в Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ При большом количестве пользователей уведомления могут работать нестабильно или с задержкой","admin.bulkRenewal.trafficLabel":"Использованный трафик","admin.bulkRenewal.trafficHint":"Доля лимита вычитается из израсходованного трафика и не уходит ниже нуля. Доля использованного вычитает этот процент от уже потраченного.","admin.bulkRenewal.traffic.none":"Не изменять","admin.bulkRenewal.traffic.full":"Полный сброс","admin.bulkRenewal.traffic.limit_50":"Сброс 50% от лимита","admin.bulkRenewal.traffic.limit_25":"Сброс 25% от лимита","admin.bulkRenewal.traffic.limit_10":"Сброс 10% от лимита","admin.bulkRenewal.traffic.used_50":"Сброс 50% использованного","admin.bulkRenewal.traffic.used_25":"Сброс 25% использованного","admin.bulkRenewal.traffic.used_10":"Сброс 10% использованного","connection_test_button":"Тестирование соединения","connection_test_button_node":"Тест","connection_test_title":"Тестирование соединения","connection_test_desc":"Основные серверы проверяются напрямую. Резервные — напрямую и через каждый основной сервер (HTTPS и VLESS). Hysteria2 на резервной ноде выходит напрямую.","connection_test_no_servers":"Список серверов недоступен","connection_test_pending":"Ожидание","connection_test_testing":"Проверка...","connection_test_ok":"Успешно","connection_test_fail":"Ошибка","connection_test_retry":"Повторить","connection_test_close":"Закрыть","connection_test_progress":"Проверено: %1% / %2%","connection_test_summary":"Успешно: %1% из %2%","connection_test_latency":"%1% мс","connection_test_ip":"IP: %1%","connection_test_colo":"PoP: %1%","connection_test_server":"Сервер","connection_test_section_main":"Основные","connection_test_section_backup":"Резервные","connection_test_direct":"Напрямую","connection_test_via":"Через %1%","connection_test_relay_skip":"Hysteria2 выходит с резервной ноды напрямую","connection_test_error_no_access":"Нет доступа администратора","connection_test_error_no_node":"Сервер не найден","connection_test_error_no_credentials":"Тестовые учётные данные не настроены","connection_test_error_timeout":"Таймаут","connection_test_error_connect":"Не удалось установить соединение","connection_test_error_probe":"Cloudflare CGI probe не ответил","connection_test_error_client":"Клиент для проверки недоступен","connection_test_error_deploying":"Нода сейчас в процессе деплоя","connection_test_error_not_backup":"Проверка через основной сервер доступна только для резервной ноды","connection_test_error_no_via":"Основной сервер для релейной проверки не найден","connection_test_error_relay_protocol":"Этот протокол на резервной ноде не идёт через основной сервер","connection_test_error_protocol_disabled":"Протокол выключен на этом сервере","adminAnalyticsNav":"Аналитика","adminAnalyticsFrom":"С","adminAnalyticsTo":"По","adminAnalyticsCompare":"Сравнение","adminAnalyticsCompareNone":"Без сравнения","adminAnalyticsComparePrevious":"Предыдущий период","adminAnalyticsCompareMonth":"Прошлый месяц","adminAnalyticsProtocol":"Протокол","adminAnalyticsServer":"Сервер","adminAnalyticsAll":"Все","adminAnalyticsRefresh":"Обновить","adminAnalyticsLoading":"Загрузка...","adminAnalyticsUsers":"Уникальные пользователи","adminAnalyticsUsersHint":"Разные аккаунты за выбранный период. Фильтры протокола и сервера учитываются. Это не число онлайн прямо сейчас.","adminAnalyticsSessions":"Сессии","adminAnalyticsSessionsHint":"События подключения за выбранный период. Один аккаунт может открыть много сессий. Overlay-хопы считаются, но IP ретранслятора не берётся как регион клиента.","adminAnalyticsTraffic":"Трафик","adminAnalyticsTrafficHint":"Исходящий + входящий, один раз на exit-ноде (как в биллинге). Xray-форвард с relay повторно не добавляется.","adminAnalyticsMap":"Пользователи по регионам","adminAnalyticsMapHint":"Карта мира отображается всегда. Размер круга — уникальные пользователи в регионе/у провайдера. Базовый размер как на приближении максимум минус 1; при отдалении круги уменьшаются. Цвет совпадает с сервером, где таких пользователей было больше всего.","adminAnalyticsServers":"Предпочитаемые серверы","adminAnalyticsServersHint":"Столбец — сколько уникальных пользователей пользовались этим сервером за выбранный период. Цвет закреплён за сервером.","adminAnalyticsProtocols":"Протоколы","adminAnalyticsProtocolsHint":"Доля сессий (подключений) по протоколам за выбранный период. Число — количество сессий, не уникальных людей.","adminAnalyticsTrafficByServer":"Трафик по серверам","adminAnalyticsTrafficByServerHint":"Исходящий + входящий трафик по серверам в мегабайтах (МБ). Цвет тот же, что у предпочитаемых серверов.","adminAnalyticsRegions":"Регионы и провайдеры","adminAnalyticsRegionsHint":"Уникальные пользователи — пик уникальных аккаунтов за час в этом регионе/у провайдера. Сессии — число подключений, не уникальные люди.","adminAnalyticsCountry":"Страна","adminAnalyticsRegion":"Регион","adminAnalyticsIsp":"Провайдер","adminAnalyticsResources":"Популярные ресурсы","adminAnalyticsResourcesHint":"Агрегированные домены за выбранный период. Список скрыт, если включён фильтр по серверу.","adminAnalyticsHost":"Хост","adminAnalyticsHits":"Запросы","adminAnalyticsPreset_24h":"24ч","adminAnalyticsPreset_7d":"7 дней","adminAnalyticsPreset_30d":"30 дней","adminAnalyticsPreset_month":"Этот месяц","adminAnalyticsPreset_prevMonth":"Прошлый месяц"}');
+const ru_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"Для включения уведомлений на iPhone:\\n1. Нажмите иконку [⎋] (Поделиться) в нижней панели.\\n2. Выберите пункт «На экран Домой».\\n3. Запустите сайт с рабочего стола и вернитесь в этот раздел.","settings.pushSupportError":"Web Push не поддерживается на этом устройстве","settings.pushTitle":"Push-уведомления","settings.pushDesc":"Подпишите это устройство для получения системных уведомлений","settings.pushSubscribed":"✅ Это устройство подписано","settings.pushNotSubscribed":"❌ Устройство не подписано","settings.pushSubscribeBtn":"Подписаться","settings.pushUnsubscribeAllBtn":"Отвязать все устройства","settings.pushSuccess":"Успешно подписано","settings.pushUnsubscribeSuccess":"Все устройства отвязаны","settings.pushError":"Ошибка при подписке","settings.disableSiteNotify":"Отключить уведомления на сайте","settings.disableSiteNotifyDesc":"Отключите уведомления на сайте, оставив только Push-уведомления и уведомления в Telegram (если учётная запись привязана к Telegram)","settings.disableSiteNotifyYes":"Да","settings.disableSiteNotifyNo":"Нет","settings.geoRouting":"Добавить гео-роутинг в данных подписки","settings.geoRoutingDesc":"Вы можете выбрать определённый гео-роутинг для своих заказов. Если он будет добавлен, то при подключении к VPN / Proxy через инструкции из приложения, в данных подписки будет указано, что вы хотите использовать определённый гео-роутинг. Это может помочь в обходе блокировок и улучшении стабильности подключения, если основной сервер недоступен или работает нестабильно в вашем регионе. Если вы не уверены, какой вариант вам лучше подходит - оставьте значение по умолчанию (%1%)","settings.disabled":"Отключить (не рекомендуется)","settings.expireNotifyMode":"Уведомления о завершении и продлении заказов","settings.expireNotifyModeDesc":"Выберите, какие сообщения о сроке действия заказов вы хотите получать. Уведомления, требующие ваших действий (не включено автопродление, недостаточно средств, заказ завершился), а также сообщения о сбоях в работе сервиса приходят всегда.","settings.expireNotifyModeAll":"Все уведомления","settings.expireNotifyModeSmart":"Без напоминаний, если заказ продлится автоматически","settings.expireNotifyModeCritical":"Только важные (требующие действий)","settings.reserveConnectionLink":"Использовать резервную ссылку на подписку Vless, Hysteria","settings.reserveConnectionLinkDesc":"Включите эту настройку, если у вас нет доступа к основному серверу. Тогда инструкции по подключению будут содержать резервную ссылку вместо основной.","settings.reserveConnectionLinkYes":"Да","settings.reserveConnectionLinkNo":"Нет","applicationNotifyTitle":"Уведомления","applicationNotifyConfirmDeleteAll":"Вы уверены, что хотите удалить все уведомления?","applicationNotifyEmpty":"Нет новых уведомлений","applicationNotifyPromoSuccess":"Промокод успешно применён","applicationNotifyPromoError":"Ошибка активации промокода: возможно он уже использован или исчерпан лимит","applicationNetworkError":"Ошибка сети","applicationNotifyConfirmDelete":"Вы уверены, что хотите удалить это уведомление?","applicationNotifyDelete":"🗑️ Удалить","applicationNotifyPromoApply":"Применить промокод (%1%)","applicationDialogOk":"ОК","applicationDialogCancel":"Отмена","pagePayTitle":"Приобретение VPN","pagePayBalance":"Пополнение баланса","pagePayID":"Ваш уникальный ID","pagePayIDPlaceholder":"Введите свой ID","pagePayAmount":"Сумма пополнения баланса (временно от %1%)","pagePayButton":"Перейти к оплате","pagePayAmountTotal":"\\n<font color=#00AE09>Итоговая сумма оплаты: ≈%1%</font>","pageFAQId":"Как получить ID?","pageFAQStep1":"Откройте панель на сайте или приложение в Telegram","pageFAQStep2":"Откройте раздел «Настройки»","pageFAQStep3":"В блоке «Информация об аккаунте» нажмите «Ваш ID», чтобы скопировать номер","pageFAQStep4":"Вставьте ID в поле слева","pageFAQOpen":"Открыть приложение в Telegram","pageFAQOpenSite":"Открыть панель на сайте","pageFAQQR":"QR-код приложения в Telegram","landingTGBotButton":"Запустить Telegram-бота","landingDashboardButton":"Открыть панель управления","landingTarifs":"Тарифы","landingTarifsTrial":"+ Пробный период %1%ч","landingTarifsDiscount":"Скидка","landingTarifsPrice":"%1%/%2%дн.","landingTarifsGo":"Подключить","landingFooterText":"А здесь наш основной проект","landingTitle":"RocketMan VPN — Интернет под защитой!","landingTitleBrand":"RocketMan VPN","landingTitleTagline":"Интернет под защитой!","landingTitleDesc":"Молниеносный доступ к любимым сайтам и сервисам с ПК и смартфона.","landingFeaturesTitle":"Почему выбирают именно нас?","landingAppsTitle":"Наши продукты для вас","landingAppsDownload":"Скачать","landingAppsOpen":"Перейти","landingAppsFree":"Бесплатно","landingTrust1Value":"256-bit","landingTrust1Label":"AES-шифрование · данные под замком","landingTrust2Value":"до 1 Гбит/с","landingTrust2Label":"Скорость канала","landingTrust3Value":"24/7","landingTrust3Label":"Живая поддержка","landingTrust4Value":"НЕОГРАНИЧЕННО","landingTrust4Label":"Устройств на 1 ключ","landingFeaturesLead":"Защита, скорость и простота — без компромиссов","landingCompareTitle":"Без защиты vs RocketMan VPN","landingCompareLead1":"Без VPN — тревога и «Доступ запрещён».","landingCompareLead2":"С нашим сервисом — защита и безопасность в пару кликов","landingCompareColBad":"Без VPN","landingCompareColGood":"С RocketMan VPN","landingCompareRow1":"Что видят сайты","landingCompareBad1":"Ваш город, провайдер и активность","landingCompareGood1":"Только страну сервера","landingCompareRow2":"Wi-Fi в кафе и аэропортах","landingCompareBad2":"Пароли и переписку можно перехватить","landingCompareGood2":"Трафик зашифрован — виден лишь «белый шум»","landingCompareRow3":"Передача данных","landingCompareBad3":"В открытых сетях пароли — открытым текстом","landingCompareGood3":"VLESS · Proxy HTTPS · Hysteria2","landingCompareRow4":"Блокировки и DPI","landingCompareBad4":"«Доступ запрещён», сервисы и мессенджеры ложатся","landingCompareGood4":"Наши обходы работают даже в Китае (проверено в июне 2026)","landingCompareRow5":"Скорость","landingCompareBad5":"Провайдер может резать маршрут и скорость","landingCompareGood5":"До 1 Гбит/с, в том числе на 5G","landingCompareRow6":"Настройка","landingCompareBad6":"Вручную на каждом устройстве и в приложении","landingCompareGood6":"QR-код за 10 секунд · iOS, Android, ПК, TV","landingCompareRow7":"Поддержка","landingCompareBad7":"Разбираетесь сами","landingCompareGood7":"Живая поддержка в Telegram 24/7","landingHowTitle":"3 шага до защищённого интернета","landingHowLead":"Подключение займёт меньше двух минут — мы проведём вас за руку","landingHowStep1Title":"Выберите тариф","landingHowStep1Text":"От бесплатного теста до премиума — план под любые задачи","landingHowStep2Title":"Оплатите","landingHowStep2Text":"Удобная оплата и мгновенная активация в Telegram или на сайте","landingHowStep3Title":"Включите VPN / Proxy","landingHowStep3Text":"Пошаговая инструкция — дальше только ВКЛ/ВЫКЛ","landingPricingLead":"Удобные тарифы · пробный период · реферальная система","landingPlanTraffic":"📊 %1% ГБ трафика","landingPlanDevices":"📱 Без лимита устройств","landingPlanVpnProxy":"🔐 VPN + Proxy в одном","landingCtaTitle":"Готовы защитить свой интернет?","landingCtaDesc":"Присоединяйтесь — подключение займёт пару минут, а спокойствие останется надолго.","landingCtaButton":"Подключить сейчас","landingCtaSite":"Подключить через сайт","landingCtaTelegram":"Подключить через Telegram","landingPlanConnectSite":"Подключить на сайте","landingPlanConnectTelegram":"Подключить в Telegram","landingHeaderTelegram":"Запустить в Telegram","landingHeaderSite":"Подключить прямо здесь","landingHeroGuarantee":"✓ Пробный период · ✓ VPN + Proxy · ✓ Поддержка 24/7","landingHeroPill1":"Пробный период","landingHeroPill2":"VPN + Proxy","landingHeroPill3":"Поддержка 24/7","landingHeroPill4":"Работает даже в Китае","landingHeroPill5":"Обход Белых Списков","landingHeroCompareBad":"Без VPN","landingHeroCompareGood":"С RocketMan VPN","landingHeroCompareYou":"ВЫ","landingHeroCompareWeb":"СЕТЬ","landingHeroCompareBadWire":"открытый канал","landingHeroCompareGoodWire":"зашифрованный туннель","landingHeroCompareBad1":"Ваш реальный IP утекает в сеть","landingHeroCompareBad2":"Блокировки · «Доступ запрещён»","landingHeroCompareGood1":"Мы защитили и зашифровали ваше пребывание в интернете","landingHeroCompareGood2":"No-logs · мы не храним ваши данные","landingProtocolVless":"VLESS","landingProtocolProxy":"Proxy HTTPS","landingProtocolHysteria":"Hysteria2","landingShieldMeta":"VLESS · Proxy HTTPS · Hysteria2","landingPlanPopular":"ХИТ","landingSecurityBadge":"С нами безопасно","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"Многофункциональный прокси-клиент для <b>Windows, Linux и macOS</b>. Поддерживает протоколы <b>HTTPS / VLESS / Hysteria2</b>. API-режим для управления заказами прямо из приложения, TUN-туннелирование, VLESS-подписки и интеграция с Discord (Windows).","app.tgproxy.name":"TGProxy — MTProto для Telegram","app.tgproxy.description":"Бесплатный <b>MTProto-прокси</b> для стабильного доступа к Telegram. Без регистрации и лимитов трафика, сквозное шифрование переписки. Подключение в один клик из браузера — открывается прямо в Telegram.","features1Title":"Анонимность","features1Text":"Благодаря нескольким слоям защиты с нашей стороны — Ваш реальный IP не узнает ни один сервис.","features2Title":"Скорость","features2Text":"Загружайте, смотрите любимый контент и делитесь на скоростях до 1 Гбит/с.","features3Title":"Пробный период","features3Text":"Подключайтесь в 1 клик с любого своего устройства! ПК, смартфон, ТВ, планшет и ноутбук.","features4Title":"Поддержка","features4Text":"Мы всегда готовы помочь Вам с решением любых вопросов. На связи практически 24/7","faq1title":"Как оплатить?","faq1text":"Пополните свой баланс, оплатите через удобный метод. После оплаты получите инструкции в Telegram-боте или на сайте (зависит от того, где приобретали заказ).","faq2title":"Как настроить VPN?","faq2text":"В нашем <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram-боте</a> и в <a href=\\"https://ru-app.rocketman-vpn.com:8443/application\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Личном кабинете</a> на сайте максимально подробно и понятно расписан весь процесс подключения.\\nБуквально от и до, поэтому Вы вряд ли в чем-то сможете заблудиться. Главное — следуйте инструкциям :)","faq3title":"Что делать, если что-то не работает?","faq3text":"Ознакомьтесь с нашей <a href=\\"https://rocketman-vpn.com/ru/wiki/\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Базой знаний</a>, мы постарались собрать все полезные статьи и ответить на возможные вопросы заранее. Если будут какие-то нерешаемые самостоятельно вопросы — напишите в <a href=\\"https://t.me/%1%\\" target=\'_blank\'>поддержку через Telegram</a>, и мы Вам поможем.","locationSelectTitle":"Выберите локацию сервера","locationSelectLoad":"Загруженность: %1%%","locationReserve1":"Санкт-Петербург","locationLocal":"Локальный сервер","locationStockholm":"Стокгольм","locationAustria":"Вена","locationNetherland":"Амстердам","locationFrankfurt":"Франкфурт","locationParis":"Париж","tarif.test_drive":"🚗 Тест-драйв","tarif.start":"🚀 Старт","tarif.gamer":"🎮 Геймер","tarif.pro":"👑 Семейная+","tarif.ultra":"🌌 Космос","httpTarifPro":"🔒 Proxy-Безлимит","httpTarifGamer":"🔒 Proxy-Геймер","tarifNameFull":"%1% (%2% дней | %3% GB/д) - %4%","welcomeMessage":"Добро пожаловать!\\nБлагодаря нашему сервису Вы сможете получить защищенный доступ к любимым сайтам и приложениям, как это делают другие наши любимые клиенты ❤️\\n\\n⭐️ У нас нет ограничений на количество устройств, поэтому можете использовать 1 ключ на всех своих девайсах! Вместе с VPN Вы получаете доступ и к нашему Proxy.\\n\\n🛒 Мы предоставляем:\\n- VPN для iOS, Android, Windows, macOS, Android TV\\n- Proxy для браузера, Discord, Windows и т.д.","basketBalance":"Пополнить баланс","secondsToStringD":"%4% дн. %3% ч. %2% мин. %1% сек.","secondsToStringH":"%3% ч. %2% мин. %1% сек.","secondsToStringM":"%2% мин. %1% сек.","readButton":"🗑 Удалить это сообщение","openPage":"🌐 Сайт","openApp":"📱 Приложение","expireNotifyOrderData":"▪️ Тариф: `%1%`\\n▪️ Название: `%2%`\\n▪️ Срок продления: `%3% дней`","expireNotifyTemplate":"Здравствуйте, %1%!\\n%2%\\n\\n%3%\\n▪️ Стоимость продления: `%4%`\\n\\n%5%","expireNotifyFull":"Срок действия Вашего заказа подошёл к концу 🙁\\n\\nЧтобы оставаться на связи со свободным Интернетом — [запустите приложение](https://t.me/rocketman_vpn_bot/?startapp), далее нажмите на 💸 свой баланс справа сверху и, пополнив его, в настройках заказа включите автопродление 😇","expireNotifyTime":"Срок действия Вашего заказа завершится менее чем через `%1%` часа 🙁","expireNotifyRenewAutoNoMoney":"❗️ У Вас включена функция автопродления, однако Ваш текущий баланс не позволяет продлить его 🙁\\n\\nУбедитесь в том, что на счету достаточно средств, чтобы функция работала без проблем в течение ближайших месяцев. [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp), в правом верхнем углу приложения нажмите на свой баланс и пополните на желаемую сумму.","expireNotifyRenewAuto":"✅ У Вас включена функция автопродления, поэтому заказ будет продлён автоматически, когда на нём останется менее 24 часов 😎","expireNotifyRenewManual":"ℹ️ Как включить автопродление?\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Нажмите на свой заказ ⇒ Настройки ⇒ Поставьте галочку возле Автопродления ⇒ Сохранить все изменения.","expireNotifyRenewSuccessAuto":"Здравствуйте, %1%!\\nВаш заказ был продлён автоматически.\\n\\n%2% 🎉\\n\\nСпасибо, что доверяете нам ❤️\\nЛучшей благодарностью за сервис будет инвайт Ваших друзей через реферальную систему!\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"Команда использована неверно\\n`%1%`\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Команда `%1%` использована неверно!\\n\\n✅ Правильный пример: `%2%`\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Начать работу","usePromoCommand":"Применить промокод — /promo PROMO_NAME","useFaqCommand":"Как подключиться к VPN / Proxy?","usePromoAlready":"Вы уже применили данный промокод. Применить промокод можно лишь 1 раз.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Промокод `%1%` не найден 🙁\\n\\nПроверьте правильность написания, а также убедитесь, что промокод действителен.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Лимит активации промокода `%1%` исчерпан 🙁\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"Вы уже применили схожий промокод.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Не удалось применить промокод `%1%` 🙁\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Промокод `%1%` успешно применён 🎉\\nНа Ваш баланс зачислено %2%\\n💰 Ваш текущий баланс: %3%\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"У Вас нет доступа для выполнения данного действия.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Меню админа","adminMenu":"Раздел администратора\\n\\n\\nМеню промокодов\\nСписок промокодов: /listPromo\\nИнформация по промокоду: `/infoPromo {PROMO_NAME}`\\nСоздать промокод: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nУдалить промокод: `/deletePromo {PROMO_NAME}`\\n\\n\\nМеню пользователей\\nВыдать заказ пользователю: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nУдалить заказ: `/removeOrder {ORDER_ID}`\\nВыдать баланс пользователю: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Заказ не найден","adminUserRemoveOrderStatus":"Статус удаления заказа: %1%","adminUserGiveTarifErrUser":"Пользователь не найден!","adminUserGiveTarifErrTarif":"Тариф не найден","adminUserGiveTarifErrNode":"Нода тарифа не найдена. Конфигурация тарифа неверная","adminUserGiveTarifErrMarzban":"MarzBan не дал создать заказ. Причина неизвестна","adminUserGiveTarifSuccess":"Вы успешно выдали заказ для @%1%","adminUserGiveTarifNotify":"🎉 Администратор подключил на Ваш аккаунт\\nтариф `%1%` на `%2% дн.` 📆\\n\\n*Информация о заказе:*\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒\\nнажмите на свой заказ ⇒ 📚 Инструкция VPN / Proxy","adminPromoCreateAlreadyExist":"Данный промокод уже существует","adminPromoCreateAlreadyExistWas":"Данный промокод уже однажды существовал и не может быть создан повторно","adminPromoCreateFailed":"Не удалось создать промокод","adminPromoCreateDone":"Промокод `%1%` успешно создан.\\nДоступно активаций: %2%\\nБаланс: %3%","adminPromoList":"Список всех промокодов:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% исп. / %3% всего / %4%)","adminPromoInfo":"Информация по промокоду:\\n\\nID: `%1%`\\nЛимит активаций: %2%\\nКоличество активаций: %3%\\nБаланс: %4%\\n\\nСписок активаций:\\n%5%","adminPromoDeleteDone":"Промокод `%1%` успешно удалён","terms":"Пользовательское соглашение","contacts":"Контакты для связи","wiki":"База знаний","wikiPage.description":"Инструкции, ответы на вопросы и примеры настройки VPN.","wikiPage.articleLead":"Статья из базы знаний RocketMan VPN.","wikiPage.articleHint":"Навигация по всем статьям слева · содержание справа","wikiPage.subtitle":"Выберите тему слева или воспользуйтесь поиском","wikiPage.heroTopic.faq":"Ответы на вопросы","wikiPage.heroTopic.setup":"Настройка и подключение","wikiPage.heroTopic.troubleshoot":"Примеры и решения","wikiPage.searchPlaceholder":"Поиск по названию и тексту статей...","wikiPage.loadingList":"Загрузка списка статей...","wikiPage.emptyList":"Статьи пока не добавлены.","wikiPage.loadingArticle":"Загрузка статьи...","wikiPage.openHint":"Выберите статью в списке","wikiPage.back":"Назад к списку","wikiPage.error.loadList":"Не удалось загрузить список статей.","wikiPage.error.emptyFile":"Для текущего языка статья недоступна.","wikiPage.error.loadArticle":"Не удалось загрузить статью.","wikiPage.navigation":"Навигация","wikiPage.contents":"Содержание","wikiPage.readMore":"Читать","wikiPage.readingTime":"мин чтения","wikiPage.articlesCount":"статей","wikiPage.backToTop":"Наверх","wikiPage.home":"🏠 Главная страница Базы знаний","wikiPage.copyLink":"Копировать ссылку на эту статью","wikiPage.articleLinkCopied":"Ссылка на эту статью скопирована","wikiPage.linkCopied":"Ссылка скопирована","wikiPage.closeLightbox":"Закрыть","wikiPage.openImageInNewTab":"Открыть в новой вкладке","wikiPage.copySectionLink":"Копировать ссылку на раздел","wikiPage.copyCurrentSectionLink":"Копировать ссылку на текущий абзац","wikiPage.sectionLinkCopied":"Ссылка на текущий абзац скопирована","wikiPage.enlargeImage":"Увеличить изображение","wikiPage.copyCode":"Копировать","wikiPage.copied":"Скопировано","wikiPage.copyText":"Нажмите, чтобы скопировать","wikiPage.searchNoResults":"Ничего не найдено. Попробуйте другое слово.","wikiPage.searchHint":"Результаты поиска по названию и тексту","wikiPage.searching":"Ищем...","wikiPage.searchMatchTitle":"В названии","wikiPage.searchMatchBody":"В тексте","wikiPage.updatedAt":"Обновлено","wikiPage.featured":"Важное к прочтению","wikiPage.groupOther":"Другие статьи","wikiPage.allArticles":"Все статьи","wikiPage.cardUpdated":"Обновлено","wikiPage.updatedToday":"сегодня","wikiPage.updatedYesterday":"вчера","wikiPage.updatedDaysAgo":"%1% дн. назад","wikiPage.badge.important":"Важно","wikiPage.badge.new":"Новое","wikiPage.badge.updated":"Обновлено","wikiPage.badge.hot":"Актуально","contactsTG":"Телеграм-чат","contactsEmail":"E-Mail","trialNotify":"✅ Вы получили тариф `%1%` на `%2% часа` в качестве ознакомительного доступа.\\n\\n📌 Информация о заказе в приложении:\\n🚀 [Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒\\nнажмите на свой заказ ⇒ 📚 Инструкция VPN / Proxy.\\n\\nМы предоставляем Вам возможность бесплатно ознакомиться с нашими продуктами для того, чтобы Вы оценили качество и стабильность перед будущими покупками 🤝","launchBot":"Запустить","launchBotLong":"Открыть приложение 📱","applicationMainMenu":"Главное меню","applicationMainMenuBack":"Назад","applicationButtonsRef":"Реферальная система","applicationButtonsFaq":"База данных","applicationButtonsCabinet":"Личный кабинет","applicationButtonsAdmin":"Кабинет администратора","applicationButtonsAdminDisk":"Свободно дискового пространства: %1%","applicationButtonsAdminPayments":"Статистика дохода:<br/>%1% текущий мес.<br/>%2% прошлый мес.<br/>%3% за весь период | %4% в ожидании","applicationUserInfoWithUs":"Вы с нами","applicationUserInfoBalance":"Ваш баланс","applicationUserInfoId":"Ваш ID","applicationUserInfoTgId":"ID Привязанного аккаунта TG","applicationUserInfoAPIKey":"Ваш API ключ","applicationUserInfoAPIKeyAlert":"📝 Ваш API ключ был скопирован в буфер обмена. Никому не разглашайте этот ключ, администрация проекта никогда не попросит вас назвать его","applicationUserInfoAPIResetAlertAsk":"📝 Вы уверены, что хотите сгенерировать новый API ключ?","applicationUserInfoAPIResetAlert":"📝 Ваш API ключ был сгенерирован заново","applicationUserInfoIdAlert":"📝 Ваш ID был скопирован в буфер обмена.","applicationUserInfoTgIdAlert":"📝 Ваш Telegram ID был скопирован в буфер обмена.","applicationContactButton":"Связь со службой поддержки","applicationServersButton":"Статус серверов","applicationHowToConnectFAQButton":"Как подключиться к VPN или Proxy?","applicationHowToConnectFAQButtonModal":"Бот отправил вам информацию в личные сообщения 📝","applicationCabinetTitle":"Личный кабинет","applicationCabinetTitleDesc_title":"Нажмите на заказ для управления им","applicationCabinetTitleOrder":"Выбор тарифного плана","applicationCabinetTitleOrder_detail_back":"Вернуться к списку тарифов","applicationCabinetTitleOrder_help_button":"⚠️ Помогите мне определиться с тарифным планом ⚠️","applicationCabinetTitleOrder_help_button_back":"Вернуться к оформлению заказа","applicationCabinetTitleOrder_help_button_header":"Среднее потребление трафика:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 час видео в 1440p ≈6 ГБ\\n<font color=#E10070>Instagram</font>: 1 час Reels ≈2 ГБ\\n<font color=#69C9D0>TikTok</font>: 1 час видео ≈2 ГБ\\n<font color=#7289DA>Discord</font>: 1 час войса c демкой ≈1 ГБ\\n<font color=#BD37FF>Twitch</font>: 2 часа стрима в 1080p ≈5 ГБ\\n<font color=#D0A823>Онлайн-игры</font>: 1 час ≈0.5 ГБ\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 часа в 1080р ≈5 ГБ\\n\\nЕсли сложить все указанные данные, то выходит <font color=#DA7F00>≈20-25 ГБ в день</font>. Эти данные приведены для ориентира, чтобы Вам было проще выбрать подходящий тариф.\\n\\n<font color=#A7C800>VPN и Proxy — по-своему удобны.</font>\\n<font color=#BAD821>VPN:</font> удобно для смартфонов, планшетов и ТВ; можно использовать и на ПК.\\n<font color=#BAD821>Proxy:</font> подходит для Discord, браузера на ПК (YouTube, Twitch, Netflix, HDRezka и т.д.).\\n<font color=#B3D023>Кратко о протоколах:</font>\\n<font color=#2EB3FF>• Vless</font> — лучший обход блокировок, стабильность, скорость, “невидимость”.\\n<font color=#29a1e6>• Hysteria</font> — баланс стабильности и скорости, отлично подходит для гейминга.\\n<font color=#2884BA>• HTTPS</font> — подходит только для сайтов и приложений через Proxifier.\\n\\n🚀 Старт — для обычного сёрфинга\\n🎮 Геймер — для активных юзеров девайсов\\n👑 Семейная+ — для большого объёма трафика","applicationCabinetButtonNew":"Сделать новый заказ","applicationCabinetButtonNewCancel":"Вернуться к списку заказов","applicationCabinetButtonAddBalance":"Пополнить баланс","applicationCabinetIsTrial":"Бесплатный тестовый доступ","applicationCabinetPing":"Пинг к серверу: %1%ms","applicationCabinetEndActive":"Доступ к подписке: %1%","applicationCabinetEndNotActive":"Подписка не оплачена. Нажмите сюда и активируйте её через кнопку «⌛️ Продлить заказ» в выпадающем меню.","applicationCabinetOrderTraficWeek":"в неделю","applicationCabinetOrderTraficMonth":"в месяц","applicationCabinetOrderPriceDay":"/ день","applicationCabinetOrderPriceDays":"/ %1% дней","applicationCabinetOrderPrice":"%1% за %2% дн 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 Ознакомиться с деталями этого тарифа 📋","tarif_desc_drive":"📚 Идеально для знакомства с нашим сервисом и лёгкого серфинга в соцсетях. Позволит полностью опробовать работу VPN / Proxy 😉","tarif_desc_start":"📚 Подходит для соцсетей и лёгкого использования на смартфоне со средним экранным временем ≈4ч в день. На ПК месячный лимит может расходоваться быстрее, учитывайте активность.","tarif_desc_gamer":"🎮 Для тех, кто активно проводит время за ПК:<br/><font color=#DA7F00>•</font> Игры через Steam и другие лаунчеры<br/><font color=#DA7F00>•</font> Голосовое общение в мессенджерах для геймеров с надёжным подключением через Proxy<br><font color=#DA7F00>•</font> Просмотр Twitch с плагином 7TV в 1080p и выше<br/><font color=#DA7F00>•</font> YouTube и другие соцсети, где важно защищённое подключение\\n\\n✅ Данного трафика достаточно для смартфона и ПК с активным использованием ≈5-6 часов в день.","tarif_desc_unlim":"🚀 Тариф для больших объёмов трафика и любых задач: ПК, ноутбуки, смартфоны, планшеты, ТВ и другие устройства.\\n\\n🧡 Один ключ можно использовать на нескольких устройствах — этого трафика хватит для семьи и Ваших друзей!","tarif_desc_ultra":"💠 Премиальный тариф для широкого спектра задач и очень активных пользователей!\\n\\nПодходит тем, кто приближается к верхней границе тарифа в 1 ТБ и хочет пользоваться сервисом без переживаний о трафике.\\n\\n💜 С этим вариантом Вы сможете спокойно загружать крупные файлы, стримить, играть и использовать VPN / Proxy на десятке устройств.","applicationCabinetOrderBack":"Назад","applicationCabinetOrderSelect":"☑️ Заказать этот тариф ☑️","applicationCabinetOrderSelectTrial":"🎁 Активировать тестовый доступ на %1% часа 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Получить тестовый доступ на %1% часа в качестве бонуса?","applicationCabinetOrderSelectAccept":"Подтвердите действие ✅\\nС баланса будет списано: %1%\\n\\n💰 Сейчас у Вас: %2%","applicationCabinetOrderTrial":"🎁 Доступен тестовый период на %1% часа","applicationCabinetOrderTrialUsed":"Вы уже использовали тестовый доступ ранее 🙁","applicationCabinetOrderSelectErrTimeMax":"Максимальный срок продления услуги: 2 месяца","applicationCabinetOrderSelectErrBalance":"У Вас недостаточно средств на внутреннем балансе для заказа 🙁","applicationCabinetOrderSelectErrTrialCfg":"Данный тариф нельзя заказать в тестовом режиме 🙁","applicationCabinetOrderSelectErrTrial":"Вы уже использовали этот тестовый тариф 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Тестовый период доступен только пользователям, авторизованным через Telegram. Войдите через Telegram (или привяжите Telegram в «Настройки») и попробуйте ещё раз.","applicationCabinetOrderSelectSuccess":"Заказ успешно выполнен 🎉","applicationCabinetOrderSelectSuccessTrial":"Тестовый заказ успешно выполнен 🎉","applicationCabinetOrderSelectErrOrder":"Не удалось создать Ваш заказ 😕","applicationCabinetOrderEditChangeTarif":"♻️ Сменить тариф на другой ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ Это текущий тариф","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>При смене тарифа у Вашего заказа останется<br>приблизительно %1%</font><br>дни:часы:минуты:секунды<br><br>Для подтверждения нажмите кнопку ниже","applicationCabinetOrderEditChangeTarifExpired":"❌ Невозможно выполнить смену тарифа у заказа с истёкшим сроком действия. Сначала необходимо его продлить (сделать активным), а уже после сменить тариф на тот, что Вы выбрали. При смене время заказа пересчитается в зависимости от выбранного тарифа.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>Каждые %1% ч. Вы можете изменять тариф на любой другой.</font><br><br>При смене тарифа остаток дней с предыдущего заказа переносится на новый с учётом актуальной стоимости и оставшегося срока доступа.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>Вы уже недавно меняли тариф!</font><br>Следующая смена будет доступна<br>через %1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Подтвердить смену тарифа на выбранный ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Вы уверены, что хотите сменить тариф на выбранный?\\n\\n⚠️ Имейте в виду, что следующую смену тарифа Вы сможете произвести только через %1% ч.","applicationCabinetOrderEditAuto":"Автопродление заказа","applicationCabinetOrderEditAutoOn":"✅ Активно","applicationCabinetOrderEditAutoOff":"❌ Не активно (в ⚙️Настройках)","applicationCabinetOrderEditAutoDesc":"При окончании срока действия заказа, если на Вашем балансе достаточно средств, система автоматически продлит заказ, если включить автопродление.","applicationCabinetOrderEditResetTime":"Сброс трафика","applicationCabinetOrderEditCreated":"Заказ активирован","applicationCabinetOrderEditSpent":"Суммарно потрачено","applicationCabinetOrderEditOverTime":"Подписка активна до","applicationCabinetOrderChangeTarif":"♻️ Смена тарифа","applicationCabinetOrderEditParams":"⚙️ Настройки","applicationCabinetOrderEditParamsTitle":"⚙️ Настройка заказа: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Метка заказа","applicationCabinetOrderEditParamsLabelDesc":"Вы можете добавить метки к Вашим заказам, чтобы Вам было проще определять какой из них где используется","applicationCabinetOrderEditParamsPassword":"🔸 Ваш пароль для подключения (4-12 символов)","applicationCabinetOrderEditParamsIP":"🔸 IP-адрес для доступа без пароля","applicationCabinetOrderEditParamsIPDesc":"В этом поле Вы можете указать свой личный IP-адрес (взяв его, например, с 2ip.io), чтобы получить доступ к нашему Proxy-серверу без указывания логина и пароля в тех местах, где это требуется. Этот вариант удобнее и ничем не отличается по уровню безопасности.\\n⚠️ Важное уточнение: данная функция работает только при подключении через HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"Для того чтобы обезопасить подключение к Proxy, мы сгенерировали случайный пароль. В случае необходимости его можно заменить на любой другой. Он нужен для аутентификации при помощи логина и пароля там, где это потребуется.","applicationCabinetOrderEditSave":"✔️ Сохранить все изменения ✔️","applicationCabinetOrderEditSaveOk":"Изменения успешно приняты ✅","applicationCabinetOrderEditSaveFail":"❌ Настройки не были сохранены. %1%","applicationCabinetOrderEditLinkVpn":"📚 Инструкция VPN","applicationCabinetOrderEditLinkProxy":"📚 Инструкция Proxy","applicationCabinetOrderEditResetPass":"🔄 Сбросить Proxy-пароль","applicationCabinetOrderEditResetPassAccept":"🔄 Вы уверены, что хотите сбросить пароль?\\n\\nСтарый пароль перестанет действовать, и Вам необходимо будет выполнить повторную настройку Proxy-соединения!","applicationCabinetOrderEditResetUid":"🔄 Сбросить ссылку на VPN подписку","applicationCabinetOrderEditResetUidAccept":"🔄 Вы уверены, что хотите сбросить ссылку на VPN подписку?\\n\\nСтарая ссылка и ключи доступа перестанут действовать, включая резервные/relay-локации. Ссылку нужно будет добавить в VPN-приложение заново!","applicationCabinetOrderEditResetUidDesc":"Сбрасывает ссылку подписки и ключи доступа VPN (VLESS и Hysteria, основная локация и relay). Используйте, если ссылка могла попасть к посторонним. После сброса старая ссылка перестанет работать — добавьте новую из инструкции VPN.","applicationCabinetOrderEditResetUidOk":"Ссылка на VPN подписку сброшена. Добавьте новую ссылку в VPN-приложение — прежняя ссылка и ключи больше не будут работать.","applicationCabinetOrderEditLinkAccept":"💬 Вам было отправлено сообщение с подробностями и инструкцией для подключения к нашему VPN / Proxy.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS порт*: `%4%`\\n%5%\\n🔑 *Пароль*: `%6%`","proxyInstructionReserveSubItem":"👤 *Логин* %1% » %2%: `%3%`","proxyInstruction":"Инструкция для подключения к Proxy:\\n\\n%1%\\nМы предоставляем Вам доступ к Proxy сразу во всех наших локациях. ✅ *Рекомендуем сначала попробовать подключение напрямую к европейскому серверу.* В случае если работает некорректно — пробуйте способ через РФ » Европа.\\n\\n\\n*Данные для подключения к Proxy напрямую:*\\n%2%\\n🌐 HTTPS порт: `%3%`\\n👤 Логин: `%5%`\\n🔑 Пароль: `%6%`\\n\\n\\n*Для некоторых клиентов из РФ:*\\n_(перенаправляет трафик через РФ при недоступности прямого подключения к Европе. В этом режиме обязательно укажите верный логин из блока ниже — он другой)_\\n%7%\\n\\n\\n*Для работы с Proxy-подключением:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Инструкция](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Инструкция](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 ПК на Windows и macOS: [Proxifier](https://www.proxifier.com/) — [Инструкция](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Инструкция для подключения к VPN:\\n\\n%1%\\nМы предоставляем Вам доступ к VPN сразу во всех наших локациях! *Каждая ссылка ниже = личный ключ*, а также страница с инструкцией к подключению. \\n✅ *Рекомендуем сначала добавить Vless от Мультиссылки*, в случае если работает некорректно — пробуйте другие протоколы или резервный вариант.\\n\\n\\n\\n🔹 *Простое объяснение для новичков:*\\n▪️ Нажмите на [эту ссылку](%5%) и следуйте инструкции.\\n\\n\\n\\n🔸 *Для пользователей с опытом*:\\n🌏 Все локации в мультиссылке\\n- %2%\\n\\n*Для некоторых клиентов из РФ:*\\n%3%\\nЭтот способ для тех, у кого нет прямого подключения к европейским серверам и нужен обходной способ доступа к ним через российский сервер.\\n\\n*Прямой доступ к локации на всех протоколах:*\\n%4%\\n\\n⚠️ Если указанные ссылки не открываются, включите в настройках отображение резервной ссылки.%7%","vpnInstructionRoute":"\\n\\nℹ️ Клиенты, использующие HAPP могут добавить кастомные правила для маршрутизации. Вы можете воспользоваться заготовленными настройками ниже или создать свои собственные, указав нужные домены и IP-адреса для обхода VPN. \\n%1%","vpnInstructionAll":"Все протоколы сразу","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Европа","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Ваш личный ключ доступа к VPN*\\n\\nВсе данные для подключения и список рекомендованных приложений находятся по ссылке:  \\n👉 [Открыть ссылку для подключения](%2%)\\n\\n⚠️ *Храните ссылку в секрете!* \\nОна является Вашим персональным ключом авторизации в VPN.\\n\\n✅ Чтобы активировать подписку:  \\nСкопируйте ссылку и вставьте её в выбранное приложение — после этого автоматически загрузятся актуальные настройки.\\n\\n📦 Хотите управлять всеми заказами?  \\nИспользуйте [🔑 ссылку подписки на все подключения](%4%).\\n\\n───────────────\\n🌐 *Ваши данные для подключения к Proxy:*\\n🌐 *Адрес сервера:* `%6%%7%`\\n🌐 *HTTPS порт:* `%9%`\\n👤 *Ваш логин:* `%10%`\\n🔑 *Пароль для подключения:* `%5%`\\n\\n⚠️ В случае недоступности основного сервера вы можете подключиться к резервному серверу:  \\n%11% *Адрес сервера:* `%12%`  \\n🌐 *HTTPS порт:* `%9%`  \\n👤 *Ваш логин:* `%13%.%10%`  \\n🔑 *Пароль для подключения:* `%5%`\\n\\n💡 Proxy можно использовать в любом приложении, которое поддерживает Proxy-соединение.  \\nК примеру, *для работы в браузере Chrome* рекомендуем расширения:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*Инструкции по подключению к VPN:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*Как подключиться к Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows-приложения](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Веб-браузер](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Данные заказа `%1%`\\n⌛️ Тариф: `%2%`\\n⚙️ Автопродление: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Внимание! Обязательно обновите конфигурацию в настройках приложения, где используете данный заказ\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Включено","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Выключено","faqButtonCommand":"🔑 Наши VPN и Proxy могут быть применимы на широком списке устройств и *без ограничений на кол-во подключений* к одному ключу доступа! Настройка очень простая и займет не больше двух минут Вашего времени, далее все будет сведено лишь к кнопке ВКЛ/ВЫКЛ.\\n\\n✅ После того, как Вы оформите свой первый заказ _(включая тестовый)_, Вам придет два сообщения с деталями и инструкциями для подключения как к VPN, так и к Proxy.\\n\\n\\n📦 *Если у Вас ещё нет заказа, то:*\\n[Запустите приложение](https://t.me/rocketman_vpn_bot/?startapp) ➛ Личный кабинет ➛ Сделать новый заказ ➛ Выбирайте подходящий, нажав на него, и переходите к деталям тарифа ➛ Заказываем.\\n\\n\\nЕсли у Вас возникнут какие-то вопросы, то свяжитесь с нами из приложения, мы обязательно поможем ❤️","applicationCabinetOrderEditPay":"⌛️ Продлить заказ (на %1% дней за %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Заказ успешно продлён на %1% дней.\\n\\nСтатус заказа будет обновлён в течение нескольких минут.","applicationCabinetOrderEditPayErr":"Не удалось продлить заказ 🙁","applicationCabinetOrderRemove":"Удалить заказ","applicationCabinetOrderRemoveFailed":"❌ Невозможно удалить активный заказ!","applicationCabinetOrderRemoveConfirm":"Вы уверены, что хотите удалить заказ? 🤨\\n\\nВ случае необходимости Вы всегда можете сделать новый заказ, а если у Вас возникли проблемы с заказом, то обратитесь в нашу службу поддержки, и мы с радостью Вам поможем!","applicationCabinetOrderRemoveConfirmMessage":"✅ Заказ был успешно удалён!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Не удалось удалить заказ!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Протоколы: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Ваш баланс был пополнен на %1%","applicationAdminDashboard":"📊 Дашборд","applicationAdminUsers":"👥 Пользователи (x%1%)","applicationAdminUsersActive":"🫂 Активные пользователи (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Текущий баланс: %1% | %2% USD","applicationAdminUserRef":"Рефералы (x%1% | %2%)","applicationAdminUserRefTarget":"Реферал от","applicationAdminUserOrders":"📦 Заказы (x%1% всего | x%2% активных)","applicationAdminUserRefs":"💸 Рефералы (x%1% всего)","applicationAdminUserPayments":"💸 Платежи (x%1% всего) | Зачислено %2%","applicationAdminUserPaymentsType":"Платёжная система: %1%","applicationAdminUserPaymentsStatus":"Статус платежа: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Отменить платёж и списать сумму с баланса","applicationAdminUserPaymentsStatusSetFailAccept":"Вы уверены?\\n\\nВ случае подтверждения платёж изменит свой статус, а также с баланса пользователя\\n\\n❌ будет списано %1%","applicationAdminUserPaymentsStatusSetOk":"✅ Подтвердить платёж и зачислить сумму на баланс","applicationAdminUserPaymentsStatusSetOkAccept":"Вы уверены?\\n\\nВ случае подтверждения платёж изменит свой статус, а также баланс пользователя\\n\\n✅ будет пополнен на %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Действие выполнено успешно ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Не удалось выполнить действие!\\nОтвет сервера: %1%","applicationAdminUserCreated":"Создан: %1%","applicationAdminUserUpdated":"Изменён: %1%","applicationAdminUserLast":"🚪 Последний вход: %1%","applicationAdminUserOrdersTotal":"💰 Пополнений баланса на: %1%","applicationAdminUserResetOrderChangeBlock":"Сбросить зависшую блокировку заказа","applicationAdminUserResetOrderChangeBlockAccept":"Вы уверены, что хотите сбросить зависшую блокировку заказа?","applicationAdminUserMedia":"Партнёрская программа","applicationAdminUserMediaOn":"Статус: ✅ Партнёр","applicationAdminUserMediaOff":"Статус: ❌ НЕ Партнёр","applicationAdminUserMediaConfirm":"Статус: ❌ НЕ Партнёр","applicationAdminUserMediaTotal":"Суммарный доход: %1%","applicationAdminUserMediaPayed":"Выплачено партнёру: %1%","applicationAdminUserMediaPayWait":"Необходимо выплатить: %1%","applicationAdminUserMediaPayWaitButton":"💸 Отметить выплату","applicationAdminUserMediaPayWaitButtonAccept":"Вы уверены, что хотите отметить выплату как выполненную? Сумма транзакции %1% (%2%)\\n\\n💸 После подтверждения пользователю будет отправлено уведомление о том, что средства были выплачены и они уже в пути к нему.","applicationAdminUserMediaPayWaitNotify":"Уважаемый партнёр! \\n\\n💸 Вам была выплачена сумма в размере *%1%* по партнёрской программе. Средства уже в пути и потребуется некоторое время, чтобы они достигли Ваших реквизитов","applicationAdminUserMediaPercent":"%2%%1%% Процент от рефералки в доход","applicationAdminUserMediaPercentDesc":"Этот процент указывает, сколько от рефералки будет выплачено пользователю в качестве дохода от партнёрской программы","applicationAdminUserGiveOrder":"Выдать заказ пользователю","applicationAdminUserGiveOrderDays":"Количество дней","applicationAdminUserGiveOrderButton":"Выдать","applicationAdminUserGiveOrderButtonConfirm":"Вы собираетесь выдать заказ\\n\\"%1%\\"\\nпользователю на %2% дней?","applicationAdminUserEditButton":"Управление пользователем","applicationAdminUserEditPromos":"Использованные промокоды: %1%","applicationAdminUserEditBalance":"Изменить баланс","applicationAdminUserAddBalance":"Добавить на баланс","applicationAdminUserEditBalanceAccept":"Вы уверены, что хотите изменить баланс пользователя?","applicationAdminUserEditBalanceAcceptFail":"Не удалось изменить баланс. Возможно, во время редактирования текущий баланс пользователя был изменён\\nОтвет сервера: %1%","applicationAdminUserEditBalanceAcceptOk":"Баланс был успешно изменён","applicationAdminUserEditBalanceChangeNotify":"Администратор изменил Ваш баланс на *%1%*.\\n💰 Текущий баланс: *%2%*\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Администратор добавил *%1%* на Ваш баланс.\\n💰 Текущий баланс: *%2%*\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Поиск","applicationAdminOrders":"🛒 Все заказы (x%1%)","applicationAdminOrdersActive":"💳 Активные заказы (x%1%)","applicationAdminOrdersExpired":"⛔ Остановленные заказы (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% дней","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Трафик: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Блокировка смены тарифа","applicationAdminOrderReload":"Обновить данные MarzBan","applicationAdminOrderReloadAccept":"⚠️ Обновить данные?\\n\\nЭто действие загрузит данные заказа из MarzBan и обновит их в приложении!","applicationAdminOrderReloadAcceptDone":"✅ Запрос на обновление данных отправлен!","applicationAdminOrderReloadAcceptFail":"❌ Не удалось обновить данные заказа!","applicationAdminOrderResetChangeTime":"Сбросить время смены тарифа","applicationAdminOrderResetChangeTimeAccept":"Вы уверены, что хотите это сделать? При подтверждении пользователь сможет сменить тариф на другой","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Запрос успешно выполнен. Теперь пользователь может изменить тариф самостоятельно","applicationAdminOrderResetTraffic":"Сбросить трафик","applicationAdminOrderResetTrafficAccept":"⚠️ Отменить заказ?\\n\\nПользователь не получит уведомление!","applicationAdminOrderResetTrafficAcceptOk":"✅ Готово","applicationAdminOrderReturn":"Отменить заказ","applicationAdminOrderReturnAccept":"⚠️ Отменить заказ?\\n\\nПользователь ПОЛУЧИТ назад средства за весь НЕИСПОЛЬЗОВАННЫЙ период!","applicationAdminOrderReturnAcceptDone":"⚠️ Заказ удалён. Пользователю возвращено %1% на баланс.","applicationAdminOrderReturnNotify":"⚠️ Администратор отменил Ваш заказ\\n🛒 `%1%` и вернул Вам *%2%* на баланс.\\nВы можете сделать новый заказ, чтобы всегда оставаться на связи со свободным Интернетом, зайдя в приложение.\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Сделать новый заказ","applicationAdminOrderRemove":"Удалить заказ","applicationAdminOrderRemoveAccept":"⚠️ Удалить заказ?\\n\\nЕсли заказ всё ещё активен, средства НЕ будут возвращены!","applicationAdminOrderRemoveAcceptDone":"Заказ удалён","applicationAdminOrderAddTime":"Продлить заказ (%1% дн.)","applicationAdminOrderAddTimeAccept":"⚠️ Продлить заказ (%1% дн.)?\\n\\nЭто действие НЕ изменит баланс пользователя!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Администратор продлил Ваш заказ\\n🛒 `%1%` на *%2% дн.* 📆\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ Нажмите на указанный заказ для ознакомления с деталями.","applicationAdminPromos":"🎁 Промокоды (x%1%)","applicationAdminPaymentsLast":"⏰ Последние платежи (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Последние успешные платежи (x%1%)","applicationAdminPromosCreate":"Создать промокод","applicationAdminPromoID":"Название: %1%","applicationAdminPromoUSED":"Использований: %1%","applicationAdminPromoCOUNT_USE":"Лимит: %1%","applicationAdminPromoBALANCE":"Сумма: %1%","applicationAdminPromoEditID":"Название","applicationAdminPromoEditCOUNT_USE":"Количество применений (макс)","applicationAdminPromoEditAMOUNT":"Сумма в $","applicationAdminPromoEditCATEGORY":"Категория","applicationAdminPromoEditCATEGORYEmpty":"Обычный / без категории","applicationAdminPromoEditCATEGORYMedia":"Медиапромо","applicationAdminPromoEditCATEGORYNew":"Для новичков","applicationAdminPromoEditSave":"Сохранить промокод","applicationAdminPromoEditPromo":"Изменить","applicationAdminPromoCategory":"Категория: %1%","applicationAdminPromoSendUseList":"Список применивших","applicationAdminPromoRemovePromo":"Удалить","applicationAdminPromoRemovePromoAccept":"Вы уверены?","applicationAdminAddNode":"Добавление новой ноды","applicationAdminAddNodeDesc":"Данный раздел позволит в 2 клика развернуть весь проект на новой ноде. Это лишь установит всё, что надо, но не будет добавлять ноду в список нод","applicationAdminAddNodeIP":"IP-адрес сервера","applicationAdminAddNodeHostname":"Поддомен сервера (s1, s2 и т.д., без точки и прочего)","applicationAdminAddNodeHostnameDesc":"Указанный поддомен автоматически пропишется в CloudFlare со всеми параметрами для работы с нашим сервисом. Если указать уже существующий — то будет перезаписан, так что внимательнее","applicationAdminAddNodeUsername":"Имя пользователя (root)","applicationAdminAddNodePassword":"Пароль пользователя (root)","applicationAdminAddNodePasswordDesc":"Если не указать пароль — будет использоваться авторизация по SSH-ключу. В этом случае убедитесь, что Ваш SSH-ключ добавлен в ноду и имеет доступ к серверу","applicationAdminAddNodePasswordKeyInfo":"Внимание. Пароль не указан, будет использоваться авторизация по SSH-ключу. Убедитесь, что Ваш SSH-ключ добавлен в ноду и имеет доступ к серверу","applicationAdminAddNodeSshPort":"SSH-порт (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Для работы требуются такие права: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Нажмите, чтобы получить токен","applicationAdminAddNodeStart":"Выполнить деплой","applicationAdminAddNodeStarted":"Процесс деплоя запущен, не закрывайте страницу и дождитесь выполнения. Если в течение 5 минут процесс не будет завершён — скорее всего что-то зависло(","applicationAdminAddNodeDoneOk":"Деплой завершён успешно","applicationAdminAddNodeDoneFail":"Ошибка: %1%","applicationAdminAddNodeClearLogs":"Очистить логи","applicationAdminInstallNode":"Развёртывание ноды","applicationAdminCoreSettings":"Настройки ядра","applicationAdminCoreSettingsDesc":"Данный раздел позволяет настроить базовые параметры системы. Параметры применяются на лету, без перезапуска ядра","applicationAdminSaveCoreSettings":"Сохранить настройки","applicationAdminCoreSettingsSaved":"Настройки успешно сохранены","adminBackupTitle":"Резервная копия Telegram","adminBackupInterval":"Автоматические бэкапы создаются каждые %1% мин. и отправляются админам бэкапов в Telegram.","adminBackupLastRun":"Последний бэкап: %1%","adminBackupNever":"Бэкап ещё не создавался","adminBackupRunning":"Идёт создание бэкапа","adminBackupOffline":"Сервис бэкапа не отвечает. Запрос выполнится, когда сервис станет доступен.","adminBackupCreate":"Создать бэкап сейчас","adminBackupCreateConfirm":"Создать бэкап сейчас и отправить в Telegram?","adminBackupCreateOk":"Бэкап запущен. Файлы придут в Telegram после завершения.","adminBackupCreateFail":"Не удалось запустить бэкап: %1%","adminBackupCreateBusy":"Бэкап уже выполняется","adminBackupLastResultOk":"Последний результат: успешно","adminBackupLastResultFail":"Последний результат: ошибка (%1%)","applicationAdminCoreName.projectName":"Название проекта","applicationAdminCoreName.projectMain":"Основной домен","applicationAdminCoreName.projectBot":"Логин бота проекта","applicationAdminCoreDesc.projectBot":"Через какого бота происходит взаимодействие с пользователями. Укажите логин без @","applicationAdminCoreName.admins":"ID Администраторов","applicationAdminCoreDesc.admins":"ID указывайте строго через запятую и не используйте пробелы. К примеру: `123456789,987654321`. И не удалите себя случайно)","applicationAdminCoreName.backup_admins":"ID Администраторов для получения бэкапа","applicationAdminCoreDesc.backup_admins":"Данным администраторам бот будет присылать бэкапы в личку. ID указывайте строго через запятую и не используйте пробелы. К примеру: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Максимальный срок продления заказа (в месяцах)","applicationAdminCoreDesc.order_end_limit_month":"Пользователь не сможет продлить свой заказ на срок больше, чем указан","applicationAdminCoreName.happ_fragment_packets":"Фрагментация ClientHello: пакеты","applicationAdminCoreDesc.happ_fragment_packets":"`tlshello` — резать TLS ClientHello (рекомендуется). Пустое значение или `off` — выключить на всех нодах. Сама фрагментация включается в настройках ноды","applicationAdminNodeFragment":"Фрагментация ClientHello (Happ)","applicationAdminNodeFragmentDesc":"Только для клиентов Happ с JSON-подпиской: VLESS TCP/XHTTP к этой ноде режет TLS ClientHello на части. Выключено — конфиг как раньше. Параметры — в Core Settings","applicationAdminCoreName.happ_fragment_length":"Фрагментация ClientHello: длина фрагмента","applicationAdminCoreDesc.happ_fragment_length":"Размер фрагмента в байтах: `N` или `N-M`, например `100-200`","applicationAdminCoreName.happ_fragment_interval":"Фрагментация ClientHello: задержка","applicationAdminCoreDesc.happ_fragment_interval":"Пауза между фрагментами в миллисекундах: `N` или `N-M`, например `10-20`","applicationAdminCoreName.happ_auto_balancer":"Профиль «Авто» (Happ)","applicationAdminCoreDesc.happ_auto_balancer":"`on` — в JSON-подписке Happ первым идёт профиль «Авто»: все ноды в одном конфиге, трафик через лучшую по пингу, при сбое ноды переключение без переимпорта. `off` — выключить","applicationAdminSendMessage":"Рассылка сообщений","applicationAdminSendMessageTargets":"Количество человек, кто получит сообщение","applicationAdminSendMessageType":"Тип фильтрации пользователей","applicationAdminSendMessageTypeAll":"Все пользователи","applicationAdminSendMessageTypeOrders":"Определённые заказы (любые)","applicationAdminSendMessageTypeOrdersActive":"Определённые заказы (активные)","applicationAdminSendMessageTypeHas":"Есть хоть 1 заказ","applicationAdminSendMessageTypeNotHas":"Нет никаких заказов","applicationAdminSendMessageTypeHasActive":"Есть хоть 1 активный заказ","applicationAdminSendMessageTypeHasUnActive":"Есть хоть 1 НЕактивный заказ","applicationBalanceErr":"Возникла ошибка при формировании платежа: %1%","applicationBalanceErrBalanceLimit":"На Вашем счету уже максимально допустимое количество средств (%1%)","applicationBalanceErrBalanceLimitButton":"Недоступно","applicationBalanceErrData":"Платёжная система не смогла сформировать платёж. Пожалуйста, попробуйте позже.","applicationBalanceErrNetwork":"Сетевая ошибка. Пожалуйста, попробуйте позже.","applicationBalanceErrCurrency":"Ошибка валюты. Пожалуйста, попробуйте позже.","applicationBalanceErrAuth":"Ошибка авторизации","applicationBalanceErrPaymentLink":"Не удалось получить ссылку на платёж","applicationBalanceSettingsTitle":"Выбор валюты","applicationBalanceTitle":"Раздел пополнения баланса","applicationBalanceSelect":"Выберите валюту для отображения","applicationBalanceEmail":"Ваш email","applicationBalancePlatform":"Платёжная платформа","applicationBalanceAmount":"Сумма пополнения (в %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Итоговая сумма оплаты: ≈%1%</font>\\n\\n<font color=#F28100>Если Вы чей-то реферал,\\nто на баланс вернётся %2% в виде 20% кэшбэка!</font>","applicationBalanceAmountLimit":"Минимальная сумма: %1%\\nМаксимальная сумма: %2%\\n\\n💵 <font color=#00AE09>Ваш способ оплаты: %4%</font>\\nКомиссия платёжной системы: %3%%\\n\\nПосле самой оплаты баланс зачисляется автоматически в течение нескольких минут, также Вам придёт сообщение о статусе платежа с другими деталями на случай обращения в службу поддержки.","applicationBalanceAmountDesc":"Пополнение происходит через сервис %1%","applicationBalanceAmountButton":"Перейти на страницу оплаты","applicationBalanceAmountButtonLoading":"Загрузка...","applicationBalanceAmountButtonErr":"❌ Неверно указана сумма ❌","applicationBalanceCurrency":"Метод оплаты","applicationBalanceCurrencyDesc":"Комиссия платёжной системы: ≈%1%%","applicationServersTitle":"Статус серверов","paymentCompleteNotify":"🎉 Ваш баланс был успешно пополнен на <b>%1%</b>.\\n\\nID платежа: <b>%2%</b>\\n(Он понадобится в случае обращения в <a href=\\"https://t.me/rocketman_vpn\\">службу поддержки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyRef":"🎉 Ваш баланс был успешно пополнен на <b>%1%</b>.\\nТак как Вы являетесь рефералом @%4% в нашем сервисе, мы начислили бонус в размере <b>%3%</b> (%5%%)\\n\\nID платежа: <b>%2%</b>\\n(Он понадобится в случае обращения в <a href=\\"https://t.me/rocketman_vpn\\">службу поддержки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyRefHost":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> (%3%%) за пополнение баланса Вашим рефералом @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустить приложение</a>","paymentCompleteNotifyAdmin":"💵 Пользователь %1% [UID: %7%] пополнил баланс на <b>%2%</b>.\\n💰 В чистую прибыль проекта зачислено +<b>%5%</b>\\n\\nПлатёжная система: <b>%6%</b>\\nID платежа: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Внимание ❗️\\nПо платежу `%1%` был сформирован запрос на возврат средств.\\n\\nТак как они были возвращены Вам в полном объёме, с баланса в приложении было списано *%2%*.\\n\\nВ случае возникновения вопросов обратитесь в [службу поддержки](https://t.me/rocketman_vpn), мы обязательно поможем!\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Ноды","adminXrayVersionTitle":"Xray-core","adminXrayVersionCurrent":"Текущая версия: %1%","adminXrayVersionLatest":"Доступна новая версия: %1%","adminXrayVersionUnknown":"Версия в скрипте установки не указана","adminXrayVersionLoading":"Проверяем версию…","admin-routing":"🔀 Роутинг","admin-presets":"📋 Пресеты","admin-firewall":"📜 Записи фаервола (x%1%)","admin-firewall_add":"Новая запись фаервола","admin-nav-messages":"Рассылка","admin-nav-firewall":"Фаервол","admin-nav-logs":"Логи администрации","logRecord-title":"📊 Логи администрации (x%1%)","logRecord-title-user":"📜 Логи пользователя (x%1%)","logRecord-log-time":"Создан: %1%","logRecord-log-who":"Кто","logRecord-log-target":"Цель","logRecord-log-reason":"Текст: %1%","logRecord-setPaymentStatus":"Смена статуса платежа %1%","logRecord-removePromo":"Удаление промокода %1%","logRecord-editPromo":"Редактирование промокода %1%","logRecord-editBalance":"Редактирование баланса (%1%$ -> %2%$)","logRecord-returnOrder":"Отмена заказа %1% (%2%$)","logRecord-addOrder":"Выдача заказа %1%","logRecord-payOrder":"Продление заказа %1% на %2% дней","logRecord-partnerNotify":"Выплата партнёру %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"СБП (Система быстрых платежей)","paymentMethodCrypto":"Криптовалюта","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Не удалось обнаружить данные пользователя для формирования ссылки. Видимо, этот пользователь заблокировал нашего бота 😐","partner_title":"🏆 Партнёрская программа 🏆","partner_desc":"Вы являетесь участником партнёрской программы. Помимо основного бонуса за реферата Вы также будете получать финансовые отчисления.\\n\\nВаша текущая ставка — %1%% от реферального баланса\\n\\nВсего Вы заработали: %2%\\nТекущий баланс: %3%","ref_title":"🏆 Реферальная система 🏆","ref_desc":"Приглашайте друзей и знакомых в наш сервис и получайте бонусы на свой баланс!\\n\\n<font color=#2DA618>От каждого реферала Вы получите по <font color=#54E13B>%1%</font> за их первые заказы и <font color=#54E13B>%2%%</font> от всех пополнений их баланса.</font>\\n\\n<font color=#00B7B7>Все Ваши рефералы получат <font color=#15DBDB>%3%</font> бонусом после первого заказа (включая тестовый) и <font color=#15DBDB>%4%%</font> кэшбэка от всех своих будущих пополнений.</font>\\n\\nТаким образом эта система выгодна и для Вас, и для Ваших рефералов 😉","ref_stats":"Ваша статистика","ref_stats_data":"Количество приведённых рефералов: %1%\\nПолучили бонусом на баланс: %2%","ref_link_text":"Ваши данные реферальной системы","ref_link_text_copy":"📋 Ссылка+текст","ref_only_link_copy":"🔗 Ссылка","ref_link_text_copy_sendText":"Привет! Я пользуюсь удобным способом для защиты своих данных в интернете и смело рекомендую его тебе 😎\\n\\nКроме того, перейдя именно по моей ссылке, ты получишь бонусом %1% после первого заказа (включая тестовый) и пожизненный кэшбэк в %2%% от всех пополнений баланса 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Ваша реферальная ссылка и дополнительный текст были скопированы в буфер обмена.\\n\\nИспользуйте это для приглашения друзей и знакомых в наш сервис, чтобы извлекать выгоду совместно 😎","ref_only_link_copy_alert":"🔗 Ваша реферальная ссылка была скопирована в буфер обмена.\\n\\nИспользуйте её для приглашения друзей и знакомых в наш сервис, чтобы извлекать выгоду совместно 😎","ref_link_text_share":"💌 Поделиться","ref_link_text_share_message":"Привет! Я пользуюсь удобным способом для защиты своих данных в интернете и смело рекомендую его тебе 😎\\n\\nКроме того, перейдя именно по моей ссылке, ты получишь бонусом %1% после первого заказа (включая тестовый) и пожизненный кэшбэк в %2%% от всех пополнений баланса 🎉\\n","ref_message_personal":"Вы не можете зарегистрироваться по своей реферальной ссылке 😐","ref_message":"🎁 Реферальная система:\\nВы успешно зарегистрировались как реферал пользователя @%1% 🎉\\n\\nВы получите бонус в размере <b>%2%</b> при первом заказе (включая тестовый), а также пожизненный кэшбэк в размере <b>%3%%</b> при каждом пополнении баланса!","ref_message_host":"🎁 Реферальная система:\\n🎉 Пользователь @%1% зарегистрировался как Ваш новый реферал 🎉\\n\\nВы получите бонус в размере <b>%2%</b> при первом его заказе (включая тестовый), а также кэшбэк в размере <b>%3%%</b> от каждого его пополнения баланса.","ref_message_order":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> на свой баланс","ref_message_order_host":"🎁 Реферальная система:\\n💵 Вы получили бонус в размере <b>%1%</b> на свой баланс от пользователя @%2%","traffic_limit_notify_close":"⚠️ У Вас заканчивается трафик на заказе `%1%` с тарифом `%2%`! Если это сообщение будет появляться достаточно часто, то рекомендуем задуматься о смене тарифа на более продвинутый, чтобы всегда оставаться на связи ❤️\\n\\n🚀 Сделать это Вы сможете, [запустив приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ нажмите на нужный заказ ⇒ ♻️ Сменить тариф на другой ♻️","traffic_limit_notify_end":"❗️ ВНИМАНИЕ ❗️ У Вас закончился весь трафик на заказе `%1%` с тарифом `%2%`. Его сброс произойдёт %3%. Но если Вы хотите всегда оставаться на связи, то подумайте о смене тарифа на более продвинутый.\\n\\n🚀 Сделать это Вы сможете, [запустив приложение](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Личный кабинет ⇒ нажмите на нужный заказ ⇒ ♻️ Сменить тариф на другой ♻️","traffic_limit_notify_restore":"🎉 У заказа `%1%` с тарифом `%2%` была сброшена статистика использованного трафика. Теперь он снова доступен в полном объёме :)\\n\\n🚀 [Запустить приложение](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Применить промокод","example":"Example","deleteMessageFailed":"❌ Не удалось удалить сообщение. Возможно, оно слишком старое или уже удалено.","cryptoPayTitle":"Оплата через криптовалюту","cryptoPayUserId":"ID пользователя","cryptoPayAmount":"Сумма к оплате (USDT)","cryptoPayInstruction":"Переведите указанную сумму в USDT на предоставленный адрес","cryptoPayLoading":"Загрузка реквизитов...","cryptoPayErrorNoParam":"Не передан параметр crypto_id в ссылке.","cryptoPayErrorInvalidData":"Некорректные данные для оплаты.","cryptoPayErrorParse":"Ошибка при обработке данных для оплаты. Попробуйте обновить страницу или обратитесь в поддержку.","cryptoPayWallet":"Адрес кошелька для перевода","cryptoPayNetwork":"Сеть (блокчейн)","cryptoPayCopy":"Скопировать","cryptoPayCopyAmountAlert":"Сумма скопирована в буфер обмена!","cryptoPayCopyWalletAlert":"Адрес кошелька скопирован в буфер обмена!","cryptoPayWarning":"ВНИМАТЕЛЬНО проверьте реквизиты и сумму перед оплатой! В случае ошибки мы не можем гарантировать зачисление средств.","telegramPayment":"✅ Для Вас был сформирован счёт на оплату\\n\\n⚖️ Сумма оплаты: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 ID пользователя: <b>%7%</b>\\n📋 ID платежа: <b>%6%</b>\\n\\n🔗 Для оплаты перейдите по ссылке: %5%","orderManipulationBlock":"Ваш прошлый заказ всё ещё в обработке. Пожалуйста, подождите его завершения или обратитесь в службу поддержки для получения помощи.","subPage.orderInfo":"Ниже представлены все доступные методы подключения для Вашего заказа через это приложение","subPage.userInfo":"Ниже представлены все доступные методы подключения для всех Ваших активных заказов через это приложение","subPage.orderId":"🛒 ID Заказа: %1%\\n⬇️ Выберите регион конечного подключения:","subPage.nodeInfo":"📍 Точка обхода: %1%\\n⚠️ Это значит, что сначала весь трафик будет идти через неё для маскировки.","subPage.autoProfile":"⚡ Авто — лучший сервер","subPage.protocolInfo":"Протокол подключения: %1%","subPage.allTitle":"Все заказы","subPage.expiredNotifyList":"❌ Срок действия подписки истёк\\nПродлить VPN в боте\\n%1%","ping.admin.initOk":"✅ Система инициализирована, все ноды доступны в штатном режиме.","ping.admin.initFail":"❌ Система инициализирована, но некоторые ноды не доступны:\\n\\n%1%","speedtest.admin.failTest":"❌ Тест скорости не пройден. Пожалуйста, проверьте работоспособность.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Зафиксирована низкая скорость соединения (%2% Mbps download, %3% Mbps upload). Пожалуйста, проверьте работоспособность.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Скорость соединения восстановлена (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ На сервере обнаружены проблемы со скоростью соединения","applicationServersSpeedtestLastSpeed":"Последний замер скорости (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Предыдущий замер скорости (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ На сервере не было сделано ещё замеров скорости","applicationServersPingIssueDetected":"❌ Сервер не отвечает на пинг-запросы","actionUpdateStartNodes":"⚠️ Запущена процедура обновления нод (%1%), через некоторое время ноды будут перезапущены. После завершения выполнения работ будет отправлено дополнительное уведомление (если не было отправлено — возможно, подвис github action и всё в порядке, но могут быть и проблемы)","actionUpdateStartHeader":"Запущена процедура обновления:","actionUpdateStartSite":"• Обновляется главная страница проекта","actionUpdateStartApp":"• Обновляется бэкенд приложение","actionUpdateStartProxy":"• Обновляется прокси или xray служба (Ноды: %1%)","actionUpdateStartMTProto":"• Обновляется сервер MTProto","actionUpdateStartFirewall":"• Обновляем фаервол (Ноды: %1%)","actionUpdateStartBackup":"• Обновляем дочерний API интерфейс (Ноды: %1%)","actionUpdateStartFooter":"Через некоторое время ноды будут перезапущены. После завершения работ будет отправлено уведомление.","actionUpdateCompletedNodes":"✅ Процедура обновления нод (%1%) завершена, ноды перезапущены и уже должны быть активны","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Быстрый и безопасный","mtproto.subtitle.2":"доступ к Telegram","mtproto.description.1":"Бесплатный прокси-сервер для стабильного подключения к Telegram.","mtproto.description.2":"Без регистрации, без ограничений, с полной конфиденциальностью.","button.connect":"Подключить прокси","button.copy":"Скопировать ссылку","button.copied":"Скопировано","link.label":"Ссылка для подключения вручную","feature.encryption.title":"Сквозное шифрование","feature.encryption.description":"Ваши сообщения остаются конфиденциальными. Мы не имеем доступа к Вашей переписке.","feature.free.title":"Без ограничений","feature.free.description":"Бесплатный доступ без регистрации и лимитов на трафик.","feature.rocketman.title":"Больше возможностей","feature.rocketman.description":"Этот прокси работает только для Telegram. Для полноценной защиты используйте RocketMan-VPN.","rocketman.title":"RocketMan VPN — это Ваш надежный друг","rocketman.description":"Данный MTProto-прокси является дополнительным проектом — RocketMan VPN. С нами Вы получите полную защиту интернет-соединения во всех приложениях и любимых сервисах. Попробуйте бесплатно то, что мы предоставляем для своих клиентов, и оцените качество!","rocketman.button":"Открыть RocketMan VPN","howto.title":"Как подключиться?","howto.step1.title":"Нажмите на кнопку \\"Подключить прокси\\"","howto.step1.description":"Или скопируйте ссылку и подключитесь вручную","howto.step2.title":"Откройте Telegram","howto.step2.description":"Ссылка автоматически запустит приложение","howto.step3.title":"Подтвердите","howto.step3.description":"Нажмите «Подключить» в диалоговом окне","web.orders":"Мои заказы","web.settings":"Настройки","web.exit":"Выход","web.back":"← Назад","web.themeLight":"Светлая тема","web.themeDark":"Тёмная тема","settings.accountInfo":"Информация об аккаунте","settings.language":"Язык","settings.currency":"Валюта отображения","settings.currencyDesc":"Выберите валюту для отображения цен и баланса в приложении.","settings.webCredentials":"Данные для входа на сайт","settings.webCredentialsDesc":"Эти данные используются для входа в веб-интерфейс вне Telegram. Хоть мы и не ограничиваем Вас в выборе пароля, но настоятельно рекомендуем указывать сложный","settings.login":"Логин","settings.loginPlaceholder":"Введите новый логин","settings.newPassword":"Новый пароль","settings.passwordPlaceholder":"Не менее %1% символов","settings.repeatPassword":"Повторите пароль","settings.repeatPasswordPlaceholder":"Повторите новый пароль","settings.passwordMismatch":"Пароли не совпадают","settings.saved":"Сохранено!","settings.saveError":"Ошибка сохранения","settings.saving":"Сохранение…","settings.saveCredentials":"Сохранить данные","settings.show":"Показать","settings.hide":"Скрыть","settings.copy":"Копировать","settings.reset":"Сбросить","settings.apiKeyHint":"Используйте API-ключ для входа в <a href=\\"https://%1%\\" target=\'_blank\'>веб-интерфейс</a> без Telegram, а также для интеграции с другими нашими продуктами. Не передавайте его третьим лицам, этот ключ предоставляет полный доступ к вашему аккаунту","settings.referral":"Реферал (ID пригласившего)","settings.referralDesc":"Если вы пропустили реферальную ссылку, укажите ID пригласившего здесь. Применится только один раз.","settings.referralApplied":"ID пригласившего","settings.referralAppliedAlert":"ID пригласившего скопирован в буфер обмена.","settings.referralHostId":"Ваш ID пригласившего","settings.referralHostIdPlaceholder":"Введите ID пользователя (только цифры)","settings.referralHostIdInvalid":"Неверный формат ID. Используйте только цифры.","settings.referralApply":"Применить ID","settings.referralSaved":"Реферал применён!","settings.referralErr.already_applied":"Реферал уже был применён.","settings.referralErr.invalid_ref_host":"Неверный ID пригласившего.","settings.referralErr.same_account":"Нельзя использовать свой собственный ID в качестве реферала.","login.tabCredentials":"Логин и пароль","login.tabApiKey":"API-ключ","login.tabRegister":"Регистрация","login.labelLogin":"Логин","login.labelPassword":"Пароль","login.labelConfirmPassword":"Подтверждение пароля","login.labelApiKey":"API-ключ","login.placeholderLogin":"Введите логин","login.placeholderPassword":"Введите пароль","login.placeholderConfirmPassword":"Подтвердите пароль","login.placeholderApiKey":"Введите API-ключ","login.signIn":"Войти","login.signInApiKey":"Войти по API-ключу","login.signUp":"Зарегистрироваться","login.signingIn":"Входим…","login.signingUp":"Регистрируемся…","login.orUseApiKey":"или войдите по API-ключу","login.orUseCredentials":"или войдите по логину и паролю","login.switchToApiKey":"Войти по API-ключу","login.switchToCredentials":"Войти по логину и паролю","login.errLoginRequired":"Введите логин и пароль","login.errPasswordRequired":"Введите пароль","login.errConfirmPasswordRequired":"Подтвердите пароль","login.errPasswordMismatch":"Пароли не совпадают","login.errApiKeyRequired":"Введите API-ключ","login.errIncorrect":"Неверный логин или пароль","login.errInvalidKey":"Неверный API-ключ","login.errServer":"Ошибка сервера, попробуйте ещё раз","login.errRegistration":"Ошибка регистрации","login.tabTelegram":"Через Telegram","login.tg.title":"Вход через Telegram","login.tg.instruction":"1. Отправьте команду ниже боту <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a>\\n2. После отправки нажмите кнопку «Подтвердить вход»","login.tg.commandLabel":"Команда для бота:","login.tg.showCommand":"Показать","login.tg.hideCommand":"Скрыть","login.tg.copyCommand":"Копировать","login.tg.copied":"Команда скопирована!","login.tg.timerLabel":"Код действителен: %1%","login.tg.timerExpired":"Срок действия кода истёк","login.tg.verifyButton":"Подтвердить вход","login.tg.verifying":"Проверяем…","login.tg.requestNew":"Запросить новый код","login.tg.loading":"Генерируем код…","login.tg.enter_correct":"Личность подтверждена. Вернитесь на сайт и нажмите на кнопку \\"%1%\\" для завершения","login.tg.enter_fail":"Не удалось выполнить действие. Убедитесь, что указанный ключ корректен, а срок действия не истёк","login.tg.errNotSent":"Не удалось подтвердить вход. Убедитесь, что вы отправили команду боту, и попробуйте ещё раз. Если код истёк — запросите новый.","lang.ru":"Русский","lang.en":"Английский","lang.uk":"Украинский","footer.info":"MTProto-прокси работает только с официальными приложениями Telegram","instructionModalTitleVpn":"Инструкция по подключению VPN","instructionModalTitleProxy":"Инструкция по подключению Proxy","instructionModalSendToTg":"📩 Отправить в Telegram","instructionModalSentToTg":"Инструкция отправлена в ваши личные сообщения Telegram","settings.name":"Ваше имя","settings.nameDesc":"Укажите имя для персонализации обращений в приложении. Он является публичным и может использоваться для отображения другим пользователям, например в реферальной системе.","settings.namePlaceholder":"Введите имя (3-15 символов)","settings.nameInvalid":"Допускаются только кириллица, латиница, цифры и пробелы (3-15 символов)","settings.promoTitle":"Активация промокода","settings.promoDesc":"Если у Вас есть промокод, то введите его здесь, чтобы получить приятный бонус на Ваш баланс.","settings.promoPlaceholder":"Введите промокод","settings.promoApply":"Применить промокод","settings.promoApplied":"Промокод успешно применён!","adminDashboardTitle":"Статистика (Дашборд)","adminDashboardActiveOrders":"Активность подписок","adminDashboardActiveLabel":"Активные","adminDashboardExpiredLabel":"Истекшие","adminDashboardOrdersByTariff":"Подписки по Тарифам","adminDashboardPayments":"Платежи","adminDashboardTrial":"Пробный период","adminDashboardLang":"Язык пользователей","adminDashboardCurrency":"Валюта пользователей","adminDashboardActivity":"Активность в приложении","adminDashboardOrdersPerUser":"Кол-во подписок на юзера","adminDashboardRefIncome":"Медианный доход с рефералов","applicationAdminBackButton":"Назад","settings.passkeys.title":"Ключи доступа (Passkeys)","settings.passkeys.desc":"Добавьте до 5 устройств для быстрого и безопасного входа без пароля с помощью биометрии или физических ключей.","settings.passkeys.add":"➕ Добавить новый ключ","settings.passkeys.name":"Название устройства","settings.passkeys.name_placeholder":"Напр: iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"У вас пока нет привязанных ключей доступа","settings.passkeys.delete_confirm":"Вы уверены, что хотите отвязать этот ключ доступа? Вы больше не сможете войти с его помощью.","settings.passkeys.limit_reached":"Достигнут лимит ключей (максимум 5)","settings.passkeys.add_success":"Ключ доступа успешно добавлен!","settings.passkeys.add_error":"Не удалось добавить ключ доступа","login.tabPasskey":"По ключу","login.passkey.btn":"Войти через Passkey","login.passkey.error":"Ошибка авторизации через ключ доступа","login.passkey.not_supported":"Ваш браузер или устройство не поддерживают вход через Passkey","admin.bulkRenewal.button":"📅 Массовое продление заказов","admin.bulkRenewal.title":"📅 Массовое продление заказов","admin.bulkRenewal.afterDateLabel":"Учитывать заказы, срок которых истёк после указанной даты (или не истёк). Часовой пояс: %1%","admin.bulkRenewal.daysLabel":"Количество дней для продления","admin.bulkRenewal.ordersCount":"Заказов будет продлено","admin.bulkRenewal.ordersCountUpdate":"Заказов будет обновлено","admin.bulkRenewal.usersCount":"Уникальных пользователей","admin.bulkRenewal.applying":"⏳ Применяется...","admin.bulkRenewal.done":"✅ Готово!","admin.bulkRenewal.apply":"📅 Продлить %1% заказ(ов) на %2% дн.","admin.bulkRenewal.applyTraffic":"📉 Сбросить трафик у %1% заказ(ов)","admin.bulkRenewal.applyDaysAndTraffic":"📅 Продлить %1% заказ(ов) на %2% дн. и сбросить трафик","admin.bulkRenewal.blockedDays":"Укажите количество дней от 0 до 3650","admin.bulkRenewal.blockedNoEffect":"Укажите больше 0 дней или выберите сброс трафика","admin.bulkRenewal.blockedNoOrders":"Нет заказов, подходящих под выбранную дату","admin.bulkRenewal.blockedNoActiveOrders":"Нет заказов, активных на данный момент","admin.bulkRenewal.activeOnlyHint":"При 0 днях дата не используется: обновляются только заказы, активные на данный момент.","admin.bulkRenewal.notifyUser":"📅 Администратор продлил ваши активные заказы на %1% дн. Список заказов: %2%","admin.bulkRenewal.notifyUserTraffic":"📅 Администратор изменил использованный трафик по вашим заказам: %1%. Список заказов: %2%","admin.bulkRenewal.notifyUserDaysAndTraffic":"📅 Администратор продлил ваши активные заказы на %1% дн. и изменил использованный трафик: %2%. Список заказов: %3%","admin.bulkRenewal.notifyUsers":"Уведомить пользователей в Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ При большом количестве пользователей уведомления могут работать нестабильно или с задержкой","admin.bulkRenewal.trafficLabel":"Использованный трафик","admin.bulkRenewal.trafficHint":"Доля лимита вычитается из израсходованного трафика и не уходит ниже нуля. Доля использованного вычитает этот процент от уже потраченного.","admin.bulkRenewal.traffic.none":"Не изменять","admin.bulkRenewal.traffic.full":"Полный сброс","admin.bulkRenewal.traffic.limit_50":"Сброс 50% от лимита","admin.bulkRenewal.traffic.limit_25":"Сброс 25% от лимита","admin.bulkRenewal.traffic.limit_10":"Сброс 10% от лимита","admin.bulkRenewal.traffic.used_50":"Сброс 50% использованного","admin.bulkRenewal.traffic.used_25":"Сброс 25% использованного","admin.bulkRenewal.traffic.used_10":"Сброс 10% использованного","connection_test_button":"Тестирование соединения","connection_test_button_node":"Тест","connection_test_title":"Тестирование соединения","connection_test_desc":"Основные серверы проверяются напрямую. Резервные — напрямую и через каждый основной сервер (HTTPS и VLESS). Hysteria2 на резервной ноде выходит напрямую.","connection_test_no_servers":"Список серверов недоступен","connection_test_pending":"Ожидание","connection_test_testing":"Проверка...","connection_test_ok":"Успешно","connection_test_fail":"Ошибка","connection_test_retry":"Повторить","connection_test_close":"Закрыть","connection_test_progress":"Проверено: %1% / %2%","connection_test_summary":"Успешно: %1% из %2%","connection_test_latency":"%1% мс","connection_test_ip":"IP: %1%","connection_test_colo":"PoP: %1%","connection_test_server":"Сервер","connection_test_section_main":"Основные","connection_test_section_backup":"Резервные","connection_test_direct":"Напрямую","connection_test_via":"Через %1%","connection_test_relay_skip":"Hysteria2 выходит с резервной ноды напрямую","connection_test_error_no_access":"Нет доступа администратора","connection_test_error_no_node":"Сервер не найден","connection_test_error_no_credentials":"Тестовые учётные данные не настроены","connection_test_error_timeout":"Таймаут","connection_test_error_connect":"Не удалось установить соединение","connection_test_error_probe":"Cloudflare CGI probe не ответил","connection_test_error_client":"Клиент для проверки недоступен","connection_test_error_deploying":"Нода сейчас в процессе деплоя","connection_test_error_not_backup":"Проверка через основной сервер доступна только для резервной ноды","connection_test_error_no_via":"Основной сервер для релейной проверки не найден","connection_test_error_relay_protocol":"Этот протокол на резервной ноде не идёт через основной сервер","connection_test_error_protocol_disabled":"Протокол выключен на этом сервере","adminAnalyticsNav":"Аналитика","adminAnalyticsFrom":"С","adminAnalyticsTo":"По","adminAnalyticsCompare":"Сравнение","adminAnalyticsCompareNone":"Без сравнения","adminAnalyticsComparePrevious":"Предыдущий период","adminAnalyticsCompareMonth":"Прошлый месяц","adminAnalyticsProtocol":"Протокол","adminAnalyticsServer":"Сервер","adminAnalyticsAll":"Все","adminAnalyticsRefresh":"Обновить","adminAnalyticsLoading":"Загрузка...","adminAnalyticsUsers":"Уникальные пользователи","adminAnalyticsUsersHint":"Разные аккаунты за выбранный период. Фильтры протокола и сервера учитываются. Это не число онлайн прямо сейчас.","adminAnalyticsSessions":"Сессии","adminAnalyticsSessionsHint":"События подключения за выбранный период. Один аккаунт может открыть много сессий. Overlay-хопы считаются, но IP ретранслятора не берётся как регион клиента.","adminAnalyticsTraffic":"Трафик","adminAnalyticsTrafficHint":"Исходящий + входящий, один раз на exit-ноде (как в биллинге). Xray-форвард с relay повторно не добавляется.","adminAnalyticsMap":"Пользователи по регионам","adminAnalyticsMapHint":"Карта мира отображается всегда. Размер круга — уникальные пользователи в регионе/у провайдера. Базовый размер как на приближении максимум минус 1; при отдалении круги уменьшаются. Цвет совпадает с сервером, где таких пользователей было больше всего.","adminAnalyticsServers":"Предпочитаемые серверы","adminAnalyticsServersHint":"Столбец — сколько уникальных пользователей пользовались этим сервером за выбранный период. Цвет закреплён за сервером.","adminAnalyticsProtocols":"Протоколы","adminAnalyticsProtocolsHint":"Доля сессий (подключений) по протоколам за выбранный период. Число — количество сессий, не уникальных людей.","adminAnalyticsTrafficByServer":"Трафик по серверам","adminAnalyticsTrafficByServerHint":"Исходящий + входящий трафик по серверам в мегабайтах (МБ). Цвет тот же, что у предпочитаемых серверов.","adminAnalyticsRegions":"Регионы и провайдеры","adminAnalyticsRegionsHint":"Уникальные пользователи — пик уникальных аккаунтов за час в этом регионе/у провайдера. Сессии — число подключений, не уникальные люди.","adminAnalyticsCountry":"Страна","adminAnalyticsRegion":"Регион","adminAnalyticsIsp":"Провайдер","adminAnalyticsResources":"Популярные ресурсы","adminAnalyticsResourcesHint":"Агрегированные домены за выбранный период. Список скрыт, если включён фильтр по серверу.","adminAnalyticsHost":"Хост","adminAnalyticsHits":"Запросы","adminAnalyticsPreset_24h":"24ч","adminAnalyticsPreset_7d":"7 дней","adminAnalyticsPreset_30d":"30 дней","adminAnalyticsPreset_month":"Этот месяц","adminAnalyticsPreset_prevMonth":"Прошлый месяц","adminNodeUsageNav":"Ноды по часам","adminNodeUsageIntro":"Сколько разных клиентов пользовались каждой нодой и каждым протоколом в каждом интервале. Помогает увидеть, когда на ноде просело число клиентов или перестал использоваться протокол. Текущий интервал ещё идёт и обновляется раз в минуту.","adminNodeUsagePreset_24h":"24 часа","adminNodeUsagePreset_7d":"7 дней","adminNodeUsagePreset_14d":"2 недели","adminNodeUsagePreset_30d":"Месяц","adminNodeUsagePreset_custom":"Свой диапазон","adminNodeUsageInterval":"Интервал","adminNodeUsageIntervalAuto":"Авто","adminNodeUsageInterval_3600":"1 час","adminNodeUsageInterval_10800":"3 часа","adminNodeUsageInterval_21600":"6 часов","adminNodeUsageInterval_43200":"12 часов","adminNodeUsageInterval_86400":"1 день","adminNodeUsageAllNodes":"Все ноды","adminNodeUsageTotal":"Всего","adminNodeUsageTruncated":"Слишком много точек: диапазон обрезан до %1% интервалов. Увеличьте интервал.","adminNodeUsageNoData":"За выбранный период данных нет.","adminNodeUsageSignals":"Просадки и остановки","adminNodeUsageSignalsHint":"Последний завершённый интервал сравнивается с обычным уровнем — медианой того же времени суток за предыдущие дни (для дневного интервала — предыдущих дней). Сигнал появляется, если клиентов стало меньше половины обычного при обычном уровне от 3. Нажмите на сигнал, чтобы показать только эту ноду.","adminNodeUsageSignalsEmpty":"Просадок не обнаружено.","adminNodeUsageSignalStopped":"Остановка","adminNodeUsageSignalDrop":"Просадка","adminNodeUsageSignalText":"— сейчас %1%, обычно ≈%2%, с %3%","adminNodeUsageByNodes":"Клиенты по нодам","adminNodeUsageByNodesHint":"Уникальные клиенты на каждой ноде за интервал (любой протокол, или выбранный в фильтре). Нажмите на ноду в чипах выше, чтобы оставить только её.","adminNodeUsageByProtocols":"Клиенты по протоколам (все ноды)","adminNodeUsageByProtocolsHint":"Уникальные клиенты по протоколам суммарно по всем нодам. Клиент, использовавший несколько протоколов, учитывается в каждом из них, но в «Всего» — один раз.","adminNodeUsageHeatmap":"Карта активности","adminNodeUsageHeatmapHint":"Строка — нода и протокол, столбец — интервал. Чем ярче, тем больше клиентов относительно максимума строки. Красным отмечены интервалы, где клиентов меньше половины обычного. Наведите на ячейку, чтобы увидеть значение.","adminNodeUsageLatest":"Последний завершённый интервал"}');
 ;// ./src/lang/en.json
-const en_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"To enable notifications on iPhone:\\n1. Tap the [⎋] (Share) icon in the bottom menu.\\n2. Select \'Add to Home Screen\'.\\n3. Launch the app from your home screen and return here to subscribe.","settings.pushSupportError":"Web Push is not supported on this device","settings.pushTitle":"Push Notifications","settings.pushDesc":"Subscribe this device to receive system notifications","settings.pushSubscribed":"✅ This device is subscribed","settings.pushNotSubscribed":"❌ Device is not subscribed","settings.pushSubscribeBtn":"Subscribe","settings.pushUnsubscribeAllBtn":"Unlink all devices","settings.pushSuccess":"Successfully subscribed","settings.pushUnsubscribeSuccess":"All devices unlinked","settings.pushError":"Error during subscription","settings.disableSiteNotify":"Disable notifications on the site","settings.disableSiteNotifyDesc":"Disable notifications on the site, leaving only Push notifications and notifications in Telegram (if the account is linked to Telegram)","settings.disableSiteNotifyYes":"Yes","settings.disableSiteNotifyNo":"No","settings.geoRouting":"Add geo-routing to subscription data","settings.geoRoutingDesc":"You can choose a specific geo-routing for your orders. If it is added, then when connecting to VPN / Proxy through instructions from the application, the subscription data will indicate that you want to use a specific geo-routing. This can help in bypassing blocks and improving connection stability if the main server is unavailable or unstable in your region. If you\'re not sure which option is best for you - leave the default value (%1%)","settings.disabled":"Disable (not recommended)","settings.reserveConnectionLink":"Use backup subscription link for Vless, Hysteria","settings.reserveConnectionLinkDesc":"Enable this option if you do not have access to the main server. Then the connection instructions will include the backup link instead of the main one.","settings.reserveConnectionLinkYes":"Yes","settings.reserveConnectionLinkNo":"No","applicationNotifyTitle":"Notifications","applicationNotifyConfirmDeleteAll":"Are you sure you want to delete all notifications?","applicationNotifyEmpty":"No new notifications","applicationNotifyPromoSuccess":"Promo code applied successfully","applicationNotifyPromoError":"Promo code activation error: it may have already been used or the limit is reached","applicationNetworkError":"Network error","applicationNotifyConfirmDelete":"Are you sure you want to delete this notification?","applicationNotifyDelete":"🗑️ Delete","applicationNotifyPromoApply":"Apply promo code (%1%)","applicationDialogOk":"OK","applicationDialogCancel":"Cancel","pagePayTitle":"Purchase VPN","pagePayBalance":"Top up balance","pagePayID":"Your Unique ID","pagePayIDPlaceholder":"Enter your ID","pagePayAmount":"Top-up amount (temporarily from %1%)","pagePayButton":"Proceed to Payment","pagePayAmountTotal":"\\n<font color=#00AE09>Total payment amount: ≈%1%</font>","pageFAQId":"How to get ID?","pageFAQStep1":"Open the control panel on the website or the app in Telegram","pageFAQStep2":"Open Settings","pageFAQStep3":"Under Account Info, tap Your ID to copy the number","pageFAQStep4":"Paste the ID into the field on the left","pageFAQOpen":"Open the Telegram app","pageFAQOpenSite":"Open the website panel","pageFAQQR":"QR code for the Telegram app","landingTGBotButton":"Launch Telegram Bot","landingDashboardButton":"Open Dashboard","landingTarifs":"Plans","landingTarifsTrial":"+ Trial period %1%h","landingTarifsDiscount":"Discount","landingTarifsPrice":"%1%/%2% days","landingTarifsGo":"Connect","landingFooterText":"And here is our main project","landingTitle":"RocketMan VPN — Internet Under Protection!","landingTitleBrand":"RocketMan VPN","landingTitleTagline":"Internet Under Protection!","landingTitleDesc":"Lightning-fast access to your favorite sites and services from PC and smartphone.","landingFeaturesTitle":"Why choose us?","landingAppsTitle":"Our products for you","landingAppsDownload":"Download","landingAppsOpen":"Open","landingAppsFree":"Free","landingTrust1Value":"256-bit","landingTrust1Label":"AES encryption · data locked away","landingTrust2Value":"Up to 1 Gbps","landingTrust2Label":"Channel Speed","landingTrust3Value":"24/7","landingTrust3Label":"Live Support","landingTrust4Value":"UNLIMITED","landingTrust4Label":"Devices per Key","landingFeaturesLead":"Protection, speed, and simplicity — no compromises","landingCompareTitle":"Unprotected vs RocketMan VPN","landingCompareLead1":"Without VPN — anxiety and “Access denied”.","landingCompareLead2":"With our service — protection and safety in a few clicks","landingCompareColBad":"Without VPN","landingCompareColGood":"With RocketMan VPN","landingCompareRow1":"What sites see","landingCompareBad1":"Your city, ISP, and activity","landingCompareGood1":"Only the server country","landingCompareRow2":"Wi-Fi in cafés and airports","landingCompareBad2":"Passwords and chats can be intercepted","landingCompareGood2":"Encrypted traffic — hackers see only noise","landingCompareRow3":"Data transfer","landingCompareBad3":"On open networks, passwords travel in plain text","landingCompareGood3":"VLESS · Proxy HTTPS · Hysteria2","landingCompareRow4":"Blocks and DPI","landingCompareBad4":"“Access denied”, apps and messengers go down","landingCompareGood4":"Our bypasses work even in China (verified June 2026)","landingCompareRow5":"Speed","landingCompareBad5":"ISP may throttle routes and speed","landingCompareGood5":"Up to 1 Gbps, including on 5G","landingCompareRow6":"Setup","landingCompareBad6":"Manual setup on every device and in each app","landingCompareGood6":"QR code in 10 seconds · iOS, Android, PC, TV","landingCompareRow7":"Support","landingCompareBad7":"You\'re on your own","landingCompareGood7":"Live Telegram support 24/7","landingHowTitle":"3 steps to secure internet","landingHowLead":"Setup takes less than two minutes — we\'ll guide you through","landingHowStep1Title":"Choose a plan","landingHowStep1Text":"From free trial to premium — a plan for every need","landingHowStep2Title":"Pay","landingHowStep2Text":"Convenient payment and instant activation in Telegram or on the website","landingHowStep3Title":"Turn on VPN / Proxy","landingHowStep3Text":"Step-by-step guide — then just ON/OFF","landingPricingLead":"Convenient plans · trial period · referral program","landingPlanTraffic":"📊 %1% GB traffic","landingPlanDevices":"📱 Unlimited devices","landingPlanVpnProxy":"🔐 VPN + Proxy included","landingCtaTitle":"Ready to protect your internet?","landingCtaDesc":"Join us — setup takes minutes, peace of mind lasts much longer.","landingCtaButton":"Connect now","landingCtaSite":"Connect via website","landingCtaTelegram":"Connect via Telegram","landingPlanConnectSite":"Connect on website","landingPlanConnectTelegram":"Connect in Telegram","landingHeaderTelegram":"Launch in Telegram","landingHeaderSite":"Connect right here","landingHeroGuarantee":"✓ Trial period · ✓ VPN + Proxy · ✓ 24/7 Support","landingHeroPill1":"Trial period","landingHeroPill2":"VPN + Proxy","landingHeroPill3":"24/7 Support","landingHeroPill4":"Works even in China","landingHeroPill5":"Whitelist Bypass","landingHeroCompareBad":"Without VPN","landingHeroCompareGood":"With RocketMan VPN","landingHeroCompareYou":"YOU","landingHeroCompareWeb":"WEB","landingHeroCompareBadWire":"open channel","landingHeroCompareGoodWire":"encrypted tunnel","landingHeroCompareBad1":"Your real IP leaks to the network","landingHeroCompareBad2":"Blocks · “Access denied”","landingHeroCompareGood1":"We protected and encrypted your time on the internet","landingHeroCompareGood2":"No-logs · we don\'t store your data","landingProtocolVless":"VLESS","landingProtocolProxy":"Proxy HTTPS","landingProtocolHysteria":"Hysteria2","landingShieldMeta":"VLESS · Proxy HTTPS · Hysteria2","landingPlanPopular":"TOP","landingSecurityBadge":"Safe with us","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"A versatile proxy client for <b>Windows, Linux and macOS</b>. Supports <b>HTTPS / VLESS / Hysteria2</b> protocols. API mode for order management directly from the app, TUN tunneling, VLESS subscriptions, and Discord integration (Windows).","app.tgproxy.name":"TGProxy — MTProto for Telegram","app.tgproxy.description":"Free <b>MTProto proxy</b> for stable Telegram access. No registration or traffic limits, end-to-end encryption for your chats. One-click connect from the browser — opens directly in Telegram.","features1Title":"Anonymity","features1Text":"Thanks to multiple layers of protection on our side, your real IP will remain unknown to any service.","features2Title":"Speed","features2Text":"Download, watch your favorite content, and share at speeds up to 1Gbps.","features3Title":"Trial period","features3Text":"Connect in 1 click from any of your devices! PC, smartphone, TV, tablet, and laptop.","features4Title":"Support","features4Text":"We are always ready to help you with any questions. Online almost 24/7","faq1title":"How to pay?","faq1text":"Top up your balance and pay via a convenient method. After payment, you\'ll get instructions in the Telegram bot or on the website (depending on where you purchased).","faq2title":"How to set up VPN?","faq2text":"The full connection process is described in detail in our <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram bot</a> and in <a href=\\"https://ru-app.rocketman-vpn.com:8443/application\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">your account</a> on the website.\\nStep by step, so you\'re unlikely to get lost. Most importantly — follow the instructions :)","faq3title":"What if something isn\'t working?","faq3text":"Check our <a href=\\"https://rocketman-vpn.com/en/wiki/\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Knowledge Base</a> — we\'ve gathered useful articles and answered common questions in advance. If something still can\'t be solved on your own — contact <a href=\\"https://t.me/%1%\\" target=\'_blank\'>support via Telegram</a>, and we\'ll help.","locationSelectTitle":"Select server location","locationSelectLoad":"Load: %1%%","locationReserve1":"Saint Petersburg","locationLocal":"Local server","locationStockholm":"Stockholm","locationAustria":"Vienna","locationNetherland":"Amsterdam","locationFrankfurt":"Frankfurt","locationParis":"Paris","tarif.test_drive":"🚗 Test Drive","tarif.start":"🚀 Start","tarif.gamer":"🎮 Gamer","tarif.pro":"👑 Family+","tarif.ultra":"🌌 Space","httpTarifPro":"🔒 Proxy-Unlimited","httpTarifGamer":"🔒 Proxy-Gamer","tarifNameFull":"%1% (%2% days | %3% GB/day) - %4%","welcomeMessage":"Welcome!\\nThanks to our service, you can get secure access to your favorite sites and apps, just like our other beloved clients ❤️\\n\\n⭐️ We have no device limits, so you can use 1 key on all your devices! Along with VPN, you also get access to our Proxy.\\n\\n🛒 We provide:\\n- VPN for iOS, Android, Windows, macOS, Android TV\\n- Proxy for browser, Discord, Windows, etc.","basketBalance":"Top up balance","secondsToStringD":"%4% d. %3% h. %2% min. %1% sec.","secondsToStringH":"%3% h. %2% min. %1% sec.","secondsToStringM":"%2% min. %1% sec.","readButton":"🗑 Delete this message","openPage":"🌐 Website","openApp":"📱 App","expireNotifyOrderData":"▪️ Plan: `%1%`\\n▪️ Name: `%2%`\\n▪️ Renewal period: `%3% days`","expireNotifyTemplate":"Hello, %1%!\\n%2%\\n\\n%3%\\n▪️ Renewal cost: `%4%`\\n\\n%5%","expireNotifyFull":"Your order has expired 🙁\\n\\nTo stay connected to the free Internet — [launch the app](https://t.me/rocketman_vpn_bot/?startapp), then click on 💸 your balance at the top right, top it up, and enable auto-renewal in the order settings 😇","expireNotifyTime":"Your order will expire in less than `%1%` hour 🙁","expireNotifyRenewAutoNoMoney":"❗️ Auto-renewal is enabled, but your current balance is insufficient 🙁\\n\\nEnsure you have enough funds for the feature to work smoothly in the coming months. [Launch the app](https://t.me/rocketman_vpn_bot/?startapp), click on your balance in the top right, and top up the desired amount.","expireNotifyRenewAuto":"✅ Auto-renewal is enabled, so the order will be renewed automatically when less than 24 hours remain 😎","expireNotifyRenewManual":"ℹ️ How to enable auto-renewal?\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on your order ⇒ Settings ⇒ check Auto-renewal ⇒ Save all changes.","expireNotifyRenewSuccessAuto":"Hello, %1%!\\nYour order has been automatically renewed.\\n\\n%2% 🎉\\n\\nThank you for trusting us ❤️\\nThe best way to thank us is by inviting your friends via the referral system!\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"The command was used incorrectly\\n`%1%`\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Command `%1%` used incorrectly!\\n\\n✅ Correct example: `%2%`\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Start","usePromoCommand":"Apply promo code — /promo PROMO_NAME","useFaqCommand":"How to connect to VPN / Proxy?","usePromoAlready":"You have already applied this promo code. It can only be used once.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Promo code `%1%` not found 🙁\\n\\nPlease check the spelling and ensure the code is valid.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Activation limit for promo code `%1%` reached 🙁\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"You have already applied a similar promo code.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Failed to apply promo code `%1%` 🙁\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Promo code `%1%` successfully applied 🎉\\n%2% credited to your balance\\n💰 Current balance: %3%\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"You do not have access to perform this action.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Admin Menu","adminMenu":"Admin Section\\n\\n\\nPromo Codes Menu\\nPromo codes list: /listPromo\\nPromo code info: `/infoPromo {PROMO_NAME}`\\nCreate promo code: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nDelete promo code: `/deletePromo {PROMO_NAME}`\\n\\n\\nUsers Menu\\nGive order to user: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nDelete order: `/removeOrder {ORDER_ID}`\\nGive balance to user: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Order not found","adminUserRemoveOrderStatus":"Order removal status: %1%","adminUserGiveTarifErrUser":"User not found!","adminUserGiveTarifErrTarif":"Plan not found","adminUserGiveTarifErrNode":"Plan node not found. Plan configuration is invalid","adminUserGiveTarifErrMarzban":"MarzBan failed to create order. Reason unknown","adminUserGiveTarifSuccess":"Successfully gave order to @%1%","adminUserGiveTarifNotify":"🎉 Administrator has added the `%1%` plan to your account for `%2% days` 📆\\n\\n*Order Information:*\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒\\nclick on your order ⇒ 📚 VPN / Proxy Instructions","adminPromoCreateAlreadyExist":"This promo code already exists","adminPromoCreateAlreadyExistWas":"This promo code existed once and cannot be recreated","adminPromoCreateFailed":"Failed to create promo code","adminPromoCreateDone":"Promo code `%1%` successfully created.\\nActivations available: %2%\\nBalance: %3%","adminPromoList":"List of all promo codes:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% used / %3% total / %4%)","adminPromoInfo":"Promo code info:\\n\\nID: `%1%`\\nActivation limit: %2%\\nActivations count: %3%\\nBalance: %4%\\n\\nActivations list:\\n%5%","adminPromoDeleteDone":"Promo code `%1%` successfully deleted","terms":"User Agreement","contacts":"Contact Us","wiki":"Knowledge Base","wikiPage.description":"Guides, FAQ, and VPN setup examples.","wikiPage.articleLead":"RocketMan VPN knowledge base article.","wikiPage.articleHint":"Browse articles on the left · table of contents on the right","wikiPage.subtitle":"Choose a topic from the list or search","wikiPage.heroTopic.faq":"FAQ","wikiPage.heroTopic.setup":"Setup and connection","wikiPage.heroTopic.troubleshoot":"Examples and fixes","wikiPage.searchPlaceholder":"Search by title and article text...","wikiPage.loadingList":"Loading article list...","wikiPage.emptyList":"No articles were added yet.","wikiPage.loadingArticle":"Loading article...","wikiPage.openHint":"Select an article from the list","wikiPage.back":"Back to list","wikiPage.error.loadList":"Failed to load article list.","wikiPage.error.emptyFile":"The article is not available for the current language.","wikiPage.error.loadArticle":"Failed to load article.","wikiPage.navigation":"Navigation","wikiPage.contents":"Contents","wikiPage.readMore":"Read","wikiPage.readingTime":"min read","wikiPage.articlesCount":"articles","wikiPage.backToTop":"Back to top","wikiPage.home":"🏠 Knowledge base home","wikiPage.copyLink":"Copy link to this article","wikiPage.articleLinkCopied":"Article link copied","wikiPage.linkCopied":"Link copied","wikiPage.closeLightbox":"Close","wikiPage.openImageInNewTab":"Open in new tab","wikiPage.copySectionLink":"Copy section link","wikiPage.copyCurrentSectionLink":"Copy link to current section","wikiPage.sectionLinkCopied":"Section link copied","wikiPage.enlargeImage":"Enlarge image","wikiPage.copyCode":"Copy","wikiPage.copied":"Copied","wikiPage.copyText":"Click to copy","wikiPage.searchNoResults":"Nothing found. Try another word.","wikiPage.searchHint":"Search results in titles and body","wikiPage.searching":"Searching...","wikiPage.searchMatchTitle":"In title","wikiPage.searchMatchBody":"In body","wikiPage.updatedAt":"Updated","wikiPage.featured":"Featured","wikiPage.groupOther":"Other articles","wikiPage.allArticles":"All articles","wikiPage.cardUpdated":"Updated","wikiPage.updatedToday":"today","wikiPage.updatedYesterday":"yesterday","wikiPage.updatedDaysAgo":"%1% days ago","wikiPage.badge.important":"Important","wikiPage.badge.new":"New","wikiPage.badge.updated":"Updated","wikiPage.badge.hot":"Hot","contactsTG":"Telegram Chat","contactsEmail":"E-Mail","trialNotify":"✅ You have received the `%1%` plan for `%2% hours` as trial access.\\n\\n📌 Order info in the app:\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒\\nclick on your order ⇒ 📚 VPN / Proxy Instructions.\\n\\nWe provide free access so you can evaluate the quality and stability before future purchases 🤝","launchBot":"Launch","launchBotLong":"Open App 📱","applicationMainMenu":"Main Menu","applicationMainMenuBack":"Back","applicationButtonsRef":"Referral System","applicationButtonsFaq":"Knowledge Base","applicationButtonsCabinet":"Account","applicationButtonsAdmin":"Admin Dashboard","applicationButtonsAdminDisk":"Free disk space: %1%","applicationButtonsAdminPayments":"Income stats:<br/>%1% current month<br/>%2% last month<br/>%3% total period | %4% pending","applicationUserInfoWithUs":"With us since","applicationUserInfoBalance":"Your balance","applicationUserInfoId":"Your ID","applicationUserInfoTgId":"Linked TG Account ID","applicationUserInfoAPIKey":"Your API Key","applicationUserInfoAPIKeyAlert":"📝 Your API Key has been copied to clipboard. Do not disclose this key to anyone; project administration will never ask for it","applicationUserInfoAPIResetAlertAsk":"📝 Are you sure you want to generate a new API Key?","applicationUserInfoAPIResetAlert":"📝 Your API Key has been regenerated","applicationUserInfoIdAlert":"📝 Your ID has been copied to clipboard.","applicationUserInfoTgIdAlert":"📝 Your Telegram ID has been copied to clipboard.","applicationContactButton":"Contact Support","applicationServersButton":"Server Status","applicationHowToConnectFAQButton":"How to connect to VPN or Proxy?","applicationHowToConnectFAQButtonModal":"The bot has sent instructions to your private messages 📝","applicationCabinetTitle":"Account","applicationCabinetTitleDesc_title":"Click on order to manage it","applicationCabinetTitleOrder":"Select a Plan","applicationCabinetTitleOrder_detail_back":"Back to plans list","applicationCabinetTitleOrder_help_button":"⚠️ Help me choose a plan ⚠️","applicationCabinetTitleOrder_help_button_back":"Back to ordering","applicationCabinetTitleOrder_help_button_header":"Average traffic consumption:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 hour of video at 1440p ≈6 GB\\n<font color=#E10070>Instagram</font>: 1 hour of Reels ≈2 GB\\n<font color=#69C9D0>TikTok</font>: 1 hour of video ≈2 GB\\n<font color=#7289DA>Discord</font>: 1 hour of voice with stream ≈1 GB\\n<font color=#BD37FF>Twitch</font>: 2 hours of stream at 1080p ≈5 GB\\n<font color=#D0A823>Online games</font>: 1 hour ≈0.5 GB\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 hours at 1080p ≈5 GB\\n\\nAdding these up gives <font color=#DA7F00>≈20-25 GB per day</font>. These figures are estimates to help you choose the right plan.\\n\\n<font color=#A7C800>VPN and Proxy — both are convenient.</font>\\n<font color=#BAD821>VPN:</font> ideal for smartphones, tablets, and TV; can be used on PC too.\\n<font color=#BAD821>Proxy:</font> suitable for Discord, PC browser (YouTube, Twitch, Netflix, HDRezka, etc.).\\n<font color=#B3D023>Protocols briefly:</font>\\n<font color=#2EB3FF>• Vless</font> - best for bypassing blocks, stability, speed, “invisibility”.\\n<font color=#29a1e6>• Hysteria</font> - balance of stability and speed, perfectly suited for gaming.\\n<font color=#2884BA>• HTTPS</font> - suitable only for websites and apps via Proxifier.\\n\\n🚀 Start — for basic browsing\\n🎮 Gamer — for active users\\n👑 Family+ — for high traffic volumes","applicationCabinetButtonNew":"Create New Order","applicationCabinetButtonNewCancel":"Back to orders list","applicationCabinetButtonAddBalance":"Top up balance","applicationCabinetIsTrial":"Free Trial Access","applicationCabinetPing":"Ping to server: %1%ms","applicationCabinetEndActive":"Subscription access until: %1%","applicationCabinetEndNotActive":"Subscription not paid. Click here and activate it via the «⌛️ Renew Order» button in the dropdown menu.","applicationCabinetOrderTraficWeek":"per week","applicationCabinetOrderTraficMonth":"per month","applicationCabinetOrderPriceDay":"/ day","applicationCabinetOrderPriceDays":"/ %1% days","applicationCabinetOrderPrice":"%1% for %2% days 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 View plan details 📋","tarif_desc_drive":"📚 Perfect for getting to know our service and light social media browsing. Allows you to fully test VPN / Proxy work 😉","tarif_desc_start":"📚 Suitable for social media and light smartphone use with average screen time ≈4h per day. On PC, the monthly limit may be consumed faster; consider your activity.","tarif_desc_gamer":"🎮 For those who spend active time on PC:<br/><font color=#DA7F00>•</font> Games via Steam and other launchers<br/><font color=#DA7F00>•</font> Voice communication in messengers for gamers with reliable connection via Proxy<br><font color=#DA7F00>•</font> Watching Twitch with 7TV plugin at 1080p and higher<br/><font color=#DA7F00>•</font> YouTube and other social networks where a secure connection is important\\n\\n✅ This traffic is enough for smartphone and PC with active use of ≈5-6 hours per day.","tarif_desc_unlim":"🚀 Plan for high traffic volumes and any tasks: PC, laptops, smartphones, tablets, TV, and other devices.\\n\\n🧡 One key can be used on multiple devices — this traffic is enough for family and your friends!","tarif_desc_ultra":"💠 Premium plan for a wide range of tasks and very active users!\\n\\nSuitable for those approaching the 1 TB limit and wanting to use the service without worrying about traffic.\\n\\n💜 With this option, you can safely download large files, stream, play, and use VPN / Proxy on a dozen devices.","applicationCabinetOrderBack":"Back","applicationCabinetOrderSelect":"☑️ Order this plan ☑️","applicationCabinetOrderSelectTrial":"🎁 Activate trial access for %1% hours 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Get trial access for %1% hours as a bonus?","applicationCabinetOrderSelectAccept":"Confirm action ✅\\nAmount to be deducted: %1%\\n\\n💰 You currently have: %2%","applicationCabinetOrderTrial":"🎁 %1%-hour trial period available","applicationCabinetOrderTrialUsed":"You have already used the trial access 🙁","applicationCabinetOrderSelectErrTimeMax":"Maximum renewal period: 2 months","applicationCabinetOrderSelectErrBalance":"Insufficient funds on internal balance for the order 🙁","applicationCabinetOrderSelectErrTrialCfg":"This plan cannot be ordered in trial mode 🙁","applicationCabinetOrderSelectErrTrial":"You have already used this trial plan 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Trial period is available only for users authorized via Telegram. Please log in via Telegram (or link Telegram in Settings) and try again.","applicationCabinetOrderSelectSuccess":"Order completed successfully 🎉","applicationCabinetOrderSelectSuccessTrial":"Trial order completed successfully 🎉","applicationCabinetOrderSelectErrOrder":"Failed to create your order 😕","applicationCabinetOrderEditChangeTarif":"♻️ Change plan ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ This is current plan","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>After changing the plan, your order will have<br>approximately %1% left</font><br>days:hours:minutes:seconds<br><br>Press the button below to confirm","applicationCabinetOrderEditChangeTarifExpired":"❌ Cannot change plan for an expired order. You must first renew it (make it active) and then change the plan. Connection time will be recalculated based on the chosen plan.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>You can change the plan every %1% h.</font><br><br>When changing the plan, remaining days from the previous order are transferred to the new one considering current price and remaining time.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>You have recently changed the plan!</font><br>Next change will be available in<br>%1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Confirm change to selected plan ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Are you sure you want to change to the selected plan?\\n\\n⚠️ Note that the next plan change will only be available in %1% h.","applicationCabinetOrderEditAuto":"Order auto-renewal","applicationCabinetOrderEditAutoOn":"✅ Active","applicationCabinetOrderEditAutoOff":"❌ Not active (in ⚙️Settings)","applicationCabinetOrderEditAutoDesc":"When the order expires, if you have sufficient funds, the system will automatically renew it if auto-renewal is enabled.","applicationCabinetOrderEditResetTime":"Traffic reset","applicationCabinetOrderEditCreated":"Order activated","applicationCabinetOrderEditSpent":"Total spent","applicationCabinetOrderEditOverTime":"Subscription active until","applicationCabinetOrderChangeTarif":"♻️ Change Plan","applicationCabinetOrderEditParams":"⚙️ Settings","applicationCabinetOrderEditParamsTitle":"⚙️ Order Settings: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Order Label","applicationCabinetOrderEditParamsLabelDesc":"You can add labels to your orders to easily identify where each is used","applicationCabinetOrderEditParamsPassword":"🔸 Your connection password (4-12 characters)","applicationCabinetOrderEditParamsIP":"🔸 IP address for passwordless access","applicationCabinetOrderEditParamsIPDesc":"In this field, you can specify your personal IP address (getting it from 2ip.io, for example) to access our Proxy server without entering a login and password where required. This is more convenient and equally secure.\\n⚠️ Important: this function works only when connecting via HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"To secure the Proxy connection, we have generated a random password. If necessary, you can change it. It is required for authentication via login and password where needed.","applicationCabinetOrderEditSave":"✔️ Save all changes ✔️","applicationCabinetOrderEditSaveOk":"Changes successfully applied ✅","applicationCabinetOrderEditSaveFail":"❌ Settings were not saved. %1%","applicationCabinetOrderEditLinkVpn":"📚 VPN Instructions","applicationCabinetOrderEditLinkProxy":"📚 Proxy Instructions","applicationCabinetOrderEditResetPass":"🔄 Reset Proxy Password","applicationCabinetOrderEditResetPassAccept":"🔄 Are you sure you want to reset the password?\\n\\nThe old password will stop working, and you will need to reconfigure the Proxy connection!","applicationCabinetOrderEditResetUid":"🔄 Reset VPN subscription link","applicationCabinetOrderEditResetUidAccept":"🔄 Are you sure you want to reset the VPN subscription link?\\n\\nThe old link and access keys will stop working, including backup/relay locations. You will need to add the new subscription link in your VPN app again!","applicationCabinetOrderEditResetUidDesc":"Resets the subscription link and VPN access keys (VLESS and Hysteria, main location and relay). Use this if the link may have been leaked. After reset, the old link will stop working — add the new one from the VPN instructions.","applicationCabinetOrderEditResetUidOk":"VPN subscription link has been reset. Add the new link in your VPN app — the previous link and keys will no longer work.","applicationCabinetOrderEditLinkAccept":"💬 A message with details and instructions for connecting to our VPN / Proxy has been sent to you.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS port*: `%4%`\\n%5%\\n🔑 *Password*: `%6%`","proxyInstructionReserveSubItem":"👤 *Login* %1% » %2%: `%3%`","proxyInstruction":"Instructions for Proxy connection:\\n\\n%1%\\nWe provide access to Proxy in all our locations at once. ✅ *We recommend trying the direct connection to the European server first.* If it works incorrectly — try the RU » Europe method.\\n\\n\\n*Data for direct Proxy connection:*\\n%2%\\n🌐 HTTPS port: `%3%`\\n👤 Login: `%5%`\\n🔑 Password: `%6%`\\n\\n\\n*For some RF clients:*\\n_(redirects traffic via RF if direct connection to Europe is unavailable. In this mode, be sure to use the correct login from the block below — it is different)_\\n%7%\\n\\n\\n*For working with Proxy connection:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Instructions](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Instructions](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 PC on Windows and macOS: [Proxifier](https://www.proxifier.com/) — [Instructions](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Instructions for VPN connection:\\n\\n%1%\\nWe provide access to VPN in all our locations! *Each link below = personal key*, and a page with connection instructions. \\n✅ *We recommend adding Vless from Multi-link first*, if it works incorrectly — try other protocols or the backup option.\\n\\n\\n\\n🔹 *Simple explanation for beginners:*\\n▪️ Click [this link](%5%) and follow the instructions.\\n\\n\\n\\n🔸 *For advanced users*:\\n🌏 All locations in multi-link\\n- %2%\\n\\n*For some RF clients:*\\n%3%\\nThis method is for those who don\'t have a direct connection to European servers and need a workaround via a Russian server.\\n\\n*Direct access to location on all protocols:*\\n%4%\\n\\n⚠️ If the links above do not open, enable the backup link display in settings.%7%","vpnInstructionRoute":"\\n\\nℹ️ Clients using HAPP can add custom routing rules. You can use the pre-configured settings below or create your own by specifying the necessary domains and IP addresses to bypass the VPN. \\n%1%","vpnInstructionAll":"All protocols at once","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Europe","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Your personal VPN access key*\\n\\nAll connection data and the list of recommended apps are available at the link:  \\n👉 [Open connection link](%2%)\\n\\n⚠️ *Keep this link secret!* \\nIt is your personal authorization key for the VPN.\\n\\n✅ To activate subscription:  \\nCopy the link and paste it into your chosen app — current settings will load automatically.\\n\\n📦 Want to manage all orders?  \\nUse [🔑 the subscription link for all connections](%4%).\\n\\n───────────────\\n🌐 *Your Proxy connection data:*\\n🌐 *Server address:* `%6%%7%`\\n🌐 *HTTPS port:* `%9%`\\n👤 *Your login:* `%10%`\\n🔑 *Connection password:* `%5%`\\n\\n⚠️ If the main server is unavailable, you can connect to the backup server:  \\n%11% *Server address:* `%12%`  \\n🌐 *HTTPS port:* `%9%`  \\n👤 *Your login:* `%13%.%10%`  \\n🔑 *Connection password:* `%5%`\\n\\n💡 Proxy can be used in any application that supports Proxy connection.  \\nFor example, *for Chrome browser*, we recommend extensions:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*VPN connection instructions:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*How to connect to Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows apps](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Web Browser](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Order data `%1%`\\n⌛️ Plan: `%2%`\\n⚙️ Auto-renewal: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Attention! Be sure to update the configuration in the settings of the app where you use this order.\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Enabled","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Disabled","faqButtonCommand":"🔑 Our VPN and Proxy can be used on a wide list of devices with *no limits on the number of connections* to a single access key! Setup is very simple and takes no more than two minutes, after which everything is reduced to an ON/OFF button.\\n\\n✅ Once you place your first order _(including the trial)_, you will receive two messages with details and instructions for connecting to both VPN and Proxy.\\n\\n\\n📦 *If you don\'t have an order yet:*\\n[Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ➛ Account ➛ Create new order ➛ Choose a suitable one by clicking on it and proceed to plan details ➛ Order.\\n\\n\\nIf you have any questions, contact us via the app, we will definitely help ❤️","applicationCabinetOrderEditPay":"⌛️ Renew order (for %1% days for %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Order successfully renewed for %1% days.\\n\\nOrder status will be updated within a few minutes.","applicationCabinetOrderEditPayErr":"Failed to renew order 🙁","applicationCabinetOrderRemove":"Delete order","applicationCabinetOrderRemoveFailed":"❌ Cannot delete an active order!","applicationCabinetOrderRemoveConfirm":"Are you sure you want to delete the order? 🤨\\n\\nIf needed, you can always create a new order. If you have issues with the order, contact our support service, and we\'ll be happy to help!","applicationCabinetOrderRemoveConfirmMessage":"✅ Order successfully deleted!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Failed to delete order!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Protocols: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Your balance has been topped up by %1%","applicationAdminDashboard":"📊 Dashboard","applicationAdminUsers":"👥 Users (x%1%)","applicationAdminUsersActive":"🫂 Active users (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Current balance: %1% | %2% USD","applicationAdminUserRef":"Referrals (x%1% | %2%)","applicationAdminUserRefTarget":"Referral from","applicationAdminUserOrders":"📦 Orders (x%1% total | x%2% active)","applicationAdminUserRefs":"💸 Referrals (x%1% total)","applicationAdminUserPayments":"💸 Payments (x%1% total) | Credited %2%","applicationAdminUserPaymentsType":"Payment system: %1%","applicationAdminUserPaymentsStatus":"Payment status: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Cancel payment and deduct amount from balance","applicationAdminUserPaymentsStatusSetFailAccept":"Are you sure?\\n\\nIf confirmed, payment status will change and\\n\\n❌ %1% will be deducted from user\'s balance","applicationAdminUserPaymentsStatusSetOk":"✅ Confirm payment and credit amount to balance","applicationAdminUserPaymentsStatusSetOkAccept":"Are you sure?\\n\\nIf confirmed, payment status will change and\\n\\n✅ user\'s balance will be topped up by %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Action performed successfully ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Action failed!\\nServer response: %1%","applicationAdminUserCreated":"Created: %1%","applicationAdminUserUpdated":"Modified: %1%","applicationAdminUserLast":"🚪 Last login: %1%","applicationAdminUserOrdersTotal":"💰 Total top-ups: %1%","applicationAdminUserResetOrderChangeBlock":"Reset stuck order lock","applicationAdminUserResetOrderChangeBlockAccept":"Are you sure you want to reset the stuck order lock?","applicationAdminUserMedia":"Partner Program","applicationAdminUserMediaOn":"Status: ✅ Partner","applicationAdminUserMediaOff":"Status: ❌ NOT Partner","applicationAdminUserMediaConfirm":"Status: ❌ NOT Partner","applicationAdminUserMediaTotal":"Total income: %1%","applicationAdminUserMediaPayed":"Paid to partner: %1%","applicationAdminUserMediaPayWait":"Amount to be paid: %1%","applicationAdminUserMediaPayWaitButton":"💸 Mark payout","applicationAdminUserMediaPayWaitButtonAccept":"Are you sure you want to mark the payout as completed? Transaction amount %1% (%2%)\\n\\n💸 After confirmation, the user will be notified that the funds have been paid and are on their way.","applicationAdminUserMediaPayWaitNotify":"Dear partner! \\n\\n💸 An amount of *%1%* has been paid to you under the partner program. Funds are on their way and will take some time to reach your credentials.","applicationAdminUserMediaPercent":"%2%%1%% Percentage of referral to income","applicationAdminUserMediaPercentDesc":"This percentage indicates how much of the referral top-up will be paid to the user as partner program income","applicationAdminUserGiveOrder":"Give order to user","applicationAdminUserGiveOrderDays":"Number of days","applicationAdminUserGiveOrderButton":"Give","applicationAdminUserGiveOrderButtonConfirm":"You are about to give the order\\n\\"%1%\\"\\nto user for %2% days?","applicationAdminUserEditButton":"User Management","applicationAdminUserEditPromos":"Used promo codes: %1%","applicationAdminUserEditBalance":"Edit balance","applicationAdminUserAddBalance":"Add to balance","applicationAdminUserEditBalanceAccept":"Are you sure you want to edit the user\'s balance?","applicationAdminUserEditBalanceAcceptFail":"Failed to edit balance. The user\'s balance might have changed during editing\\nServer response: %1%","applicationAdminUserEditBalanceAcceptOk":"Balance successfully edited","applicationAdminUserEditBalanceChangeNotify":"Administrator changed your balance to *%1%*.\\n💰 Current balance: *%2%*\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Administrator added *%1%* to your balance.\\n💰 Current balance: *%2%*\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Search","applicationAdminOrders":"🛒 All orders (x%1%)","applicationAdminOrdersActive":"💳 Active orders (x%1%)","applicationAdminOrdersExpired":"⛔ Stopped orders (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% days","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Traffic: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Plan change lock","applicationAdminOrderReload":"Reload MarzBan data","applicationAdminOrderReloadAccept":"⚠️ Reload data?\\n\\nThis will load order data from MarzBan and update it in the app!","applicationAdminOrderReloadAcceptDone":"✅ Data reload request sent!","applicationAdminOrderReloadAcceptFail":"❌ Failed to reload order data!","applicationAdminOrderResetChangeTime":"Reset plan change time","applicationAdminOrderResetChangeTimeAccept":"Are you sure? Once confirmed, the user will be able to change the plan manually","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Request successful. User can now change the plan manually","applicationAdminOrderResetTraffic":"Reset traffic","applicationAdminOrderResetTrafficAccept":"⚠️ Cancel order?\\n\\nThe user will NOT receive a notification!","applicationAdminOrderResetTrafficAcceptOk":"✅ Done","applicationAdminOrderReturn":"Cancel order","applicationAdminOrderReturnAccept":"⚠️ Cancel order?\\n\\nThe user WILL receive a refund for the UNUSED period!","applicationAdminOrderReturnAcceptDone":"⚠️ Order deleted. %1% refunded to user\'s balance.","applicationAdminOrderReturnNotify":"⚠️ Administrator canceled your order\\n🛒 `%1%` and returned *%2%* to your balance.\\nYou can create a new order to stay connected to the free Internet by visiting the app.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ Create New Order","applicationAdminOrderRemove":"Delete order","applicationAdminOrderRemoveAccept":"⚠️ Delete order?\\n\\nIf the order is still active, funds WILL NOT be returned!","applicationAdminOrderRemoveAcceptDone":"Order deleted","applicationAdminOrderAddTime":"Extend order (%1% days)","applicationAdminOrderAddTimeAccept":"⚠️ Extend order (%1% days)?\\n\\nThis will NOT change the user\'s balance!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Administrator extended your order\\n🛒 `%1%` for *%2% days* 📆\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ Click on the specified order for details.","applicationAdminPromos":"🎁 Promo codes (x%1%)","applicationAdminPaymentsLast":"⏰ Last payments (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Last successful payments (x%1%)","applicationAdminPromosCreate":"Create promo code","applicationAdminPromoID":"Name: %1%","applicationAdminPromoUSED":"Uses: %1%","applicationAdminPromoCOUNT_USE":"Limit: %1%","applicationAdminPromoBALANCE":"Amount: %1%","applicationAdminPromoEditID":"Name","applicationAdminPromoEditCOUNT_USE":"Usage count (max)","applicationAdminPromoEditAMOUNT":"Amount in $","applicationAdminPromoEditCATEGORY":"Category","applicationAdminPromoEditCATEGORYEmpty":"Regular / no category","applicationAdminPromoEditCATEGORYMedia":"Media promo","applicationAdminPromoEditCATEGORYNew":"For newcomers","applicationAdminPromoEditSave":"Save promo code","applicationAdminPromoEditPromo":"Edit","applicationAdminPromoCategory":"Category: %1%","applicationAdminPromoSendUseList":"List of users who applied","applicationAdminPromoRemovePromo":"Delete","applicationAdminPromoRemovePromoAccept":"Are you sure?","applicationAdminAddNode":"Add new node","applicationAdminAddNodeDesc":"This section allows you to deploy the entire project on a new node in 2 clicks. It only installs everything needed, but does not add the node to the nodes list","applicationAdminAddNodeIP":"Server IP address","applicationAdminAddNodeHostname":"Server subdomain (s1, s2, etc., without dot)","applicationAdminAddNodeHostnameDesc":"The specified subdomain will be automatically set in CloudFlare with all parameters. If it exists, it will be overwritten.","applicationAdminAddNodeUsername":"Username (root)","applicationAdminAddNodePassword":"User password (root)","applicationAdminAddNodePasswordDesc":"If password is not specified, SSH key authorization will be used. Ensure your SSH key is added to the node.","applicationAdminAddNodePasswordKeyInfo":"Attention. Password not specified, SSH key authorization will be used. Ensure your SSH key is added to the node.","applicationAdminAddNodeSshPort":"SSH Port (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Required permissions: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Click to get token","applicationAdminAddNodeStart":"Perform deploy","applicationAdminAddNodeStarted":"Deploy process started, do not close the page. If not finished in 5 minutes, it might be stuck.","applicationAdminAddNodeDoneOk":"Deploy completed successfully","applicationAdminAddNodeDoneFail":"Error: %1%","applicationAdminAddNodeClearLogs":"Clear logs","applicationAdminInstallNode":"Node Deployment","applicationAdminCoreSettings":"Core Settings","applicationAdminCoreSettingsDesc":"This section allows configuring basic system parameters. Parameters are applied on the fly.","applicationAdminSaveCoreSettings":"Save settings","applicationAdminCoreSettingsSaved":"Settings saved successfully","adminBackupTitle":"Telegram backup","adminBackupInterval":"Automatic backups are created every %1% minutes and sent to backup admins in Telegram.","adminBackupLastRun":"Last backup: %1%","adminBackupNever":"No backup has been recorded yet","adminBackupRunning":"Backup in progress","adminBackupOffline":"Backup service is not responding. The request will run when the service is available.","adminBackupCreate":"Create backup now","adminBackupCreateConfirm":"Create a backup now and send it to Telegram?","adminBackupCreateOk":"Backup started. Files will be sent to Telegram when ready.","adminBackupCreateFail":"Failed to start backup: %1%","adminBackupCreateBusy":"A backup is already running","adminBackupLastResultOk":"Last result: success","adminBackupLastResultFail":"Last result: error (%1%)","applicationAdminCoreName.projectName":"Project name","applicationAdminCoreName.projectMain":"Main domain","applicationAdminCoreName.projectBot":"Project bot login","applicationAdminCoreDesc.projectBot":"Which bot interacts with users. Enter login without @","applicationAdminCoreName.admins":"Admins IDs","applicationAdminCoreDesc.admins":"Enter IDs separated by commas, no spaces. Example: `123456789,987654321`. Don\'t delete yourself!)","applicationAdminCoreName.backup_admins":"Admins IDs for backups","applicationAdminCoreDesc.backup_admins":"Bot will send backups to these admins. Enter IDs separated by commas. Example: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Max renewal period (in months)","applicationAdminCoreDesc.order_end_limit_month":"User cannot renew order for a period longer than specified","applicationAdminSendMessage":"Bulk Message","applicationAdminSendMessageTargets":"Number of people to receive the message","applicationAdminSendMessageType":"User filtering type","applicationAdminSendMessageTypeAll":"All users","applicationAdminSendMessageTypeOrders":"Specific orders (any)","applicationAdminSendMessageTypeOrdersActive":"Specific orders (active)","applicationAdminSendMessageTypeHas":"Has at least 1 order","applicationAdminSendMessageTypeNotHas":"Has no orders","applicationAdminSendMessageTypeHasActive":"Has at least 1 active order","applicationAdminSendMessageTypeHasUnActive":"Has at least 1 INactive order","applicationBalanceErr":"Error generating payment: %1%","applicationBalanceErrBalanceLimit":"Your account already has the maximum allowed amount (%1%)","applicationBalanceErrBalanceLimitButton":"Unavailable","applicationBalanceErrData":"Payment system failed to generate payment. Please try later.","applicationBalanceErrNetwork":"Network error. Please try later.","applicationBalanceErrCurrency":"Currency error. Please try later.","applicationBalanceErrAuth":"Auth error","applicationBalanceErrPaymentLink":"Failed to get payment link","applicationBalanceSettingsTitle":"Currency selection","applicationBalanceTitle":"Balance Top-up Section","applicationBalanceSelect":"Select display currency","applicationBalanceEmail":"Your email","applicationBalancePlatform":"Payment platform","applicationBalanceAmount":"Top-up amount (in %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Total payment amount: ≈%1%</font>\\n\\n<font color=#F28100>If you are someone\'s referral,\\n%2% will be returned as 20% cashback!</font>","applicationBalanceAmountLimit":"Minimum amount: %1%\\nMaximum amount: %2%\\n\\n💵 <font color=#00AE09>Your payment method: %4%</font>\\nPayment system commission: %3%%\\n\\nAfter payment, balance is credited automatically within a few minutes; you will receive a message with payment status.","applicationBalanceAmountDesc":"Top-up via %1% service","applicationBalanceAmountButton":"Go to payment page","applicationBalanceAmountButtonLoading":"Loading...","applicationBalanceAmountButtonErr":"❌ Invalid amount ❌","applicationBalanceCurrency":"Payment method","applicationBalanceCurrencyDesc":"Payment system commission: ≈%1%%","applicationServersTitle":"Server Status","paymentCompleteNotify":"🎉 Your balance has been topped up by <b>%1%</b>.\\n\\nPayment ID: <b>%2%</b>\\n(Required if contacting <a href=\\"https://t.me/rocketman_vpn\\">support</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyRef":"🎉 Your balance has been topped up by <b>%1%</b>.\\nAs a referral of @%4%, we credited a bonus of <b>%3%</b> (%5%%)\\n\\nPayment ID: <b>%2%</b>\\n(Required if contacting <a href=\\"https://t.me/rocketman_vpn\\">support</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyRefHost":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> (%3%%) for balance top-up by your referral @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyAdmin":"💵 User %1% [UID: %7%] topped up balance by <b>%2%</b>.\\n💰 Project net profit: +<b>%5%</b>\\n\\nPayment system: <b>%6%</b>\\nPayment ID: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Attention ❗️\\nA refund request was formed for payment `%1%`.\\n\\nAs funds were returned in full, *%2%* was deducted from your app balance.\\n\\nIf you have questions, contact [support](https://t.me/rocketman_vpn).\\n\\n🚀 [Launch App](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Nodes","adminXrayVersionTitle":"Xray-core","adminXrayVersionCurrent":"Current version: %1%","adminXrayVersionLatest":"New version available: %1%","adminXrayVersionUnknown":"Install script does not pin a version","adminXrayVersionLoading":"Checking version…","admin-routing":"🔀 Routing","admin-presets":"📋 Presets","admin-firewall":"📜 Firewall records (x%1%)","admin-firewall_add":"New firewall record","admin-nav-messages":"Bulk Messages","admin-nav-firewall":"Firewall","admin-nav-logs":"Admin Logs","logRecord-title":"📊 Admin logs (x%1%)","logRecord-title-user":"📜 User logs (x%1%)","logRecord-log-time":"Created: %1%","logRecord-log-who":"Who","logRecord-log-target":"Target","logRecord-log-reason":"Text: %1%","logRecord-setPaymentStatus":"Change payment status %1%","logRecord-removePromo":"Delete promo code %1%","logRecord-editPromo":"Edit promo code %1%","logRecord-editBalance":"Edit balance (%1%$ -> %2%$)","logRecord-returnOrder":"Cancel order %1% (%2%$)","logRecord-addOrder":"Give order %1%","logRecord-payOrder":"Renew order %1% for %2% days","logRecord-partnerNotify":"Payout to partner %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"SBP (Fast Payment System)","paymentMethodCrypto":"Cryptocurrency","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Failed to detect user data for link formation. Possibly user blocked our bot 😐","partner_title":"🏆 Partner Program 🏆","partner_desc":"You are a participant in the partner program. In addition to the referral bonus, you will receive financial deductions.\\n\\nYour current rate - %1%% of referral balance\\n\\nTotal earned: %2%\\nCurrent balance: %3%","ref_title":"🏆 Referral System 🏆","ref_desc":"Invite friends and acquaintances and get bonuses on your balance!\\n\\n<font color=#2DA618>From each referral, you\'ll get <font color=#54E13B>%1%</font> for their first orders and <font color=#54E13B>%2%%</font> of all their top-ups.</font>\\n\\n<font color=#00B7B7>All your referrals will get <font color=#15DBDB>%3%</font> bonus after first order (including trial) and <font color=#15DBDB>%4%%</font> cashback on all future top-ups.</font>\\n\\nThis system is beneficial for both you and your referrals 😉","ref_stats":"Your Statistics","ref_stats_data":"Number of referrals: %1%\\nBonus received: %2%","ref_link_text":"Your referral data","ref_link_text_copy":"📋 Link+text","ref_only_link_copy":"🔗 Link","ref_link_text_copy_sendText":"Hi! I use a convenient way to protect my data online and highly recommend it to you 😎\\n\\nPlus, by using my link, you\'ll get a %1% bonus after your first order (including trial) and a lifetime %2%% cashback on all balance top-ups 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Your referral link and additional text copied to clipboard.\\n\\nUse this to invite friends and gain joint benefits 😎","ref_only_link_copy_alert":"🔗 Your referral link copied to clipboard.\\n\\nUse it to invite friends and gain joint benefits 😎","ref_link_text_share":"💌 Share","ref_link_text_share_message":"Hi! I use a convenient way to protect my data online and highly recommend it to you 😎\\n\\nPlus, by using my link, you\'ll get a %1% bonus after your first order (including trial) and a lifetime %2%% cashback on all balance top-ups 🎉\\n","ref_message_personal":"You cannot register using your own referral link 😐","ref_message":"🎁 Referral System:\\nYou successfully registered as a referral of user @%1% 🎉\\n\\nYou will get a <b>%2%</b> bonus on your first order (including trial) and a lifetime <b>%3%%</b> cashback on each top-up!","ref_message_host":"🎁 Referral System:\\n🎉 User @%1% registered as your new referral 🎉\\n\\nYou will get a <b>%2%</b> bonus on their first order (including trial) and a <b>%3%%</b> cashback from each of their top-ups.","ref_message_order":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> on your balance","ref_message_order_host":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> on your balance from user @%2%","traffic_limit_notify_close":"⚠️ Traffic is running out for order `%1%` with plan `%2%`! If this message appears often, consider changing to a more advanced plan to stay connected ❤️\\n\\n🚀 You can do this by [launching the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on order ⇒ ♻️ Change Plan ♻️","traffic_limit_notify_end":"❗️ ATTENTION ❗️ Traffic exhausted for order `%1%` with plan `%2%`. It will reset on %3%. Consider upgrading to stay connected.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on order ⇒ ♻️ Change Plan ♻️","traffic_limit_notify_restore":"🎉 Traffic statistics reset for order `%1%` with plan `%2%`. It is now fully available again :)\\n\\n🚀 [Launch App](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Apply Promo Code","example":"Example","deleteMessageFailed":"❌ Failed to delete message. It might be too old or already deleted.","cryptoPayTitle":"Payment via Cryptocurrency","cryptoPayUserId":"User ID","cryptoPayAmount":"Amount to pay (USDT)","cryptoPayInstruction":"Transfer the specified amount in USDT to the provided address","cryptoPayLoading":"Loading details...","cryptoPayErrorNoParam":"Parameter crypto_id is missing in the link.","cryptoPayErrorInvalidData":"Invalid payment data.","cryptoPayErrorParse":"Error processing payment data. Try refreshing or contact support.","cryptoPayWallet":"Wallet address for transfer","cryptoPayNetwork":"Network (blockchain)","cryptoPayCopy":"Copy","cryptoPayCopyAmountAlert":"Amount copied to clipboard!","cryptoPayCopyWalletAlert":"Wallet address copied to clipboard!","cryptoPayWarning":"CAREFULLY check credentials and amount before paying! We cannot guarantee credit in case of error.","telegramPayment":"✅ An invoice has been generated for you\\n\\n⚖️ Payment amount: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 User ID: <b>%7%</b>\\n📋 Payment ID: <b>%6%</b>\\n\\n🔗 Follow the link to pay: %5%","orderManipulationBlock":"Your previous order is still processing. Please wait for completion or contact support for help.","subPage.orderInfo":"Below are all available connection methods for your order through this app","subPage.userInfo":"Below are all available connection methods for all your active orders through this app","subPage.orderId":"🛒 Order ID: %1%\\n⬇️ Select end connection region:","subPage.nodeInfo":"📍 Bypass point: %1%\\n⚠️ This means all traffic will first go through it for masking.","subPage.protocolInfo":"Connection protocol: %1%","subPage.allTitle":"All Orders","subPage.expiredNotifyList":"❌ Subscription expired\\nRenew VPN in bot\\n%1%","ping.admin.initOk":"✅ System initialized, all nodes available in normal mode.","ping.admin.initFail":"❌ System initialized, but some nodes are unavailable:\\n\\n%1%","speedtest.admin.failTest":"❌ Speed test failed. Please check node status.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Low connection speed recorded (%2% Mbps download, %3% Mbps upload). Check status.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Node restored normal connection speed (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ Connection speed issues detected on the server","applicationServersSpeedtestLastSpeed":"Last speed test (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Previous speed test (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ No speed tests performed on this server yet","applicationServersPingIssueDetected":"❌ Server not responding to ping requests","actionUpdateStartNodes":"⚠️ Node update procedure started (%1%), nodes will be restarted shortly. A notification will be sent upon completion.","actionUpdateStartHeader":"Update procedure started:","actionUpdateStartSite":"• Main project page is being updated","actionUpdateStartApp":"• Backend application is being updated","actionUpdateStartProxy":"• Proxy or xray service is being updated (Nodes: %1%)","actionUpdateStartMTProto":"• MTProto server is being updated","actionUpdateStartFirewall":"• Updating firewall (Nodes: %1%)","actionUpdateStartBackup":"• Updating child API interface (Nodes: %1%)","actionUpdateStartFooter":"Nodes will be restarted shortly. A notification will be sent upon completion.","actionUpdateCompletedNodes":"✅ Node update procedure (%1%) completed, nodes restarted and should be active","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Fast and secure","mtproto.subtitle.2":"Telegram access","mtproto.description.1":"Free proxy server for a stable connection to Telegram.","mtproto.description.2":"No registration, no limits, full privacy.","button.connect":"Connect Proxy","button.copy":"Copy Link","button.copied":"Copied","link.label":"Manual connection link","feature.encryption.title":"End-to-end Encryption","feature.encryption.description":"Your messages remain confidential. We have no access to your chats.","feature.free.title":"No Limits","feature.free.description":"Free access with no registration or traffic limits.","feature.rocketman.title":"More Features","feature.rocketman.description":"This proxy works only for Telegram. For full protection, use RocketMan-VPN.","rocketman.title":"RocketMan VPN — Your reliable friend","rocketman.description":"This MTProto proxy is an additional project of RocketMan VPN. With us, you get full protection in all apps and favorite services. Try for free and evaluate the quality!","rocketman.button":"Open RocketMan VPN","howto.title":"How to connect?","howto.step1.title":"Click \\"Connect Proxy\\"","howto.step1.description":"Or copy the link and connect manually","howto.step2.title":"Open Telegram","howto.step2.description":"The link will automatically launch the app","howto.step3.title":"Confirm","howto.step3.description":"Click «Connect» in the dialog box","web.orders":"My Orders","web.settings":"Settings","web.exit":"Exit","web.back":"← Back","settings.accountInfo":"Account Info","settings.language":"Language","settings.currency":"Display Currency","settings.currencyDesc":"Select currency for prices and balance display in the app.","settings.webCredentials":"Web Login Details","settings.webCredentialsDesc":"These details are used for logging into the web interface outside Telegram. We recommend a complex password.","settings.login":"Login","settings.loginPlaceholder":"Enter new login","settings.newPassword":"New Password","settings.passwordPlaceholder":"At least %1% characters","settings.repeatPassword":"Repeat Password","settings.repeatPasswordPlaceholder":"Repeat new password","settings.passwordMismatch":"Passwords do not match","settings.saved":"Saved!","settings.saveError":"Save Error","settings.saving":"Saving…","settings.saveCredentials":"Save Credentials","settings.show":"Show","settings.hide":"Hide","settings.copy":"Copy","settings.reset":"Reset","settings.apiKeyHint":"Use API key to log in to the <a href=\\"https://%1%\\" target=\'_blank\'>web interface</a> without Telegram or for integration. Do not share with third parties. This key provides full access to your account","settings.referral":"Referral (Inviter ID)","settings.referralDesc":"If you missed the referral link, you can set the ID of the inviter here. It will be applied only once.","settings.referralApplied":"Inviter ID","settings.referralAppliedAlert":"Inviter ID copied to clipboard.","settings.referralHostId":"Your inviter ID","settings.referralHostIdPlaceholder":"Enter inviter user ID (digits)","settings.referralHostIdInvalid":"Invalid ID format. Use digits only.","settings.referralApply":"Apply inviter ID","settings.referralSaved":"Referral applied!","settings.referralErr.already_applied":"Referral has already been applied.","settings.referralErr.invalid_ref_host":"Invalid inviter ID.","settings.referralErr.same_account":"You cannot use your own ID as a referral.","login.tabCredentials":"Login and Password","login.tabApiKey":"API Key","login.tabRegister":"Register","login.labelLogin":"Login","login.labelPassword":"Password","login.labelConfirmPassword":"Confirm Password","login.labelApiKey":"API Key","login.placeholderLogin":"Enter login","login.placeholderPassword":"Enter password","login.placeholderConfirmPassword":"Confirm password","login.placeholderApiKey":"Enter API key","login.signIn":"Sign In","login.signInApiKey":"Sign in via API Key","login.signUp":"Sign Up","login.signingIn":"Signing in…","login.signingUp":"Signing up…","login.orUseApiKey":"or use API Key","login.orUseCredentials":"or use Login and Password","login.switchToApiKey":"Log in via API Key","login.switchToCredentials":"Log in via Login and Password","login.errLoginRequired":"Enter login and password","login.errPasswordRequired":"Enter password","login.errConfirmPasswordRequired":"Confirm password","login.errPasswordMismatch":"Passwords do not match","login.errApiKeyRequired":"Enter API key","login.errIncorrect":"Incorrect login or password","login.errInvalidKey":"Invalid API Key","login.errServer":"Server error, try again","login.errRegistration":"Registration failed","login.tabTelegram":"Via Telegram","login.tg.title":"Telegram Login","login.tg.instruction":"1. Send the command below to <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a> bot\\n2. After sending, click «Confirm Login»","login.tg.commandLabel":"Bot command:","login.tg.showCommand":"Show","login.tg.hideCommand":"Hide","login.tg.copyCommand":"Copy","login.tg.copied":"Command copied!","login.tg.timerLabel":"Code valid for: %1%","login.tg.timerExpired":"Code expired","login.tg.verifyButton":"Confirm Login","login.tg.verifying":"Verifying…","login.tg.requestNew":"Request new code","login.tg.loading":"Generating code…","login.tg.enter_correct":"Identity confirmed. Return to site and click \\"%1%\\" to finish","login.tg.enter_fail":"Action failed. Ensure the key is correct and not expired","login.tg.errNotSent":"Failed to confirm login. Ensure you sent the command to the bot. If expired, request a new code.","lang.ru":"Russian","lang.en":"English","lang.uk":"Ukrainian","footer.info":"MTProto proxy works only with official Telegram apps","instructionModalTitleVpn":"VPN Connection Instructions","instructionModalTitleProxy":"Proxy Connection Instructions","instructionModalSendToTg":"📩 Send to Telegram","instructionModalSentToTg":"Instructions have been sent to your Telegram private messages","settings.name":"Your Name","settings.nameDesc":"Enter a name for personalized communication in the app. It is public and can be used to display to other users, for example in the referral system","settings.namePlaceholder":"Enter name (3-15 characters)","settings.nameInvalid":"Only Cyrillic, Latin, numbers and spaces allowed (3-15 characters)","settings.promoTitle":"Promo Code Activation","settings.promoDesc":"If you have a promo code, enter it here to receive a nice bonus to your balance.","settings.promoPlaceholder":"Enter promo code","settings.promoApply":"Apply promo code","settings.promoApplied":"Promo code successfully applied!","adminDashboardTitle":"Dashboard Statistics","adminDashboardActiveOrders":"Orders Activity","adminDashboardActiveLabel":"Active","adminDashboardExpiredLabel":"Expired","adminDashboardOrdersByTariff":"Orders by Tariff","adminDashboardPayments":"Payments Status","adminDashboardTrial":"Trial Period Usage","adminDashboardLang":"User Language","adminDashboardCurrency":"User Currency","adminDashboardActivity":"App Activity","adminDashboardOrdersPerUser":"Orders Per User","adminDashboardRefIncome":"Median Referral Income","applicationAdminBackButton":"Back","settings.passkeys.title":"Access Keys (Passkeys)","settings.passkeys.desc":"Add up to 5 devices for fast and secure passwordless login using biometrics or hardware keys.","settings.passkeys.add":"➕ Add new key","settings.passkeys.name":"Device name","settings.passkeys.name_placeholder":"e.g. iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"You don\'t have any access keys yet","settings.passkeys.delete_confirm":"Are you sure you want to remove this access key? You will no longer be able to log in with it.","settings.passkeys.limit_reached":"Key limit reached (maximum 5)","settings.passkeys.add_success":"Access key added successfully!","settings.passkeys.add_error":"Failed to add access key","login.tabPasskey":"By Key","login.passkey.btn":"Login with Passkey","login.passkey.error":"Authentication via access key failed","login.passkey.not_supported":"Your browser or device does not support Passkey login","admin.bulkRenewal.button":"📅 Bulk Order Renewal","admin.bulkRenewal.title":"📅 Bulk Order Renewal","admin.bulkRenewal.afterDateLabel":"Include orders expiring after the specified date (or not yet expired). Timezone: %1%","admin.bulkRenewal.daysLabel":"Number of days to extend","admin.bulkRenewal.ordersCount":"Orders to be extended","admin.bulkRenewal.ordersCountUpdate":"Orders to be updated","admin.bulkRenewal.usersCount":"Unique users","admin.bulkRenewal.applying":"⏳ Applying...","admin.bulkRenewal.done":"✅ Done!","admin.bulkRenewal.apply":"📅 Extend %1% order(s) by %2% day(s)","admin.bulkRenewal.applyTraffic":"📉 Reset traffic on %1% order(s)","admin.bulkRenewal.applyDaysAndTraffic":"📅 Extend %1% order(s) by %2% day(s) and reset traffic","admin.bulkRenewal.blockedDays":"Enter a number of days from 0 to 3650","admin.bulkRenewal.blockedNoEffect":"Enter more than 0 days, or choose a traffic reset","admin.bulkRenewal.blockedNoOrders":"No orders match the selected date","admin.bulkRenewal.blockedNoActiveOrders":"No orders are active right now","admin.bulkRenewal.activeOnlyHint":"With 0 days the date is ignored: only orders active right now are updated.","admin.bulkRenewal.notifyUser":"📅 The administrator has extended your active orders by %1% day(s). Order list: %2%","admin.bulkRenewal.notifyUserTraffic":"📅 The administrator updated used traffic on your orders: %1%. Order list: %2%","admin.bulkRenewal.notifyUserDaysAndTraffic":"📅 The administrator extended your active orders by %1% day(s) and updated used traffic: %2%. Order list: %3%","admin.bulkRenewal.notifyUsers":"Notify users via Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ With a large number of users, notifications may be unstable or delayed","admin.bulkRenewal.trafficLabel":"Used traffic","admin.bulkRenewal.trafficHint":"A share of the limit is subtracted from used traffic and never goes below zero. A share of used traffic subtracts that percent of what the client already spent.","admin.bulkRenewal.traffic.none":"Do not change","admin.bulkRenewal.traffic.full":"Full reset","admin.bulkRenewal.traffic.limit_50":"Reset 50% of the limit","admin.bulkRenewal.traffic.limit_25":"Reset 25% of the limit","admin.bulkRenewal.traffic.limit_10":"Reset 10% of the limit","admin.bulkRenewal.traffic.used_50":"Reset 50% of used traffic","admin.bulkRenewal.traffic.used_25":"Reset 25% of used traffic","admin.bulkRenewal.traffic.used_10":"Reset 10% of used traffic","connection_test_button":"Connection test","connection_test_button_node":"Test","connection_test_title":"Connection test","connection_test_desc":"Main servers are checked directly. Backup servers are checked directly and through each main server (HTTPS and VLESS). Hysteria2 on a backup node exits directly.","connection_test_no_servers":"Server list is unavailable","connection_test_pending":"Waiting","connection_test_testing":"Testing...","connection_test_ok":"Success","connection_test_fail":"Failed","connection_test_retry":"Retry","connection_test_close":"Close","connection_test_progress":"Checked: %1% / %2%","connection_test_summary":"Passed: %1% of %2%","connection_test_latency":"%1% ms","connection_test_ip":"IP: %1%","connection_test_colo":"PoP: %1%","connection_test_server":"Server","connection_test_section_main":"Main","connection_test_section_backup":"Backup","connection_test_direct":"Direct","connection_test_via":"Via %1%","connection_test_relay_skip":"Hysteria2 exits directly from the backup node","connection_test_error_no_access":"No admin access","connection_test_error_no_node":"Server not found","connection_test_error_no_credentials":"Test credentials are not configured","connection_test_error_timeout":"Timeout","connection_test_error_connect":"Failed to establish a connection","connection_test_error_probe":"Cloudflare CGI probe did not respond","connection_test_error_client":"Probe client is not available","connection_test_error_deploying":"Node is currently deploying","connection_test_error_not_backup":"A relay check is only available for a backup node","connection_test_error_no_via":"Main server for the relay check was not found","connection_test_error_relay_protocol":"This protocol on a backup node does not go through a main server","connection_test_error_protocol_disabled":"Protocol is disabled on this server","adminAnalyticsNav":"Analytics","adminAnalyticsFrom":"From","adminAnalyticsTo":"To","adminAnalyticsCompare":"Compare","adminAnalyticsCompareNone":"No comparison","adminAnalyticsComparePrevious":"Previous period","adminAnalyticsCompareMonth":"Previous month","adminAnalyticsProtocol":"Protocol","adminAnalyticsServer":"Server","adminAnalyticsAll":"All","adminAnalyticsRefresh":"Refresh","adminAnalyticsLoading":"Loading...","adminAnalyticsUsers":"Unique users","adminAnalyticsUsersHint":"Distinct accounts in the selected period. Protocol and server filters apply. This is not a live online count.","adminAnalyticsSessions":"Sessions","adminAnalyticsSessionsHint":"Connection events in the selected period. One account can open many sessions. Overlay hops are counted without treating the relay IP as the client region.","adminAnalyticsTraffic":"Traffic","adminAnalyticsTrafficHint":"Upload + download, counted once on the exit node (same as billing). Relay Xray forward is not added again.","adminAnalyticsMap":"Users by region","adminAnalyticsMapHint":"The world map is always shown. Circle size is unique users in that region/ISP. The baseline size is the view at max zoom minus 1; circles shrink when you zoom out. Color matches the server that had the most users there.","adminAnalyticsServers":"Preferred servers","adminAnalyticsServersHint":"Each bar is the number of unique users who used that server in the selected period. Color is that server\'s color.","adminAnalyticsProtocols":"Protocol mix","adminAnalyticsProtocolsHint":"Share of sessions (connections) per protocol in the selected period. The number is sessions, not unique people.","adminAnalyticsTrafficByServer":"Traffic by server","adminAnalyticsTrafficByServerHint":"Upload + download traffic per server in megabytes (MB). Color matches Preferred servers.","adminAnalyticsRegions":"Regions and ISPs","adminAnalyticsRegionsHint":"Unique users are the peak unique accounts in an hour for that region/ISP. Sessions are connection events, not unique people.","adminAnalyticsCountry":"Country","adminAnalyticsRegion":"Region","adminAnalyticsIsp":"ISP","adminAnalyticsResources":"Popular resources","adminAnalyticsResourcesHint":"Aggregated hostnames for the selected period. Hidden when a server filter is on.","adminAnalyticsHost":"Host","adminAnalyticsHits":"Hits","adminAnalyticsPreset_24h":"24h","adminAnalyticsPreset_7d":"7 days","adminAnalyticsPreset_30d":"30 days","adminAnalyticsPreset_month":"This month","adminAnalyticsPreset_prevMonth":"Last month"}');
+const en_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"To enable notifications on iPhone:\\n1. Tap the [⎋] (Share) icon in the bottom menu.\\n2. Select \'Add to Home Screen\'.\\n3. Launch the app from your home screen and return here to subscribe.","settings.pushSupportError":"Web Push is not supported on this device","settings.pushTitle":"Push Notifications","settings.pushDesc":"Subscribe this device to receive system notifications","settings.pushSubscribed":"✅ This device is subscribed","settings.pushNotSubscribed":"❌ Device is not subscribed","settings.pushSubscribeBtn":"Subscribe","settings.pushUnsubscribeAllBtn":"Unlink all devices","settings.pushSuccess":"Successfully subscribed","settings.pushUnsubscribeSuccess":"All devices unlinked","settings.pushError":"Error during subscription","settings.disableSiteNotify":"Disable notifications on the site","settings.disableSiteNotifyDesc":"Disable notifications on the site, leaving only Push notifications and notifications in Telegram (if the account is linked to Telegram)","settings.disableSiteNotifyYes":"Yes","settings.disableSiteNotifyNo":"No","settings.geoRouting":"Add geo-routing to subscription data","settings.geoRoutingDesc":"You can choose a specific geo-routing for your orders. If it is added, then when connecting to VPN / Proxy through instructions from the application, the subscription data will indicate that you want to use a specific geo-routing. This can help in bypassing blocks and improving connection stability if the main server is unavailable or unstable in your region. If you\'re not sure which option is best for you - leave the default value (%1%)","settings.disabled":"Disable (not recommended)","settings.expireNotifyMode":"Order expiration and renewal notifications","settings.expireNotifyModeDesc":"Choose which order expiration messages you want to receive. Notifications that require your action (auto-renewal disabled, insufficient balance, order expired) and service outage messages are always sent.","settings.expireNotifyModeAll":"All notifications","settings.expireNotifyModeSmart":"No reminders if the order renews automatically","settings.expireNotifyModeCritical":"Important only (action required)","settings.reserveConnectionLink":"Use backup subscription link for Vless, Hysteria","settings.reserveConnectionLinkDesc":"Enable this option if you do not have access to the main server. Then the connection instructions will include the backup link instead of the main one.","settings.reserveConnectionLinkYes":"Yes","settings.reserveConnectionLinkNo":"No","applicationNotifyTitle":"Notifications","applicationNotifyConfirmDeleteAll":"Are you sure you want to delete all notifications?","applicationNotifyEmpty":"No new notifications","applicationNotifyPromoSuccess":"Promo code applied successfully","applicationNotifyPromoError":"Promo code activation error: it may have already been used or the limit is reached","applicationNetworkError":"Network error","applicationNotifyConfirmDelete":"Are you sure you want to delete this notification?","applicationNotifyDelete":"🗑️ Delete","applicationNotifyPromoApply":"Apply promo code (%1%)","applicationDialogOk":"OK","applicationDialogCancel":"Cancel","pagePayTitle":"Purchase VPN","pagePayBalance":"Top up balance","pagePayID":"Your Unique ID","pagePayIDPlaceholder":"Enter your ID","pagePayAmount":"Top-up amount (temporarily from %1%)","pagePayButton":"Proceed to Payment","pagePayAmountTotal":"\\n<font color=#00AE09>Total payment amount: ≈%1%</font>","pageFAQId":"How to get ID?","pageFAQStep1":"Open the control panel on the website or the app in Telegram","pageFAQStep2":"Open Settings","pageFAQStep3":"Under Account Info, tap Your ID to copy the number","pageFAQStep4":"Paste the ID into the field on the left","pageFAQOpen":"Open the Telegram app","pageFAQOpenSite":"Open the website panel","pageFAQQR":"QR code for the Telegram app","landingTGBotButton":"Launch Telegram Bot","landingDashboardButton":"Open Dashboard","landingTarifs":"Plans","landingTarifsTrial":"+ Trial period %1%h","landingTarifsDiscount":"Discount","landingTarifsPrice":"%1%/%2% days","landingTarifsGo":"Connect","landingFooterText":"And here is our main project","landingTitle":"RocketMan VPN — Internet Under Protection!","landingTitleBrand":"RocketMan VPN","landingTitleTagline":"Internet Under Protection!","landingTitleDesc":"Lightning-fast access to your favorite sites and services from PC and smartphone.","landingFeaturesTitle":"Why choose us?","landingAppsTitle":"Our products for you","landingAppsDownload":"Download","landingAppsOpen":"Open","landingAppsFree":"Free","landingTrust1Value":"256-bit","landingTrust1Label":"AES encryption · data locked away","landingTrust2Value":"Up to 1 Gbps","landingTrust2Label":"Channel Speed","landingTrust3Value":"24/7","landingTrust3Label":"Live Support","landingTrust4Value":"UNLIMITED","landingTrust4Label":"Devices per Key","landingFeaturesLead":"Protection, speed, and simplicity — no compromises","landingCompareTitle":"Unprotected vs RocketMan VPN","landingCompareLead1":"Without VPN — anxiety and “Access denied”.","landingCompareLead2":"With our service — protection and safety in a few clicks","landingCompareColBad":"Without VPN","landingCompareColGood":"With RocketMan VPN","landingCompareRow1":"What sites see","landingCompareBad1":"Your city, ISP, and activity","landingCompareGood1":"Only the server country","landingCompareRow2":"Wi-Fi in cafés and airports","landingCompareBad2":"Passwords and chats can be intercepted","landingCompareGood2":"Encrypted traffic — hackers see only noise","landingCompareRow3":"Data transfer","landingCompareBad3":"On open networks, passwords travel in plain text","landingCompareGood3":"VLESS · Proxy HTTPS · Hysteria2","landingCompareRow4":"Blocks and DPI","landingCompareBad4":"“Access denied”, apps and messengers go down","landingCompareGood4":"Our bypasses work even in China (verified June 2026)","landingCompareRow5":"Speed","landingCompareBad5":"ISP may throttle routes and speed","landingCompareGood5":"Up to 1 Gbps, including on 5G","landingCompareRow6":"Setup","landingCompareBad6":"Manual setup on every device and in each app","landingCompareGood6":"QR code in 10 seconds · iOS, Android, PC, TV","landingCompareRow7":"Support","landingCompareBad7":"You\'re on your own","landingCompareGood7":"Live Telegram support 24/7","landingHowTitle":"3 steps to secure internet","landingHowLead":"Setup takes less than two minutes — we\'ll guide you through","landingHowStep1Title":"Choose a plan","landingHowStep1Text":"From free trial to premium — a plan for every need","landingHowStep2Title":"Pay","landingHowStep2Text":"Convenient payment and instant activation in Telegram or on the website","landingHowStep3Title":"Turn on VPN / Proxy","landingHowStep3Text":"Step-by-step guide — then just ON/OFF","landingPricingLead":"Convenient plans · trial period · referral program","landingPlanTraffic":"📊 %1% GB traffic","landingPlanDevices":"📱 Unlimited devices","landingPlanVpnProxy":"🔐 VPN + Proxy included","landingCtaTitle":"Ready to protect your internet?","landingCtaDesc":"Join us — setup takes minutes, peace of mind lasts much longer.","landingCtaButton":"Connect now","landingCtaSite":"Connect via website","landingCtaTelegram":"Connect via Telegram","landingPlanConnectSite":"Connect on website","landingPlanConnectTelegram":"Connect in Telegram","landingHeaderTelegram":"Launch in Telegram","landingHeaderSite":"Connect right here","landingHeroGuarantee":"✓ Trial period · ✓ VPN + Proxy · ✓ 24/7 Support","landingHeroPill1":"Trial period","landingHeroPill2":"VPN + Proxy","landingHeroPill3":"24/7 Support","landingHeroPill4":"Works even in China","landingHeroPill5":"Whitelist Bypass","landingHeroCompareBad":"Without VPN","landingHeroCompareGood":"With RocketMan VPN","landingHeroCompareYou":"YOU","landingHeroCompareWeb":"WEB","landingHeroCompareBadWire":"open channel","landingHeroCompareGoodWire":"encrypted tunnel","landingHeroCompareBad1":"Your real IP leaks to the network","landingHeroCompareBad2":"Blocks · “Access denied”","landingHeroCompareGood1":"We protected and encrypted your time on the internet","landingHeroCompareGood2":"No-logs · we don\'t store your data","landingProtocolVless":"VLESS","landingProtocolProxy":"Proxy HTTPS","landingProtocolHysteria":"Hysteria2","landingShieldMeta":"VLESS · Proxy HTTPS · Hysteria2","landingPlanPopular":"TOP","landingSecurityBadge":"Safe with us","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"A versatile proxy client for <b>Windows, Linux and macOS</b>. Supports <b>HTTPS / VLESS / Hysteria2</b> protocols. API mode for order management directly from the app, TUN tunneling, VLESS subscriptions, and Discord integration (Windows).","app.tgproxy.name":"TGProxy — MTProto for Telegram","app.tgproxy.description":"Free <b>MTProto proxy</b> for stable Telegram access. No registration or traffic limits, end-to-end encryption for your chats. One-click connect from the browser — opens directly in Telegram.","features1Title":"Anonymity","features1Text":"Thanks to multiple layers of protection on our side, your real IP will remain unknown to any service.","features2Title":"Speed","features2Text":"Download, watch your favorite content, and share at speeds up to 1Gbps.","features3Title":"Trial period","features3Text":"Connect in 1 click from any of your devices! PC, smartphone, TV, tablet, and laptop.","features4Title":"Support","features4Text":"We are always ready to help you with any questions. Online almost 24/7","faq1title":"How to pay?","faq1text":"Top up your balance and pay via a convenient method. After payment, you\'ll get instructions in the Telegram bot or on the website (depending on where you purchased).","faq2title":"How to set up VPN?","faq2text":"The full connection process is described in detail in our <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram bot</a> and in <a href=\\"https://ru-app.rocketman-vpn.com:8443/application\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">your account</a> on the website.\\nStep by step, so you\'re unlikely to get lost. Most importantly — follow the instructions :)","faq3title":"What if something isn\'t working?","faq3text":"Check our <a href=\\"https://rocketman-vpn.com/en/wiki/\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Knowledge Base</a> — we\'ve gathered useful articles and answered common questions in advance. If something still can\'t be solved on your own — contact <a href=\\"https://t.me/%1%\\" target=\'_blank\'>support via Telegram</a>, and we\'ll help.","locationSelectTitle":"Select server location","locationSelectLoad":"Load: %1%%","locationReserve1":"Saint Petersburg","locationLocal":"Local server","locationStockholm":"Stockholm","locationAustria":"Vienna","locationNetherland":"Amsterdam","locationFrankfurt":"Frankfurt","locationParis":"Paris","tarif.test_drive":"🚗 Test Drive","tarif.start":"🚀 Start","tarif.gamer":"🎮 Gamer","tarif.pro":"👑 Family+","tarif.ultra":"🌌 Space","httpTarifPro":"🔒 Proxy-Unlimited","httpTarifGamer":"🔒 Proxy-Gamer","tarifNameFull":"%1% (%2% days | %3% GB/day) - %4%","welcomeMessage":"Welcome!\\nThanks to our service, you can get secure access to your favorite sites and apps, just like our other beloved clients ❤️\\n\\n⭐️ We have no device limits, so you can use 1 key on all your devices! Along with VPN, you also get access to our Proxy.\\n\\n🛒 We provide:\\n- VPN for iOS, Android, Windows, macOS, Android TV\\n- Proxy for browser, Discord, Windows, etc.","basketBalance":"Top up balance","secondsToStringD":"%4% d. %3% h. %2% min. %1% sec.","secondsToStringH":"%3% h. %2% min. %1% sec.","secondsToStringM":"%2% min. %1% sec.","readButton":"🗑 Delete this message","openPage":"🌐 Website","openApp":"📱 App","expireNotifyOrderData":"▪️ Plan: `%1%`\\n▪️ Name: `%2%`\\n▪️ Renewal period: `%3% days`","expireNotifyTemplate":"Hello, %1%!\\n%2%\\n\\n%3%\\n▪️ Renewal cost: `%4%`\\n\\n%5%","expireNotifyFull":"Your order has expired 🙁\\n\\nTo stay connected to the free Internet — [launch the app](https://t.me/rocketman_vpn_bot/?startapp), then click on 💸 your balance at the top right, top it up, and enable auto-renewal in the order settings 😇","expireNotifyTime":"Your order will expire in less than `%1%` hour 🙁","expireNotifyRenewAutoNoMoney":"❗️ Auto-renewal is enabled, but your current balance is insufficient 🙁\\n\\nEnsure you have enough funds for the feature to work smoothly in the coming months. [Launch the app](https://t.me/rocketman_vpn_bot/?startapp), click on your balance in the top right, and top up the desired amount.","expireNotifyRenewAuto":"✅ Auto-renewal is enabled, so the order will be renewed automatically when less than 24 hours remain 😎","expireNotifyRenewManual":"ℹ️ How to enable auto-renewal?\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on your order ⇒ Settings ⇒ check Auto-renewal ⇒ Save all changes.","expireNotifyRenewSuccessAuto":"Hello, %1%!\\nYour order has been automatically renewed.\\n\\n%2% 🎉\\n\\nThank you for trusting us ❤️\\nThe best way to thank us is by inviting your friends via the referral system!\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"The command was used incorrectly\\n`%1%`\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Command `%1%` used incorrectly!\\n\\n✅ Correct example: `%2%`\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Start","usePromoCommand":"Apply promo code — /promo PROMO_NAME","useFaqCommand":"How to connect to VPN / Proxy?","usePromoAlready":"You have already applied this promo code. It can only be used once.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Promo code `%1%` not found 🙁\\n\\nPlease check the spelling and ensure the code is valid.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Activation limit for promo code `%1%` reached 🙁\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"You have already applied a similar promo code.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Failed to apply promo code `%1%` 🙁\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Promo code `%1%` successfully applied 🎉\\n%2% credited to your balance\\n💰 Current balance: %3%\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"You do not have access to perform this action.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Admin Menu","adminMenu":"Admin Section\\n\\n\\nPromo Codes Menu\\nPromo codes list: /listPromo\\nPromo code info: `/infoPromo {PROMO_NAME}`\\nCreate promo code: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nDelete promo code: `/deletePromo {PROMO_NAME}`\\n\\n\\nUsers Menu\\nGive order to user: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nDelete order: `/removeOrder {ORDER_ID}`\\nGive balance to user: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Order not found","adminUserRemoveOrderStatus":"Order removal status: %1%","adminUserGiveTarifErrUser":"User not found!","adminUserGiveTarifErrTarif":"Plan not found","adminUserGiveTarifErrNode":"Plan node not found. Plan configuration is invalid","adminUserGiveTarifErrMarzban":"MarzBan failed to create order. Reason unknown","adminUserGiveTarifSuccess":"Successfully gave order to @%1%","adminUserGiveTarifNotify":"🎉 Administrator has added the `%1%` plan to your account for `%2% days` 📆\\n\\n*Order Information:*\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒\\nclick on your order ⇒ 📚 VPN / Proxy Instructions","adminPromoCreateAlreadyExist":"This promo code already exists","adminPromoCreateAlreadyExistWas":"This promo code existed once and cannot be recreated","adminPromoCreateFailed":"Failed to create promo code","adminPromoCreateDone":"Promo code `%1%` successfully created.\\nActivations available: %2%\\nBalance: %3%","adminPromoList":"List of all promo codes:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% used / %3% total / %4%)","adminPromoInfo":"Promo code info:\\n\\nID: `%1%`\\nActivation limit: %2%\\nActivations count: %3%\\nBalance: %4%\\n\\nActivations list:\\n%5%","adminPromoDeleteDone":"Promo code `%1%` successfully deleted","terms":"User Agreement","contacts":"Contact Us","wiki":"Knowledge Base","wikiPage.description":"Guides, FAQ, and VPN setup examples.","wikiPage.articleLead":"RocketMan VPN knowledge base article.","wikiPage.articleHint":"Browse articles on the left · table of contents on the right","wikiPage.subtitle":"Choose a topic from the list or search","wikiPage.heroTopic.faq":"FAQ","wikiPage.heroTopic.setup":"Setup and connection","wikiPage.heroTopic.troubleshoot":"Examples and fixes","wikiPage.searchPlaceholder":"Search by title and article text...","wikiPage.loadingList":"Loading article list...","wikiPage.emptyList":"No articles were added yet.","wikiPage.loadingArticle":"Loading article...","wikiPage.openHint":"Select an article from the list","wikiPage.back":"Back to list","wikiPage.error.loadList":"Failed to load article list.","wikiPage.error.emptyFile":"The article is not available for the current language.","wikiPage.error.loadArticle":"Failed to load article.","wikiPage.navigation":"Navigation","wikiPage.contents":"Contents","wikiPage.readMore":"Read","wikiPage.readingTime":"min read","wikiPage.articlesCount":"articles","wikiPage.backToTop":"Back to top","wikiPage.home":"🏠 Knowledge base home","wikiPage.copyLink":"Copy link to this article","wikiPage.articleLinkCopied":"Article link copied","wikiPage.linkCopied":"Link copied","wikiPage.closeLightbox":"Close","wikiPage.openImageInNewTab":"Open in new tab","wikiPage.copySectionLink":"Copy section link","wikiPage.copyCurrentSectionLink":"Copy link to current section","wikiPage.sectionLinkCopied":"Section link copied","wikiPage.enlargeImage":"Enlarge image","wikiPage.copyCode":"Copy","wikiPage.copied":"Copied","wikiPage.copyText":"Click to copy","wikiPage.searchNoResults":"Nothing found. Try another word.","wikiPage.searchHint":"Search results in titles and body","wikiPage.searching":"Searching...","wikiPage.searchMatchTitle":"In title","wikiPage.searchMatchBody":"In body","wikiPage.updatedAt":"Updated","wikiPage.featured":"Featured","wikiPage.groupOther":"Other articles","wikiPage.allArticles":"All articles","wikiPage.cardUpdated":"Updated","wikiPage.updatedToday":"today","wikiPage.updatedYesterday":"yesterday","wikiPage.updatedDaysAgo":"%1% days ago","wikiPage.badge.important":"Important","wikiPage.badge.new":"New","wikiPage.badge.updated":"Updated","wikiPage.badge.hot":"Hot","contactsTG":"Telegram Chat","contactsEmail":"E-Mail","trialNotify":"✅ You have received the `%1%` plan for `%2% hours` as trial access.\\n\\n📌 Order info in the app:\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒\\nclick on your order ⇒ 📚 VPN / Proxy Instructions.\\n\\nWe provide free access so you can evaluate the quality and stability before future purchases 🤝","launchBot":"Launch","launchBotLong":"Open App 📱","applicationMainMenu":"Main Menu","applicationMainMenuBack":"Back","applicationButtonsRef":"Referral System","applicationButtonsFaq":"Knowledge Base","applicationButtonsCabinet":"Account","applicationButtonsAdmin":"Admin Dashboard","applicationButtonsAdminDisk":"Free disk space: %1%","applicationButtonsAdminPayments":"Income stats:<br/>%1% current month<br/>%2% last month<br/>%3% total period | %4% pending","applicationUserInfoWithUs":"With us since","applicationUserInfoBalance":"Your balance","applicationUserInfoId":"Your ID","applicationUserInfoTgId":"Linked TG Account ID","applicationUserInfoAPIKey":"Your API Key","applicationUserInfoAPIKeyAlert":"📝 Your API Key has been copied to clipboard. Do not disclose this key to anyone; project administration will never ask for it","applicationUserInfoAPIResetAlertAsk":"📝 Are you sure you want to generate a new API Key?","applicationUserInfoAPIResetAlert":"📝 Your API Key has been regenerated","applicationUserInfoIdAlert":"📝 Your ID has been copied to clipboard.","applicationUserInfoTgIdAlert":"📝 Your Telegram ID has been copied to clipboard.","applicationContactButton":"Contact Support","applicationServersButton":"Server Status","applicationHowToConnectFAQButton":"How to connect to VPN or Proxy?","applicationHowToConnectFAQButtonModal":"The bot has sent instructions to your private messages 📝","applicationCabinetTitle":"Account","applicationCabinetTitleDesc_title":"Click on order to manage it","applicationCabinetTitleOrder":"Select a Plan","applicationCabinetTitleOrder_detail_back":"Back to plans list","applicationCabinetTitleOrder_help_button":"⚠️ Help me choose a plan ⚠️","applicationCabinetTitleOrder_help_button_back":"Back to ordering","applicationCabinetTitleOrder_help_button_header":"Average traffic consumption:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 hour of video at 1440p ≈6 GB\\n<font color=#E10070>Instagram</font>: 1 hour of Reels ≈2 GB\\n<font color=#69C9D0>TikTok</font>: 1 hour of video ≈2 GB\\n<font color=#7289DA>Discord</font>: 1 hour of voice with stream ≈1 GB\\n<font color=#BD37FF>Twitch</font>: 2 hours of stream at 1080p ≈5 GB\\n<font color=#D0A823>Online games</font>: 1 hour ≈0.5 GB\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 hours at 1080p ≈5 GB\\n\\nAdding these up gives <font color=#DA7F00>≈20-25 GB per day</font>. These figures are estimates to help you choose the right plan.\\n\\n<font color=#A7C800>VPN and Proxy — both are convenient.</font>\\n<font color=#BAD821>VPN:</font> ideal for smartphones, tablets, and TV; can be used on PC too.\\n<font color=#BAD821>Proxy:</font> suitable for Discord, PC browser (YouTube, Twitch, Netflix, HDRezka, etc.).\\n<font color=#B3D023>Protocols briefly:</font>\\n<font color=#2EB3FF>• Vless</font> - best for bypassing blocks, stability, speed, “invisibility”.\\n<font color=#29a1e6>• Hysteria</font> - balance of stability and speed, perfectly suited for gaming.\\n<font color=#2884BA>• HTTPS</font> - suitable only for websites and apps via Proxifier.\\n\\n🚀 Start — for basic browsing\\n🎮 Gamer — for active users\\n👑 Family+ — for high traffic volumes","applicationCabinetButtonNew":"Create New Order","applicationCabinetButtonNewCancel":"Back to orders list","applicationCabinetButtonAddBalance":"Top up balance","applicationCabinetIsTrial":"Free Trial Access","applicationCabinetPing":"Ping to server: %1%ms","applicationCabinetEndActive":"Subscription access until: %1%","applicationCabinetEndNotActive":"Subscription not paid. Click here and activate it via the «⌛️ Renew Order» button in the dropdown menu.","applicationCabinetOrderTraficWeek":"per week","applicationCabinetOrderTraficMonth":"per month","applicationCabinetOrderPriceDay":"/ day","applicationCabinetOrderPriceDays":"/ %1% days","applicationCabinetOrderPrice":"%1% for %2% days 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 View plan details 📋","tarif_desc_drive":"📚 Perfect for getting to know our service and light social media browsing. Allows you to fully test VPN / Proxy work 😉","tarif_desc_start":"📚 Suitable for social media and light smartphone use with average screen time ≈4h per day. On PC, the monthly limit may be consumed faster; consider your activity.","tarif_desc_gamer":"🎮 For those who spend active time on PC:<br/><font color=#DA7F00>•</font> Games via Steam and other launchers<br/><font color=#DA7F00>•</font> Voice communication in messengers for gamers with reliable connection via Proxy<br><font color=#DA7F00>•</font> Watching Twitch with 7TV plugin at 1080p and higher<br/><font color=#DA7F00>•</font> YouTube and other social networks where a secure connection is important\\n\\n✅ This traffic is enough for smartphone and PC with active use of ≈5-6 hours per day.","tarif_desc_unlim":"🚀 Plan for high traffic volumes and any tasks: PC, laptops, smartphones, tablets, TV, and other devices.\\n\\n🧡 One key can be used on multiple devices — this traffic is enough for family and your friends!","tarif_desc_ultra":"💠 Premium plan for a wide range of tasks and very active users!\\n\\nSuitable for those approaching the 1 TB limit and wanting to use the service without worrying about traffic.\\n\\n💜 With this option, you can safely download large files, stream, play, and use VPN / Proxy on a dozen devices.","applicationCabinetOrderBack":"Back","applicationCabinetOrderSelect":"☑️ Order this plan ☑️","applicationCabinetOrderSelectTrial":"🎁 Activate trial access for %1% hours 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Get trial access for %1% hours as a bonus?","applicationCabinetOrderSelectAccept":"Confirm action ✅\\nAmount to be deducted: %1%\\n\\n💰 You currently have: %2%","applicationCabinetOrderTrial":"🎁 %1%-hour trial period available","applicationCabinetOrderTrialUsed":"You have already used the trial access 🙁","applicationCabinetOrderSelectErrTimeMax":"Maximum renewal period: 2 months","applicationCabinetOrderSelectErrBalance":"Insufficient funds on internal balance for the order 🙁","applicationCabinetOrderSelectErrTrialCfg":"This plan cannot be ordered in trial mode 🙁","applicationCabinetOrderSelectErrTrial":"You have already used this trial plan 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Trial period is available only for users authorized via Telegram. Please log in via Telegram (or link Telegram in Settings) and try again.","applicationCabinetOrderSelectSuccess":"Order completed successfully 🎉","applicationCabinetOrderSelectSuccessTrial":"Trial order completed successfully 🎉","applicationCabinetOrderSelectErrOrder":"Failed to create your order 😕","applicationCabinetOrderEditChangeTarif":"♻️ Change plan ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ This is current plan","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>After changing the plan, your order will have<br>approximately %1% left</font><br>days:hours:minutes:seconds<br><br>Press the button below to confirm","applicationCabinetOrderEditChangeTarifExpired":"❌ Cannot change plan for an expired order. You must first renew it (make it active) and then change the plan. Connection time will be recalculated based on the chosen plan.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>You can change the plan every %1% h.</font><br><br>When changing the plan, remaining days from the previous order are transferred to the new one considering current price and remaining time.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>You have recently changed the plan!</font><br>Next change will be available in<br>%1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Confirm change to selected plan ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Are you sure you want to change to the selected plan?\\n\\n⚠️ Note that the next plan change will only be available in %1% h.","applicationCabinetOrderEditAuto":"Order auto-renewal","applicationCabinetOrderEditAutoOn":"✅ Active","applicationCabinetOrderEditAutoOff":"❌ Not active (in ⚙️Settings)","applicationCabinetOrderEditAutoDesc":"When the order expires, if you have sufficient funds, the system will automatically renew it if auto-renewal is enabled.","applicationCabinetOrderEditResetTime":"Traffic reset","applicationCabinetOrderEditCreated":"Order activated","applicationCabinetOrderEditSpent":"Total spent","applicationCabinetOrderEditOverTime":"Subscription active until","applicationCabinetOrderChangeTarif":"♻️ Change Plan","applicationCabinetOrderEditParams":"⚙️ Settings","applicationCabinetOrderEditParamsTitle":"⚙️ Order Settings: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Order Label","applicationCabinetOrderEditParamsLabelDesc":"You can add labels to your orders to easily identify where each is used","applicationCabinetOrderEditParamsPassword":"🔸 Your connection password (4-12 characters)","applicationCabinetOrderEditParamsIP":"🔸 IP address for passwordless access","applicationCabinetOrderEditParamsIPDesc":"In this field, you can specify your personal IP address (getting it from 2ip.io, for example) to access our Proxy server without entering a login and password where required. This is more convenient and equally secure.\\n⚠️ Important: this function works only when connecting via HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"To secure the Proxy connection, we have generated a random password. If necessary, you can change it. It is required for authentication via login and password where needed.","applicationCabinetOrderEditSave":"✔️ Save all changes ✔️","applicationCabinetOrderEditSaveOk":"Changes successfully applied ✅","applicationCabinetOrderEditSaveFail":"❌ Settings were not saved. %1%","applicationCabinetOrderEditLinkVpn":"📚 VPN Instructions","applicationCabinetOrderEditLinkProxy":"📚 Proxy Instructions","applicationCabinetOrderEditResetPass":"🔄 Reset Proxy Password","applicationCabinetOrderEditResetPassAccept":"🔄 Are you sure you want to reset the password?\\n\\nThe old password will stop working, and you will need to reconfigure the Proxy connection!","applicationCabinetOrderEditResetUid":"🔄 Reset VPN subscription link","applicationCabinetOrderEditResetUidAccept":"🔄 Are you sure you want to reset the VPN subscription link?\\n\\nThe old link and access keys will stop working, including backup/relay locations. You will need to add the new subscription link in your VPN app again!","applicationCabinetOrderEditResetUidDesc":"Resets the subscription link and VPN access keys (VLESS and Hysteria, main location and relay). Use this if the link may have been leaked. After reset, the old link will stop working — add the new one from the VPN instructions.","applicationCabinetOrderEditResetUidOk":"VPN subscription link has been reset. Add the new link in your VPN app — the previous link and keys will no longer work.","applicationCabinetOrderEditLinkAccept":"💬 A message with details and instructions for connecting to our VPN / Proxy has been sent to you.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS port*: `%4%`\\n%5%\\n🔑 *Password*: `%6%`","proxyInstructionReserveSubItem":"👤 *Login* %1% » %2%: `%3%`","proxyInstruction":"Instructions for Proxy connection:\\n\\n%1%\\nWe provide access to Proxy in all our locations at once. ✅ *We recommend trying the direct connection to the European server first.* If it works incorrectly — try the RU » Europe method.\\n\\n\\n*Data for direct Proxy connection:*\\n%2%\\n🌐 HTTPS port: `%3%`\\n👤 Login: `%5%`\\n🔑 Password: `%6%`\\n\\n\\n*For some RF clients:*\\n_(redirects traffic via RF if direct connection to Europe is unavailable. In this mode, be sure to use the correct login from the block below — it is different)_\\n%7%\\n\\n\\n*For working with Proxy connection:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Instructions](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Instructions](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 PC on Windows and macOS: [Proxifier](https://www.proxifier.com/) — [Instructions](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Instructions for VPN connection:\\n\\n%1%\\nWe provide access to VPN in all our locations! *Each link below = personal key*, and a page with connection instructions. \\n✅ *We recommend adding Vless from Multi-link first*, if it works incorrectly — try other protocols or the backup option.\\n\\n\\n\\n🔹 *Simple explanation for beginners:*\\n▪️ Click [this link](%5%) and follow the instructions.\\n\\n\\n\\n🔸 *For advanced users*:\\n🌏 All locations in multi-link\\n- %2%\\n\\n*For some RF clients:*\\n%3%\\nThis method is for those who don\'t have a direct connection to European servers and need a workaround via a Russian server.\\n\\n*Direct access to location on all protocols:*\\n%4%\\n\\n⚠️ If the links above do not open, enable the backup link display in settings.%7%","vpnInstructionRoute":"\\n\\nℹ️ Clients using HAPP can add custom routing rules. You can use the pre-configured settings below or create your own by specifying the necessary domains and IP addresses to bypass the VPN. \\n%1%","vpnInstructionAll":"All protocols at once","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Europe","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Your personal VPN access key*\\n\\nAll connection data and the list of recommended apps are available at the link:  \\n👉 [Open connection link](%2%)\\n\\n⚠️ *Keep this link secret!* \\nIt is your personal authorization key for the VPN.\\n\\n✅ To activate subscription:  \\nCopy the link and paste it into your chosen app — current settings will load automatically.\\n\\n📦 Want to manage all orders?  \\nUse [🔑 the subscription link for all connections](%4%).\\n\\n───────────────\\n🌐 *Your Proxy connection data:*\\n🌐 *Server address:* `%6%%7%`\\n🌐 *HTTPS port:* `%9%`\\n👤 *Your login:* `%10%`\\n🔑 *Connection password:* `%5%`\\n\\n⚠️ If the main server is unavailable, you can connect to the backup server:  \\n%11% *Server address:* `%12%`  \\n🌐 *HTTPS port:* `%9%`  \\n👤 *Your login:* `%13%.%10%`  \\n🔑 *Connection password:* `%5%`\\n\\n💡 Proxy can be used in any application that supports Proxy connection.  \\nFor example, *for Chrome browser*, we recommend extensions:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*VPN connection instructions:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*How to connect to Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows apps](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Web Browser](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Order data `%1%`\\n⌛️ Plan: `%2%`\\n⚙️ Auto-renewal: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Attention! Be sure to update the configuration in the settings of the app where you use this order.\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Enabled","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Disabled","faqButtonCommand":"🔑 Our VPN and Proxy can be used on a wide list of devices with *no limits on the number of connections* to a single access key! Setup is very simple and takes no more than two minutes, after which everything is reduced to an ON/OFF button.\\n\\n✅ Once you place your first order _(including the trial)_, you will receive two messages with details and instructions for connecting to both VPN and Proxy.\\n\\n\\n📦 *If you don\'t have an order yet:*\\n[Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ➛ Account ➛ Create new order ➛ Choose a suitable one by clicking on it and proceed to plan details ➛ Order.\\n\\n\\nIf you have any questions, contact us via the app, we will definitely help ❤️","applicationCabinetOrderEditPay":"⌛️ Renew order (for %1% days for %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Order successfully renewed for %1% days.\\n\\nOrder status will be updated within a few minutes.","applicationCabinetOrderEditPayErr":"Failed to renew order 🙁","applicationCabinetOrderRemove":"Delete order","applicationCabinetOrderRemoveFailed":"❌ Cannot delete an active order!","applicationCabinetOrderRemoveConfirm":"Are you sure you want to delete the order? 🤨\\n\\nIf needed, you can always create a new order. If you have issues with the order, contact our support service, and we\'ll be happy to help!","applicationCabinetOrderRemoveConfirmMessage":"✅ Order successfully deleted!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Failed to delete order!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Protocols: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Your balance has been topped up by %1%","applicationAdminDashboard":"📊 Dashboard","applicationAdminUsers":"👥 Users (x%1%)","applicationAdminUsersActive":"🫂 Active users (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Current balance: %1% | %2% USD","applicationAdminUserRef":"Referrals (x%1% | %2%)","applicationAdminUserRefTarget":"Referral from","applicationAdminUserOrders":"📦 Orders (x%1% total | x%2% active)","applicationAdminUserRefs":"💸 Referrals (x%1% total)","applicationAdminUserPayments":"💸 Payments (x%1% total) | Credited %2%","applicationAdminUserPaymentsType":"Payment system: %1%","applicationAdminUserPaymentsStatus":"Payment status: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Cancel payment and deduct amount from balance","applicationAdminUserPaymentsStatusSetFailAccept":"Are you sure?\\n\\nIf confirmed, payment status will change and\\n\\n❌ %1% will be deducted from user\'s balance","applicationAdminUserPaymentsStatusSetOk":"✅ Confirm payment and credit amount to balance","applicationAdminUserPaymentsStatusSetOkAccept":"Are you sure?\\n\\nIf confirmed, payment status will change and\\n\\n✅ user\'s balance will be topped up by %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Action performed successfully ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Action failed!\\nServer response: %1%","applicationAdminUserCreated":"Created: %1%","applicationAdminUserUpdated":"Modified: %1%","applicationAdminUserLast":"🚪 Last login: %1%","applicationAdminUserOrdersTotal":"💰 Total top-ups: %1%","applicationAdminUserResetOrderChangeBlock":"Reset stuck order lock","applicationAdminUserResetOrderChangeBlockAccept":"Are you sure you want to reset the stuck order lock?","applicationAdminUserMedia":"Partner Program","applicationAdminUserMediaOn":"Status: ✅ Partner","applicationAdminUserMediaOff":"Status: ❌ NOT Partner","applicationAdminUserMediaConfirm":"Status: ❌ NOT Partner","applicationAdminUserMediaTotal":"Total income: %1%","applicationAdminUserMediaPayed":"Paid to partner: %1%","applicationAdminUserMediaPayWait":"Amount to be paid: %1%","applicationAdminUserMediaPayWaitButton":"💸 Mark payout","applicationAdminUserMediaPayWaitButtonAccept":"Are you sure you want to mark the payout as completed? Transaction amount %1% (%2%)\\n\\n💸 After confirmation, the user will be notified that the funds have been paid and are on their way.","applicationAdminUserMediaPayWaitNotify":"Dear partner! \\n\\n💸 An amount of *%1%* has been paid to you under the partner program. Funds are on their way and will take some time to reach your credentials.","applicationAdminUserMediaPercent":"%2%%1%% Percentage of referral to income","applicationAdminUserMediaPercentDesc":"This percentage indicates how much of the referral top-up will be paid to the user as partner program income","applicationAdminUserGiveOrder":"Give order to user","applicationAdminUserGiveOrderDays":"Number of days","applicationAdminUserGiveOrderButton":"Give","applicationAdminUserGiveOrderButtonConfirm":"You are about to give the order\\n\\"%1%\\"\\nto user for %2% days?","applicationAdminUserEditButton":"User Management","applicationAdminUserEditPromos":"Used promo codes: %1%","applicationAdminUserEditBalance":"Edit balance","applicationAdminUserAddBalance":"Add to balance","applicationAdminUserEditBalanceAccept":"Are you sure you want to edit the user\'s balance?","applicationAdminUserEditBalanceAcceptFail":"Failed to edit balance. The user\'s balance might have changed during editing\\nServer response: %1%","applicationAdminUserEditBalanceAcceptOk":"Balance successfully edited","applicationAdminUserEditBalanceChangeNotify":"Administrator changed your balance to *%1%*.\\n💰 Current balance: *%2%*\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Administrator added *%1%* to your balance.\\n💰 Current balance: *%2%*\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Search","applicationAdminOrders":"🛒 All orders (x%1%)","applicationAdminOrdersActive":"💳 Active orders (x%1%)","applicationAdminOrdersExpired":"⛔ Stopped orders (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% days","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Traffic: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Plan change lock","applicationAdminOrderReload":"Reload MarzBan data","applicationAdminOrderReloadAccept":"⚠️ Reload data?\\n\\nThis will load order data from MarzBan and update it in the app!","applicationAdminOrderReloadAcceptDone":"✅ Data reload request sent!","applicationAdminOrderReloadAcceptFail":"❌ Failed to reload order data!","applicationAdminOrderResetChangeTime":"Reset plan change time","applicationAdminOrderResetChangeTimeAccept":"Are you sure? Once confirmed, the user will be able to change the plan manually","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Request successful. User can now change the plan manually","applicationAdminOrderResetTraffic":"Reset traffic","applicationAdminOrderResetTrafficAccept":"⚠️ Cancel order?\\n\\nThe user will NOT receive a notification!","applicationAdminOrderResetTrafficAcceptOk":"✅ Done","applicationAdminOrderReturn":"Cancel order","applicationAdminOrderReturnAccept":"⚠️ Cancel order?\\n\\nThe user WILL receive a refund for the UNUSED period!","applicationAdminOrderReturnAcceptDone":"⚠️ Order deleted. %1% refunded to user\'s balance.","applicationAdminOrderReturnNotify":"⚠️ Administrator canceled your order\\n🛒 `%1%` and returned *%2%* to your balance.\\nYou can create a new order to stay connected to the free Internet by visiting the app.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ Create New Order","applicationAdminOrderRemove":"Delete order","applicationAdminOrderRemoveAccept":"⚠️ Delete order?\\n\\nIf the order is still active, funds WILL NOT be returned!","applicationAdminOrderRemoveAcceptDone":"Order deleted","applicationAdminOrderAddTime":"Extend order (%1% days)","applicationAdminOrderAddTimeAccept":"⚠️ Extend order (%1% days)?\\n\\nThis will NOT change the user\'s balance!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Administrator extended your order\\n🛒 `%1%` for *%2% days* 📆\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ Click on the specified order for details.","applicationAdminPromos":"🎁 Promo codes (x%1%)","applicationAdminPaymentsLast":"⏰ Last payments (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Last successful payments (x%1%)","applicationAdminPromosCreate":"Create promo code","applicationAdminPromoID":"Name: %1%","applicationAdminPromoUSED":"Uses: %1%","applicationAdminPromoCOUNT_USE":"Limit: %1%","applicationAdminPromoBALANCE":"Amount: %1%","applicationAdminPromoEditID":"Name","applicationAdminPromoEditCOUNT_USE":"Usage count (max)","applicationAdminPromoEditAMOUNT":"Amount in $","applicationAdminPromoEditCATEGORY":"Category","applicationAdminPromoEditCATEGORYEmpty":"Regular / no category","applicationAdminPromoEditCATEGORYMedia":"Media promo","applicationAdminPromoEditCATEGORYNew":"For newcomers","applicationAdminPromoEditSave":"Save promo code","applicationAdminPromoEditPromo":"Edit","applicationAdminPromoCategory":"Category: %1%","applicationAdminPromoSendUseList":"List of users who applied","applicationAdminPromoRemovePromo":"Delete","applicationAdminPromoRemovePromoAccept":"Are you sure?","applicationAdminAddNode":"Add new node","applicationAdminAddNodeDesc":"This section allows you to deploy the entire project on a new node in 2 clicks. It only installs everything needed, but does not add the node to the nodes list","applicationAdminAddNodeIP":"Server IP address","applicationAdminAddNodeHostname":"Server subdomain (s1, s2, etc., without dot)","applicationAdminAddNodeHostnameDesc":"The specified subdomain will be automatically set in CloudFlare with all parameters. If it exists, it will be overwritten.","applicationAdminAddNodeUsername":"Username (root)","applicationAdminAddNodePassword":"User password (root)","applicationAdminAddNodePasswordDesc":"If password is not specified, SSH key authorization will be used. Ensure your SSH key is added to the node.","applicationAdminAddNodePasswordKeyInfo":"Attention. Password not specified, SSH key authorization will be used. Ensure your SSH key is added to the node.","applicationAdminAddNodeSshPort":"SSH Port (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Required permissions: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Click to get token","applicationAdminAddNodeStart":"Perform deploy","applicationAdminAddNodeStarted":"Deploy process started, do not close the page. If not finished in 5 minutes, it might be stuck.","applicationAdminAddNodeDoneOk":"Deploy completed successfully","applicationAdminAddNodeDoneFail":"Error: %1%","applicationAdminAddNodeClearLogs":"Clear logs","applicationAdminInstallNode":"Node Deployment","applicationAdminCoreSettings":"Core Settings","applicationAdminCoreSettingsDesc":"This section allows configuring basic system parameters. Parameters are applied on the fly.","applicationAdminSaveCoreSettings":"Save settings","applicationAdminCoreSettingsSaved":"Settings saved successfully","adminBackupTitle":"Telegram backup","adminBackupInterval":"Automatic backups are created every %1% minutes and sent to backup admins in Telegram.","adminBackupLastRun":"Last backup: %1%","adminBackupNever":"No backup has been recorded yet","adminBackupRunning":"Backup in progress","adminBackupOffline":"Backup service is not responding. The request will run when the service is available.","adminBackupCreate":"Create backup now","adminBackupCreateConfirm":"Create a backup now and send it to Telegram?","adminBackupCreateOk":"Backup started. Files will be sent to Telegram when ready.","adminBackupCreateFail":"Failed to start backup: %1%","adminBackupCreateBusy":"A backup is already running","adminBackupLastResultOk":"Last result: success","adminBackupLastResultFail":"Last result: error (%1%)","applicationAdminCoreName.projectName":"Project name","applicationAdminCoreName.projectMain":"Main domain","applicationAdminCoreName.projectBot":"Project bot login","applicationAdminCoreDesc.projectBot":"Which bot interacts with users. Enter login without @","applicationAdminCoreName.admins":"Admins IDs","applicationAdminCoreDesc.admins":"Enter IDs separated by commas, no spaces. Example: `123456789,987654321`. Don\'t delete yourself!)","applicationAdminCoreName.backup_admins":"Admins IDs for backups","applicationAdminCoreDesc.backup_admins":"Bot will send backups to these admins. Enter IDs separated by commas. Example: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Max renewal period (in months)","applicationAdminCoreDesc.order_end_limit_month":"User cannot renew order for a period longer than specified","applicationAdminCoreName.happ_fragment_packets":"ClientHello fragmentation: packets","applicationAdminCoreDesc.happ_fragment_packets":"`tlshello` — split the TLS ClientHello (recommended). Empty or `off` disables it on all nodes. Fragmentation itself is enabled per node in node settings","applicationAdminNodeFragment":"ClientHello fragmentation (Happ)","applicationAdminNodeFragmentDesc":"Happ JSON subscription only: VLESS TCP/XHTTP to this node splits the TLS ClientHello. Off — config unchanged. Parameters are in Core Settings","applicationAdminCoreName.happ_fragment_length":"ClientHello fragmentation: fragment length","applicationAdminCoreDesc.happ_fragment_length":"Fragment size in bytes: `N` or `N-M`, e.g. `100-200`","applicationAdminCoreName.happ_fragment_interval":"ClientHello fragmentation: delay","applicationAdminCoreDesc.happ_fragment_interval":"Pause between fragments in milliseconds: `N` or `N-M`, e.g. `10-20`","applicationAdminCoreName.happ_auto_balancer":"“Auto” profile (Happ)","applicationAdminCoreDesc.happ_auto_balancer":"`on` — the Happ JSON subscription starts with an “Auto” profile: all nodes in one config, traffic goes through the one with the best ping and switches automatically if a node fails. `off` — disable","applicationAdminSendMessage":"Bulk Message","applicationAdminSendMessageTargets":"Number of people to receive the message","applicationAdminSendMessageType":"User filtering type","applicationAdminSendMessageTypeAll":"All users","applicationAdminSendMessageTypeOrders":"Specific orders (any)","applicationAdminSendMessageTypeOrdersActive":"Specific orders (active)","applicationAdminSendMessageTypeHas":"Has at least 1 order","applicationAdminSendMessageTypeNotHas":"Has no orders","applicationAdminSendMessageTypeHasActive":"Has at least 1 active order","applicationAdminSendMessageTypeHasUnActive":"Has at least 1 INactive order","applicationBalanceErr":"Error generating payment: %1%","applicationBalanceErrBalanceLimit":"Your account already has the maximum allowed amount (%1%)","applicationBalanceErrBalanceLimitButton":"Unavailable","applicationBalanceErrData":"Payment system failed to generate payment. Please try later.","applicationBalanceErrNetwork":"Network error. Please try later.","applicationBalanceErrCurrency":"Currency error. Please try later.","applicationBalanceErrAuth":"Auth error","applicationBalanceErrPaymentLink":"Failed to get payment link","applicationBalanceSettingsTitle":"Currency selection","applicationBalanceTitle":"Balance Top-up Section","applicationBalanceSelect":"Select display currency","applicationBalanceEmail":"Your email","applicationBalancePlatform":"Payment platform","applicationBalanceAmount":"Top-up amount (in %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Total payment amount: ≈%1%</font>\\n\\n<font color=#F28100>If you are someone\'s referral,\\n%2% will be returned as 20% cashback!</font>","applicationBalanceAmountLimit":"Minimum amount: %1%\\nMaximum amount: %2%\\n\\n💵 <font color=#00AE09>Your payment method: %4%</font>\\nPayment system commission: %3%%\\n\\nAfter payment, balance is credited automatically within a few minutes; you will receive a message with payment status.","applicationBalanceAmountDesc":"Top-up via %1% service","applicationBalanceAmountButton":"Go to payment page","applicationBalanceAmountButtonLoading":"Loading...","applicationBalanceAmountButtonErr":"❌ Invalid amount ❌","applicationBalanceCurrency":"Payment method","applicationBalanceCurrencyDesc":"Payment system commission: ≈%1%%","applicationServersTitle":"Server Status","paymentCompleteNotify":"🎉 Your balance has been topped up by <b>%1%</b>.\\n\\nPayment ID: <b>%2%</b>\\n(Required if contacting <a href=\\"https://t.me/rocketman_vpn\\">support</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyRef":"🎉 Your balance has been topped up by <b>%1%</b>.\\nAs a referral of @%4%, we credited a bonus of <b>%3%</b> (%5%%)\\n\\nPayment ID: <b>%2%</b>\\n(Required if contacting <a href=\\"https://t.me/rocketman_vpn\\">support</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyRefHost":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> (%3%%) for balance top-up by your referral @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Launch App</a>","paymentCompleteNotifyAdmin":"💵 User %1% [UID: %7%] topped up balance by <b>%2%</b>.\\n💰 Project net profit: +<b>%5%</b>\\n\\nPayment system: <b>%6%</b>\\nPayment ID: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Attention ❗️\\nA refund request was formed for payment `%1%`.\\n\\nAs funds were returned in full, *%2%* was deducted from your app balance.\\n\\nIf you have questions, contact [support](https://t.me/rocketman_vpn).\\n\\n🚀 [Launch App](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Nodes","adminXrayVersionTitle":"Xray-core","adminXrayVersionCurrent":"Current version: %1%","adminXrayVersionLatest":"New version available: %1%","adminXrayVersionUnknown":"Install script does not pin a version","adminXrayVersionLoading":"Checking version…","admin-routing":"🔀 Routing","admin-presets":"📋 Presets","admin-firewall":"📜 Firewall records (x%1%)","admin-firewall_add":"New firewall record","admin-nav-messages":"Bulk Messages","admin-nav-firewall":"Firewall","admin-nav-logs":"Admin Logs","logRecord-title":"📊 Admin logs (x%1%)","logRecord-title-user":"📜 User logs (x%1%)","logRecord-log-time":"Created: %1%","logRecord-log-who":"Who","logRecord-log-target":"Target","logRecord-log-reason":"Text: %1%","logRecord-setPaymentStatus":"Change payment status %1%","logRecord-removePromo":"Delete promo code %1%","logRecord-editPromo":"Edit promo code %1%","logRecord-editBalance":"Edit balance (%1%$ -> %2%$)","logRecord-returnOrder":"Cancel order %1% (%2%$)","logRecord-addOrder":"Give order %1%","logRecord-payOrder":"Renew order %1% for %2% days","logRecord-partnerNotify":"Payout to partner %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"SBP (Fast Payment System)","paymentMethodCrypto":"Cryptocurrency","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Failed to detect user data for link formation. Possibly user blocked our bot 😐","partner_title":"🏆 Partner Program 🏆","partner_desc":"You are a participant in the partner program. In addition to the referral bonus, you will receive financial deductions.\\n\\nYour current rate - %1%% of referral balance\\n\\nTotal earned: %2%\\nCurrent balance: %3%","ref_title":"🏆 Referral System 🏆","ref_desc":"Invite friends and acquaintances and get bonuses on your balance!\\n\\n<font color=#2DA618>From each referral, you\'ll get <font color=#54E13B>%1%</font> for their first orders and <font color=#54E13B>%2%%</font> of all their top-ups.</font>\\n\\n<font color=#00B7B7>All your referrals will get <font color=#15DBDB>%3%</font> bonus after first order (including trial) and <font color=#15DBDB>%4%%</font> cashback on all future top-ups.</font>\\n\\nThis system is beneficial for both you and your referrals 😉","ref_stats":"Your Statistics","ref_stats_data":"Number of referrals: %1%\\nBonus received: %2%","ref_link_text":"Your referral data","ref_link_text_copy":"📋 Link+text","ref_only_link_copy":"🔗 Link","ref_link_text_copy_sendText":"Hi! I use a convenient way to protect my data online and highly recommend it to you 😎\\n\\nPlus, by using my link, you\'ll get a %1% bonus after your first order (including trial) and a lifetime %2%% cashback on all balance top-ups 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Your referral link and additional text copied to clipboard.\\n\\nUse this to invite friends and gain joint benefits 😎","ref_only_link_copy_alert":"🔗 Your referral link copied to clipboard.\\n\\nUse it to invite friends and gain joint benefits 😎","ref_link_text_share":"💌 Share","ref_link_text_share_message":"Hi! I use a convenient way to protect my data online and highly recommend it to you 😎\\n\\nPlus, by using my link, you\'ll get a %1% bonus after your first order (including trial) and a lifetime %2%% cashback on all balance top-ups 🎉\\n","ref_message_personal":"You cannot register using your own referral link 😐","ref_message":"🎁 Referral System:\\nYou successfully registered as a referral of user @%1% 🎉\\n\\nYou will get a <b>%2%</b> bonus on your first order (including trial) and a lifetime <b>%3%%</b> cashback on each top-up!","ref_message_host":"🎁 Referral System:\\n🎉 User @%1% registered as your new referral 🎉\\n\\nYou will get a <b>%2%</b> bonus on their first order (including trial) and a <b>%3%%</b> cashback from each of their top-ups.","ref_message_order":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> on your balance","ref_message_order_host":"🎁 Referral System:\\n💵 You received a bonus of <b>%1%</b> on your balance from user @%2%","traffic_limit_notify_close":"⚠️ Traffic is running out for order `%1%` with plan `%2%`! If this message appears often, consider changing to a more advanced plan to stay connected ❤️\\n\\n🚀 You can do this by [launching the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on order ⇒ ♻️ Change Plan ♻️","traffic_limit_notify_end":"❗️ ATTENTION ❗️ Traffic exhausted for order `%1%` with plan `%2%`. It will reset on %3%. Consider upgrading to stay connected.\\n\\n🚀 [Launch the app](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Account ⇒ click on order ⇒ ♻️ Change Plan ♻️","traffic_limit_notify_restore":"🎉 Traffic statistics reset for order `%1%` with plan `%2%`. It is now fully available again :)\\n\\n🚀 [Launch App](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Apply Promo Code","example":"Example","deleteMessageFailed":"❌ Failed to delete message. It might be too old or already deleted.","cryptoPayTitle":"Payment via Cryptocurrency","cryptoPayUserId":"User ID","cryptoPayAmount":"Amount to pay (USDT)","cryptoPayInstruction":"Transfer the specified amount in USDT to the provided address","cryptoPayLoading":"Loading details...","cryptoPayErrorNoParam":"Parameter crypto_id is missing in the link.","cryptoPayErrorInvalidData":"Invalid payment data.","cryptoPayErrorParse":"Error processing payment data. Try refreshing or contact support.","cryptoPayWallet":"Wallet address for transfer","cryptoPayNetwork":"Network (blockchain)","cryptoPayCopy":"Copy","cryptoPayCopyAmountAlert":"Amount copied to clipboard!","cryptoPayCopyWalletAlert":"Wallet address copied to clipboard!","cryptoPayWarning":"CAREFULLY check credentials and amount before paying! We cannot guarantee credit in case of error.","telegramPayment":"✅ An invoice has been generated for you\\n\\n⚖️ Payment amount: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 User ID: <b>%7%</b>\\n📋 Payment ID: <b>%6%</b>\\n\\n🔗 Follow the link to pay: %5%","orderManipulationBlock":"Your previous order is still processing. Please wait for completion or contact support for help.","subPage.orderInfo":"Below are all available connection methods for your order through this app","subPage.userInfo":"Below are all available connection methods for all your active orders through this app","subPage.orderId":"🛒 Order ID: %1%\\n⬇️ Select end connection region:","subPage.nodeInfo":"📍 Bypass point: %1%\\n⚠️ This means all traffic will first go through it for masking.","subPage.autoProfile":"⚡ Auto — best server","subPage.protocolInfo":"Connection protocol: %1%","subPage.allTitle":"All Orders","subPage.expiredNotifyList":"❌ Subscription expired\\nRenew VPN in bot\\n%1%","ping.admin.initOk":"✅ System initialized, all nodes available in normal mode.","ping.admin.initFail":"❌ System initialized, but some nodes are unavailable:\\n\\n%1%","speedtest.admin.failTest":"❌ Speed test failed. Please check node status.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Low connection speed recorded (%2% Mbps download, %3% Mbps upload). Check status.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Node restored normal connection speed (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ Connection speed issues detected on the server","applicationServersSpeedtestLastSpeed":"Last speed test (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Previous speed test (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ No speed tests performed on this server yet","applicationServersPingIssueDetected":"❌ Server not responding to ping requests","actionUpdateStartNodes":"⚠️ Node update procedure started (%1%), nodes will be restarted shortly. A notification will be sent upon completion.","actionUpdateStartHeader":"Update procedure started:","actionUpdateStartSite":"• Main project page is being updated","actionUpdateStartApp":"• Backend application is being updated","actionUpdateStartProxy":"• Proxy or xray service is being updated (Nodes: %1%)","actionUpdateStartMTProto":"• MTProto server is being updated","actionUpdateStartFirewall":"• Updating firewall (Nodes: %1%)","actionUpdateStartBackup":"• Updating child API interface (Nodes: %1%)","actionUpdateStartFooter":"Nodes will be restarted shortly. A notification will be sent upon completion.","actionUpdateCompletedNodes":"✅ Node update procedure (%1%) completed, nodes restarted and should be active","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Fast and secure","mtproto.subtitle.2":"Telegram access","mtproto.description.1":"Free proxy server for a stable connection to Telegram.","mtproto.description.2":"No registration, no limits, full privacy.","button.connect":"Connect Proxy","button.copy":"Copy Link","button.copied":"Copied","link.label":"Manual connection link","feature.encryption.title":"End-to-end Encryption","feature.encryption.description":"Your messages remain confidential. We have no access to your chats.","feature.free.title":"No Limits","feature.free.description":"Free access with no registration or traffic limits.","feature.rocketman.title":"More Features","feature.rocketman.description":"This proxy works only for Telegram. For full protection, use RocketMan-VPN.","rocketman.title":"RocketMan VPN — Your reliable friend","rocketman.description":"This MTProto proxy is an additional project of RocketMan VPN. With us, you get full protection in all apps and favorite services. Try for free and evaluate the quality!","rocketman.button":"Open RocketMan VPN","howto.title":"How to connect?","howto.step1.title":"Click \\"Connect Proxy\\"","howto.step1.description":"Or copy the link and connect manually","howto.step2.title":"Open Telegram","howto.step2.description":"The link will automatically launch the app","howto.step3.title":"Confirm","howto.step3.description":"Click «Connect» in the dialog box","web.orders":"My Orders","web.settings":"Settings","web.exit":"Exit","web.back":"← Back","web.themeLight":"Light theme","web.themeDark":"Dark theme","settings.accountInfo":"Account Info","settings.language":"Language","settings.currency":"Display Currency","settings.currencyDesc":"Select currency for prices and balance display in the app.","settings.webCredentials":"Web Login Details","settings.webCredentialsDesc":"These details are used for logging into the web interface outside Telegram. We recommend a complex password.","settings.login":"Login","settings.loginPlaceholder":"Enter new login","settings.newPassword":"New Password","settings.passwordPlaceholder":"At least %1% characters","settings.repeatPassword":"Repeat Password","settings.repeatPasswordPlaceholder":"Repeat new password","settings.passwordMismatch":"Passwords do not match","settings.saved":"Saved!","settings.saveError":"Save Error","settings.saving":"Saving…","settings.saveCredentials":"Save Credentials","settings.show":"Show","settings.hide":"Hide","settings.copy":"Copy","settings.reset":"Reset","settings.apiKeyHint":"Use API key to log in to the <a href=\\"https://%1%\\" target=\'_blank\'>web interface</a> without Telegram or for integration. Do not share with third parties. This key provides full access to your account","settings.referral":"Referral (Inviter ID)","settings.referralDesc":"If you missed the referral link, you can set the ID of the inviter here. It will be applied only once.","settings.referralApplied":"Inviter ID","settings.referralAppliedAlert":"Inviter ID copied to clipboard.","settings.referralHostId":"Your inviter ID","settings.referralHostIdPlaceholder":"Enter inviter user ID (digits)","settings.referralHostIdInvalid":"Invalid ID format. Use digits only.","settings.referralApply":"Apply inviter ID","settings.referralSaved":"Referral applied!","settings.referralErr.already_applied":"Referral has already been applied.","settings.referralErr.invalid_ref_host":"Invalid inviter ID.","settings.referralErr.same_account":"You cannot use your own ID as a referral.","login.tabCredentials":"Login and Password","login.tabApiKey":"API Key","login.tabRegister":"Register","login.labelLogin":"Login","login.labelPassword":"Password","login.labelConfirmPassword":"Confirm Password","login.labelApiKey":"API Key","login.placeholderLogin":"Enter login","login.placeholderPassword":"Enter password","login.placeholderConfirmPassword":"Confirm password","login.placeholderApiKey":"Enter API key","login.signIn":"Sign In","login.signInApiKey":"Sign in via API Key","login.signUp":"Sign Up","login.signingIn":"Signing in…","login.signingUp":"Signing up…","login.orUseApiKey":"or use API Key","login.orUseCredentials":"or use Login and Password","login.switchToApiKey":"Log in via API Key","login.switchToCredentials":"Log in via Login and Password","login.errLoginRequired":"Enter login and password","login.errPasswordRequired":"Enter password","login.errConfirmPasswordRequired":"Confirm password","login.errPasswordMismatch":"Passwords do not match","login.errApiKeyRequired":"Enter API key","login.errIncorrect":"Incorrect login or password","login.errInvalidKey":"Invalid API Key","login.errServer":"Server error, try again","login.errRegistration":"Registration failed","login.tabTelegram":"Via Telegram","login.tg.title":"Telegram Login","login.tg.instruction":"1. Send the command below to <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a> bot\\n2. After sending, click «Confirm Login»","login.tg.commandLabel":"Bot command:","login.tg.showCommand":"Show","login.tg.hideCommand":"Hide","login.tg.copyCommand":"Copy","login.tg.copied":"Command copied!","login.tg.timerLabel":"Code valid for: %1%","login.tg.timerExpired":"Code expired","login.tg.verifyButton":"Confirm Login","login.tg.verifying":"Verifying…","login.tg.requestNew":"Request new code","login.tg.loading":"Generating code…","login.tg.enter_correct":"Identity confirmed. Return to site and click \\"%1%\\" to finish","login.tg.enter_fail":"Action failed. Ensure the key is correct and not expired","login.tg.errNotSent":"Failed to confirm login. Ensure you sent the command to the bot. If expired, request a new code.","lang.ru":"Russian","lang.en":"English","lang.uk":"Ukrainian","footer.info":"MTProto proxy works only with official Telegram apps","instructionModalTitleVpn":"VPN Connection Instructions","instructionModalTitleProxy":"Proxy Connection Instructions","instructionModalSendToTg":"📩 Send to Telegram","instructionModalSentToTg":"Instructions have been sent to your Telegram private messages","settings.name":"Your Name","settings.nameDesc":"Enter a name for personalized communication in the app. It is public and can be used to display to other users, for example in the referral system","settings.namePlaceholder":"Enter name (3-15 characters)","settings.nameInvalid":"Only Cyrillic, Latin, numbers and spaces allowed (3-15 characters)","settings.promoTitle":"Promo Code Activation","settings.promoDesc":"If you have a promo code, enter it here to receive a nice bonus to your balance.","settings.promoPlaceholder":"Enter promo code","settings.promoApply":"Apply promo code","settings.promoApplied":"Promo code successfully applied!","adminDashboardTitle":"Dashboard Statistics","adminDashboardActiveOrders":"Orders Activity","adminDashboardActiveLabel":"Active","adminDashboardExpiredLabel":"Expired","adminDashboardOrdersByTariff":"Orders by Tariff","adminDashboardPayments":"Payments Status","adminDashboardTrial":"Trial Period Usage","adminDashboardLang":"User Language","adminDashboardCurrency":"User Currency","adminDashboardActivity":"App Activity","adminDashboardOrdersPerUser":"Orders Per User","adminDashboardRefIncome":"Median Referral Income","applicationAdminBackButton":"Back","settings.passkeys.title":"Access Keys (Passkeys)","settings.passkeys.desc":"Add up to 5 devices for fast and secure passwordless login using biometrics or hardware keys.","settings.passkeys.add":"➕ Add new key","settings.passkeys.name":"Device name","settings.passkeys.name_placeholder":"e.g. iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"You don\'t have any access keys yet","settings.passkeys.delete_confirm":"Are you sure you want to remove this access key? You will no longer be able to log in with it.","settings.passkeys.limit_reached":"Key limit reached (maximum 5)","settings.passkeys.add_success":"Access key added successfully!","settings.passkeys.add_error":"Failed to add access key","login.tabPasskey":"By Key","login.passkey.btn":"Login with Passkey","login.passkey.error":"Authentication via access key failed","login.passkey.not_supported":"Your browser or device does not support Passkey login","admin.bulkRenewal.button":"📅 Bulk Order Renewal","admin.bulkRenewal.title":"📅 Bulk Order Renewal","admin.bulkRenewal.afterDateLabel":"Include orders expiring after the specified date (or not yet expired). Timezone: %1%","admin.bulkRenewal.daysLabel":"Number of days to extend","admin.bulkRenewal.ordersCount":"Orders to be extended","admin.bulkRenewal.ordersCountUpdate":"Orders to be updated","admin.bulkRenewal.usersCount":"Unique users","admin.bulkRenewal.applying":"⏳ Applying...","admin.bulkRenewal.done":"✅ Done!","admin.bulkRenewal.apply":"📅 Extend %1% order(s) by %2% day(s)","admin.bulkRenewal.applyTraffic":"📉 Reset traffic on %1% order(s)","admin.bulkRenewal.applyDaysAndTraffic":"📅 Extend %1% order(s) by %2% day(s) and reset traffic","admin.bulkRenewal.blockedDays":"Enter a number of days from 0 to 3650","admin.bulkRenewal.blockedNoEffect":"Enter more than 0 days, or choose a traffic reset","admin.bulkRenewal.blockedNoOrders":"No orders match the selected date","admin.bulkRenewal.blockedNoActiveOrders":"No orders are active right now","admin.bulkRenewal.activeOnlyHint":"With 0 days the date is ignored: only orders active right now are updated.","admin.bulkRenewal.notifyUser":"📅 The administrator has extended your active orders by %1% day(s). Order list: %2%","admin.bulkRenewal.notifyUserTraffic":"📅 The administrator updated used traffic on your orders: %1%. Order list: %2%","admin.bulkRenewal.notifyUserDaysAndTraffic":"📅 The administrator extended your active orders by %1% day(s) and updated used traffic: %2%. Order list: %3%","admin.bulkRenewal.notifyUsers":"Notify users via Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ With a large number of users, notifications may be unstable or delayed","admin.bulkRenewal.trafficLabel":"Used traffic","admin.bulkRenewal.trafficHint":"A share of the limit is subtracted from used traffic and never goes below zero. A share of used traffic subtracts that percent of what the client already spent.","admin.bulkRenewal.traffic.none":"Do not change","admin.bulkRenewal.traffic.full":"Full reset","admin.bulkRenewal.traffic.limit_50":"Reset 50% of the limit","admin.bulkRenewal.traffic.limit_25":"Reset 25% of the limit","admin.bulkRenewal.traffic.limit_10":"Reset 10% of the limit","admin.bulkRenewal.traffic.used_50":"Reset 50% of used traffic","admin.bulkRenewal.traffic.used_25":"Reset 25% of used traffic","admin.bulkRenewal.traffic.used_10":"Reset 10% of used traffic","connection_test_button":"Connection test","connection_test_button_node":"Test","connection_test_title":"Connection test","connection_test_desc":"Main servers are checked directly. Backup servers are checked directly and through each main server (HTTPS and VLESS). Hysteria2 on a backup node exits directly.","connection_test_no_servers":"Server list is unavailable","connection_test_pending":"Waiting","connection_test_testing":"Testing...","connection_test_ok":"Success","connection_test_fail":"Failed","connection_test_retry":"Retry","connection_test_close":"Close","connection_test_progress":"Checked: %1% / %2%","connection_test_summary":"Passed: %1% of %2%","connection_test_latency":"%1% ms","connection_test_ip":"IP: %1%","connection_test_colo":"PoP: %1%","connection_test_server":"Server","connection_test_section_main":"Main","connection_test_section_backup":"Backup","connection_test_direct":"Direct","connection_test_via":"Via %1%","connection_test_relay_skip":"Hysteria2 exits directly from the backup node","connection_test_error_no_access":"No admin access","connection_test_error_no_node":"Server not found","connection_test_error_no_credentials":"Test credentials are not configured","connection_test_error_timeout":"Timeout","connection_test_error_connect":"Failed to establish a connection","connection_test_error_probe":"Cloudflare CGI probe did not respond","connection_test_error_client":"Probe client is not available","connection_test_error_deploying":"Node is currently deploying","connection_test_error_not_backup":"A relay check is only available for a backup node","connection_test_error_no_via":"Main server for the relay check was not found","connection_test_error_relay_protocol":"This protocol on a backup node does not go through a main server","connection_test_error_protocol_disabled":"Protocol is disabled on this server","adminAnalyticsNav":"Analytics","adminAnalyticsFrom":"From","adminAnalyticsTo":"To","adminAnalyticsCompare":"Compare","adminAnalyticsCompareNone":"No comparison","adminAnalyticsComparePrevious":"Previous period","adminAnalyticsCompareMonth":"Previous month","adminAnalyticsProtocol":"Protocol","adminAnalyticsServer":"Server","adminAnalyticsAll":"All","adminAnalyticsRefresh":"Refresh","adminAnalyticsLoading":"Loading...","adminAnalyticsUsers":"Unique users","adminAnalyticsUsersHint":"Distinct accounts in the selected period. Protocol and server filters apply. This is not a live online count.","adminAnalyticsSessions":"Sessions","adminAnalyticsSessionsHint":"Connection events in the selected period. One account can open many sessions. Overlay hops are counted without treating the relay IP as the client region.","adminAnalyticsTraffic":"Traffic","adminAnalyticsTrafficHint":"Upload + download, counted once on the exit node (same as billing). Relay Xray forward is not added again.","adminAnalyticsMap":"Users by region","adminAnalyticsMapHint":"The world map is always shown. Circle size is unique users in that region/ISP. The baseline size is the view at max zoom minus 1; circles shrink when you zoom out. Color matches the server that had the most users there.","adminAnalyticsServers":"Preferred servers","adminAnalyticsServersHint":"Each bar is the number of unique users who used that server in the selected period. Color is that server\'s color.","adminAnalyticsProtocols":"Protocol mix","adminAnalyticsProtocolsHint":"Share of sessions (connections) per protocol in the selected period. The number is sessions, not unique people.","adminAnalyticsTrafficByServer":"Traffic by server","adminAnalyticsTrafficByServerHint":"Upload + download traffic per server in megabytes (MB). Color matches Preferred servers.","adminAnalyticsRegions":"Regions and ISPs","adminAnalyticsRegionsHint":"Unique users are the peak unique accounts in an hour for that region/ISP. Sessions are connection events, not unique people.","adminAnalyticsCountry":"Country","adminAnalyticsRegion":"Region","adminAnalyticsIsp":"ISP","adminAnalyticsResources":"Popular resources","adminAnalyticsResourcesHint":"Aggregated hostnames for the selected period. Hidden when a server filter is on.","adminAnalyticsHost":"Host","adminAnalyticsHits":"Hits","adminAnalyticsPreset_24h":"24h","adminAnalyticsPreset_7d":"7 days","adminAnalyticsPreset_30d":"30 days","adminAnalyticsPreset_month":"This month","adminAnalyticsPreset_prevMonth":"Last month","adminNodeUsageNav":"Nodes by hour","adminNodeUsageIntro":"How many distinct clients used each node and each protocol in every interval. Shows when a node lost clients or a protocol stopped being used. The current interval is still running and refreshes every minute.","adminNodeUsagePreset_24h":"24 hours","adminNodeUsagePreset_7d":"7 days","adminNodeUsagePreset_14d":"2 weeks","adminNodeUsagePreset_30d":"Month","adminNodeUsagePreset_custom":"Custom range","adminNodeUsageInterval":"Interval","adminNodeUsageIntervalAuto":"Auto","adminNodeUsageInterval_3600":"1 hour","adminNodeUsageInterval_10800":"3 hours","adminNodeUsageInterval_21600":"6 hours","adminNodeUsageInterval_43200":"12 hours","adminNodeUsageInterval_86400":"1 day","adminNodeUsageAllNodes":"All nodes","adminNodeUsageTotal":"Total","adminNodeUsageTruncated":"Too many points: the range was cut to %1% intervals. Pick a larger interval.","adminNodeUsageNoData":"No data for the selected period.","adminNodeUsageSignals":"Drops and outages","adminNodeUsageSignalsHint":"The last finished interval is compared with the usual level: the median of the same time of day on previous days (previous days for the daily interval). A signal appears when clients fall below half of the usual level and the usual level is at least 3. Click a signal to show only that node.","adminNodeUsageSignalsEmpty":"No drops detected.","adminNodeUsageSignalStopped":"Stopped","adminNodeUsageSignalDrop":"Drop","adminNodeUsageSignalText":"— now %1%, usually ≈%2%, since %3%","adminNodeUsageByNodes":"Clients by node","adminNodeUsageByNodesHint":"Distinct clients on each node per interval (any protocol, or the one picked in the filter). Click a node in the chips above to keep only it.","adminNodeUsageByProtocols":"Clients by protocol (all nodes)","adminNodeUsageByProtocolsHint":"Distinct clients per protocol across all nodes. A client who used several protocols counts in each of them, but once in Total.","adminNodeUsageHeatmap":"Activity map","adminNodeUsageHeatmapHint":"Each row is a node and protocol, each column an interval. Brighter means more clients relative to the row maximum. Red marks intervals with less than half of the usual clients. Hover a cell to see the value.","adminNodeUsageLatest":"Last finished interval"}');
 ;// ./src/lang/uk.json
-const uk_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"Для увімкнення сповіщень на iPhone:\\n1. Натисніть іконку [⎋] (Поділитися) в нижній панелі.\\n2. Виберіть пункт «Додати на початковый екран».\\n3. Запустіть сайт з робочого столу та поверніться в налаштування.","settings.pushSupportError":"Web Push не підтримується на цьому пристрої","settings.pushTitle":"Push-сповіщення","settings.pushDesc":"Підпишіть цей пристрій для отримання системних сповіщень","settings.pushSubscribed":"✅ Цей пристрій підписаний","settings.pushNotSubscribed":"❌ Пристрій не підписаний","settings.pushSubscribeBtn":"Підписатися","settings.pushUnsubscribeAllBtn":"Відв\'язати всі пристрої","settings.pushSuccess":"Успішно підписано","settings.pushUnsubscribeSuccess":"Всі пристрої від\'єднано","settings.pushError":"Помилка підписки","settings.disableSiteNotify":"Вимкнути сповіщення на сайті","settings.disableSiteNotifyDesc":"Вимкніть сповіщення на сайті, залишивши лише Push-сповіщення та сповіщення в Telegram (якщо учётная запис прив\'язана до Telegram)","settings.disableSiteNotifyYes":"Так","settings.disableSiteNotifyNo":"Ні","settings.geoRouting":"Додати гео-роутинг в дані підписки","settings.geoRoutingDesc":"Ви можете вибрати певний гео-роутинг для своїх замовлень. Якщо він буде доданий, то при підключенні до VPN / Proxy через інструкції з додатку, в даних підписки буде вказано, що ви хочете використовувати певний гео-роутинг. Це може допомогти в обході блокувань та покращенні стабільності підключення, якщо основний сервер недоступний або працює нестабільно у вашому регіоні. Якщо ви не впевнені, який варіант вам краще підходить - залиште значення за замовчуванням (%1%)","settings.disabled":"Вимкнути (не рекомендується)","settings.reserveConnectionLink":"Використовувати резервне посилання на підписку Vless, Hysteria","settings.reserveConnectionLinkDesc":"Увімкніть цю опцію, якщо у вас немає доступу до основного сервера. Тоді інструкції з підключення міститимуть резервне посилання замість основного.","settings.reserveConnectionLinkYes":"Так","settings.reserveConnectionLinkNo":"Ні","applicationNotifyTitle":"Сповіщення","applicationNotifyConfirmDeleteAll":"Ви впевнені, що хочете видалити всі сповіщення?","applicationNotifyEmpty":"Немає нових сповіщень","applicationNotifyPromoSuccess":"Промокод успішно застосовано","applicationNotifyPromoError":"Помилка активації промокода: можливо, він вже використаний або вичерпано ліміт","applicationNetworkError":"Помилка мережі","applicationNotifyConfirmDelete":"Ви впевнені, що хочете видалити це сповіщення?","applicationNotifyDelete":"🗑️ Видалити","applicationNotifyPromoApply":"Застосувати промокод (%1%)","applicationDialogOk":"ОК","applicationDialogCancel":"Скасувати","pagePayTitle":"Придбання VPN","pagePayBalance":"Поповнення балансу","pagePayID":"Ваш унікальний ID","pagePayIDPlaceholder":"Введіть свій ID","pagePayAmount":"Сума поповнення балансу (тимчасово від %1%)","pagePayButton":"Перейти до оплати","pagePayAmountTotal":"\\n<font color=#00AE09>Підсумкова сума оплати: ≈%1%</font>","pageFAQId":"Як отримати ID?","pageFAQStep1":"Відкрийте панель на сайті або додаток у Telegram","pageFAQStep2":"Відкрийте розділ «Налаштування»","pageFAQStep3":"У блоці «Інформація про акаунт» натисніть «Ваш ID», щоб скопіювати номер","pageFAQStep4":"Вставте ID у поле зліва","pageFAQOpen":"Відкрити додаток у Telegram","pageFAQOpenSite":"Відкрити панель на сайті","pageFAQQR":"QR-код додатка в Telegram","landingTGBotButton":"Запустити Telegram-бота","landingDashboardButton":"Відкрити панель керування","landingTarifs":"Тарифи","landingTarifsTrial":"+ Пробний період %1%год","landingTarifsDiscount":"Знижка","landingTarifsPrice":"%1%/%2%дн.","landingTarifsGo":"Підключити","landingFooterText":"А тут наш основний проєкт","landingTitle":"RocketMan VPN — Інтернет під захистом!","landingTitleBrand":"RocketMan VPN","landingTitleTagline":"Інтернет під захистом!","landingTitleDesc":"Блискавичний доступ до улюблених сайтів та сервісів з ПК та смартфона.","landingFeaturesTitle":"Чому обирають саме нас?","landingAppsTitle":"Наші продукти для вас","landingAppsDownload":"Завантажити","landingAppsOpen":"Перейти","landingAppsFree":"Безкоштовно","landingTrust1Value":"256-bit","landingTrust1Label":"AES-шифрування · дані під замком","landingTrust2Value":"до 1 Гбіт/с","landingTrust2Label":"Швидкість каналу","landingTrust3Value":"24/7","landingTrust3Label":"Жива підтримка","landingTrust4Value":"НЕОБМЕЖЕНО","landingTrust4Label":"Пристроїв на 1 ключ","landingFeaturesLead":"Захист, швидкість і простота — без компромісів","landingCompareTitle":"Без захисту vs RocketMan VPN","landingCompareLead1":"Без VPN — тривога та «Доступ заборонено».","landingCompareLead2":"З нашим сервісом — захист і безпека за кілька кліків","landingCompareColBad":"Без VPN","landingCompareColGood":"З RocketMan VPN","landingCompareRow1":"Що бачать сайти","landingCompareBad1":"Ваше місто, провайдера та активність","landingCompareGood1":"Лише країну сервера","landingCompareRow2":"Wi-Fi у кафе та аеропортах","landingCompareBad2":"Паролі та переписку можна перехопити","landingCompareGood2":"Трафік зашифровано — видно лише «білий шум»","landingCompareRow3":"Передача даних","landingCompareBad3":"У відкритих мережах паролі — відкритим текстом","landingCompareGood3":"VLESS · Proxy HTTPS · Hysteria2","landingCompareRow4":"Блокування та DPI","landingCompareBad4":"«Доступ заборонено», сервіси та месенджери падають","landingCompareGood4":"Наші обходи працюють навіть у Китаї (перевірено в червні 2026)","landingCompareRow5":"Швидкість","landingCompareBad5":"Провайдер може різати маршрут і швидкість","landingCompareGood5":"До 1 Гбіт/с, зокрема на 5G","landingCompareRow6":"Налаштування","landingCompareBad6":"Вручну на кожному пристрої та в додатку","landingCompareGood6":"QR-код за 10 секунд · iOS, Android, ПК, TV","landingCompareRow7":"Підтримка","landingCompareBad7":"Розбираєтесь самі","landingCompareGood7":"Жива підтримка в Telegram 24/7","landingHowTitle":"3 кроки до захищеного інтернету","landingHowLead":"Підключення займе менше двох хвилин — ми проведемо вас за руку","landingHowStep1Title":"Оберіть тариф","landingHowStep1Text":"Від безкоштовного тесту до преміуму — план під будь-які задачі","landingHowStep2Title":"Оплатіть","landingHowStep2Text":"Зручна оплата та миттєва активація в Telegram або на сайті","landingHowStep3Title":"Увімкніть VPN / Proxy","landingHowStep3Text":"Покрокова інструкція — далі лише ВКЛ/ВИКЛ","landingPricingLead":"Зручні тарифи · пробний період · реферальна система","landingPlanTraffic":"📊 %1% ГБ трафіку","landingPlanDevices":"📱 Без ліміту пристроїв","landingPlanVpnProxy":"🔐 VPN + Proxy в одному","landingCtaTitle":"Готові захистити свій інтернет?","landingCtaDesc":"Приєднуйтесь — підключення займе пару хвилин, а спокій залишиться надовго.","landingCtaButton":"Підключити зараз","landingCtaSite":"Підключити через сайт","landingCtaTelegram":"Підключити через Telegram","landingPlanConnectSite":"Підключити на сайті","landingPlanConnectTelegram":"Підключити в Telegram","landingHeaderTelegram":"Запустити в Telegram","landingHeaderSite":"Підключити прямо тут","landingHeroGuarantee":"✓ Пробний період · ✓ VPN + Proxy · ✓ Підтримка 24/7","landingHeroPill1":"Пробний період","landingHeroPill2":"VPN + Proxy","landingHeroPill3":"Підтримка 24/7","landingHeroPill4":"Працює навіть у Китаї","landingHeroPill5":"Обхід Білих Списків","landingHeroCompareBad":"Без VPN","landingHeroCompareGood":"З RocketMan VPN","landingHeroCompareYou":"ВИ","landingHeroCompareWeb":"МЕРЕЖА","landingHeroCompareBadWire":"відкритий канал","landingHeroCompareGoodWire":"зашифрований туннель","landingHeroCompareBad1":"Ваш реальний IP витікає в мережу","landingHeroCompareBad2":"Блокування · «Доступ заборонено»","landingHeroCompareGood1":"Ми захистили й зашифрували ваше перебування в інтернеті","landingHeroCompareGood2":"No-logs · ми не зберігаємо ваші дані","landingProtocolVless":"VLESS","landingProtocolProxy":"Proxy HTTPS","landingProtocolHysteria":"Hysteria2","landingShieldMeta":"VLESS · Proxy HTTPS · Hysteria2","landingPlanPopular":"ХІТ","landingSecurityBadge":"З нами безпечно","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"Багатофункціональний проксі-клієнт для <b>Windows, Linux і macOS</b>. Підтримує протоколи <b>HTTPS / VLESS / Hysteria2</b>. API-режим керування замовленнями прямо з додатку, TUN-тунелювання, VLESS-підписки та інтеграція з Discord (Windows).","app.tgproxy.name":"TGProxy — MTProto для Telegram","app.tgproxy.description":"Безкоштовний <b>MTProto-проксі</b> для стабільного доступу до Telegram. Без реєстрації та лімітів трафіку, наскрізне шифрування переписки. Підключення в один клік з браузера — відкривається прямо в Telegram.","features1Title":"Анонімність","features1Text":"Завдяки кільком шарам захисту з нашого боку — Ваш реальний IP не дізнається жоден сервіс.","features2Title":"Швидкість","features2Text":"Завантажуйте, дивіться улюблений контент та діліться на швидкостях до 1 Гбіт/с.","features3Title":"Пробний період","features3Text":"Підключайтеся в 1 клік з будь-якого свого пристрою! ПК, смартфон, ТВ, планшет та ноутбук.","features4Title":"Підтримка","features4Text":"Ми завжди готові допомогти Вам з вирішенням будь-яких питань. На зв\'язку практично 24/7","faq1title":"Як оплатити?","faq1text":"Поповніть баланс і оплатіть зручним методом. Після оплати отримайте інструкції в Telegram-боті або на сайті (залежить від того, де оформлювали замовлення).","faq2title":"Як налаштувати VPN?","faq2text":"У нашому <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram-боті</a> та в <a href=\\"https://ru-app.rocketman-vpn.com:8443/application\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Особистому кабінеті</a> на сайті максимально детально розписано весь процес підключення.\\nБуквально від А до Я, тому Ви навряд чи зможете десь заплутатися. Головне — дотримуйтесь інструкцій :)","faq3title":"Що робити, якщо щось не працює?","faq3text":"Ознайомтесь з нашою <a href=\\"https://rocketman-vpn.com/uk/wiki/\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Базою знань</a> — ми зібрали корисні статті та відповіли на можливі питання заздалегідь. Якщо залишаться питання, які не вдасться вирішити самостійно — напишіть у <a href=\\"https://t.me/%1%\\" target=\'_blank\'>підтримку через Telegram</a>, і ми Вам допоможемо.","locationSelectTitle":"Оберіть локацію сервера","locationSelectLoad":"Завантаженість: %1%%","locationReserve1":"Санкт-Петербург","locationLocal":"Локальний сервер","locationStockholm":"Стокгольм","locationAustria":"Відень","locationNetherland":"Амстердам","locationFrankfurt":"Франкфурт","locationParis":"Париж","tarif.test_drive":"🚗 Тест-драйв","tarif.start":"🚀 Старт","tarif.gamer":"🎮 Геймер","tarif.pro":"👑 Сімейна+","tarif.ultra":"🌌 Космос","httpTarifPro":"🔒 Proxy-Безліміт","httpTarifGamer":"🔒 Proxy-Геймер","tarifNameFull":"%1% (%2% днів | %3% GB/д) - %4%","welcomeMessage":"Ласкаво просимо!\\nЗавдяки нашому сервісу Ви зможете отримати захищений доступ до улюблених сайтів та додатків, як це роблять інші наші улюблені клієнти ❤️\\n\\n⭐️ У нас немає обмежень на кількість пристроїв, тому можете використовувати 1 ключ на всіх своїх девайсах! Разом із VPN Ви отримуєте доступ і до нашого Proxy.\\n\\n🛒 Ми надаємо:\\n- VPN для iOS, Android, Windows, macOS, Android TV\\n- Proxy для браузера, Discord, Windows тощо","basketBalance":"Поповнити баланс","secondsToStringD":"%4% дн. %3% год. %2% хв. %1% сек.","secondsToStringH":"%3% год. %2% хв. %1% сек.","secondsToStringM":"%2% хв. %1% сек.","readButton":"🗑 Видалити це повідомлення","openPage":"🌐 Сайт","openApp":"📱 Додаток","expireNotifyOrderData":"▪️ Тариф: `%1%`\\n▪️ Назва: `%2%`\\n▪️ Термін продовження: `%3% днів`","expireNotifyTemplate":"Вітаємо, %1%!\\n%2%\\n\\n%3%\\n▪️ Вартість продовження: `%4%`\\n\\n%5%","expireNotifyFull":"Термін дії Вашого замовлення підійшов до кінця 🙁\\n\\nЩоб залишатися на зв\'язку з вільним Інтернетом — [запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp), далі натисніть на 💸 свій баланс справа вгорі та, поповнивши його, у налаштуваннях замовлення увімкніть автопродовження 😇","expireNotifyTime":"Термін дії Вашого замовлення завершиться менш ніж через `%1%` годину 🙁","expireNotifyRenewAutoNoMoney":"❗️ У Вас увімкнена функція автопродовження, проте Ваш поточний баланс не дозволяє продовжити його 🙁\\n\\nПереконайтеся, що на рахунку достатньо коштів, щоб функція працювала без проблем протягом найближчих місяців. [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp), у правому верхньому куті додатка натисніть на свій баланс та поповніть на бажану суму.","expireNotifyRenewAuto":"✅ У Вас увімкнена функція автопродовження, тому замовлення буде продовжено автоматично, коли на ньому залишиться менше 24 годин 😎","expireNotifyRenewManual":"ℹ️ Як увімкнити автопродовження?\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на своє замовлення ⇒ Налаштування ⇒ поставте галочку біля Автопродовження ⇒ Зберегти всі зміни.","expireNotifyRenewSuccessAuto":"Вітаємо, %1%!\\nВаше замовлення було продовжено автоматично.\\n\\n%2% 🎉\\n\\nДякуємо, що довіряєте нам ❤️\\nНайкращою подякою за сервіс буде інвайт Ваших друзів через реферальну систему!\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"Команда використана невірно\\n`%1%`\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Команда `%1%` використана невірно!\\n\\n✅ Правильний приклад: `%2%`\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Почати роботу","usePromoCommand":"Застосувати промокод — /promo PROMO_NAME","useFaqCommand":"Як підключитися до VPN / Proxy?","usePromoAlready":"Ви вже застосували цей промокод. Застосувати промокод можна лише 1 раз.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Промокод `%1%` не знайдено 🙁\\n\\nПеревірте правильність написання, а також переконайтеся, що промокод є дійсним.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Ліміт активацій промокоду `%1%` вичерпано 🙁\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"Ви вже застосували подібний промокод.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Не вдалося застосувати промокод `%1%` 🙁\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Промокод `%1%` успішно застосовано 🎉\\nНа Ваш баланс зараховано %2%\\n💰 Ваш поточний баланс: %3%\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"У Вас немає доступу для виконання цієї дії.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Меню адміна","adminMenu":"Розділ адміністратора\\n\\n\\nМеню промокодів\\nСписок промокодів: /listPromo\\nІнформація по промокоду: `/infoPromo {PROMO_NAME}`\\nСтворити промокод: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nВидалити промокод: `/deletePromo {PROMO_NAME}`\\n\\n\\nМеню користувачів\\nВидати замовлення користувачу: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nВидалити замовлення: `/removeOrder {ORDER_ID}`\\nВидати баланс користувачу: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Замовлення не знайдено","adminUserRemoveOrderStatus":"Статус видалення замовлення: %1%","adminUserGiveTarifErrUser":"Користувача не знайдено!","adminUserGiveTarifErrTarif":"Тариф не знайдено","adminUserGiveTarifErrNode":"Нода тарифу не знайдена. Конфігурація тарифу невірна","adminUserGiveTarifErrMarzban":"MarzBan не дав створити замовлення. Причина невідома","adminUserGiveTarifSuccess":"Ви успішно видали замовлення для @%1%","adminUserGiveTarifNotify":"🎉 Адміністратор підключив на Ваш акаунт\\nтариф `%1%` на `%2% дн.` 📆\\n\\n*Інформація про замовлення:*\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒\\nнатисніть на своє замовлення ⇒ 📚 Інструкція VPN / Proxy","adminPromoCreateAlreadyExist":"Цей промокод уже існує","adminPromoCreateAlreadyExistWas":"Цей промокод уже колись існував і не може бути створений повторно","adminPromoCreateFailed":"Не вдалося створити промокод","adminPromoCreateDone":"Промокод `%1%` успішно створено.\\nДоступно активацій: %2%\\nБаланс: %3%","adminPromoList":"Список усіх промокодів:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% вик. / %3% всього / %4%)","adminPromoInfo":"Інформація по промокоду:\\n\\nID: `%1%`\\nЛіміт активацій: %2%\\nКількість активацій: %3%\\nБаланс: %4%\\n\\nСписок активацій:\\n%5%","adminPromoDeleteDone":"Промокод `%1%` успішно видалено","terms":"Угода користувача","contacts":"Контакти для зв\'язку","wiki":"База знань","wikiPage.description":"Інструкції, відповіді на запитання та приклади налаштування VPN.","wikiPage.articleLead":"Стаття з бази знань RocketMan VPN.","wikiPage.articleHint":"Навігація по статтях ліворуч · зміст праворуч","wikiPage.subtitle":"Оберіть тему ліворуч або скористайтеся пошуком","wikiPage.heroTopic.faq":"Відповіді на запитання","wikiPage.heroTopic.setup":"Налаштування та підключення","wikiPage.heroTopic.troubleshoot":"Приклади та рішення","wikiPage.searchPlaceholder":"Пошук за назвою та текстом статей...","wikiPage.loadingList":"Завантаження списку статей...","wikiPage.emptyList":"Статті ще не додані.","wikiPage.loadingArticle":"Завантаження статті...","wikiPage.openHint":"Оберіть статтю у списку","wikiPage.back":"Назад до списку","wikiPage.error.loadList":"Не вдалося завантажити список статей.","wikiPage.error.emptyFile":"Для поточної мови стаття недоступна.","wikiPage.error.loadArticle":"Не вдалося завантажити статтю.","wikiPage.navigation":"Навігація","wikiPage.contents":"Зміст","wikiPage.readMore":"Читати","wikiPage.readingTime":"хв читання","wikiPage.articlesCount":"статей","wikiPage.backToTop":"Наверх","wikiPage.home":"🏠 Головна сторінка Бази знань","wikiPage.copyLink":"Копіювати посилання на цю статтю","wikiPage.articleLinkCopied":"Посилання на статтю скопійовано","wikiPage.linkCopied":"Посилання скопійовано","wikiPage.closeLightbox":"Закрити","wikiPage.openImageInNewTab":"Відкрити в новій вкладці","wikiPage.copySectionLink":"Копіювати посилання на розділ","wikiPage.copyCurrentSectionLink":"Копіювати посилання на поточний абзац","wikiPage.sectionLinkCopied":"Посилання на абзац скопійовано","wikiPage.enlargeImage":"Збільшити зображення","wikiPage.copyCode":"Копіювати","wikiPage.copied":"Скопійовано","wikiPage.copyText":"Натисніть, щоб скопіювати","wikiPage.searchNoResults":"Нічого не знайдено. Спробуйте інше слово.","wikiPage.searchHint":"Результати пошуку за назвою та текстом","wikiPage.searching":"Шукаємо...","wikiPage.searchMatchTitle":"У назві","wikiPage.searchMatchBody":"У тексті","wikiPage.updatedAt":"Оновлено","wikiPage.featured":"Важливе до прочитання","wikiPage.groupOther":"Інші статті","wikiPage.allArticles":"Усі статті","wikiPage.cardUpdated":"Оновлено","wikiPage.updatedToday":"сьогодні","wikiPage.updatedYesterday":"вчора","wikiPage.updatedDaysAgo":"%1% дн. тому","wikiPage.badge.important":"Важливо","wikiPage.badge.new":"Нове","wikiPage.badge.updated":"Оновлено","wikiPage.badge.hot":"Актуально","contactsTG":"Телеграм чат","contactsEmail":"E-Mail","trialNotify":"✅ Ви отримали тариф `%1%` на `%2% години` як ознайомлювальний доступ.\\n\\n📌 Інформація про замовлення в додатку:\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒\\nнатисніть на своє замовлення ⇒ 📚 Інструкція VPN / Proxy.\\n\\nМи надаємо Вам можливість безкоштовно ознайомитися з нашими продуктами для того, щоб Ви оцінили якість та стабільність перед майбутніми покупками 🤝","launchBot":"Запустити","launchBotLong":"Відкрити додаток 📱","applicationMainMenu":"Головне меню","applicationMainMenuBack":"Назад","applicationButtonsRef":"Реферальна система","applicationButtonsFaq":"База знань","applicationButtonsCabinet":"Особистий кабінет","applicationButtonsAdmin":"Кабінет адміністратора","applicationButtonsAdminDisk":"Вільно дискового простору: %1%","applicationButtonsAdminPayments":"Статистика доходу:<br/>%1% поточний міс.<br/>%2% минулий міс.<br/>%3% за весь період | %4% в очікуванні","applicationUserInfoWithUs":"Ви з нами","applicationUserInfoBalance":"Ваш баланс","applicationUserInfoId":"Ваш ID","applicationUserInfoTgId":"ID Прив\'язаного акаунта TG","applicationUserInfoAPIKey":"Ваш API ключ","applicationUserInfoAPIKeyAlert":"📝 Ваш API ключ скопійовано в буфер обміну. Нікому не розголошуйте цей ключ, адміністрація проєкту ніколи не попросить вас назвати його","applicationUserInfoAPIResetAlertAsk":"📝 Ви впевнені, що хочете згенерувати новий API ключ?","applicationUserInfoAPIResetAlert":"📝 Ваш API ключ було згенеровано заново","applicationUserInfoIdAlert":"📝 Ваш ID був скопійований у буфер обміну.","applicationUserInfoTgIdAlert":"📝 Ваш Telegram ID був скопійований у буфер обміну.","applicationContactButton":"Зв\'язок зі службою підтримки","applicationServersButton":"Статус серверів","applicationHowToConnectFAQButton":"Як підключитися до VPN чи Proxy?","applicationHowToConnectFAQButtonModal":"Бот надіслав вам інформацію в особисті повідомлення 📝","applicationCabinetTitle":"Особистий кабінет","applicationCabinetTitleDesc_title":"Натисніть на замовлення для керування ним","applicationCabinetTitleOrder":"Вибір тарифного плану","applicationCabinetTitleOrder_detail_back":"Повернутися до списку тарифів","applicationCabinetTitleOrder_help_button":"⚠️ Допоможіть мені визначитися з тарифним планом ⚠️","applicationCabinetTitleOrder_help_button_back":"Повернутися до оформлення замовлення","applicationCabinetTitleOrder_help_button_header":"Середнє споживання трафіку:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 година відео в 1440p ≈6 ГБ\\n<font color=#E10070>Instagram</font>: 1 година Reels ≈2 ГБ\\n<font color=#69C9D0>TikTok</font>: 1 година відео ≈2 ГБ\\n<font color=#7289DA>Discord</font>: 1 година войсу з демкою ≈1 ГБ\\n<font color=#BD37FF>Twitch</font>: 2 години стріму в 1080p ≈5 ГБ\\n<font color=#D0A823>Онлайн ігри</font>: 1 година ≈0.5 ГБ\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 години в 1080р ≈5 ГБ\\n\\nЯкщо скласти всі вказані дані, то виходить <font color=#DA7F00>≈20-25 ГБ на день</font>. Ці дані наведені для орієнтиру, щоб Вам було простіше обрати відповідний тариф.\\n\\n<font color=#A7C800>VPN та Proxy — по-своєму зручні.</font>\\n<font color=#BAD821>VPN:</font> зручно для смартфонів, планшетів та ТВ; можна використовувати і на ПК.\\n<font color=#BAD821>Proxy:</font> підходить для Discord, браузера на ПК (YouTube, Twitch, Netflix, HDRezka тощо).\\n<font color=#B3D023>Коротко про протоколи:</font>\\n<font color=#2EB3FF>• Vless</font> — найкращий обхід блокувань, стабільність, швидкість, “невидимість”.\\n<font color=#29a1e6>• Hysteria</font> - баланс стабільності та швидкості, ідеально підходить для геймінгу<font color=#2884BA>• HTTPS</font> — підходить тільки для сайтів та додатків через Proxifier.\\n\\n🚀 Старт — для звичайного серфінгу\\n🎮 Геймер — для активних користувачів девайсів\\n👑 Сімейна+ — для великого обсягу трафіку","applicationCabinetButtonNew":"Зробити нове замовлення","applicationCabinetButtonNewCancel":"Повернутися до списку замовлень","applicationCabinetButtonAddBalance":"Поповнити баланс","applicationCabinetIsTrial":"Безкоштовний тестовий доступ","applicationCabinetPing":"Пінг до сервера: %1%ms","applicationCabinetEndActive":"Доступ до передплати: %1%","applicationCabinetEndNotActive":"Передплата не оплачена. Натисніть сюди та активуйте її через кнопку «⌛️ Продовжити замовлення» у випадаючому меню.","applicationCabinetOrderTraficWeek":"на тиждень","applicationCabinetOrderTraficMonth":"на місяць","applicationCabinetOrderPriceDay":"/ день","applicationCabinetOrderPriceDays":"/ %1% днів","applicationCabinetOrderPrice":"%1% за %2% дн 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 Ознайомитися з деталями цього тарифу 📋","tarif_desc_drive":"📚 Ідеально для знайомства з нашим сервісом та легкого серфінгу в соцмережах. Дозволить повністю випробувати роботу VPN / Proxy 😉","tarif_desc_start":"📚 Підходить для соцмереж та легкого використання на смартфоні із середнім екранним часом ≈4год на день. На ПК місячний ліміт може витрачатися швидше, враховуйте активність.","tarif_desc_gamer":"🎮 Для тих, хто активно проводить час за ПК:<br/><font color=#DA7F00>•</font> Ігри через Steam та інші лаунчери<br/><font color=#DA7F00>•</font> Голосове спілкування в месенджерах для геймерів з надійним підключенням через Proxy<br><font color=#DA7F00>•</font> Перегляд Twitch з плагіном 7TV в 1080p і вище<br/><font color=#DA7F00>•</font> YouTube та інші соцмережі, де важливе захищене підключення\\n\\n✅ Цього трафіку достатньо для смартфона та ПК з активним використанням ≈5-6 годин на день.","tarif_desc_unlim":"🚀 Тариф для великих обсягів трафіку та будь-яких завдань: ПК, ноутбуки, смартфони, планшети, ТВ та інші пристрої.\\n\\n🧡 Один ключ можна використовувати на кількох пристроях — цього трафіку вистачить для сім\'ї та Ваших друзів!","tarif_desc_ultra":"💠 Преміальний тариф для широкого спектра завдань та дуже активних користувачів!\\n\\nПідходить тим, хто наближається к верхній межі тарифу в 1 ТБ і хоче користуватися сервісом без хвилювань про трафік.\\n\\n💜 З цим варіантом Ви зможете спокійно завантажувати великі файли, стрімити, грати та використовувати VPN / Proxy на десятці пристроїв.","applicationCabinetOrderBack":"Назад","applicationCabinetOrderSelect":"☑️ Замовити цей тариф ☑️","applicationCabinetOrderSelectTrial":"🎁 Активувати тестовий доступ на %1% години 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Отримати тестовий доступ на %1% години як бонус?","applicationCabinetOrderSelectAccept":"Підтвердіть дію ✅\\nЗ балансу буде списано: %1%\\n\\n💰 Зараз у Вас: %2%","applicationCabinetOrderTrial":"🎁 Доступний тестовий період на %1% години","applicationCabinetOrderTrialUsed":"Ви вже використовували тестовий доступ раніше 🙁","applicationCabinetOrderSelectErrTimeMax":"Максимальний термін продовження послуги: 2 місяці","applicationCabinetOrderSelectErrBalance":"У Вас недостатньо коштів на внутрішньому балансі для замовлення 🙁","applicationCabinetOrderSelectErrTrialCfg":"Цей тариф не можна замовити в тестовому режимі 🙁","applicationCabinetOrderSelectErrTrial":"Ви вже використовували цей тестовий тариф 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Тестовий період доступний лише користувачам, авторизованим через Telegram. Увійдіть через Telegram (або прив\'яжіть Telegram у «Налаштування») та спробуйте ще раз.","applicationCabinetOrderSelectSuccess":"Замовлення успішно виконано 🎉","applicationCabinetOrderSelectSuccessTrial":"Тестове замовлення успішно виконано 🎉","applicationCabinetOrderSelectErrOrder":"Не вдалося створити Ваше замовлення 😕","applicationCabinetOrderEditChangeTarif":"♻️ Змінити тариф на інший ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ Це поточний тариф","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>При зміні тарифу у Вашого замовлення залишиться<br>приблизно %1%</font><br>дні:години:хвилини:секунди<br><br>Для підтвердження натисніть кнопку нижче","applicationCabinetOrderEditChangeTarifExpired":"❌ Неможливо змінити тариф у замовлення з терміном дії, що закінчився. Спочатку необхідно його продовжити (зробити активним), а вже після змінити тариф на той, що Ви обрали. При зміні час замовлення перерахується залежно від обраного тарифу.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>Кожні %1% год. Ви можете змінювати тариф на будь-який інший.</font><br><br>При зміні тарифу залишок днів з попереднього замовлення переноситься на новий з урахуванням актуальної вартості та терміну доступу, що залишився.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>Ви вже нещодавно змінювали тариф!</font><br>Наступна зміна буде доступна<br>через %1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Підтвердити зміну тарифу на обраний ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Ви впевнені, що хочете змінити тариф на обраний?\\n\\n⚠️ Майте на увазі, що наступну зміну тарифу Ви зможете здійснити тільки через %1% год.","applicationCabinetOrderEditAuto":"Автопродовження замовлення","applicationCabinetOrderEditAutoOn":"✅ Активно","applicationCabinetOrderEditAutoOff":"❌ Не активно (в ⚙️Налаштуваннях)","applicationCabinetOrderEditAutoDesc":"При закінченні терміну дії замовлення, якщо на Вашому балансі достатньо коштів, система автоматично продовжить замовлення, якщо увімкнути автопродовження.","applicationCabinetOrderEditResetTime":"Скидання трафіку","applicationCabinetOrderEditCreated":"Замовлення активовано","applicationCabinetOrderEditSpent":"Сумарно витрачено","applicationCabinetOrderEditOverTime":"Передплата активна до","applicationCabinetOrderChangeTarif":"♻️ Зміна тарифу","applicationCabinetOrderEditParams":"⚙️ Налаштування","applicationCabinetOrderEditParamsTitle":"⚙️ Налаштування замовлення: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Мітка замовлення","applicationCabinetOrderEditParamsLabelDesc":"Ви можете додати мітки до Ваших замовлень, щоб Вам було простіше визначати, яке з них де використовується","applicationCabinetOrderEditParamsPassword":"🔸 Ваш пароль для підключення (4-12 символів)","applicationCabinetOrderEditParamsIP":"🔸 IP-адреса для доступу без пароля","applicationCabinetOrderEditParamsIPDesc":"У цьому полі Ви можете вказати свою особисту IP-адресу (взявши її, наприклад, з 2ip.io), щоб отримати доступ до нашого Proxy-сервера без вказання логіна та пароля в тих місцях, де це потрібно. Цей варіант зручніший і нічим не відрізняється за рівнем безпеки.\\n⚠️ Важливе уточнення: ця функція працює тільки при підключенні через HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"Для того, щоб убезпечити підключення до Proxy, ми згенерували випадковий пароль. У разі потреби його можна замінити на будь-який інший. Він потрібен для автентифікації за допомогою логіна та пароля там, де це знадобиться.","applicationCabinetOrderEditSave":"✔️ Зберегти всі зміни ✔️","applicationCabinetOrderEditSaveOk":"Зміни успішно прийняті ✅","applicationCabinetOrderEditSaveFail":"❌ Налаштування не були збережені. %1%","applicationCabinetOrderEditLinkVpn":"📚 Інструкція VPN","applicationCabinetOrderEditLinkProxy":"📚 Інструкція Proxy","applicationCabinetOrderEditResetPass":"🔄 Скинути Proxy пароль","applicationCabinetOrderEditResetPassAccept":"🔄 Ви впевнені, що хочете скинути пароль?\\n\\nСтарий пароль припинить діяти, і Вам необхідно буде виконати повторне налаштування Proxy з\'єднання!","applicationCabinetOrderEditResetUid":"🔄 Скинути посилання на VPN підписку","applicationCabinetOrderEditResetUidAccept":"🔄 Ви впевнені, що хочете скинути посилання на VPN підписку?\\n\\nСтаре посилання і ключі доступу припинять діяти, включно з резервними/relay-локаціями. Посилання потрібно буде додати у VPN-застосунок заново!","applicationCabinetOrderEditResetUidDesc":"Скидає посилання підписки і ключі доступу VPN (VLESS і Hysteria, основна локація і relay). Використовуйте, якщо посилання могло потрапити до сторонніх. Після скидання старе посилання припинить працювати — додайте нове з інструкції VPN.","applicationCabinetOrderEditResetUidOk":"Посилання на VPN підписку скинуто. Додайте нове посилання у VPN-застосунок — попереднє посилання і ключі більше не працюватимуть.","applicationCabinetOrderEditLinkAccept":"💬 Вам було надіслано повідомлення з подробицями та інструкцією для підключення до нашого VPN / Proxy.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS порт*: `%4%`\\n%5%\\n🔑 *Пароль*: `%6%`","proxyInstructionReserveSubItem":"👤 *Логін* %1% » %2%: `%3%`","proxyInstruction":"Інструкція для підключення до Proxy:\\n\\n%1%\\nМи надаємо Вам доступ до Proxy відразу у всіх наших локаціях. ✅ *Рекомендуємо спочатку спробувати підключення безпосередньо до європейського сервера.* У разі якщо працює некоректно — пробуйте спосіб через РФ » Європа.\\n\\n\\n*Дані для підключення до Proxy безпосередньо:*\\n%2%\\n🌐 HTTPS порт: `%3%`\\n👤 Логін: `%5%`\\n🔑 Пароль: `%6%`\\n\\n\\n*Для деяких клієнтів з РФ:*\\n_(перенаправляє трафік через РФ при недоступності прямого підключення до Європи. У цьому режимі обов\'язково вкажіть вірний логін з блоку нижче — він інший)_\\n%7%\\n\\n\\n*Для роботи з Proxy підключенням:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Інструкція](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Інструкція](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 ПК на Windows та macOS: [Proxifier](https://www.proxifier.com/) — [Інструкція](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Інструкція для підключення до VPN:\\n\\n%1%\\nМи надаємо Вам доступ до VPN відразу у всіх наших локаціях! *Кожне посилання нижче = особистий ключ*, а також сторінка з інструкцією до підключення. \\n✅ *Рекомендуємо спочатку додати Vless від Мультипосилання*, у разі якщо працює некоректно — пробуйте інші протоколи або резервний варіант.\\n\\n\\n\\n🔹 *Просте пояснення для новачків:*\\n▪️ Натисніть на [це посилання](%5%) і дотримуйтесь інструкції.\\n\\n\\n\\n🔸 *Для користувачів з досвідом*:\\n🌏 Усі локації в мультипосиланні\\n- %2%\\n\\n*Для деяких клієнтів з РФ:*\\n%3%\\nЦей спосіб для тих, у кого немає прямого підключення до європейських серверів і потрібен обхідний спосіб доступу до них через російський сервер.\\n\\n*Прямий доступ до локації на всіх протоколах:*\\n%4%\\n\\n⚠️ Якщо вказані посилання не відкриваються, увімкніть у налаштуваннях відображення резервного посилання.%7%","vpnInstructionRoute":"\\n\\nℹ️ Користувачі HAPP можуть додавати власні правила маршрутизації. Ви можете скористатися готовими налаштуваннями, наведеними нижче, або створити власні, вказавши потрібні домени та IP-адреси для обходу VPN. \\n%1%","vpnInstructionAll":"Усі протоколи відразу","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Європа","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Ваш особистий ключ доступу до VPN*\\n\\nУсі дані для підключення та список рекомендованих додатків знаходяться за посиланням:  \\n👉 [Відкрити посилання для підключення](%2%)\\n\\n⚠️ *Зберігайте посилання в секреті!* \\nВоно є Вашим персональним ключем авторизації у VPN.\\n\\n✅ Щоб активувати передплату:  \\nСкопіюйте посилання та вставте його в обраний додаток — після цього автоматично завантажаться актуальні налаштування.\\n\\n📦 Хочете керувати всіма замовленнями?  \\nВикористовуйте [🔑 посилання передплати на всі підключення](%4%).\\n\\n───────────────\\n🌐 *Ваші дані для підключення до Proxy:*\\n🌐 *Адреса сервера:* `%6%%7%`\\n🌐 *HTTPS порт:* `%9%`\\n👤 *Ваш логін:* `%10%`\\n🔑 *Пароль для підключення:* `%5%`\\n\\n⚠️ У разі недоступності основного сервера ви можете підключитися до резервного сервера:  \\n%11% *Адреса сервера:* `%12%`  \\n🌐 *HTTPS порт:* `%9%`  \\n👤 *Ваш логін:* `%13%.%10%`  \\n🔑 *Пароль для підключення:* `%5%`\\n\\n💡 Proxy можна використовувати в будь-якому додатку, який підтримує Proxy-з\'єднання.  \\nНаприклад, *для роботи в браузері Chrome* рекомендуємо розширення:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*Інструкції з підключення до VPN:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*Як підключитися до Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows-додатки](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Веб-браузер](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Дані замовлення `%1%`\\n⌛️ Тариф: `%2%`\\n⚙️ Автопродовження: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Увага! Обов\'язково оновіть конфігурацію в налаштуваннях додатка, де використовуєте це замовлення\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Увімкнено","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Вимкнено","faqButtonCommand":"🔑 Наші VPN та Proxy можуть бути застосовані на широкому списку пристроїв і *без обмежень на к-ть підключень* до одного ключа доступу! Налаштування дуже просте і займе не більше двох хвилин Вашого часу, далі все буде зведено лише до кнопки ВКЛ/ВИКЛ.\\n\\n✅ Після того, як Ви оформите своє перше замовлення _(включаючи тестове)_, Вам прийде два повідомлення з деталями та інструкціями для підключення, як до VPN, так і до Proxy.\\n\\n\\n📦 *Якщо у Вас ще немає замовлення, то:*\\n[Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ➛ Особистий кабінет ➛ Зробити нове замовлення ➛ Обирайте відповідний натиснувши на нього та переходьте до деталей тарифу ➛ Замовляємо.\\n\\n\\nЯкщо у Вас виникнуть якісь питання, то зв\'яжіться з нами з додатка, ми обов\'язково допоможемо ❤️","applicationCabinetOrderEditPay":"⌛️ Продовжити замовлення (на %1% днів за %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Замовлення успішно продовжено на %1% днів.\\n\\nСтатус замовлення буде оновлено протягом декількох хвилин.","applicationCabinetOrderEditPayErr":"Не вдалося продовжити замовлення 🙁","applicationCabinetOrderRemove":"Видалити замовлення","applicationCabinetOrderRemoveFailed":"❌ Неможливо видалити активне замовлення!","applicationCabinetOrderRemoveConfirm":"Ви впевнені, що хочете видалити замовлення? 🤨\\n\\nУ разі потреби Ви завжди можете зробити нове замовлення, а якщо у Вас виникли проблеми з замовленням, то зверніться до нашої служби підтримки, і ми з радістю Вам допоможемо!","applicationCabinetOrderRemoveConfirmMessage":"✅ Замовлення було успішно видалено!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Не вдалося видалити замовлення!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Протоколи: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Ваш баланс був поповнений на %1%","applicationAdminDashboard":"📊 Дашборд","applicationAdminUsers":"👥 Користувачі (x%1%)","applicationAdminUsersActive":"🫂 Активні користувачі (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Поточний баланс: %1% | %2% USD","applicationAdminUserRef":"Реферали (x%1% | %2%)","applicationAdminUserRefTarget":"Реферал від","applicationAdminUserOrders":"📦 Замовлення (x%1% всього | x%2% активних)","applicationAdminUserRefs":"💸 Реферали (x%1% всього)","applicationAdminUserPayments":"💸 Платежі (x%1% всього) | Зараховано %2%","applicationAdminUserPaymentsType":"Платіжна система: %1%","applicationAdminUserPaymentsStatus":"Статус платежу: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Скасувати платіж та списати суму з балансу","applicationAdminUserPaymentsStatusSetFailAccept":"Ви впевнені?\\n\\nУ разі підтвердження платіж змінить свій статус, а також з балансу користувача\\n\\n❌ буде списано %1%","applicationAdminUserPaymentsStatusSetOk":"✅ Підтвердити платіж та зарахувати суму на баланс","applicationAdminUserPaymentsStatusSetOkAccept":"Ви впевнені?\\n\\nУ разі підтвердження платіж змінить свій статус, а також баланс користувача\\n\\n✅ буде поповнений на %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Дія виконана успішно ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Не вдалося виконати дію!\\nВідповідь сервера: %1%","applicationAdminUserCreated":"Створений: %1%","applicationAdminUserUpdated":"Змінений: %1%","applicationAdminUserLast":"🚪 Останній вхід: %1%","applicationAdminUserOrdersTotal":"💰 Поповнень балансу на: %1%","applicationAdminUserResetOrderChangeBlock":"Скинути зависле блокування замовлення","applicationAdminUserResetOrderChangeBlockAccept":"Ви впевнені, що хочете скинути зависле блокування замовлення?","applicationAdminUserMedia":"Партнерська програма","applicationAdminUserMediaOn":"Статус: ✅ Партнер","applicationAdminUserMediaOff":"Статус: ❌ НЕ Партнер","applicationAdminUserMediaConfirm":"Статус: ❌ НЕ Партнер","applicationAdminUserMediaTotal":"Сумарний дохід: %1%","applicationAdminUserMediaPayed":"Виплачено партнеру: %1%","applicationAdminUserMediaPayWait":"Необхідно виплатити: %1%","applicationAdminUserMediaPayWaitButton":"💸 Відмітити виплату","applicationAdminUserMediaPayWaitButtonAccept":"Ви впевнені, що хочете відмітити виплату як виконану? Сума транзакції %1% (%2%)\\n\\n💸 Після підтвердження користувачу буде надіслано повідомлення про те, що кошти були виплачені і вони вже в дорозі до нього.","applicationAdminUserMediaPayWaitNotify":"Шановний партнере! \\n\\n💸 Вам була виплачена сума в розмірі *%1%* за партнерською програмою. Кошти вже в дорозі і знадобиться деякий час, щоб вони досягли ваших реквізитів","applicationAdminUserMediaPercent":"%2%%1%% Відсоток від рефералки в дохід","applicationAdminUserMediaPercentDesc":"Цей відсоток вказує скільки від рефералки буде виплачено користувачу як дохід від партнерської програми","applicationAdminUserGiveOrder":"Видати замовлення користувачу","applicationAdminUserGiveOrderDays":"Кількість днів","applicationAdminUserGiveOrderButton":"Видати","applicationAdminUserGiveOrderButtonConfirm":"Ви збираєтеся видати замовлення\\n\\"%1%\\"\\nкористувачу на %2% днів?","applicationAdminUserEditButton":"Керування користувачем","applicationAdminUserEditPromos":"Використані промокоди: %1%","applicationAdminUserEditBalance":"Змінити баланс","applicationAdminUserAddBalance":"Додати на баланс","applicationAdminUserEditBalanceAccept":"Ви впевнені, що хочете змінити баланс користувача?","applicationAdminUserEditBalanceAcceptFail":"Не вдалося змінити баланс. Можливо під час редагування поточний баланс користувача був змінений\\nВідповідь сервера: %1%","applicationAdminUserEditBalanceAcceptOk":"Баланс був успішно змінений","applicationAdminUserEditBalanceChangeNotify":"Адміністратор змінив Ваш баланс на *%1%*.\\n💰 Поточний баланс: *%2%*\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Адміністратор додав *%1%* на Ваш баланс.\\n💰 Поточний баланс: *%2%*\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Пошук","applicationAdminOrders":"🛒 Усі замовлення (x%1%)","applicationAdminOrdersActive":"💳 Активні замовлення (x%1%)","applicationAdminOrdersExpired":"⛔ Зупинені замовлення (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% днів","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Трафік: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Блокування зміни тарифу","applicationAdminOrderReload":"Оновити дані MarzBan","applicationAdminOrderReloadAccept":"⚠️ Оновити дані?\\n\\nЦя дія завантажить дані замовлення з MarzBan та оновить їх у додатку!","applicationAdminOrderReloadAcceptDone":"✅ Запит на оновлення даних надіслано!","applicationAdminOrderReloadAcceptFail":"❌ Не вдалося оновити дані замовлення!","applicationAdminOrderResetChangeTime":"Скинути час зміни тарифу","applicationAdminOrderResetChangeTimeAccept":"Ви впевнені, що хочете це зробити? При підтвердженні користувач зможе змінити тариф на інший","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Запит успішно виконано. Тепер користувач може змінити тариф самостійно","applicationAdminOrderResetTraffic":"Скинути трафік","applicationAdminOrderResetTrafficAccept":"⚠️ Скасувати замовлення?\\n\\nКористувач не отримає повідомлення!","applicationAdminOrderResetTrafficAcceptOk":"✅ Готово","applicationAdminOrderReturn":"Скасувати замовлення","applicationAdminOrderReturnAccept":"⚠️ Скасувати замовлення?\\n\\nКористувач ОТРИМАЄ назад кошти за весь НЕВИКОРИСТАНИЙ період!","applicationAdminOrderReturnAcceptDone":"⚠️ Замовлення видалено. Користувачу повернено %1% на баланс.","applicationAdminOrderReturnNotify":"⚠️ Адміністратор скасував Ваше замовлення\\n🛒 `%1%` та повернув Вам *%2%* на баланс.\\nВи можете зробити нове замовлення, щоб завжди залишатися на зв\'язку з вільним Інтернетом, зайшовши в додаток.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ Зробити нове замовлення","applicationAdminOrderRemove":"Видалити замовлення","applicationAdminOrderRemoveAccept":"⚠️ Видалити замовлення?\\n\\nЯкщо замовлення все ще активне, кошти НЕ будуть повернені!","applicationAdminOrderRemoveAcceptDone":"Замовлення видалено","applicationAdminOrderAddTime":"Продовжити замовлення (%1%дн.)","applicationAdminOrderAddTimeAccept":"⚠️ Продовжити замовлення (%1%дн.)?\\n\\nЦя дія НЕ змінить баланс користувача!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Адміністратор продовжив Ваше замовлення\\n🛒 `%1%` на *%2% дн.* 📆\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ Натисніть на вказане замовлення для ознайомлення з деталями.","applicationAdminPromos":"🎁 Промокоди (x%1%)","applicationAdminPaymentsLast":"⏰ Останні платежі (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Останні успішні платежі (x%1%)","applicationAdminPromosCreate":"Створити промокод","applicationAdminPromoID":"Назва: %1%","applicationAdminPromoUSED":"Використань: %1%","applicationAdminPromoCOUNT_USE":"Ліміт: %1%","applicationAdminPromoBALANCE":"Сума: %1%","applicationAdminPromoEditID":"Назва","applicationAdminPromoEditCOUNT_USE":"Кількість застосувань (макс)","applicationAdminPromoEditAMOUNT":"Сума в $","applicationAdminPromoEditCATEGORY":"Категорія","applicationAdminPromoEditCATEGORYEmpty":"Звичайний / без категорії","applicationAdminPromoEditCATEGORYMedia":"Медіа промо","applicationAdminPromoEditCATEGORYNew":"Для новачків","applicationAdminPromoEditSave":"Зберегти промокод","applicationAdminPromoEditPromo":"Змінити","applicationAdminPromoCategory":"Категорія: %1%","applicationAdminPromoSendUseList":"Список тих, хто застосував","applicationAdminPromoRemovePromo":"Видалити","applicationAdminPromoRemovePromoAccept":"Ви впевнені?","applicationAdminAddNode":"Додавання нової ноди","applicationAdminAddNodeDesc":"Цей розділ дозволить у 2 кліки розгорнути весь проєкт на новій ноді. Це лише встановить все, що потрібно, але не додаватиме ноду до списку нод","applicationAdminAddNodeIP":"IP Адреса сервера","applicationAdminAddNodeHostname":"Піддомен сервера (s1, s2 тощо, без крапки та іншого)","applicationAdminAddNodeHostnameDesc":"Вказаний піддомен автоматично пропишеться в CloudFlare з усіма параметрами для роботи з нашим сервісом. Якщо вказати вже існуючий — то буде перезаписаний, тож уважніше","applicationAdminAddNodeUsername":"Ім\'я користувача (root)","applicationAdminAddNodePassword":"Пароль користувача (root)","applicationAdminAddNodePasswordDesc":"Якщо не вказати пароль — буде використовуватися авторизація за SSH ключем. У цьому випадку переконайтеся, що Ваш SSH ключ доданий у ноду і має доступ до сервера","applicationAdminAddNodePasswordKeyInfo":"Увага. Пароль не вказано, буде використовуватися авторизація за SSH ключем. Переконайтеся, що Ваш SSH ключ доданий у ноду і має доступ до сервера","applicationAdminAddNodeSshPort":"SSH Порт (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Для роботи потрібні такі права: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Натисніть щоб отримати токен","applicationAdminAddNodeStart":"Виконати деплой","applicationAdminAddNodeStarted":"Процес деплою запущений, не закривайте сторінку і дочекайтеся виконання. Якщо протягом 5 хвилин процес не буде завершений — швидше за все щось зависло(","applicationAdminAddNodeDoneOk":"Деплой завершено успішно","applicationAdminAddNodeDoneFail":"Помилка: %1%","applicationAdminAddNodeClearLogs":"Очистити логи","applicationAdminInstallNode":"Розгортання ноди","applicationAdminCoreSettings":"Налаштування ядра","applicationAdminCoreSettingsDesc":"Цей розділ дозволяє налаштувати базові параметри системи. Параметри застосовуються на льоту, без перезапуску ядра","applicationAdminSaveCoreSettings":"Зберегти налаштування","applicationAdminCoreSettingsSaved":"Налаштування успішно збережені","adminBackupTitle":"Резервна копія Telegram","adminBackupInterval":"Автоматичні бекапи створюються кожні %1% хв. і надсилаються адмінам бекапів у Telegram.","adminBackupLastRun":"Останній бекап: %1%","adminBackupNever":"Бекап ще не створювався","adminBackupRunning":"Триває створення бекапу","adminBackupOffline":"Сервіс бекапу не відповідає. Запит виконається, коли сервіс стане доступний.","adminBackupCreate":"Створити бекап зараз","adminBackupCreateConfirm":"Створити бекап зараз і надіслати в Telegram?","adminBackupCreateOk":"Бекап запущено. Файли надійдуть у Telegram після завершення.","adminBackupCreateFail":"Не вдалося запустити бекап: %1%","adminBackupCreateBusy":"Бекап уже виконується","adminBackupLastResultOk":"Останній результат: успішно","adminBackupLastResultFail":"Останній результат: помилка (%1%)","applicationAdminCoreName.projectName":"Назва проєкту","applicationAdminCoreName.projectMain":"Основний домен","applicationAdminCoreName.projectBot":"Логін бота проєкту","applicationAdminCoreDesc.projectBot":"Через якого бота відбувається взаємодія з користувачами. Вкажіть логін без @","applicationAdminCoreName.admins":"ID Адміністраторів","applicationAdminCoreDesc.admins":"ID вказуйте суворо через кому, і не використовуйте пробіли. Наприклад: `123456789,987654321`. І не видаліть себе випадково)","applicationAdminCoreName.backup_admins":"ID Адміністраторів для отримання бекапу","applicationAdminCoreDesc.backup_admins":"Цим адміністраторам бот надсилатиме бекапи в особисті повідомлення. ID вказуйте суворо через кому, і не використовуйте пробіли. Наприклад: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Максимальний термін продовження замовлення (в місяцях)","applicationAdminCoreDesc.order_end_limit_month":"Користувач не зможе продовжити своє замовлення на термін більше, ніж вказано","applicationAdminSendMessage":"Розсилка повідомлень","applicationAdminSendMessageTargets":"Кількість людей, які отримають повідомлення","applicationAdminSendMessageType":"Тип фільтрації користувачів","applicationAdminSendMessageTypeAll":"Усі користувачі","applicationAdminSendMessageTypeOrders":"Певні замовлення (будь-які)","applicationAdminSendMessageTypeOrdersActive":"Певні замовлення (активні)","applicationAdminSendMessageTypeHas":"Є хоч 1 замовлення","applicationAdminSendMessageTypeNotHas":"Немає жодних замовлень","applicationAdminSendMessageTypeHasActive":"Є хоч 1 активне замовлення","applicationAdminSendMessageTypeHasUnActive":"Є хоч 1 НЕактивне замовлення","applicationBalanceErr":"Виникла помилка при формуванні платежу: %1%","applicationBalanceErrBalanceLimit":"На вашому рахунку вже максимально допустима кількість коштів (%1%)","applicationBalanceErrBalanceLimitButton":"Недоступно","applicationBalanceErrData":"Платіжна система не змогла сформувати платіж. Будь ласка, спробуйте пізніше.","applicationBalanceErrNetwork":"Мережева помилка. Будь ласка, спробуйте пізніше.","applicationBalanceErrCurrency":"Помилка валюти. Будь ласка, спробуйте пізніше.","applicationBalanceErrAuth":"Помилка авторизації","applicationBalanceErrPaymentLink":"Не вдалося отримати посилання на платіж","applicationBalanceSettingsTitle":"Вибір валюти","applicationBalanceTitle":"Розділ поповнення балансу","applicationBalanceSelect":"Оберіть валюту для відображення","applicationBalanceEmail":"Ваш email","applicationBalancePlatform":"Платіжна платформа","applicationBalanceAmount":"Сума поповнення (в %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Підсумкова сума оплати: ≈%1%</font>\\n\\n<font color=#F28100>Якщо ви чийсь реферал,\\nто на баланс повернеться %2% у вигляді 20% кешбеку!</font>","applicationBalanceAmountLimit":"Мінімальна сума: %1%\\nМаксимальна сума: %2%\\n\\n💵 <font color=#00AE09>Ваш спосіб оплати: %4%</font>\\nКомісія платіжної системи: %3%%\\n\\nПісля самої оплати баланс зараховується автоматично протягом декількох хвилин, також Вам прийде повідомлення про статус платежу з іншими деталями на випадок звернення до служби підтримки.","applicationBalanceAmountDesc":"Поповнення відбувається через сервіс %1%","applicationBalanceAmountButton":"Перейти на сторінку оплати","applicationBalanceAmountButtonLoading":"Завантаження...","applicationBalanceAmountButtonErr":"❌ Невірно вказана сума ❌","applicationBalanceCurrency":"Метод оплати","applicationBalanceCurrencyDesc":"Комісія платіжної системи: ≈%1%%","applicationServersTitle":"Статус серверів","paymentCompleteNotify":"🎉 Ваш баланс був успішно поповнений на <b>%1%</b>.\\n\\nID платежу: <b>%2%</b>\\n(Він знадобиться у разі звернення до <a href=\\"https://t.me/rocketman_vpn\\">служби підтримки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyRef":"🎉 Ваш баланс був успішно поповнений на <b>%1%</b>.\\nОскільки Ви є рефералом @%4% у нашому сервісі, ми нарахували бонус у розмірі <b>%3%</b> (%5%%)\\n\\nID платежу: <b>%2%</b>\\n(Він знадобиться у разі звернення до <a href=\\"https://t.me/rocketman_vpn\\">служби підтримки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyRefHost":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> (%3%%) за поповнення балансу Вашим рефералом @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyAdmin":"💵 Користувач %1% [UID: %7%] поповнив баланс на <b>%2%</b>.\\n💰 У чистий прибуток проєкту зараховано +<b>%5%</b>\\n\\nПлатіжна система: <b>%6%</b>\\nID платежу: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Увага ❗️\\nПо платежу `%1%` був сформований запит на повернення коштів.\\n\\nОскільки вони були повернені Вам у повному обсязі, з балансу в додатку було списано *%2%*.\\n\\nУ разі виникнення питань зверніться до [служби підтримки](https://t.me/rocketman_vpn), ми обов\'язково допоможемо!\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Ноди","adminXrayVersionTitle":"Xray-core","adminXrayVersionCurrent":"Поточна версія: %1%","adminXrayVersionLatest":"Доступна нова версія: %1%","adminXrayVersionUnknown":"Версія у скрипті встановлення не вказана","adminXrayVersionLoading":"Перевіряємо версію…","admin-routing":"🔀 Роутинг","admin-presets":"📋 Пресети","admin-firewall":"📜 Записи фаєрвола (x%1%)","admin-firewall_add":"Новий запис фаєрвола","admin-nav-messages":"Розсилка","admin-nav-firewall":"Фаєрвол","admin-nav-logs":"Логи адміністрації","logRecord-title":"📊 Логи адміністрації (x%1%)","logRecord-title-user":"📜 Логи користувача (x%1%)","logRecord-log-time":"Створений: %1%","logRecord-log-who":"Хто","logRecord-log-target":"Ціль","logRecord-log-reason":"Текст: %1%","logRecord-setPaymentStatus":"Зміна статусу платежу %1%","logRecord-removePromo":"Видалення промокоду %1%","logRecord-editPromo":"Редагування промокоду %1%","logRecord-editBalance":"Редагування балансу (%1%$ -> %2%$)","logRecord-returnOrder":"Скасування замовлення %1% (%2%$)","logRecord-addOrder":"Видача замовлення %1%","logRecord-payOrder":"Продовження замовлення %1% на %2% днів","logRecord-partnerNotify":"Виплата партнеру %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"СБП (Система швидких платежів)","paymentMethodCrypto":"Криптовалюта","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Не вдалося виявити дані користувача для формування посилання. Мабуть, цей користувач заблокував нашого бота 😐","partner_title":"🏆 Партнерська програма 🏆","partner_desc":"Ви є учасником партнерської програми. Крім основного бонусу за реферала Ви також отримуватимете фінансові відрахування.\\n\\nВаша поточна ставка — %1%% від реферального балансу\\n\\nВсього Ви заробили: %2%\\nПоточний баланс: %3%","ref_title":"🏆 Реферальна система 🏆","ref_desc":"Запрошуйте друзів та знайомих до нашого сервісу та отримуйте бонуси на свій баланс!\\n\\n<font color=#2DA618>Від кожного реферала Ви отримаєте по <font color=#54E13B>%1%</font> за їхні перші замовлення та <font color=#54E13B>%2%%</font> від усіх поповнень їхнього балансу.</font>\\n\\n<font color=#00B7B7>Усі Ваші реферали отримають <font color=#15DBDB>%3%</font> бонусом після першого замовлення (включаючи тестове) та <font color=#15DBDB>%4%%</font> кешбеку від усіх своїх майбутніх поповнень.</font>\\n\\nТаким чином ця система вигідна і для Вас, і для Ваших рефералів 😉","ref_stats":"Ваша статистика","ref_stats_data":"Кількість приведених рефералів: %1%\\nОтримали бонусом на баланс: %2%","ref_link_text":"Ваші дані реферальної системи","ref_link_text_copy":"📋 Посилання+текст","ref_only_link_copy":"🔗 Посилання","ref_link_text_copy_sendText":"Привіт! Я користуюся зручним способом для захисту своїх даних в інтернеті та сміливо рекомендую його тобі 😎\\n\\nКрім того, перейшовши саме за моїм посиланням, ти отримаєш бонусом %1% після першого замовлення (включаючи тестове) та довічний кешбек у %2%% від усіх поповнень балансу 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Ваше реферальне посилання та додатковий текст були скопійовані в буфер обміну.\\n\\nВикористовуйте це для запрошення друзів та знайомих у наш сервіс, щоб отримувати вигоду спільно 😎","ref_only_link_copy_alert":"🔗 Ваше реферальне посилання було скопійоване в буфер обміну.\\n\\nВикористовуйте його для запрошення друзів та знайомих у наш сервіс, щоб отримувати вигоду спільно 😎","ref_link_text_share":"💌 Поділитися","ref_link_text_share_message":"Привіт! Я користуюся зручним способом для захисту своїх даних в інтернеті та сміливо рекомендую его тобі 😎\\n\\nКрім того, перейшовши саме за моїм посиланням, ти отримаєш бонусом %1% після першого замовлення (включаючи тестове) та довічний кешбек у %2%% від усіх поповнень балансу 🎉\\n","ref_message_personal":"Ви не можете зареєструватися за своїм реферальним посиланням 😐","ref_message":"🎁 Реферальна система:\\nВи успішно зареєструвалися як реферал користувача @%1% 🎉\\n\\nВи отримаєте бонус у розмірі <b>%2%</b> при першому замовленні (включаючи тестове), а також довічний кешбек у розмірі <b>%3%%</b> при кожному поповненні балансу!","ref_message_host":"🎁 Реферальна система:\\n🎉 Користувач @%1% зареєструвався як Ваш новий реферал 🎉\\n\\nВи отримаєте бонус у розмірі <b>%2%</b> при першому його замовленні (включаючи тестове), а також кешбек у розмірі <b>%3%%</b> від кожного його поповнення балансу.","ref_message_order":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> на свій баланс","ref_message_order_host":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> на свій баланс від користувача @%2%","traffic_limit_notify_close":"⚠️ У Вас закінчується трафік на замовленні `%1%` з тарифом `%2%`! Якщо це повідомлення з\'являтиметься досить часто, рекомендуємо задуматися про зміну тарифу на більш просунутий, щоб завжди залишатися на зв\'язку ❤️\\n\\n🚀 Зробити це Ви зможете, [запустивши додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на потрібне замовлення ⇒ ♻️ Змінити тариф на інший ♻️","traffic_limit_notify_end":"❗️ УВАГА ❗️ У Вас закінчився весь трафік на замовленні `%1%` з тарифом `%2%`. Його скидання відбудеться %3%. Але якщо Ви хочете завжди залишатися на зв\'язку, подумайте про зміну тарифу на більш просунутий.\\n\\n🚀 Зробити це Ви зможете, [запустивши додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на потрібне замовлення ⇒ ♻️ Змінити тариф на інший ♻️","traffic_limit_notify_restore":"🎉 У замовлення `%1%` з тарифом `%2%` була скинута статистика використаного трафіку. Тепер він знову доступний у повному обсязі :)\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Застосувати промокод","example":"Приклад","deleteMessageFailed":"❌ Не вдалося видалити повідомлення. Можливо, воно занадто старе або вже видалене.","cryptoPayTitle":"Оплата через криптовалюту","cryptoPayUserId":"ID користувача","cryptoPayAmount":"Сума до оплати (USDT)","cryptoPayInstruction":"Переведіть вказану суму в USDT на надану адресу","cryptoPayLoading":"Завантаження реквізитів...","cryptoPayErrorNoParam":"Не передано параметр crypto_id у посиланні.","cryptoPayErrorInvalidData":"Некоректні дані для оплати.","cryptoPayErrorParse":"Помилка при обробці даних для оплати. Спробуйте оновити сторінку або зверніться в підтримку.","cryptoPayWallet":"Адреса гаманця для переказу","cryptoPayNetwork":"Мережа (блокчейн)","cryptoPayCopy":"Скопіювати","cryptoPayCopyAmountAlert":"Сума скопійована в буфер обміну!","cryptoPayCopyWalletAlert":"Адреса гаманця скопійована в буфер обміну!","cryptoPayWarning":"УВАЖНО перевірте реквізити та суму перед оплатою! У разі помилки ми не можемо гарантувати зарахування коштів.","telegramPayment":"✅ Для Вас був сформований рахунок на оплату\\n\\n⚖️ Сума оплати: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 ID користувача: <b>%7%</b>\\n📋 ID платежу: <b>%6%</b>\\n\\n🔗 Для оплати перейдіть за посиланням: %5%","orderManipulationBlock":"Ваше минуле замовлення все ще в обробці. Будь ласка, зачекайте його завершення або зверніться до служби підтримки для отримання допомоги.","subPage.orderInfo":"Нижче представлені всі доступні методи підключення для Вашого замовлення через цей додаток","subPage.userInfo":"Нижче представлені всі доступні методи підключення для всіх Ваших активних замовлень через цей додаток","subPage.orderId":"🛒 ID Замовлення: %1%\\n⬇️ Оберіть регіон кінцевого підключення:","subPage.nodeInfo":"📍 Точка обходу: %1%\\n⚠️ Це означає, що спочатку весь трафік йтиме через неї для маскування.","subPage.protocolInfo":"Протокол підключення: %1%","subPage.allTitle":"Усі замовлення","subPage.expiredNotifyList":"❌ Термін дії передплати закінчився\\nПродовжити VPN у боті\\n%1%","ping.admin.initOk":"✅ Система ініціалізована, всі ноди доступні в штатному режимі.","ping.admin.initFail":"❌ Система ініціалізована, але деякі ноди не доступні:\\n\\n%1%","speedtest.admin.failTest":"❌ Тест швидкості не пройдений. Будь ласка, перевірте працездатність.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Зафіксована низька швидкість з\'єднання (%2% Mbps download, %3% Mbps upload). Будь ласка, перевірте працездатність.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Нода відновила нормальну швидкість з\'єднання (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ На сервері виявлені проблеми зі швидкістю з\'єднання","applicationServersSpeedtestLastSpeed":"Останній замір швидкості (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Попередній замір швидкості (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ На сервері ще не було зроблено замірів швидкості","applicationServersPingIssueDetected":"❌ Сервер не відповідає на пінг-запити","actionUpdateStartNodes":"⚠️ Запущена процедура оновлення нод (%1%), через деякий час ноди будуть перезапущені. Після завершення робіт буде надіслано додаткове повідомлення (якщо не було надіслано — можливо, підвис github action і все гаразд, але можуть бути і проблеми)","actionUpdateStartHeader":"Запущена процедура оновлення:","actionUpdateStartSite":"• Оновлюється головна сторінка проєкту","actionUpdateStartApp":"• Оновлюється бекенд-додаток","actionUpdateStartProxy":"• Оновлюється проксі або xray служба (Ноди: %1%)","actionUpdateStartMTProto":"• Оновлюється сервер MTProto","actionUpdateStartFirewall":"• Оновлюємо фаєрвол (Ноди: %1%)","actionUpdateStartBackup":"• Оновлюємо дочірній API інтерфейс (Ноди: %1%)","actionUpdateStartFooter":"Через деякий час ноди будуть перезапущені. Після завершення робіт буде надіслано повідомлення.","actionUpdateCompletedNodes":"✅ Процедура оновлення нод (%1%) завершена, ноди перезапущені і вже повинні бути активні","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Швидкий та безпечний","mtproto.subtitle.2":"доступ до Telegram","mtproto.description.1":"Безкоштовний проксі-сервер для стабільного підключення до Telegram.","mtproto.description.2":"Без реєстрації, без обмежень, з повною конфіденційністю.","button.connect":"Підключити проксі","button.copy":"Скопіювати посилання","button.copied":"Скопійовано","link.label":"Посилання для підключення вручну","feature.encryption.title":"Наскрізне шифрування","feature.encryption.description":"Ваші повідомлення залишаються конфіденційними. Ми не маємо доступу до вашого листування.","feature.free.title":"Без обмежень","feature.free.description":"Безкоштовний доступ без реєстрації та лімітів на трафік.","feature.rocketman.title":"Більше можливостей","feature.rocketman.description":"Цей проксі працює тільки для Telegram. Для повноцінного захисту використовуйте RocketMan-VPN.","rocketman.title":"RocketMan VPN — це Ваш надійний друг","rocketman.description":"Даний MTProto проксі є додатковим проєктом — RocketMan VPN. З нами Ви отримаєте повний захист інтернет-з\'єднання у всіх додатках та улюблених сервісах. Спробуйте безкоштовно те, що ми надаємо для своїх клієнтів, та оцініть якість!","rocketman.button":"Відкрити RocketMan VPN","howto.title":"Як підключитися?","howto.step1.title":"Натисніть на кнопку \\"Підключити проксі\\"","howto.step1.description":"Або скопіюйте посилання та підключіться вручну","howto.step2.title":"Відкрийте Telegram","howto.step2.description":"Посилання автоматично запустить додаток","howto.step3.title":"Підтвердіть","howto.step3.description":"Натисніть «Підключити» в діалоговому вікні","web.orders":"Мої замовлення","web.settings":"Налаштування","web.exit":"Вихід","web.back":"← Назад","settings.accountInfo":"Інформація про акаунт","settings.language":"Мова","settings.currency":"Валюта відображення","settings.currencyDesc":"Оберіть валюту для відображення цін та балансу в додатку.","settings.webCredentials":"Дані для входу на сайт","settings.webCredentialsDesc":"Ці дані використовуються для входу у веб-інтерфейс поза Telegram. Хоча ми не обмежуємо вас у виборі пароля, але наполегливо рекомендуємо вказувати складний","settings.login":"Логін","settings.loginPlaceholder":"Введіть новий логін","settings.newPassword":"Новий пароль","settings.passwordPlaceholder":"Не менше %1% символів","settings.repeatPassword":"Повторіть пароль","settings.repeatPasswordPlaceholder":"Повторіть новий пароль","settings.passwordMismatch":"Паролі не збігаються","settings.saved":"Збережено!","settings.saveError":"Помилка збереження","settings.saving":"Збереження…","settings.saveCredentials":"Зберегти дані","settings.show":"Показати","settings.hide":"Приховати","settings.copy":"Копіювати","settings.reset":"Скинути","settings.apiKeyHint":"Використовуйте API-ключ для входу у <a href=\\"https://%1%\\" target=\'_blank\'>веб-інтерфейс</a> без Telegram, а також для інтеграції з іншими нашими продуктами. Не передавайте його третім особам, цей ключ надає повний доступ до вашого акаунту","settings.referral":"Реферал (ID запрошувача)","settings.referralDesc":"Якщо ви пропустили реферальне посилання, ви можете вказати ID запрошувача тут. Застосовується лише один раз.","settings.referralApplied":"ID запрошувача","settings.referralAppliedAlert":"ID запрошувача скопійовано в буфер обміну.","settings.referralHostId":"Ваш ID запрошувача","settings.referralHostIdPlaceholder":"Введіть ID користувача (тільки цифри)","settings.referralHostIdInvalid":"Невірний формат ID. Використовуйте тільки цифри.","settings.referralApply":"Застосувати ID запрошувача","settings.referralSaved":"Реферал застосовано!","settings.referralErr.already_applied":"Реферал вже був застосований.","settings.referralErr.invalid_ref_host":"Невірний ID запрошувача.","settings.referralErr.same_account":"Неможна використовувати власний ID як реферал.","login.tabCredentials":"Логін та пароль","login.tabApiKey":"API-ключ","login.tabRegister":"Реєстрація","login.labelLogin":"Логін","login.labelPassword":"Пароль","login.labelConfirmPassword":"Підтвердження пароля","login.labelApiKey":"API-ключ","login.placeholderLogin":"Введіть логін","login.placeholderPassword":"Введіть пароль","login.placeholderConfirmPassword":"Підтвердіть пароль","login.placeholderApiKey":"Введіть API-ключ","login.signIn":"Увійти","login.signInApiKey":"Увійти за API-ключем","login.signUp":"Зареєструватися","login.signingIn":"Входимо…","login.signingUp":"Реєструємося…","login.orUseApiKey":"або увійдіть за API-ключем","login.orUseCredentials":"або увійдіть за логіном та паролем","login.switchToApiKey":"Увійти за API-ключем","login.switchToCredentials":"Увійти за логіном та паролем","login.errLoginRequired":"Введіть логін та пароль","login.errPasswordRequired":"Введіть пароль","login.errConfirmPasswordRequired":"Підтвердіть пароль","login.errPasswordMismatch":"Паролі не збігаються","login.errApiKeyRequired":"Введіть API-ключ","login.errIncorrect":"Невірний логін або пароль","login.errInvalidKey":"Невірний API-ключ","login.errServer":"Помилка сервера, спробуйте ще раз","login.errRegistration":"Помилка реєстрації","login.tabTelegram":"Через Telegram","login.tg.title":"Вхід через Telegram","login.tg.instruction":"1. Надішліть команду нижче боту <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a>\\n2. Після відправки натисніть кнопку «Підтвердити вхід»","login.tg.commandLabel":"Команда для бота:","login.tg.showCommand":"Показати","login.tg.hideCommand":"Приховати","login.tg.copyCommand":"Копіювати","login.tg.copied":"Команда скопійована!","login.tg.timerLabel":"Код дійсний: %1%","login.tg.timerExpired":"Термін дії коду закінчився","login.tg.verifyButton":"Підтвердити вхід","login.tg.verifying":"Перевіряємо…","login.tg.requestNew":"Запросити новий код","login.tg.loading":"Генеруємо код…","login.tg.enter_correct":"Особистість підтверджена. Поверніться на сайт і натисніть на кнопку \\"%1%\\" для завершення","login.tg.enter_fail":"Не вдалося виконати дію. Переконайтеся, що вказаний ключ коректний, а термін дії не закінчився","login.tg.errNotSent":"Не вдалося підтвердити вхід. Переконайтеся, що ви надіслали команду боту, і спробуйте ще раз. Якщо код закінчився — запросіть новий.","lang.ru":"Російська","lang.en":"Англійська","lang.uk":"Українська","footer.info":"MTProto проксі працює тільки з офіційними додатками Telegram","instructionModalTitleVpn":"Інструкція з підключення VPN","instructionModalTitleProxy":"Інструкція з підключення Proxy","instructionModalSendToTg":"📩 Надіслати в Telegram","instructionModalSentToTg":"Інструкція надіслана у ваші особисті повідомлення Telegram","settings.name":"Ваше ім\'я","settings.nameDesc":"Вкажіть ім\'я для персоналізації звернень у додатку. Воно є публічним і може використовуватися для відображення іншим користувачам, наприклад в реферальній системі","settings.namePlaceholder":"Введіть ім\'я (3-15 символів)","settings.nameInvalid":"Допускаються лише кирилиця, латиниця, цифри та пробіли (3-15 символів)","settings.promoTitle":"Активація промокоду","settings.promoDesc":"Якщо у Вас є промокод, введіть його тут, щоб отримати приємний бонус на Ваш баланс.","settings.promoPlaceholder":"Введіть промокод","settings.promoApply":"Застосувати промокод","settings.promoApplied":"Промокод успішно застосовано!","adminDashboardTitle":"Статистика (Дашборд)","adminDashboardActiveOrders":"Активність підписок","adminDashboardActiveLabel":"Активні","adminDashboardExpiredLabel":"Закінчилися","adminDashboardOrdersByTariff":"Підписки за Тарифами","adminDashboardPayments":"Платежі","adminDashboardTrial":"Тестовий період","adminDashboardLang":"Мова","adminDashboardCurrency":"Валюта","adminDashboardActivity":"Активність користувачів","adminDashboardOrdersPerUser":"Кількість підписок на юзера","adminDashboardRefIncome":"Дохід з рефералів","applicationAdminBackButton":"Назад","settings.passkeys.title":"Ключі доступу (Passkeys)","settings.passkeys.desc":"Додайте до 5 пристроїв для швидкого та безпечного входу без пароля за допомогою біометрії або фізичних ключів.","settings.passkeys.add":"➕ Додати новий ключ","settings.passkeys.name":"Назва пристрою","settings.passkeys.name_placeholder":"Напр: iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"У вас поки немає доданих ключів доступу","settings.passkeys.delete_confirm":"Ви впевнені, що хочете видалити цей ключ доступу? Ви більше не зможете увійти за його допомогою.","settings.passkeys.limit_reached":"Досягнуто ліміт ключів (максимум 5)","settings.passkeys.add_success":"Ключ доступу успішно додано!","settings.passkeys.add_error":"Не вдалося додати ключ доступу","login.tabPasskey":"За ключем","login.passkey.btn":"Увійти через Passkey","login.passkey.error":"Помилка авторизації через ключ доступу","login.passkey.not_supported":"Ваш браузер або пристрій не підтримують вхід через Passkey","admin.bulkRenewal.button":"📅 Масове продовження замовлень","admin.bulkRenewal.title":"📅 Масове продовження замовлень","admin.bulkRenewal.afterDateLabel":"Враховувати замовлення, термін яких закінчився після зазначеної дати (або ще не закінчився). Часовий пояс: %1%","admin.bulkRenewal.daysLabel":"Кількість днів для продовження","admin.bulkRenewal.ordersCount":"Замовлень буде продовжено","admin.bulkRenewal.ordersCountUpdate":"Замовлень буде оновлено","admin.bulkRenewal.usersCount":"Унікальних користувачів","admin.bulkRenewal.applying":"⏳ Застосовується...","admin.bulkRenewal.done":"✅ Готово!","admin.bulkRenewal.apply":"📅 Продовжити %1% замовл. на %2% дн.","admin.bulkRenewal.applyTraffic":"📉 Скинути трафік у %1% замовл.","admin.bulkRenewal.applyDaysAndTraffic":"📅 Продовжити %1% замовл. на %2% дн. і скинути трафік","admin.bulkRenewal.blockedDays":"Вкажіть кількість днів від 0 до 3650","admin.bulkRenewal.blockedNoEffect":"Вкажіть більше 0 днів або виберіть скидання трафіку","admin.bulkRenewal.blockedNoOrders":"Немає замовлень, що підходять під обрану дату","admin.bulkRenewal.blockedNoActiveOrders":"Немає замовлень, активних на даний момент","admin.bulkRenewal.activeOnlyHint":"При 0 днях дата не використовується: оновлюються лише замовлення, активні на даний момент.","admin.bulkRenewal.notifyUser":"📅 Адміністратор продовжив ваші активні замовлення на %1% дн. Список замовлень: %2%","admin.bulkRenewal.notifyUserTraffic":"📅 Адміністратор змінив використаний трафік за вашими замовленнями: %1%. Список замовлень: %2%","admin.bulkRenewal.notifyUserDaysAndTraffic":"📅 Адміністратор продовжив ваші активні замовлення на %1% дн. і змінив використаний трафік: %2%. Список замовлень: %3%","admin.bulkRenewal.notifyUsers":"Повідомити користувачів у Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ При великій кількості користувачів сповіщення можуть працювати нестабільно або із затримкою","admin.bulkRenewal.trafficLabel":"Використаний трафік","admin.bulkRenewal.trafficHint":"Частка ліміту віднімається від витраченого трафіку і не опускається нижче нуля. Частка використаного віднімає цей відсоток від уже витраченого.","admin.bulkRenewal.traffic.none":"Не змінювати","admin.bulkRenewal.traffic.full":"Повне скидання","admin.bulkRenewal.traffic.limit_50":"Скидання 50% від ліміту","admin.bulkRenewal.traffic.limit_25":"Скидання 25% від ліміту","admin.bulkRenewal.traffic.limit_10":"Скидання 10% від ліміту","admin.bulkRenewal.traffic.used_50":"Скидання 50% використаного","admin.bulkRenewal.traffic.used_25":"Скидання 25% використаного","admin.bulkRenewal.traffic.used_10":"Скидання 10% використаного","connection_test_button":"Тестування з\'єднання","connection_test_button_node":"Тест","connection_test_title":"Тестування з\'єднання","connection_test_desc":"Основні сервери перевіряються напряму. Резервні — напряму і через кожен основний сервер (HTTPS і VLESS). Hysteria2 на резервній ноді виходить напряму.","connection_test_no_servers":"Список серверів недоступний","connection_test_pending":"Очікування","connection_test_testing":"Перевірка...","connection_test_ok":"Успішно","connection_test_fail":"Помилка","connection_test_retry":"Повторити","connection_test_close":"Закрити","connection_test_progress":"Перевірено: %1% / %2%","connection_test_summary":"Успішно: %1% з %2%","connection_test_latency":"%1% мс","connection_test_ip":"IP: %1%","connection_test_colo":"PoP: %1%","connection_test_server":"Сервер","connection_test_section_main":"Основні","connection_test_section_backup":"Резервні","connection_test_direct":"Напряму","connection_test_via":"Через %1%","connection_test_relay_skip":"Hysteria2 виходить з резервної ноди напряму","connection_test_error_no_access":"Немає доступу адміністратора","connection_test_error_no_node":"Сервер не знайдено","connection_test_error_no_credentials":"Тестові облікові дані не налаштовані","connection_test_error_timeout":"Таймаут","connection_test_error_connect":"Не вдалося встановити з\'єднання","connection_test_error_probe":"Cloudflare CGI probe не відповів","connection_test_error_client":"Клієнт для перевірки недоступний","connection_test_error_deploying":"Нода зараз у процесі деплою","connection_test_error_not_backup":"Перевірка через основний сервер доступна лише для резервної ноди","connection_test_error_no_via":"Основний сервер для релейної перевірки не знайдено","connection_test_error_relay_protocol":"Цей протокол на резервній ноді не йде через основний сервер","connection_test_error_protocol_disabled":"Протокол вимкнено на цьому сервері","adminAnalyticsNav":"Аналітика","adminAnalyticsFrom":"З","adminAnalyticsTo":"До","adminAnalyticsCompare":"Порівняння","adminAnalyticsCompareNone":"Без порівняння","adminAnalyticsComparePrevious":"Попередній період","adminAnalyticsCompareMonth":"Минулий місяць","adminAnalyticsProtocol":"Протокол","adminAnalyticsServer":"Сервер","adminAnalyticsAll":"Усі","adminAnalyticsRefresh":"Оновити","adminAnalyticsLoading":"Завантаження...","adminAnalyticsUsers":"Унікальні користувачі","adminAnalyticsUsersHint":"Різні акаунти за вибраний період. Фільтри протоколу та сервера враховуються. Це не число онлайн просто зараз.","adminAnalyticsSessions":"Сесії","adminAnalyticsSessionsHint":"Події підключення за вибраний період. Один акаунт може відкрити багато сесій. Overlay-хопи рахуються, але IP ретранслятора не береться як регіон клієнта.","adminAnalyticsTraffic":"Трафік","adminAnalyticsTrafficHint":"Висхідний + низхідний, один раз на exit-ноді (як у білінгу). Xray-форвард із relay повторно не додається.","adminAnalyticsMap":"Користувачі за регіонами","adminAnalyticsMapHint":"Карта світу показується завжди. Розмір кола — унікальні користувачі в регіоні/у провайдера. Базовий розмір як на наближенні максимум мінус 1; при віддаленні кола зменшуються. Колір збігається із сервером, де таких користувачів було найбільше.","adminAnalyticsServers":"Сервери, яким віддають перевагу","adminAnalyticsServersHint":"Стовпчик — скільки унікальних користувачів користувалися цим сервером за вибраний період. Колір закріплений за сервером.","adminAnalyticsProtocols":"Протоколи","adminAnalyticsProtocolsHint":"Частка сесій (підключень) за протоколами за вибраний період. Число — кількість сесій, не унікальних людей.","adminAnalyticsTrafficByServer":"Трафік за серверами","adminAnalyticsTrafficByServerHint":"Висхідний + низхідний трафік за серверами в мегабайтах (МБ). Колір той самий, що й у серверів, яким віддають перевагу.","adminAnalyticsRegions":"Регіони та провайдери","adminAnalyticsRegionsHint":"Унікальні користувачі — пік унікальних акаунтів за годину в цьому регіоні/у провайдера. Сесії — кількість підключень, не унікальні люди.","adminAnalyticsCountry":"Країна","adminAnalyticsRegion":"Регіон","adminAnalyticsIsp":"Провайдер","adminAnalyticsResources":"Популярні ресурси","adminAnalyticsResourcesHint":"Агреговані домени за вибраний період. Список сховано, якщо увімкнено фільтр по серверу.","adminAnalyticsHost":"Хост","adminAnalyticsHits":"Запити","adminAnalyticsPreset_24h":"24г","adminAnalyticsPreset_7d":"7 днів","adminAnalyticsPreset_30d":"30 днів","adminAnalyticsPreset_month":"Цей місяць","adminAnalyticsPreset_prevMonth":"Минулий місяць"}');
+const uk_namespaceObject = /*#__PURE__*/JSON.parse('{"settings.pushIOSInstruction":"Для увімкнення сповіщень на iPhone:\\n1. Натисніть іконку [⎋] (Поділитися) в нижній панелі.\\n2. Виберіть пункт «Додати на початковый екран».\\n3. Запустіть сайт з робочого столу та поверніться в налаштування.","settings.pushSupportError":"Web Push не підтримується на цьому пристрої","settings.pushTitle":"Push-сповіщення","settings.pushDesc":"Підпишіть цей пристрій для отримання системних сповіщень","settings.pushSubscribed":"✅ Цей пристрій підписаний","settings.pushNotSubscribed":"❌ Пристрій не підписаний","settings.pushSubscribeBtn":"Підписатися","settings.pushUnsubscribeAllBtn":"Відв\'язати всі пристрої","settings.pushSuccess":"Успішно підписано","settings.pushUnsubscribeSuccess":"Всі пристрої від\'єднано","settings.pushError":"Помилка підписки","settings.disableSiteNotify":"Вимкнути сповіщення на сайті","settings.disableSiteNotifyDesc":"Вимкніть сповіщення на сайті, залишивши лише Push-сповіщення та сповіщення в Telegram (якщо учётная запис прив\'язана до Telegram)","settings.disableSiteNotifyYes":"Так","settings.disableSiteNotifyNo":"Ні","settings.geoRouting":"Додати гео-роутинг в дані підписки","settings.geoRoutingDesc":"Ви можете вибрати певний гео-роутинг для своїх замовлень. Якщо він буде доданий, то при підключенні до VPN / Proxy через інструкції з додатку, в даних підписки буде вказано, що ви хочете використовувати певний гео-роутинг. Це може допомогти в обході блокувань та покращенні стабільності підключення, якщо основний сервер недоступний або працює нестабільно у вашому регіоні. Якщо ви не впевнені, який варіант вам краще підходить - залиште значення за замовчуванням (%1%)","settings.disabled":"Вимкнути (не рекомендується)","settings.expireNotifyMode":"Сповіщення про завершення та продовження замовлень","settings.expireNotifyModeDesc":"Оберіть, які повідомлення про термін дії замовлень ви бажаєте отримувати. Сповіщення, що потребують ваших дій (не увімкнено автопродовження, недостатньо коштів, замовлення завершилося), а також повідомлення про збої в роботі сервісу надходять завжди.","settings.expireNotifyModeAll":"Усі сповіщення","settings.expireNotifyModeSmart":"Без нагадувань, якщо замовлення продовжиться автоматично","settings.expireNotifyModeCritical":"Лише важливі (потребують дій)","settings.reserveConnectionLink":"Використовувати резервне посилання на підписку Vless, Hysteria","settings.reserveConnectionLinkDesc":"Увімкніть цю опцію, якщо у вас немає доступу до основного сервера. Тоді інструкції з підключення міститимуть резервне посилання замість основного.","settings.reserveConnectionLinkYes":"Так","settings.reserveConnectionLinkNo":"Ні","applicationNotifyTitle":"Сповіщення","applicationNotifyConfirmDeleteAll":"Ви впевнені, що хочете видалити всі сповіщення?","applicationNotifyEmpty":"Немає нових сповіщень","applicationNotifyPromoSuccess":"Промокод успішно застосовано","applicationNotifyPromoError":"Помилка активації промокода: можливо, він вже використаний або вичерпано ліміт","applicationNetworkError":"Помилка мережі","applicationNotifyConfirmDelete":"Ви впевнені, що хочете видалити це сповіщення?","applicationNotifyDelete":"🗑️ Видалити","applicationNotifyPromoApply":"Застосувати промокод (%1%)","applicationDialogOk":"ОК","applicationDialogCancel":"Скасувати","pagePayTitle":"Придбання VPN","pagePayBalance":"Поповнення балансу","pagePayID":"Ваш унікальний ID","pagePayIDPlaceholder":"Введіть свій ID","pagePayAmount":"Сума поповнення балансу (тимчасово від %1%)","pagePayButton":"Перейти до оплати","pagePayAmountTotal":"\\n<font color=#00AE09>Підсумкова сума оплати: ≈%1%</font>","pageFAQId":"Як отримати ID?","pageFAQStep1":"Відкрийте панель на сайті або додаток у Telegram","pageFAQStep2":"Відкрийте розділ «Налаштування»","pageFAQStep3":"У блоці «Інформація про акаунт» натисніть «Ваш ID», щоб скопіювати номер","pageFAQStep4":"Вставте ID у поле зліва","pageFAQOpen":"Відкрити додаток у Telegram","pageFAQOpenSite":"Відкрити панель на сайті","pageFAQQR":"QR-код додатка в Telegram","landingTGBotButton":"Запустити Telegram-бота","landingDashboardButton":"Відкрити панель керування","landingTarifs":"Тарифи","landingTarifsTrial":"+ Пробний період %1%год","landingTarifsDiscount":"Знижка","landingTarifsPrice":"%1%/%2%дн.","landingTarifsGo":"Підключити","landingFooterText":"А тут наш основний проєкт","landingTitle":"RocketMan VPN — Інтернет під захистом!","landingTitleBrand":"RocketMan VPN","landingTitleTagline":"Інтернет під захистом!","landingTitleDesc":"Блискавичний доступ до улюблених сайтів та сервісів з ПК та смартфона.","landingFeaturesTitle":"Чому обирають саме нас?","landingAppsTitle":"Наші продукти для вас","landingAppsDownload":"Завантажити","landingAppsOpen":"Перейти","landingAppsFree":"Безкоштовно","landingTrust1Value":"256-bit","landingTrust1Label":"AES-шифрування · дані під замком","landingTrust2Value":"до 1 Гбіт/с","landingTrust2Label":"Швидкість каналу","landingTrust3Value":"24/7","landingTrust3Label":"Жива підтримка","landingTrust4Value":"НЕОБМЕЖЕНО","landingTrust4Label":"Пристроїв на 1 ключ","landingFeaturesLead":"Захист, швидкість і простота — без компромісів","landingCompareTitle":"Без захисту vs RocketMan VPN","landingCompareLead1":"Без VPN — тривога та «Доступ заборонено».","landingCompareLead2":"З нашим сервісом — захист і безпека за кілька кліків","landingCompareColBad":"Без VPN","landingCompareColGood":"З RocketMan VPN","landingCompareRow1":"Що бачать сайти","landingCompareBad1":"Ваше місто, провайдера та активність","landingCompareGood1":"Лише країну сервера","landingCompareRow2":"Wi-Fi у кафе та аеропортах","landingCompareBad2":"Паролі та переписку можна перехопити","landingCompareGood2":"Трафік зашифровано — видно лише «білий шум»","landingCompareRow3":"Передача даних","landingCompareBad3":"У відкритих мережах паролі — відкритим текстом","landingCompareGood3":"VLESS · Proxy HTTPS · Hysteria2","landingCompareRow4":"Блокування та DPI","landingCompareBad4":"«Доступ заборонено», сервіси та месенджери падають","landingCompareGood4":"Наші обходи працюють навіть у Китаї (перевірено в червні 2026)","landingCompareRow5":"Швидкість","landingCompareBad5":"Провайдер може різати маршрут і швидкість","landingCompareGood5":"До 1 Гбіт/с, зокрема на 5G","landingCompareRow6":"Налаштування","landingCompareBad6":"Вручну на кожному пристрої та в додатку","landingCompareGood6":"QR-код за 10 секунд · iOS, Android, ПК, TV","landingCompareRow7":"Підтримка","landingCompareBad7":"Розбираєтесь самі","landingCompareGood7":"Жива підтримка в Telegram 24/7","landingHowTitle":"3 кроки до захищеного інтернету","landingHowLead":"Підключення займе менше двох хвилин — ми проведемо вас за руку","landingHowStep1Title":"Оберіть тариф","landingHowStep1Text":"Від безкоштовного тесту до преміуму — план під будь-які задачі","landingHowStep2Title":"Оплатіть","landingHowStep2Text":"Зручна оплата та миттєва активація в Telegram або на сайті","landingHowStep3Title":"Увімкніть VPN / Proxy","landingHowStep3Text":"Покрокова інструкція — далі лише ВКЛ/ВИКЛ","landingPricingLead":"Зручні тарифи · пробний період · реферальна система","landingPlanTraffic":"📊 %1% ГБ трафіку","landingPlanDevices":"📱 Без ліміту пристроїв","landingPlanVpnProxy":"🔐 VPN + Proxy в одному","landingCtaTitle":"Готові захистити свій інтернет?","landingCtaDesc":"Приєднуйтесь — підключення займе пару хвилин, а спокій залишиться надовго.","landingCtaButton":"Підключити зараз","landingCtaSite":"Підключити через сайт","landingCtaTelegram":"Підключити через Telegram","landingPlanConnectSite":"Підключити на сайті","landingPlanConnectTelegram":"Підключити в Telegram","landingHeaderTelegram":"Запустити в Telegram","landingHeaderSite":"Підключити прямо тут","landingHeroGuarantee":"✓ Пробний період · ✓ VPN + Proxy · ✓ Підтримка 24/7","landingHeroPill1":"Пробний період","landingHeroPill2":"VPN + Proxy","landingHeroPill3":"Підтримка 24/7","landingHeroPill4":"Працює навіть у Китаї","landingHeroPill5":"Обхід Білих Списків","landingHeroCompareBad":"Без VPN","landingHeroCompareGood":"З RocketMan VPN","landingHeroCompareYou":"ВИ","landingHeroCompareWeb":"МЕРЕЖА","landingHeroCompareBadWire":"відкритий канал","landingHeroCompareGoodWire":"зашифрований туннель","landingHeroCompareBad1":"Ваш реальний IP витікає в мережу","landingHeroCompareBad2":"Блокування · «Доступ заборонено»","landingHeroCompareGood1":"Ми захистили й зашифрували ваше перебування в інтернеті","landingHeroCompareGood2":"No-logs · ми не зберігаємо ваші дані","landingProtocolVless":"VLESS","landingProtocolProxy":"Proxy HTTPS","landingProtocolHysteria":"Hysteria2","landingShieldMeta":"VLESS · Proxy HTTPS · Hysteria2","landingPlanPopular":"ХІТ","landingSecurityBadge":"З нами безпечно","app.proxybridge.name":"RocketMan Proxy Bridge","app.proxybridge.description":"Багатофункціональний проксі-клієнт для <b>Windows, Linux і macOS</b>. Підтримує протоколи <b>HTTPS / VLESS / Hysteria2</b>. API-режим керування замовленнями прямо з додатку, TUN-тунелювання, VLESS-підписки та інтеграція з Discord (Windows).","app.tgproxy.name":"TGProxy — MTProto для Telegram","app.tgproxy.description":"Безкоштовний <b>MTProto-проксі</b> для стабільного доступу до Telegram. Без реєстрації та лімітів трафіку, наскрізне шифрування переписки. Підключення в один клік з браузера — відкривається прямо в Telegram.","features1Title":"Анонімність","features1Text":"Завдяки кільком шарам захисту з нашого боку — Ваш реальний IP не дізнається жоден сервіс.","features2Title":"Швидкість","features2Text":"Завантажуйте, дивіться улюблений контент та діліться на швидкостях до 1 Гбіт/с.","features3Title":"Пробний період","features3Text":"Підключайтеся в 1 клік з будь-якого свого пристрою! ПК, смартфон, ТВ, планшет та ноутбук.","features4Title":"Підтримка","features4Text":"Ми завжди готові допомогти Вам з вирішенням будь-яких питань. На зв\'язку практично 24/7","faq1title":"Як оплатити?","faq1text":"Поповніть баланс і оплатіть зручним методом. Після оплати отримайте інструкції в Telegram-боті або на сайті (залежить від того, де оформлювали замовлення).","faq2title":"Як налаштувати VPN?","faq2text":"У нашому <a href=\\"https://t.me/%1%\\" target=\'_blank\'>Telegram-боті</a> та в <a href=\\"https://ru-app.rocketman-vpn.com:8443/application\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Особистому кабінеті</a> на сайті максимально детально розписано весь процес підключення.\\nБуквально від А до Я, тому Ви навряд чи зможете десь заплутатися. Головне — дотримуйтесь інструкцій :)","faq3title":"Що робити, якщо щось не працює?","faq3text":"Ознайомтесь з нашою <a href=\\"https://rocketman-vpn.com/uk/wiki/\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">Базою знань</a> — ми зібрали корисні статті та відповіли на можливі питання заздалегідь. Якщо залишаться питання, які не вдасться вирішити самостійно — напишіть у <a href=\\"https://t.me/%1%\\" target=\'_blank\'>підтримку через Telegram</a>, і ми Вам допоможемо.","locationSelectTitle":"Оберіть локацію сервера","locationSelectLoad":"Завантаженість: %1%%","locationReserve1":"Санкт-Петербург","locationLocal":"Локальний сервер","locationStockholm":"Стокгольм","locationAustria":"Відень","locationNetherland":"Амстердам","locationFrankfurt":"Франкфурт","locationParis":"Париж","tarif.test_drive":"🚗 Тест-драйв","tarif.start":"🚀 Старт","tarif.gamer":"🎮 Геймер","tarif.pro":"👑 Сімейна+","tarif.ultra":"🌌 Космос","httpTarifPro":"🔒 Proxy-Безліміт","httpTarifGamer":"🔒 Proxy-Геймер","tarifNameFull":"%1% (%2% днів | %3% GB/д) - %4%","welcomeMessage":"Ласкаво просимо!\\nЗавдяки нашому сервісу Ви зможете отримати захищений доступ до улюблених сайтів та додатків, як це роблять інші наші улюблені клієнти ❤️\\n\\n⭐️ У нас немає обмежень на кількість пристроїв, тому можете використовувати 1 ключ на всіх своїх девайсах! Разом із VPN Ви отримуєте доступ і до нашого Proxy.\\n\\n🛒 Ми надаємо:\\n- VPN для iOS, Android, Windows, macOS, Android TV\\n- Proxy для браузера, Discord, Windows тощо","basketBalance":"Поповнити баланс","secondsToStringD":"%4% дн. %3% год. %2% хв. %1% сек.","secondsToStringH":"%3% год. %2% хв. %1% сек.","secondsToStringM":"%2% хв. %1% сек.","readButton":"🗑 Видалити це повідомлення","openPage":"🌐 Сайт","openApp":"📱 Додаток","expireNotifyOrderData":"▪️ Тариф: `%1%`\\n▪️ Назва: `%2%`\\n▪️ Термін продовження: `%3% днів`","expireNotifyTemplate":"Вітаємо, %1%!\\n%2%\\n\\n%3%\\n▪️ Вартість продовження: `%4%`\\n\\n%5%","expireNotifyFull":"Термін дії Вашого замовлення підійшов до кінця 🙁\\n\\nЩоб залишатися на зв\'язку з вільним Інтернетом — [запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp), далі натисніть на 💸 свій баланс справа вгорі та, поповнивши його, у налаштуваннях замовлення увімкніть автопродовження 😇","expireNotifyTime":"Термін дії Вашого замовлення завершиться менш ніж через `%1%` годину 🙁","expireNotifyRenewAutoNoMoney":"❗️ У Вас увімкнена функція автопродовження, проте Ваш поточний баланс не дозволяє продовжити його 🙁\\n\\nПереконайтеся, що на рахунку достатньо коштів, щоб функція працювала без проблем протягом найближчих місяців. [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp), у правому верхньому куті додатка натисніть на свій баланс та поповніть на бажану суму.","expireNotifyRenewAuto":"✅ У Вас увімкнена функція автопродовження, тому замовлення буде продовжено автоматично, коли на ньому залишиться менше 24 годин 😎","expireNotifyRenewManual":"ℹ️ Як увімкнити автопродовження?\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на своє замовлення ⇒ Налаштування ⇒ поставте галочку біля Автопродовження ⇒ Зберегти всі зміни.","expireNotifyRenewSuccessAuto":"Вітаємо, %1%!\\nВаше замовлення було продовжено автоматично.\\n\\n%2% 🎉\\n\\nДякуємо, що довіряєте нам ❤️\\nНайкращою подякою за сервіс буде інвайт Ваших друзів через реферальну систему!\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrect":"Команда використана невірно\\n`%1%`\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","commandIncorrectExample":"Команда `%1%` використана невірно!\\n\\n✅ Правильний приклад: `%2%`\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","useStartCommand":"Почати роботу","usePromoCommand":"Застосувати промокод — /promo PROMO_NAME","useFaqCommand":"Як підключитися до VPN / Proxy?","usePromoAlready":"Ви вже застосували цей промокод. Застосувати промокод можна лише 1 раз.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoNotFound":"Промокод `%1%` не знайдено 🙁\\n\\nПеревірте правильність написання, а також переконайтеся, що промокод є дійсним.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedFull":"Ліміт активацій промокоду `%1%` вичерпано 🙁\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoUsedCategory":"Ви вже застосували подібний промокод.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoErr":"Не вдалося застосувати промокод `%1%` 🙁\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","usePromoSuccess":"Промокод `%1%` успішно застосовано 🎉\\nНа Ваш баланс зараховано %2%\\n💰 Ваш поточний баланс: %3%\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","adminNoAccess":"У Вас немає доступу для виконання цієї дії.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","adminMenuButton":"Меню адміна","adminMenu":"Розділ адміністратора\\n\\n\\nМеню промокодів\\nСписок промокодів: /listPromo\\nІнформація по промокоду: `/infoPromo {PROMO_NAME}`\\nСтворити промокод: `/createPromo {PROMO_NAME} {COUNT_USE} {DOLLARS}`\\nВидалити промокод: `/deletePromo {PROMO_NAME}`\\n\\n\\nМеню користувачів\\nВидати замовлення користувачу: `/giveOrder {USER_ID} {TARIF_ID} {DAYS}`\\nВидалити замовлення: `/removeOrder {ORDER_ID}`\\nВидати баланс користувачу: `/addMoney {USER_ID} {SUM_USD}`","adminUserRemoveOrderNotFound":"Замовлення не знайдено","adminUserRemoveOrderStatus":"Статус видалення замовлення: %1%","adminUserGiveTarifErrUser":"Користувача не знайдено!","adminUserGiveTarifErrTarif":"Тариф не знайдено","adminUserGiveTarifErrNode":"Нода тарифу не знайдена. Конфігурація тарифу невірна","adminUserGiveTarifErrMarzban":"MarzBan не дав створити замовлення. Причина невідома","adminUserGiveTarifSuccess":"Ви успішно видали замовлення для @%1%","adminUserGiveTarifNotify":"🎉 Адміністратор підключив на Ваш акаунт\\nтариф `%1%` на `%2% дн.` 📆\\n\\n*Інформація про замовлення:*\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒\\nнатисніть на своє замовлення ⇒ 📚 Інструкція VPN / Proxy","adminPromoCreateAlreadyExist":"Цей промокод уже існує","adminPromoCreateAlreadyExistWas":"Цей промокод уже колись існував і не може бути створений повторно","adminPromoCreateFailed":"Не вдалося створити промокод","adminPromoCreateDone":"Промокод `%1%` успішно створено.\\nДоступно активацій: %2%\\nБаланс: %3%","adminPromoList":"Список усіх промокодів:\\n\\n%1%","adminPromoListFormat":"`/infoPromo %1%` (%2% вик. / %3% всього / %4%)","adminPromoInfo":"Інформація по промокоду:\\n\\nID: `%1%`\\nЛіміт активацій: %2%\\nКількість активацій: %3%\\nБаланс: %4%\\n\\nСписок активацій:\\n%5%","adminPromoDeleteDone":"Промокод `%1%` успішно видалено","terms":"Угода користувача","contacts":"Контакти для зв\'язку","wiki":"База знань","wikiPage.description":"Інструкції, відповіді на запитання та приклади налаштування VPN.","wikiPage.articleLead":"Стаття з бази знань RocketMan VPN.","wikiPage.articleHint":"Навігація по статтях ліворуч · зміст праворуч","wikiPage.subtitle":"Оберіть тему ліворуч або скористайтеся пошуком","wikiPage.heroTopic.faq":"Відповіді на запитання","wikiPage.heroTopic.setup":"Налаштування та підключення","wikiPage.heroTopic.troubleshoot":"Приклади та рішення","wikiPage.searchPlaceholder":"Пошук за назвою та текстом статей...","wikiPage.loadingList":"Завантаження списку статей...","wikiPage.emptyList":"Статті ще не додані.","wikiPage.loadingArticle":"Завантаження статті...","wikiPage.openHint":"Оберіть статтю у списку","wikiPage.back":"Назад до списку","wikiPage.error.loadList":"Не вдалося завантажити список статей.","wikiPage.error.emptyFile":"Для поточної мови стаття недоступна.","wikiPage.error.loadArticle":"Не вдалося завантажити статтю.","wikiPage.navigation":"Навігація","wikiPage.contents":"Зміст","wikiPage.readMore":"Читати","wikiPage.readingTime":"хв читання","wikiPage.articlesCount":"статей","wikiPage.backToTop":"Наверх","wikiPage.home":"🏠 Головна сторінка Бази знань","wikiPage.copyLink":"Копіювати посилання на цю статтю","wikiPage.articleLinkCopied":"Посилання на статтю скопійовано","wikiPage.linkCopied":"Посилання скопійовано","wikiPage.closeLightbox":"Закрити","wikiPage.openImageInNewTab":"Відкрити в новій вкладці","wikiPage.copySectionLink":"Копіювати посилання на розділ","wikiPage.copyCurrentSectionLink":"Копіювати посилання на поточний абзац","wikiPage.sectionLinkCopied":"Посилання на абзац скопійовано","wikiPage.enlargeImage":"Збільшити зображення","wikiPage.copyCode":"Копіювати","wikiPage.copied":"Скопійовано","wikiPage.copyText":"Натисніть, щоб скопіювати","wikiPage.searchNoResults":"Нічого не знайдено. Спробуйте інше слово.","wikiPage.searchHint":"Результати пошуку за назвою та текстом","wikiPage.searching":"Шукаємо...","wikiPage.searchMatchTitle":"У назві","wikiPage.searchMatchBody":"У тексті","wikiPage.updatedAt":"Оновлено","wikiPage.featured":"Важливе до прочитання","wikiPage.groupOther":"Інші статті","wikiPage.allArticles":"Усі статті","wikiPage.cardUpdated":"Оновлено","wikiPage.updatedToday":"сьогодні","wikiPage.updatedYesterday":"вчора","wikiPage.updatedDaysAgo":"%1% дн. тому","wikiPage.badge.important":"Важливо","wikiPage.badge.new":"Нове","wikiPage.badge.updated":"Оновлено","wikiPage.badge.hot":"Актуально","contactsTG":"Телеграм чат","contactsEmail":"E-Mail","trialNotify":"✅ Ви отримали тариф `%1%` на `%2% години` як ознайомлювальний доступ.\\n\\n📌 Інформація про замовлення в додатку:\\n🚀 [Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒\\nнатисніть на своє замовлення ⇒ 📚 Інструкція VPN / Proxy.\\n\\nМи надаємо Вам можливість безкоштовно ознайомитися з нашими продуктами для того, щоб Ви оцінили якість та стабільність перед майбутніми покупками 🤝","launchBot":"Запустити","launchBotLong":"Відкрити додаток 📱","applicationMainMenu":"Головне меню","applicationMainMenuBack":"Назад","applicationButtonsRef":"Реферальна система","applicationButtonsFaq":"База знань","applicationButtonsCabinet":"Особистий кабінет","applicationButtonsAdmin":"Кабінет адміністратора","applicationButtonsAdminDisk":"Вільно дискового простору: %1%","applicationButtonsAdminPayments":"Статистика доходу:<br/>%1% поточний міс.<br/>%2% минулий міс.<br/>%3% за весь період | %4% в очікуванні","applicationUserInfoWithUs":"Ви з нами","applicationUserInfoBalance":"Ваш баланс","applicationUserInfoId":"Ваш ID","applicationUserInfoTgId":"ID Прив\'язаного акаунта TG","applicationUserInfoAPIKey":"Ваш API ключ","applicationUserInfoAPIKeyAlert":"📝 Ваш API ключ скопійовано в буфер обміну. Нікому не розголошуйте цей ключ, адміністрація проєкту ніколи не попросить вас назвати його","applicationUserInfoAPIResetAlertAsk":"📝 Ви впевнені, що хочете згенерувати новий API ключ?","applicationUserInfoAPIResetAlert":"📝 Ваш API ключ було згенеровано заново","applicationUserInfoIdAlert":"📝 Ваш ID був скопійований у буфер обміну.","applicationUserInfoTgIdAlert":"📝 Ваш Telegram ID був скопійований у буфер обміну.","applicationContactButton":"Зв\'язок зі службою підтримки","applicationServersButton":"Статус серверів","applicationHowToConnectFAQButton":"Як підключитися до VPN чи Proxy?","applicationHowToConnectFAQButtonModal":"Бот надіслав вам інформацію в особисті повідомлення 📝","applicationCabinetTitle":"Особистий кабінет","applicationCabinetTitleDesc_title":"Натисніть на замовлення для керування ним","applicationCabinetTitleOrder":"Вибір тарифного плану","applicationCabinetTitleOrder_detail_back":"Повернутися до списку тарифів","applicationCabinetTitleOrder_help_button":"⚠️ Допоможіть мені визначитися з тарифним планом ⚠️","applicationCabinetTitleOrder_help_button_back":"Повернутися до оформлення замовлення","applicationCabinetTitleOrder_help_button_header":"Середнє споживання трафіку:","applicationCabinetTitleOrder_help_button_desc":"<font color=red>YouTube</font>: 1 година відео в 1440p ≈6 ГБ\\n<font color=#E10070>Instagram</font>: 1 година Reels ≈2 ГБ\\n<font color=#69C9D0>TikTok</font>: 1 година відео ≈2 ГБ\\n<font color=#7289DA>Discord</font>: 1 година войсу з демкою ≈1 ГБ\\n<font color=#BD37FF>Twitch</font>: 2 години стріму в 1080p ≈5 ГБ\\n<font color=#D0A823>Онлайн ігри</font>: 1 година ≈0.5 ГБ\\n<font color=#E50914>Netflix</font> / <font color=#00A859>HDRezka</font>: 2 години в 1080р ≈5 ГБ\\n\\nЯкщо скласти всі вказані дані, то виходить <font color=#DA7F00>≈20-25 ГБ на день</font>. Ці дані наведені для орієнтиру, щоб Вам було простіше обрати відповідний тариф.\\n\\n<font color=#A7C800>VPN та Proxy — по-своєму зручні.</font>\\n<font color=#BAD821>VPN:</font> зручно для смартфонів, планшетів та ТВ; можна використовувати і на ПК.\\n<font color=#BAD821>Proxy:</font> підходить для Discord, браузера на ПК (YouTube, Twitch, Netflix, HDRezka тощо).\\n<font color=#B3D023>Коротко про протоколи:</font>\\n<font color=#2EB3FF>• Vless</font> — найкращий обхід блокувань, стабільність, швидкість, “невидимість”.\\n<font color=#29a1e6>• Hysteria</font> - баланс стабільності та швидкості, ідеально підходить для геймінгу<font color=#2884BA>• HTTPS</font> — підходить тільки для сайтів та додатків через Proxifier.\\n\\n🚀 Старт — для звичайного серфінгу\\n🎮 Геймер — для активних користувачів девайсів\\n👑 Сімейна+ — для великого обсягу трафіку","applicationCabinetButtonNew":"Зробити нове замовлення","applicationCabinetButtonNewCancel":"Повернутися до списку замовлень","applicationCabinetButtonAddBalance":"Поповнити баланс","applicationCabinetIsTrial":"Безкоштовний тестовий доступ","applicationCabinetPing":"Пінг до сервера: %1%ms","applicationCabinetEndActive":"Доступ до передплати: %1%","applicationCabinetEndNotActive":"Передплата не оплачена. Натисніть сюди та активуйте її через кнопку «⌛️ Продовжити замовлення» у випадаючому меню.","applicationCabinetOrderTraficWeek":"на тиждень","applicationCabinetOrderTraficMonth":"на місяць","applicationCabinetOrderPriceDay":"/ день","applicationCabinetOrderPriceDays":"/ %1% днів","applicationCabinetOrderPrice":"%1% за %2% дн 🌐 %3% %4%","applicationCabinetOrderDetails":"📋 Ознайомитися з деталями цього тарифу 📋","tarif_desc_drive":"📚 Ідеально для знайомства з нашим сервісом та легкого серфінгу в соцмережах. Дозволить повністю випробувати роботу VPN / Proxy 😉","tarif_desc_start":"📚 Підходить для соцмереж та легкого використання на смартфоні із середнім екранним часом ≈4год на день. На ПК місячний ліміт може витрачатися швидше, враховуйте активність.","tarif_desc_gamer":"🎮 Для тих, хто активно проводить час за ПК:<br/><font color=#DA7F00>•</font> Ігри через Steam та інші лаунчери<br/><font color=#DA7F00>•</font> Голосове спілкування в месенджерах для геймерів з надійним підключенням через Proxy<br><font color=#DA7F00>•</font> Перегляд Twitch з плагіном 7TV в 1080p і вище<br/><font color=#DA7F00>•</font> YouTube та інші соцмережі, де важливе захищене підключення\\n\\n✅ Цього трафіку достатньо для смартфона та ПК з активним використанням ≈5-6 годин на день.","tarif_desc_unlim":"🚀 Тариф для великих обсягів трафіку та будь-яких завдань: ПК, ноутбуки, смартфони, планшети, ТВ та інші пристрої.\\n\\n🧡 Один ключ можна використовувати на кількох пристроях — цього трафіку вистачить для сім\'ї та Ваших друзів!","tarif_desc_ultra":"💠 Преміальний тариф для широкого спектра завдань та дуже активних користувачів!\\n\\nПідходить тим, хто наближається к верхній межі тарифу в 1 ТБ і хоче користуватися сервісом без хвилювань про трафік.\\n\\n💜 З цим варіантом Ви зможете спокійно завантажувати великі файли, стрімити, грати та використовувати VPN / Proxy на десятці пристроїв.","applicationCabinetOrderBack":"Назад","applicationCabinetOrderSelect":"☑️ Замовити цей тариф ☑️","applicationCabinetOrderSelectTrial":"🎁 Активувати тестовий доступ на %1% години 🎁","applicationCabinetOrderSelectTrialAccept":"🎁 Отримати тестовий доступ на %1% години як бонус?","applicationCabinetOrderSelectAccept":"Підтвердіть дію ✅\\nЗ балансу буде списано: %1%\\n\\n💰 Зараз у Вас: %2%","applicationCabinetOrderTrial":"🎁 Доступний тестовий період на %1% години","applicationCabinetOrderTrialUsed":"Ви вже використовували тестовий доступ раніше 🙁","applicationCabinetOrderSelectErrTimeMax":"Максимальний термін продовження послуги: 2 місяці","applicationCabinetOrderSelectErrBalance":"У Вас недостатньо коштів на внутрішньому балансі для замовлення 🙁","applicationCabinetOrderSelectErrTrialCfg":"Цей тариф не можна замовити в тестовому режимі 🙁","applicationCabinetOrderSelectErrTrial":"Ви вже використовували цей тестовий тариф 🙁","applicationCabinetOrderSelectErrTrialTgRequired":"🎁 Тестовий період доступний лише користувачам, авторизованим через Telegram. Увійдіть через Telegram (або прив\'яжіть Telegram у «Налаштування») та спробуйте ще раз.","applicationCabinetOrderSelectSuccess":"Замовлення успішно виконано 🎉","applicationCabinetOrderSelectSuccessTrial":"Тестове замовлення успішно виконано 🎉","applicationCabinetOrderSelectErrOrder":"Не вдалося створити Ваше замовлення 😕","applicationCabinetOrderEditChangeTarif":"♻️ Змінити тариф на інший ♻️","applicationCabinetOrderEditChangeTarifCurrent":" ❗️ Це поточний тариф","applicationCabinetOrderEditChangeTarifNewDays":"<font color=#07D400>При зміні тарифу у Вашого замовлення залишиться<br>приблизно %1%</font><br>дні:години:хвилини:секунди<br><br>Для підтвердження натисніть кнопку нижче","applicationCabinetOrderEditChangeTarifExpired":"❌ Неможливо змінити тариф у замовлення з терміном дії, що закінчився. Спочатку необхідно його продовжити (зробити активним), а вже після змінити тариф на той, що Ви обрали. При зміні час замовлення перерахується залежно від обраного тарифу.","applicationCabinetOrderEditChangeTarifDesc":"<font color=#FA7900>Кожні %1% год. Ви можете змінювати тариф на будь-який інший.</font><br><br>При зміні тарифу залишок днів з попереднього замовлення переноситься на новий з урахуванням актуальної вартості та терміну доступу, що залишився.","applicationCabinetOrderEditChangeTarifDescErr":"<font color=#07D400>Ви вже нещодавно змінювали тариф!</font><br>Наступна зміна буде доступна<br>через %1%","applicationCabinetOrderEditChangeTarifButton":"♻️ Підтвердити зміну тарифу на обраний ♻️","applicationCabinetOrderEditChangeTarifButtonAccept":"♻️ Ви впевнені, що хочете змінити тариф на обраний?\\n\\n⚠️ Майте на увазі, що наступну зміну тарифу Ви зможете здійснити тільки через %1% год.","applicationCabinetOrderEditAuto":"Автопродовження замовлення","applicationCabinetOrderEditAutoOn":"✅ Активно","applicationCabinetOrderEditAutoOff":"❌ Не активно (в ⚙️Налаштуваннях)","applicationCabinetOrderEditAutoDesc":"При закінченні терміну дії замовлення, якщо на Вашому балансі достатньо коштів, система автоматично продовжить замовлення, якщо увімкнути автопродовження.","applicationCabinetOrderEditResetTime":"Скидання трафіку","applicationCabinetOrderEditCreated":"Замовлення активовано","applicationCabinetOrderEditSpent":"Сумарно витрачено","applicationCabinetOrderEditOverTime":"Передплата активна до","applicationCabinetOrderChangeTarif":"♻️ Зміна тарифу","applicationCabinetOrderEditParams":"⚙️ Налаштування","applicationCabinetOrderEditParamsTitle":"⚙️ Налаштування замовлення: %1%","applicationCabinetOrderEditParamsLabel":"🔸 Мітка замовлення","applicationCabinetOrderEditParamsLabelDesc":"Ви можете додати мітки до Ваших замовлень, щоб Вам було простіше визначати, яке з них де використовується","applicationCabinetOrderEditParamsPassword":"🔸 Ваш пароль для підключення (4-12 символів)","applicationCabinetOrderEditParamsIP":"🔸 IP-адреса для доступу без пароля","applicationCabinetOrderEditParamsIPDesc":"У цьому полі Ви можете вказати свою особисту IP-адресу (взявши її, наприклад, з 2ip.io), щоб отримати доступ до нашого Proxy-сервера без вказання логіна та пароля в тих місцях, де це потрібно. Цей варіант зручніший і нічим не відрізняється за рівнем безпеки.\\n⚠️ Важливе уточнення: ця функція працює тільки при підключенні через HTTPS Proxy.","applicationCabinetOrderEditParamsIPDesc1":"Для того, щоб убезпечити підключення до Proxy, ми згенерували випадковий пароль. У разі потреби його можна замінити на будь-який інший. Він потрібен для автентифікації за допомогою логіна та пароля там, де це знадобиться.","applicationCabinetOrderEditSave":"✔️ Зберегти всі зміни ✔️","applicationCabinetOrderEditSaveOk":"Зміни успішно прийняті ✅","applicationCabinetOrderEditSaveFail":"❌ Налаштування не були збережені. %1%","applicationCabinetOrderEditLinkVpn":"📚 Інструкція VPN","applicationCabinetOrderEditLinkProxy":"📚 Інструкція Proxy","applicationCabinetOrderEditResetPass":"🔄 Скинути Proxy пароль","applicationCabinetOrderEditResetPassAccept":"🔄 Ви впевнені, що хочете скинути пароль?\\n\\nСтарий пароль припинить діяти, і Вам необхідно буде виконати повторне налаштування Proxy з\'єднання!","applicationCabinetOrderEditResetUid":"🔄 Скинути посилання на VPN підписку","applicationCabinetOrderEditResetUidAccept":"🔄 Ви впевнені, що хочете скинути посилання на VPN підписку?\\n\\nСтаре посилання і ключі доступу припинять діяти, включно з резервними/relay-локаціями. Посилання потрібно буде додати у VPN-застосунок заново!","applicationCabinetOrderEditResetUidDesc":"Скидає посилання підписки і ключі доступу VPN (VLESS і Hysteria, основна локація і relay). Використовуйте, якщо посилання могло потрапити до сторонніх. Після скидання старе посилання припинить працювати — додайте нове з інструкції VPN.","applicationCabinetOrderEditResetUidOk":"Посилання на VPN підписку скинуто. Додайте нове посилання у VPN-застосунок — попереднє посилання і ключі більше не працюватимуть.","applicationCabinetOrderEditLinkAccept":"💬 Вам було надіслано повідомлення з подробицями та інструкцією для підключення до нашого VPN / Proxy.","proxyInstructionReserveItem":"%1% *%2%*: `%3%`\\n🌐 *HTTPS порт*: `%4%`\\n%5%\\n🔑 *Пароль*: `%6%`","proxyInstructionReserveSubItem":"👤 *Логін* %1% » %2%: `%3%`","proxyInstruction":"Інструкція для підключення до Proxy:\\n\\n%1%\\nМи надаємо Вам доступ до Proxy відразу у всіх наших локаціях. ✅ *Рекомендуємо спочатку спробувати підключення безпосередньо до європейського сервера.* У разі якщо працює некоректно — пробуйте спосіб через РФ » Європа.\\n\\n\\n*Дані для підключення до Proxy безпосередньо:*\\n%2%\\n🌐 HTTPS порт: `%3%`\\n👤 Логін: `%5%`\\n🔑 Пароль: `%6%`\\n\\n\\n*Для деяких клієнтів з РФ:*\\n_(перенаправляє трафік через РФ при недоступності прямого підключення до Європи. У цьому режимі обов\'язково вкажіть вірний логін з блоку нижче — він інший)_\\n%7%\\n\\n\\n*Для роботи з Proxy підключенням:*\\n🎙 Discord: [RocketMan Discord Proxy Bridge](https://github.com/RocketMan-System/DiscordProxyBridge_public/releases/latest) — [Інструкція](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)\\n🔎 Chrome: [SwitchyOmega 3](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Smart Proxy](https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=ru) — [Інструкція](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n💻 ПК на Windows та macOS: [Proxifier](https://www.proxifier.com/) — [Інструкція](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)","vpnInstruction":"Інструкція для підключення до VPN:\\n\\n%1%\\nМи надаємо Вам доступ до VPN відразу у всіх наших локаціях! *Кожне посилання нижче = особистий ключ*, а також сторінка з інструкцією до підключення. \\n✅ *Рекомендуємо спочатку додати Vless від Мультипосилання*, у разі якщо працює некоректно — пробуйте інші протоколи або резервний варіант.\\n\\n\\n\\n🔹 *Просте пояснення для новачків:*\\n▪️ Натисніть на [це посилання](%5%) і дотримуйтесь інструкції.\\n\\n\\n\\n🔸 *Для користувачів з досвідом*:\\n🌏 Усі локації в мультипосиланні\\n- %2%\\n\\n*Для деяких клієнтів з РФ:*\\n%3%\\nЦей спосіб для тих, у кого немає прямого підключення до європейських серверів і потрібен обхідний спосіб доступу до них через російський сервер.\\n\\n*Прямий доступ до локації на всіх протоколах:*\\n%4%\\n\\n⚠️ Якщо вказані посилання не відкриваються, увімкніть у налаштуваннях відображення резервного посилання.%7%","vpnInstructionRoute":"\\n\\nℹ️ Користувачі HAPP можуть додавати власні правила маршрутизації. Ви можете скористатися готовими налаштуваннями, наведеними нижче, або створити власні, вказавши потрібні домени та IP-адреси для обходу VPN. \\n%1%","vpnInstructionAll":"Усі протоколи відразу","vpnInstructionNode":"%1% [%2%](%3%)","vpnInstructionEurope":"🇪🇺 Європа","applicationCabinetOrderEditLinkAcceptTextUnified":"%1%\\n\\n🔑 *Ваш особистий ключ доступу до VPN*\\n\\nУсі дані для підключення та список рекомендованих додатків знаходяться за посиланням:  \\n👉 [Відкрити посилання для підключення](%2%)\\n\\n⚠️ *Зберігайте посилання в секреті!* \\nВоно є Вашим персональним ключем авторизації у VPN.\\n\\n✅ Щоб активувати передплату:  \\nСкопіюйте посилання та вставте його в обраний додаток — після цього автоматично завантажаться актуальні налаштування.\\n\\n📦 Хочете керувати всіма замовленнями?  \\nВикористовуйте [🔑 посилання передплати на всі підключення](%4%).\\n\\n───────────────\\n🌐 *Ваші дані для підключення до Proxy:*\\n🌐 *Адреса сервера:* `%6%%7%`\\n🌐 *HTTPS порт:* `%9%`\\n👤 *Ваш логін:* `%10%`\\n🔑 *Пароль для підключення:* `%5%`\\n\\n⚠️ У разі недоступності основного сервера ви можете підключитися до резервного сервера:  \\n%11% *Адреса сервера:* `%12%`  \\n🌐 *HTTPS порт:* `%9%`  \\n👤 *Ваш логін:* `%13%.%10%`  \\n🔑 *Пароль для підключення:* `%5%`\\n\\n💡 Proxy можна використовувати в будь-якому додатку, який підтримує Proxy-з\'єднання.  \\nНаприклад, *для роботи в браузері Chrome* рекомендуємо розширення:  \\n• Proxy SwitchyOmega V3 — https://chromewebstore.google.com/detail/proxy-switchyomega-v3/hihblcmlaaademjlakdpicchbjnnnkbo  \\n• SmartProxy — https://chromewebstore.google.com/detail/smartproxy/jogcnplbkgkfdakgdenhlpcfhjioidoj?hl=uz\\n\\n───────────────\\n*Інструкції з підключення до VPN:* \\n💻 [Windows / macOS](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Windows--mac-OS-04-13)  \\n📲 [iOS / Android](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-iOS--Android-04-13)  \\n📺 [Android TV](https://telegra.ph/Kak-podklyuchitsya-k-VPN-s-Android-TV-04-13)\\n\\n───────────────\\n*Як підключитися до Proxy:* \\n🎧 [Discord](https://telegra.ph/Kak-zapustit-Discord-cherez-proksi-04-13)  \\n🖥 [Windows-додатки](https://telegra.ph/Kak-zapustit-prilozheniya-na-Windows-cherez-proksi-04-13)  \\n🌍 [Веб-браузер](https://telegra.ph/Kak-podklyuchitsya-k-proksi-v-Web-Brauzere-04-13)\\n","applicationCabinetOrderEditLinkAcceptTextOrderData":"💬 Дані замовлення `%1%`\\n⌛️ Тариф: `%2%`\\n⚙️ Автопродовження: %3%\\n\\n%4%","applicationCabinetOrderEditLinkAcceptTextOrderDataReset":"❗️❗️❗️ Увага! Обов\'язково оновіть конфігурацію в налаштуваннях додатка, де використовуєте це замовлення\\n\\n","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewYes":"✅ Увімкнено","applicationCabinetOrderEditLinkAcceptTextOrderDataRenewNo":"❌ Вимкнено","faqButtonCommand":"🔑 Наші VPN та Proxy можуть бути застосовані на широкому списку пристроїв і *без обмежень на к-ть підключень* до одного ключа доступу! Налаштування дуже просте і займе не більше двох хвилин Вашого часу, далі все буде зведено лише до кнопки ВКЛ/ВИКЛ.\\n\\n✅ Після того, як Ви оформите своє перше замовлення _(включаючи тестове)_, Вам прийде два повідомлення з деталями та інструкціями для підключення, як до VPN, так і до Proxy.\\n\\n\\n📦 *Якщо у Вас ще немає замовлення, то:*\\n[Запустіть додаток](https://t.me/rocketman_vpn_bot/?startapp) ➛ Особистий кабінет ➛ Зробити нове замовлення ➛ Обирайте відповідний натиснувши на нього та переходьте до деталей тарифу ➛ Замовляємо.\\n\\n\\nЯкщо у Вас виникнуть якісь питання, то зв\'яжіться з нами з додатка, ми обов\'язково допоможемо ❤️","applicationCabinetOrderEditPay":"⌛️ Продовжити замовлення (на %1% днів за %2%)","applicationCabinetOrderEditPaySuccess":"🎉 Замовлення успішно продовжено на %1% днів.\\n\\nСтатус замовлення буде оновлено протягом декількох хвилин.","applicationCabinetOrderEditPayErr":"Не вдалося продовжити замовлення 🙁","applicationCabinetOrderRemove":"Видалити замовлення","applicationCabinetOrderRemoveFailed":"❌ Неможливо видалити активне замовлення!","applicationCabinetOrderRemoveConfirm":"Ви впевнені, що хочете видалити замовлення? 🤨\\n\\nУ разі потреби Ви завжди можете зробити нове замовлення, а якщо у Вас виникли проблеми з замовленням, то зверніться до нашої служби підтримки, і ми з радістю Вам допоможемо!","applicationCabinetOrderRemoveConfirmMessage":"✅ Замовлення було успішно видалено!","applicationCabinetOrderRemoveConfirmMessageErr":"❌ Не вдалося видалити замовлення!","applicationCabinetPlatformProxy":"HTTPS Proxy","applicationCabinetPlatformProxy1":"Протоколи: %1%","applicationCabinetPlatformLabel":"🏷️ %1%","paymentSuccess":"💸 Ваш баланс був поповнений на %1%","applicationAdminDashboard":"📊 Дашборд","applicationAdminUsers":"👥 Користувачі (x%1%)","applicationAdminUsersActive":"🫂 Активні користувачі (x%1%)","applicationAdminUserBalance":"💸 %1%","applicationAdminUserBalanceFull":"💸 Поточний баланс: %1% | %2% USD","applicationAdminUserRef":"Реферали (x%1% | %2%)","applicationAdminUserRefTarget":"Реферал від","applicationAdminUserOrders":"📦 Замовлення (x%1% всього | x%2% активних)","applicationAdminUserRefs":"💸 Реферали (x%1% всього)","applicationAdminUserPayments":"💸 Платежі (x%1% всього) | Зараховано %2%","applicationAdminUserPaymentsType":"Платіжна система: %1%","applicationAdminUserPaymentsStatus":"Статус платежу: %1%","applicationAdminUserPaymentsStatusSetFail":"🔄 Скасувати платіж та списати суму з балансу","applicationAdminUserPaymentsStatusSetFailAccept":"Ви впевнені?\\n\\nУ разі підтвердження платіж змінить свій статус, а також з балансу користувача\\n\\n❌ буде списано %1%","applicationAdminUserPaymentsStatusSetOk":"✅ Підтвердити платіж та зарахувати суму на баланс","applicationAdminUserPaymentsStatusSetOkAccept":"Ви впевнені?\\n\\nУ разі підтвердження платіж змінить свій статус, а також баланс користувача\\n\\n✅ буде поповнений на %1%","applicationAdminUserPaymentsStatusSetOkAcceptDone":"Дія виконана успішно ✅","applicationAdminUserPaymentsStatusSetOkAcceptFail":"Не вдалося виконати дію!\\nВідповідь сервера: %1%","applicationAdminUserCreated":"Створений: %1%","applicationAdminUserUpdated":"Змінений: %1%","applicationAdminUserLast":"🚪 Останній вхід: %1%","applicationAdminUserOrdersTotal":"💰 Поповнень балансу на: %1%","applicationAdminUserResetOrderChangeBlock":"Скинути зависле блокування замовлення","applicationAdminUserResetOrderChangeBlockAccept":"Ви впевнені, що хочете скинути зависле блокування замовлення?","applicationAdminUserMedia":"Партнерська програма","applicationAdminUserMediaOn":"Статус: ✅ Партнер","applicationAdminUserMediaOff":"Статус: ❌ НЕ Партнер","applicationAdminUserMediaConfirm":"Статус: ❌ НЕ Партнер","applicationAdminUserMediaTotal":"Сумарний дохід: %1%","applicationAdminUserMediaPayed":"Виплачено партнеру: %1%","applicationAdminUserMediaPayWait":"Необхідно виплатити: %1%","applicationAdminUserMediaPayWaitButton":"💸 Відмітити виплату","applicationAdminUserMediaPayWaitButtonAccept":"Ви впевнені, що хочете відмітити виплату як виконану? Сума транзакції %1% (%2%)\\n\\n💸 Після підтвердження користувачу буде надіслано повідомлення про те, що кошти були виплачені і вони вже в дорозі до нього.","applicationAdminUserMediaPayWaitNotify":"Шановний партнере! \\n\\n💸 Вам була виплачена сума в розмірі *%1%* за партнерською програмою. Кошти вже в дорозі і знадобиться деякий час, щоб вони досягли ваших реквізитів","applicationAdminUserMediaPercent":"%2%%1%% Відсоток від рефералки в дохід","applicationAdminUserMediaPercentDesc":"Цей відсоток вказує скільки від рефералки буде виплачено користувачу як дохід від партнерської програми","applicationAdminUserGiveOrder":"Видати замовлення користувачу","applicationAdminUserGiveOrderDays":"Кількість днів","applicationAdminUserGiveOrderButton":"Видати","applicationAdminUserGiveOrderButtonConfirm":"Ви збираєтеся видати замовлення\\n\\"%1%\\"\\nкористувачу на %2% днів?","applicationAdminUserEditButton":"Керування користувачем","applicationAdminUserEditPromos":"Використані промокоди: %1%","applicationAdminUserEditBalance":"Змінити баланс","applicationAdminUserAddBalance":"Додати на баланс","applicationAdminUserEditBalanceAccept":"Ви впевнені, що хочете змінити баланс користувача?","applicationAdminUserEditBalanceAcceptFail":"Не вдалося змінити баланс. Можливо під час редагування поточний баланс користувача був змінений\\nВідповідь сервера: %1%","applicationAdminUserEditBalanceAcceptOk":"Баланс був успішно змінений","applicationAdminUserEditBalanceChangeNotify":"Адміністратор змінив Ваш баланс на *%1%*.\\n💰 Поточний баланс: *%2%*\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminUserEditBalanceAddNotify":"Адміністратор додав *%1%* на Ваш баланс.\\n💰 Поточний баланс: *%2%*\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","applicationAdminSearch":"Пошук","applicationAdminOrders":"🛒 Усі замовлення (x%1%)","applicationAdminOrdersActive":"💳 Активні замовлення (x%1%)","applicationAdminOrdersExpired":"⛔ Зупинені замовлення (x%1%)","applicationAdminOrderName":"🛒 %1%","applicationAdminOrderOwner":"👤 %1%","applicationAdminOrderTarif":"🏷️ %1% днів","applicationAdminOrderNode":"🔖 %1%","applicationAdminOrderData":"Трафік: %1%","applicationAdminOrderBlockChangeTarif":"⛔ Блокування зміни тарифу","applicationAdminOrderReload":"Оновити дані MarzBan","applicationAdminOrderReloadAccept":"⚠️ Оновити дані?\\n\\nЦя дія завантажить дані замовлення з MarzBan та оновить їх у додатку!","applicationAdminOrderReloadAcceptDone":"✅ Запит на оновлення даних надіслано!","applicationAdminOrderReloadAcceptFail":"❌ Не вдалося оновити дані замовлення!","applicationAdminOrderResetChangeTime":"Скинути час зміни тарифу","applicationAdminOrderResetChangeTimeAccept":"Ви впевнені, що хочете це зробити? При підтвердженні користувач зможе змінити тариф на інший","applicationAdminOrderResetChangeTimeAcceptOk":"✅ Запит успішно виконано. Тепер користувач може змінити тариф самостійно","applicationAdminOrderResetTraffic":"Скинути трафік","applicationAdminOrderResetTrafficAccept":"⚠️ Скасувати замовлення?\\n\\nКористувач не отримає повідомлення!","applicationAdminOrderResetTrafficAcceptOk":"✅ Готово","applicationAdminOrderReturn":"Скасувати замовлення","applicationAdminOrderReturnAccept":"⚠️ Скасувати замовлення?\\n\\nКористувач ОТРИМАЄ назад кошти за весь НЕВИКОРИСТАНИЙ період!","applicationAdminOrderReturnAcceptDone":"⚠️ Замовлення видалено. Користувачу повернено %1% на баланс.","applicationAdminOrderReturnNotify":"⚠️ Адміністратор скасував Ваше замовлення\\n🛒 `%1%` та повернув Вам *%2%* на баланс.\\nВи можете зробити нове замовлення, щоб завжди залишатися на зв\'язку з вільним Інтернетом, зайшовши в додаток.\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ Зробити нове замовлення","applicationAdminOrderRemove":"Видалити замовлення","applicationAdminOrderRemoveAccept":"⚠️ Видалити замовлення?\\n\\nЯкщо замовлення все ще активне, кошти НЕ будуть повернені!","applicationAdminOrderRemoveAcceptDone":"Замовлення видалено","applicationAdminOrderAddTime":"Продовжити замовлення (%1%дн.)","applicationAdminOrderAddTimeAccept":"⚠️ Продовжити замовлення (%1%дн.)?\\n\\nЦя дія НЕ змінить баланс користувача!","applicationAdminOrderAddTimeAcceptNotify":"🎉 Адміністратор продовжив Ваше замовлення\\n🛒 `%1%` на *%2% дн.* 📆\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ Натисніть на вказане замовлення для ознайомлення з деталями.","applicationAdminPromos":"🎁 Промокоди (x%1%)","applicationAdminPaymentsLast":"⏰ Останні платежі (x%1%)","applicationAdminPaymentsLastSuccess":"💵 Останні успішні платежі (x%1%)","applicationAdminPromosCreate":"Створити промокод","applicationAdminPromoID":"Назва: %1%","applicationAdminPromoUSED":"Використань: %1%","applicationAdminPromoCOUNT_USE":"Ліміт: %1%","applicationAdminPromoBALANCE":"Сума: %1%","applicationAdminPromoEditID":"Назва","applicationAdminPromoEditCOUNT_USE":"Кількість застосувань (макс)","applicationAdminPromoEditAMOUNT":"Сума в $","applicationAdminPromoEditCATEGORY":"Категорія","applicationAdminPromoEditCATEGORYEmpty":"Звичайний / без категорії","applicationAdminPromoEditCATEGORYMedia":"Медіа промо","applicationAdminPromoEditCATEGORYNew":"Для новачків","applicationAdminPromoEditSave":"Зберегти промокод","applicationAdminPromoEditPromo":"Змінити","applicationAdminPromoCategory":"Категорія: %1%","applicationAdminPromoSendUseList":"Список тих, хто застосував","applicationAdminPromoRemovePromo":"Видалити","applicationAdminPromoRemovePromoAccept":"Ви впевнені?","applicationAdminAddNode":"Додавання нової ноди","applicationAdminAddNodeDesc":"Цей розділ дозволить у 2 кліки розгорнути весь проєкт на новій ноді. Це лише встановить все, що потрібно, але не додаватиме ноду до списку нод","applicationAdminAddNodeIP":"IP Адреса сервера","applicationAdminAddNodeHostname":"Піддомен сервера (s1, s2 тощо, без крапки та іншого)","applicationAdminAddNodeHostnameDesc":"Вказаний піддомен автоматично пропишеться в CloudFlare з усіма параметрами для роботи з нашим сервісом. Якщо вказати вже існуючий — то буде перезаписаний, тож уважніше","applicationAdminAddNodeUsername":"Ім\'я користувача (root)","applicationAdminAddNodePassword":"Пароль користувача (root)","applicationAdminAddNodePasswordDesc":"Якщо не вказати пароль — буде використовуватися авторизація за SSH ключем. У цьому випадку переконайтеся, що Ваш SSH ключ доданий у ноду і має доступ до сервера","applicationAdminAddNodePasswordKeyInfo":"Увага. Пароль не вказано, буде використовуватися авторизація за SSH ключем. Переконайтеся, що Ваш SSH ключ доданий у ноду і має доступ до сервера","applicationAdminAddNodeSshPort":"SSH Порт (22)","applicationAdminAddNodeGhUsr":"Github username","applicationAdminAddNodeGhToken":"Github token","applicationAdminAddNodeGhTokenDescScopes":"Для роботи потрібні такі права: repo (full), workflow, write:packages, read:packages, read:user","applicationAdminAddNodeGhTokenDesc":"Натисніть щоб отримати токен","applicationAdminAddNodeStart":"Виконати деплой","applicationAdminAddNodeStarted":"Процес деплою запущений, не закривайте сторінку і дочекайтеся виконання. Якщо протягом 5 хвилин процес не буде завершений — швидше за все щось зависло(","applicationAdminAddNodeDoneOk":"Деплой завершено успішно","applicationAdminAddNodeDoneFail":"Помилка: %1%","applicationAdminAddNodeClearLogs":"Очистити логи","applicationAdminInstallNode":"Розгортання ноди","applicationAdminCoreSettings":"Налаштування ядра","applicationAdminCoreSettingsDesc":"Цей розділ дозволяє налаштувати базові параметри системи. Параметри застосовуються на льоту, без перезапуску ядра","applicationAdminSaveCoreSettings":"Зберегти налаштування","applicationAdminCoreSettingsSaved":"Налаштування успішно збережені","adminBackupTitle":"Резервна копія Telegram","adminBackupInterval":"Автоматичні бекапи створюються кожні %1% хв. і надсилаються адмінам бекапів у Telegram.","adminBackupLastRun":"Останній бекап: %1%","adminBackupNever":"Бекап ще не створювався","adminBackupRunning":"Триває створення бекапу","adminBackupOffline":"Сервіс бекапу не відповідає. Запит виконається, коли сервіс стане доступний.","adminBackupCreate":"Створити бекап зараз","adminBackupCreateConfirm":"Створити бекап зараз і надіслати в Telegram?","adminBackupCreateOk":"Бекап запущено. Файли надійдуть у Telegram після завершення.","adminBackupCreateFail":"Не вдалося запустити бекап: %1%","adminBackupCreateBusy":"Бекап уже виконується","adminBackupLastResultOk":"Останній результат: успішно","adminBackupLastResultFail":"Останній результат: помилка (%1%)","applicationAdminCoreName.projectName":"Назва проєкту","applicationAdminCoreName.projectMain":"Основний домен","applicationAdminCoreName.projectBot":"Логін бота проєкту","applicationAdminCoreDesc.projectBot":"Через якого бота відбувається взаємодія з користувачами. Вкажіть логін без @","applicationAdminCoreName.admins":"ID Адміністраторів","applicationAdminCoreDesc.admins":"ID вказуйте суворо через кому, і не використовуйте пробіли. Наприклад: `123456789,987654321`. І не видаліть себе випадково)","applicationAdminCoreName.backup_admins":"ID Адміністраторів для отримання бекапу","applicationAdminCoreDesc.backup_admins":"Цим адміністраторам бот надсилатиме бекапи в особисті повідомлення. ID вказуйте суворо через кому, і не використовуйте пробіли. Наприклад: `123456789,987654321`","applicationAdminCoreName.order_end_limit_month":"Максимальний термін продовження замовлення (в місяцях)","applicationAdminCoreDesc.order_end_limit_month":"Користувач не зможе продовжити своє замовлення на термін більше, ніж вказано","applicationAdminCoreName.happ_fragment_packets":"Фрагментація ClientHello: пакети","applicationAdminCoreDesc.happ_fragment_packets":"`tlshello` — різати TLS ClientHello (рекомендовано). Порожнє значення або `off` — вимкнути на всіх нодах. Саму фрагментацію вмикають у налаштуваннях ноди","applicationAdminNodeFragment":"Фрагментація ClientHello (Happ)","applicationAdminNodeFragmentDesc":"Лише для клієнтів Happ з JSON-підпискою: VLESS TCP/XHTTP до цієї ноди ріже TLS ClientHello на частини. Вимкнено — конфіг як раніше. Параметри — у Core Settings","applicationAdminCoreName.happ_fragment_length":"Фрагментація ClientHello: довжина фрагмента","applicationAdminCoreDesc.happ_fragment_length":"Розмір фрагмента в байтах: `N` або `N-M`, наприклад `100-200`","applicationAdminCoreName.happ_fragment_interval":"Фрагментація ClientHello: затримка","applicationAdminCoreDesc.happ_fragment_interval":"Пауза між фрагментами в мілісекундах: `N` або `N-M`, наприклад `10-20`","applicationAdminCoreName.happ_auto_balancer":"Профіль «Авто» (Happ)","applicationAdminCoreDesc.happ_auto_balancer":"`on` — у JSON-підписці Happ першим йде профіль «Авто»: усі ноди в одному конфігу, трафік через найкращу за пінгом, при збої ноди перемикання без переімпорту. `off` — вимкнути","applicationAdminSendMessage":"Розсилка повідомлень","applicationAdminSendMessageTargets":"Кількість людей, які отримають повідомлення","applicationAdminSendMessageType":"Тип фільтрації користувачів","applicationAdminSendMessageTypeAll":"Усі користувачі","applicationAdminSendMessageTypeOrders":"Певні замовлення (будь-які)","applicationAdminSendMessageTypeOrdersActive":"Певні замовлення (активні)","applicationAdminSendMessageTypeHas":"Є хоч 1 замовлення","applicationAdminSendMessageTypeNotHas":"Немає жодних замовлень","applicationAdminSendMessageTypeHasActive":"Є хоч 1 активне замовлення","applicationAdminSendMessageTypeHasUnActive":"Є хоч 1 НЕактивне замовлення","applicationBalanceErr":"Виникла помилка при формуванні платежу: %1%","applicationBalanceErrBalanceLimit":"На вашому рахунку вже максимально допустима кількість коштів (%1%)","applicationBalanceErrBalanceLimitButton":"Недоступно","applicationBalanceErrData":"Платіжна система не змогла сформувати платіж. Будь ласка, спробуйте пізніше.","applicationBalanceErrNetwork":"Мережева помилка. Будь ласка, спробуйте пізніше.","applicationBalanceErrCurrency":"Помилка валюти. Будь ласка, спробуйте пізніше.","applicationBalanceErrAuth":"Помилка авторизації","applicationBalanceErrPaymentLink":"Не вдалося отримати посилання на платіж","applicationBalanceSettingsTitle":"Вибір валюти","applicationBalanceTitle":"Розділ поповнення балансу","applicationBalanceSelect":"Оберіть валюту для відображення","applicationBalanceEmail":"Ваш email","applicationBalancePlatform":"Платіжна платформа","applicationBalanceAmount":"Сума поповнення (в %1%)","applicationBalanceAmountWithPercent":"\\n<font color=#00AE09>Підсумкова сума оплати: ≈%1%</font>\\n\\n<font color=#F28100>Якщо ви чийсь реферал,\\nто на баланс повернеться %2% у вигляді 20% кешбеку!</font>","applicationBalanceAmountLimit":"Мінімальна сума: %1%\\nМаксимальна сума: %2%\\n\\n💵 <font color=#00AE09>Ваш спосіб оплати: %4%</font>\\nКомісія платіжної системи: %3%%\\n\\nПісля самої оплати баланс зараховується автоматично протягом декількох хвилин, також Вам прийде повідомлення про статус платежу з іншими деталями на випадок звернення до служби підтримки.","applicationBalanceAmountDesc":"Поповнення відбувається через сервіс %1%","applicationBalanceAmountButton":"Перейти на сторінку оплати","applicationBalanceAmountButtonLoading":"Завантаження...","applicationBalanceAmountButtonErr":"❌ Невірно вказана сума ❌","applicationBalanceCurrency":"Метод оплати","applicationBalanceCurrencyDesc":"Комісія платіжної системи: ≈%1%%","applicationServersTitle":"Статус серверів","paymentCompleteNotify":"🎉 Ваш баланс був успішно поповнений на <b>%1%</b>.\\n\\nID платежу: <b>%2%</b>\\n(Він знадобиться у разі звернення до <a href=\\"https://t.me/rocketman_vpn\\">служби підтримки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyRef":"🎉 Ваш баланс був успішно поповнений на <b>%1%</b>.\\nОскільки Ви є рефералом @%4% у нашому сервісі, ми нарахували бонус у розмірі <b>%3%</b> (%5%%)\\n\\nID платежу: <b>%2%</b>\\n(Він знадобиться у разі звернення до <a href=\\"https://t.me/rocketman_vpn\\">служби підтримки</a>).\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyRefHost":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> (%3%%) за поповнення балансу Вашим рефералом @%2%\\n\\n🚀 <a href=\\"https://t.me/rocketman_vpn_bot/?startapp\\">Запустити додаток</a>","paymentCompleteNotifyAdmin":"💵 Користувач %1% [UID: %7%] поповнив баланс на <b>%2%</b>.\\n💰 У чистий прибуток проєкту зараховано +<b>%5%</b>\\n\\nПлатіжна система: <b>%6%</b>\\nID платежу: <b>%3%</b>\\nURL: %4%","paymentRefundNotify":"❗️ Увага ❗️\\nПо платежу `%1%` був сформований запит на повернення коштів.\\n\\nОскільки вони були повернені Вам у повному обсязі, з балансу в додатку було списано *%2%*.\\n\\nУ разі виникнення питань зверніться до [служби підтримки](https://t.me/rocketman_vpn), ми обов\'язково допоможемо!\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","admin-nodes":"⛓ Ноди","adminXrayVersionTitle":"Xray-core","adminXrayVersionCurrent":"Поточна версія: %1%","adminXrayVersionLatest":"Доступна нова версія: %1%","adminXrayVersionUnknown":"Версія у скрипті встановлення не вказана","adminXrayVersionLoading":"Перевіряємо версію…","admin-routing":"🔀 Роутинг","admin-presets":"📋 Пресети","admin-firewall":"📜 Записи фаєрвола (x%1%)","admin-firewall_add":"Новий запис фаєрвола","admin-nav-messages":"Розсилка","admin-nav-firewall":"Фаєрвол","admin-nav-logs":"Логи адміністрації","logRecord-title":"📊 Логи адміністрації (x%1%)","logRecord-title-user":"📜 Логи користувача (x%1%)","logRecord-log-time":"Створений: %1%","logRecord-log-who":"Хто","logRecord-log-target":"Ціль","logRecord-log-reason":"Текст: %1%","logRecord-setPaymentStatus":"Зміна статусу платежу %1%","logRecord-removePromo":"Видалення промокоду %1%","logRecord-editPromo":"Редагування промокоду %1%","logRecord-editBalance":"Редагування балансу (%1%$ -> %2%$)","logRecord-returnOrder":"Скасування замовлення %1% (%2%$)","logRecord-addOrder":"Видача замовлення %1%","logRecord-payOrder":"Продовження замовлення %1% на %2% днів","logRecord-partnerNotify":"Виплата партнеру %1% USD (%2%)","paymentMethodMorune":"Morune","paymentMethodMorune2":"СБП (Система швидких платежів)","paymentMethodCrypto":"Криптовалюта","paymentMethodTelegram":"Telegram","paymentMethodFreekassa":"Freekassa","errorUserDataAdminDetect":"Не вдалося виявити дані користувача для формування посилання. Мабуть, цей користувач заблокував нашого бота 😐","partner_title":"🏆 Партнерська програма 🏆","partner_desc":"Ви є учасником партнерської програми. Крім основного бонусу за реферала Ви також отримуватимете фінансові відрахування.\\n\\nВаша поточна ставка — %1%% від реферального балансу\\n\\nВсього Ви заробили: %2%\\nПоточний баланс: %3%","ref_title":"🏆 Реферальна система 🏆","ref_desc":"Запрошуйте друзів та знайомих до нашого сервісу та отримуйте бонуси на свій баланс!\\n\\n<font color=#2DA618>Від кожного реферала Ви отримаєте по <font color=#54E13B>%1%</font> за їхні перші замовлення та <font color=#54E13B>%2%%</font> від усіх поповнень їхнього балансу.</font>\\n\\n<font color=#00B7B7>Усі Ваші реферали отримають <font color=#15DBDB>%3%</font> бонусом після першого замовлення (включаючи тестове) та <font color=#15DBDB>%4%%</font> кешбеку від усіх своїх майбутніх поповнень.</font>\\n\\nТаким чином ця система вигідна і для Вас, і для Ваших рефералів 😉","ref_stats":"Ваша статистика","ref_stats_data":"Кількість приведених рефералів: %1%\\nОтримали бонусом на баланс: %2%","ref_link_text":"Ваші дані реферальної системи","ref_link_text_copy":"📋 Посилання+текст","ref_only_link_copy":"🔗 Посилання","ref_link_text_copy_sendText":"Привіт! Я користуюся зручним способом для захисту своїх даних в інтернеті та сміливо рекомендую його тобі 😎\\n\\nКрім того, перейшовши саме за моїм посиланням, ти отримаєш бонусом %1% після першого замовлення (включаючи тестове) та довічний кешбек у %2%% від усіх поповнень балансу 🎉\\n","ref_link_text_copy_sendText_1":"✅","ref_link_text_copy_alert":"🔗 Ваше реферальне посилання та додатковий текст були скопійовані в буфер обміну.\\n\\nВикористовуйте це для запрошення друзів та знайомих у наш сервіс, щоб отримувати вигоду спільно 😎","ref_only_link_copy_alert":"🔗 Ваше реферальне посилання було скопійоване в буфер обміну.\\n\\nВикористовуйте його для запрошення друзів та знайомих у наш сервіс, щоб отримувати вигоду спільно 😎","ref_link_text_share":"💌 Поділитися","ref_link_text_share_message":"Привіт! Я користуюся зручним способом для захисту своїх даних в інтернеті та сміливо рекомендую его тобі 😎\\n\\nКрім того, перейшовши саме за моїм посиланням, ти отримаєш бонусом %1% після першого замовлення (включаючи тестове) та довічний кешбек у %2%% від усіх поповнень балансу 🎉\\n","ref_message_personal":"Ви не можете зареєструватися за своїм реферальним посиланням 😐","ref_message":"🎁 Реферальна система:\\nВи успішно зареєструвалися як реферал користувача @%1% 🎉\\n\\nВи отримаєте бонус у розмірі <b>%2%</b> при першому замовленні (включаючи тестове), а також довічний кешбек у розмірі <b>%3%%</b> при кожному поповненні балансу!","ref_message_host":"🎁 Реферальна система:\\n🎉 Користувач @%1% зареєструвався як Ваш новий реферал 🎉\\n\\nВи отримаєте бонус у розмірі <b>%2%</b> при першому його замовленні (включаючи тестове), а також кешбек у розмірі <b>%3%%</b> від кожного його поповнення балансу.","ref_message_order":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> на свій баланс","ref_message_order_host":"🎁 Реферальна система:\\n💵 Ви отримали бонус у розмірі <b>%1%</b> на свій баланс від користувача @%2%","traffic_limit_notify_close":"⚠️ У Вас закінчується трафік на замовленні `%1%` з тарифом `%2%`! Якщо це повідомлення з\'являтиметься досить часто, рекомендуємо задуматися про зміну тарифу на більш просунутий, щоб завжди залишатися на зв\'язку ❤️\\n\\n🚀 Зробити це Ви зможете, [запустивши додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на потрібне замовлення ⇒ ♻️ Змінити тариф на інший ♻️","traffic_limit_notify_end":"❗️ УВАГА ❗️ У Вас закінчився весь трафік на замовленні `%1%` з тарифом `%2%`. Його скидання відбудеться %3%. Але якщо Ви хочете завжди залишатися на зв\'язку, подумайте про зміну тарифу на більш просунутий.\\n\\n🚀 Зробити це Ви зможете, [запустивши додаток](https://t.me/rocketman_vpn_bot/?startapp) ⇒ Особистий кабінет ⇒ натисніть на потрібне замовлення ⇒ ♻️ Змінити тариф на інший ♻️","traffic_limit_notify_restore":"🎉 У замовлення `%1%` з тарифом `%2%` була скинута статистика використаного трафіку. Тепер він знову доступний у повному обсязі :)\\n\\n🚀 [Запустити додаток](https://t.me/rocketman_vpn_bot/?startapp)","promo_button":"🎁 Застосувати промокод","example":"Приклад","deleteMessageFailed":"❌ Не вдалося видалити повідомлення. Можливо, воно занадто старе або вже видалене.","cryptoPayTitle":"Оплата через криптовалюту","cryptoPayUserId":"ID користувача","cryptoPayAmount":"Сума до оплати (USDT)","cryptoPayInstruction":"Переведіть вказану суму в USDT на надану адресу","cryptoPayLoading":"Завантаження реквізитів...","cryptoPayErrorNoParam":"Не передано параметр crypto_id у посиланні.","cryptoPayErrorInvalidData":"Некоректні дані для оплати.","cryptoPayErrorParse":"Помилка при обробці даних для оплати. Спробуйте оновити сторінку або зверніться в підтримку.","cryptoPayWallet":"Адреса гаманця для переказу","cryptoPayNetwork":"Мережа (блокчейн)","cryptoPayCopy":"Скопіювати","cryptoPayCopyAmountAlert":"Сума скопійована в буфер обміну!","cryptoPayCopyWalletAlert":"Адреса гаманця скопійована в буфер обміну!","cryptoPayWarning":"УВАЖНО перевірте реквізити та суму перед оплатою! У разі помилки ми не можемо гарантувати зарахування коштів.","telegramPayment":"✅ Для Вас був сформований рахунок на оплату\\n\\n⚖️ Сума оплати: <b>%1% %2%</b> (<b>%3% %4%</b>)\\n👤 ID користувача: <b>%7%</b>\\n📋 ID платежу: <b>%6%</b>\\n\\n🔗 Для оплати перейдіть за посиланням: %5%","orderManipulationBlock":"Ваше минуле замовлення все ще в обробці. Будь ласка, зачекайте його завершення або зверніться до служби підтримки для отримання допомоги.","subPage.orderInfo":"Нижче представлені всі доступні методи підключення для Вашого замовлення через цей додаток","subPage.userInfo":"Нижче представлені всі доступні методи підключення для всіх Ваших активних замовлень через цей додаток","subPage.orderId":"🛒 ID Замовлення: %1%\\n⬇️ Оберіть регіон кінцевого підключення:","subPage.nodeInfo":"📍 Точка обходу: %1%\\n⚠️ Це означає, що спочатку весь трафік йтиме через неї для маскування.","subPage.autoProfile":"⚡ Авто — найкращий сервер","subPage.protocolInfo":"Протокол підключення: %1%","subPage.allTitle":"Усі замовлення","subPage.expiredNotifyList":"❌ Термін дії передплати закінчився\\nПродовжити VPN у боті\\n%1%","ping.admin.initOk":"✅ Система ініціалізована, всі ноди доступні в штатному режимі.","ping.admin.initFail":"❌ Система ініціалізована, але деякі ноди не доступні:\\n\\n%1%","speedtest.admin.failTest":"❌ Тест швидкості не пройдений. Будь ласка, перевірте працездатність.\\n\\n%1%","speedtest.admin.slowspeedNotify":"⚠️ Зафіксована низька швидкість з\'єднання (%2% Mbps download, %3% Mbps upload). Будь ласка, перевірте працездатність.\\n\\n%1%","speedtest.admin.recoverNotify":"✅ Нода відновила нормальну швидкість з\'єднання (%2% Mbps download, %3% Mbps upload).\\n\\n%1%","applicationServersSpeedtestIssueDetected":"⚠️ На сервері виявлені проблеми зі швидкістю з\'єднання","applicationServersSpeedtestLastSpeed":"Останній замір швидкості (%1%) D: %2% / U: %3%","applicationServersSpeedtestPrevSpeed":"Попередній замір швидкості (%1%) D: %2% / U: %3%","applicationServersSpeedtestLastSpeedNotFound":"⚠️ На сервері ще не було зроблено замірів швидкості","applicationServersPingIssueDetected":"❌ Сервер не відповідає на пінг-запити","actionUpdateStartNodes":"⚠️ Запущена процедура оновлення нод (%1%), через деякий час ноди будуть перезапущені. Після завершення робіт буде надіслано додаткове повідомлення (якщо не було надіслано — можливо, підвис github action і все гаразд, але можуть бути і проблеми)","actionUpdateStartHeader":"Запущена процедура оновлення:","actionUpdateStartSite":"• Оновлюється головна сторінка проєкту","actionUpdateStartApp":"• Оновлюється бекенд-додаток","actionUpdateStartProxy":"• Оновлюється проксі або xray служба (Ноди: %1%)","actionUpdateStartMTProto":"• Оновлюється сервер MTProto","actionUpdateStartFirewall":"• Оновлюємо фаєрвол (Ноди: %1%)","actionUpdateStartBackup":"• Оновлюємо дочірній API інтерфейс (Ноди: %1%)","actionUpdateStartFooter":"Через деякий час ноди будуть перезапущені. Після завершення робіт буде надіслано повідомлення.","actionUpdateCompletedNodes":"✅ Процедура оновлення нод (%1%) завершена, ноди перезапущені і вже повинні бути активні","mtproto.title":"MTProto Proxy","mtproto.subtitle.1":"Швидкий та безпечний","mtproto.subtitle.2":"доступ до Telegram","mtproto.description.1":"Безкоштовний проксі-сервер для стабільного підключення до Telegram.","mtproto.description.2":"Без реєстрації, без обмежень, з повною конфіденційністю.","button.connect":"Підключити проксі","button.copy":"Скопіювати посилання","button.copied":"Скопійовано","link.label":"Посилання для підключення вручну","feature.encryption.title":"Наскрізне шифрування","feature.encryption.description":"Ваші повідомлення залишаються конфіденційними. Ми не маємо доступу до вашого листування.","feature.free.title":"Без обмежень","feature.free.description":"Безкоштовний доступ без реєстрації та лімітів на трафік.","feature.rocketman.title":"Більше можливостей","feature.rocketman.description":"Цей проксі працює тільки для Telegram. Для повноцінного захисту використовуйте RocketMan-VPN.","rocketman.title":"RocketMan VPN — це Ваш надійний друг","rocketman.description":"Даний MTProto проксі є додатковим проєктом — RocketMan VPN. З нами Ви отримаєте повний захист інтернет-з\'єднання у всіх додатках та улюблених сервісах. Спробуйте безкоштовно те, що ми надаємо для своїх клієнтів, та оцініть якість!","rocketman.button":"Відкрити RocketMan VPN","howto.title":"Як підключитися?","howto.step1.title":"Натисніть на кнопку \\"Підключити проксі\\"","howto.step1.description":"Або скопіюйте посилання та підключіться вручну","howto.step2.title":"Відкрийте Telegram","howto.step2.description":"Посилання автоматично запустить додаток","howto.step3.title":"Підтвердіть","howto.step3.description":"Натисніть «Підключити» в діалоговому вікні","web.orders":"Мої замовлення","web.settings":"Налаштування","web.exit":"Вихід","web.back":"← Назад","web.themeLight":"Світла тема","web.themeDark":"Темна тема","settings.accountInfo":"Інформація про акаунт","settings.language":"Мова","settings.currency":"Валюта відображення","settings.currencyDesc":"Оберіть валюту для відображення цін та балансу в додатку.","settings.webCredentials":"Дані для входу на сайт","settings.webCredentialsDesc":"Ці дані використовуються для входу у веб-інтерфейс поза Telegram. Хоча ми не обмежуємо вас у виборі пароля, але наполегливо рекомендуємо вказувати складний","settings.login":"Логін","settings.loginPlaceholder":"Введіть новий логін","settings.newPassword":"Новий пароль","settings.passwordPlaceholder":"Не менше %1% символів","settings.repeatPassword":"Повторіть пароль","settings.repeatPasswordPlaceholder":"Повторіть новий пароль","settings.passwordMismatch":"Паролі не збігаються","settings.saved":"Збережено!","settings.saveError":"Помилка збереження","settings.saving":"Збереження…","settings.saveCredentials":"Зберегти дані","settings.show":"Показати","settings.hide":"Приховати","settings.copy":"Копіювати","settings.reset":"Скинути","settings.apiKeyHint":"Використовуйте API-ключ для входу у <a href=\\"https://%1%\\" target=\'_blank\'>веб-інтерфейс</a> без Telegram, а також для інтеграції з іншими нашими продуктами. Не передавайте його третім особам, цей ключ надає повний доступ до вашого акаунту","settings.referral":"Реферал (ID запрошувача)","settings.referralDesc":"Якщо ви пропустили реферальне посилання, ви можете вказати ID запрошувача тут. Застосовується лише один раз.","settings.referralApplied":"ID запрошувача","settings.referralAppliedAlert":"ID запрошувача скопійовано в буфер обміну.","settings.referralHostId":"Ваш ID запрошувача","settings.referralHostIdPlaceholder":"Введіть ID користувача (тільки цифри)","settings.referralHostIdInvalid":"Невірний формат ID. Використовуйте тільки цифри.","settings.referralApply":"Застосувати ID запрошувача","settings.referralSaved":"Реферал застосовано!","settings.referralErr.already_applied":"Реферал вже був застосований.","settings.referralErr.invalid_ref_host":"Невірний ID запрошувача.","settings.referralErr.same_account":"Неможна використовувати власний ID як реферал.","login.tabCredentials":"Логін та пароль","login.tabApiKey":"API-ключ","login.tabRegister":"Реєстрація","login.labelLogin":"Логін","login.labelPassword":"Пароль","login.labelConfirmPassword":"Підтвердження пароля","login.labelApiKey":"API-ключ","login.placeholderLogin":"Введіть логін","login.placeholderPassword":"Введіть пароль","login.placeholderConfirmPassword":"Підтвердіть пароль","login.placeholderApiKey":"Введіть API-ключ","login.signIn":"Увійти","login.signInApiKey":"Увійти за API-ключем","login.signUp":"Зареєструватися","login.signingIn":"Входимо…","login.signingUp":"Реєструємося…","login.orUseApiKey":"або увійдіть за API-ключем","login.orUseCredentials":"або увійдіть за логіном та паролем","login.switchToApiKey":"Увійти за API-ключем","login.switchToCredentials":"Увійти за логіном та паролем","login.errLoginRequired":"Введіть логін та пароль","login.errPasswordRequired":"Введіть пароль","login.errConfirmPasswordRequired":"Підтвердіть пароль","login.errPasswordMismatch":"Паролі не збігаються","login.errApiKeyRequired":"Введіть API-ключ","login.errIncorrect":"Невірний логін або пароль","login.errInvalidKey":"Невірний API-ключ","login.errServer":"Помилка сервера, спробуйте ще раз","login.errRegistration":"Помилка реєстрації","login.tabTelegram":"Через Telegram","login.tg.title":"Вхід через Telegram","login.tg.instruction":"1. Надішліть команду нижче боту <a href=\\"https://t.me/%1%\\" target=\\"_blank\\">@%1%</a>\\n2. Після відправки натисніть кнопку «Підтвердити вхід»","login.tg.commandLabel":"Команда для бота:","login.tg.showCommand":"Показати","login.tg.hideCommand":"Приховати","login.tg.copyCommand":"Копіювати","login.tg.copied":"Команда скопійована!","login.tg.timerLabel":"Код дійсний: %1%","login.tg.timerExpired":"Термін дії коду закінчився","login.tg.verifyButton":"Підтвердити вхід","login.tg.verifying":"Перевіряємо…","login.tg.requestNew":"Запросити новий код","login.tg.loading":"Генеруємо код…","login.tg.enter_correct":"Особистість підтверджена. Поверніться на сайт і натисніть на кнопку \\"%1%\\" для завершення","login.tg.enter_fail":"Не вдалося виконати дію. Переконайтеся, що вказаний ключ коректний, а термін дії не закінчився","login.tg.errNotSent":"Не вдалося підтвердити вхід. Переконайтеся, що ви надіслали команду боту, і спробуйте ще раз. Якщо код закінчився — запросіть новий.","lang.ru":"Російська","lang.en":"Англійська","lang.uk":"Українська","footer.info":"MTProto проксі працює тільки з офіційними додатками Telegram","instructionModalTitleVpn":"Інструкція з підключення VPN","instructionModalTitleProxy":"Інструкція з підключення Proxy","instructionModalSendToTg":"📩 Надіслати в Telegram","instructionModalSentToTg":"Інструкція надіслана у ваші особисті повідомлення Telegram","settings.name":"Ваше ім\'я","settings.nameDesc":"Вкажіть ім\'я для персоналізації звернень у додатку. Воно є публічним і може використовуватися для відображення іншим користувачам, наприклад в реферальній системі","settings.namePlaceholder":"Введіть ім\'я (3-15 символів)","settings.nameInvalid":"Допускаються лише кирилиця, латиниця, цифри та пробіли (3-15 символів)","settings.promoTitle":"Активація промокоду","settings.promoDesc":"Якщо у Вас є промокод, введіть його тут, щоб отримати приємний бонус на Ваш баланс.","settings.promoPlaceholder":"Введіть промокод","settings.promoApply":"Застосувати промокод","settings.promoApplied":"Промокод успішно застосовано!","adminDashboardTitle":"Статистика (Дашборд)","adminDashboardActiveOrders":"Активність підписок","adminDashboardActiveLabel":"Активні","adminDashboardExpiredLabel":"Закінчилися","adminDashboardOrdersByTariff":"Підписки за Тарифами","adminDashboardPayments":"Платежі","adminDashboardTrial":"Тестовий період","adminDashboardLang":"Мова","adminDashboardCurrency":"Валюта","adminDashboardActivity":"Активність користувачів","adminDashboardOrdersPerUser":"Кількість підписок на юзера","adminDashboardRefIncome":"Дохід з рефералів","applicationAdminBackButton":"Назад","settings.passkeys.title":"Ключі доступу (Passkeys)","settings.passkeys.desc":"Додайте до 5 пристроїв для швидкого та безпечного входу без пароля за допомогою біометрії або фізичних ключів.","settings.passkeys.add":"➕ Додати новий ключ","settings.passkeys.name":"Назва пристрою","settings.passkeys.name_placeholder":"Напр: iPhone, YubiKey, MacBook","settings.passkeys.no_keys":"У вас поки немає доданих ключів доступу","settings.passkeys.delete_confirm":"Ви впевнені, що хочете видалити цей ключ доступу? Ви більше не зможете увійти за його допомогою.","settings.passkeys.limit_reached":"Досягнуто ліміт ключів (максимум 5)","settings.passkeys.add_success":"Ключ доступу успішно додано!","settings.passkeys.add_error":"Не вдалося додати ключ доступу","login.tabPasskey":"За ключем","login.passkey.btn":"Увійти через Passkey","login.passkey.error":"Помилка авторизації через ключ доступу","login.passkey.not_supported":"Ваш браузер або пристрій не підтримують вхід через Passkey","admin.bulkRenewal.button":"📅 Масове продовження замовлень","admin.bulkRenewal.title":"📅 Масове продовження замовлень","admin.bulkRenewal.afterDateLabel":"Враховувати замовлення, термін яких закінчився після зазначеної дати (або ще не закінчився). Часовий пояс: %1%","admin.bulkRenewal.daysLabel":"Кількість днів для продовження","admin.bulkRenewal.ordersCount":"Замовлень буде продовжено","admin.bulkRenewal.ordersCountUpdate":"Замовлень буде оновлено","admin.bulkRenewal.usersCount":"Унікальних користувачів","admin.bulkRenewal.applying":"⏳ Застосовується...","admin.bulkRenewal.done":"✅ Готово!","admin.bulkRenewal.apply":"📅 Продовжити %1% замовл. на %2% дн.","admin.bulkRenewal.applyTraffic":"📉 Скинути трафік у %1% замовл.","admin.bulkRenewal.applyDaysAndTraffic":"📅 Продовжити %1% замовл. на %2% дн. і скинути трафік","admin.bulkRenewal.blockedDays":"Вкажіть кількість днів від 0 до 3650","admin.bulkRenewal.blockedNoEffect":"Вкажіть більше 0 днів або виберіть скидання трафіку","admin.bulkRenewal.blockedNoOrders":"Немає замовлень, що підходять під обрану дату","admin.bulkRenewal.blockedNoActiveOrders":"Немає замовлень, активних на даний момент","admin.bulkRenewal.activeOnlyHint":"При 0 днях дата не використовується: оновлюються лише замовлення, активні на даний момент.","admin.bulkRenewal.notifyUser":"📅 Адміністратор продовжив ваші активні замовлення на %1% дн. Список замовлень: %2%","admin.bulkRenewal.notifyUserTraffic":"📅 Адміністратор змінив використаний трафік за вашими замовленнями: %1%. Список замовлень: %2%","admin.bulkRenewal.notifyUserDaysAndTraffic":"📅 Адміністратор продовжив ваші активні замовлення на %1% дн. і змінив використаний трафік: %2%. Список замовлень: %3%","admin.bulkRenewal.notifyUsers":"Повідомити користувачів у Telegram","admin.bulkRenewal.notifyUsersWarn":"⚠️ При великій кількості користувачів сповіщення можуть працювати нестабільно або із затримкою","admin.bulkRenewal.trafficLabel":"Використаний трафік","admin.bulkRenewal.trafficHint":"Частка ліміту віднімається від витраченого трафіку і не опускається нижче нуля. Частка використаного віднімає цей відсоток від уже витраченого.","admin.bulkRenewal.traffic.none":"Не змінювати","admin.bulkRenewal.traffic.full":"Повне скидання","admin.bulkRenewal.traffic.limit_50":"Скидання 50% від ліміту","admin.bulkRenewal.traffic.limit_25":"Скидання 25% від ліміту","admin.bulkRenewal.traffic.limit_10":"Скидання 10% від ліміту","admin.bulkRenewal.traffic.used_50":"Скидання 50% використаного","admin.bulkRenewal.traffic.used_25":"Скидання 25% використаного","admin.bulkRenewal.traffic.used_10":"Скидання 10% використаного","connection_test_button":"Тестування з\'єднання","connection_test_button_node":"Тест","connection_test_title":"Тестування з\'єднання","connection_test_desc":"Основні сервери перевіряються напряму. Резервні — напряму і через кожен основний сервер (HTTPS і VLESS). Hysteria2 на резервній ноді виходить напряму.","connection_test_no_servers":"Список серверів недоступний","connection_test_pending":"Очікування","connection_test_testing":"Перевірка...","connection_test_ok":"Успішно","connection_test_fail":"Помилка","connection_test_retry":"Повторити","connection_test_close":"Закрити","connection_test_progress":"Перевірено: %1% / %2%","connection_test_summary":"Успішно: %1% з %2%","connection_test_latency":"%1% мс","connection_test_ip":"IP: %1%","connection_test_colo":"PoP: %1%","connection_test_server":"Сервер","connection_test_section_main":"Основні","connection_test_section_backup":"Резервні","connection_test_direct":"Напряму","connection_test_via":"Через %1%","connection_test_relay_skip":"Hysteria2 виходить з резервної ноди напряму","connection_test_error_no_access":"Немає доступу адміністратора","connection_test_error_no_node":"Сервер не знайдено","connection_test_error_no_credentials":"Тестові облікові дані не налаштовані","connection_test_error_timeout":"Таймаут","connection_test_error_connect":"Не вдалося встановити з\'єднання","connection_test_error_probe":"Cloudflare CGI probe не відповів","connection_test_error_client":"Клієнт для перевірки недоступний","connection_test_error_deploying":"Нода зараз у процесі деплою","connection_test_error_not_backup":"Перевірка через основний сервер доступна лише для резервної ноди","connection_test_error_no_via":"Основний сервер для релейної перевірки не знайдено","connection_test_error_relay_protocol":"Цей протокол на резервній ноді не йде через основний сервер","connection_test_error_protocol_disabled":"Протокол вимкнено на цьому сервері","adminAnalyticsNav":"Аналітика","adminAnalyticsFrom":"З","adminAnalyticsTo":"До","adminAnalyticsCompare":"Порівняння","adminAnalyticsCompareNone":"Без порівняння","adminAnalyticsComparePrevious":"Попередній період","adminAnalyticsCompareMonth":"Минулий місяць","adminAnalyticsProtocol":"Протокол","adminAnalyticsServer":"Сервер","adminAnalyticsAll":"Усі","adminAnalyticsRefresh":"Оновити","adminAnalyticsLoading":"Завантаження...","adminAnalyticsUsers":"Унікальні користувачі","adminAnalyticsUsersHint":"Різні акаунти за вибраний період. Фільтри протоколу та сервера враховуються. Це не число онлайн просто зараз.","adminAnalyticsSessions":"Сесії","adminAnalyticsSessionsHint":"Події підключення за вибраний період. Один акаунт може відкрити багато сесій. Overlay-хопи рахуються, але IP ретранслятора не береться як регіон клієнта.","adminAnalyticsTraffic":"Трафік","adminAnalyticsTrafficHint":"Висхідний + низхідний, один раз на exit-ноді (як у білінгу). Xray-форвард із relay повторно не додається.","adminAnalyticsMap":"Користувачі за регіонами","adminAnalyticsMapHint":"Карта світу показується завжди. Розмір кола — унікальні користувачі в регіоні/у провайдера. Базовий розмір як на наближенні максимум мінус 1; при віддаленні кола зменшуються. Колір збігається із сервером, де таких користувачів було найбільше.","adminAnalyticsServers":"Сервери, яким віддають перевагу","adminAnalyticsServersHint":"Стовпчик — скільки унікальних користувачів користувалися цим сервером за вибраний період. Колір закріплений за сервером.","adminAnalyticsProtocols":"Протоколи","adminAnalyticsProtocolsHint":"Частка сесій (підключень) за протоколами за вибраний період. Число — кількість сесій, не унікальних людей.","adminAnalyticsTrafficByServer":"Трафік за серверами","adminAnalyticsTrafficByServerHint":"Висхідний + низхідний трафік за серверами в мегабайтах (МБ). Колір той самий, що й у серверів, яким віддають перевагу.","adminAnalyticsRegions":"Регіони та провайдери","adminAnalyticsRegionsHint":"Унікальні користувачі — пік унікальних акаунтів за годину в цьому регіоні/у провайдера. Сесії — кількість підключень, не унікальні люди.","adminAnalyticsCountry":"Країна","adminAnalyticsRegion":"Регіон","adminAnalyticsIsp":"Провайдер","adminAnalyticsResources":"Популярні ресурси","adminAnalyticsResourcesHint":"Агреговані домени за вибраний період. Список сховано, якщо увімкнено фільтр по серверу.","adminAnalyticsHost":"Хост","adminAnalyticsHits":"Запити","adminAnalyticsPreset_24h":"24г","adminAnalyticsPreset_7d":"7 днів","adminAnalyticsPreset_30d":"30 днів","adminAnalyticsPreset_month":"Цей місяць","adminAnalyticsPreset_prevMonth":"Минулий місяць","adminNodeUsageNav":"Ноди по годинах","adminNodeUsageIntro":"Скільки різних клієнтів користувалися кожною нодою та кожним протоколом у кожному інтервалі. Допомагає побачити, коли на ноді просіла кількість клієнтів або протокол перестали використовувати. Поточний інтервал ще триває й оновлюється щохвилини.","adminNodeUsagePreset_24h":"24 години","adminNodeUsagePreset_7d":"7 днів","adminNodeUsagePreset_14d":"2 тижні","adminNodeUsagePreset_30d":"Місяць","adminNodeUsagePreset_custom":"Свій діапазон","adminNodeUsageInterval":"Інтервал","adminNodeUsageIntervalAuto":"Авто","adminNodeUsageInterval_3600":"1 година","adminNodeUsageInterval_10800":"3 години","adminNodeUsageInterval_21600":"6 годин","adminNodeUsageInterval_43200":"12 годин","adminNodeUsageInterval_86400":"1 день","adminNodeUsageAllNodes":"Усі ноди","adminNodeUsageTotal":"Усього","adminNodeUsageTruncated":"Забагато точок: діапазон обрізано до %1% інтервалів. Збільште інтервал.","adminNodeUsageNoData":"За обраний період даних немає.","adminNodeUsageSignals":"Просідання та зупинки","adminNodeUsageSignalsHint":"Останній завершений інтервал порівнюється зі звичайним рівнем — медіаною того ж часу доби за попередні дні (для денного інтервалу — попередніх днів). Сигнал з\'являється, якщо клієнтів стало менше половини звичайного при звичайному рівні від 3. Натисніть на сигнал, щоб показати лише цю ноду.","adminNodeUsageSignalsEmpty":"Просідань не виявлено.","adminNodeUsageSignalStopped":"Зупинка","adminNodeUsageSignalDrop":"Просідання","adminNodeUsageSignalText":"— зараз %1%, зазвичай ≈%2%, з %3%","adminNodeUsageByNodes":"Клієнти по нодах","adminNodeUsageByNodesHint":"Унікальні клієнти на кожній ноді за інтервал (будь-який протокол або обраний у фільтрі). Натисніть на ноду в чипах вище, щоб залишити тільки її.","adminNodeUsageByProtocols":"Клієнти по протоколах (усі ноди)","adminNodeUsageByProtocolsHint":"Унікальні клієнти по протоколах сумарно по всіх нодах. Клієнт, що використовував кілька протоколів, враховується в кожному з них, але в «Усього» — один раз.","adminNodeUsageHeatmap":"Карта активності","adminNodeUsageHeatmapHint":"Рядок — нода і протокол, стовпець — інтервал. Чим яскравіше, тим більше клієнтів відносно максимуму рядка. Червоним позначено інтервали, де клієнтів менше половини звичайного. Наведіть на клітинку, щоб побачити значення.","adminNodeUsageLatest":"Останній завершений інтервал"}');
 ;// ./src/lang/shared.json
 const shared_namespaceObject = {};
 ;// ./src/lang/index.ts
@@ -20949,6 +21591,14 @@ if (true) {
 
 /***/ }),
 
+/***/ 130:
+/***/ ((module) => {
+
+"use strict";
+module.exports = "data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%238b92a3%27 stroke-width=%272%27 stroke-linecap=%27round%27%3E%3Cpath d=%27m7 10 5 5 5-5%27/%3E%3C/svg%3E";
+
+/***/ }),
+
 /***/ 68:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -25445,7 +26095,16 @@ const BACKUP_ADMIN_ACC = ["7042600006"];
 const BALANCE_LIMIT_AMOUNT = Infinity;
 const ORDER_MAX_END_LIMIT_MONTH = 6;
 
+;// ./src/config/happ.fragment.ts
+
+const HAPP_FRAGMENT_DEFAULTS = {
+  packets: "tlshello",
+  length: "100-200",
+  interval: "10-20"
+};
+
 ;// ./src/config/project.config.ts
+
 
 
 
@@ -25456,7 +26115,13 @@ const ProjectConfig = {
   projectBot: "rocketman_vpn_bot" || 0,
   admins: TG_ADMINS.join(","),
   backup_admins: BACKUP_ADMIN_ACC.join(","),
-  order_end_limit_month: ORDER_MAX_END_LIMIT_MONTH
+  order_end_limit_month: ORDER_MAX_END_LIMIT_MONTH,
+  // Фрагментация TLS ClientHello в JSON-подписке Happ (пустое или off — выключено)
+  happ_fragment_packets: HAPP_FRAGMENT_DEFAULTS.packets,
+  happ_fragment_length: HAPP_FRAGMENT_DEFAULTS.length,
+  happ_fragment_interval: HAPP_FRAGMENT_DEFAULTS.interval,
+  // Профиль «Авто» с балансировкой между нодами в JSON-подписке Happ (on/off)
+  happ_auto_balancer: "on"
 };
 const enableOrderEndLimit = false;
 const enableBalanceAddLimit = false;
@@ -26194,7 +26859,7 @@ class LoginPage extends react.Component {
         style: {
           textAlign: "center",
           marginBottom: "16px",
-          color: "var(--tg-theme-hint-color)"
+          color: "var(--rm-muted)"
         }
       },
       this.LangString("login.passkey.not_supported")
@@ -27924,11 +28589,15 @@ const initialState = shared_spreadProps(shared_spreadValues({}, stateData), {
     xray_sni_port: "443",
     xray_port: "443",
     hysteria_port: normalizeHysteriaPort("1462"),
+    hysteria_salamander_port: "",
+    hysteria_salamander_public: false,
     disabled_protocols: [],
     xray_fingerprint: "firefox",
     xray_transport: "tcp",
     xray_xhttp_path: "/",
     xray_xhttp_mode: XRAY_XHTTP_DEFAULT_MODE,
+    xray_fragment: false,
+    xray_extra_transports: [],
     nft_whitelist: false,
     nft_whitelist_domains: false
   },
@@ -28277,8 +28946,8 @@ const OrderItem = ({
           padding: "8px",
           borderRadius: "8px",
           background: "rgba(0,0,0,0.3)",
-          border: "1px solid rgba(255,255,255,0.1)",
-          color: "white"
+          border: "1px solid var(--rm-line-strong)",
+          color: "var(--rm-text)"
         },
         onChange: (e) => setState({ addDaysOrder: parseInt(e.target.value) }),
         value: state.addDaysOrder
@@ -28999,6 +29668,259 @@ const UserEditPanel = ({
   )));
 };
 
+;// ./src/shared/hysteria/salamander.ts
+
+
+
+const HYSTERIA_SALAMANDER_STATS_PORT = 14535;
+const HYSTERIA_SALAMANDER_PASSWORD_LENGTH = 32;
+const PASSWORD_MIN_LENGTH = 16;
+const PASSWORD_RE = /^[A-Za-z0-9_-]+$/;
+const PASSWORD_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+function generateSalamanderPassword(length = HYSTERIA_SALAMANDER_PASSWORD_LENGTH) {
+  const bytes = new Uint8Array(length);
+  globalThis.crypto.getRandomValues(bytes);
+  let res = "";
+  for (const byte of bytes) res += PASSWORD_ALPHABET[byte % 62];
+  return res;
+}
+function isValidSalamanderPassword(value) {
+  return typeof value === "string" && value.length >= PASSWORD_MIN_LENGTH && value.length <= 128 && PASSWORD_RE.test(value);
+}
+function primaryHysteriaPort(node) {
+  var _a;
+  return (_a = resolveHysteriaPort(node.hysteria_port)) != null ? _a : resolveHysteriaPort("1462");
+}
+function normalizeSalamanderPort(value) {
+  const raw = (value || "").trim();
+  return isValidPort(raw) ? String(parseInt(raw, 10)) : "";
+}
+function validateSalamanderPort(node) {
+  const raw = (node.hysteria_salamander_port || "").trim();
+  if (!raw) return { ok: true };
+  if (!nodes_protocols_isValidPort(raw))
+    return { ok: false, error: "Salamander port must be a number 1-65535" };
+  if (parseInt(raw, 10) === primaryHysteriaPort(node))
+    return {
+      ok: false,
+      error: "Salamander port must differ from the Hysteria port"
+    };
+  return { ok: true };
+}
+function hysteriaSalamanderForNode(node) {
+  if (!node) return void 0;
+  const port = normalizeSalamanderPort(node.hysteria_salamander_port);
+  if (!port) return void 0;
+  if (!validateSalamanderPort(node).ok) return void 0;
+  if (!isValidSalamanderPassword(node.hysteria_salamander_password))
+    return void 0;
+  return {
+    port: parseInt(port, 10),
+    password: node.hysteria_salamander_password,
+    public: !!node.hysteria_salamander_public
+  };
+}
+function salamanderPasswordForSave(port, previous) {
+  if (!port)
+    return previous && isValidSalamanderPassword(previous) ? previous : "";
+  return isValidSalamanderPassword(previous) ? previous : generateSalamanderPassword();
+}
+
+;// ./src/shared/xray/extra.transports.ts
+
+var extra_transports_getOwnPropSymbols = Object.getOwnPropertySymbols;
+var extra_transports_hasOwnProp = Object.prototype.hasOwnProperty;
+var extra_transports_propIsEnum = Object.prototype.propertyIsEnumerable;
+var __objRest = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (extra_transports_hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && extra_transports_getOwnPropSymbols)
+    for (var prop of extra_transports_getOwnPropSymbols(source)) {
+      if (exclude.indexOf(prop) < 0 && extra_transports_propIsEnum.call(source, prop))
+        target[prop] = source[prop];
+    }
+  return target;
+};
+
+
+const XRAY_EXTRA_NETWORKS = [
+  "tcp",
+  "xhttp",
+  "grpc",
+  "ws"
+];
+const XRAY_EXTRA_SECURITIES = [
+  "reality",
+  "tls"
+];
+const XRAY_EXTRA_TRANSPORTS_MAX = 6;
+const XRAY_EXTRA_INBOUND_TAG_PREFIX = "vless-x-";
+const XRAY_GRPC_DEFAULT_SERVICE = "grpc";
+const EXTRA_ID_RE = /^[a-z0-9]{1,12}$/;
+const GRPC_SERVICE_RE = /^[A-Za-z0-9._-]{1,64}$/;
+const INTERNAL_TCP_PORTS = [14532, 14533, 14534, 14535];
+const NETWORK_LABELS = {
+  tcp: "TCP",
+  xhttp: "XHTTP",
+  grpc: "gRPC",
+  ws: "WS"
+};
+const SECURITY_LABELS = {
+  reality: "Reality",
+  tls: "TLS"
+};
+function isXrayExtraNetwork(value) {
+  return typeof value === "string" && XRAY_EXTRA_NETWORKS.includes(value);
+}
+function securitiesForNetwork(network) {
+  return network === "ws" ? ["tls"] : [...XRAY_EXTRA_SECURITIES];
+}
+function vlessFlowForNetwork(network) {
+  return !network || network === "tcp" ? "xtls-rprx-vision" : void 0;
+}
+function extraTransportLabel(t) {
+  return `${NETWORK_LABELS[t.network] || t.network} ${SECURITY_LABELS[t.security] || t.security}`;
+}
+function extraInboundTag(id) {
+  return `${XRAY_EXTRA_INBOUND_TAG_PREFIX}${id}`;
+}
+function isExtraInboundTag(tag) {
+  return !!tag && tag.startsWith(XRAY_EXTRA_INBOUND_TAG_PREFIX);
+}
+function extraIdFromInboundTag(tag) {
+  return isExtraInboundTag(tag) ? tag.slice(XRAY_EXTRA_INBOUND_TAG_PREFIX.length) : void 0;
+}
+function normalizeGrpcServiceName(value) {
+  const raw = (value || "").trim().replace(/^\/+/, "");
+  return raw || XRAY_GRPC_DEFAULT_SERVICE;
+}
+function normalizeExtraTransport(raw) {
+  var _a, _b, _c, _d;
+  if (!raw || typeof raw !== "object") return void 0;
+  const src = raw;
+  const id = String((_a = src.id) != null ? _a : "").trim().toLowerCase();
+  if (!isXrayExtraNetwork(src.network)) return void 0;
+  const network = src.network;
+  const allowed = securitiesForNetwork(network);
+  const security = allowed.includes(src.security) ? src.security : allowed[0];
+  const result = {
+    id,
+    network,
+    security,
+    port: String((_b = src.port) != null ? _b : "").trim()
+  };
+  if (src.enabled === false) result.enabled = false;
+  if (src.public === true) result.public = true;
+  if (network === "xhttp" || network === "ws")
+    result.path = normalizeXrayXhttpPath(src.path);
+  if (network === "xhttp")
+    result.mode = normalizeXrayXhttpMode(src.mode);
+  if (network === "grpc")
+    result.serviceName = normalizeGrpcServiceName(src.serviceName);
+  if (security === "reality") {
+    const sni = parseXraySni(src.sni);
+    if (sni.host) result.sni = sni.host;
+    const sniPort = String((_c = src.sni_port) != null ? _c : "").trim() || sni.port || "";
+    if (sniPort) result.sni_port = sniPort;
+  }
+  const fp = String((_d = src.fingerprint) != null ? _d : "").trim();
+  if (fp) result.fingerprint = fp;
+  return result;
+}
+function normalizeExtraTransports(value) {
+  if (!Array.isArray(value)) return [];
+  return value.map(normalizeExtraTransport).filter((q) => !!q);
+}
+function nextExtraTransportId(list) {
+  for (let i = 1; ; i++) {
+    const id = `n${i}`;
+    if (!list.some((q) => q.id === id)) return id;
+  }
+}
+function reservedNodeTcpPorts(node, env = "MISSING_ENV_VAR") {
+  const ports = /* @__PURE__ */ new Map();
+  const add = (value, name) => {
+    const port = parseInt(String(value != null ? value : ""), 10);
+    if (port >= 1 && port <= 65535 && !ports.has(port)) ports.set(port, name);
+  };
+  const disabled = node.disabled_protocols || [];
+  if (!disabled.includes("vless"))
+    add(node.xray_port || env.VLESS_DEFAULT_PORT, "main VLESS");
+  if (!disabled.includes("https")) add(env.HTTPS_PORT, "HTTPS proxy");
+  add(env.API_XRAY_PORT, "node API");
+  add(env.TEMPLATE_WEBSITE_PORT, "template site");
+  add(env.FIREWALL_PORT, "firewall");
+  add(env.MTPROTO_PROXY_PORT, "MTProto proxy");
+  INTERNAL_TCP_PORTS.forEach((port) => add(port, "internal"));
+  return ports;
+}
+function checkExtraTransports(node, env = "MISSING_ENV_VAR") {
+  const list = normalizeExtraTransports(node.xray_extra_transports);
+  const reserved = reservedNodeTcpPorts(node, env);
+  const seenIds = /* @__PURE__ */ new Set();
+  const seenPorts = /* @__PURE__ */ new Map();
+  return list.map((transport, index) => {
+    const fail = (error) => ({ transport, error });
+    if (index >= XRAY_EXTRA_TRANSPORTS_MAX)
+      return fail(`Max ${XRAY_EXTRA_TRANSPORTS_MAX} extra transports`);
+    if (!EXTRA_ID_RE.test(transport.id))
+      return fail("ID must be 1-12 chars a-z, 0-9");
+    if (seenIds.has(transport.id)) return fail(`Duplicate ID ${transport.id}`);
+    seenIds.add(transport.id);
+    if (!nodes_protocols_isValidPort(transport.port))
+      return fail("Port must be a number 1-65535");
+    if (transport.network === "xhttp" && !XRAY_XHTTP_MODES.includes(transport.mode || ""))
+      return fail("Incorrect XHTTP mode");
+    if (transport.network === "grpc" && !GRPC_SERVICE_RE.test(transport.serviceName || ""))
+      return fail('gRPC serviceName must be a-z, 0-9, ".", "_" or "-"');
+    if (transport.sni && !isValidXraySniHost(transport.sni))
+      return fail("SNI must be a domain name");
+    if (transport.sni_port && !nodes_protocols_isValidPort(transport.sni_port))
+      return fail("SNI port must be a number 1-65535");
+    if (transport.enabled === false) return { transport };
+    const port = parseInt(transport.port, 10);
+    const busy = reserved.get(port);
+    if (busy) return fail(`Port ${port} is used by ${busy}`);
+    const twin = seenPorts.get(port);
+    if (twin) return fail(`Port ${port} is used by transport ${twin}`);
+    seenPorts.set(port, transport.id);
+    return { transport };
+  });
+}
+function validateExtraTransports(node, env) {
+  const failed = checkExtraTransports(node, env).find((q) => q.error);
+  if (!failed) return { ok: true };
+  const t = failed.transport;
+  return {
+    ok: false,
+    error: `Extra transport ${t.id || "?"} (${extraTransportLabel(t)}): ${failed.error}`
+  };
+}
+function activeExtraTransports(node, env) {
+  var _a;
+  if (!((_a = node == null ? void 0 : node.xray_extra_transports) == null ? void 0 : _a.length)) return [];
+  if ((node.disabled_protocols || []).includes("vless")) return [];
+  return checkExtraTransports(node, env).filter((q) => {
+    if (q.error)
+      console.warn(
+        `[Xray] Skip extra transport ${q.transport.id}: ${q.error}`
+      );
+    return !q.error && q.transport.enabled !== false;
+  }).map((q) => q.transport);
+}
+function extraTransportsSignature(node) {
+  return JSON.stringify(
+    normalizeExtraTransports(node == null ? void 0 : node.xray_extra_transports).map(
+      (_a) => {
+        var _b = _a, { public: _ } = _b, rest = __objRest(_b, ["public"]);
+        return rest;
+      }
+    )
+  );
+}
+
 ;// ./src/application/pages/admin/modules/NodeModule.tsx
 
 var NodeModule_defProp = Object.defineProperty;
@@ -29020,6 +29942,8 @@ var NodeModule_spreadValues = (a, b) => {
   return a;
 };
 var NodeModule_spreadProps = (a, b) => NodeModule_defProps(a, NodeModule_getOwnPropDescs(b));
+
+
 
 
 
@@ -29072,7 +29996,20 @@ const NodeItem = ({ node, index, ctx }) => {
       className: `status-badge ${node.beta ? "orangeText" : "greenText"}`
     },
     node.beta ? "BETA" : "STABLE"
-  )), /* @__PURE__ */ react.createElement("div", { className: "item-details" }, /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "ID:"), " ", node.id), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "Host:"), " ", node.host), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "Type:"), " ", node.relay ? "Relay" : "Main Node"), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "SNI:"), " ", node.xray_sni || "Default"), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "VLESS:"), " ", isNodeProtocolEnabled(node, "vless") ? `${vlessTransportLabel(node.xray_transport)} :${node.xray_port || "443"}` : "OFF"), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "Protocols:"), " ", NODE_SWITCHABLE_PROTOCOLS.map((protocol) => /* @__PURE__ */ react.createElement(
+  )), /* @__PURE__ */ react.createElement("div", { className: "item-details" }, /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "ID:"), " ", node.id), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "Host:"), " ", node.host), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "Type:"), " ", node.relay ? "Relay" : "Main Node"), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "SNI:"), " ", node.xray_sni || "Default"), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "VLESS:"), " ", isNodeProtocolEnabled(node, "vless") ? `${vlessTransportLabel(node.xray_transport)} :${node.xray_port || "443"}` : "OFF", isNodeProtocolEnabled(node, "vless") && normalizeExtraTransports(node.xray_extra_transports).map((t) => /* @__PURE__ */ react.createElement(
+    "span",
+    {
+      key: t.id,
+      className: t.enabled === false ? "redText" : "",
+      style: { marginLeft: "6px" },
+      title: t.enabled === false ? "Disabled" : t.public ? "Public" : "Admins only"
+    },
+    "+ ",
+    extraTransportLabel(t),
+    " :",
+    t.port,
+    t.enabled !== false && !t.public ? " \u{1F9EA}" : ""
+  ))), /* @__PURE__ */ react.createElement("span", null, /* @__PURE__ */ react.createElement("b", null, "Protocols:"), " ", NODE_SWITCHABLE_PROTOCOLS.map((protocol) => /* @__PURE__ */ react.createElement(
     "span",
     {
       key: protocol,
@@ -29166,6 +30103,9 @@ const NewNodeForm = ({ ctx }) => {
     new_node.hysteria_port
   );
   const hysteriaPortsInvalid = !hysteriaPortsValidation.ok;
+  const salamanderValidation = validateSalamanderPort(new_node);
+  const salamanderInvalid = !salamanderValidation.ok;
+  const salamanderEnabled = !!(new_node.hysteria_salamander_port || "").trim();
   const vlessTransport = normalizeXrayVlessTransport(new_node.xray_transport);
   const disabledProtocols = normalizeDisabledProtocols(
     new_node.disabled_protocols
@@ -29176,6 +30116,25 @@ const NewNodeForm = ({ ctx }) => {
     disabled_protocols: disabledProtocols
   });
   const vlessPortInvalid = !vlessPortValidation.ok;
+  const extraTransports = new_node.xray_extra_transports || [];
+  const extraChecks = checkExtraTransports(
+    {
+      xray_port: new_node.xray_port,
+      disabled_protocols: disabledProtocols,
+      xray_extra_transports: extraTransports
+    },
+    // В браузере process.env целиком недоступен — только явные ключи
+    {
+      VLESS_DEFAULT_PORT: "443",
+      HTTPS_PORT: "8443",
+      API_XRAY_PORT: "1435",
+      TEMPLATE_WEBSITE_PORT: "444",
+      FIREWALL_PORT: "5100",
+      MTPROTO_PROXY_PORT: "8443"
+    }
+  );
+  const extraInvalid = extraChecks.some((q) => q.error);
+  const setExtraTransports = (list) => setState({ new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), { xray_extra_transports: list }) });
   const toggleProtocol = (protocol) => setState({
     new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), {
       disabled_protocols: disabledProtocols.includes(protocol) ? disabledProtocols.filter((q) => q !== protocol) : [...disabledProtocols, protocol]
@@ -29236,7 +30195,7 @@ const NewNodeForm = ({ ctx }) => {
         new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), { xray_port: e.currentTarget.value })
       })
     }
-  ), !vlessPortValidation.ok && /* @__PURE__ */ react.createElement("span", { className: "redText", style: { fontSize: "0.8em" } }, vlessPortValidation.error)), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XRay VLESS Transport"), /* @__PURE__ */ react.createElement(
+  ), !vlessPortValidation.ok && /* @__PURE__ */ react.createElement("span", { className: "redText", style: { fontSize: "0.8em" } }, vlessPortValidation.error)), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XRay VLESS Transport (main)"), /* @__PURE__ */ react.createElement(
     "select",
     {
       value: vlessTransport,
@@ -29248,6 +30207,25 @@ const NewNodeForm = ({ ctx }) => {
     },
     /* @__PURE__ */ react.createElement("option", { value: "tcp" }, "TCP Reality (default)"),
     /* @__PURE__ */ react.createElement("option", { value: "xhttp" }, "XHTTP Reality")
+  )), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, langString("applicationAdminNodeFragment")), /* @__PURE__ */ react.createElement(
+    "div",
+    {
+      style: { display: "flex", alignItems: "center", height: "100%" },
+      title: langString("applicationAdminNodeFragmentDesc")
+    },
+    /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "checkbox",
+        checked: !!new_node.xray_fragment,
+        onChange: () => setState({
+          new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), {
+            xray_fragment: !new_node.xray_fragment
+          })
+        }),
+        style: { width: "20px", height: "20px", margin: 0 }
+      }
+    )
   )), vlessTransport === "xhttp" && /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XHTTP Path"), /* @__PURE__ */ react.createElement(
     "input",
     {
@@ -29271,7 +30249,15 @@ const NewNodeForm = ({ ctx }) => {
       })
     },
     XRAY_XHTTP_MODES.map((mode) => /* @__PURE__ */ react.createElement("option", { key: mode, value: mode }, mode))
-  ))), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Hysteria Port"), /* @__PURE__ */ react.createElement(
+  ))), /* @__PURE__ */ react.createElement(
+    ExtraTransportsEditor,
+    {
+      list: extraTransports,
+      errors: extraChecks.map((q) => q.error),
+      disabled: disabledProtocols.includes("vless"),
+      onChange: setExtraTransports
+    }
+  ), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Hysteria Port"), /* @__PURE__ */ react.createElement(
     "input",
     {
       type: "text",
@@ -29288,7 +30274,46 @@ const NewNodeForm = ({ ctx }) => {
         })
       })
     }
-  ), hysteriaPortsInvalid && /* @__PURE__ */ react.createElement("span", { className: "redText", style: { fontSize: "0.8em" } }, hysteriaPortsValidation.error)), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XRay Fingerprint"), /* @__PURE__ */ react.createElement(
+  ), hysteriaPortsInvalid && /* @__PURE__ */ react.createElement("span", { className: "redText", style: { fontSize: "0.8em" } }, hysteriaPortsValidation.error)), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Hysteria Salamander Port"), /* @__PURE__ */ react.createElement(
+    "input",
+    {
+      type: "text",
+      className: salamanderInvalid ? "error" : "",
+      inputMode: "numeric",
+      value: new_node.hysteria_salamander_port || "",
+      placeholder: "off",
+      title: "UDP \u043F\u043E\u0440\u0442 \u0432\u0442\u043E\u0440\u043E\u0433\u043E \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430 Hysteria 2 \u0441 \u043E\u0431\u0444\u0443\u0441\u043A\u0430\u0446\u0438\u0435\u0439 Salamander. \u041F\u0443\u0441\u0442\u043E = \u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u043E. \u041F\u043E\u0440\u0442 \u043D\u0443\u0436\u043D\u043E \u043E\u0442\u043A\u0440\u044B\u0442\u044C \u0432 \u0444\u0430\u0439\u0440\u0432\u043E\u043B\u0435 \u0445\u043E\u0441\u0442\u0435\u0440\u0430",
+      disabled: disabledProtocols.includes("hysteria"),
+      onChange: (e) => setState({
+        new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), {
+          hysteria_salamander_port: e.currentTarget.value
+        })
+      })
+    }
+  ), salamanderInvalid && /* @__PURE__ */ react.createElement("span", { className: "redText", style: { fontSize: "0.8em" } }, salamanderValidation.error)), salamanderEnabled && /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Salamander Public"), /* @__PURE__ */ react.createElement(
+    "div",
+    {
+      style: {
+        display: "flex",
+        alignItems: "center",
+        height: "100%"
+      },
+      title: "\u0412\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u043E \u2014 \u0441\u0441\u044B\u043B\u043A\u0430 Salamander \u0432\u0438\u0434\u043D\u0430 \u0442\u043E\u043B\u044C\u043A\u043E \u0430\u0434\u043C\u0438\u043D\u0430\u043C (\u{1F9EA})"
+    },
+    /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "checkbox",
+        checked: !!new_node.hysteria_salamander_public,
+        onChange: () => setState({
+          new_node: NodeModule_spreadProps(NodeModule_spreadValues({}, new_node), {
+            hysteria_salamander_public: !new_node.hysteria_salamander_public
+          })
+        }),
+        style: { width: "20px", height: "20px", margin: 0 }
+      }
+    )
+  )), /* @__PURE__ */ react.createElement("div", { className: "info-item" }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XRay Fingerprint"), /* @__PURE__ */ react.createElement(
     "input",
     {
       type: "text",
@@ -29416,7 +30441,7 @@ const NewNodeForm = ({ ctx }) => {
     {
       className: "greenBg",
       style: { width: "100%", padding: "12px" },
-      disabled: !new_node.flag || idInvalid || !System/* System */.i.isEmoji(new_node.flag) || hostConflict || nameEmpty || !new_node.protocols.length || allProtocolsDisabled || vlessPortInvalid || hysteriaPortsInvalid,
+      disabled: !new_node.flag || idInvalid || !System/* System */.i.isEmoji(new_node.flag) || hostConflict || nameEmpty || !new_node.protocols.length || allProtocolsDisabled || vlessPortInvalid || hysteriaPortsInvalid || salamanderInvalid || extraInvalid,
       onClick: (e) => {
         e.preventDefault();
         WebApp.showConfirm("Sure?", (ok) => {
@@ -29435,6 +30460,175 @@ const NewNodeForm = ({ ctx }) => {
     },
     !isExisting ? "\u{1F680} Add new node" : "\u{1F4BE} Save changes"
   ))));
+};
+const ExtraTransportsEditor = ({
+  list,
+  errors,
+  disabled,
+  onChange
+}) => {
+  const update = (index, patch) => {
+    const next = list.map((t, i) => {
+      if (i !== index) return t;
+      const merged = NodeModule_spreadValues(NodeModule_spreadValues({}, t), patch);
+      const allowed = securitiesForNetwork(merged.network);
+      if (!allowed.includes(merged.security)) merged.security = allowed[0];
+      return merged;
+    });
+    onChange(next);
+  };
+  const add = () => onChange([
+    ...list,
+    {
+      id: nextExtraTransportId(list),
+      network: "grpc",
+      security: "reality",
+      port: "",
+      serviceName: XRAY_GRPC_DEFAULT_SERVICE
+    }
+  ]);
+  const remove = (index) => onChange(list.filter((_, i) => i !== index));
+  const checkbox = (checked, onToggle, label, title) => /* @__PURE__ */ react.createElement(
+    "label",
+    {
+      style: { display: "flex", alignItems: "center", gap: "6px" },
+      title
+    },
+    /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "checkbox",
+        checked,
+        onChange: onToggle,
+        style: { width: "18px", height: "18px", margin: 0 }
+      }
+    ),
+    label
+  );
+  return /* @__PURE__ */ react.createElement("div", { className: "info-item", style: { gridColumn: "1 / -1" } }, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XRay VLESS extra transports", " ", disabled && /* @__PURE__ */ react.createElement("span", { className: "redText" }, "(VLESS OFF)")), /* @__PURE__ */ react.createElement("span", { style: { fontSize: "0.8em", opacity: 0.7 } }, "\u041E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0435 inbound-\u044B \u043D\u0430 \u0441\u0432\u043E\u0438\u0445 \u043F\u043E\u0440\u0442\u0430\u0445, \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0439 \u043D\u0435 \u043C\u0435\u043D\u044F\u0435\u0442\u0441\u044F. \u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F \u043F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F \u043D\u0430 \u043D\u043E\u0434\u0435 \u0431\u0435\u0437 \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u043A\u0430. \u041D\u043E\u0432\u044B\u0439 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442 \u0432\u0438\u0434\u0435\u043D \u0432 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0430\u0434\u043C\u0438\u043D\u0430\u043C (\u{1F9EA}), \u043F\u043E\u043A\u0430 \u043D\u0435 \u0432\u043A\u043B\u044E\u0447\u0451\u043D \xABPublic\xBB. TLS \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442 \u043D\u043E\u0434\u044B, SNI = \u0445\u043E\u0441\u0442 \u043D\u043E\u0434\u044B."), list.map((t, index) => /* @__PURE__ */ react.createElement(
+    "div",
+    {
+      key: index,
+      style: {
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
+        gap: "8px",
+        alignItems: "end",
+        padding: "8px 0",
+        borderTop: "1px solid rgba(127,127,127,0.25)"
+      }
+    },
+    /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("span", { className: "label" }, "ID"), /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "text",
+        value: t.id,
+        onChange: (e) => update(index, { id: e.currentTarget.value })
+      }
+    )),
+    /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Network"), /* @__PURE__ */ react.createElement(
+      "select",
+      {
+        value: t.network,
+        onChange: (e) => update(index, {
+          network: e.currentTarget.value
+        })
+      },
+      XRAY_EXTRA_NETWORKS.map((network) => /* @__PURE__ */ react.createElement("option", { key: network, value: network }, network))
+    )),
+    /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Security"), /* @__PURE__ */ react.createElement(
+      "select",
+      {
+        value: t.security,
+        onChange: (e) => update(index, {
+          security: e.currentTarget.value
+        })
+      },
+      securitiesForNetwork(t.network).map((security) => /* @__PURE__ */ react.createElement("option", { key: security, value: security }, security))
+    )),
+    /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Port (TCP)"), /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "text",
+        inputMode: "numeric",
+        className: errors[index] ? "error" : "",
+        value: t.port,
+        onChange: (e) => update(index, { port: e.currentTarget.value })
+      }
+    )),
+    (t.network === "xhttp" || t.network === "ws") && /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Path"), /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "text",
+        value: t.path || "",
+        placeholder: "/",
+        onChange: (e) => update(index, { path: e.currentTarget.value })
+      }
+    )),
+    t.network === "xhttp" && /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("span", { className: "label" }, "XHTTP Mode"), /* @__PURE__ */ react.createElement(
+      "select",
+      {
+        value: t.mode || XRAY_XHTTP_DEFAULT_MODE,
+        onChange: (e) => update(index, {
+          mode: e.currentTarget.value
+        })
+      },
+      XRAY_XHTTP_MODES.map((mode) => /* @__PURE__ */ react.createElement("option", { key: mode, value: mode }, mode))
+    )),
+    t.network === "grpc" && /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("span", { className: "label" }, "gRPC serviceName"), /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "text",
+        value: t.serviceName || "",
+        placeholder: XRAY_GRPC_DEFAULT_SERVICE,
+        onChange: (e) => update(index, { serviceName: e.currentTarget.value })
+      }
+    )),
+    t.security === "reality" && /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("span", { className: "label" }, "SNI (empty = main)"), /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "text",
+        value: t.sni || "",
+        onChange: (e) => update(index, { sni: e.currentTarget.value })
+      }
+    )), /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("span", { className: "label" }, "SNI Port"), /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "text",
+        inputMode: "numeric",
+        value: t.sni_port || "",
+        onChange: (e) => update(index, { sni_port: e.currentTarget.value })
+      }
+    ))),
+    /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("span", { className: "label" }, "Fingerprint"), /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        type: "text",
+        value: t.fingerprint || "",
+        placeholder: "as node",
+        onChange: (e) => update(index, { fingerprint: e.currentTarget.value })
+      }
+    )),
+    /* @__PURE__ */ react.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "4px" } }, checkbox(
+      t.enabled !== false,
+      () => update(index, { enabled: t.enabled === false }),
+      "Enabled"
+    ), checkbox(
+      !!t.public,
+      () => update(index, { public: !t.public }),
+      "Public",
+      "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u0432 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0435 \u0432\u0441\u0435\u043C \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F\u043C"
+    )),
+    /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("button", { className: "small redBg", onClick: () => remove(index) }, "\u2715 Remove")),
+    errors[index] && /* @__PURE__ */ react.createElement(
+      "span",
+      {
+        className: "redText",
+        style: { fontSize: "0.8em", gridColumn: "1 / -1" }
+      },
+      errors[index]
+    )
+  )), list.length < XRAY_EXTRA_TRANSPORTS_MAX && /* @__PURE__ */ react.createElement("div", null, /* @__PURE__ */ react.createElement("button", { className: "small blueBg", onClick: add }, "\uFF0B Add transport")));
 };
 const InstallNodeForm = ({ ctx }) => {
   const { langString, postRequestUser, state, setState, nodes, relayNodes } = ctx;
@@ -29692,7 +30886,7 @@ const FirewallItem = ({ item, index, ctx }) => {
     },
     text
   );
-  return /* @__PURE__ */ react.createElement("div", { className: "firewallItem", key: "firewall_" + item.id }, /* @__PURE__ */ react.createElement("div", { className: "item-header" }, /* @__PURE__ */ react.createElement("span", null, "#", index + 1, ". ", item.type.toUpperCase(), " Rule"), /* @__PURE__ */ react.createElement("span", { className: `status-badge ${item.direction === "in" ? "redBg" : "blueBg"}` }, item.direction === "in" ? "INPUT" : "OUTPUT")), /* @__PURE__ */ react.createElement("div", { className: "item-details" }, /* @__PURE__ */ react.createElement("div", { className: "targets", style: { display: "flex", flexWrap: "wrap", gap: "8px", margin: "8px 0" } }, list.map((q) => /* @__PURE__ */ react.createElement("span", { key: q, style: { padding: "4px 8px", background: "rgba(255,255,255,0.05)", borderRadius: "6px", fontSize: "0.9em" } }, renderTarget(q)))), item.reason && /* @__PURE__ */ react.createElement("div", { style: { fontStyle: "italic", opacity: 0.8 } }, "Reason: ", item.reason), /* @__PURE__ */ react.createElement("span", { style: { marginTop: "8px", fontSize: "0.8em" } }, "Created: ", System/* System */.i.timeStampString(item.created))), /* @__PURE__ */ react.createElement("div", { className: "buttons" }, /* @__PURE__ */ react.createElement(
+  return /* @__PURE__ */ react.createElement("div", { className: "firewallItem", key: "firewall_" + item.id }, /* @__PURE__ */ react.createElement("div", { className: "item-header" }, /* @__PURE__ */ react.createElement("span", null, "#", index + 1, ". ", item.type.toUpperCase(), " Rule"), /* @__PURE__ */ react.createElement("span", { className: `status-badge ${item.direction === "in" ? "redBg" : "blueBg"}` }, item.direction === "in" ? "INPUT" : "OUTPUT")), /* @__PURE__ */ react.createElement("div", { className: "item-details" }, /* @__PURE__ */ react.createElement("div", { className: "targets", style: { display: "flex", flexWrap: "wrap", gap: "8px", margin: "8px 0" } }, list.map((q) => /* @__PURE__ */ react.createElement("span", { key: q, style: { padding: "4px 8px", background: "var(--rm-tint)", borderRadius: "6px", fontSize: "0.9em" } }, renderTarget(q)))), item.reason && /* @__PURE__ */ react.createElement("div", { style: { fontStyle: "italic", opacity: 0.8 } }, "Reason: ", item.reason), /* @__PURE__ */ react.createElement("span", { style: { marginTop: "8px", fontSize: "0.8em" } }, "Created: ", System/* System */.i.timeStampString(item.created))), /* @__PURE__ */ react.createElement("div", { className: "buttons" }, /* @__PURE__ */ react.createElement(
     "button",
     {
       className: "small redBg",
@@ -66383,11 +67577,11 @@ const Dashboard = ({ ctx }) => {
   };
   const pieMargin = { top: 10, bottom: 50, left: 10, right: 10 };
   const barMargin = { top: 10, bottom: 30, left: 40, right: 10 };
-  const tickStyle = { fill: "rgba(255,255,255,0.7)", fontSize: 10 };
+  const tickStyle = { fill: "var(--rm-muted)", fontSize: 10 };
   const legend = {
     direction: "horizontal",
     position: { vertical: "bottom", horizontal: "center" },
-    labelStyle: { fill: "rgba(255,255,255,0.7)", fontSize: 10 }
+    labelStyle: { fill: "var(--rm-muted)", fontSize: 10 }
   };
   return /* @__PURE__ */ react.createElement("div", { className: "dashboard" }, /* @__PURE__ */ react.createElement("div", { className: "dashboard-header-row" }, /* @__PURE__ */ react.createElement("h2", { dangerouslySetInnerHTML: { __html: langString("adminDashboardTitle") } }), /* @__PURE__ */ react.createElement("div", { className: "dashboard-filter-pills" }, [["all", "All"], ["active", "Active"], ["inactive", "Inactive"]].map(([id, label]) => /* @__PURE__ */ react.createElement(
     "button",
@@ -66581,7 +67775,7 @@ const RoutingItem = ({
             style: {
               fontSize: "0.82em",
               opacity: 0.8,
-              background: "rgba(255,255,255,0.07)",
+              background: "var(--rm-tint-strong)",
               padding: "2px 8px",
               borderRadius: "4px"
             }
@@ -67059,7 +68253,7 @@ const PresetItem = ({
             style: {
               fontSize: "0.82em",
               opacity: 0.8,
-              background: "rgba(255,255,255,0.07)",
+              background: "var(--rm-tint-strong)",
               padding: "2px 8px",
               borderRadius: "4px"
             }
@@ -68307,7 +69501,7 @@ const AnalyticsPanel = ({ ctx }) => {
     paddingAngle: 5,
     cornerRadius: 5
   };
-  const tickStyle = { fill: "rgba(255,255,255,0.7)", fontSize: 10 };
+  const tickStyle = { fill: "var(--rm-muted)", fontSize: 10 };
   return /* @__PURE__ */ react.createElement("div", { className: "analytics" }, privacy ? /* @__PURE__ */ react.createElement("details", { className: "analytics-privacy" }, /* @__PURE__ */ react.createElement("summary", null, privacy.title), /* @__PURE__ */ react.createElement(
     "div",
     {
@@ -68427,1916 +69621,6 @@ const AnalyticsPanel = ({ ctx }) => {
     }
   ))), /* @__PURE__ */ react.createElement("div", { className: "admin-card analytics-table-card" }, /* @__PURE__ */ react.createElement("h3", null, langString("adminAnalyticsRegions")), /* @__PURE__ */ react.createElement("p", { className: "analytics-hint" }, langString("adminAnalyticsRegionsHint")), /* @__PURE__ */ react.createElement("div", { className: "analytics-table-wrap" }, /* @__PURE__ */ react.createElement("table", { className: "analytics-table" }, /* @__PURE__ */ react.createElement("thead", null, /* @__PURE__ */ react.createElement("tr", null, /* @__PURE__ */ react.createElement("th", null, langString("adminAnalyticsCountry")), /* @__PURE__ */ react.createElement("th", null, langString("adminAnalyticsRegion")), /* @__PURE__ */ react.createElement("th", null, langString("adminAnalyticsIsp")), /* @__PURE__ */ react.createElement("th", null, langString("adminAnalyticsUsers")), /* @__PURE__ */ react.createElement("th", null, langString("adminAnalyticsSessions")))), /* @__PURE__ */ react.createElement("tbody", null, current.regions.map((row) => /* @__PURE__ */ react.createElement("tr", { key: `${row.countryCode}-${row.region}-${row.isp}` }, /* @__PURE__ */ react.createElement("td", null, row.countryCode, " ", row.country), /* @__PURE__ */ react.createElement("td", null, row.region), /* @__PURE__ */ react.createElement("td", null, row.isp), /* @__PURE__ */ react.createElement("td", null, row.uniqueUsers), /* @__PURE__ */ react.createElement("td", null, row.sessions))))))), /* @__PURE__ */ react.createElement("div", { className: "admin-card analytics-table-card" }, /* @__PURE__ */ react.createElement("h3", null, langString("adminAnalyticsResources")), /* @__PURE__ */ react.createElement("p", { className: "analytics-hint" }, langString("adminAnalyticsResourcesHint")), /* @__PURE__ */ react.createElement("div", { className: "analytics-table-wrap" }, /* @__PURE__ */ react.createElement("table", { className: "analytics-table" }, /* @__PURE__ */ react.createElement("thead", null, /* @__PURE__ */ react.createElement("tr", null, /* @__PURE__ */ react.createElement("th", null, langString("adminAnalyticsHost")), /* @__PURE__ */ react.createElement("th", null, langString("adminAnalyticsHits")), /* @__PURE__ */ react.createElement("th", null, "VLESS"), /* @__PURE__ */ react.createElement("th", null, "HTTPS"), /* @__PURE__ */ react.createElement("th", null, "Hysteria"))), /* @__PURE__ */ react.createElement("tbody", null, current.resources.map((row) => /* @__PURE__ */ react.createElement("tr", { key: row.host }, /* @__PURE__ */ react.createElement("td", null, row.host), /* @__PURE__ */ react.createElement("td", null, row.hits), /* @__PURE__ */ react.createElement("td", null, row.protocols.vless || 0), /* @__PURE__ */ react.createElement("td", null, row.protocols.https || 0), /* @__PURE__ */ react.createElement("td", null, row.protocols.hysteria || 0)))))))));
 };
-
-;// ./src/shared/backup.ts
-
-const BACKUP_INTERVAL_MS = 60 * 60 * 1e3;
-const BACKUP_INITIAL_DELAY_MS = (/* unused pure expression or super */ null && (10 * 60 * 1e3));
-const BACKUP_ZIP_LEVEL = 1;
-function backupIntervalMinutes(intervalMs = BACKUP_INTERVAL_MS) {
-  return Math.max(1, Math.round(intervalMs / 6e4));
-}
-
-;// ./src/application/pages/admin/modules/BackupModule.tsx
-
-var BackupModule_defProp = Object.defineProperty;
-var BackupModule_defProps = Object.defineProperties;
-var BackupModule_getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var BackupModule_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var BackupModule_hasOwnProp = Object.prototype.hasOwnProperty;
-var BackupModule_propIsEnum = Object.prototype.propertyIsEnumerable;
-var BackupModule_defNormalProp = (obj, key, value) => key in obj ? BackupModule_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var BackupModule_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (BackupModule_hasOwnProp.call(b, prop))
-      BackupModule_defNormalProp(a, prop, b[prop]);
-  if (BackupModule_getOwnPropSymbols)
-    for (var prop of BackupModule_getOwnPropSymbols(b)) {
-      if (BackupModule_propIsEnum.call(b, prop))
-        BackupModule_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var BackupModule_spreadProps = (a, b) => BackupModule_defProps(a, BackupModule_getOwnPropDescs(b));
-
-
-
-
-const BackupPanel = ({ ctx }) => {
-  const { langString, postRequestUser } = ctx;
-  const [view, setView] = react.useState(null);
-  const [starting, setStarting] = react.useState(false);
-  const postRequestUserRef = react.useRef(postRequestUser);
-  postRequestUserRef.current = postRequestUser;
-  const loadStatus = react.useCallback(() => {
-    return postRequestUserRef.current("/tgapi/admin/backup/status", {}).then((res) => {
-      if (res == null ? void 0 : res.status) setView(res);
-      return res;
-    });
-  }, []);
-  react.useEffect(() => {
-    void loadStatus();
-    const ms = (view == null ? void 0 : view.running) ? 2e3 : 1e4;
-    const timer = setInterval(() => {
-      void loadStatus();
-    }, ms);
-    return () => clearInterval(timer);
-  }, [loadStatus, view == null ? void 0 : view.running]);
-  const intervalMinutes = (view == null ? void 0 : view.intervalMinutes) || backupIntervalMinutes(view == null ? void 0 : view.intervalMs);
-  const lastAt = (view == null ? void 0 : view.lastFinishedAt) || (view == null ? void 0 : view.lastStartedAt);
-  const busy = starting || !!(view == null ? void 0 : view.running);
-  const startBackup = () => {
-    WebApp.showConfirm(langString("adminBackupCreateConfirm"), (ok) => {
-      if (!ok) return;
-      setStarting(true);
-      postRequestUser("/tgapi/admin/backup/create", {}).then((res) => {
-        if (res == null ? void 0 : res.status) {
-          setView(BackupModule_spreadProps(BackupModule_spreadValues({}, res), { running: true }));
-          WebApp.showAlert(langString("adminBackupCreateOk"));
-          setTimeout(() => {
-            void loadStatus();
-          }, 1500);
-          return;
-        }
-        if ((res == null ? void 0 : res.error) === "running") {
-          setView(res);
-          WebApp.showAlert(langString("adminBackupCreateBusy"));
-          return;
-        }
-        WebApp.showAlert(
-          langString("adminBackupCreateFail", (res == null ? void 0 : res.error) || "unknown")
-        );
-      }).finally(() => setStarting(false));
-    });
-  };
-  return /* @__PURE__ */ react.createElement("div", { className: "admin-card backup-panel" }, /* @__PURE__ */ react.createElement("div", { className: "form-header" }, /* @__PURE__ */ react.createElement("h3", null, langString("adminBackupTitle")), (view == null ? void 0 : view.running) && /* @__PURE__ */ react.createElement("span", { className: "status-badge orangeText" }, langString("adminBackupRunning"))), /* @__PURE__ */ react.createElement("p", { className: "backup-panel-interval" }, langString("adminBackupInterval", intervalMinutes)), /* @__PURE__ */ react.createElement("div", { className: "backup-panel-meta" }, /* @__PURE__ */ react.createElement("div", null, lastAt ? langString(
-    "adminBackupLastRun",
-    System/* System */.i.timeStampString(lastAt, true)
-  ) : langString("adminBackupNever")), (view == null ? void 0 : view.lastSuccess) === true && /* @__PURE__ */ react.createElement("div", { className: "greenText" }, langString("adminBackupLastResultOk")), (view == null ? void 0 : view.lastSuccess) === false && /* @__PURE__ */ react.createElement("div", { className: "redText" }, langString(
-    "adminBackupLastResultFail",
-    view.lastError || "unknown"
-  )), view && view.online === false && /* @__PURE__ */ react.createElement("div", { className: "orangeText" }, langString("adminBackupOffline"))), /* @__PURE__ */ react.createElement("div", { className: "form-actions" }, /* @__PURE__ */ react.createElement(
-    "button",
-    {
-      className: "admin-btn greenBg",
-      disabled: busy,
-      onClick: (e) => {
-        e.preventDefault();
-        startBackup();
-      }
-    },
-    "\u{1F4E6} ",
-    langString("adminBackupCreate")
-  )));
-};
-
-;// ./src/application/pages/admin/modules/XrayReleaseModule.tsx
-
-
-const XrayReleasePanel = ({ ctx }) => {
-  const { langString, postRequestUser } = ctx;
-  const [view, setView] = react.useState(null);
-  const postRequestUserRef = react.useRef(postRequestUser);
-  postRequestUserRef.current = postRequestUser;
-  react.useEffect(() => {
-    let active = true;
-    const load = () => {
-      void postRequestUserRef.current("/tgapi/admin/xrayRelease", {}).then((res) => {
-        if (active && (res == null ? void 0 : res.status)) setView(res);
-      });
-    };
-    load();
-    const timer = setInterval(load, 10 * 60 * 1e3);
-    return () => {
-      active = false;
-      clearInterval(timer);
-    };
-  }, []);
-  const pinned = (view == null ? void 0 : view.pinned) || null;
-  const latest = (view == null ? void 0 : view.updateAvailable) ? view.latest : null;
-  return /* @__PURE__ */ react.createElement("div", { className: "admin-card xray-release-panel" }, /* @__PURE__ */ react.createElement("div", { className: "form-header" }, /* @__PURE__ */ react.createElement("h3", null, langString("adminXrayVersionTitle"))), /* @__PURE__ */ react.createElement("div", { className: "xray-release-meta" }, /* @__PURE__ */ react.createElement("div", null, pinned ? langString("adminXrayVersionCurrent", pinned) : langString(
-    view ? "adminXrayVersionUnknown" : "adminXrayVersionLoading"
-  )), latest && /* @__PURE__ */ react.createElement("div", { className: "orangeText" }, langString("adminXrayVersionLatest", latest))));
-};
-
-;// ./src/application/pages/admin/modules/ConnectionTestModal.tsx
-
-var ConnectionTestModal_defProp = Object.defineProperty;
-var ConnectionTestModal_defProps = Object.defineProperties;
-var ConnectionTestModal_getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var ConnectionTestModal_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var ConnectionTestModal_hasOwnProp = Object.prototype.hasOwnProperty;
-var ConnectionTestModal_propIsEnum = Object.prototype.propertyIsEnumerable;
-var ConnectionTestModal_defNormalProp = (obj, key, value) => key in obj ? ConnectionTestModal_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var ConnectionTestModal_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (ConnectionTestModal_hasOwnProp.call(b, prop))
-      ConnectionTestModal_defNormalProp(a, prop, b[prop]);
-  if (ConnectionTestModal_getOwnPropSymbols)
-    for (var prop of ConnectionTestModal_getOwnPropSymbols(b)) {
-      if (ConnectionTestModal_propIsEnum.call(b, prop))
-        ConnectionTestModal_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var ConnectionTestModal_spreadProps = (a, b) => ConnectionTestModal_defProps(a, ConnectionTestModal_getOwnPropDescs(b));
-var ConnectionTestModal_async = (__this, __arguments, generator) => {
-  return new Promise((resolve, reject) => {
-    var fulfilled = (value) => {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var rejected = (value) => {
-      try {
-        step(generator.throw(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
-    step((generator = generator.apply(__this, __arguments)).next());
-  });
-};
-
-
-const PROTOCOLS = ["https", "vless", "hysteria"];
-const RELAY_VIA_PROTOCOLS = ["https", "vless"];
-const PROTOCOL_LABELS = {
-  https: "HTTPS",
-  vless: "VLESS",
-  hysteria: "Hysteria2"
-};
-const TEST_CONCURRENCY = 3;
-const cellKey = (nodeId, protocol, viaNodeId) => viaNodeId ? `${nodeId}:${protocol}:via:${viaNodeId}` : `${nodeId}:${protocol}`;
-const protocolEnabled = (node, protocol, via) => isNodeProtocolEnabled(node, protocol) && (!via || isNodeProtocolEnabled(via, protocol));
-function buildProbeTasks(servers, mains) {
-  const tasks = [];
-  const viaMains = mains.filter((node) => (node == null ? void 0 : node.id) && !node.relay);
-  for (const node of servers) {
-    for (const protocol of PROTOCOLS) {
-      if (!protocolEnabled(node, protocol)) continue;
-      tasks.push({ nodeId: String(node.id), protocol });
-    }
-    if (!node.relay) continue;
-    for (const main of viaMains) {
-      if (String(main.id) === String(node.id)) continue;
-      for (const protocol of RELAY_VIA_PROTOCOLS) {
-        if (!protocolEnabled(node, protocol, main)) continue;
-        tasks.push({
-          nodeId: String(node.id),
-          protocol,
-          viaNodeId: String(main.id)
-        });
-      }
-    }
-  }
-  return tasks;
-}
-const emptyCell = () => ({ status: "pending" });
-function collectServers(nodes, relayNodes, filterNodeIds) {
-  const allow = (filterNodeIds == null ? void 0 : filterNodeIds.length) ? new Set(filterNodeIds) : void 0;
-  const seen = /* @__PURE__ */ new Set();
-  const list = [];
-  for (const node of [...nodes, ...relayNodes]) {
-    if (!(node == null ? void 0 : node.id) || seen.has(node.id)) continue;
-    if (allow && !allow.has(node.id)) continue;
-    seen.add(node.id);
-    list.push(node);
-  }
-  return list;
-}
-const ConnectionTestModal = ({
-  ctx,
-  filterNodeIds,
-  onClose
-}) => {
-  const { langString, postRequestUser, currentUser, nodes, relayNodes } = ctx;
-  const mainsRef = react.useRef(nodes);
-  mainsRef.current = nodes;
-  const [results, setResults] = react.useState({});
-  const [running, setRunning] = react.useState(false);
-  const runIdRef = react.useRef(0);
-  const postRequestUserRef = react.useRef(postRequestUser);
-  postRequestUserRef.current = postRequestUser;
-  const serverKey = [
-    (filterNodeIds || []).join(","),
-    nodes.map((node) => `${node.id}:${node.relay ? 1 : 0}`).join(","),
-    relayNodes.map((node) => `${node.id}:${node.relay ? 1 : 0}`).join(",")
-  ].join("|");
-  const servers = react.useMemo(
-    () => collectServers(nodes, relayNodes, filterNodeIds),
-    // Intentionally keyed by id set: AdminPage re-renders often (timer/SSE)
-    // with a new ctx object, which must not restart the probe queue.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [serverKey]
-  );
-  const serversRef = react.useRef(servers);
-  serversRef.current = servers;
-  const total = buildProbeTasks(servers, nodes).length;
-  const finished = react.useMemo(
-    () => Object.values(results).filter(
-      (cell) => cell.status === "ok" || cell.status === "fail"
-    ).length,
-    [results]
-  );
-  const passed = react.useMemo(
-    () => Object.values(results).filter((cell) => cell.status === "ok").length,
-    [results]
-  );
-  const formatError = react.useCallback(
-    (cell) => {
-      const map = {
-        NO_ACCESS: "connection_test_error_no_access",
-        NO_NODE: "connection_test_error_no_node",
-        NO_CREDENTIALS: "connection_test_error_no_credentials",
-        TIMEOUT: "connection_test_error_timeout",
-        CONNECT_FAILED: "connection_test_error_connect",
-        PROBE_FAILED: "connection_test_error_probe",
-        NO_CLIENT: "connection_test_error_client",
-        DEPLOYING: "connection_test_error_deploying",
-        NOT_BACKUP: "connection_test_error_not_backup",
-        NO_VIA: "connection_test_error_no_via",
-        RELAY_UNSUPPORTED: "connection_test_error_relay_protocol",
-        PROTOCOL_DISABLED: "connection_test_error_protocol_disabled"
-      };
-      if (cell.errorCode && map[cell.errorCode]) {
-        return langString(map[cell.errorCode]);
-      }
-      return cell.error || langString("connection_test_fail");
-    },
-    [langString]
-  );
-  const runTests = react.useCallback(() => ConnectionTestModal_async(void 0, null, function* () {
-    const list = serversRef.current;
-    if (!list.length) return;
-    const runId = ++runIdRef.current;
-    setRunning(true);
-    const queue = buildProbeTasks(list, mainsRef.current);
-    const initial = {};
-    for (const task of queue) {
-      initial[cellKey(task.nodeId, task.protocol, task.viaNodeId)] = emptyCell();
-    }
-    setResults(initial);
-    let cursor = 0;
-    const isCurrent = () => runId === runIdRef.current;
-    const worker = () => ConnectionTestModal_async(void 0, null, function* () {
-      while (cursor < queue.length) {
-        if (!isCurrent()) return;
-        const task = queue[cursor];
-        cursor += 1;
-        if (!task) return;
-        const nodeId = task.nodeId;
-        const protocol = task.protocol;
-        const viaNodeId = task.viaNodeId;
-        const key = cellKey(nodeId, protocol, viaNodeId);
-        setResults((prev) => ConnectionTestModal_spreadProps(ConnectionTestModal_spreadValues({}, prev), {
-          [key]: { status: "testing" }
-        }));
-        const result = yield postRequestUserRef.current("/tgapi/admin/testConnection", ConnectionTestModal_spreadValues({
-          nodeId,
-          protocol
-        }, viaNodeId ? { viaNodeId } : {}));
-        if (!isCurrent()) return;
-        setResults((prev) => ConnectionTestModal_spreadProps(ConnectionTestModal_spreadValues({}, prev), {
-          [key]: (result == null ? void 0 : result.success) ? {
-            status: "ok",
-            latencyMs: result.latencyMs,
-            ip: result.ip,
-            colo: result.colo,
-            loc: result.loc
-          } : {
-            status: "fail",
-            latencyMs: result == null ? void 0 : result.latencyMs,
-            errorCode: result == null ? void 0 : result.errorCode,
-            error: result == null ? void 0 : result.error
-          }
-        }));
-      }
-    });
-    yield Promise.all(
-      Array.from(
-        { length: Math.min(TEST_CONCURRENCY, queue.length) },
-        () => worker()
-      )
-    );
-    if (isCurrent()) setRunning(false);
-  }), []);
-  react.useEffect(() => {
-    void runTests();
-    return () => {
-      runIdRef.current += 1;
-    };
-  }, [runTests, serverKey]);
-  const handleClose = () => {
-    runIdRef.current += 1;
-    setRunning(false);
-    onClose();
-  };
-  const renderCell = (nodeId, protocol, viaNodeId) => {
-    var _a;
-    const cell = results[cellKey(nodeId, protocol, viaNodeId)] || emptyCell();
-    if (cell.status === "testing" || running && cell.status === "pending") {
-      return /* @__PURE__ */ react.createElement(
-        "div",
-        {
-          className: "conn-test-cell testing",
-          title: langString("connection_test_testing")
-        },
-        /* @__PURE__ */ react.createElement("span", { className: "conn-test-spinner" }),
-        /* @__PURE__ */ react.createElement("span", null, langString("connection_test_testing"))
-      );
-    }
-    if (cell.status === "ok") {
-      const title = [
-        langString("connection_test_ok"),
-        cell.latencyMs !== void 0 ? langString("connection_test_latency", cell.latencyMs) : "",
-        cell.ip ? langString("connection_test_ip", cell.ip) : "",
-        cell.colo ? langString("connection_test_colo", cell.colo) : "",
-        cell.loc || ""
-      ].filter(Boolean).join("\n");
-      return /* @__PURE__ */ react.createElement("div", { className: "conn-test-cell ok", title }, /* @__PURE__ */ react.createElement("span", { className: "conn-test-line" }, /* @__PURE__ */ react.createElement("span", { className: "conn-test-mark" }, "\u2713"), /* @__PURE__ */ react.createElement("span", null, langString("connection_test_latency", (_a = cell.latencyMs) != null ? _a : 0))), cell.ip && /* @__PURE__ */ react.createElement("span", { className: "conn-test-meta" }, cell.ip));
-    }
-    if (cell.status === "fail") {
-      return /* @__PURE__ */ react.createElement("div", { className: "conn-test-cell fail", title: formatError(cell) }, /* @__PURE__ */ react.createElement("span", { className: "conn-test-mark" }, "\u2715"), /* @__PURE__ */ react.createElement("span", null, formatError(cell)));
-    }
-    return /* @__PURE__ */ react.createElement("div", { className: "conn-test-cell pending" }, /* @__PURE__ */ react.createElement("span", null, "\u2014"));
-  };
-  const disabledCell = () => /* @__PURE__ */ react.createElement(
-    "div",
-    {
-      className: "conn-test-cell pending",
-      title: langString("connection_test_error_protocol_disabled")
-    },
-    /* @__PURE__ */ react.createElement("span", null, "OFF")
-  );
-  const nodeLabel = (node) => {
-    var _a, _b;
-    const name = ((_a = node.name) == null ? void 0 : _a[currentUser.lang]) || ((_b = node.name) == null ? void 0 : _b.en) || node.id;
-    const tags = [
-      node.flag ? `${node.flag} ` : "",
-      name,
-      node.beta ? " \xB7 BETA" : ""
-    ].join("");
-    return tags;
-  };
-  const mainTargets = nodes.filter((node) => (node == null ? void 0 : node.id) && !node.relay);
-  const mainServers = servers.filter((node) => !node.relay);
-  const backupServers = servers.filter((node) => node.relay);
-  const renderServerRows = (list) => list.flatMap((node) => {
-    const rows = [
-      /* @__PURE__ */ react.createElement("tr", { key: node.id }, /* @__PURE__ */ react.createElement("td", null, /* @__PURE__ */ react.createElement("span", { className: "conn-test-server" }, nodeLabel(node)), node.relay ? /* @__PURE__ */ react.createElement("span", { className: "conn-test-path" }, langString("connection_test_direct")) : null), PROTOCOLS.map((protocol) => /* @__PURE__ */ react.createElement("td", { key: protocol }, protocolEnabled(node, protocol) ? renderCell(node.id, protocol) : disabledCell())))
-    ];
-    if (!node.relay) return rows;
-    for (const main of mainTargets) {
-      if (String(main.id) === String(node.id)) continue;
-      rows.push(
-        /* @__PURE__ */ react.createElement("tr", { key: `${node.id}:via:${main.id}` }, /* @__PURE__ */ react.createElement("td", null, /* @__PURE__ */ react.createElement("span", { className: "conn-test-path" }, langString("connection_test_via", nodeLabel(main)))), PROTOCOLS.map((protocol) => /* @__PURE__ */ react.createElement("td", { key: protocol }, protocol === "hysteria" ? /* @__PURE__ */ react.createElement(
-          "div",
-          {
-            className: "conn-test-cell pending",
-            title: langString("connection_test_relay_skip")
-          },
-          /* @__PURE__ */ react.createElement("span", null, "\u2014")
-        ) : protocolEnabled(node, protocol, main) ? renderCell(node.id, protocol, String(main.id)) : disabledCell())))
-      );
-    }
-    return rows;
-  });
-  const renderSection = (title, list) => {
-    if (!list.length) return null;
-    return /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("tr", { className: "conn-test-section" }, /* @__PURE__ */ react.createElement("td", { colSpan: PROTOCOLS.length + 1 }, title)), renderServerRows(list));
-  };
-  return /* @__PURE__ */ react.createElement("div", { className: "conn-test-overlay", onClick: handleClose }, /* @__PURE__ */ react.createElement(
-    "div",
-    {
-      className: "conn-test-modal",
-      onClick: (e) => {
-        e.stopPropagation();
-      }
-    },
-    /* @__PURE__ */ react.createElement("div", { className: "conn-test-header" }, /* @__PURE__ */ react.createElement("h3", null, langString("connection_test_title")), /* @__PURE__ */ react.createElement("button", { type: "button", className: "small", onClick: handleClose }, langString("connection_test_close"))),
-    /* @__PURE__ */ react.createElement("div", { className: "conn-test-desc" }, langString("connection_test_desc")),
-    !servers.length ? /* @__PURE__ */ react.createElement("div", { className: "conn-test-empty" }, langString("connection_test_no_servers")) : /* @__PURE__ */ react.createElement("div", { className: "conn-test-table-wrap" }, /* @__PURE__ */ react.createElement("table", { className: "conn-test-table" }, /* @__PURE__ */ react.createElement("thead", null, /* @__PURE__ */ react.createElement("tr", null, /* @__PURE__ */ react.createElement("th", null, langString("connection_test_server")), PROTOCOLS.map((protocol) => /* @__PURE__ */ react.createElement("th", { key: protocol }, PROTOCOL_LABELS[protocol])))), /* @__PURE__ */ react.createElement("tbody", null, renderSection(
-      langString("connection_test_section_main"),
-      mainServers
-    ), renderSection(
-      langString("connection_test_section_backup"),
-      backupServers
-    )))),
-    /* @__PURE__ */ react.createElement("div", { className: "conn-test-footer" }, /* @__PURE__ */ react.createElement("span", null, running ? langString("connection_test_progress", finished, total) : langString("connection_test_summary", passed, total)), /* @__PURE__ */ react.createElement(
-      "button",
-      {
-        type: "button",
-        className: "small",
-        onClick: () => void runTests(),
-        disabled: running || !servers.length
-      },
-      langString("connection_test_retry")
-    ))
-  ));
-};
-
-;// ./src/application/pages/admin/index.tsx
-
-var admin_defProp = Object.defineProperty;
-var admin_defProps = Object.defineProperties;
-var admin_getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var admin_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var admin_hasOwnProp = Object.prototype.hasOwnProperty;
-var admin_propIsEnum = Object.prototype.propertyIsEnumerable;
-var admin_defNormalProp = (obj, key, value) => key in obj ? admin_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var admin_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (admin_hasOwnProp.call(b, prop))
-      admin_defNormalProp(a, prop, b[prop]);
-  if (admin_getOwnPropSymbols)
-    for (var prop of admin_getOwnPropSymbols(b)) {
-      if (admin_propIsEnum.call(b, prop))
-        admin_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var admin_spreadProps = (a, b) => admin_defProps(a, admin_getOwnPropDescs(b));
-var admin_async = (__this, __arguments, generator) => {
-  return new Promise((resolve, reject) => {
-    var fulfilled = (value) => {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var rejected = (value) => {
-      try {
-        step(generator.throw(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
-    step((generator = generator.apply(__this, __arguments)).next());
-  });
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class AdminPage extends BasePage {
-  // ─────────────────────────────────────────────
-  // Данные и SSE
-  // ─────────────────────────────────────────────
-  constructor(props) {
-    super(props);
-    this.state = admin_spreadValues({}, initialState);
-    // ─────────────────────────────────────────────
-    // Навигация (BackButton)
-    // ─────────────────────────────────────────────
-    this.CloseEditUser = () => {
-      this.setState({
-        editUser: "",
-        editUserBalanceInput: 0,
-        editUserBalanceAddInput: 0
-      });
-    };
-    this.ToggleSidebar = () => {
-      this.setState({ sidebarOpen: !this.state.sidebarOpen });
-    };
-    this.OpenConnectionTest = (nodeIds) => {
-      this.setState({
-        connectionTest: {
-          open: true,
-          nodeIds
-        }
-      });
-    };
-    this.CloseConnectionTest = () => {
-      this.setState({
-        connectionTest: { open: false, nodeIds: void 0 }
-      });
-    };
-    this.OpenFloatingUserModal = (userId) => {
-      const openedModal = this.state.userFloatingModals.find(
-        (q) => q.userId === userId
-      );
-      if (openedModal) {
-        this.BringFloatingUserModalToFront(openedModal.id);
-        return;
-      }
-      const user = this.state.users.find((q) => q.id === userId);
-      if (!user) return;
-      const nextSeq = this.state.userFloatingModalSeq + 1;
-      const nextZ = Math.max(1e3, ...this.state.userFloatingModals.map((q) => q.zIndex)) + 1;
-      const viewportWidth = typeof window !== "undefined" ? window.innerWidth : 1280;
-      const viewportHeight = typeof window !== "undefined" ? window.innerHeight : 720;
-      const width = Math.max(460, Math.min(860, viewportWidth - 24));
-      const height = Math.max(320, Math.round(viewportHeight * 0.5));
-      const modal = {
-        id: `user_modal_${nextSeq}_${userId}`,
-        userId,
-        userData: admin_spreadValues({}, user),
-        left: 80 + (nextSeq - 1) % 7 * 26,
-        top: 80 + (nextSeq - 1) % 6 * 22,
-        width,
-        height,
-        zIndex: nextZ,
-        addDaysOrder: 1,
-        editUserBalanceInput: this.ConvertToCurrency(user.balance),
-        editUserBalanceInputCurrency: this.currency,
-        editUserBalanceAddInput: 0,
-        editUserTarif: tarifs.TARIF_LIST[0].id,
-        editUserTarifDays: 0,
-        editUserPayments: [],
-        editUserRefs: void 0,
-        editUserShowOrders: false,
-        editUserShowLogs: false,
-        editUserShowPayments: false,
-        editUserShowRefs: false
-      };
-      this.setState({
-        userFloatingModalSeq: nextSeq,
-        userFloatingModals: [...this.state.userFloatingModals, modal],
-        editUserBalanceInput: this.ConvertToCurrency(user.balance),
-        editUserBalanceInputCurrency: this.currency,
-        editUserBalanceAddInput: 0,
-        editUserTarifDays: 0,
-        editUserTarif: tarifs.TARIF_LIST[0].id
-      });
-      this.PostRequestUser("/tgapi/admin/updateUserData", { user: userId }).then((res) => {
-        if (!(res == null ? void 0 : res.payments)) return;
-        const payments = res.payments;
-        const refs = res.refs;
-        this.setState({
-          userFloatingModals: this.state.userFloatingModals.map(
-            (q) => q.id === modal.id ? admin_spreadProps(admin_spreadValues({}, q), { editUserPayments: payments, editUserRefs: refs }) : q
-          )
-        });
-      });
-    };
-    this.SetFloatingUserModalState = (modalId, data) => {
-      this.setState({
-        userFloatingModals: this.state.userFloatingModals.map(
-          (q) => q.id === modalId ? admin_spreadValues(admin_spreadValues({}, q), data) : q
-        )
-      });
-    };
-    this.BringFloatingUserModalToFront = (id) => {
-      const nextZ = Math.max(1e3, ...this.state.userFloatingModals.map((q) => q.zIndex)) + 1;
-      this.setState({
-        userFloatingModals: this.state.userFloatingModals.map(
-          (modal) => modal.id === id ? admin_spreadProps(admin_spreadValues({}, modal), { zIndex: nextZ }) : modal
-        )
-      });
-    };
-    this.CloseFloatingUserModal = (id) => {
-      var _a, _b;
-      this.setState({
-        userFloatingModals: this.state.userFloatingModals.filter(
-          (q) => q.id !== id
-        ),
-        dragUserFloatingModal: ((_a = this.state.dragUserFloatingModal) == null ? void 0 : _a.id) === id ? null : this.state.dragUserFloatingModal,
-        resizeUserFloatingModal: ((_b = this.state.resizeUserFloatingModal) == null ? void 0 : _b.id) === id ? null : this.state.resizeUserFloatingModal
-      });
-    };
-    this.StartDragFloatingUserModal = (id, e) => {
-      if (e.button !== 0) return;
-      const modal = this.state.userFloatingModals.find((q) => q.id === id);
-      if (!modal) return;
-      e.preventDefault();
-      this.BringFloatingUserModalToFront(id);
-      this.setState({
-        dragUserFloatingModal: {
-          id,
-          offsetX: e.clientX - modal.left,
-          offsetY: e.clientY - modal.top
-        }
-      });
-    };
-    this.HandleUserModalMouseMove = (e) => {
-      const resizeData = this.state.resizeUserFloatingModal;
-      if (resizeData) {
-        const width = Math.max(
-          460,
-          resizeData.startWidth + (e.clientX - resizeData.startX)
-        );
-        const height = Math.max(
-          260,
-          resizeData.startHeight + (e.clientY - resizeData.startY)
-        );
-        this.setState({
-          userFloatingModals: this.state.userFloatingModals.map(
-            (modal) => modal.id === resizeData.id ? admin_spreadProps(admin_spreadValues({}, modal), { width, height }) : modal
-          )
-        });
-        return;
-      }
-      const dragData = this.state.dragUserFloatingModal;
-      if (!dragData) return;
-      const left = Math.max(8, e.clientX - dragData.offsetX);
-      const top = Math.max(8, e.clientY - dragData.offsetY);
-      this.setState({
-        userFloatingModals: this.state.userFloatingModals.map(
-          (modal) => modal.id === dragData.id ? admin_spreadProps(admin_spreadValues({}, modal), { left, top }) : modal
-        )
-      });
-    };
-    this.HandleUserModalMouseUp = () => {
-      if (!this.state.dragUserFloatingModal && !this.state.resizeUserFloatingModal)
-        return;
-      this.setState({
-        dragUserFloatingModal: null,
-        resizeUserFloatingModal: null
-      });
-    };
-    this.StartResizeFloatingUserModal = (id, e) => {
-      if (e.button !== 0) return;
-      const modal = this.state.userFloatingModals.find((q) => q.id === id);
-      if (!modal) return;
-      e.preventDefault();
-      e.stopPropagation();
-      this.BringFloatingUserModalToFront(id);
-      this.setState({
-        dragUserFloatingModal: null,
-        resizeUserFloatingModal: {
-          id,
-          startX: e.clientX,
-          startY: e.clientY,
-          startWidth: modal.width,
-          startHeight: modal.height
-        }
-      });
-    };
-    this.SetView = (view) => {
-      this.setState({
-        currentView: view,
-        sidebarOpen: false,
-        editUser: "",
-        inPromoMenu: admin_spreadProps(admin_spreadValues({}, this.state.inPromoMenu), { edit: false }),
-        new_node: admin_spreadProps(admin_spreadValues({}, this.state.new_node), { opened: false }),
-        install_node: admin_spreadProps(admin_spreadValues({}, this.state.install_node), { opened: false }),
-        coreSettings: admin_spreadProps(admin_spreadValues({}, this.state.coreSettings), { opened: false, data: {} }),
-        sendMessage: admin_spreadProps(admin_spreadValues({}, this.state.sendMessage), { show: false }),
-        firewallEdit: admin_spreadProps(admin_spreadValues({}, this.state.firewallEdit), { show: false }),
-        presetsEdit: admin_spreadProps(admin_spreadValues({}, this.state.presetsEdit), { show: false }),
-        bulkRenewal: { show: false },
-        connectionTest: { open: false, nodeIds: void 0 },
-        show: admin_spreadValues({}, initialState.show),
-        search: admin_spreadValues({}, initialState.search),
-        reverse: admin_spreadValues({}, initialState.reverse)
-      });
-    };
-    this.BackButton = () => {
-      if (this.state.editUser) {
-        this.CloseEditUser();
-        return true;
-      }
-      if (this.state.inPromoMenu.edit) {
-        this.setState({
-          inPromoMenu: admin_spreadProps(admin_spreadValues({}, this.state.inPromoMenu), { edit: false })
-        });
-        return true;
-      }
-      if (this.state.new_node.opened) {
-        this.setState({ new_node: admin_spreadProps(admin_spreadValues({}, this.state.new_node), { opened: false }) });
-        return true;
-      }
-      if (this.state.install_node.opened) {
-        this.setState({
-          install_node: admin_spreadProps(admin_spreadValues({}, this.state.install_node), { opened: false })
-        });
-        return true;
-      }
-      if (this.state.coreSettings.opened) {
-        this.setState({
-          coreSettings: admin_spreadProps(admin_spreadValues({}, this.state.coreSettings), { opened: false, data: {} })
-        });
-        return true;
-      }
-      if (this.state.sendMessage.show) {
-        this.setState({
-          sendMessage: admin_spreadProps(admin_spreadValues({}, this.state.sendMessage), { show: false })
-        });
-        return true;
-      }
-      if (this.state.firewallEdit.show) {
-        this.setState({
-          firewallEdit: admin_spreadProps(admin_spreadValues({}, this.state.firewallEdit), { show: false })
-        });
-        return true;
-      }
-      if (this.state.presetsEdit.show) {
-        this.setState({
-          presetsEdit: admin_spreadProps(admin_spreadValues({}, this.state.presetsEdit), { show: false })
-        });
-        return true;
-      }
-      if (this.state.bulkRenewal.show) {
-        this.setState({ bulkRenewal: { show: false } });
-        return true;
-      }
-      if (this.state.connectionTest.open) {
-        this.setState({ connectionTest: { open: false, nodeIds: void 0 } });
-        return true;
-      }
-      return false;
-    };
-    this.CanClose = () => !this.state.editUser && !this.state.inPromoMenu.edit;
-    // ─────────────────────────────────────────────
-    // Хелперы по заказам и пользователям
-    // ─────────────────────────────────────────────
-    this.GetOrders = (mode = "all") => {
-      return this.state.orders.filter((order) => {
-        const cfg = tarifs.TARIF_LIST.find((q) => q.id === order.tarif);
-        if (!cfg) return false;
-        const expire = order.stats.expire;
-        if (mode === "active") return System/* System */.i.timestamp <= expire;
-        if (mode === "expired") return System/* System */.i.timestamp > expire;
-        return true;
-      });
-    };
-    this.GetUsersByOrders = (orders) => {
-      const owners = [];
-      orders.forEach((order) => {
-        if (!owners.includes(order.owner)) owners.push(order.owner);
-      });
-      return owners;
-    };
-    this.OrderDataEv = Core.configAdmins.includes(this.props.user.id) ? Sse.OnData("adminDataUpdate", () => {
-      this.PostRequestUser("/tgapi/admin/loadData", {}).then(
-        (data) => this.setState(admin_spreadValues({}, data))
-      );
-    }) : void 0;
-    this.DeployDataEv = Core.configAdmins.includes(this.props.user.id) ? Sse.OnData("admin_deployData", (msg) => {
-      this.setState({
-        install_node_logs: [
-          [System/* System */.i.timestamp, msg],
-          ...this.state.install_node_logs
-        ]
-      });
-    }) : void 0;
-    // ─────────────────────────────────────────────
-    // OwnerShow — общий для всех модулей через ctx
-    // ─────────────────────────────────────────────
-    this.OwnerShow = (owner) => {
-      const ownerData = typeof owner === "object" ? owner : this.state.users.find((q) => q.id === owner);
-      return ownerData ? /* @__PURE__ */ react.createElement("span", { className: "userShow" }, ownerData.noName ? /* @__PURE__ */ react.createElement("span", null, "[", ownerData.lang, " | ", ownerData.currency, "] ", ownerData.name, " (@", ownerData.id, ")") : /* @__PURE__ */ react.createElement(
-        "a",
-        {
-          href: "#",
-          onClick: (e) => {
-            e.preventDefault();
-            WebApp.openTelegramLink(`https://t.me/${ownerData.name}`);
-          }
-        },
-        "[",
-        ownerData.lang,
-        " | ",
-        ownerData.currency,
-        "] ",
-        ownerData.name,
-        " (@",
-        ownerData.id,
-        ")"
-      ), ownerData.noName && /* @__PURE__ */ react.createElement(
-        "button",
-        {
-          className: "small",
-          onClick: (e) => {
-            e.preventDefault();
-            this.PostRequestUser("/tgapi/admin/sendUserContact", {
-              target: ownerData.id
-            });
-          }
-        },
-        "\u{1F4AC}"
-      )) : /* @__PURE__ */ react.createElement("span", null, "INCORRECT_USER");
-    };
-    // ─────────────────────────────────────────────
-    // Модальное окно инструкции
-    // ─────────────────────────────────────────────
-    this.showInstructionModal = (orderId, type, admin = false) => admin_async(this, null, function* () {
-      const res = yield this.PostRequestUser("/api/orders/orderData", admin_spreadValues({
-        orderId,
-        type
-      }, admin ? { admin: true } : {}));
-      if (!(res == null ? void 0 : res.status) || !res.data) return;
-      const [langKey, ...args] = res.data;
-      const text = this.LangString(langKey, ...args);
-      this.setState({ instructionModal: { text, orderId, type } });
-    });
-    this.RenderBlock = (key, title, func, additional, mode = "", sortKey) => {
-      var _a, _b;
-      const key2 = `${String(key)}${mode ? "_" + mode : ""}`;
-      const search = this.state.search[key2];
-      let data = key === "nodes" ? [...this.props.nodes, ...this.props.relayNodes] : this.state[key].filter(
-        (q) => {
-          var _a2, _b2;
-          return !search || q.id.toLowerCase().includes(search.toLowerCase()) || ((_a2 = q.name) == null ? void 0 : _a2.toLowerCase().includes(search.toLowerCase())) || ((_b2 = q.owner) == null ? void 0 : _b2.toLowerCase().includes(search.toLowerCase()));
-        }
-      );
-      if (key === "orders") {
-        if (mode === "active" || mode === "expired") {
-          data = data.filter((q) => {
-            var _a2, _b2;
-            const tarif = tarifs.TARIF_LIST.find((a) => a.id === q.tarif);
-            if (!tarif) return false;
-            const expire = (_b2 = (_a2 = q.stats) == null ? void 0 : _a2.expire) != null ? _b2 : 0;
-            return mode === "active" ? System/* System */.i.timestamp <= expire : System/* System */.i.timestamp > expire;
-          });
-        }
-      } else if (key === "users" && (mode === "active" || mode === "expired")) {
-        const tm = System/* System */.i.timestamp;
-        data = data.filter((q) => {
-          if (tm - q.lastSeen < 60 * 24 * 60 * 60) return true;
-          return !!this.state.orders.find(
-            (a) => {
-              var _a2, _b2;
-              return a.owner === q.id && ((_b2 = (_a2 = a.stats) == null ? void 0 : _a2.expire) != null ? _b2 : 0) > tm;
-            }
-          );
-        });
-      }
-      if (key === "logs") data = data.filter((q) => q.admin);
-      const reverse = this.state.reverse[key2];
-      if (key === "orders") {
-        data = data.map((q) => {
-          var _a2;
-          return admin_spreadProps(admin_spreadValues({}, q), {
-            expire: Math.max(
-              ...[(_a2 = q.stats) == null ? void 0 : _a2.expire, 0].filter(Boolean).map(Number)
-            )
-          });
-        });
-      }
-      if (sortKey)
-        data = System/* System */.i.sortArrayObjects(data, [{ id: sortKey, type: "ASC" }]);
-      if (reverse) data.reverse();
-      const isCollapsed = !this.state.show[key2];
-      return /* @__PURE__ */ react.createElement(
-        "div",
-        {
-          className: `admin-card collapsible ${isCollapsed ? "collapsed" : ""} ${key}`
-        },
-        /* @__PURE__ */ react.createElement(
-          "div",
-          {
-            className: "card-header",
-            onClick: () => this.setState({ show: admin_spreadProps(admin_spreadValues({}, this.state.show), { [key2]: isCollapsed }) })
-          },
-          /* @__PURE__ */ react.createElement("div", { className: "title-wrap" }, /* @__PURE__ */ react.createElement("h3", null, this.LangString(title, (_a = data == null ? void 0 : data.length) != null ? _a : 0)), /* @__PURE__ */ react.createElement("span", { className: "count" }, (_b = data == null ? void 0 : data.length) != null ? _b : 0)),
-          /* @__PURE__ */ react.createElement("div", { className: "controls-wrap", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ react.createElement(
-            "a",
-            {
-              href: "#",
-              className: "chevron",
-              onClick: (e) => {
-                e.preventDefault();
-                this.setState({
-                  show: admin_spreadProps(admin_spreadValues({}, this.state.show), { [key2]: isCollapsed })
-                });
-              }
-            },
-            "\u25BC"
-          ))
-        ),
-        !isCollapsed && /* @__PURE__ */ react.createElement("div", { className: "card-body" }, /* @__PURE__ */ react.createElement("div", { className: "admin-controls" }, /* @__PURE__ */ react.createElement("div", { className: "search-input" }, /* @__PURE__ */ react.createElement(
-          "input",
-          {
-            placeholder: this.LangString("applicationAdminSearch"),
-            value: search,
-            onChange: (e) => this.setState({
-              search: admin_spreadProps(admin_spreadValues({}, this.state.search), {
-                [key2]: e.currentTarget.value
-              })
-            })
-          }
-        )), /* @__PURE__ */ react.createElement(
-          "div",
-          {
-            className: "sort-toggle",
-            onClick: () => this.setState({
-              reverse: admin_spreadProps(admin_spreadValues({}, this.state.reverse), { [key2]: !reverse })
-            })
-          },
-          reverse ? "\u21A1" : "\u219F",
-          " Sort"
-        ), sortKey && /* @__PURE__ */ react.createElement("div", { className: "sort-key" }, "By: ", sortKey)), additional && /* @__PURE__ */ react.createElement("div", { style: { marginTop: "12px" } }, additional()), /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid", style: { marginTop: "16px" } }, data == null ? void 0 : data.map(
-          (item, i) => func(item, reverse ? data.length - 1 - i : i)
-        )))
-      );
-    };
-    this.UpdateData();
-  }
-  componentDidMount() {
-    super.componentDidMount();
-    window.addEventListener("mousemove", this.HandleUserModalMouseMove);
-    window.addEventListener("mouseup", this.HandleUserModalMouseUp);
-  }
-  get SendMessageTargets() {
-    const { tarifs, active } = this.state.sendMessage.filter;
-    const all = this.GetOrders("all");
-    const activeOrders = this.GetOrders("active");
-    const expired = this.GetOrders("expired");
-    const allUsers = this.state.users;
-    const byTarif = (list) => list.filter((q) => tarifs.includes(q.tarif));
-    switch (active) {
-      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.ALL:
-        return allUsers.map((q) => q.id);
-      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.ORDERS:
-        return this.GetUsersByOrders(byTarif(all));
-      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.ACTIVE_ORDERS:
-        return this.GetUsersByOrders(byTarif(activeOrders));
-      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.HAS_ORDER:
-        return this.GetUsersByOrders(all);
-      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.NO_ORDER: {
-        const owners = this.GetUsersByOrders(all);
-        return allUsers.filter((q) => !owners.includes(q.id)).map((q) => q.id);
-      }
-      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.HAS_ACTIVE_ORDER:
-        return this.GetUsersByOrders(activeOrders);
-      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.HAS_UNACTIVE_ORDER:
-        return this.GetUsersByOrders(expired);
-      default:
-        return [];
-    }
-  }
-  get SendMessageTargetsCount() {
-    return this.SendMessageTargets.length;
-  }
-  get CanSendMessage() {
-    return this.SendMessageTargetsCount !== 0 && !!this.state.sendMessage.en && !!this.state.sendMessage.ru && !!this.state.sendMessage.uk;
-  }
-  UpdateData() {
-    if (!Core.configAdmins.includes(this.props.user.id)) return;
-    this.PostRequestUser("/tgapi/admin/data", {}).then((res) => {
-      if (!res || !res.status) return;
-      this.setState(admin_spreadValues({}, res), this.ResetLoadTimer);
-    });
-    this.GetRequestUser("/api/happ-routings", {}).then((res) => {
-      if (!res) return;
-      this.setState({ routings: res.routing });
-    });
-    this.GetRequestUser("/api/presets/list", {}).then((res) => {
-      if (!res) return;
-      this.setState({ presets: res.presets });
-    });
-  }
-  componentWillUnmount() {
-    var _a;
-    window.removeEventListener("mousemove", this.HandleUserModalMouseMove);
-    window.removeEventListener("mouseup", this.HandleUserModalMouseUp);
-    (_a = this.OrderDataEv) == null ? void 0 : _a.Remove();
-    super.componentWillUnmount();
-  }
-  RenderFloatingUserModals(ctx) {
-    if (!this.state.userFloatingModals.length) return null;
-    return this.state.userFloatingModals.map((modal) => {
-      var _a;
-      const user = (_a = this.state.users.find((q) => q.id === modal.userId)) != null ? _a : modal.userData;
-      if (!user) return null;
-      const floatingState = admin_spreadProps(admin_spreadValues({}, this.state), {
-        editUser: modal.userId,
-        addDaysOrder: modal.addDaysOrder,
-        editUserBalanceInput: modal.editUserBalanceInput,
-        editUserBalanceInputCurrency: modal.editUserBalanceInputCurrency,
-        editUserBalanceAddInput: modal.editUserBalanceAddInput,
-        editUserTarif: modal.editUserTarif,
-        editUserTarifDays: modal.editUserTarifDays,
-        editUserPayments: modal.editUserPayments,
-        editUserRefs: modal.editUserRefs,
-        editUserShowOrders: modal.editUserShowOrders,
-        editUserShowLogs: modal.editUserShowLogs,
-        editUserShowPayments: modal.editUserShowPayments,
-        editUserShowRefs: modal.editUserShowRefs
-      });
-      const floatingCtx = admin_spreadProps(admin_spreadValues({}, ctx), {
-        state: floatingState,
-        setState: (patch, cb) => {
-          const modalPatch = {};
-          const globalPatch = admin_spreadValues({}, patch);
-          const modalKeys = [
-            "addDaysOrder",
-            "editUserBalanceInput",
-            "editUserBalanceInputCurrency",
-            "editUserBalanceAddInput",
-            "editUserTarif",
-            "editUserTarifDays",
-            "editUserPayments",
-            "editUserRefs",
-            "editUserShowOrders",
-            "editUserShowLogs",
-            "editUserShowPayments",
-            "editUserShowRefs"
-          ];
-          modalKeys.forEach((key) => {
-            if (Object.prototype.hasOwnProperty.call(patch, key)) {
-              modalPatch[key] = patch[key];
-              delete globalPatch[key];
-            }
-          });
-          const hasModalPatch = Object.keys(modalPatch).length > 0;
-          const hasGlobalPatch = Object.keys(globalPatch).length > 0;
-          if (!hasModalPatch && !hasGlobalPatch) {
-            cb == null ? void 0 : cb();
-            return;
-          }
-          this.setState((prev) => {
-            const next = {};
-            if (hasModalPatch) {
-              next.userFloatingModals = prev.userFloatingModals.map(
-                (q) => q.id === modal.id ? admin_spreadValues(admin_spreadValues({}, q), modalPatch) : q
-              );
-            }
-            if (hasGlobalPatch) Object.assign(next, globalPatch);
-            return next;
-          }, cb);
-        }
-      });
-      return /* @__PURE__ */ react.createElement(
-        "div",
-        {
-          className: "admin-floating-user-modal",
-          key: modal.id,
-          style: {
-            left: modal.left,
-            top: modal.top,
-            width: modal.width,
-            height: modal.height,
-            zIndex: modal.zIndex
-          },
-          onMouseDown: () => this.BringFloatingUserModalToFront(modal.id)
-        },
-        /* @__PURE__ */ react.createElement(
-          "div",
-          {
-            className: "admin-floating-user-modal-header",
-            onMouseDown: (e) => this.StartDragFloatingUserModal(modal.id, e)
-          },
-          /* @__PURE__ */ react.createElement("div", { className: "admin-floating-user-modal-title" }, "\u{1F464} ", user.name || user.id),
-          /* @__PURE__ */ react.createElement(
-            "button",
-            {
-              className: "small redBg",
-              onClick: (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                this.CloseFloatingUserModal(modal.id);
-              }
-            },
-            "\u2715"
-          )
-        ),
-        /* @__PURE__ */ react.createElement("div", { className: "admin-floating-user-modal-body" }, /* @__PURE__ */ react.createElement(UserEditPanel, { editUser: user, ctx: floatingCtx })),
-        /* @__PURE__ */ react.createElement(
-          "div",
-          {
-            className: "admin-floating-user-modal-resize",
-            onMouseDown: (e) => this.StartResizeFloatingUserModal(modal.id, e)
-          }
-        )
-      );
-    });
-  }
-  RenderInstructionModal() {
-    const modal = this.state.instructionModal;
-    if (!modal) return null;
-    return RenderInstructionModal(
-      modal,
-      !!this.props.user.tg_id,
-      this.LangString,
-      this.PostRequestUser,
-      () => {
-        this.setState({ instructionModal: null });
-      }
-    );
-  }
-  // ─────────────────────────────────────────────
-  // RenderBlock — универсальная секция списка
-  // ─────────────────────────────────────────────
-  CanRenderAdditional() {
-    return !this.state.editUser && !this.state.sendMessage.show && !this.state.new_node.opened && !this.state.install_node.opened && !this.state.firewallEdit.show && !this.state.inPromoMenu.edit && !this.state.presetsEdit.show && !this.state.bulkRenewal.show;
-  }
-  RenderStats() {
-    if (!this.CanRenderAdditional()) return null;
-    return /* @__PURE__ */ react.createElement("div", { className: "admin-header-stats" }, /* @__PURE__ */ react.createElement("div", { className: "stat-card accent" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, this.LangString("applicationButtonsAdminDisk", "")), /* @__PURE__ */ react.createElement(
-      "div",
-      {
-        className: "value",
-        style: { color: this.state.disk / 1e9 < 1 ? "red" : void 0 }
-      },
-      Traffic.FormatBytes(this.state.disk)
-    )), /* @__PURE__ */ react.createElement("div", { className: "stat-card green" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, "Profit (Month)"), /* @__PURE__ */ react.createElement("div", { className: "value" }, this.ShowInCurrency(
-      this.state.paymentsData.currentMonth * 0.83 * 0.95,
-      true
-    ))), /* @__PURE__ */ react.createElement("div", { className: "stat-card green" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, "Profit (Prev Month)"), /* @__PURE__ */ react.createElement("div", { className: "value" }, this.ShowInCurrency(
-      this.state.paymentsData.previousMonth * 0.83 * 0.95,
-      true
-    ))), /* @__PURE__ */ react.createElement("div", { className: "stat-card" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, "Total Payments"), /* @__PURE__ */ react.createElement("div", { className: "value" }, this.ShowInCurrency(
-      this.state.paymentsData.total * 0.83 * 0.95,
-      true
-    ))), /* @__PURE__ */ react.createElement("div", { className: "stat-card" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, "Uptime (last restart backend)"), /* @__PURE__ */ react.createElement("div", { className: "value" }, System/* System */.i.secondsToString(System/* System */.i.timestamp - this.state.tm_start), " [", System/* System */.i.timeStampString(this.state.tm_start), "]")), /* @__PURE__ */ react.createElement("div", { className: "stat-card" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, "Users"), /* @__PURE__ */ react.createElement("div", { className: "value" }, this.state.users.length)));
-  }
-  RenderSidebarItem(view, icon, labelKey, removeLabelEmoji = false, ...args) {
-    const active = this.state.currentView === view;
-    let label = this.LangString(labelKey, ...args);
-    if (removeLabelEmoji) {
-      label = label.split(" ").slice(1).join(" ");
-    }
-    return /* @__PURE__ */ react.createElement(
-      "div",
-      {
-        className: `nav-item ${active ? "active" : ""}`,
-        onClick: () => this.SetView(view)
-      },
-      /* @__PURE__ */ react.createElement("span", { className: "icon" }, icon),
-      /* @__PURE__ */ react.createElement("span", { className: "label" }, label)
-    );
-  }
-  RenderSidebar() {
-    var _a, _b, _c, _d;
-    return /* @__PURE__ */ react.createElement("div", { className: `admin-sidebar ${this.state.sidebarOpen ? "open" : ""}` }, /* @__PURE__ */ react.createElement("div", { className: "admin-sidebar-header" }, /* @__PURE__ */ react.createElement("span", null, "\u{1F6E1}\uFE0F"), /* @__PURE__ */ react.createElement("span", null, "Admin Panel")), /* @__PURE__ */ react.createElement("div", { className: "admin-sidebar-nav" }, /* @__PURE__ */ react.createElement("div", { className: "nav-group" }, /* @__PURE__ */ react.createElement("div", { className: "group-label" }, "Overview"), this.RenderSidebarItem(
-      "dashboard",
-      "\u{1F4CA}",
-      "applicationAdminDashboard",
-      true
-    ), this.RenderSidebarItem("analytics", "\u{1F4C8}", "adminAnalyticsNav"), this.RenderSidebarItem(
-      "users",
-      "\u{1F465}",
-      "applicationAdminUsers",
-      true,
-      this.state.users.length
-    ), this.RenderSidebarItem(
-      "orders",
-      "\u{1F4E6}",
-      "applicationAdminOrders",
-      true,
-      this.state.orders.length
-    )), /* @__PURE__ */ react.createElement("div", { className: "nav-group" }, /* @__PURE__ */ react.createElement("div", { className: "group-label" }, "Finance"), this.RenderSidebarItem(
-      "finance",
-      "\u{1F4B3}",
-      "applicationAdminPaymentsLast",
-      true,
-      this.state.payments.length
-    )), /* @__PURE__ */ react.createElement("div", { className: "nav-group" }, /* @__PURE__ */ react.createElement("div", { className: "group-label" }, "Tools"), this.RenderSidebarItem(
-      "marketing",
-      "\u{1F39F}\uFE0F",
-      "applicationAdminPromos",
-      true,
-      this.state.promos.length
-    ), this.RenderSidebarItem(
-      "messages",
-      "\u{1F680}",
-      "admin-nav-messages",
-      false
-    ), this.RenderSidebarItem(
-      "infrastructure",
-      "\u{1F310}",
-      "admin-nodes",
-      true,
-      ((_b = (_a = this.props.nodes) == null ? void 0 : _a.length) != null ? _b : 0) + ((_d = (_c = this.props.relayNodes) == null ? void 0 : _c.length) != null ? _d : 0)
-    ), this.RenderSidebarItem(
-      "firewall",
-      "\u{1F9F1}",
-      "admin-nav-firewall",
-      false
-    )), /* @__PURE__ */ react.createElement("div", { className: "nav-group" }, /* @__PURE__ */ react.createElement("div", { className: "group-label" }, "System"), this.RenderSidebarItem(
-      "system",
-      "\u2699\uFE0F",
-      "applicationAdminCoreSettings"
-    ), this.RenderSidebarItem(
-      "logs_admin",
-      "\u{1F4CB}",
-      "admin-nav-logs",
-      false
-    ), this.RenderSidebarItem(
-      "routing",
-      "\u{1F500}",
-      "admin-routing",
-      true
-    ), this.RenderSidebarItem(
-      "presets",
-      "\u{1F4CB}",
-      "admin-presets",
-      true,
-      this.state.presets.length
-    ), this.RenderSidebarItem("wiki", "\u{1F4DA}", "applicationButtonsFaq"))));
-  }
-  // ─────────────────────────────────────────────
-  // render
-  // ─────────────────────────────────────────────
-  render() {
-    const editUser = this.state.editUser ? this.state.users.find((q) => q.id === this.state.editUser) : void 0;
-    const showBackButton = !telegram_isTelegramEnv() && (!!this.state.editUser || !!this.state.inPromoMenu.edit || !!this.state.new_node.opened || !!this.state.install_node.opened || !!this.state.coreSettings.opened || !!this.state.sendMessage.show || !!this.state.firewallEdit.show || !!this.state.presetsEdit.show || !!this.state.bulkRenewal.show || !!this.state.connectionTest.open);
-    const ctx = {
-      langString: this.LangString,
-      showInCurrency: this.ShowInCurrency,
-      postRequestUser: this.PostRequestUser,
-      convertToCurrency: this.ConvertToCurrency,
-      secondsToString: this.SecondsToString,
-      currency: this.currency,
-      ownerShow: this.OwnerShow,
-      state: this.state,
-      setState: this.setState.bind(this),
-      nodes: this.props.nodes,
-      relayNodes: this.props.relayNodes,
-      currentUser: this.props.user,
-      showInstructionModal: this.showInstructionModal,
-      openFloatingUserModal: this.OpenFloatingUserModal,
-      openConnectionTest: this.OpenConnectionTest
-    };
-    const isOverlayVisible = this.state.currentView === "dashboard";
-    return /* @__PURE__ */ react.createElement("div", { className: "admin" }, /* @__PURE__ */ react.createElement("div", { className: "admin-container" }, this.RenderSidebar(), /* @__PURE__ */ react.createElement("div", { className: "admin-content" }, /* @__PURE__ */ react.createElement("div", { className: "view-header" }, /* @__PURE__ */ react.createElement("h2", null, this.state.currentView.charAt(0).toUpperCase() + this.state.currentView.slice(1)), /* @__PURE__ */ react.createElement("div", { className: "mobile-toggle" }, /* @__PURE__ */ react.createElement("button", { className: "small", onClick: this.ToggleSidebar }, "\u2630"))), showBackButton && /* @__PURE__ */ react.createElement(
-      "button",
-      {
-        className: "small orangeBg web-back-button",
-        onClick: () => this.BackButton()
-      },
-      "\u{1F519} ",
-      this.LangString("applicationAdminBackButton") || "Back"
-    ), isOverlayVisible && this.RenderStats(), this.state.firewallEdit.show ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(FirewallEditForm, { ctx })) : this.state.coreSettings.opened ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(CoreSettingsPanel, { ctx })) : this.state.install_node.opened ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(InstallNodeForm, { ctx })) : this.state.new_node.opened ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(NewNodeForm, { ctx })) : this.state.sendMessage.show ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(
-      SendMessagePanel,
-      {
-        ctx,
-        targets: this.SendMessageTargets,
-        canSend: this.CanSendMessage
-      }
-    )) : this.state.presetsEdit.show ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(PresetsPanel, { ctx })) : this.state.bulkRenewal.show ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(BulkRenewalPanel, { ctx })) : this.state.inPromoMenu.edit ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(PromoEditForm, { ctx })) : editUser ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(UserEditPanel, { editUser, ctx })) : (
-      /* ── Main Views ── */
-      /* @__PURE__ */ react.createElement("div", { className: "admin-view-container" }, this.state.currentView === "dashboard" && /* @__PURE__ */ react.createElement(Dashboard, { ctx }), this.state.currentView === "analytics" && /* @__PURE__ */ react.createElement(AnalyticsPanel, { ctx }), this.state.currentView === "users" && /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock(
-        "users",
-        "applicationAdminUsers",
-        (u, i) => /* @__PURE__ */ react.createElement(UserItem, { key: u.id + i, user: u, index: i, ctx })
-      ), this.RenderBlock(
-        "users",
-        "applicationAdminUsersActive",
-        (u, i) => /* @__PURE__ */ react.createElement(UserItem, { key: u.id + i, user: u, index: i, ctx }),
-        void 0,
-        "active"
-      )), this.state.currentView === "orders" && /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock(
-        "orders",
-        "applicationAdminOrders",
-        (o, i) => /* @__PURE__ */ react.createElement(OrderItem, { key: o.id, order: o, index: i, ctx })
-      ), this.RenderBlock(
-        "orders",
-        "applicationAdminOrdersActive",
-        (o, i) => /* @__PURE__ */ react.createElement(OrderItem, { key: o.id, order: o, index: i, ctx }),
-        void 0,
-        "active",
-        "expire"
-      ), this.RenderBlock(
-        "orders",
-        "applicationAdminOrdersExpired",
-        (o, i) => /* @__PURE__ */ react.createElement(OrderItem, { key: o.id, order: o, index: i, ctx }),
-        void 0,
-        "expired",
-        "expire"
-      )), this.state.currentView === "finance" && /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock(
-        "payments",
-        "applicationAdminPaymentsLast",
-        (p, i) => /* @__PURE__ */ react.createElement(
-          PaymentItem,
-          {
-            key: p.id,
-            payment: p,
-            index: i,
-            ctx
-          }
-        )
-      ), this.RenderBlock(
-        "paymentsSuccess",
-        "applicationAdminPaymentsLastSuccess",
-        (p, i) => /* @__PURE__ */ react.createElement(
-          PaymentItem,
-          {
-            key: p.id,
-            payment: p,
-            index: i,
-            ctx
-          }
-        )
-      )), this.state.currentView === "marketing" && /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, /* @__PURE__ */ react.createElement("div", { style: { marginBottom: "16px" } }, /* @__PURE__ */ react.createElement(
-        "button",
-        {
-          className: "admin-btn orangeBg",
-          style: { width: "100%", padding: "10px" },
-          onClick: (e) => {
-            e.preventDefault();
-            this.setState({ bulkRenewal: { show: true } });
-          }
-        },
-        this.LangString("admin.bulkRenewal.button")
-      )), this.RenderBlock(
-        "promos",
-        "applicationAdminPromos",
-        (p, i) => /* @__PURE__ */ react.createElement(PromoItem, { key: p.id, promo: p, index: i, ctx }),
-        () => /* @__PURE__ */ react.createElement(
-          "button",
-          {
-            className: "admin-btn small",
-            onClick: (e) => {
-              e.preventDefault();
-              this.setState({
-                inPromoMenu: admin_spreadProps(admin_spreadValues({}, this.state.inPromoMenu), {
-                  edit: true,
-                  editName: ""
-                })
-              });
-            }
-          },
-          "\u2795 ",
-          this.LangString("applicationAdminPromosCreate")
-        )
-      )), this.state.currentView === "messages" && /* @__PURE__ */ react.createElement("div", { className: "action-row" }, /* @__PURE__ */ react.createElement(
-        "button",
-        {
-          className: "admin-btn blueBg",
-          style: { width: "100%" },
-          onClick: (e) => {
-            e.preventDefault();
-            this.setState({
-              sendMessage: admin_spreadProps(admin_spreadValues({}, this.state.sendMessage), {
-                show: true
-              })
-            });
-          }
-        },
-        "\u{1F680} ",
-        this.LangString("applicationAdminSendMessage")
-      )), this.state.currentView === "infrastructure" && /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement(XrayReleasePanel, { ctx }), /* @__PURE__ */ react.createElement(
-        "div",
-        {
-          className: "action-row",
-          style: { marginBottom: "16px" }
-        },
-        /* @__PURE__ */ react.createElement(
-          "button",
-          {
-            className: "admin-btn blueBg",
-            style: { width: "100%" },
-            onClick: (e) => {
-              e.preventDefault();
-              this.OpenConnectionTest();
-            }
-          },
-          "\u{1F50C} ",
-          this.LangString("connection_test_button")
-        )
-      ), /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock("nodes", "admin-nodes", (n, i) => /* @__PURE__ */ react.createElement(NodeItem, { key: n.id, node: n, index: i, ctx }))), /* @__PURE__ */ react.createElement(
-        "div",
-        {
-          className: "action-row",
-          style: { marginTop: "16px", gap: "12px" }
-        },
-        /* @__PURE__ */ react.createElement(
-          "button",
-          {
-            className: "admin-btn greenBg",
-            style: { flex: 1 },
-            onClick: (e) => {
-              e.preventDefault();
-              this.setState({
-                new_node: admin_spreadProps(admin_spreadValues({}, this.state.new_node), { opened: true })
-              });
-            }
-          },
-          "\u2795 ",
-          this.LangString("applicationAdminAddNode")
-        ),
-        /* @__PURE__ */ react.createElement(
-          "button",
-          {
-            className: "admin-btn orangeBg",
-            style: { flex: 1 },
-            onClick: (e) => {
-              e.preventDefault();
-              this.setState({
-                install_node: admin_spreadProps(admin_spreadValues({}, this.state.install_node), {
-                  opened: true
-                })
-              });
-            }
-          },
-          "\u{1F6E0}\uFE0F ",
-          this.LangString("applicationAdminInstallNode")
-        )
-      )), this.state.currentView === "firewall" && /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock(
-        "firewall",
-        "admin-firewall",
-        (fw, i) => /* @__PURE__ */ react.createElement(
-          FirewallItem,
-          {
-            key: fw.id,
-            item: fw,
-            index: i,
-            ctx
-          }
-        )
-      )), /* @__PURE__ */ react.createElement("div", { className: "action-row", style: { marginTop: "16px" } }, /* @__PURE__ */ react.createElement(
-        "button",
-        {
-          className: "admin-btn redBg",
-          style: { width: "100%" },
-          onClick: (e) => {
-            e.preventDefault();
-            this.setState({
-              firewallEdit: admin_spreadProps(admin_spreadValues({}, this.state.firewallEdit), {
-                show: true
-              })
-            });
-          }
-        },
-        "\u{1F9F1} ",
-        this.LangString("admin-firewall_add")
-      ))), this.state.currentView === "system" && /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement(BackupPanel, { ctx }), /* @__PURE__ */ react.createElement("div", { className: "action-row", style: { marginTop: "16px" } }, /* @__PURE__ */ react.createElement(
-        "button",
-        {
-          className: "admin-btn",
-          style: { width: "100%" },
-          onClick: (e) => {
-            e.preventDefault();
-            this.setState({
-              coreSettings: admin_spreadProps(admin_spreadValues({}, this.state.coreSettings), {
-                opened: true
-              })
-            });
-          }
-        },
-        "\u2699\uFE0F ",
-        this.LangString("applicationAdminCoreSettings")
-      ))), this.state.currentView === "logs_admin" && /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock("logs", "logRecord-title", (l, i) => /* @__PURE__ */ react.createElement(LogItem, { key: l.id, log: l, index: i, ctx }))), this.state.currentView === "routing" && /* @__PURE__ */ react.createElement(RoutingPanel, { ctx }), this.state.currentView === "presets" && /* @__PURE__ */ react.createElement(PresetsPanel, { ctx }), this.state.currentView === "wiki" && /* @__PURE__ */ react.createElement(WikiPanel, { ctx }))
-    ), this.RenderFloatingUserModals(ctx))), this.RenderInstructionModal(), this.state.connectionTest.open && /* @__PURE__ */ react.createElement(
-      ConnectionTestModal,
-      {
-        ctx,
-        filterNodeIds: this.state.connectionTest.nodeIds,
-        onClose: this.CloseConnectionTest
-      }
-    ));
-  }
-}
-
-;// ./src/config/referral.ts
-
-
-const REFERRAL_CONFIG = {
-  host_percent: 17,
-  // кэшбэк от пополнения рефералом
-  host_bonus: (0,config_currency/* CurrencyConvertToUSD */.oj)(50, "RUB"),
-  // бонус за первый заказ реферала тому, кто привел реферала
-  referral_percent: 6,
-  // процент кэшбэка если ты реферал
-  referral_bonus: (0,config_currency/* CurrencyConvertToUSD */.oj)(40, "RUB")
-  // бонус за первый заказ реферала самому рефералу
-};
-
-;// ./src/shared/payments.ts
-
-
-
-
-const orderPaymentMethods = (list) => {
-  const wallets = list.filter((q) => q.name.startsWith("FKWallet"));
-  const rest = list.filter((q) => !q.name.startsWith("FKWallet"));
-  return [...rest, ...wallets];
-};
-const paymentAmountBoundsUsd = (item) => {
-  let min = (0,config_currency/* CurrencyConvertToUSD */.oj)(item.min_sum, item.currency);
-  let max = (0,config_currency/* CurrencyConvertToUSD */.oj)(item.max_sum, item.currency);
-  if (min < project/* PAYMENT_MIN_SUM */.i3) {
-    min = project/* PAYMENT_MIN_SUM */.i3;
-  }
-  if (max < project/* PAYMENT_MIN_SUM */.i3) {
-    max = project/* PAYMENT_MIN_SUM */.i3;
-  }
-  return { min, max };
-};
-const ceilMoney = (amount) => {
-  return Math.ceil(amount * 100 - 1e-6) / 100;
-};
-const floorMoney = (amount) => {
-  return Math.floor(amount * 100 + 1e-6) / 100;
-};
-const paymentLimitsInCurrency = (item, currency, maxUsdCap) => {
-  const usd = paymentAmountBoundsUsd(item);
-  let maxUsd = usd.max;
-  let limitReached = false;
-  if (maxUsdCap !== void 0) {
-    if (maxUsdCap <= 0) limitReached = true;
-    maxUsd = Math.min(maxUsd, Math.max(0, maxUsdCap));
-  }
-  const min = ceilMoney((0,config_currency/* CurrencyConvert */.Xv)(usd.min, currency));
-  let max = floorMoney((0,config_currency/* CurrencyConvert */.Xv)(maxUsd, currency));
-  const payable = !limitReached && max + 1e-9 >= min;
-  if (max < min) max = min;
-  return { min, max, payable, limitReached };
-};
-const formatPaymentAmount = (amount, currency) => {
-  return `${System/* System */.i.numberFormat(amount)} ${currency}`;
-};
-const amountMatchesPaymentLimits = (amount, limits) => {
-  if (!limits.payable || !Number.isFinite(amount) || amount <= 0) return false;
-  const cents = Math.round(amount * 100);
-  return cents >= Math.round(limits.min * 100) && cents <= Math.round(limits.max * 100);
-};
-const isPaymentEmailValid = (email) => {
-  return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    String(email).toLowerCase()
-  );
-};
-
-;// ./src/application/pages/balance.tsx
-
-var balance_defProp = Object.defineProperty;
-var balance_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var balance_hasOwnProp = Object.prototype.hasOwnProperty;
-var balance_propIsEnum = Object.prototype.propertyIsEnumerable;
-var balance_defNormalProp = (obj, key, value) => key in obj ? balance_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var balance_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (balance_hasOwnProp.call(b, prop))
-      balance_defNormalProp(a, prop, b[prop]);
-  if (balance_getOwnPropSymbols)
-    for (var prop of balance_getOwnPropSymbols(b)) {
-      if (balance_propIsEnum.call(b, prop))
-        balance_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-
-
-
-
-
-
-
-const balance_state = {
-  amount: 0,
-  loadPlatform: false,
-  platform: project/* PAYMENT_METHODS_LIST */.vF[0].id,
-  currencyList: [],
-  currencyItem: "",
-  email: "",
-  err: "",
-  createWait: false
-};
-class BalancePage extends BasePage {
-  constructor(props) {
-    super(props);
-    this.state = balance_spreadValues({}, balance_state);
-    this.CanClose = () => {
-      if (this.state.createWait) return false;
-      return true;
-    };
-    this.BackButton = () => {
-      if (this.state.createWait) return true;
-      return false;
-    };
-    this.MainButton = () => {
-      var _a;
-      const limits = this.currentMinMax;
-      const active = !!(this.currencyItemCurrent && limits && amountMatchesPaymentLimits(this.state.amount, limits) && (this.state.email || !this.needEmail) && (!this.needEmail || isPaymentEmailValid(this.state.email)));
-      return {
-        text: this.state.createWait ? "applicationBalanceAmountButtonLoading" : active ? "applicationBalanceAmountButton" : ((_a = this.currentMinMax) == null ? void 0 : _a.limitReached) ? "applicationBalanceErrBalanceLimitButton" : "applicationBalanceAmountButtonErr",
-        active,
-        showProgress: !!this.state.createWait,
-        onClick: () => {
-          if (this.state.createWait) return;
-          this.setState({ createWait: true });
-          this.PostRequestUser(
-            "/tgapi/createPaymentKassa",
-            {
-              amount: this.state.amount,
-              currencyItem: this.state.currencyItem,
-              email: this.state.email,
-              currency: this.currency,
-              platform: this.state.platform
-            }
-          ).then((res) => {
-            if (!res || !res.status) {
-              if (res == null ? void 0 : res.reason) {
-                this.setState({ err: res.reason, createWait: false });
-                return;
-              }
-            } else {
-              if (this.state.platform === "telegram") {
-                WebApp.openInvoice(res.url, (status) => {
-                  console.log("Invoice status", status);
-                });
-              } else {
-                WebApp.openLink(res.url);
-              }
-            }
-            this.setState({ createWait: false });
-          });
-        }
-      };
-    };
-    this.ReloadPaymentMethods();
-  }
-  ReloadPaymentMethods() {
-    this.PostRequestUser(
-      "/tgapi/getPaymentMethoods",
-      {
-        method: this.state.platform
-      }
-    ).then((res) => {
-      if (res == null ? void 0 : res.list) {
-        res.list = orderPaymentMethods(res.list);
-        this.setState({
-          loadPlatform: true,
-          currencyList: res.list,
-          currencyItem: res.list[0].service,
-          amount: 0,
-          // amount: Math.max(
-          //   CurrencyConvert(
-          //     CurrencyConvertToUSD(res.list[0].min_sum, res.list[0].currency),
-          //     this.currency
-          //   ),
-          //   CurrencyConvert(PAYMENT_MIN_SUM, this.currency)
-          // ),
-          email: localStorage.getItem("email") || ""
-        });
-      }
-    });
-  }
-  get needEmail() {
-    var _a;
-    if (!this.state.loadPlatform) return false;
-    return !!((_a = project/* PAYMENT_METHODS_LIST */.vF.find((q) => q.id === this.state.platform)) == null ? void 0 : _a.email);
-  }
-  get currencyItemCurrent() {
-    if (!this.state.loadPlatform) return void 0;
-    return this.state.currencyList.find(
-      (q) => q.service === this.state.currencyItem
-    );
-  }
-  get currentPlatformName() {
-    const platform = project/* PAYMENT_METHODS_LIST */.vF.find(
-      (q) => q.id === this.state.platform
-    );
-    return platform ? this.LangString(platform.name) : "";
-  }
-  get currentMinMax() {
-    const item = this.currencyItemCurrent;
-    if (!item) return void 0;
-    const maxBalance = Math.max(
-      0,
-      BALANCE_LIMIT_AMOUNT - this.props.user.balance
-    );
-    const limits = paymentLimitsInCurrency(item, this.currency, maxBalance);
-    return {
-      minText: formatPaymentAmount(limits.min, this.currency),
-      maxText: formatPaymentAmount(limits.max, this.currency),
-      min: limits.min,
-      max: limits.max,
-      payable: limits.payable,
-      limitReached: limits.limitReached
-    };
-  }
-  render() {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _i;
-    const MainButton = typeof this.MainButton === "function" ? this.MainButton() : this.MainButton;
-    return /* @__PURE__ */ react.createElement("div", { className: "balance" }, /* @__PURE__ */ react.createElement(
-      "div",
-      {
-        className: "title",
-        dangerouslySetInnerHTML: {
-          __html: this.LangString("applicationBalanceTitle")
-        }
-      }
-    ), this.state.err ? /* @__PURE__ */ react.createElement(
-      "div",
-      {
-        className: "error redBg",
-        dangerouslySetInnerHTML: {
-          __html: this.LangString(
-            "applicationBalanceErr",
-            this.LangStringTry(this.state.err)
-          )
-        }
-      }
-    ) : /* @__PURE__ */ react.createElement(react.Fragment, null), ((_a = this.currentMinMax) == null ? void 0 : _a.limitReached) ? /* @__PURE__ */ react.createElement(
-      "div",
-      {
-        className: "error redBg",
-        dangerouslySetInnerHTML: {
-          __html: this.LangString(
-            "applicationBalanceErrBalanceLimit",
-            this.ShowInCurrency(BALANCE_LIMIT_AMOUNT, false)
-          )
-        }
-      }
-    ) : /* @__PURE__ */ react.createElement(react.Fragment, null), project/* PAYMENT_METHODS_LIST */.vF.length > 1 ? /* @__PURE__ */ react.createElement("div", { className: "item" }, /* @__PURE__ */ react.createElement("div", { className: "first" }, /* @__PURE__ */ react.createElement("span", null, this.LangString("applicationBalancePlatform")), /* @__PURE__ */ react.createElement(
-      "select",
-      {
-        className: "input-item",
-        value: this.state.platform,
-        onChange: (e) => {
-          e.preventDefault();
-          this.setState(
-            {
-              platform: e.currentTarget.value,
-              err: "",
-              loadPlatform: false
-            },
-            () => {
-              this.ReloadPaymentMethods();
-            }
-          );
-        }
-      },
-      project/* PAYMENT_METHODS_LIST */.vF.map((q) => {
-        return /* @__PURE__ */ react.createElement("option", { key: q.id, value: q.id }, this.LangString(q.name));
-      })
-    )), this.currencyItemCurrent ? /* @__PURE__ */ react.createElement(
-      "span",
-      {
-        className: "desc",
-        dangerouslySetInnerHTML: {
-          __html: this.LangString(
-            "applicationBalanceCurrencyDesc",
-            this.currencyItemCurrent.percent
-          )
-        }
-      }
-    ) : /* @__PURE__ */ react.createElement(react.Fragment, null)) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.currencyItemCurrent && this.state.loadPlatform ? /* @__PURE__ */ react.createElement("div", { className: "item" }, /* @__PURE__ */ react.createElement("div", { className: "first" }, /* @__PURE__ */ react.createElement("span", null, this.LangString(
-      "applicationBalanceAmount",
-      this.currencyItemCurrent.useCurrency ? this.currencyItemCurrent.currency : this.currency
-    )), /* @__PURE__ */ react.createElement(
-      "input",
-      {
-        className: "input-item",
-        value: this.state.amount,
-        min: (_b = this.currentMinMax) == null ? void 0 : _b.min,
-        max: (_c = this.currentMinMax) == null ? void 0 : _c.max,
-        step: "any",
-        type: "number",
-        onChange: (e) => {
-          var _a2, _b2;
-          e.preventDefault();
-          const amount = Math.min(
-            (_b2 = (_a2 = this.currentMinMax) == null ? void 0 : _a2.max) != null ? _b2 : 9999999999999,
-            e.currentTarget.valueAsNumber
-          );
-          this.setState({
-            amount,
-            err: ""
-          });
-        }
-      }
-    )), /* @__PURE__ */ react.createElement(
-      "span",
-      {
-        className: "desc",
-        dangerouslySetInnerHTML: {
-          __html: this.LangString(
-            "applicationBalanceAmountLimit",
-            (_d = this.currentMinMax) == null ? void 0 : _d.minText,
-            (_e = this.currentMinMax) == null ? void 0 : _e.maxText,
-            this.currencyItemCurrent.percent,
-            this.currentPlatformName
-          )
-        }
-      }
-    ), this.currencyItemCurrent && this.state.amount ? /* @__PURE__ */ react.createElement(
-      "span",
-      {
-        className: "desc",
-        dangerouslySetInnerHTML: {
-          __html: this.LangString(
-            "applicationBalanceAmountWithPercent",
-            `${(this.state.amount * (1 + this.currencyItemCurrent.percent / 100)).toFixed(2)} ${this.currency}`,
-            `${(this.state.amount / 100 * REFERRAL_CONFIG.referral_percent).toFixed(2)} ${this.currency}`
-          )
-        }
-      }
-    ) : /* @__PURE__ */ react.createElement(react.Fragment, null)) : /* @__PURE__ */ react.createElement(react.Fragment, null), project/* PAYMENT_METHODS_LIST */.vF.length > 1 && ((_f = this.state.currencyList) == null ? void 0 : _f.length) && ((_g = this.state.currencyList) == null ? void 0 : _g.length) > 1 && this.state.loadPlatform ? /* @__PURE__ */ react.createElement("div", { className: "item" }, /* @__PURE__ */ react.createElement("div", { className: "first" }, /* @__PURE__ */ react.createElement("span", null, this.LangString("applicationBalanceCurrency")), /* @__PURE__ */ react.createElement(
-      "select",
-      {
-        value: this.state.currencyItem,
-        onChange: (e) => {
-          e.preventDefault();
-          const next = this.state.currencyList.find(
-            (q) => q.service === e.currentTarget.value
-          );
-          const nextLimits = next ? paymentLimitsInCurrency(next, this.currency) : void 0;
-          this.setState({
-            currencyItem: e.currentTarget.value,
-            amount: nextLimits ? Math.max(this.state.amount, nextLimits.min) : this.state.amount,
-            err: ""
-          });
-        }
-      },
-      this.state.currencyList.map((q) => {
-        return /* @__PURE__ */ react.createElement("option", { key: q.service, value: q.service }, q.name);
-      })
-    )), this.currencyItemCurrent ? /* @__PURE__ */ react.createElement(
-      "span",
-      {
-        className: "desc",
-        dangerouslySetInnerHTML: {
-          __html: this.LangString(
-            "applicationBalanceCurrencyDesc",
-            this.currencyItemCurrent.percent
-          )
-        }
-      }
-    ) : /* @__PURE__ */ react.createElement(react.Fragment, null)) : /* @__PURE__ */ react.createElement(react.Fragment, null), project/* PAYMENT_METHODS_LIST */.vF.length > 1 ? /* @__PURE__ */ react.createElement("div", { className: "item" }, /* @__PURE__ */ react.createElement(
-      "span",
-      {
-        className: "desc",
-        dangerouslySetInnerHTML: {
-          __html: this.LangString(
-            "applicationBalanceAmountDesc",
-            this.LangString(
-              (_i = (_h = project/* PAYMENT_METHODS_LIST */.vF.find((q) => q.id === this.state.platform)) == null ? void 0 : _h.name) != null ? _i : this.state.platform
-            )
-          )
-        }
-      }
-    )) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.needEmail ? /* @__PURE__ */ react.createElement("div", { className: "item" }, /* @__PURE__ */ react.createElement("div", { className: "first" }, /* @__PURE__ */ react.createElement("span", null, this.LangString("applicationBalanceEmail")), /* @__PURE__ */ react.createElement(
-      "input",
-      {
-        value: this.state.email,
-        type: "text",
-        onChange: (e) => {
-          e.preventDefault();
-          localStorage.setItem("email", e.currentTarget.value);
-          this.setState({
-            email: e.currentTarget.value,
-            err: ""
-          });
-        }
-      }
-    ))) : /* @__PURE__ */ react.createElement(react.Fragment, null), !telegram_isTelegramEnv() && !!MainButton && /* @__PURE__ */ react.createElement("button", { disabled: !MainButton.active, onClick: MainButton.onClick }, this.LangString(MainButton.text)));
-  }
-}
 
 ;// ./node_modules/@mui/x-charts/esm/hooks/animation/useAnimateArea.js
 
@@ -72913,6 +72197,2456 @@ const LineChart = /*#__PURE__*/react.forwardRef(function LineChart(inProps, ref)
 if (false) {}
  false ? 0 : void 0;
 
+;// ./src/shared/analytics/types.ts
+
+const ANALYTICS_PROTOCOLS = ["vless", "https", "hysteria"];
+const ANALYTICS_HOUR_SECONDS = 3600;
+const ANALYTICS_MIN_RESOURCE_HITS = 20;
+const ANALYTICS_MIN_RESOURCE_UNIQUES = 5;
+const ANALYTICS_MIN_NODE_UNIQUES_FOR_RESOURCES = 5;
+const ANALYTICS_RETENTION_DAYS = 400;
+const ANALYTICS_RESOURCE_NODE_ID = "*";
+const ANALYTICS_TIMELINE_INTERVALS = [
+  3600,
+  3 * 3600,
+  6 * 3600,
+  12 * 3600,
+  86400
+];
+const ANALYTICS_TIMELINE_MAX_BUCKETS = 1500;
+
+;// ./src/application/pages/admin/modules/NodeUsageModule.tsx
+
+
+
+
+
+const HOUR = 3600;
+const DAY = 86400;
+const NodeUsageModule_REFRESH_MS = 6e4;
+const PRESET_SPANS = {
+  "24h": DAY,
+  "7d": 7 * DAY,
+  "14d": 14 * DAY,
+  "30d": 30 * DAY
+};
+const NodeUsageModule_PROTOCOL_COLORS = {
+  vless: "#5b8def",
+  https: "#3ddc97",
+  hysteria: "#ffb020"
+};
+const PROTOCOL_LABELS = {
+  vless: "VLESS",
+  https: "HTTPS",
+  hysteria: "Hysteria"
+};
+const TOTAL_COLOR = "#8b92a3";
+const NODE_PALETTE = [
+  "#5b8def",
+  "#3ddc97",
+  "#ffb020",
+  "#ff6b8a",
+  "#a78bfa",
+  "#22d3ee",
+  "#f97316",
+  "#84cc16",
+  "#e879f9",
+  "#38bdf8",
+  "#facc15",
+  "#fb7185"
+];
+const SIGNAL_MIN_BASELINE = 3;
+const SIGNAL_DROP_RATIO = 0.5;
+const BASELINE_SAMPLES = 7;
+function autoInterval(span) {
+  if (span <= 8 * DAY) return HOUR;
+  if (span <= 16 * DAY) return 3 * HOUR;
+  if (span <= 62 * DAY) return 6 * HOUR;
+  return DAY;
+}
+function alignStart(ts, interval) {
+  const date = new Date(ts * 1e3);
+  date.setHours(0, 0, 0, 0);
+  const midnight = Math.floor(date.getTime() / 1e3);
+  if (interval >= DAY) return midnight;
+  return midnight + Math.floor((ts - midnight) / interval) * interval;
+}
+function NodeUsageModule_toInputValue(ts) {
+  const date = new Date(ts * 1e3);
+  const pad = (n) => `${n}`.padStart(2, "0");
+  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}`;
+}
+function NodeUsageModule_fromInputValue(value) {
+  const ts = Math.floor(new Date(value).getTime() / 1e3);
+  return Number.isFinite(ts) ? ts : System/* System */.i.timestamp;
+}
+function formatBucket(ts, interval) {
+  const date = new Date(ts * 1e3);
+  const pad = (n) => `${n}`.padStart(2, "0");
+  const day = `${pad(date.getDate())}.${pad(date.getMonth() + 1)}`;
+  if (interval >= DAY) return day;
+  return `${day} ${pad(date.getHours())}:00`;
+}
+function median(values) {
+  if (!values.length) return 0;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+}
+function baselineAt(series, i, interval) {
+  const step = interval < DAY ? Math.round(DAY / interval) : 1;
+  const samples = [];
+  for (let k = 1; k <= BASELINE_SAMPLES; k++) {
+    const j = i - k * step;
+    if (j < 0) break;
+    samples.push(series[j]);
+  }
+  if (samples.length < 2 && step > 1) {
+    for (let j = i - 1; j >= 0 && samples.length < BASELINE_SAMPLES; j--) {
+      samples.push(series[j]);
+    }
+  }
+  return samples.length ? median(samples) : 0;
+}
+function isDip(value, baseline) {
+  return baseline >= SIGNAL_MIN_BASELINE && value < baseline * SIGNAL_DROP_RATIO;
+}
+function detectSignal(nodeId, key, series, buckets, lastFull, interval) {
+  if (lastFull < 0) return void 0;
+  const value = series[lastFull];
+  const baseline = baselineAt(series, lastFull, interval);
+  if (!isDip(value, baseline)) return void 0;
+  let start = lastFull;
+  while (start > 0 && isDip(series[start - 1], baselineAt(series, start - 1, interval))) {
+    start--;
+  }
+  return {
+    nodeId,
+    key,
+    kind: value === 0 ? "stopped" : "drop",
+    value,
+    baseline: Math.round(baseline),
+    since: buckets[start]
+  };
+}
+const Heatmap = ({ rows, buckets, interval, lastFull }) => {
+  const cellH = 16;
+  const labelW = 170;
+  const width = Math.max(1, buckets.length);
+  return /* @__PURE__ */ react.createElement("div", { className: "node-usage-heatmap" }, /* @__PURE__ */ react.createElement("div", { className: "labels", style: { width: labelW } }, rows.map((row) => /* @__PURE__ */ react.createElement("div", { key: row.id, style: { height: cellH }, title: row.label }, /* @__PURE__ */ react.createElement("span", { className: "dot", style: { background: row.color } }), row.label))), /* @__PURE__ */ react.createElement(
+    "svg",
+    {
+      viewBox: `0 0 ${width} ${rows.length * cellH}`,
+      preserveAspectRatio: "none",
+      style: { height: rows.length * cellH }
+    },
+    rows.map((row, r) => {
+      const max = Math.max(1, ...row.series);
+      return row.series.map((value, i) => {
+        const baseline = baselineAt(row.series, i, interval);
+        const dip = i <= lastFull && isDip(value, baseline);
+        const opacity = value ? 0.15 + 0.85 * (value / max) : 0.04;
+        return /* @__PURE__ */ react.createElement(
+          "rect",
+          {
+            key: `${row.id}-${i}`,
+            x: i,
+            y: r * cellH + 1,
+            width: 1.02,
+            height: cellH - 2,
+            fill: dip ? "var(--rm-danger)" : row.color,
+            fillOpacity: dip ? 0.9 : opacity
+          },
+          /* @__PURE__ */ react.createElement("title", null, `${row.label}
+${formatBucket(buckets[i], interval)}: ${value}`, baseline ? ` (\u2248${Math.round(baseline)})` : "")
+        );
+      });
+    })
+  ));
+};
+const NodeUsagePanel = ({ ctx }) => {
+  const { langString, postRequestUser, nodes, relayNodes } = ctx;
+  const allNodes = react.useMemo(
+    () => [...nodes, ...relayNodes],
+    [nodes, relayNodes]
+  );
+  const [preset, setPreset] = react.useState("24h");
+  const [customFrom, setCustomFrom] = react.useState(
+    System/* System */.i.timestamp - 7 * DAY
+  );
+  const [customTo, setCustomTo] = react.useState(System/* System */.i.timestamp);
+  const [intervalChoice, setIntervalChoice] = react.useState(
+    "auto"
+  );
+  const [protocol, setProtocol] = react.useState("");
+  const [selected, setSelected] = react.useState([]);
+  const [tick, setTick] = react.useState(0);
+  const [loading, setLoading] = react.useState(false);
+  const [data, setData] = react.useState();
+  const range = react.useMemo(() => {
+    const now = System/* System */.i.timestamp;
+    const to = preset === "custom" ? Math.max(customFrom, customTo) : now;
+    const rawFrom = preset === "custom" ? Math.min(customFrom, customTo) : now - PRESET_SPANS[preset];
+    const span = Math.max(HOUR, to - rawFrom);
+    const interval = intervalChoice === "auto" ? autoInterval(span) : intervalChoice;
+    const from = alignStart(rawFrom, interval);
+    return { from, to, interval };
+  }, [preset, customFrom, customTo, intervalChoice, tick]);
+  const intervalAllowed = (interval) => (range.to - range.from) / interval <= ANALYTICS_TIMELINE_MAX_BUCKETS;
+  const load = react.useCallback(
+    (silent = false) => {
+      if (!silent) setLoading(true);
+      postRequestUser("/api/analytics/timeline", {
+        from: range.from,
+        to: range.to,
+        interval: range.interval
+      }).then((res) => {
+        if (res == null ? void 0 : res.status) setData(res);
+      }).finally(() => {
+        if (!silent) setLoading(false);
+      });
+    },
+    [range, postRequestUser]
+  );
+  react.useEffect(() => {
+    load();
+  }, [load]);
+  react.useEffect(() => {
+    if (preset === "custom") return;
+    const timer = window.setInterval(() => setTick((t) => t + 1), NodeUsageModule_REFRESH_MS);
+    return () => window.clearInterval(timer);
+  }, [preset]);
+  const nodeName = react.useCallback(
+    (id) => {
+      var _a, _b;
+      const node = allNodes.find((q) => q.id === id);
+      if (!node) return id;
+      const name = ((_a = node.name) == null ? void 0 : _a.ru) || ((_b = node.name) == null ? void 0 : _b.en) || node.host || id;
+      return node.flag ? `${node.flag} ${name}` : name;
+    },
+    [allNodes]
+  );
+  const seriesLabel = (key) => key === "total" ? langString("adminNodeUsageTotal") : PROTOCOL_LABELS[key];
+  const view = react.useMemo(() => {
+    if (!data) return void 0;
+    const { buckets, interval } = data;
+    const now = System/* System */.i.timestamp;
+    let lastFull = buckets.length - 1;
+    while (lastFull >= 0 && buckets[lastFull] + interval > now) lastFull--;
+    const order = new Map(allNodes.map((node, i) => [node.id, i]));
+    const nodeList = [...data.nodes].sort(
+      (a, b) => {
+        var _a, _b;
+        return ((_a = order.get(a.nodeId)) != null ? _a : 1e9) - ((_b = order.get(b.nodeId)) != null ? _b : 1e9) || a.nodeId.localeCompare(b.nodeId);
+      }
+    );
+    const colorOf = new Map(
+      nodeList.map((node, i) => [
+        node.nodeId,
+        NODE_PALETTE[i % NODE_PALETTE.length]
+      ])
+    );
+    const visible = selected.length ? nodeList.filter((node) => selected.includes(node.nodeId)) : nodeList;
+    const signals = [];
+    for (const node of visible) {
+      const keys = protocol ? [protocol] : ["total", ...ANALYTICS_PROTOCOLS];
+      for (const key of keys) {
+        const series = key === "total" ? node.total : node.protocols[key];
+        const signal = detectSignal(
+          node.nodeId,
+          key,
+          series,
+          buckets,
+          lastFull,
+          interval
+        );
+        if (signal) signals.push(signal);
+      }
+    }
+    signals.sort(
+      (a, b) => Number(b.kind === "stopped") - Number(a.kind === "stopped") || b.baseline - b.value - (a.baseline - a.value)
+    );
+    const latest = (series) => lastFull >= 0 ? series[lastFull] : 0;
+    return {
+      buckets,
+      interval,
+      lastFull,
+      nodeList,
+      colorOf,
+      visible,
+      signals,
+      latest
+    };
+  }, [data, allNodes, selected, protocol]);
+  const toggleNode = (id) => {
+    setSelected(
+      (current) => current.includes(id) ? current.filter((q) => q !== id) : [...current, id]
+    );
+  };
+  const xAxis = view ? [
+    {
+      scaleType: "time",
+      data: view.buckets.map((ts) => new Date(ts * 1e3)),
+      valueFormatter: (date) => formatBucket(Math.floor(date.getTime() / 1e3), view.interval),
+      tickLabelStyle: { fill: "var(--rm-muted)", fontSize: 10 }
+    }
+  ] : [];
+  const yAxis = [
+    {
+      min: 0,
+      width: 36,
+      tickLabelStyle: { fill: "var(--rm-muted)", fontSize: 10 }
+    }
+  ];
+  const truncated = data && data.buckets.length >= ANALYTICS_TIMELINE_MAX_BUCKETS;
+  return /* @__PURE__ */ react.createElement("div", { className: "analytics node-usage" }, /* @__PURE__ */ react.createElement("p", { className: "analytics-hint" }, langString("adminNodeUsageIntro")), /* @__PURE__ */ react.createElement("div", { className: "analytics-controls" }, /* @__PURE__ */ react.createElement("div", { className: "node-usage-pills" }, ["24h", "7d", "14d", "30d", "custom"].map((id) => /* @__PURE__ */ react.createElement(
+    "button",
+    {
+      key: id,
+      className: preset === id ? "active" : "",
+      onClick: () => setPreset(id)
+    },
+    langString(`adminNodeUsagePreset_${id}`)
+  ))), /* @__PURE__ */ react.createElement("div", { className: "analytics-range" }, preset === "custom" && /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("label", null, langString("adminAnalyticsFrom"), /* @__PURE__ */ react.createElement(
+    "input",
+    {
+      type: "datetime-local",
+      value: NodeUsageModule_toInputValue(customFrom),
+      onChange: (e) => setCustomFrom(NodeUsageModule_fromInputValue(e.currentTarget.value))
+    }
+  )), /* @__PURE__ */ react.createElement("label", null, langString("adminAnalyticsTo"), /* @__PURE__ */ react.createElement(
+    "input",
+    {
+      type: "datetime-local",
+      value: NodeUsageModule_toInputValue(customTo),
+      onChange: (e) => setCustomTo(NodeUsageModule_fromInputValue(e.currentTarget.value))
+    }
+  ))), /* @__PURE__ */ react.createElement("label", null, langString("adminNodeUsageInterval"), /* @__PURE__ */ react.createElement(
+    "select",
+    {
+      value: intervalChoice,
+      onChange: (e) => {
+        const value = e.currentTarget.value;
+        setIntervalChoice(value === "auto" ? "auto" : Number(value));
+      }
+    },
+    /* @__PURE__ */ react.createElement("option", { value: "auto" }, langString("adminNodeUsageIntervalAuto"), intervalChoice === "auto" ? ` (${langString(`adminNodeUsageInterval_${range.interval}`)})` : ""),
+    ANALYTICS_TIMELINE_INTERVALS.map((interval) => /* @__PURE__ */ react.createElement(
+      "option",
+      {
+        key: interval,
+        value: interval,
+        disabled: !intervalAllowed(interval)
+      },
+      langString(`adminNodeUsageInterval_${interval}`)
+    ))
+  )), /* @__PURE__ */ react.createElement("label", null, langString("adminAnalyticsProtocol"), /* @__PURE__ */ react.createElement(
+    "select",
+    {
+      value: protocol,
+      onChange: (e) => setProtocol(e.currentTarget.value)
+    },
+    /* @__PURE__ */ react.createElement("option", { value: "" }, langString("adminAnalyticsAll")),
+    ANALYTICS_PROTOCOLS.map((p) => /* @__PURE__ */ react.createElement("option", { key: p, value: p }, PROTOCOL_LABELS[p]))
+  )), /* @__PURE__ */ react.createElement(
+    "button",
+    {
+      className: "admin-btn",
+      onClick: () => load(),
+      disabled: loading
+    },
+    loading ? langString("adminAnalyticsLoading") : langString("adminAnalyticsRefresh")
+  )), view && view.nodeList.length > 0 && /* @__PURE__ */ react.createElement("div", { className: "node-usage-chips" }, /* @__PURE__ */ react.createElement(
+    "button",
+    {
+      className: selected.length ? "" : "active",
+      onClick: () => setSelected([])
+    },
+    langString("adminNodeUsageAllNodes")
+  ), view.nodeList.map((node) => /* @__PURE__ */ react.createElement(
+    "button",
+    {
+      key: node.nodeId,
+      className: selected.includes(node.nodeId) ? "active" : "",
+      onClick: () => toggleNode(node.nodeId)
+    },
+    /* @__PURE__ */ react.createElement(
+      "span",
+      {
+        className: "dot",
+        style: { background: view.colorOf.get(node.nodeId) }
+      }
+    ),
+    nodeName(node.nodeId)
+  ))), truncated && /* @__PURE__ */ react.createElement("p", { className: "analytics-hint warn" }, langString(
+    "adminNodeUsageTruncated",
+    ANALYTICS_TIMELINE_MAX_BUCKETS
+  ))), view && !view.nodeList.length && /* @__PURE__ */ react.createElement("div", { className: "admin-card analytics-table-card" }, /* @__PURE__ */ react.createElement("p", { className: "analytics-hint" }, langString("adminNodeUsageNoData"))), view && view.nodeList.length > 0 && data && /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("div", { className: "admin-card analytics-table-card" }, /* @__PURE__ */ react.createElement("h3", null, langString("adminNodeUsageSignals")), /* @__PURE__ */ react.createElement("p", { className: "analytics-hint" }, langString("adminNodeUsageSignalsHint")), view.signals.length ? /* @__PURE__ */ react.createElement("div", { className: "node-usage-signals" }, view.signals.map((signal) => /* @__PURE__ */ react.createElement(
+    "div",
+    {
+      key: `${signal.nodeId}-${signal.key}`,
+      className: `signal ${signal.kind}`,
+      onClick: () => setSelected([signal.nodeId])
+    },
+    /* @__PURE__ */ react.createElement("span", { className: "badge" }, langString(
+      signal.kind === "stopped" ? "adminNodeUsageSignalStopped" : "adminNodeUsageSignalDrop"
+    )),
+    /* @__PURE__ */ react.createElement("b", null, nodeName(signal.nodeId)),
+    /* @__PURE__ */ react.createElement("span", null, "\xB7 ", seriesLabel(signal.key)),
+    /* @__PURE__ */ react.createElement("span", null, langString(
+      "adminNodeUsageSignalText",
+      signal.value,
+      signal.baseline,
+      formatBucket(signal.since, view.interval)
+    ))
+  ))) : /* @__PURE__ */ react.createElement("p", { className: "node-usage-ok" }, langString("adminNodeUsageSignalsEmpty"))), /* @__PURE__ */ react.createElement("div", { className: "admin-card chart-card analytics-table-card" }, /* @__PURE__ */ react.createElement("h3", null, langString("adminNodeUsageByNodes"), protocol ? ` \xB7 ${PROTOCOL_LABELS[protocol]}` : ""), /* @__PURE__ */ react.createElement("p", { className: "analytics-hint" }, langString("adminNodeUsageByNodesHint")), /* @__PURE__ */ react.createElement(
+    LineChart,
+    {
+      xAxis,
+      yAxis,
+      series: view.visible.map((node) => ({
+        id: node.nodeId,
+        label: nodeName(node.nodeId),
+        data: protocol ? node.protocols[protocol] : node.total,
+        color: view.colorOf.get(node.nodeId),
+        showMark: false,
+        curve: "linear"
+      })),
+      height: 320,
+      skipAnimation: true
+    }
+  )), selected.length === 0 && /* @__PURE__ */ react.createElement("div", { className: "admin-card chart-card analytics-table-card" }, /* @__PURE__ */ react.createElement("h3", null, langString("adminNodeUsageByProtocols")), /* @__PURE__ */ react.createElement("p", { className: "analytics-hint" }, langString("adminNodeUsageByProtocolsHint")), /* @__PURE__ */ react.createElement(
+    LineChart,
+    {
+      xAxis,
+      yAxis,
+      series: [
+        {
+          id: "total",
+          label: seriesLabel("total"),
+          data: data.total,
+          color: TOTAL_COLOR,
+          showMark: false,
+          curve: "linear"
+        },
+        ...ANALYTICS_PROTOCOLS.filter(
+          (p) => !protocol || p === protocol
+        ).map((p) => ({
+          id: p,
+          label: PROTOCOL_LABELS[p],
+          data: data.protocols[p],
+          color: NodeUsageModule_PROTOCOL_COLORS[p],
+          showMark: false,
+          curve: "linear"
+        }))
+      ],
+      height: 260,
+      skipAnimation: true
+    }
+  )), /* @__PURE__ */ react.createElement("div", { className: "admin-card analytics-table-card" }, /* @__PURE__ */ react.createElement("h3", null, langString("adminNodeUsageHeatmap")), /* @__PURE__ */ react.createElement("p", { className: "analytics-hint" }, langString("adminNodeUsageHeatmapHint")), /* @__PURE__ */ react.createElement(
+    Heatmap,
+    {
+      buckets: view.buckets,
+      interval: view.interval,
+      lastFull: view.lastFull,
+      rows: view.visible.flatMap(
+        (node) => (protocol ? [protocol] : ANALYTICS_PROTOCOLS).map((p) => ({
+          id: `${node.nodeId}-${p}`,
+          label: `${nodeName(node.nodeId)} \xB7 ${PROTOCOL_LABELS[p]}`,
+          color: NodeUsageModule_PROTOCOL_COLORS[p],
+          series: node.protocols[p]
+        }))
+      )
+    }
+  ), /* @__PURE__ */ react.createElement("div", { className: "node-usage-heatmap-axis" }, /* @__PURE__ */ react.createElement("span", null, formatBucket(view.buckets[0], view.interval)), /* @__PURE__ */ react.createElement("span", null, formatBucket(
+    view.buckets[view.buckets.length - 1],
+    view.interval
+  )))), /* @__PURE__ */ react.createElement("div", { className: "node-usage-grid" }, view.visible.map((node) => {
+    const nodeSignals = view.signals.filter(
+      (s) => s.nodeId === node.nodeId
+    );
+    return /* @__PURE__ */ react.createElement(
+      "div",
+      {
+        key: node.nodeId,
+        className: `admin-card chart-card node-usage-card ${nodeSignals.length ? "alert" : ""}`
+      },
+      /* @__PURE__ */ react.createElement("div", { className: "head" }, /* @__PURE__ */ react.createElement("h3", null, /* @__PURE__ */ react.createElement(
+        "span",
+        {
+          className: "dot",
+          style: { background: view.colorOf.get(node.nodeId) }
+        }
+      ), nodeName(node.nodeId)), /* @__PURE__ */ react.createElement("div", { className: "latest" }, ["total", ...ANALYTICS_PROTOCOLS].map(
+        (key) => {
+          const series = key === "total" ? node.total : node.protocols[key];
+          const flagged = nodeSignals.some((s) => s.key === key);
+          return /* @__PURE__ */ react.createElement(
+            "span",
+            {
+              key,
+              className: flagged ? "flagged" : "",
+              title: langString("adminNodeUsageLatest")
+            },
+            /* @__PURE__ */ react.createElement(
+              "i",
+              {
+                style: {
+                  background: key === "total" ? TOTAL_COLOR : NodeUsageModule_PROTOCOL_COLORS[key]
+                }
+              }
+            ),
+            seriesLabel(key),
+            ": ",
+            view.latest(series)
+          );
+        }
+      ))),
+      /* @__PURE__ */ react.createElement(
+        LineChart,
+        {
+          xAxis,
+          yAxis,
+          series: [
+            {
+              id: "total",
+              label: seriesLabel("total"),
+              data: node.total,
+              color: TOTAL_COLOR,
+              showMark: false,
+              curve: "linear"
+            },
+            ...ANALYTICS_PROTOCOLS.filter(
+              (p) => !protocol || p === protocol
+            ).map((p) => ({
+              id: p,
+              label: PROTOCOL_LABELS[p],
+              data: node.protocols[p],
+              color: NodeUsageModule_PROTOCOL_COLORS[p],
+              showMark: false,
+              curve: "linear"
+            }))
+          ],
+          height: 220,
+          hideLegend: true,
+          skipAnimation: true
+        }
+      )
+    );
+  }))));
+};
+
+;// ./src/shared/backup.ts
+
+const BACKUP_INTERVAL_MS = 60 * 60 * 1e3;
+const BACKUP_INITIAL_DELAY_MS = (/* unused pure expression or super */ null && (10 * 60 * 1e3));
+const BACKUP_ZIP_LEVEL = 1;
+function backupIntervalMinutes(intervalMs = BACKUP_INTERVAL_MS) {
+  return Math.max(1, Math.round(intervalMs / 6e4));
+}
+
+;// ./src/application/pages/admin/modules/BackupModule.tsx
+
+var BackupModule_defProp = Object.defineProperty;
+var BackupModule_defProps = Object.defineProperties;
+var BackupModule_getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var BackupModule_getOwnPropSymbols = Object.getOwnPropertySymbols;
+var BackupModule_hasOwnProp = Object.prototype.hasOwnProperty;
+var BackupModule_propIsEnum = Object.prototype.propertyIsEnumerable;
+var BackupModule_defNormalProp = (obj, key, value) => key in obj ? BackupModule_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var BackupModule_spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (BackupModule_hasOwnProp.call(b, prop))
+      BackupModule_defNormalProp(a, prop, b[prop]);
+  if (BackupModule_getOwnPropSymbols)
+    for (var prop of BackupModule_getOwnPropSymbols(b)) {
+      if (BackupModule_propIsEnum.call(b, prop))
+        BackupModule_defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var BackupModule_spreadProps = (a, b) => BackupModule_defProps(a, BackupModule_getOwnPropDescs(b));
+
+
+
+
+const BackupPanel = ({ ctx }) => {
+  const { langString, postRequestUser } = ctx;
+  const [view, setView] = react.useState(null);
+  const [starting, setStarting] = react.useState(false);
+  const postRequestUserRef = react.useRef(postRequestUser);
+  postRequestUserRef.current = postRequestUser;
+  const loadStatus = react.useCallback(() => {
+    return postRequestUserRef.current("/tgapi/admin/backup/status", {}).then((res) => {
+      if (res == null ? void 0 : res.status) setView(res);
+      return res;
+    });
+  }, []);
+  react.useEffect(() => {
+    void loadStatus();
+    const ms = (view == null ? void 0 : view.running) ? 2e3 : 1e4;
+    const timer = setInterval(() => {
+      void loadStatus();
+    }, ms);
+    return () => clearInterval(timer);
+  }, [loadStatus, view == null ? void 0 : view.running]);
+  const intervalMinutes = (view == null ? void 0 : view.intervalMinutes) || backupIntervalMinutes(view == null ? void 0 : view.intervalMs);
+  const lastAt = (view == null ? void 0 : view.lastFinishedAt) || (view == null ? void 0 : view.lastStartedAt);
+  const busy = starting || !!(view == null ? void 0 : view.running);
+  const startBackup = () => {
+    WebApp.showConfirm(langString("adminBackupCreateConfirm"), (ok) => {
+      if (!ok) return;
+      setStarting(true);
+      postRequestUser("/tgapi/admin/backup/create", {}).then((res) => {
+        if (res == null ? void 0 : res.status) {
+          setView(BackupModule_spreadProps(BackupModule_spreadValues({}, res), { running: true }));
+          WebApp.showAlert(langString("adminBackupCreateOk"));
+          setTimeout(() => {
+            void loadStatus();
+          }, 1500);
+          return;
+        }
+        if ((res == null ? void 0 : res.error) === "running") {
+          setView(res);
+          WebApp.showAlert(langString("adminBackupCreateBusy"));
+          return;
+        }
+        WebApp.showAlert(
+          langString("adminBackupCreateFail", (res == null ? void 0 : res.error) || "unknown")
+        );
+      }).finally(() => setStarting(false));
+    });
+  };
+  return /* @__PURE__ */ react.createElement("div", { className: "admin-card backup-panel" }, /* @__PURE__ */ react.createElement("div", { className: "form-header" }, /* @__PURE__ */ react.createElement("h3", null, langString("adminBackupTitle")), (view == null ? void 0 : view.running) && /* @__PURE__ */ react.createElement("span", { className: "status-badge orangeText" }, langString("adminBackupRunning"))), /* @__PURE__ */ react.createElement("p", { className: "backup-panel-interval" }, langString("adminBackupInterval", intervalMinutes)), /* @__PURE__ */ react.createElement("div", { className: "backup-panel-meta" }, /* @__PURE__ */ react.createElement("div", null, lastAt ? langString(
+    "adminBackupLastRun",
+    System/* System */.i.timeStampString(lastAt, true)
+  ) : langString("adminBackupNever")), (view == null ? void 0 : view.lastSuccess) === true && /* @__PURE__ */ react.createElement("div", { className: "greenText" }, langString("adminBackupLastResultOk")), (view == null ? void 0 : view.lastSuccess) === false && /* @__PURE__ */ react.createElement("div", { className: "redText" }, langString(
+    "adminBackupLastResultFail",
+    view.lastError || "unknown"
+  )), view && view.online === false && /* @__PURE__ */ react.createElement("div", { className: "orangeText" }, langString("adminBackupOffline"))), /* @__PURE__ */ react.createElement("div", { className: "form-actions" }, /* @__PURE__ */ react.createElement(
+    "button",
+    {
+      className: "admin-btn greenBg",
+      disabled: busy,
+      onClick: (e) => {
+        e.preventDefault();
+        startBackup();
+      }
+    },
+    "\u{1F4E6} ",
+    langString("adminBackupCreate")
+  )));
+};
+
+;// ./src/application/pages/admin/modules/XrayReleaseModule.tsx
+
+
+const XrayReleasePanel = ({ ctx }) => {
+  const { langString, postRequestUser } = ctx;
+  const [view, setView] = react.useState(null);
+  const postRequestUserRef = react.useRef(postRequestUser);
+  postRequestUserRef.current = postRequestUser;
+  react.useEffect(() => {
+    let active = true;
+    const load = () => {
+      void postRequestUserRef.current("/tgapi/admin/xrayRelease", {}).then((res) => {
+        if (active && (res == null ? void 0 : res.status)) setView(res);
+      });
+    };
+    load();
+    const timer = setInterval(load, 10 * 60 * 1e3);
+    return () => {
+      active = false;
+      clearInterval(timer);
+    };
+  }, []);
+  const pinned = (view == null ? void 0 : view.pinned) || null;
+  const latest = (view == null ? void 0 : view.updateAvailable) ? view.latest : null;
+  return /* @__PURE__ */ react.createElement("div", { className: "admin-card xray-release-panel" }, /* @__PURE__ */ react.createElement("div", { className: "form-header" }, /* @__PURE__ */ react.createElement("h3", null, langString("adminXrayVersionTitle"))), /* @__PURE__ */ react.createElement("div", { className: "xray-release-meta" }, /* @__PURE__ */ react.createElement("div", null, pinned ? langString("adminXrayVersionCurrent", pinned) : langString(
+    view ? "adminXrayVersionUnknown" : "adminXrayVersionLoading"
+  )), latest && /* @__PURE__ */ react.createElement("div", { className: "orangeText" }, langString("adminXrayVersionLatest", latest))));
+};
+
+;// ./src/application/pages/admin/modules/ConnectionTestModal.tsx
+
+var ConnectionTestModal_defProp = Object.defineProperty;
+var ConnectionTestModal_defProps = Object.defineProperties;
+var ConnectionTestModal_getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var ConnectionTestModal_getOwnPropSymbols = Object.getOwnPropertySymbols;
+var ConnectionTestModal_hasOwnProp = Object.prototype.hasOwnProperty;
+var ConnectionTestModal_propIsEnum = Object.prototype.propertyIsEnumerable;
+var ConnectionTestModal_defNormalProp = (obj, key, value) => key in obj ? ConnectionTestModal_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var ConnectionTestModal_spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (ConnectionTestModal_hasOwnProp.call(b, prop))
+      ConnectionTestModal_defNormalProp(a, prop, b[prop]);
+  if (ConnectionTestModal_getOwnPropSymbols)
+    for (var prop of ConnectionTestModal_getOwnPropSymbols(b)) {
+      if (ConnectionTestModal_propIsEnum.call(b, prop))
+        ConnectionTestModal_defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var ConnectionTestModal_spreadProps = (a, b) => ConnectionTestModal_defProps(a, ConnectionTestModal_getOwnPropDescs(b));
+var ConnectionTestModal_async = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
+  });
+};
+
+
+const PROTOCOLS = ["https", "vless", "hysteria"];
+const RELAY_VIA_PROTOCOLS = ["https", "vless"];
+const ConnectionTestModal_PROTOCOL_LABELS = {
+  https: "HTTPS",
+  vless: "VLESS",
+  hysteria: "Hysteria2"
+};
+const TEST_CONCURRENCY = 3;
+const cellKey = (nodeId, protocol, viaNodeId) => viaNodeId ? `${nodeId}:${protocol}:via:${viaNodeId}` : `${nodeId}:${protocol}`;
+const protocolEnabled = (node, protocol, via) => isNodeProtocolEnabled(node, protocol) && (!via || isNodeProtocolEnabled(via, protocol));
+function buildProbeTasks(servers, mains) {
+  const tasks = [];
+  const viaMains = mains.filter((node) => (node == null ? void 0 : node.id) && !node.relay);
+  for (const node of servers) {
+    for (const protocol of PROTOCOLS) {
+      if (!protocolEnabled(node, protocol)) continue;
+      tasks.push({ nodeId: String(node.id), protocol });
+    }
+    if (!node.relay) continue;
+    for (const main of viaMains) {
+      if (String(main.id) === String(node.id)) continue;
+      for (const protocol of RELAY_VIA_PROTOCOLS) {
+        if (!protocolEnabled(node, protocol, main)) continue;
+        tasks.push({
+          nodeId: String(node.id),
+          protocol,
+          viaNodeId: String(main.id)
+        });
+      }
+    }
+  }
+  return tasks;
+}
+const emptyCell = () => ({ status: "pending" });
+function collectServers(nodes, relayNodes, filterNodeIds) {
+  const allow = (filterNodeIds == null ? void 0 : filterNodeIds.length) ? new Set(filterNodeIds) : void 0;
+  const seen = /* @__PURE__ */ new Set();
+  const list = [];
+  for (const node of [...nodes, ...relayNodes]) {
+    if (!(node == null ? void 0 : node.id) || seen.has(node.id)) continue;
+    if (allow && !allow.has(node.id)) continue;
+    seen.add(node.id);
+    list.push(node);
+  }
+  return list;
+}
+const ConnectionTestModal = ({
+  ctx,
+  filterNodeIds,
+  onClose
+}) => {
+  const { langString, postRequestUser, currentUser, nodes, relayNodes } = ctx;
+  const mainsRef = react.useRef(nodes);
+  mainsRef.current = nodes;
+  const [results, setResults] = react.useState({});
+  const [running, setRunning] = react.useState(false);
+  const runIdRef = react.useRef(0);
+  const postRequestUserRef = react.useRef(postRequestUser);
+  postRequestUserRef.current = postRequestUser;
+  const serverKey = [
+    (filterNodeIds || []).join(","),
+    nodes.map((node) => `${node.id}:${node.relay ? 1 : 0}`).join(","),
+    relayNodes.map((node) => `${node.id}:${node.relay ? 1 : 0}`).join(",")
+  ].join("|");
+  const servers = react.useMemo(
+    () => collectServers(nodes, relayNodes, filterNodeIds),
+    // Intentionally keyed by id set: AdminPage re-renders often (timer/SSE)
+    // with a new ctx object, which must not restart the probe queue.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [serverKey]
+  );
+  const serversRef = react.useRef(servers);
+  serversRef.current = servers;
+  const total = buildProbeTasks(servers, nodes).length;
+  const finished = react.useMemo(
+    () => Object.values(results).filter(
+      (cell) => cell.status === "ok" || cell.status === "fail"
+    ).length,
+    [results]
+  );
+  const passed = react.useMemo(
+    () => Object.values(results).filter((cell) => cell.status === "ok").length,
+    [results]
+  );
+  const formatError = react.useCallback(
+    (cell) => {
+      const map = {
+        NO_ACCESS: "connection_test_error_no_access",
+        NO_NODE: "connection_test_error_no_node",
+        NO_CREDENTIALS: "connection_test_error_no_credentials",
+        TIMEOUT: "connection_test_error_timeout",
+        CONNECT_FAILED: "connection_test_error_connect",
+        PROBE_FAILED: "connection_test_error_probe",
+        NO_CLIENT: "connection_test_error_client",
+        DEPLOYING: "connection_test_error_deploying",
+        NOT_BACKUP: "connection_test_error_not_backup",
+        NO_VIA: "connection_test_error_no_via",
+        RELAY_UNSUPPORTED: "connection_test_error_relay_protocol",
+        PROTOCOL_DISABLED: "connection_test_error_protocol_disabled"
+      };
+      if (cell.errorCode && map[cell.errorCode]) {
+        return langString(map[cell.errorCode]);
+      }
+      return cell.error || langString("connection_test_fail");
+    },
+    [langString]
+  );
+  const runTests = react.useCallback(() => ConnectionTestModal_async(void 0, null, function* () {
+    const list = serversRef.current;
+    if (!list.length) return;
+    const runId = ++runIdRef.current;
+    setRunning(true);
+    const queue = buildProbeTasks(list, mainsRef.current);
+    const initial = {};
+    for (const task of queue) {
+      initial[cellKey(task.nodeId, task.protocol, task.viaNodeId)] = emptyCell();
+    }
+    setResults(initial);
+    let cursor = 0;
+    const isCurrent = () => runId === runIdRef.current;
+    const worker = () => ConnectionTestModal_async(void 0, null, function* () {
+      while (cursor < queue.length) {
+        if (!isCurrent()) return;
+        const task = queue[cursor];
+        cursor += 1;
+        if (!task) return;
+        const nodeId = task.nodeId;
+        const protocol = task.protocol;
+        const viaNodeId = task.viaNodeId;
+        const key = cellKey(nodeId, protocol, viaNodeId);
+        setResults((prev) => ConnectionTestModal_spreadProps(ConnectionTestModal_spreadValues({}, prev), {
+          [key]: { status: "testing" }
+        }));
+        const result = yield postRequestUserRef.current("/tgapi/admin/testConnection", ConnectionTestModal_spreadValues({
+          nodeId,
+          protocol
+        }, viaNodeId ? { viaNodeId } : {}));
+        if (!isCurrent()) return;
+        setResults((prev) => ConnectionTestModal_spreadProps(ConnectionTestModal_spreadValues({}, prev), {
+          [key]: (result == null ? void 0 : result.success) ? {
+            status: "ok",
+            latencyMs: result.latencyMs,
+            ip: result.ip,
+            colo: result.colo,
+            loc: result.loc
+          } : {
+            status: "fail",
+            latencyMs: result == null ? void 0 : result.latencyMs,
+            errorCode: result == null ? void 0 : result.errorCode,
+            error: result == null ? void 0 : result.error
+          }
+        }));
+      }
+    });
+    yield Promise.all(
+      Array.from(
+        { length: Math.min(TEST_CONCURRENCY, queue.length) },
+        () => worker()
+      )
+    );
+    if (isCurrent()) setRunning(false);
+  }), []);
+  react.useEffect(() => {
+    void runTests();
+    return () => {
+      runIdRef.current += 1;
+    };
+  }, [runTests, serverKey]);
+  const handleClose = () => {
+    runIdRef.current += 1;
+    setRunning(false);
+    onClose();
+  };
+  const renderCell = (nodeId, protocol, viaNodeId) => {
+    var _a;
+    const cell = results[cellKey(nodeId, protocol, viaNodeId)] || emptyCell();
+    if (cell.status === "testing" || running && cell.status === "pending") {
+      return /* @__PURE__ */ react.createElement(
+        "div",
+        {
+          className: "conn-test-cell testing",
+          title: langString("connection_test_testing")
+        },
+        /* @__PURE__ */ react.createElement("span", { className: "conn-test-spinner" }),
+        /* @__PURE__ */ react.createElement("span", null, langString("connection_test_testing"))
+      );
+    }
+    if (cell.status === "ok") {
+      const title = [
+        langString("connection_test_ok"),
+        cell.latencyMs !== void 0 ? langString("connection_test_latency", cell.latencyMs) : "",
+        cell.ip ? langString("connection_test_ip", cell.ip) : "",
+        cell.colo ? langString("connection_test_colo", cell.colo) : "",
+        cell.loc || ""
+      ].filter(Boolean).join("\n");
+      return /* @__PURE__ */ react.createElement("div", { className: "conn-test-cell ok", title }, /* @__PURE__ */ react.createElement("span", { className: "conn-test-line" }, /* @__PURE__ */ react.createElement("span", { className: "conn-test-mark" }, "\u2713"), /* @__PURE__ */ react.createElement("span", null, langString("connection_test_latency", (_a = cell.latencyMs) != null ? _a : 0))), cell.ip && /* @__PURE__ */ react.createElement("span", { className: "conn-test-meta" }, cell.ip));
+    }
+    if (cell.status === "fail") {
+      return /* @__PURE__ */ react.createElement("div", { className: "conn-test-cell fail", title: formatError(cell) }, /* @__PURE__ */ react.createElement("span", { className: "conn-test-mark" }, "\u2715"), /* @__PURE__ */ react.createElement("span", null, formatError(cell)));
+    }
+    return /* @__PURE__ */ react.createElement("div", { className: "conn-test-cell pending" }, /* @__PURE__ */ react.createElement("span", null, "\u2014"));
+  };
+  const disabledCell = () => /* @__PURE__ */ react.createElement(
+    "div",
+    {
+      className: "conn-test-cell pending",
+      title: langString("connection_test_error_protocol_disabled")
+    },
+    /* @__PURE__ */ react.createElement("span", null, "OFF")
+  );
+  const nodeLabel = (node) => {
+    var _a, _b;
+    const name = ((_a = node.name) == null ? void 0 : _a[currentUser.lang]) || ((_b = node.name) == null ? void 0 : _b.en) || node.id;
+    const tags = [
+      node.flag ? `${node.flag} ` : "",
+      name,
+      node.beta ? " \xB7 BETA" : ""
+    ].join("");
+    return tags;
+  };
+  const mainTargets = nodes.filter((node) => (node == null ? void 0 : node.id) && !node.relay);
+  const mainServers = servers.filter((node) => !node.relay);
+  const backupServers = servers.filter((node) => node.relay);
+  const renderServerRows = (list) => list.flatMap((node) => {
+    const rows = [
+      /* @__PURE__ */ react.createElement("tr", { key: node.id }, /* @__PURE__ */ react.createElement("td", null, /* @__PURE__ */ react.createElement("span", { className: "conn-test-server" }, nodeLabel(node)), node.relay ? /* @__PURE__ */ react.createElement("span", { className: "conn-test-path" }, langString("connection_test_direct")) : null), PROTOCOLS.map((protocol) => /* @__PURE__ */ react.createElement("td", { key: protocol }, protocolEnabled(node, protocol) ? renderCell(node.id, protocol) : disabledCell())))
+    ];
+    if (!node.relay) return rows;
+    for (const main of mainTargets) {
+      if (String(main.id) === String(node.id)) continue;
+      rows.push(
+        /* @__PURE__ */ react.createElement("tr", { key: `${node.id}:via:${main.id}` }, /* @__PURE__ */ react.createElement("td", null, /* @__PURE__ */ react.createElement("span", { className: "conn-test-path" }, langString("connection_test_via", nodeLabel(main)))), PROTOCOLS.map((protocol) => /* @__PURE__ */ react.createElement("td", { key: protocol }, protocol === "hysteria" ? /* @__PURE__ */ react.createElement(
+          "div",
+          {
+            className: "conn-test-cell pending",
+            title: langString("connection_test_relay_skip")
+          },
+          /* @__PURE__ */ react.createElement("span", null, "\u2014")
+        ) : protocolEnabled(node, protocol, main) ? renderCell(node.id, protocol, String(main.id)) : disabledCell())))
+      );
+    }
+    return rows;
+  });
+  const renderSection = (title, list) => {
+    if (!list.length) return null;
+    return /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("tr", { className: "conn-test-section" }, /* @__PURE__ */ react.createElement("td", { colSpan: PROTOCOLS.length + 1 }, title)), renderServerRows(list));
+  };
+  return /* @__PURE__ */ react.createElement("div", { className: "conn-test-overlay", onClick: handleClose }, /* @__PURE__ */ react.createElement(
+    "div",
+    {
+      className: "conn-test-modal",
+      onClick: (e) => {
+        e.stopPropagation();
+      }
+    },
+    /* @__PURE__ */ react.createElement("div", { className: "conn-test-header" }, /* @__PURE__ */ react.createElement("h3", null, langString("connection_test_title")), /* @__PURE__ */ react.createElement("button", { type: "button", className: "small", onClick: handleClose }, langString("connection_test_close"))),
+    /* @__PURE__ */ react.createElement("div", { className: "conn-test-desc" }, langString("connection_test_desc")),
+    !servers.length ? /* @__PURE__ */ react.createElement("div", { className: "conn-test-empty" }, langString("connection_test_no_servers")) : /* @__PURE__ */ react.createElement("div", { className: "conn-test-table-wrap" }, /* @__PURE__ */ react.createElement("table", { className: "conn-test-table" }, /* @__PURE__ */ react.createElement("thead", null, /* @__PURE__ */ react.createElement("tr", null, /* @__PURE__ */ react.createElement("th", null, langString("connection_test_server")), PROTOCOLS.map((protocol) => /* @__PURE__ */ react.createElement("th", { key: protocol }, ConnectionTestModal_PROTOCOL_LABELS[protocol])))), /* @__PURE__ */ react.createElement("tbody", null, renderSection(
+      langString("connection_test_section_main"),
+      mainServers
+    ), renderSection(
+      langString("connection_test_section_backup"),
+      backupServers
+    )))),
+    /* @__PURE__ */ react.createElement("div", { className: "conn-test-footer" }, /* @__PURE__ */ react.createElement("span", null, running ? langString("connection_test_progress", finished, total) : langString("connection_test_summary", passed, total)), /* @__PURE__ */ react.createElement(
+      "button",
+      {
+        type: "button",
+        className: "small",
+        onClick: () => void runTests(),
+        disabled: running || !servers.length
+      },
+      langString("connection_test_retry")
+    ))
+  ));
+};
+
+;// ./src/application/pages/admin/index.tsx
+
+var admin_defProp = Object.defineProperty;
+var admin_defProps = Object.defineProperties;
+var admin_getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var admin_getOwnPropSymbols = Object.getOwnPropertySymbols;
+var admin_hasOwnProp = Object.prototype.hasOwnProperty;
+var admin_propIsEnum = Object.prototype.propertyIsEnumerable;
+var admin_defNormalProp = (obj, key, value) => key in obj ? admin_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var admin_spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (admin_hasOwnProp.call(b, prop))
+      admin_defNormalProp(a, prop, b[prop]);
+  if (admin_getOwnPropSymbols)
+    for (var prop of admin_getOwnPropSymbols(b)) {
+      if (admin_propIsEnum.call(b, prop))
+        admin_defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var admin_spreadProps = (a, b) => admin_defProps(a, admin_getOwnPropDescs(b));
+var admin_async = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
+  });
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class AdminPage extends BasePage {
+  // ─────────────────────────────────────────────
+  // Данные и SSE
+  // ─────────────────────────────────────────────
+  constructor(props) {
+    super(props);
+    this.state = admin_spreadValues({}, initialState);
+    // ─────────────────────────────────────────────
+    // Навигация (BackButton)
+    // ─────────────────────────────────────────────
+    this.CloseEditUser = () => {
+      this.setState({
+        editUser: "",
+        editUserBalanceInput: 0,
+        editUserBalanceAddInput: 0
+      });
+    };
+    this.ToggleSidebar = () => {
+      this.setState({ sidebarOpen: !this.state.sidebarOpen });
+    };
+    this.OpenConnectionTest = (nodeIds) => {
+      this.setState({
+        connectionTest: {
+          open: true,
+          nodeIds
+        }
+      });
+    };
+    this.CloseConnectionTest = () => {
+      this.setState({
+        connectionTest: { open: false, nodeIds: void 0 }
+      });
+    };
+    this.OpenFloatingUserModal = (userId) => {
+      const openedModal = this.state.userFloatingModals.find(
+        (q) => q.userId === userId
+      );
+      if (openedModal) {
+        this.BringFloatingUserModalToFront(openedModal.id);
+        return;
+      }
+      const user = this.state.users.find((q) => q.id === userId);
+      if (!user) return;
+      const nextSeq = this.state.userFloatingModalSeq + 1;
+      const nextZ = Math.max(1e3, ...this.state.userFloatingModals.map((q) => q.zIndex)) + 1;
+      const viewportWidth = typeof window !== "undefined" ? window.innerWidth : 1280;
+      const viewportHeight = typeof window !== "undefined" ? window.innerHeight : 720;
+      const width = Math.max(460, Math.min(860, viewportWidth - 24));
+      const height = Math.max(320, Math.round(viewportHeight * 0.5));
+      const modal = {
+        id: `user_modal_${nextSeq}_${userId}`,
+        userId,
+        userData: admin_spreadValues({}, user),
+        left: 80 + (nextSeq - 1) % 7 * 26,
+        top: 80 + (nextSeq - 1) % 6 * 22,
+        width,
+        height,
+        zIndex: nextZ,
+        addDaysOrder: 1,
+        editUserBalanceInput: this.ConvertToCurrency(user.balance),
+        editUserBalanceInputCurrency: this.currency,
+        editUserBalanceAddInput: 0,
+        editUserTarif: tarifs.TARIF_LIST[0].id,
+        editUserTarifDays: 0,
+        editUserPayments: [],
+        editUserRefs: void 0,
+        editUserShowOrders: false,
+        editUserShowLogs: false,
+        editUserShowPayments: false,
+        editUserShowRefs: false
+      };
+      this.setState({
+        userFloatingModalSeq: nextSeq,
+        userFloatingModals: [...this.state.userFloatingModals, modal],
+        editUserBalanceInput: this.ConvertToCurrency(user.balance),
+        editUserBalanceInputCurrency: this.currency,
+        editUserBalanceAddInput: 0,
+        editUserTarifDays: 0,
+        editUserTarif: tarifs.TARIF_LIST[0].id
+      });
+      this.PostRequestUser("/tgapi/admin/updateUserData", { user: userId }).then((res) => {
+        if (!(res == null ? void 0 : res.payments)) return;
+        const payments = res.payments;
+        const refs = res.refs;
+        this.setState({
+          userFloatingModals: this.state.userFloatingModals.map(
+            (q) => q.id === modal.id ? admin_spreadProps(admin_spreadValues({}, q), { editUserPayments: payments, editUserRefs: refs }) : q
+          )
+        });
+      });
+    };
+    this.SetFloatingUserModalState = (modalId, data) => {
+      this.setState({
+        userFloatingModals: this.state.userFloatingModals.map(
+          (q) => q.id === modalId ? admin_spreadValues(admin_spreadValues({}, q), data) : q
+        )
+      });
+    };
+    this.BringFloatingUserModalToFront = (id) => {
+      const nextZ = Math.max(1e3, ...this.state.userFloatingModals.map((q) => q.zIndex)) + 1;
+      this.setState({
+        userFloatingModals: this.state.userFloatingModals.map(
+          (modal) => modal.id === id ? admin_spreadProps(admin_spreadValues({}, modal), { zIndex: nextZ }) : modal
+        )
+      });
+    };
+    this.CloseFloatingUserModal = (id) => {
+      var _a, _b;
+      this.setState({
+        userFloatingModals: this.state.userFloatingModals.filter(
+          (q) => q.id !== id
+        ),
+        dragUserFloatingModal: ((_a = this.state.dragUserFloatingModal) == null ? void 0 : _a.id) === id ? null : this.state.dragUserFloatingModal,
+        resizeUserFloatingModal: ((_b = this.state.resizeUserFloatingModal) == null ? void 0 : _b.id) === id ? null : this.state.resizeUserFloatingModal
+      });
+    };
+    this.StartDragFloatingUserModal = (id, e) => {
+      if (e.button !== 0) return;
+      const modal = this.state.userFloatingModals.find((q) => q.id === id);
+      if (!modal) return;
+      e.preventDefault();
+      this.BringFloatingUserModalToFront(id);
+      this.setState({
+        dragUserFloatingModal: {
+          id,
+          offsetX: e.clientX - modal.left,
+          offsetY: e.clientY - modal.top
+        }
+      });
+    };
+    this.HandleUserModalMouseMove = (e) => {
+      const resizeData = this.state.resizeUserFloatingModal;
+      if (resizeData) {
+        const width = Math.max(
+          460,
+          resizeData.startWidth + (e.clientX - resizeData.startX)
+        );
+        const height = Math.max(
+          260,
+          resizeData.startHeight + (e.clientY - resizeData.startY)
+        );
+        this.setState({
+          userFloatingModals: this.state.userFloatingModals.map(
+            (modal) => modal.id === resizeData.id ? admin_spreadProps(admin_spreadValues({}, modal), { width, height }) : modal
+          )
+        });
+        return;
+      }
+      const dragData = this.state.dragUserFloatingModal;
+      if (!dragData) return;
+      const left = Math.max(8, e.clientX - dragData.offsetX);
+      const top = Math.max(8, e.clientY - dragData.offsetY);
+      this.setState({
+        userFloatingModals: this.state.userFloatingModals.map(
+          (modal) => modal.id === dragData.id ? admin_spreadProps(admin_spreadValues({}, modal), { left, top }) : modal
+        )
+      });
+    };
+    this.HandleUserModalMouseUp = () => {
+      if (!this.state.dragUserFloatingModal && !this.state.resizeUserFloatingModal)
+        return;
+      this.setState({
+        dragUserFloatingModal: null,
+        resizeUserFloatingModal: null
+      });
+    };
+    this.StartResizeFloatingUserModal = (id, e) => {
+      if (e.button !== 0) return;
+      const modal = this.state.userFloatingModals.find((q) => q.id === id);
+      if (!modal) return;
+      e.preventDefault();
+      e.stopPropagation();
+      this.BringFloatingUserModalToFront(id);
+      this.setState({
+        dragUserFloatingModal: null,
+        resizeUserFloatingModal: {
+          id,
+          startX: e.clientX,
+          startY: e.clientY,
+          startWidth: modal.width,
+          startHeight: modal.height
+        }
+      });
+    };
+    this.SetView = (view) => {
+      this.setState({
+        currentView: view,
+        sidebarOpen: false,
+        editUser: "",
+        inPromoMenu: admin_spreadProps(admin_spreadValues({}, this.state.inPromoMenu), { edit: false }),
+        new_node: admin_spreadProps(admin_spreadValues({}, this.state.new_node), { opened: false }),
+        install_node: admin_spreadProps(admin_spreadValues({}, this.state.install_node), { opened: false }),
+        coreSettings: admin_spreadProps(admin_spreadValues({}, this.state.coreSettings), { opened: false, data: {} }),
+        sendMessage: admin_spreadProps(admin_spreadValues({}, this.state.sendMessage), { show: false }),
+        firewallEdit: admin_spreadProps(admin_spreadValues({}, this.state.firewallEdit), { show: false }),
+        presetsEdit: admin_spreadProps(admin_spreadValues({}, this.state.presetsEdit), { show: false }),
+        bulkRenewal: { show: false },
+        connectionTest: { open: false, nodeIds: void 0 },
+        show: admin_spreadValues({}, initialState.show),
+        search: admin_spreadValues({}, initialState.search),
+        reverse: admin_spreadValues({}, initialState.reverse)
+      });
+    };
+    this.BackButton = () => {
+      if (this.state.editUser) {
+        this.CloseEditUser();
+        return true;
+      }
+      if (this.state.inPromoMenu.edit) {
+        this.setState({
+          inPromoMenu: admin_spreadProps(admin_spreadValues({}, this.state.inPromoMenu), { edit: false })
+        });
+        return true;
+      }
+      if (this.state.new_node.opened) {
+        this.setState({ new_node: admin_spreadProps(admin_spreadValues({}, this.state.new_node), { opened: false }) });
+        return true;
+      }
+      if (this.state.install_node.opened) {
+        this.setState({
+          install_node: admin_spreadProps(admin_spreadValues({}, this.state.install_node), { opened: false })
+        });
+        return true;
+      }
+      if (this.state.coreSettings.opened) {
+        this.setState({
+          coreSettings: admin_spreadProps(admin_spreadValues({}, this.state.coreSettings), { opened: false, data: {} })
+        });
+        return true;
+      }
+      if (this.state.sendMessage.show) {
+        this.setState({
+          sendMessage: admin_spreadProps(admin_spreadValues({}, this.state.sendMessage), { show: false })
+        });
+        return true;
+      }
+      if (this.state.firewallEdit.show) {
+        this.setState({
+          firewallEdit: admin_spreadProps(admin_spreadValues({}, this.state.firewallEdit), { show: false })
+        });
+        return true;
+      }
+      if (this.state.presetsEdit.show) {
+        this.setState({
+          presetsEdit: admin_spreadProps(admin_spreadValues({}, this.state.presetsEdit), { show: false })
+        });
+        return true;
+      }
+      if (this.state.bulkRenewal.show) {
+        this.setState({ bulkRenewal: { show: false } });
+        return true;
+      }
+      if (this.state.connectionTest.open) {
+        this.setState({ connectionTest: { open: false, nodeIds: void 0 } });
+        return true;
+      }
+      return false;
+    };
+    this.CanClose = () => !this.state.editUser && !this.state.inPromoMenu.edit;
+    // ─────────────────────────────────────────────
+    // Хелперы по заказам и пользователям
+    // ─────────────────────────────────────────────
+    this.GetOrders = (mode = "all") => {
+      return this.state.orders.filter((order) => {
+        const cfg = tarifs.TARIF_LIST.find((q) => q.id === order.tarif);
+        if (!cfg) return false;
+        const expire = order.stats.expire;
+        if (mode === "active") return System/* System */.i.timestamp <= expire;
+        if (mode === "expired") return System/* System */.i.timestamp > expire;
+        return true;
+      });
+    };
+    this.GetUsersByOrders = (orders) => {
+      const owners = [];
+      orders.forEach((order) => {
+        if (!owners.includes(order.owner)) owners.push(order.owner);
+      });
+      return owners;
+    };
+    this.OrderDataEv = Core.configAdmins.includes(this.props.user.id) ? Sse.OnData("adminDataUpdate", () => {
+      this.PostRequestUser("/tgapi/admin/loadData", {}).then(
+        (data) => this.setState(admin_spreadValues({}, data))
+      );
+    }) : void 0;
+    this.DeployDataEv = Core.configAdmins.includes(this.props.user.id) ? Sse.OnData("admin_deployData", (msg) => {
+      this.setState({
+        install_node_logs: [
+          [System/* System */.i.timestamp, msg],
+          ...this.state.install_node_logs
+        ]
+      });
+    }) : void 0;
+    // ─────────────────────────────────────────────
+    // OwnerShow — общий для всех модулей через ctx
+    // ─────────────────────────────────────────────
+    this.OwnerShow = (owner) => {
+      const ownerData = typeof owner === "object" ? owner : this.state.users.find((q) => q.id === owner);
+      return ownerData ? /* @__PURE__ */ react.createElement("span", { className: "userShow" }, ownerData.noName ? /* @__PURE__ */ react.createElement("span", null, "[", ownerData.lang, " | ", ownerData.currency, "] ", ownerData.name, " (@", ownerData.id, ")") : /* @__PURE__ */ react.createElement(
+        "a",
+        {
+          href: "#",
+          onClick: (e) => {
+            e.preventDefault();
+            WebApp.openTelegramLink(`https://t.me/${ownerData.name}`);
+          }
+        },
+        "[",
+        ownerData.lang,
+        " | ",
+        ownerData.currency,
+        "] ",
+        ownerData.name,
+        " (@",
+        ownerData.id,
+        ")"
+      ), ownerData.noName && /* @__PURE__ */ react.createElement(
+        "button",
+        {
+          className: "small",
+          onClick: (e) => {
+            e.preventDefault();
+            this.PostRequestUser("/tgapi/admin/sendUserContact", {
+              target: ownerData.id
+            });
+          }
+        },
+        "\u{1F4AC}"
+      )) : /* @__PURE__ */ react.createElement("span", null, "INCORRECT_USER");
+    };
+    // ─────────────────────────────────────────────
+    // Модальное окно инструкции
+    // ─────────────────────────────────────────────
+    this.showInstructionModal = (orderId, type, admin = false) => admin_async(this, null, function* () {
+      const res = yield this.PostRequestUser("/api/orders/orderData", admin_spreadValues({
+        orderId,
+        type
+      }, admin ? { admin: true } : {}));
+      if (!(res == null ? void 0 : res.status) || !res.data) return;
+      const [langKey, ...args] = res.data;
+      const text = this.LangString(langKey, ...args);
+      this.setState({ instructionModal: { text, orderId, type } });
+    });
+    this.RenderBlock = (key, title, func, additional, mode = "", sortKey) => {
+      var _a, _b;
+      const key2 = `${String(key)}${mode ? "_" + mode : ""}`;
+      const search = this.state.search[key2];
+      let data = key === "nodes" ? [...this.props.nodes, ...this.props.relayNodes] : this.state[key].filter(
+        (q) => {
+          var _a2, _b2;
+          return !search || q.id.toLowerCase().includes(search.toLowerCase()) || ((_a2 = q.name) == null ? void 0 : _a2.toLowerCase().includes(search.toLowerCase())) || ((_b2 = q.owner) == null ? void 0 : _b2.toLowerCase().includes(search.toLowerCase()));
+        }
+      );
+      if (key === "orders") {
+        if (mode === "active" || mode === "expired") {
+          data = data.filter((q) => {
+            var _a2, _b2;
+            const tarif = tarifs.TARIF_LIST.find((a) => a.id === q.tarif);
+            if (!tarif) return false;
+            const expire = (_b2 = (_a2 = q.stats) == null ? void 0 : _a2.expire) != null ? _b2 : 0;
+            return mode === "active" ? System/* System */.i.timestamp <= expire : System/* System */.i.timestamp > expire;
+          });
+        }
+      } else if (key === "users" && (mode === "active" || mode === "expired")) {
+        const tm = System/* System */.i.timestamp;
+        data = data.filter((q) => {
+          if (tm - q.lastSeen < 60 * 24 * 60 * 60) return true;
+          return !!this.state.orders.find(
+            (a) => {
+              var _a2, _b2;
+              return a.owner === q.id && ((_b2 = (_a2 = a.stats) == null ? void 0 : _a2.expire) != null ? _b2 : 0) > tm;
+            }
+          );
+        });
+      }
+      if (key === "logs") data = data.filter((q) => q.admin);
+      const reverse = this.state.reverse[key2];
+      if (key === "orders") {
+        data = data.map((q) => {
+          var _a2;
+          return admin_spreadProps(admin_spreadValues({}, q), {
+            expire: Math.max(
+              ...[(_a2 = q.stats) == null ? void 0 : _a2.expire, 0].filter(Boolean).map(Number)
+            )
+          });
+        });
+      }
+      if (sortKey)
+        data = System/* System */.i.sortArrayObjects(data, [{ id: sortKey, type: "ASC" }]);
+      if (reverse) data.reverse();
+      const isCollapsed = !this.state.show[key2];
+      return /* @__PURE__ */ react.createElement(
+        "div",
+        {
+          className: `admin-card collapsible ${isCollapsed ? "collapsed" : ""} ${key}`
+        },
+        /* @__PURE__ */ react.createElement(
+          "div",
+          {
+            className: "card-header",
+            onClick: () => this.setState({ show: admin_spreadProps(admin_spreadValues({}, this.state.show), { [key2]: isCollapsed }) })
+          },
+          /* @__PURE__ */ react.createElement("div", { className: "title-wrap" }, /* @__PURE__ */ react.createElement("h3", null, this.LangString(title, (_a = data == null ? void 0 : data.length) != null ? _a : 0)), /* @__PURE__ */ react.createElement("span", { className: "count" }, (_b = data == null ? void 0 : data.length) != null ? _b : 0)),
+          /* @__PURE__ */ react.createElement("div", { className: "controls-wrap", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ react.createElement(
+            "a",
+            {
+              href: "#",
+              className: "chevron",
+              onClick: (e) => {
+                e.preventDefault();
+                this.setState({
+                  show: admin_spreadProps(admin_spreadValues({}, this.state.show), { [key2]: isCollapsed })
+                });
+              }
+            },
+            "\u25BC"
+          ))
+        ),
+        !isCollapsed && /* @__PURE__ */ react.createElement("div", { className: "card-body" }, /* @__PURE__ */ react.createElement("div", { className: "admin-controls" }, /* @__PURE__ */ react.createElement("div", { className: "search-input" }, /* @__PURE__ */ react.createElement(
+          "input",
+          {
+            placeholder: this.LangString("applicationAdminSearch"),
+            value: search,
+            onChange: (e) => this.setState({
+              search: admin_spreadProps(admin_spreadValues({}, this.state.search), {
+                [key2]: e.currentTarget.value
+              })
+            })
+          }
+        )), /* @__PURE__ */ react.createElement(
+          "div",
+          {
+            className: "sort-toggle",
+            onClick: () => this.setState({
+              reverse: admin_spreadProps(admin_spreadValues({}, this.state.reverse), { [key2]: !reverse })
+            })
+          },
+          reverse ? "\u21A1" : "\u219F",
+          " Sort"
+        ), sortKey && /* @__PURE__ */ react.createElement("div", { className: "sort-key" }, "By: ", sortKey)), additional && /* @__PURE__ */ react.createElement("div", { style: { marginTop: "12px" } }, additional()), /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid", style: { marginTop: "16px" } }, data == null ? void 0 : data.map(
+          (item, i) => func(item, reverse ? data.length - 1 - i : i)
+        )))
+      );
+    };
+    this.UpdateData();
+  }
+  componentDidMount() {
+    super.componentDidMount();
+    window.addEventListener("mousemove", this.HandleUserModalMouseMove);
+    window.addEventListener("mouseup", this.HandleUserModalMouseUp);
+  }
+  get SendMessageTargets() {
+    const { tarifs, active } = this.state.sendMessage.filter;
+    const all = this.GetOrders("all");
+    const activeOrders = this.GetOrders("active");
+    const expired = this.GetOrders("expired");
+    const allUsers = this.state.users;
+    const byTarif = (list) => list.filter((q) => tarifs.includes(q.tarif));
+    switch (active) {
+      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.ALL:
+        return allUsers.map((q) => q.id);
+      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.ORDERS:
+        return this.GetUsersByOrders(byTarif(all));
+      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.ACTIVE_ORDERS:
+        return this.GetUsersByOrders(byTarif(activeOrders));
+      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.HAS_ORDER:
+        return this.GetUsersByOrders(all);
+      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.NO_ORDER: {
+        const owners = this.GetUsersByOrders(all);
+        return allUsers.filter((q) => !owners.includes(q.id)).map((q) => q.id);
+      }
+      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.HAS_ACTIVE_ORDER:
+        return this.GetUsersByOrders(activeOrders);
+      case ADMIN_SEND_MESSAGE_FILTER_ACTIVE.HAS_UNACTIVE_ORDER:
+        return this.GetUsersByOrders(expired);
+      default:
+        return [];
+    }
+  }
+  get SendMessageTargetsCount() {
+    return this.SendMessageTargets.length;
+  }
+  get CanSendMessage() {
+    return this.SendMessageTargetsCount !== 0 && !!this.state.sendMessage.en && !!this.state.sendMessage.ru && !!this.state.sendMessage.uk;
+  }
+  UpdateData() {
+    if (!Core.configAdmins.includes(this.props.user.id)) return;
+    this.PostRequestUser("/tgapi/admin/data", {}).then((res) => {
+      if (!res || !res.status) return;
+      this.setState(admin_spreadValues({}, res), this.ResetLoadTimer);
+    });
+    this.GetRequestUser("/api/happ-routings", {}).then((res) => {
+      if (!res) return;
+      this.setState({ routings: res.routing });
+    });
+    this.GetRequestUser("/api/presets/list", {}).then((res) => {
+      if (!res) return;
+      this.setState({ presets: res.presets });
+    });
+  }
+  componentWillUnmount() {
+    var _a;
+    window.removeEventListener("mousemove", this.HandleUserModalMouseMove);
+    window.removeEventListener("mouseup", this.HandleUserModalMouseUp);
+    (_a = this.OrderDataEv) == null ? void 0 : _a.Remove();
+    super.componentWillUnmount();
+  }
+  RenderFloatingUserModals(ctx) {
+    if (!this.state.userFloatingModals.length) return null;
+    return this.state.userFloatingModals.map((modal) => {
+      var _a;
+      const user = (_a = this.state.users.find((q) => q.id === modal.userId)) != null ? _a : modal.userData;
+      if (!user) return null;
+      const floatingState = admin_spreadProps(admin_spreadValues({}, this.state), {
+        editUser: modal.userId,
+        addDaysOrder: modal.addDaysOrder,
+        editUserBalanceInput: modal.editUserBalanceInput,
+        editUserBalanceInputCurrency: modal.editUserBalanceInputCurrency,
+        editUserBalanceAddInput: modal.editUserBalanceAddInput,
+        editUserTarif: modal.editUserTarif,
+        editUserTarifDays: modal.editUserTarifDays,
+        editUserPayments: modal.editUserPayments,
+        editUserRefs: modal.editUserRefs,
+        editUserShowOrders: modal.editUserShowOrders,
+        editUserShowLogs: modal.editUserShowLogs,
+        editUserShowPayments: modal.editUserShowPayments,
+        editUserShowRefs: modal.editUserShowRefs
+      });
+      const floatingCtx = admin_spreadProps(admin_spreadValues({}, ctx), {
+        state: floatingState,
+        setState: (patch, cb) => {
+          const modalPatch = {};
+          const globalPatch = admin_spreadValues({}, patch);
+          const modalKeys = [
+            "addDaysOrder",
+            "editUserBalanceInput",
+            "editUserBalanceInputCurrency",
+            "editUserBalanceAddInput",
+            "editUserTarif",
+            "editUserTarifDays",
+            "editUserPayments",
+            "editUserRefs",
+            "editUserShowOrders",
+            "editUserShowLogs",
+            "editUserShowPayments",
+            "editUserShowRefs"
+          ];
+          modalKeys.forEach((key) => {
+            if (Object.prototype.hasOwnProperty.call(patch, key)) {
+              modalPatch[key] = patch[key];
+              delete globalPatch[key];
+            }
+          });
+          const hasModalPatch = Object.keys(modalPatch).length > 0;
+          const hasGlobalPatch = Object.keys(globalPatch).length > 0;
+          if (!hasModalPatch && !hasGlobalPatch) {
+            cb == null ? void 0 : cb();
+            return;
+          }
+          this.setState((prev) => {
+            const next = {};
+            if (hasModalPatch) {
+              next.userFloatingModals = prev.userFloatingModals.map(
+                (q) => q.id === modal.id ? admin_spreadValues(admin_spreadValues({}, q), modalPatch) : q
+              );
+            }
+            if (hasGlobalPatch) Object.assign(next, globalPatch);
+            return next;
+          }, cb);
+        }
+      });
+      return /* @__PURE__ */ react.createElement(
+        "div",
+        {
+          className: "admin-floating-user-modal",
+          key: modal.id,
+          style: {
+            left: modal.left,
+            top: modal.top,
+            width: modal.width,
+            height: modal.height,
+            zIndex: modal.zIndex
+          },
+          onMouseDown: () => this.BringFloatingUserModalToFront(modal.id)
+        },
+        /* @__PURE__ */ react.createElement(
+          "div",
+          {
+            className: "admin-floating-user-modal-header",
+            onMouseDown: (e) => this.StartDragFloatingUserModal(modal.id, e)
+          },
+          /* @__PURE__ */ react.createElement("div", { className: "admin-floating-user-modal-title" }, "\u{1F464} ", user.name || user.id),
+          /* @__PURE__ */ react.createElement(
+            "button",
+            {
+              className: "small redBg",
+              onClick: (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                this.CloseFloatingUserModal(modal.id);
+              }
+            },
+            "\u2715"
+          )
+        ),
+        /* @__PURE__ */ react.createElement("div", { className: "admin-floating-user-modal-body" }, /* @__PURE__ */ react.createElement(UserEditPanel, { editUser: user, ctx: floatingCtx })),
+        /* @__PURE__ */ react.createElement(
+          "div",
+          {
+            className: "admin-floating-user-modal-resize",
+            onMouseDown: (e) => this.StartResizeFloatingUserModal(modal.id, e)
+          }
+        )
+      );
+    });
+  }
+  RenderInstructionModal() {
+    const modal = this.state.instructionModal;
+    if (!modal) return null;
+    return RenderInstructionModal(
+      modal,
+      !!this.props.user.tg_id,
+      this.LangString,
+      this.PostRequestUser,
+      () => {
+        this.setState({ instructionModal: null });
+      }
+    );
+  }
+  // ─────────────────────────────────────────────
+  // RenderBlock — универсальная секция списка
+  // ─────────────────────────────────────────────
+  CanRenderAdditional() {
+    return !this.state.editUser && !this.state.sendMessage.show && !this.state.new_node.opened && !this.state.install_node.opened && !this.state.firewallEdit.show && !this.state.inPromoMenu.edit && !this.state.presetsEdit.show && !this.state.bulkRenewal.show;
+  }
+  RenderStats() {
+    if (!this.CanRenderAdditional()) return null;
+    return /* @__PURE__ */ react.createElement("div", { className: "admin-header-stats" }, /* @__PURE__ */ react.createElement("div", { className: "stat-card accent" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, this.LangString("applicationButtonsAdminDisk", "")), /* @__PURE__ */ react.createElement(
+      "div",
+      {
+        className: "value",
+        style: { color: this.state.disk / 1e9 < 1 ? "red" : void 0 }
+      },
+      Traffic.FormatBytes(this.state.disk)
+    )), /* @__PURE__ */ react.createElement("div", { className: "stat-card green" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, "Profit (Month)"), /* @__PURE__ */ react.createElement("div", { className: "value" }, this.ShowInCurrency(
+      this.state.paymentsData.currentMonth * 0.83 * 0.95,
+      true
+    ))), /* @__PURE__ */ react.createElement("div", { className: "stat-card green" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, "Profit (Prev Month)"), /* @__PURE__ */ react.createElement("div", { className: "value" }, this.ShowInCurrency(
+      this.state.paymentsData.previousMonth * 0.83 * 0.95,
+      true
+    ))), /* @__PURE__ */ react.createElement("div", { className: "stat-card" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, "Total Payments"), /* @__PURE__ */ react.createElement("div", { className: "value" }, this.ShowInCurrency(
+      this.state.paymentsData.total * 0.83 * 0.95,
+      true
+    ))), /* @__PURE__ */ react.createElement("div", { className: "stat-card" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, "Uptime (last restart backend)"), /* @__PURE__ */ react.createElement("div", { className: "value" }, System/* System */.i.secondsToString(System/* System */.i.timestamp - this.state.tm_start), " [", System/* System */.i.timeStampString(this.state.tm_start), "]")), /* @__PURE__ */ react.createElement("div", { className: "stat-card" }, /* @__PURE__ */ react.createElement("div", { className: "label" }, "Users"), /* @__PURE__ */ react.createElement("div", { className: "value" }, this.state.users.length)));
+  }
+  RenderSidebarItem(view, icon, labelKey, removeLabelEmoji = false, ...args) {
+    const active = this.state.currentView === view;
+    let label = this.LangString(labelKey, ...args);
+    if (removeLabelEmoji) {
+      label = label.split(" ").slice(1).join(" ");
+    }
+    return /* @__PURE__ */ react.createElement(
+      "div",
+      {
+        className: `nav-item ${active ? "active" : ""}`,
+        onClick: () => this.SetView(view)
+      },
+      /* @__PURE__ */ react.createElement("span", { className: "icon" }, icon),
+      /* @__PURE__ */ react.createElement("span", { className: "label" }, label)
+    );
+  }
+  RenderSidebar() {
+    var _a, _b, _c, _d;
+    return /* @__PURE__ */ react.createElement("div", { className: `admin-sidebar ${this.state.sidebarOpen ? "open" : ""}` }, /* @__PURE__ */ react.createElement("div", { className: "admin-sidebar-header" }, /* @__PURE__ */ react.createElement("span", null, "\u{1F6E1}\uFE0F"), /* @__PURE__ */ react.createElement("span", null, "Admin Panel")), /* @__PURE__ */ react.createElement("div", { className: "admin-sidebar-nav" }, /* @__PURE__ */ react.createElement("div", { className: "nav-group" }, /* @__PURE__ */ react.createElement("div", { className: "group-label" }, "Overview"), this.RenderSidebarItem(
+      "dashboard",
+      "\u{1F4CA}",
+      "applicationAdminDashboard",
+      true
+    ), this.RenderSidebarItem("analytics", "\u{1F4C8}", "adminAnalyticsNav"), this.RenderSidebarItem("node_usage", "\u{1F4C9}", "adminNodeUsageNav"), this.RenderSidebarItem(
+      "users",
+      "\u{1F465}",
+      "applicationAdminUsers",
+      true,
+      this.state.users.length
+    ), this.RenderSidebarItem(
+      "orders",
+      "\u{1F4E6}",
+      "applicationAdminOrders",
+      true,
+      this.state.orders.length
+    )), /* @__PURE__ */ react.createElement("div", { className: "nav-group" }, /* @__PURE__ */ react.createElement("div", { className: "group-label" }, "Finance"), this.RenderSidebarItem(
+      "finance",
+      "\u{1F4B3}",
+      "applicationAdminPaymentsLast",
+      true,
+      this.state.payments.length
+    )), /* @__PURE__ */ react.createElement("div", { className: "nav-group" }, /* @__PURE__ */ react.createElement("div", { className: "group-label" }, "Tools"), this.RenderSidebarItem(
+      "marketing",
+      "\u{1F39F}\uFE0F",
+      "applicationAdminPromos",
+      true,
+      this.state.promos.length
+    ), this.RenderSidebarItem(
+      "messages",
+      "\u{1F680}",
+      "admin-nav-messages",
+      false
+    ), this.RenderSidebarItem(
+      "infrastructure",
+      "\u{1F310}",
+      "admin-nodes",
+      true,
+      ((_b = (_a = this.props.nodes) == null ? void 0 : _a.length) != null ? _b : 0) + ((_d = (_c = this.props.relayNodes) == null ? void 0 : _c.length) != null ? _d : 0)
+    ), this.RenderSidebarItem(
+      "firewall",
+      "\u{1F9F1}",
+      "admin-nav-firewall",
+      false
+    )), /* @__PURE__ */ react.createElement("div", { className: "nav-group" }, /* @__PURE__ */ react.createElement("div", { className: "group-label" }, "System"), this.RenderSidebarItem(
+      "system",
+      "\u2699\uFE0F",
+      "applicationAdminCoreSettings"
+    ), this.RenderSidebarItem(
+      "logs_admin",
+      "\u{1F4CB}",
+      "admin-nav-logs",
+      false
+    ), this.RenderSidebarItem(
+      "routing",
+      "\u{1F500}",
+      "admin-routing",
+      true
+    ), this.RenderSidebarItem(
+      "presets",
+      "\u{1F4CB}",
+      "admin-presets",
+      true,
+      this.state.presets.length
+    ), this.RenderSidebarItem("wiki", "\u{1F4DA}", "applicationButtonsFaq"))));
+  }
+  // ─────────────────────────────────────────────
+  // render
+  // ─────────────────────────────────────────────
+  render() {
+    const editUser = this.state.editUser ? this.state.users.find((q) => q.id === this.state.editUser) : void 0;
+    const showBackButton = !telegram_isTelegramEnv() && (!!this.state.editUser || !!this.state.inPromoMenu.edit || !!this.state.new_node.opened || !!this.state.install_node.opened || !!this.state.coreSettings.opened || !!this.state.sendMessage.show || !!this.state.firewallEdit.show || !!this.state.presetsEdit.show || !!this.state.bulkRenewal.show || !!this.state.connectionTest.open);
+    const ctx = {
+      langString: this.LangString,
+      showInCurrency: this.ShowInCurrency,
+      postRequestUser: this.PostRequestUser,
+      convertToCurrency: this.ConvertToCurrency,
+      secondsToString: this.SecondsToString,
+      currency: this.currency,
+      ownerShow: this.OwnerShow,
+      state: this.state,
+      setState: this.setState.bind(this),
+      nodes: this.props.nodes,
+      relayNodes: this.props.relayNodes,
+      currentUser: this.props.user,
+      showInstructionModal: this.showInstructionModal,
+      openFloatingUserModal: this.OpenFloatingUserModal,
+      openConnectionTest: this.OpenConnectionTest
+    };
+    const isOverlayVisible = this.state.currentView === "dashboard";
+    return /* @__PURE__ */ react.createElement("div", { className: "admin" }, /* @__PURE__ */ react.createElement("div", { className: "admin-container" }, this.RenderSidebar(), /* @__PURE__ */ react.createElement("div", { className: "admin-content" }, /* @__PURE__ */ react.createElement("div", { className: "view-header" }, /* @__PURE__ */ react.createElement("h2", null, (this.state.currentView.charAt(0).toUpperCase() + this.state.currentView.slice(1)).replace(/_/g, " ")), /* @__PURE__ */ react.createElement("div", { className: "mobile-toggle" }, /* @__PURE__ */ react.createElement("button", { className: "small", onClick: this.ToggleSidebar }, "\u2630"))), showBackButton && /* @__PURE__ */ react.createElement(
+      "button",
+      {
+        className: "small orangeBg web-back-button",
+        onClick: () => this.BackButton()
+      },
+      "\u{1F519} ",
+      this.LangString("applicationAdminBackButton") || "Back"
+    ), isOverlayVisible && this.RenderStats(), this.state.firewallEdit.show ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(FirewallEditForm, { ctx })) : this.state.coreSettings.opened ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(CoreSettingsPanel, { ctx })) : this.state.install_node.opened ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(InstallNodeForm, { ctx })) : this.state.new_node.opened ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(NewNodeForm, { ctx })) : this.state.sendMessage.show ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(
+      SendMessagePanel,
+      {
+        ctx,
+        targets: this.SendMessageTargets,
+        canSend: this.CanSendMessage
+      }
+    )) : this.state.presetsEdit.show ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(PresetsPanel, { ctx })) : this.state.bulkRenewal.show ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(BulkRenewalPanel, { ctx })) : this.state.inPromoMenu.edit ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(PromoEditForm, { ctx })) : editUser ? /* @__PURE__ */ react.createElement("div", { className: "admin-form-overlay" }, /* @__PURE__ */ react.createElement(UserEditPanel, { editUser, ctx })) : (
+      /* ── Main Views ── */
+      /* @__PURE__ */ react.createElement("div", { className: "admin-view-container" }, this.state.currentView === "dashboard" && /* @__PURE__ */ react.createElement(Dashboard, { ctx }), this.state.currentView === "analytics" && /* @__PURE__ */ react.createElement(AnalyticsPanel, { ctx }), this.state.currentView === "node_usage" && /* @__PURE__ */ react.createElement(NodeUsagePanel, { ctx }), this.state.currentView === "users" && /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock(
+        "users",
+        "applicationAdminUsers",
+        (u, i) => /* @__PURE__ */ react.createElement(UserItem, { key: u.id + i, user: u, index: i, ctx })
+      ), this.RenderBlock(
+        "users",
+        "applicationAdminUsersActive",
+        (u, i) => /* @__PURE__ */ react.createElement(UserItem, { key: u.id + i, user: u, index: i, ctx }),
+        void 0,
+        "active"
+      )), this.state.currentView === "orders" && /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock(
+        "orders",
+        "applicationAdminOrders",
+        (o, i) => /* @__PURE__ */ react.createElement(OrderItem, { key: o.id, order: o, index: i, ctx })
+      ), this.RenderBlock(
+        "orders",
+        "applicationAdminOrdersActive",
+        (o, i) => /* @__PURE__ */ react.createElement(OrderItem, { key: o.id, order: o, index: i, ctx }),
+        void 0,
+        "active",
+        "expire"
+      ), this.RenderBlock(
+        "orders",
+        "applicationAdminOrdersExpired",
+        (o, i) => /* @__PURE__ */ react.createElement(OrderItem, { key: o.id, order: o, index: i, ctx }),
+        void 0,
+        "expired",
+        "expire"
+      )), this.state.currentView === "finance" && /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock(
+        "payments",
+        "applicationAdminPaymentsLast",
+        (p, i) => /* @__PURE__ */ react.createElement(
+          PaymentItem,
+          {
+            key: p.id,
+            payment: p,
+            index: i,
+            ctx
+          }
+        )
+      ), this.RenderBlock(
+        "paymentsSuccess",
+        "applicationAdminPaymentsLastSuccess",
+        (p, i) => /* @__PURE__ */ react.createElement(
+          PaymentItem,
+          {
+            key: p.id,
+            payment: p,
+            index: i,
+            ctx
+          }
+        )
+      )), this.state.currentView === "marketing" && /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, /* @__PURE__ */ react.createElement("div", { style: { marginBottom: "16px" } }, /* @__PURE__ */ react.createElement(
+        "button",
+        {
+          className: "admin-btn orangeBg",
+          style: { width: "100%", padding: "10px" },
+          onClick: (e) => {
+            e.preventDefault();
+            this.setState({ bulkRenewal: { show: true } });
+          }
+        },
+        this.LangString("admin.bulkRenewal.button")
+      )), this.RenderBlock(
+        "promos",
+        "applicationAdminPromos",
+        (p, i) => /* @__PURE__ */ react.createElement(PromoItem, { key: p.id, promo: p, index: i, ctx }),
+        () => /* @__PURE__ */ react.createElement(
+          "button",
+          {
+            className: "admin-btn small",
+            onClick: (e) => {
+              e.preventDefault();
+              this.setState({
+                inPromoMenu: admin_spreadProps(admin_spreadValues({}, this.state.inPromoMenu), {
+                  edit: true,
+                  editName: ""
+                })
+              });
+            }
+          },
+          "\u2795 ",
+          this.LangString("applicationAdminPromosCreate")
+        )
+      )), this.state.currentView === "messages" && /* @__PURE__ */ react.createElement("div", { className: "action-row" }, /* @__PURE__ */ react.createElement(
+        "button",
+        {
+          className: "admin-btn blueBg",
+          style: { width: "100%" },
+          onClick: (e) => {
+            e.preventDefault();
+            this.setState({
+              sendMessage: admin_spreadProps(admin_spreadValues({}, this.state.sendMessage), {
+                show: true
+              })
+            });
+          }
+        },
+        "\u{1F680} ",
+        this.LangString("applicationAdminSendMessage")
+      )), this.state.currentView === "infrastructure" && /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement(XrayReleasePanel, { ctx }), /* @__PURE__ */ react.createElement(
+        "div",
+        {
+          className: "action-row",
+          style: { marginBottom: "16px" }
+        },
+        /* @__PURE__ */ react.createElement(
+          "button",
+          {
+            className: "admin-btn blueBg",
+            style: { width: "100%" },
+            onClick: (e) => {
+              e.preventDefault();
+              this.OpenConnectionTest();
+            }
+          },
+          "\u{1F50C} ",
+          this.LangString("connection_test_button")
+        )
+      ), /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock("nodes", "admin-nodes", (n, i) => /* @__PURE__ */ react.createElement(NodeItem, { key: n.id, node: n, index: i, ctx }))), /* @__PURE__ */ react.createElement(
+        "div",
+        {
+          className: "action-row",
+          style: { marginTop: "16px", gap: "12px" }
+        },
+        /* @__PURE__ */ react.createElement(
+          "button",
+          {
+            className: "admin-btn greenBg",
+            style: { flex: 1 },
+            onClick: (e) => {
+              e.preventDefault();
+              this.setState({
+                new_node: admin_spreadProps(admin_spreadValues({}, this.state.new_node), { opened: true })
+              });
+            }
+          },
+          "\u2795 ",
+          this.LangString("applicationAdminAddNode")
+        ),
+        /* @__PURE__ */ react.createElement(
+          "button",
+          {
+            className: "admin-btn orangeBg",
+            style: { flex: 1 },
+            onClick: (e) => {
+              e.preventDefault();
+              this.setState({
+                install_node: admin_spreadProps(admin_spreadValues({}, this.state.install_node), {
+                  opened: true
+                })
+              });
+            }
+          },
+          "\u{1F6E0}\uFE0F ",
+          this.LangString("applicationAdminInstallNode")
+        )
+      )), this.state.currentView === "firewall" && /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock(
+        "firewall",
+        "admin-firewall",
+        (fw, i) => /* @__PURE__ */ react.createElement(
+          FirewallItem,
+          {
+            key: fw.id,
+            item: fw,
+            index: i,
+            ctx
+          }
+        )
+      )), /* @__PURE__ */ react.createElement("div", { className: "action-row", style: { marginTop: "16px" } }, /* @__PURE__ */ react.createElement(
+        "button",
+        {
+          className: "admin-btn redBg",
+          style: { width: "100%" },
+          onClick: (e) => {
+            e.preventDefault();
+            this.setState({
+              firewallEdit: admin_spreadProps(admin_spreadValues({}, this.state.firewallEdit), {
+                show: true
+              })
+            });
+          }
+        },
+        "\u{1F9F1} ",
+        this.LangString("admin-firewall_add")
+      ))), this.state.currentView === "system" && /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement(BackupPanel, { ctx }), /* @__PURE__ */ react.createElement("div", { className: "action-row", style: { marginTop: "16px" } }, /* @__PURE__ */ react.createElement(
+        "button",
+        {
+          className: "admin-btn",
+          style: { width: "100%" },
+          onClick: (e) => {
+            e.preventDefault();
+            this.setState({
+              coreSettings: admin_spreadProps(admin_spreadValues({}, this.state.coreSettings), {
+                opened: true
+              })
+            });
+          }
+        },
+        "\u2699\uFE0F ",
+        this.LangString("applicationAdminCoreSettings")
+      ))), this.state.currentView === "logs_admin" && /* @__PURE__ */ react.createElement("div", { className: "admin-data-grid" }, this.RenderBlock("logs", "logRecord-title", (l, i) => /* @__PURE__ */ react.createElement(LogItem, { key: l.id, log: l, index: i, ctx }))), this.state.currentView === "routing" && /* @__PURE__ */ react.createElement(RoutingPanel, { ctx }), this.state.currentView === "presets" && /* @__PURE__ */ react.createElement(PresetsPanel, { ctx }), this.state.currentView === "wiki" && /* @__PURE__ */ react.createElement(WikiPanel, { ctx }))
+    ), this.RenderFloatingUserModals(ctx))), this.RenderInstructionModal(), this.state.connectionTest.open && /* @__PURE__ */ react.createElement(
+      ConnectionTestModal,
+      {
+        ctx,
+        filterNodeIds: this.state.connectionTest.nodeIds,
+        onClose: this.CloseConnectionTest
+      }
+    ));
+  }
+}
+
+;// ./src/config/referral.ts
+
+
+const REFERRAL_CONFIG = {
+  host_percent: 17,
+  // кэшбэк от пополнения рефералом
+  host_bonus: (0,config_currency/* CurrencyConvertToUSD */.oj)(50, "RUB"),
+  // бонус за первый заказ реферала тому, кто привел реферала
+  referral_percent: 6,
+  // процент кэшбэка если ты реферал
+  referral_bonus: (0,config_currency/* CurrencyConvertToUSD */.oj)(40, "RUB")
+  // бонус за первый заказ реферала самому рефералу
+};
+
+;// ./src/shared/payments.ts
+
+
+
+
+const orderPaymentMethods = (list) => {
+  const wallets = list.filter((q) => q.name.startsWith("FKWallet"));
+  const rest = list.filter((q) => !q.name.startsWith("FKWallet"));
+  return [...rest, ...wallets];
+};
+const paymentAmountBoundsUsd = (item) => {
+  let min = (0,config_currency/* CurrencyConvertToUSD */.oj)(item.min_sum, item.currency);
+  let max = (0,config_currency/* CurrencyConvertToUSD */.oj)(item.max_sum, item.currency);
+  if (min < project/* PAYMENT_MIN_SUM */.i3) {
+    min = project/* PAYMENT_MIN_SUM */.i3;
+  }
+  if (max < project/* PAYMENT_MIN_SUM */.i3) {
+    max = project/* PAYMENT_MIN_SUM */.i3;
+  }
+  return { min, max };
+};
+const ceilMoney = (amount) => {
+  return Math.ceil(amount * 100 - 1e-6) / 100;
+};
+const floorMoney = (amount) => {
+  return Math.floor(amount * 100 + 1e-6) / 100;
+};
+const paymentLimitsInCurrency = (item, currency, maxUsdCap) => {
+  const usd = paymentAmountBoundsUsd(item);
+  let maxUsd = usd.max;
+  let limitReached = false;
+  if (maxUsdCap !== void 0) {
+    if (maxUsdCap <= 0) limitReached = true;
+    maxUsd = Math.min(maxUsd, Math.max(0, maxUsdCap));
+  }
+  const min = ceilMoney((0,config_currency/* CurrencyConvert */.Xv)(usd.min, currency));
+  let max = floorMoney((0,config_currency/* CurrencyConvert */.Xv)(maxUsd, currency));
+  const payable = !limitReached && max + 1e-9 >= min;
+  if (max < min) max = min;
+  return { min, max, payable, limitReached };
+};
+const formatPaymentAmount = (amount, currency) => {
+  return `${System/* System */.i.numberFormat(amount)} ${currency}`;
+};
+const amountMatchesPaymentLimits = (amount, limits) => {
+  if (!limits.payable || !Number.isFinite(amount) || amount <= 0) return false;
+  const cents = Math.round(amount * 100);
+  return cents >= Math.round(limits.min * 100) && cents <= Math.round(limits.max * 100);
+};
+const isPaymentEmailValid = (email) => {
+  return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    String(email).toLowerCase()
+  );
+};
+
+;// ./src/application/pages/balance.tsx
+
+var balance_defProp = Object.defineProperty;
+var balance_getOwnPropSymbols = Object.getOwnPropertySymbols;
+var balance_hasOwnProp = Object.prototype.hasOwnProperty;
+var balance_propIsEnum = Object.prototype.propertyIsEnumerable;
+var balance_defNormalProp = (obj, key, value) => key in obj ? balance_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var balance_spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (balance_hasOwnProp.call(b, prop))
+      balance_defNormalProp(a, prop, b[prop]);
+  if (balance_getOwnPropSymbols)
+    for (var prop of balance_getOwnPropSymbols(b)) {
+      if (balance_propIsEnum.call(b, prop))
+        balance_defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+
+
+
+
+
+
+
+const balance_state = {
+  amount: 0,
+  loadPlatform: false,
+  platform: project/* PAYMENT_METHODS_LIST */.vF[0].id,
+  currencyList: [],
+  currencyItem: "",
+  email: "",
+  err: "",
+  createWait: false
+};
+class BalancePage extends BasePage {
+  constructor(props) {
+    super(props);
+    this.state = balance_spreadValues({}, balance_state);
+    this.CanClose = () => {
+      if (this.state.createWait) return false;
+      return true;
+    };
+    this.BackButton = () => {
+      if (this.state.createWait) return true;
+      return false;
+    };
+    this.MainButton = () => {
+      var _a;
+      const limits = this.currentMinMax;
+      const active = !!(this.currencyItemCurrent && limits && amountMatchesPaymentLimits(this.state.amount, limits) && (this.state.email || !this.needEmail) && (!this.needEmail || isPaymentEmailValid(this.state.email)));
+      return {
+        text: this.state.createWait ? "applicationBalanceAmountButtonLoading" : active ? "applicationBalanceAmountButton" : ((_a = this.currentMinMax) == null ? void 0 : _a.limitReached) ? "applicationBalanceErrBalanceLimitButton" : "applicationBalanceAmountButtonErr",
+        active,
+        showProgress: !!this.state.createWait,
+        onClick: () => {
+          if (this.state.createWait) return;
+          this.setState({ createWait: true });
+          this.PostRequestUser(
+            "/tgapi/createPaymentKassa",
+            {
+              amount: this.state.amount,
+              currencyItem: this.state.currencyItem,
+              email: this.state.email,
+              currency: this.currency,
+              platform: this.state.platform
+            }
+          ).then((res) => {
+            if (!res || !res.status) {
+              if (res == null ? void 0 : res.reason) {
+                this.setState({ err: res.reason, createWait: false });
+                return;
+              }
+            } else {
+              if (this.state.platform === "telegram") {
+                WebApp.openInvoice(res.url, (status) => {
+                  console.log("Invoice status", status);
+                });
+              } else {
+                WebApp.openLink(res.url);
+              }
+            }
+            this.setState({ createWait: false });
+          });
+        }
+      };
+    };
+    this.ReloadPaymentMethods();
+  }
+  ReloadPaymentMethods() {
+    this.PostRequestUser(
+      "/tgapi/getPaymentMethoods",
+      {
+        method: this.state.platform
+      }
+    ).then((res) => {
+      if (res == null ? void 0 : res.list) {
+        res.list = orderPaymentMethods(res.list);
+        this.setState({
+          loadPlatform: true,
+          currencyList: res.list,
+          currencyItem: res.list[0].service,
+          amount: 0,
+          // amount: Math.max(
+          //   CurrencyConvert(
+          //     CurrencyConvertToUSD(res.list[0].min_sum, res.list[0].currency),
+          //     this.currency
+          //   ),
+          //   CurrencyConvert(PAYMENT_MIN_SUM, this.currency)
+          // ),
+          email: localStorage.getItem("email") || ""
+        });
+      }
+    });
+  }
+  get needEmail() {
+    var _a;
+    if (!this.state.loadPlatform) return false;
+    return !!((_a = project/* PAYMENT_METHODS_LIST */.vF.find((q) => q.id === this.state.platform)) == null ? void 0 : _a.email);
+  }
+  get currencyItemCurrent() {
+    if (!this.state.loadPlatform) return void 0;
+    return this.state.currencyList.find(
+      (q) => q.service === this.state.currencyItem
+    );
+  }
+  get currentPlatformName() {
+    const platform = project/* PAYMENT_METHODS_LIST */.vF.find(
+      (q) => q.id === this.state.platform
+    );
+    return platform ? this.LangString(platform.name) : "";
+  }
+  get currentMinMax() {
+    const item = this.currencyItemCurrent;
+    if (!item) return void 0;
+    const maxBalance = Math.max(
+      0,
+      BALANCE_LIMIT_AMOUNT - this.props.user.balance
+    );
+    const limits = paymentLimitsInCurrency(item, this.currency, maxBalance);
+    return {
+      minText: formatPaymentAmount(limits.min, this.currency),
+      maxText: formatPaymentAmount(limits.max, this.currency),
+      min: limits.min,
+      max: limits.max,
+      payable: limits.payable,
+      limitReached: limits.limitReached
+    };
+  }
+  render() {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _i;
+    const MainButton = typeof this.MainButton === "function" ? this.MainButton() : this.MainButton;
+    return /* @__PURE__ */ react.createElement("div", { className: "balance" }, /* @__PURE__ */ react.createElement(
+      "div",
+      {
+        className: "title",
+        dangerouslySetInnerHTML: {
+          __html: this.LangString("applicationBalanceTitle")
+        }
+      }
+    ), this.state.err ? /* @__PURE__ */ react.createElement(
+      "div",
+      {
+        className: "error redBg",
+        dangerouslySetInnerHTML: {
+          __html: this.LangString(
+            "applicationBalanceErr",
+            this.LangStringTry(this.state.err)
+          )
+        }
+      }
+    ) : /* @__PURE__ */ react.createElement(react.Fragment, null), ((_a = this.currentMinMax) == null ? void 0 : _a.limitReached) ? /* @__PURE__ */ react.createElement(
+      "div",
+      {
+        className: "error redBg",
+        dangerouslySetInnerHTML: {
+          __html: this.LangString(
+            "applicationBalanceErrBalanceLimit",
+            this.ShowInCurrency(BALANCE_LIMIT_AMOUNT, false)
+          )
+        }
+      }
+    ) : /* @__PURE__ */ react.createElement(react.Fragment, null), project/* PAYMENT_METHODS_LIST */.vF.length > 1 ? /* @__PURE__ */ react.createElement("div", { className: "item" }, /* @__PURE__ */ react.createElement("div", { className: "first" }, /* @__PURE__ */ react.createElement("span", null, this.LangString("applicationBalancePlatform")), /* @__PURE__ */ react.createElement(
+      "select",
+      {
+        className: "input-item",
+        value: this.state.platform,
+        onChange: (e) => {
+          e.preventDefault();
+          this.setState(
+            {
+              platform: e.currentTarget.value,
+              err: "",
+              loadPlatform: false
+            },
+            () => {
+              this.ReloadPaymentMethods();
+            }
+          );
+        }
+      },
+      project/* PAYMENT_METHODS_LIST */.vF.map((q) => {
+        return /* @__PURE__ */ react.createElement("option", { key: q.id, value: q.id }, this.LangString(q.name));
+      })
+    )), this.currencyItemCurrent ? /* @__PURE__ */ react.createElement(
+      "span",
+      {
+        className: "desc",
+        dangerouslySetInnerHTML: {
+          __html: this.LangString(
+            "applicationBalanceCurrencyDesc",
+            this.currencyItemCurrent.percent
+          )
+        }
+      }
+    ) : /* @__PURE__ */ react.createElement(react.Fragment, null)) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.currencyItemCurrent && this.state.loadPlatform ? /* @__PURE__ */ react.createElement("div", { className: "item" }, /* @__PURE__ */ react.createElement("div", { className: "first" }, /* @__PURE__ */ react.createElement("span", null, this.LangString(
+      "applicationBalanceAmount",
+      this.currencyItemCurrent.useCurrency ? this.currencyItemCurrent.currency : this.currency
+    )), /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        className: "input-item",
+        value: this.state.amount,
+        min: (_b = this.currentMinMax) == null ? void 0 : _b.min,
+        max: (_c = this.currentMinMax) == null ? void 0 : _c.max,
+        step: "any",
+        type: "number",
+        onChange: (e) => {
+          var _a2, _b2;
+          e.preventDefault();
+          const amount = Math.min(
+            (_b2 = (_a2 = this.currentMinMax) == null ? void 0 : _a2.max) != null ? _b2 : 9999999999999,
+            e.currentTarget.valueAsNumber
+          );
+          this.setState({
+            amount,
+            err: ""
+          });
+        }
+      }
+    )), /* @__PURE__ */ react.createElement(
+      "span",
+      {
+        className: "desc",
+        dangerouslySetInnerHTML: {
+          __html: this.LangString(
+            "applicationBalanceAmountLimit",
+            (_d = this.currentMinMax) == null ? void 0 : _d.minText,
+            (_e = this.currentMinMax) == null ? void 0 : _e.maxText,
+            this.currencyItemCurrent.percent,
+            this.currentPlatformName
+          )
+        }
+      }
+    ), this.currencyItemCurrent && this.state.amount ? /* @__PURE__ */ react.createElement(
+      "span",
+      {
+        className: "desc",
+        dangerouslySetInnerHTML: {
+          __html: this.LangString(
+            "applicationBalanceAmountWithPercent",
+            `${(this.state.amount * (1 + this.currencyItemCurrent.percent / 100)).toFixed(2)} ${this.currency}`,
+            `${(this.state.amount / 100 * REFERRAL_CONFIG.referral_percent).toFixed(2)} ${this.currency}`
+          )
+        }
+      }
+    ) : /* @__PURE__ */ react.createElement(react.Fragment, null)) : /* @__PURE__ */ react.createElement(react.Fragment, null), project/* PAYMENT_METHODS_LIST */.vF.length > 1 && ((_f = this.state.currencyList) == null ? void 0 : _f.length) && ((_g = this.state.currencyList) == null ? void 0 : _g.length) > 1 && this.state.loadPlatform ? /* @__PURE__ */ react.createElement("div", { className: "item" }, /* @__PURE__ */ react.createElement("div", { className: "first" }, /* @__PURE__ */ react.createElement("span", null, this.LangString("applicationBalanceCurrency")), /* @__PURE__ */ react.createElement(
+      "select",
+      {
+        value: this.state.currencyItem,
+        onChange: (e) => {
+          e.preventDefault();
+          const next = this.state.currencyList.find(
+            (q) => q.service === e.currentTarget.value
+          );
+          const nextLimits = next ? paymentLimitsInCurrency(next, this.currency) : void 0;
+          this.setState({
+            currencyItem: e.currentTarget.value,
+            amount: nextLimits ? Math.max(this.state.amount, nextLimits.min) : this.state.amount,
+            err: ""
+          });
+        }
+      },
+      this.state.currencyList.map((q) => {
+        return /* @__PURE__ */ react.createElement("option", { key: q.service, value: q.service }, q.name);
+      })
+    )), this.currencyItemCurrent ? /* @__PURE__ */ react.createElement(
+      "span",
+      {
+        className: "desc",
+        dangerouslySetInnerHTML: {
+          __html: this.LangString(
+            "applicationBalanceCurrencyDesc",
+            this.currencyItemCurrent.percent
+          )
+        }
+      }
+    ) : /* @__PURE__ */ react.createElement(react.Fragment, null)) : /* @__PURE__ */ react.createElement(react.Fragment, null), project/* PAYMENT_METHODS_LIST */.vF.length > 1 ? /* @__PURE__ */ react.createElement("div", { className: "item" }, /* @__PURE__ */ react.createElement(
+      "span",
+      {
+        className: "desc",
+        dangerouslySetInnerHTML: {
+          __html: this.LangString(
+            "applicationBalanceAmountDesc",
+            this.LangString(
+              (_i = (_h = project/* PAYMENT_METHODS_LIST */.vF.find((q) => q.id === this.state.platform)) == null ? void 0 : _h.name) != null ? _i : this.state.platform
+            )
+          )
+        }
+      }
+    )) : /* @__PURE__ */ react.createElement(react.Fragment, null), this.needEmail ? /* @__PURE__ */ react.createElement("div", { className: "item" }, /* @__PURE__ */ react.createElement("div", { className: "first" }, /* @__PURE__ */ react.createElement("span", null, this.LangString("applicationBalanceEmail")), /* @__PURE__ */ react.createElement(
+      "input",
+      {
+        value: this.state.email,
+        type: "text",
+        onChange: (e) => {
+          e.preventDefault();
+          localStorage.setItem("email", e.currentTarget.value);
+          this.setState({
+            email: e.currentTarget.value,
+            err: ""
+          });
+        }
+      }
+    ))) : /* @__PURE__ */ react.createElement(react.Fragment, null), !telegram_isTelegramEnv() && !!MainButton && /* @__PURE__ */ react.createElement("button", { disabled: !MainButton.active, onClick: MainButton.onClick }, this.LangString(MainButton.text)));
+  }
+}
+
 ;// ./src/application/pages/servers.tsx
 
 var servers_defProp = Object.defineProperty;
@@ -73416,7 +75150,7 @@ class SettingsPage extends BasePage {
     );
   }
   render() {
-    var _a, _b, _c, _d, _e;
+    var _a, _b, _c, _d, _e, _f, _g;
     const { user } = this.props;
     const pwMismatch = this.state.password && this.state.passwordRepeat && this.state.password !== this.state.passwordRepeat;
     const pwTooShort = this.state.password && this.state.password.length < 4;
@@ -73672,7 +75406,21 @@ class SettingsPage extends BasePage {
         /* @__PURE__ */ react.createElement("option", { value: "1" }, this.LangStringTry("settings.disableSiteNotifyYes")),
         /* @__PURE__ */ react.createElement("option", { value: "0" }, this.LangStringTry("settings.disableSiteNotifyNo"))
       )))
-    ), /* @__PURE__ */ react.createElement("section", { className: "settings-section" }, /* @__PURE__ */ react.createElement("div", { className: "settings-section__title" }, this.LangString("settings.reserveConnectionLink")), /* @__PURE__ */ react.createElement("div", { className: "settings-section__desc" }, this.LangString("settings.reserveConnectionLinkDesc")), /* @__PURE__ */ react.createElement("div", { className: "settings-field" }, /* @__PURE__ */ react.createElement(
+    ), /* @__PURE__ */ react.createElement("section", { className: "settings-section" }, /* @__PURE__ */ react.createElement("div", { className: "settings-section__title" }, this.LangString("settings.expireNotifyMode")), /* @__PURE__ */ react.createElement("div", { className: "settings-section__desc" }, this.LangString("settings.expireNotifyModeDesc")), /* @__PURE__ */ react.createElement("div", { className: "settings-field" }, /* @__PURE__ */ react.createElement(
+      "select",
+      {
+        value: (_b = user.expire_notify_mode) != null ? _b : "all",
+        onChange: (e) => {
+          e.preventDefault();
+          this.PostRequestUser("/tgapi/setExpireNotifyMode", {
+            expire_notify_mode: e.currentTarget.value
+          });
+        }
+      },
+      /* @__PURE__ */ react.createElement("option", { value: "all" }, this.LangString("settings.expireNotifyModeAll")),
+      /* @__PURE__ */ react.createElement("option", { value: "smart" }, this.LangString("settings.expireNotifyModeSmart")),
+      /* @__PURE__ */ react.createElement("option", { value: "critical" }, this.LangString("settings.expireNotifyModeCritical"))
+    ))), /* @__PURE__ */ react.createElement("section", { className: "settings-section" }, /* @__PURE__ */ react.createElement("div", { className: "settings-section__title" }, this.LangString("settings.reserveConnectionLink")), /* @__PURE__ */ react.createElement("div", { className: "settings-section__desc" }, this.LangString("settings.reserveConnectionLinkDesc")), /* @__PURE__ */ react.createElement("div", { className: "settings-field" }, /* @__PURE__ */ react.createElement(
       "select",
       {
         value: user.reserveConnectionLink ? "1" : "0",
@@ -73688,14 +75436,14 @@ class SettingsPage extends BasePage {
     ))), /* @__PURE__ */ react.createElement("section", { className: "settings-section" }, /* @__PURE__ */ react.createElement("div", { className: "settings-section__title" }, this.LangString("settings.geoRouting")), /* @__PURE__ */ react.createElement("div", { className: "settings-section__desc" }, this.LangString(
       "settings.geoRoutingDesc",
       this.LangString(
-        (_c = (_b = this.state.routings) == null ? void 0 : _b.find((q) => q.geo === "main")) == null ? void 0 : _c.lang
+        (_d = (_c = this.state.routings) == null ? void 0 : _c.find((q) => q.geo === "main")) == null ? void 0 : _d.lang
       )
-    )), ((_d = this.state.routings.find((q) => q.geo === user.geo_routing)) == null ? void 0 : _d.desc) ? /* @__PURE__ */ react.createElement("div", { className: "settings-section__desc" }, this.LangString(
-      (_e = this.state.routings.find((q) => q.geo === user.geo_routing)) == null ? void 0 : _e.desc
+    )), ((_e = this.state.routings.find((q) => q.geo === user.geo_routing)) == null ? void 0 : _e.desc) ? /* @__PURE__ */ react.createElement("div", { className: "settings-section__desc" }, this.LangString(
+      (_f = this.state.routings.find((q) => q.geo === user.geo_routing)) == null ? void 0 : _f.desc
     )) : /* @__PURE__ */ react.createElement(react.Fragment, null), /* @__PURE__ */ react.createElement("div", { className: "settings-field" }, /* @__PURE__ */ react.createElement(
       "select",
       {
-        value: user.geo_routing || "main",
+        value: (_g = user.geo_routing) != null ? _g : "main",
         onChange: (e) => {
           e.preventDefault();
           this.PostRequestUser("/tgapi/setGeoRouting", {
@@ -73713,7 +75461,7 @@ class SettingsPage extends BasePage {
         {
           className: "settings-section__desc",
           style: {
-            color: "var(--tg-theme-link-color)",
+            color: "var(--rm-link)",
             whiteSpace: "pre-line"
           }
         },
@@ -74502,6 +76250,129 @@ class SupportFab extends react.Component {
   }
 }
 
+;// ./src/application/modules/ui-icons.tsx
+
+
+const PATHS = {
+  home: /* @__PURE__ */ react.createElement("path", { d: "M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" }),
+  orders: /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("rect", { x: "3", y: "7", width: "18", height: "13", rx: "2" }), /* @__PURE__ */ react.createElement("path", { d: "M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 12.5h18" })),
+  plus: /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("circle", { cx: "12", cy: "12", r: "9" }), /* @__PURE__ */ react.createElement("path", { d: "M12 8v8M8 12h8" })),
+  users: /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("circle", { cx: "9", cy: "8", r: "3.5" }), /* @__PURE__ */ react.createElement("path", { d: "M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.2a6.5 6.5 0 0 1 3.5 5.8" })),
+  sliders: /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("path", { d: "M4 7h9M17 7h3M4 17h3M11 17h9" }), /* @__PURE__ */ react.createElement("circle", { cx: "15", cy: "7", r: "2" }), /* @__PURE__ */ react.createElement("circle", { cx: "9", cy: "17", r: "2" })),
+  server: /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("rect", { x: "3", y: "4", width: "18", height: "7", rx: "2" }), /* @__PURE__ */ react.createElement("rect", { x: "3", y: "13", width: "18", height: "7", rx: "2" }), /* @__PURE__ */ react.createElement("path", { d: "M7 7.5h.01M7 16.5h.01M11 7.5h6M11 16.5h6" })),
+  shield: /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("path", { d: "M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z" }), /* @__PURE__ */ react.createElement("path", { d: "m8.5 12 2.5 2.5 4.5-5" })),
+  exit: /* @__PURE__ */ react.createElement("path", { d: "M15 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4M10 17l5-5-5-5M15 12H3" }),
+  sun: /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("circle", { cx: "12", cy: "12", r: "4" }), /* @__PURE__ */ react.createElement("path", { d: "M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" })),
+  moon: /* @__PURE__ */ react.createElement("path", { d: "M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" }),
+  bell: /* @__PURE__ */ react.createElement("path", { d: "M6 9a6 6 0 0 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 15 6 9zM10 20a2.2 2.2 0 0 0 4 0" }),
+  wallet: /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement("path", { d: "M4 7a2 2 0 0 1 2-2h12v4" }), /* @__PURE__ */ react.createElement("rect", { x: "3", y: "9", width: "18", height: "11", rx: "2" }), /* @__PURE__ */ react.createElement("path", { d: "M16.5 14.5h.01" })),
+  menu: /* @__PURE__ */ react.createElement("path", { d: "M4 7h16M4 12h16M4 17h16" }),
+  x: /* @__PURE__ */ react.createElement("path", { d: "M6 6l12 12M18 6 6 18" }),
+  back: /* @__PURE__ */ react.createElement("path", { d: "M15 6l-6 6 6 6" }),
+  trash: /* @__PURE__ */ react.createElement("path", { d: "M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5M14 11v5" })
+};
+const UiIcon = ({
+  name,
+  size,
+  className
+}) => /* @__PURE__ */ react.createElement(
+  "svg",
+  {
+    className: `ico${className ? " " + className : ""}`,
+    viewBox: "0 0 24 24",
+    width: size,
+    height: size,
+    "aria-hidden": "true"
+  },
+  PATHS[name]
+);
+
+;// ./src/application/modules/theme.ts
+
+
+const STORAGE_THEME_KEY = "rm_theme";
+const CHROME = {
+  dark: { bg: "#0f1116", header: "#0b0d12" },
+  light: { bg: "#f4f5f9", header: "#ffffff" }
+};
+const theme_listeners = /* @__PURE__ */ new Set();
+let current = "dark";
+function readStored() {
+  try {
+    const v = localStorage.getItem(STORAGE_THEME_KEY);
+    return v === "light" || v === "dark" ? v : null;
+  } catch (e) {
+    return null;
+  }
+}
+function systemTheme() {
+  if (telegram_isTelegramEnv()) {
+    return window.Telegram.WebApp.colorScheme === "light" ? "light" : "dark";
+  }
+  try {
+    if (window.matchMedia("(prefers-color-scheme: light)").matches)
+      return "light";
+  } catch (e) {
+  }
+  return "dark";
+}
+function apply(mode) {
+  var _a, _b, _c;
+  current = mode;
+  document.documentElement.dataset.theme = mode;
+  let meta = document.querySelector(
+    'meta[name="theme-color"]'
+  );
+  if (!meta) {
+    meta = document.createElement("meta");
+    meta.name = "theme-color";
+    document.head.appendChild(meta);
+  }
+  meta.content = CHROME[mode].header;
+  if (telegram_isTelegramEnv()) {
+    const tg = window.Telegram.WebApp;
+    try {
+      (_a = tg.setHeaderColor) == null ? void 0 : _a.call(tg, CHROME[mode].header);
+      (_b = tg.setBackgroundColor) == null ? void 0 : _b.call(tg, CHROME[mode].bg);
+      (_c = tg.setBottomBarColor) == null ? void 0 : _c.call(tg, CHROME[mode].header);
+    } catch (e) {
+    }
+  }
+  theme_listeners.forEach((cb) => cb(mode));
+}
+function theme_getTheme() {
+  return current;
+}
+function setTheme(mode) {
+  try {
+    localStorage.setItem(STORAGE_THEME_KEY, mode);
+  } catch (e) {
+  }
+  apply(mode);
+}
+function toggleTheme() {
+  setTheme(current === "dark" ? "light" : "dark");
+}
+function onThemeChange(cb) {
+  theme_listeners.add(cb);
+  return () => theme_listeners.delete(cb);
+}
+function initTheme() {
+  var _a;
+  apply((_a = readStored()) != null ? _a : systemTheme());
+  const follow = () => {
+    if (!readStored()) apply(systemTheme());
+  };
+  if (telegram_isTelegramEnv()) {
+    window.Telegram.WebApp.onEvent("themeChanged", follow);
+  } else {
+    try {
+      window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", follow);
+    } catch (e) {
+    }
+  }
+}
+
 ;// ./src/application/App.tsx
 
 var App_defProp = Object.defineProperty;
@@ -74545,13 +76416,15 @@ var App_spreadProps = (a, b) => App_defProps(a, App_getOwnPropDescs(b));
 
 
 
+
+
 const isTelegram = telegram_isTelegramEnv();
 const NAV_ITEMS = [
-  { key: "cabinet", label: "web.orders", icon: "\u{1F4E6}" },
-  { key: "new_order", label: "applicationCabinetButtonNew", icon: "\u2795" },
-  !telegram_isTelegramEnv() ? { key: "referral", label: "applicationButtonsRef", icon: "\u{1F4FA}" } : void 0,
+  { key: "cabinet", label: "web.orders", icon: "orders" },
+  { key: "new_order", label: "applicationCabinetButtonNew", icon: "plus" },
+  !telegram_isTelegramEnv() ? { key: "referral", label: "applicationButtonsRef", icon: "users" } : void 0,
   // { key: 'help', label: 'Help & FAQ', icon: '❓' },
-  { key: "settings", label: "web.settings", icon: "\u2699\uFE0F" }
+  { key: "settings", label: "web.settings", icon: "sliders" }
 ].filter((q) => q);
 const App_state = {
   loaded: false,
@@ -74566,7 +76439,8 @@ const App_state = {
   // web back-button: set when a page has navigable sub-states
   webBackVisible: false,
   notifies: [],
-  showNotifies: false
+  showNotifies: false,
+  theme: theme_getTheme()
 };
 class App extends react.Component {
   constructor(props) {
@@ -74606,6 +76480,7 @@ class App extends react.Component {
         notifies: prevState.notifies.filter((n) => n.id !== id)
       }));
     });
+    this.ThemeEv = onThemeChange((theme) => this.setState({ theme }));
     this.handleLoginSuccess = () => {
       this.setState({ needLogin: false });
       this.loadAppData();
@@ -74694,6 +76569,7 @@ class App extends react.Component {
     return this.ShowInCurrency(this.state.userdata.balance, true, "truncate");
   }
   componentWillUnmount() {
+    this.ThemeEv();
     this.UserDataEv.Remove();
     this.NodesDataEv.Remove();
     this.NodesDataEvAdmin.Remove();
@@ -74812,20 +76688,20 @@ class App extends react.Component {
       items.push({
         key: "speedtest",
         label: "applicationServersButton",
-        icon: "\u{1F5A5}\uFE0F",
+        icon: "server",
         adminOnly: true
       });
       items.push({
         key: "admin",
         label: "applicationButtonsAdmin",
-        icon: "\u{1F6E0}\uFE0F",
+        icon: "shield",
         adminOnly: true
       });
     }
     items.push({
       key: "exit",
       label: "web.exit",
-      icon: "\u{1F6AA}"
+      icon: "exit"
     });
     return items.map((item) => {
       const isActive = item.key === page;
@@ -74849,7 +76725,7 @@ class App extends react.Component {
             }
           }
         },
-        /* @__PURE__ */ react.createElement("span", { className: "app-nav__icon" }, item.icon),
+        /* @__PURE__ */ react.createElement("span", { className: "app-nav__icon" }, /* @__PURE__ */ react.createElement(UiIcon, { name: item.icon })),
         /* @__PURE__ */ react.createElement("span", { className: "app-nav__label" }, this.LangString(item.label))
       );
     });
@@ -74875,7 +76751,8 @@ class App extends react.Component {
           }
         }
       },
-      "\u{1F4B8} ",
+      /* @__PURE__ */ react.createElement(UiIcon, { name: "wallet", className: "sm" }),
+      " ",
       this.showBalance
     ), /* @__PURE__ */ react.createElement(
       "button",
@@ -74894,7 +76771,6 @@ class App extends react.Component {
           }
         }
       },
-      "\u{1F4B3} ",
       this.LangString("applicationCabinetButtonAddBalance")
     )));
   }
@@ -74908,23 +76784,35 @@ class App extends react.Component {
         onClick: () => this.setState({ mobileMenuOpen: !mobileMenuOpen }),
         "aria-label": "Menu"
       },
-      mobileMenuOpen ? "\u2715" : "\u2630"
+      /* @__PURE__ */ react.createElement(UiIcon, { name: mobileMenuOpen ? "x" : "menu" })
     ), !isTelegram && webBackVisible && /* @__PURE__ */ react.createElement("button", { className: "app-header__back", onClick: this.handleWebBack }, this.LangString("web.back")), /* @__PURE__ */ react.createElement(
       "span",
       {
         className: "app-header__brand",
         onClick: () => this.ChangePage("index")
       },
-      /* @__PURE__ */ react.createElement("span", { className: "rotate" }, "\u{1F680}"),
-      /* @__PURE__ */ react.createElement("span", null, Core.GetConfigValue("projectName")),
-      /* @__PURE__ */ react.createElement("span", { className: "rotate" }, "\u{1F680}")
-    )), userdata && /* @__PURE__ */ react.createElement("div", { className: "app-header__right" }, !telegram_isTelegramEnv() && /* @__PURE__ */ react.createElement(
+      /* @__PURE__ */ react.createElement("img", { src: "./logo.png", alt: "" }),
+      /* @__PURE__ */ react.createElement("span", null, Core.GetConfigValue("projectName"))
+    )), userdata && /* @__PURE__ */ react.createElement("div", { className: "app-header__right" }, /* @__PURE__ */ react.createElement(
+      "button",
+      {
+        className: "app-header__icon-btn",
+        onClick: () => toggleTheme(),
+        title: this.LangString(
+          this.state.theme === "dark" ? "web.themeLight" : "web.themeDark"
+        ),
+        "aria-label": this.LangString(
+          this.state.theme === "dark" ? "web.themeLight" : "web.themeDark"
+        )
+      },
+      /* @__PURE__ */ react.createElement(UiIcon, { name: this.state.theme === "dark" ? "sun" : "moon" })
+    ), !telegram_isTelegramEnv() && /* @__PURE__ */ react.createElement(
       "div",
       {
         className: "app-header__notifies-container",
         onClick: () => this.setState({ showNotifies: !this.state.showNotifies })
       },
-      /* @__PURE__ */ react.createElement("span", { className: "app-header__bell" }, "\u{1F514}"),
+      /* @__PURE__ */ react.createElement("span", { className: "app-header__bell" }, /* @__PURE__ */ react.createElement(UiIcon, { name: "bell" })),
       this.state.notifies.filter((q) => !q.read).length > 0 && /* @__PURE__ */ react.createElement("span", { className: "app-header__bell-badge" }, this.state.notifies.filter((q) => !q.read).length),
       this.state.showNotifies && /* @__PURE__ */ react.createElement(
         "div",
@@ -74951,14 +76839,14 @@ class App extends react.Component {
               );
             }
           },
-          "\u{1F5D1}\uFE0F"
+          /* @__PURE__ */ react.createElement(UiIcon, { name: "trash", className: "sm" })
         ), /* @__PURE__ */ react.createElement(
           "button",
           {
             className: "small notifies-popup__close",
             onClick: () => this.setState({ showNotifies: false })
           },
-          "\u2715"
+          /* @__PURE__ */ react.createElement(UiIcon, { name: "x", className: "sm" })
         )),
         /* @__PURE__ */ react.createElement("div", { className: "notifies-popup__list" }, this.state.notifies.length === 0 ? /* @__PURE__ */ react.createElement("div", { className: "notifies-popup__empty" }, this.LangString("applicationNotifyEmpty")) : this.state.notifies.map((notify) => /* @__PURE__ */ react.createElement(
           "div",
@@ -75074,7 +76962,7 @@ class App extends react.Component {
           }
         }
       },
-      /* @__PURE__ */ react.createElement("span", { className: "rotate" }, "\u{1F4B8}"),
+      /* @__PURE__ */ react.createElement(UiIcon, { name: "wallet", className: "sm" }),
       /* @__PURE__ */ react.createElement("span", null, this.showBalance)
     ), /* @__PURE__ */ react.createElement(
       "button",
@@ -75092,7 +76980,6 @@ class App extends react.Component {
           }
         }
       },
-      "\u{1F4B3} ",
       this.LangString("applicationCabinetButtonAddBalance")
     )));
   }
@@ -75133,6 +77020,8 @@ var main_update = injectStylesIntoStyleTag_default()(styles_main/* default */.A,
 
 
 
+
+initTheme();
 const container = document.getElementById("root");
 if (container) {
   const root = (0,client/* createRoot */.H)(container);
