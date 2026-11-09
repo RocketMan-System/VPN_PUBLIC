@@ -205,8 +205,8 @@ Used traffic resets when the client renews the order for a full plan period (man
 
 | Role | First order (incl. trial) | Ongoing |
 | --- | --- | --- |
-| Inviter (host) | Fixed bonus to balance | **17%** of referral’s top-ups |
-| Invitee (referral) | Fixed bonus after first order | **6%** cashback on their top-ups |
+| Inviter (host) | Fixed bonus to balance | **20%** of referral’s top-ups (+5% for every 15 invited referrals, up to 35%) |
+| Invitee (referral) | Fixed bonus after first order | **10%** cashback on their top-ups |
 
 Exact bonus amounts are shown in the Referral screen.
 
