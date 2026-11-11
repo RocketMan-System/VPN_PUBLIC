@@ -94,7 +94,9 @@ html.wiki-route::-webkit-scrollbar-corner {
   background: linear-gradient(135deg, rgba(135, 116, 225, 0.16) 0%, rgba(135, 116, 225, 0.06) 36%, rgba(224, 86, 160, 0.04) 68%, rgba(255, 255, 255, 0.015) 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
-@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+@supports (
+      (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))
+    ) {
   .wiki .wiki-hero {
     background: linear-gradient(135deg, rgba(135, 116, 225, 0.18) 0%, rgba(135, 116, 225, 0.07) 40%, rgba(255, 255, 255, 0.03) 100%);
     -webkit-backdrop-filter: blur(18px) saturate(1.2);
@@ -105,7 +107,9 @@ html.wiki-route::-webkit-scrollbar-corner {
   padding: 22px 0 16px;
   background: linear-gradient(180deg, rgba(135, 116, 225, 0.1) 0%, rgba(255, 255, 255, 0.015) 100%);
 }
-@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+@supports (
+        (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))
+      ) {
   .wiki .wiki-hero--compact {
     background: linear-gradient(180deg, rgba(135, 116, 225, 0.11) 0%, rgba(255, 255, 255, 0.02) 100%);
     -webkit-backdrop-filter: blur(14px) saturate(1.15);
@@ -322,7 +326,9 @@ html.wiki-route::-webkit-scrollbar-corner {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
   transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
-@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+@supports (
+      (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))
+    ) {
   .wiki .wiki-search {
     background: rgba(12, 12, 14, 0.42);
     -webkit-backdrop-filter: blur(10px);
@@ -1239,7 +1245,9 @@ html.wiki-route::-webkit-scrollbar-corner {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.045) 0%, rgba(255, 255, 255, 0.02) 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
-@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+@supports (
+      (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))
+    ) {
   .wiki .wiki-article-bar {
     -webkit-backdrop-filter: blur(10px) saturate(1.1);
     backdrop-filter: blur(10px) saturate(1.1);

@@ -1,5 +1,5 @@
 
-console.log("%cBuild date: 11/10/2026, 12:30:32 AM", "color: #4CAF50; font-weight: bold;");
+console.log("%cBuild date: 11/11/2026, 10:35:21 PM", "color: #4CAF50; font-weight: bold;");
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 
@@ -16,9 +16,7 @@ sw.addEventListener("push", (event) => {
       badge: data.badge || "/logo.png",
       data: data.url || "/"
     };
-    event.waitUntil(
-      sw.registration.showNotification(title, options)
-    );
+    event.waitUntil(sw.registration.showNotification(title, options));
   } catch (e) {
     console.error("Push event handler failed to parse data", e);
   }
