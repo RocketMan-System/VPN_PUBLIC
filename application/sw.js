@@ -1,7 +1,7 @@
 
-console.log("%cBuild date: 25.11.2026, 03:11:20", "color: #4CAF50; font-weight: bold;");
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
+console.log("%cBuild date: 28.11.2026, 06:27:41", "color: #4CAF50; font-weight: bold;");
+(() => {
+"use strict";
 
 const sw = self;
 sw.addEventListener("push", (event) => {
@@ -43,5 +43,5 @@ sw.addEventListener("notificationclick", (event) => {
   );
 });
 
-/******/ })()
+})()
 ;
